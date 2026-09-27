@@ -50,8 +50,8 @@ Apple Silicon `.dmg`, and Windows x64 installer and portable `.exe`s. You still 
 | Platform | Build | Result |
 |---|---|---|
 | macOS (Apple Silicon) | `npm run install-app` | builds, ad-hoc signs and copies **Swift Judge.app** to `/Applications` |
-| macOS disk image | `npm run package:dmg` | `dist/Swift Judge-0.1.0-arm64.dmg` |
-| Windows x64 | `npm run package:win` (on the Mac; needs Rosetta 2 for NSIS) | `dist/Swift Judge Setup 0.1.0.exe` (installer) and `dist/Swift Judge 0.1.0 Portable.exe` |
+| macOS disk image | `npm run package:dmg` | `dist/Swift Judge <version> arm64.dmg` |
+| Windows x64 | `npm run package:win` (on the Mac; needs Rosetta 2 for NSIS) | `dist/Swift Judge Setup <version>.exe` (installer) and `dist/Swift Judge <version> Portable.exe` |
 
 The builds aren't signed with a paid certificate. macOS opens the locally built app normally;
 on Windows, SmartScreen shows "Windows protected your PC" the first time — choose **More info → Run anyway**.
