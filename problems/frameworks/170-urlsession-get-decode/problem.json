@@ -1,0 +1,46 @@
+{
+  "id": "urlsession-get-decode",
+  "title": "URLSession: GET & Decode (Mocked)",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Networking",
+  "concepts": [
+    "async-await",
+    "codable",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "URLSession",
+      "url": "https://developer.apple.com/documentation/foundation/urlsession"
+    },
+    {
+      "title": "Fetching website data into memory",
+      "url": "https://developer.apple.com/documentation/foundation/fetching-website-data-into-memory"
+    }
+  ],
+  "signature": {
+    "name": "loadUsers",
+    "params": [
+      {
+        "name": "status",
+        "type": "Int"
+      },
+      {
+        "name": "body",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`try await session.data(from: url)` returns `(Data, URLResponse)`.",
+    "Cast to `HTTPURLResponse` and check `200..<300` — a 404 is not a thrown error.",
+    "Decode `[User]` with `JSONDecoder` after the status check."
+  ]
+}

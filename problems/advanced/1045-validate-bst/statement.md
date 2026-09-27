@@ -1,0 +1,1 @@
+Build a binary tree of class nodes from LeetCode-style level order (`null` = missing), then check the BST property recursively with **optional bounds**: every node must be strictly between `low` and `high` inherited from its ancestors (not just greater than its direct parent's left child!).

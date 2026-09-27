@@ -1,0 +1,1 @@
+`enter`/`leave` count outstanding work; `wait()` blocks until the count hits zero (`notify(queue:)` is the non-blocking version). Results from concurrent work must be collected through synchronisation — here a serial queue used as a lock. Structured concurrency (`withTaskGroup`) replaces all of this with less ceremony.

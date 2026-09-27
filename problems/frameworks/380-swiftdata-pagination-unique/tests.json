@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "incoming": [
+    "swift",
+    "ios",
+    "swift",
+    "ui",
+    "swift"
+   ],
+   "pageSize": 2
+  },
+  "expected": [
+   "ios=1,swift=3",
+   "ui=1"
+  ]
+ },
+ {
+  "input": {
+   "incoming": [],
+   "pageSize": 3
+  }
+ },
+ {
+  "input": {
+   "incoming": [
+    "a"
+   ],
+   "pageSize": 5
+  },
+  "hidden": true
+ }
+]

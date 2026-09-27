@@ -1,0 +1,35 @@
+{
+  "id": "enum-computed-properties",
+  "title": "Enums with Computed Properties & Static Members",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Enums",
+  "concepts": [
+    "enums",
+    "computed-properties",
+    "static-properties"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "planetFacts",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Enums can have computed properties and static members, just like structs.",
+    "`index` can come from `allCases.firstIndex(of: self)`.",
+    "`static func named(_ name: String) -> Planet? { Planet(rawValue: name.lowercased()) }`."
+  ]
+}

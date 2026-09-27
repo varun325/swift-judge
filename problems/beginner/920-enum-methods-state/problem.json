@@ -1,0 +1,35 @@
+{
+  "id": "enum-methods-state",
+  "title": "Enums with Methods: Order Status",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Enums",
+  "concepts": [
+    "enums",
+    "mutating",
+    "switch-statement"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "orderTimeline",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "A state machine is an enum plus a method that decides the next state.",
+    "Switch on the tuple `(self, event)` and assign `self = .next` for valid transitions.",
+    "`case (.placed, \"cancel\"), (.paid, \"cancel\"): self = .cancelled`."
+  ]
+}

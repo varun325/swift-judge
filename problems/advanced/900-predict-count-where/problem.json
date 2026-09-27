@@ -1,0 +1,23 @@
+{
+  "id": "predict-count-where",
+  "title": "Predict: Newer Standard Library APIs",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Swift evolution",
+  "concepts": [
+    "higher-order-functions",
+    "compactmap-flatmap"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Sequence",
+      "url": "https://developer.apple.com/documentation/swift/sequence"
+    }
+  ],
+  "hints": [
+    "`count(where:)` counts matches without building an array.",
+    "`split` around `\"cherry\"` gives two slices; `prefix(while:)` stops at \"Banana\".",
+    "The shortest word (first on ties) is `\"date\"`."
+  ]
+}

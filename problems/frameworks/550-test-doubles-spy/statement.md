@@ -1,0 +1,3 @@
+Swiftful's *Unit Testing a SwiftUI application*. `final class CheckoutViewModel` depends on `protocol PaymentService { func charge(cents: Int) async throws -> String }` and `protocol Analytics { func track(_ event: String) }`. `pay(cents:)` rejects amounts ≤ 0 (tracks `"invalid_amount"`), otherwise charges, sets `receipt`, and tracks `"paid"`; on error sets `errorMessage` and tracks `"payment_failed"`.
+
+ Write a **stub** payment service (returns a fixed receipt or throws) and a **spy** analytics (records events). Run three "tests" — success, failure, invalid — and return `"<test>: <pass|fail>"` for each, asserting on state *and* on the spy's recorded events.

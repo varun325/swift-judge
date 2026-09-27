@@ -1,0 +1,1 @@
+Write `func summary(_ values: [Double]) -> (mean: Double, median: Double, range: Double)?` returning `nil` for an empty array. `stats` returns `[mean, median, range]` or `[]` — destructure the tuple with `let (mean, median, range) = …`.

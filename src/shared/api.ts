@@ -23,6 +23,8 @@ export interface BookChapter {
 export interface LearnBundle {
   notes?: { title: string; markdown: string }
   docs: { title: string; book?: string; url?: string }[]
+  videos: { title: string; url: string; channel: string }[]
+  articles: { title: string; url: string; source: string }[]
   concepts: Concept[]
 }
 

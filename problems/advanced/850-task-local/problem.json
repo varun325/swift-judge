@@ -1,0 +1,35 @@
+{
+  "id": "task-local",
+  "title": "@TaskLocal: Request IDs",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "task-group"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "TaskLocal",
+      "url": "https://developer.apple.com/documentation/swift/tasklocal"
+    }
+  ],
+  "signature": {
+    "name": "tracedRequests",
+    "params": [
+      {
+        "name": "ids",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "A task-local value is bound for a scope and inherited by child tasks.",
+    "Wrap the work in `Trace.$requestID.withValue(id) { … }` and read `Trace.requestID` inside the children.",
+    "Children: `group.addTask { \"\\(Trace.requestID):\\(step)\" }`."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "shape-progress-ring",
+  "title": "Arcs & trimmedPath: Progress Ring",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Drawing",
+  "concepts": [
+    "protocols"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Path",
+      "url": "https://developer.apple.com/documentation/swiftui/path"
+    },
+    {
+      "title": "Shape.trim(from:to:)",
+      "url": "https://developer.apple.com/documentation/swiftui/shape/trim(from:to:)"
+    }
+  ],
+  "signature": {
+    "name": "ringBounds",
+    "params": [
+      {
+        "name": "progress",
+        "type": "[Double]"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A ring is a circle path, trimmed to a fraction of its length.",
+    "`Path(ellipseIn:)` then `.trimmedPath(from: 0, to: p)`.",
+    "Round each bounding-box component and join with commas."
+  ]
+}

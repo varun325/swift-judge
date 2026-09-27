@@ -1,0 +1,34 @@
+{
+  "id": "custom-string-interpolation",
+  "title": "Extending String Interpolation",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Strings",
+  "concepts": [
+    "string-interpolation",
+    "extensions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "DefaultStringInterpolation",
+      "url": "https://developer.apple.com/documentation/swift/defaultstringinterpolation"
+    }
+  ],
+  "signature": {
+    "name": "receipts",
+    "params": [
+      {
+        "name": "cents",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Each `\\(…)` segment calls an `appendInterpolation` method you can overload.",
+    "Extend `String.StringInterpolation` with a `mutating func appendInterpolation(cents value: Int)`.",
+    "Inside, format the text and call `appendLiteral(…)`."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "firestore-cursor-paging",
+  "title": "Cursor-Based Pagination (Firestore-style)",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Cloud & backend",
+  "concepts": [
+    "sort-custom",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Firebase: Paginate data with query cursors",
+      "url": "https://firebase.google.com/docs/firestore/query-data/query-cursors"
+    }
+  ],
+  "signature": {
+    "name": "pagesByCursor",
+    "params": [
+      {
+        "name": "posts",
+        "type": "[[String]]",
+        "label": "_"
+      },
+      {
+        "name": "pageSize",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Order by `(createdAt desc, id asc)` so the order is total.",
+    "Each page takes items strictly after the previous page's last item.",
+    "Insert the new post after page 1 and check nothing repeats."
+  ]
+}

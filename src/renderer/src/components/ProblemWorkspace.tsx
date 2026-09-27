@@ -1,12 +1,13 @@
 import Editor, { type OnMount } from '@monaco-editor/react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { LearnBundle, ProblemView } from '../../../shared/api'
-import type { JudgeResult } from '../../../shared/types'
+import type { JudgeResult, ReviewState } from '../../../shared/types'
 import { monaco } from '../monaco'
 import { RUN_KEY, SUBMIT_KEY } from '../platform'
 import { Hints } from './Hints'
 import { Markdown } from './Markdown'
 import { Results } from './Results'
+import { dayKey, FIB_DAYS, intervalLabel } from '../../../shared/review'
 
 type LeftTab = 'description' | 'learn' | 'solution'
 
@@ -15,6 +16,7 @@ interface Props {
   solved: boolean
   draft?: string
   hintsRevealed: number
+  review?: ReviewState
   onProgress: () => void
   onOpenBook: (path: string) => void
   onNext: () => void
@@ -22,7 +24,7 @@ interface Props {
 
 const USER_FILE = { function: 'user.swift', stdio: 'main.swift', diagnostic: 'main.swift', predict: 'main.swift' }
 
-export function ProblemWorkspace({ id, solved, draft, hintsRevealed, onProgress, onOpenBook, onNext }: Props): React.JSX.Element {
+export function ProblemWorkspace({ id, solved, draft, hintsRevealed, review, onProgress, onOpenBook, onNext }: Props): React.JSX.Element {
   const [problem, setProblem] = useState<ProblemView>()
   const [learn, setLearn] = useState<LearnBundle>()
   const [left, setLeft] = useState<LeftTab>('description')
@@ -116,6 +118,15 @@ export function ProblemWorkspace({ id, solved, draft, hintsRevealed, onProgress,
     onProgress()
   }
 
+  const today = dayKey(new Date())
+  const reviewDue = review !== undefined && review.due <= today
+  const startFromMemory = async (): Promise<void> => {
+    await window.judge.resetDraft(id)
+    setCode(problem.starter)
+    setResult(undefined)
+    onProgress()
+  }
+
   const reveal = async (): Promise<void> => {
     if (!confirm('Reveal the reference solution? Try a few more submits first — the struggle is where the learning happens.')) return
     await window.judge.revealSolution(id)
@@ -143,8 +154,30 @@ export function ProblemWorkspace({ id, solved, draft, hintsRevealed, onProgress,
                 <span className="badge">{meta.topic}</span>
                 <span className="badge mode">{modeLabel(meta.mode)}</span>
                 {meta.notesRef && <span className="badge notes">notes §{meta.notesRef}</span>}
+                {meta.impact === 'core' && <span className="badge impact-core" title="The vital 20% of topics that carry ~80% of a Senior Staff iOS engineer's impact">Core 20%</span>}
+                {meta.impact === 'edge' && <span className="badge impact-edge" title="Long-tail topic: part of the final 20% edge">Edge 80%</span>}
               </div>
+              {reviewDue && (
+                <div className="review-banner">
+                  <div>
+                    <strong>↻ Revisit due</strong> — solve it again from memory. An accepted submit today schedules the next
+                    visit in {FIB_DAYS[Math.min(review.lapsed ? Math.max(0, review.step - 1) : review.step + 1, FIB_DAYS.length - 1)]} days.
+                  </div>
+                  <button onClick={() => void startFromMemory()}>Clear editor &amp; start from memory</button>
+                </div>
+              )}
+              {review && !reviewDue && (
+                <div className="review-next" title="Fibonacci spaced repetition">
+                  ↻ Next revisit {review.due} ({intervalLabel(review.step)}, {review.reviews} review{review.reviews === 1 ? '' : 's'} so far)
+                </div>
+              )}
               <Markdown source={problem.statement} />
+              {meta.jsBridge && (
+                <details className="js-bridge" open>
+                  <summary>Coming from JavaScript</summary>
+                  <Markdown source={meta.jsBridge} />
+                </details>
+              )}
               {problem.snippet && <Markdown source={'```swift\n' + problem.snippet + '\n```'} />}
               {meta.signature && (
                 <div className="signature">
@@ -232,18 +265,44 @@ export function ProblemWorkspace({ id, solved, draft, hintsRevealed, onProgress,
 }
 
 function LearnPanel({ learn, onOpenBook }: { learn: LearnBundle; onOpenBook: (p: string) => void }): React.JSX.Element {
+  const book = learn.docs.filter((d) => d.book)
+  const apple = learn.docs.filter((d) => d.url)
   return (
     <div className="learn">
-      {learn.docs.length > 0 && (
-        <div className="doc-links">
-          <div className="label">Official Swift documentation</div>
-          {learn.docs.map((d) =>
-            d.book ? (
-              <button key={d.title} className="doc-link" onClick={() => onOpenBook(d.book!)}>📖 {d.title}</button>
-            ) : (
-              <a key={d.title} className="doc-link" href={d.url} target="_blank" rel="noreferrer">↗ {d.title}</a>
-            )
-          )}
+      {apple.length > 0 && (
+        <div className="doc-links ref-section">
+          <div className="label">Apple Developer Documentation</div>
+          {apple.map((d) => (
+            <a key={d.url} className="doc-link" href={d.url} target="_blank" rel="noreferrer">↗ {d.title}</a>
+          ))}
+        </div>
+      )}
+      {book.length > 0 && (
+        <div className="doc-links ref-section">
+          <div className="label">The Swift Programming Language (offline)</div>
+          {book.map((d) => (
+            <button key={d.book} className="doc-link" onClick={() => onOpenBook(d.book!)}>📖 {d.title}</button>
+          ))}
+        </div>
+      )}
+      {learn.videos.length > 0 && (
+        <div className="doc-links ref-section">
+          <div className="label">Videos</div>
+          {learn.videos.map((v) => (
+            <a key={v.url} className="doc-link video-link" href={v.url} target="_blank" rel="noreferrer">
+              ▶ {v.title}<span className="channel">{v.channel}</span>
+            </a>
+          ))}
+        </div>
+      )}
+      {learn.articles.length > 0 && (
+        <div className="doc-links ref-section">
+          <div className="label">Articles & guides</div>
+          {learn.articles.map((a) => (
+            <a key={a.url} className="doc-link" href={a.url} target="_blank" rel="noreferrer">
+              ↗ {a.title}<span className="channel video-link"> {a.source}</span>
+            </a>
+          ))}
         </div>
       )}
       {learn.concepts.length > 0 && (
@@ -264,7 +323,7 @@ function LearnPanel({ learn, onOpenBook }: { learn: LearnBundle; onOpenBook: (p:
           <Markdown source={learn.notes.markdown} />
         </>
       ) : (
-        <p className="muted">No matching section in your notes for this problem — see the Swift Book link above.</p>
+        <p className="muted">No matching section in your notes for this problem — use the references above.</p>
       )}
     </div>
   )

@@ -1,0 +1,34 @@
+{
+  "id": "reverse-string-ways",
+  "title": "Reverse a String Three Ways",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "strings-are-collections",
+    "functions-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    }
+  ],
+  "signature": {
+    "name": "reversals",
+    "params": [
+      {
+        "name": "s",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`reversed()` works on `Character`s.",
+    "Prepending each character also reverses: `b = String(ch) + b`.",
+    "Recurse on `s.dropFirst()` (a `Substring`) and append the first character."
+  ]
+}

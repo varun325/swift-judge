@@ -1,0 +1,1 @@
+Polar coordinates (`cos`/`sin` of evenly spaced angles, starting at −π/2 for "up") generate regular shapes. `path.forEach` walks the path's elements — useful for testing or for converting paths to other formats.

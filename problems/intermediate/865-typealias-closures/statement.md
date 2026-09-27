@@ -1,0 +1,1 @@
+Declare `typealias Validator = @Sendable (String) -> String?` (returns an error message or nil) — try it without `@Sendable` first and read Swift 6's error. Build `let validators: [Validator]` checking: non-empty (`"empty"`), max 10 characters (`"too long"`), no spaces (`"has spaces"`). For each input return the **first** error or `"ok"`.

@@ -1,0 +1,1 @@
+`async let` starts a child task immediately; `await` collects its value later. Three bindings → three concurrent tasks, so the total is ~300 ms. They're **structured**: if the function exits early, unawaited children are cancelled automatically.

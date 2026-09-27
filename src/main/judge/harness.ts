@@ -25,13 +25,19 @@ do {
 } catch {
     Foundation.FileHandle.standardError.write(Foundation.Data("JUDGE_INPUT_ERROR: \\(error)\\n".utf8))
 }
+/// Learner code runs on a concurrency pool thread, not main: give that thread an alternate
+/// signal stack first. (No suspension point before __run, so it stays on this thread.)
+func __judgeRun(_ __i: __Input) async throws -> some Swift.Encodable {
+    __judgeAltStack()
+    return try await __run(__i)
+}
 let __enc = Foundation.JSONEncoder()
 __enc.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
 for (__k, __in) in __inputs.enumerated() {
     let __t0 = Dispatch.DispatchTime.now().uptimeNanoseconds
     var __json: Swift.String
     do {
-        let __r = try await __run(__in)
+        let __r = try await __judgeRun(__in)
         __json = Swift.String(decoding: try __enc.encode(__r), as: Swift.UTF8.self)
     } catch {
         __json = __errJSON(error)
@@ -45,9 +51,52 @@ for (__k, __in) in __inputs.enumerated() {
 }
 `
 
+/**
+ * macOS files a crash report — and may pop up a "quit unexpectedly" dialog — every time judged
+ * code traps (force-unwrapping nil, an out-of-range index…), which learners do on purpose all the
+ * time. Catching the fatal signals and exiting with 128 + signal keeps the crash invisible to
+ * ReportCrash; Swift has already printed its "Fatal error: …" line by then, and the runner maps
+ * the exit code back to the signal. The alternate stack lets it work for stack overflows too.
+ */
+const QUIET_CRASHES = `#if canImport(Darwin)
+import Darwin
+/// Signal handlers need stack to run on, and a stack overflow leaves none, so each thread that
+/// runs learner code gets its own alternate signal stack (they're per-thread).
+func __judgeAltStack() {
+    var current = Darwin.stack_t()
+    _ = Darwin.sigaltstack(nil, &current)
+    guard current.ss_flags & Darwin.SS_DISABLE != 0 else { return }
+    let size = 64 * 1024
+    var altStack = Darwin.stack_t(ss_sp: Swift.UnsafeMutableRawPointer.allocate(byteCount: size, alignment: 16), ss_size: size, ss_flags: 0)
+    _ = Darwin.sigaltstack(&altStack, nil)
+}
+func __judgeQuietCrashes() {
+    __judgeAltStack()
+    for sig in [Darwin.SIGTRAP, Darwin.SIGILL, Darwin.SIGSEGV, Darwin.SIGBUS, Darwin.SIGABRT, Darwin.SIGFPE] {
+        var action = Darwin.sigaction()
+        action.__sigaction_u.__sa_handler = { Darwin._exit(128 + $0) }
+        action.sa_flags = Darwin.SA_ONSTACK
+        _ = sigaction(sig, &action, nil)  // unqualified: Darwin.sigaction names the struct
+    }
+}
+__judgeQuietCrashes()
+#else
+func __judgeAltStack() {}
+#endif
+`
+
+/**
+ * For programs whose entry point is the learner's own main.swift (stdio, predict, Playground):
+ * run the quiet-crash setup first, then reset line numbering so diagnostics and runtime
+ * messages still point at the learner's lines.
+ */
+export function withQuietCrashes(mainSwift: string): string {
+  return `${QUIET_CRASHES}#sourceLocation(file: "main.swift", line: 1)\n${mainSwift}\n#sourceLocation()\n`
+}
+
 // Every name the driver uses is module-qualified, so user types (a custom `FileHandle`,
 // `Data`, `Log`…) can't shadow them. The C library module differs per platform.
-const PRELUDE = `import Foundation
+const PRELUDE = `${QUIET_CRASHES}import Foundation
 import Dispatch
 #if canImport(Darwin)
 import Darwin

@@ -1,0 +1,23 @@
+{
+  "id": "multi-line-strings",
+  "title": "Predict: Multi-line String Literals",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "raw-strings",
+    "string-interpolation"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Strings and Characters — Multiline String Literals",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "hints": [
+    "The closing `\"\"\"` sets the indentation that gets removed from every line.",
+    "The second line keeps its **extra** two spaces; the `\\` at a line end removes that line break.",
+    "The poem has 3 lines: `Roses are red,`, `  Taylor is too,`, `this line continues here.`"
+  ]
+}

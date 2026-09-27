@@ -1,0 +1,1 @@
+(Note `as any Shape` in the ternary: both branches must have one type, and Swift won't pick the existential for you.) Passing an `any Shape` to a `some Shape` parameter "opens" the box: inside `report`, the concrete type and its `Measure` are known again. Before SE-0352 you needed type-erasing wrappers for this.

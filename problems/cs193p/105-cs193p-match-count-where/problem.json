@@ -1,0 +1,44 @@
+{
+  "id": "cs193p-match-count-where",
+  "title": "L2: Match Markers with count(where:)",
+  "track": "cs193p",
+  "difficulty": "easy",
+  "topic": "L1–L2 · Views & modifiers",
+  "concepts": [
+    "enums",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
+    }
+  ],
+  "signature": {
+    "name": "markerSummary",
+    "params": [
+      {
+        "name": "matches",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Model the three states as an enum with `String` raw values.",
+    "`compactMap(Match.init(rawValue:))` parses and drops unknown strings.",
+    "`parsed.count(where: { $0 == .exact })`, and likewise for the others."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L2: Code Breaker App",
+      "url": "https://www.youtube.com/watch?v=63UHypFKRRM",
+      "channel": "Stanford Online"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sort-descriptors-swift",
+  "title": "SortDescriptor & KeyPathComparator on Swift Types",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Foundation essentials",
+  "concepts": [
+    "key-paths",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "SortDescriptor",
+      "url": "https://developer.apple.com/documentation/foundation/sortdescriptor"
+    },
+    {
+      "title": "KeyPathComparator",
+      "url": "https://developer.apple.com/documentation/foundation/keypathcomparator"
+    }
+  ],
+  "signature": {
+    "name": "sortPlayers",
+    "params": [
+      {
+        "name": "rows",
+        "type": "[[String]]",
+        "label": "_"
+      },
+      {
+        "name": "keys",
+        "type": "[String]",
+        "label": "by"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Create one `SortDescriptor` per key, in priority order.",
+    "`order: .reverse` for descending; `comparator: .localizedStandard` for strings.",
+    "Apply them all with `sorted(using: descriptors)`."
+  ]
+}

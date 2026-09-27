@@ -1,0 +1,56 @@
+{
+  "id": "slider-stepper-snap",
+  "title": "Slider & Stepper Value Snapping",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Controls & input",
+  "concepts": [
+    "fundamental-types",
+    "half-open-range"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Slider",
+      "url": "https://developer.apple.com/documentation/swiftui/slider"
+    },
+    {
+      "title": "Stepper",
+      "url": "https://developer.apple.com/documentation/swiftui/stepper"
+    }
+  ],
+  "signature": {
+    "name": "snapValues",
+    "params": [
+      {
+        "name": "raw",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "lower",
+        "type": "Double",
+        "label": "min"
+      },
+      {
+        "name": "upper",
+        "type": "Double",
+        "label": "max"
+      },
+      {
+        "name": "step",
+        "type": "Double"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Snap relative to the lower bound, not to zero.",
+    "`lower + ((v − lower) / step).rounded() * step`, then clamp.",
+    "Handle `step <= 0` by skipping the snapping."
+  ]
+}

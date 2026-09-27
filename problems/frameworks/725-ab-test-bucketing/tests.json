@@ -1,0 +1,39 @@
+[
+ {
+  "input": {
+   "userIDs": [
+    "u1",
+    "u2",
+    "u3",
+    "alice",
+    "bob"
+   ],
+   "experiment": "paywall-v2",
+   "splits": [
+    50,
+    50
+   ]
+  }
+ },
+ {
+  "input": {
+   "userIDs": [
+    "u1"
+   ],
+   "experiment": "x",
+   "splits": [
+    10
+   ]
+  }
+ },
+ {
+  "input": {
+   "userIDs": [],
+   "experiment": "x",
+   "splits": [
+    100
+   ]
+  },
+  "hidden": true
+ }
+]

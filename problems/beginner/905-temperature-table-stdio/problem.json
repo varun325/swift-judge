@@ -1,0 +1,23 @@
+{
+  "id": "temperature-table-stdio",
+  "title": "Temperature Table (stdin)",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Standard I/O",
+  "concepts": [
+    "stride",
+    "string-interpolation"
+  ],
+  "mode": "stdio",
+  "docs": [
+    {
+      "title": "Control Flow",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "hints": [
+    "`stride` works with negative steps too.",
+    "Convert to `Double` before `* 9 / 5`, then round.",
+    "`print(\"\\(c)°C = \\(Int(f))°F\")`."
+  ]
+}

@@ -1,0 +1,1 @@
+A circular progress ring is a full circle **trimmed** to the progress fraction. For a 100×100 rect, build `Path(ellipseIn:)`, take `trimmedPath(from: 0, to: p)` for each progress `p`, and return its bounding box as `"x,y,w,h"` (rounded integers), or `"empty"` when nothing is drawn (an empty path's bounding box is `CGRect.null`). Note where SwiftUI starts drawing an ellipse.

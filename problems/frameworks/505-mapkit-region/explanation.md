@@ -1,0 +1,1 @@
+A region is a center plus a span in **degrees**. Padding the span keeps pins off the screen edges; a minimum span prevents zooming absurdly far in on a single pin. (Crossing the antimeridian at ±180° needs extra care in real apps.)

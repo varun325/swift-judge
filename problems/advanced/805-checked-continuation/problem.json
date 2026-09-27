@@ -1,0 +1,36 @@
+{
+  "id": "checked-continuation",
+  "title": "Wrapping Callbacks with Continuations",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "escaping",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "withCheckedThrowingContinuation",
+      "url": "https://developer.apple.com/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)"
+    }
+  ],
+  "signature": {
+    "name": "fetchAll",
+    "params": [
+      {
+        "name": "keys",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "You need to suspend until a callback fires.",
+    "`withCheckedThrowingContinuation { continuation in legacyFetch(key) { … } }`.",
+    "Inside the callback: `continuation.resume(with: result)`."
+  ]
+}

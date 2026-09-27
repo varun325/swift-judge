@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Existential == rejected",
+  "pattern": "cannot be applied|any Equatable"
+ }
+]

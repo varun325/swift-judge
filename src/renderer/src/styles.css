@@ -253,3 +253,58 @@ button.link:hover { text-decoration: underline; }
 .pg-preview-body { flex: 1; overflow: auto; padding: 4px 18px 24px; }
 .pg-notes.preview-collapsed .pg-preview { flex: 0 0 auto; }
 .pg-notes.preview-collapsed .pg-preview-toggle { border-bottom: 0; }
+.badge.mac-only { font-size: 10px; padding: 0 6px; background: var(--panel-2); color: var(--muted); border: 1px solid var(--border); text-transform: none; }
+.track h3 span:first-child { text-transform: none; }
+.ref-section { margin-bottom: 14px; }
+.video-link .channel { color: var(--muted); font-size: 12px; margin-left: 6px; }
+
+/* ---------- 80/20 + JS bridge */
+.impact-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; background: transparent; }
+.impact-dot.core { background: var(--accent); }
+.badge.impact-core { color: #fff; background: var(--accent); text-transform: none; }
+.badge.impact-edge { text-transform: none; }
+.js-bridge { margin: 14px 0; border: 1px solid color-mix(in srgb, #f7df1e 55%, var(--border)); background: color-mix(in srgb, #f7df1e 7%, var(--panel)); border-radius: 8px; padding: 8px 14px; }
+.js-bridge summary { cursor: pointer; font-weight: 700; font-size: 13px; }
+.js-bridge summary::before { content: 'JS '; font: 700 10px/1 'SF Mono', Menlo, monospace; background: #f7df1e; color: #111; padding: 2px 4px; border-radius: 3px; margin-right: 6px; vertical-align: 1px; }
+.js-bridge .markdown { font-size: 13.5px; }
+
+/* Fibonacci spaced repetition */
+.review-button {
+  -webkit-app-region: no-drag; background: var(--panel-2); border: 1px solid var(--border);
+  color: var(--muted); border-radius: 999px; padding: 3px 10px; font-size: 12px;
+}
+.review-button.has-due { color: var(--text); border-color: var(--accent); }
+.review-button:hover { background: var(--border); }
+.due-mark { color: var(--accent); font-size: 12px; margin-left: 4px; }
+.review-banner {
+  display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  border: 1px solid var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border-radius: 8px; padding: 10px 12px; margin: 10px 0; font-size: 13px;
+}
+.review-banner button { background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 6px 10px; white-space: nowrap; }
+.review-next { font-size: 12px; color: var(--muted); margin: 8px 0; }
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgb(0 0 0 / .45); display: grid; place-items: center; z-index: 50;
+}
+.modal {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+  width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 80px); overflow: auto; padding: 16px 18px;
+  box-shadow: 0 20px 60px rgb(0 0 0 / .35);
+}
+.modal header { display: flex; align-items: center; justify-content: space-between; }
+.modal header h2 { margin: 0; font-size: 18px; }
+.modal .close { background: none; border: 0; color: var(--muted); font-size: 22px; line-height: 1; }
+.review-today ul { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; gap: 6px; }
+.review-today li button {
+  width: 100%; display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: auto auto;
+  column-gap: 10px; align-items: center; text-align: left;
+  background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; color: var(--text);
+}
+.review-today li button:hover { border-color: var(--accent); }
+.review-today .impact-dot { grid-row: 1 / 3; }
+.review-today .title { font-weight: 600; }
+.review-today .meta { grid-column: 2; font-size: 12px; color: var(--muted); }
+.review-today .when { grid-column: 3; grid-row: 1 / 3; font-size: 12px; color: var(--muted); }
+.review-today .when.overdue { color: var(--warn); }
+.filter-row { flex-wrap: wrap; row-gap: 6px; }
+.filter-row label { white-space: nowrap; }

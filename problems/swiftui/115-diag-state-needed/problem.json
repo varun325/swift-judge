@@ -1,0 +1,27 @@
+{
+  "id": "diag-state-needed",
+  "title": "Diagnostic: Why @State Exists",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "State & data flow",
+  "concepts": [
+    "mutating",
+    "property-wrappers",
+    "struct-vs-class"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`body` can't mutate the view struct's own stored properties.",
+    "Declare `var count = 0` without a property wrapper and increment it in a button action.",
+    "`Button(\"+\") { count += 1 }` with a plain `var count`."
+  ]
+}

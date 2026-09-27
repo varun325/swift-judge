@@ -1,0 +1,1 @@
+CodeBreaker's markers show how good a guess was: `enum Match { case nomatch, exact, inexact }`. L2 counts them with Swift 6's `count(where:)`. Parse the strings into `Match` values (ignore unknown strings) and return `[exact count, inexact count, nomatch count]`.

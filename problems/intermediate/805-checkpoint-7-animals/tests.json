@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "specs": [
+    "corgi",
+    "lion",
+    "wildcat",
+    "persian"
+   ]
+  },
+  "expected": [
+   "Yip (4 legs)",
+   "Roar (4 legs)",
+   "Hiss (4 legs)",
+   "Meow (4 legs)"
+  ]
+ },
+ {
+  "input": {
+   "specs": []
+  }
+ },
+ {
+  "input": {
+   "specs": [
+    "dog",
+    "poodle",
+    "unicorn"
+   ]
+  },
+  "hidden": true
+ }
+]

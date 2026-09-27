@@ -1,0 +1,1 @@
+A phase enum with computed visual properties is exactly what you pass to `PhaseAnimator(Phase.allCases, trigger: tapCount) { content, phase in content.scaleEffect(phase.scale) … } animation: { phase in … }` — multi-step animations become data. Returning to the first phase makes the sequence repeatable.

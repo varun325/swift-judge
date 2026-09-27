@@ -1,0 +1,34 @@
+{
+  "id": "spiral-matrix",
+  "title": "Spiral Order Traversal",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "array-basics",
+    "control-flow"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
+    }
+  ],
+  "signature": {
+    "name": "spiral",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "Maintain four boundaries and shrink one after each side of the spiral.",
+    "Right along the top, down the right, left along the bottom, up the left.",
+    "Guard the bottom and left passes so a single remaining row or column isn't repeated."
+  ]
+}

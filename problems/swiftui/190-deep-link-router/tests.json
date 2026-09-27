@@ -1,0 +1,25 @@
+[
+ {
+  "input": {
+   "links": [
+    "myapp://profile/7",
+    "myapp://settings?tab=account",
+    "myapp://profile/3/posts/9",
+    "https://x.com",
+    "myapp://profile/abc"
+   ]
+  },
+  "expected": [
+   "home: profile(7)",
+   "account: settings",
+   "home: profile(3) > post(9)",
+   "invalid",
+   "invalid"
+  ]
+ },
+ {
+  "input": {
+   "links": []
+  }
+ }
+]

@@ -1,0 +1,1 @@
+With offsets, inserting an item at the top shifts everything down, so page 2 repeats an item. A cursor ("start after this document") is anchored to data, not position — which is why Firestore, GraphQL connections and most feeds use it. Ties need a secondary key (here the id) to make the order total.

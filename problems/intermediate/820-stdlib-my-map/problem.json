@@ -1,0 +1,35 @@
+{
+  "id": "stdlib-my-map",
+  "title": "Inside the Standard Library: map",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Standard library internals",
+  "concepts": [
+    "map-filter-reduce",
+    "generics",
+    "rethrows"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Sequence.map",
+      "url": "https://developer.apple.com/documentation/swift/sequence/map(_:)"
+    }
+  ],
+  "signature": {
+    "name": "mapDemo",
+    "params": [
+      {
+        "name": "numbers",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`map` is a generic method on `Sequence`: `Element` in, `T` out.",
+    "Loop over `self`, append `try transform(element)`, and mark the method `rethrows`.",
+    "`result.reserveCapacity(underestimatedCount)` before the loop."
+  ]
+}

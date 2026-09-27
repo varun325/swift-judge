@@ -1,0 +1,48 @@
+{
+  "id": "widget-timeline",
+  "title": "WidgetKit Timeline Entries",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Platform features",
+  "concepts": [
+    "fundamental-types",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "WidgetKit",
+      "url": "https://developer.apple.com/documentation/widgetkit"
+    },
+    {
+      "title": "Timeline",
+      "url": "https://developer.apple.com/documentation/widgetkit/timeline"
+    }
+  ],
+  "signature": {
+    "name": "timeline",
+    "params": [
+      {
+        "name": "now",
+        "type": "String"
+      },
+      {
+        "name": "events",
+        "type": "[[String]]"
+      },
+      {
+        "name": "hours",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Generate the moments: now, then each whole hour.",
+    "For each moment, the entry shows the first event still in the future.",
+    "Drop consecutive duplicates; the reload time is one hour after the last moment."
+  ]
+}

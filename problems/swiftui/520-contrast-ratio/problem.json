@@ -1,0 +1,41 @@
+{
+  "id": "contrast-ratio",
+  "title": "Accessibility: Contrast Ratios for Dynamic Colors",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Accessibility",
+  "concepts": [
+    "fundamental-types",
+    "extensions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Color",
+      "url": "https://developer.apple.com/documentation/swiftui/color"
+    },
+    {
+      "title": "Accessibility — Color and effects",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility#Color-and-effects"
+    }
+  ],
+  "signature": {
+    "name": "contrastChecks",
+    "params": [
+      {
+        "name": "pairs",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Linearise each sRGB channel before weighting.",
+    "Luminance = 0.2126 R + 0.7152 G + 0.0722 B.",
+    "Ratio = (lighter + 0.05) / (darker + 0.05); compare with 4.5 and 3."
+  ]
+}

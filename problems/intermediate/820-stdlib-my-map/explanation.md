@@ -1,0 +1,1 @@
+This is essentially the real implementation: generic over the output type, `rethrows` so non-throwing closures need no `try`, and `underestimatedCount` to avoid reallocation. Paul's *Inside the Standard Library* walks through the actual source.

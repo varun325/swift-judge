@@ -1,0 +1,23 @@
+{
+  "id": "class-copying-predict",
+  "title": "Predict: Arrays of Classes vs Structs",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Value types",
+  "concepts": [
+    "value-vs-reference",
+    "copy-on-write"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ],
+  "hints": [
+    "The array itself is copied; its class elements are references.",
+    "Mutating `boxesCopy[0].value` changes the shared object; `append` changes only the copy.",
+    "Line 1: `[100, 2] [100, 2, 3]`."
+  ]
+}

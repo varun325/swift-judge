@@ -1,0 +1,54 @@
+[
+ {
+  "input": {
+   "times": [
+    0,
+    50,
+    120,
+    130,
+    400
+   ],
+   "interval": 100,
+   "mode": "throttle"
+  },
+  "expected": [
+   0,
+   120,
+   400
+  ]
+ },
+ {
+  "input": {
+   "times": [
+    0,
+    50,
+    120,
+    130,
+    400
+   ],
+   "interval": 100,
+   "mode": "debounce"
+  },
+  "expected": [
+   230,
+   500
+  ]
+ },
+ {
+  "input": {
+   "times": [],
+   "interval": 10,
+   "mode": "debounce"
+  }
+ },
+ {
+  "input": {
+   "times": [
+    5
+   ],
+   "interval": 0,
+   "mode": "throttle"
+  },
+  "hidden": true
+ }
+]

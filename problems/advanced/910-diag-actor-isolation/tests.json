@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Isolation enforced",
+  "pattern": "actor-isolated"
+ }
+]

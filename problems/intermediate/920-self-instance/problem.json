@@ -1,0 +1,35 @@
+{
+  "id": "self-instance",
+  "title": "Referring to the Current Instance",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "self-usage",
+    "initializers",
+    "mutating"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Methods — The self Property",
+      "book": "LanguageGuide/Methods"
+    }
+  ],
+  "signature": {
+    "name": "vectors",
+    "params": [
+      {
+        "name": "pairs",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`self.x` means \"my property x\" when a parameter is also called `x`.",
+    "In a `mutating` struct method, `self` is assignable.",
+    "`mutating func flip() { self = Vector(x: y, y: x) }`."
+  ]
+}

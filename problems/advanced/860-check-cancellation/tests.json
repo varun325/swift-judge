@@ -1,0 +1,27 @@
+[
+ {
+  "input": {
+   "items": 5,
+   "cancelEarly": false
+  },
+  "expected": [
+   "processed 5"
+  ]
+ },
+ {
+  "input": {
+   "items": 5,
+   "cancelEarly": true
+  },
+  "expected": [
+   "cancelled after 0"
+  ]
+ },
+ {
+  "input": {
+   "items": 0,
+   "cancelEarly": true
+  },
+  "hidden": true
+ }
+]

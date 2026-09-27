@@ -1,0 +1,35 @@
+{
+  "id": "flatten-nested",
+  "title": "Flatten Arbitrarily Nested Lists",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "indirect-enums",
+    "codable",
+    "pattern-matching"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations — Recursive Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations#Recursive-Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "flatten",
+    "params": [
+      {
+        "name": "json",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "Model \"a number or a list of these\" as an `indirect enum`.",
+    "In `init(from:)`, try decoding an `Int`, else decode `[Nested]`.",
+    "Flatten recursively with `flatMap`."
+  ]
+}

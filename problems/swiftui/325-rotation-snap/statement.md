@@ -1,0 +1,1 @@
+Swiftful's *RotationGesture*: when the gesture ends, snap the accumulated rotation to the nearest multiple of 90° and normalise into `0..<360`. Use SwiftUI's `Angle` (`.degrees(x)` / `.degrees` / `.radians`) for the conversions.

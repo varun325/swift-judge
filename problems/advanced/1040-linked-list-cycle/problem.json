@@ -1,0 +1,39 @@
+{
+  "id": "linked-list-cycle",
+  "title": "Detect a Cycle (Floyd's Tortoise & Hare)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "class-definition",
+    "equality-vs-identity",
+    "retain-cycle"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Identity Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures#Identity-Operators"
+    }
+  ],
+  "signature": {
+    "name": "hasCycle",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "loopTo",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Move one pointer by one step and another by two; if they ever meet (by `===`), there's a cycle.",
+    "To find the start, reset one pointer to the head and advance both one step at a time.",
+    "Break the cycle before returning so ARC can deallocate the nodes."
+  ]
+}

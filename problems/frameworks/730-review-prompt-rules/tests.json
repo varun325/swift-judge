@@ -1,0 +1,58 @@
+[
+ {
+  "input": {
+   "events": [
+    [
+     "1",
+     "success"
+    ],
+    [
+     "2",
+     "success"
+    ],
+    [
+     "3",
+     "crash"
+    ],
+    [
+     "5",
+     "success"
+    ],
+    [
+     "12",
+     "success"
+    ],
+    [
+     "40",
+     "success"
+    ],
+    [
+     "75",
+     "success"
+    ],
+    [
+     "140",
+     "success"
+    ],
+    [
+     "200",
+     "success"
+    ],
+    [
+     "300",
+     "success"
+    ]
+   ]
+  },
+  "expected": [
+   "prompt day 12",
+   "prompt day 75",
+   "prompt day 140"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ }
+]

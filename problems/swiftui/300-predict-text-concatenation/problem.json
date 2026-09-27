@@ -1,0 +1,26 @@
+{
+  "id": "predict-text-concatenation",
+  "title": "Predict: Text Modifiers Return Text",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "View composition",
+  "concepts": [
+    "operator-overloading",
+    "opaque-types"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Text",
+      "url": "https://developer.apple.com/documentation/swiftui/text"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Some modifiers are defined on `Text` and return `Text`.",
+    "`padding()` is a general view modifier.",
+    "Two of the three lines print `Text`."
+  ]
+}

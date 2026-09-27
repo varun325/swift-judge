@@ -1,0 +1,1 @@
+`URLRequest` carries method, headers and body; `session.data(for:)` sends it. Encoding the body from an `Encodable` struct keeps request shapes type-checked. (Inside a `URLProtocol`, bodies may arrive as a stream — that's why the mock reads `httpBodyStream`.)

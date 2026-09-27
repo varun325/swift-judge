@@ -1,0 +1,1 @@
+The classic trap: checking only `left < parent < right` misses a deep node that violates an ancestor's bound. Passing optional `low`/`high` (nil = unbounded) down the recursion fixes it — and avoids the `Int.min`/`Int.max` sentinel bug.

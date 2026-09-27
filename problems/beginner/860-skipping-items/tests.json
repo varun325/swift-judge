@@ -1,0 +1,40 @@
+[
+ {
+  "input": {
+   "readings": [
+    "4",
+    "x",
+    "-2",
+    "6",
+    "END",
+    "9"
+   ]
+  },
+  "expected": [
+   10,
+   2
+  ]
+ },
+ {
+  "input": {
+   "readings": []
+  }
+ },
+ {
+  "input": {
+   "readings": [
+    "END",
+    "1"
+   ]
+  }
+ },
+ {
+  "input": {
+   "readings": [
+    "0",
+    "0"
+   ]
+  },
+  "hidden": true
+ }
+]

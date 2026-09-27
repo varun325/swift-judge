@@ -1,0 +1,1 @@
+`Measurement` carries its unit in the type (`Measurement<UnitLength>`), so you can't add metres to seconds, and `converted(to:)` does the arithmetic. `usage: .asProvided` keeps your unit; `.road` or `.personHeight` would let the locale choose.

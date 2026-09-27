@@ -1,0 +1,1 @@
+Synthesised `Decodable` for a raw-value enum throws on unknown values, and one bad element fails the entire array. A custom single-value `init(from:)` with a fallback keeps old app versions working when the backend evolves — a must for shipped clients.

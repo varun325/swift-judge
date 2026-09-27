@@ -1,0 +1,1 @@
+Swiftful Thinking's sort/filter/map lesson on a user model. Rows are `[name, points, isVerified]`. Decode to `struct UserModel`, keep verified users with at least 50 points, sort by points (desc) then name, and map to `"<name> (<points>)"`.

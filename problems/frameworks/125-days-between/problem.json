@@ -1,0 +1,40 @@
+{
+  "id": "days-between",
+  "title": "Days Between Dates & Age Calculation",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Dates & calendars",
+  "concepts": [
+    "fundamental-types",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Calendar.dateComponents(_:from:to:)",
+      "url": "https://developer.apple.com/documentation/foundation/calendar/datecomponents(_:from:to:)"
+    }
+  ],
+  "signature": {
+    "name": "dateFacts",
+    "params": [
+      {
+        "name": "birth",
+        "type": "String"
+      },
+      {
+        "name": "today",
+        "type": "String"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Ask the calendar for the difference in `.year` and `.day` components.",
+    "Extract `[.month, .day]` from the birth date and search forward with `nextDate(after:matching:matchingPolicy:)`.",
+    "Handle \"today is the birthday\" as 0 days."
+  ]
+}

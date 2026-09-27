@@ -1,0 +1,42 @@
+{
+  "id": "preference-key-reduce",
+  "title": "PreferenceKey: Reducing Child Values",
+  "track": "swiftui",
+  "difficulty": "hard",
+  "topic": "View composition",
+  "concepts": [
+    "protocols",
+    "higher-order-functions",
+    "static-properties"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "PreferenceKey",
+      "url": "https://developer.apple.com/documentation/swiftui/preferencekey"
+    }
+  ],
+  "signature": {
+    "name": "reducePreferences",
+    "params": [
+      {
+        "name": "heights",
+        "type": "[Double]"
+      },
+      {
+        "name": "titles",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A `PreferenceKey` has a `defaultValue` and a `reduce(value:nextValue:)`.",
+    "Max: `value = max(value, nextValue())`; titles: `value.append(contentsOf: nextValue())`.",
+    "Fold generically: start from `K.defaultValue` and call `K.reduce(value: &result) { v }`."
+  ]
+}

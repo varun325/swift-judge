@@ -1,0 +1,1 @@
+One optional `Identifiable` item makes impossible states unrepresentable (two sheets "open" at once) and carries the data the sheet needs. `.sheet(item: $activeSheet) { sheet in switch sheet { … } }` presents whatever is set; SwiftUI re-presents when the `id` changes.

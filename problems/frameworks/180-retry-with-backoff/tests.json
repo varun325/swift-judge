@@ -1,0 +1,31 @@
+[
+ {
+  "input": {
+   "failuresBeforeSuccess": 2,
+   "maxAttempts": 5
+  },
+  "expected": [
+   "ok",
+   "attempts 3",
+   "1,2"
+  ]
+ },
+ {
+  "input": {
+   "failuresBeforeSuccess": 9,
+   "maxAttempts": 3
+  },
+  "expected": [
+   "gave up",
+   "attempts 3",
+   "1,2"
+  ]
+ },
+ {
+  "input": {
+   "failuresBeforeSuccess": 0,
+   "maxAttempts": 1
+  },
+  "hidden": true
+ }
+]

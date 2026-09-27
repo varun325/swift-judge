@@ -1,0 +1,60 @@
+{
+  "id": "cs193p-custom-shape-fit",
+  "title": "L16: Custom Shapes & Fitting with Geometry",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L16 · Shapes, gestures, persistence",
+  "concepts": [
+    "protocols",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Shape",
+      "url": "https://developer.apple.com/documentation/swiftui/shape"
+    },
+    {
+      "title": "GeometryReader",
+      "url": "https://developer.apple.com/documentation/swiftui/geometryreader"
+    }
+  ],
+  "signature": {
+    "name": "pegLayout",
+    "params": [
+      {
+        "name": "width",
+        "type": "Double"
+      },
+      {
+        "name": "height",
+        "type": "Double"
+      },
+      {
+        "name": "count",
+        "type": "Int"
+      },
+      {
+        "name": "spacing",
+        "type": "Double"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "The diameter must fit both the height and the width left after spacing.",
+    "Place circle i at `x = i × (d + spacing)`, centred vertically.",
+    "An empty path means nothing to draw."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L16: Shapes, Gestures, Persistence",
+      "url": "https://www.youtube.com/watch?v=skECWIKpBVY",
+      "channel": "Stanford Online"
+    }
+  ]
+}

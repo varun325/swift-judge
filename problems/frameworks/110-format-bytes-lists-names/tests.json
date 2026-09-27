@@ -1,0 +1,42 @@
+[
+ {
+  "input": {
+   "files": [
+    "a.txt",
+    "b.txt",
+    "c.txt"
+   ],
+   "sizes": [
+    1500000,
+    250000
+   ],
+   "fullName": [
+    "Ada",
+    "Lovelace"
+   ]
+  }
+ },
+ {
+  "input": {
+   "files": [
+    "solo.md"
+   ],
+   "sizes": [
+    0
+   ],
+   "fullName": [
+    "Prince"
+   ]
+  }
+ },
+ {
+  "input": {
+   "files": [],
+   "sizes": [],
+   "fullName": [
+    "A",
+    "B"
+   ]
+  }
+ }
+]

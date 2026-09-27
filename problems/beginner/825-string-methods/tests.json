@@ -1,0 +1,30 @@
+[
+ {
+  "input": {
+   "text": "hello Swift world"
+  },
+  "expected": [
+   "text",
+   "Hello Swift world",
+   "true",
+   "hello_Swift_world",
+   "17"
+  ]
+ },
+ {
+  "input": {
+   "text": ""
+  }
+ },
+ {
+  "input": {
+   "text": "https://swift.org"
+  }
+ },
+ {
+  "input": {
+   "text": "é clair"
+  },
+  "hidden": true
+ }
+]

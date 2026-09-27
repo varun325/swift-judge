@@ -1,0 +1,35 @@
+{
+  "id": "rounding-doubles",
+  "title": "Rounding Doubles",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Numbers",
+  "concepts": [
+    "float-vs-double",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
+    }
+  ],
+  "signature": {
+    "name": "roundings",
+    "params": [
+      {
+        "name": "value",
+        "type": "Double",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9",
+  "hints": [
+    "`Double` has a `rounded(_:)` method with different rounding rules.",
+    "The rules are `.down`, `.up` and `.towardZero`; plain `rounded()` rounds halves away from zero.",
+    "Two decimals: `(value * 100).rounded() / 100`."
+  ]
+}

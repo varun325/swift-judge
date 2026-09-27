@@ -1,0 +1,1 @@
+For each run distance in km, return `"<km formatted> = <miles formatted> in <pace>"` where the pace assumes 5 min 30 s per km, formatted as a `Duration` (`.time(pattern: .hourMinuteSecond)`). Use `Measurement<UnitLength>` conversion and `.formatted(.measurement(width: .abbreviated, usage: .asProvided, numberFormatStyle: .number.precision(.fractionLength(2))).locale(en_US))`.

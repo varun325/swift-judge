@@ -1,0 +1,41 @@
+{
+  "id": "nil-coalescing-chains",
+  "title": "Defaults with ?? and Optional Arrays",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "nil-coalescing",
+    "optional-chaining"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Basic Operators — Nil-Coalescing Operator",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "profileSummary",
+    "params": [
+      {
+        "name": "nickname",
+        "type": "String?"
+      },
+      {
+        "name": "name",
+        "type": "String?"
+      },
+      {
+        "name": "tags",
+        "type": "[String]?"
+      }
+    ],
+    "returns": "String"
+  },
+  "hints": [
+    "`??` can chain several fallbacks.",
+    "`tags?.count ?? 0` handles a missing array; `tags?.first?.uppercased()` handles a missing or empty one.",
+    "`nickname ?? name ?? \"Anonymous\"`."
+  ]
+}

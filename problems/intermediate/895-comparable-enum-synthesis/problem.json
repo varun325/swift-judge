@@ -1,0 +1,35 @@
+{
+  "id": "comparable-enum-synthesis",
+  "title": "Synthesised Comparable Enums",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Enums",
+  "concepts": [
+    "comparable",
+    "enums",
+    "case-iterable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Comparable",
+      "url": "https://developer.apple.com/documentation/swift/comparable"
+    }
+  ],
+  "signature": {
+    "name": "triage",
+    "params": [
+      {
+        "name": "tickets",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Enum cases can be compared by declaration order.",
+    "With a `String` raw value you need a custom `<` — `allCases.firstIndex(of:)` gives each case's order.",
+    "Sort tuples with `($1.0, $0.1) < ($0.0, $1.1)` for priority desc, title asc."
+  ]
+}

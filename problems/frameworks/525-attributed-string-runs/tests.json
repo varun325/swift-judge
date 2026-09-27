@@ -1,0 +1,34 @@
+[
+ {
+  "input": {
+   "text": "Swift makes swift apps",
+   "terms": [
+    "swift"
+   ]
+  },
+  "expected": [
+   "Swift|bold",
+   " makes |plain",
+   "swift|bold",
+   " apps|plain"
+  ]
+ },
+ {
+  "input": {
+   "text": "",
+   "terms": [
+    "a"
+   ]
+  }
+ },
+ {
+  "input": {
+   "text": "no match",
+   "terms": [
+    "zzz",
+    ""
+   ]
+  },
+  "hidden": true
+ }
+]

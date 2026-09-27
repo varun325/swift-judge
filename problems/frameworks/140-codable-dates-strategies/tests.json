@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "json": "[{\"name\":\"launch\",\"at\":\"2024-05-01T10:00:00Z\"}]",
+   "strategy": "iso8601"
+  },
+  "expected": [
+   "launch 2024-05-01T10:00:00Z"
+  ]
+ },
+ {
+  "input": {
+   "json": "[{\"name\":\"a\",\"at\":0},{\"name\":\"b\",\"at\":86400}]",
+   "strategy": "secondsSince1970"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"name\":\"ms\",\"at\":1700000000000}]",
+   "strategy": "millisecondsSince1970"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"name\":\"uk\",\"at\":\"25/12/2024\"}]",
+   "strategy": "custom"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"name\":\"x\",\"at\":\"nope\"}]",
+   "strategy": "iso8601"
+  },
+  "hidden": true
+ }
+]

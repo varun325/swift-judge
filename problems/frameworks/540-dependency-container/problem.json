@@ -1,0 +1,37 @@
+{
+  "id": "dependency-container",
+  "title": "A Tiny Dependency Container",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Architecture",
+  "concepts": [
+    "dependency-injection",
+    "generics",
+    "type-casting"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ObjectIdentifier",
+      "url": "https://developer.apple.com/documentation/swift/objectidentifier"
+    }
+  ],
+  "signature": {
+    "name": "containerDemo",
+    "params": [
+      {
+        "name": "useMocks",
+        "type": "Bool"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Use `ObjectIdentifier(type)` as the dictionary key for each protocol type.",
+    "Store factories as `() -> Any` and cast back with `as? T` in `resolve`.",
+    "For singletons, cache the first instance per key."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "dedupe-sorted-inplace",
+  "title": "Remove Duplicates from Sorted Array (In Place)",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "inout",
+    "array-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "In-Out Parameters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions#In-Out-Parameters"
+    }
+  ],
+  "signature": {
+    "name": "dedupeSorted",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "inout": true,
+        "label": "_"
+      }
+    ],
+    "returns": "Void"
+  },
+  "hints": [
+    "In a sorted array, duplicates are adjacent.",
+    "Keep a write index; copy an element forward only when it differs from the last written one.",
+    "Trim the tail with `removeLast(nums.count - write)`."
+  ]
+}

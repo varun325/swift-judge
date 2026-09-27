@@ -1,0 +1,40 @@
+[
+ {
+  "input": {
+   "countLimit": 10,
+   "ops": [
+    "put a 1",
+    "put b 2",
+    "get a",
+    "remove a",
+    "get a",
+    "get b",
+    "clear",
+    "get b"
+   ]
+  },
+  "expected": [
+   "1",
+   "miss",
+   "2",
+   "miss"
+  ]
+ },
+ {
+  "input": {
+   "countLimit": 5,
+   "ops": []
+  }
+ },
+ {
+  "input": {
+   "countLimit": 50,
+   "ops": [
+    "get x",
+    "put x 9",
+    "get x"
+   ]
+  },
+  "hidden": true
+ }
+]

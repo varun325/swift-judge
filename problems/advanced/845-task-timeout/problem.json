@@ -1,0 +1,37 @@
+{
+  "id": "task-timeout",
+  "title": "Timeouts with a Throwing Task Group",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "task-group",
+    "async-await",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "withThrowingTaskGroup",
+      "url": "https://developer.apple.com/documentation/swift/withthrowingtaskgroup(of:returning:isolation:body:)"
+    }
+  ],
+  "signature": {
+    "name": "withDeadlines",
+    "params": [
+      {
+        "name": "jobs",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "timeLimitMs": 3000,
+  "hints": [
+    "Race two child tasks in one group: the real work and a sleep that throws.",
+    "`try await group.next()!` gives whichever finishes first; then cancel the rest.",
+    "`defer { group.cancelAll() }` before `return try await group.next()!`."
+  ]
+}

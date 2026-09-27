@@ -1,0 +1,26 @@
+[
+ {
+  "input": {
+   "ops": [
+    "add Dune|Herbert|5",
+    "add Emma|Austen|4",
+    "add Ulysses|Joyce|4",
+    "list",
+    "rate Emma 5",
+    "delete Ulysses",
+    "list"
+   ]
+  },
+  "expected": [
+   "Dune(5),Emma(4),Ulysses(4)",
+   "Dune(5),Emma(5)"
+  ]
+ },
+ {
+  "input": {
+   "ops": [
+    "list"
+   ]
+  }
+ }
+]

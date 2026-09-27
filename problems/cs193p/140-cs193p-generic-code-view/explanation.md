@@ -1,0 +1,1 @@
+Generics let one `CodeView` wrap different ancillary views while keeping full type information — each use is a **different type** (`CodeView<Text>`, `CodeView<Button<Text>>`). `@ViewBuilder` on the closure parameter lets callers write view-builder syntax; `@escaping` is needed because the closure is stored.

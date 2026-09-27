@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { dirname } from 'node:path'
+import { backfill } from '../shared/review'
 import type { Progress, ProgressEntry } from '../shared/types'
 
 interface Store {
@@ -21,6 +22,16 @@ export class ProgressStore {
         renameSync(file, `${file}.corrupt-${Date.now()}`)
       }
     }
+    // Problems solved before spaced repetition existed join the schedule from their solve date.
+    let migrated = false
+    for (const [id, entry] of Object.entries(this.data.problems)) {
+      const review = backfill(entry)
+      if (review) {
+        this.data.problems[id] = { ...entry, review }
+        migrated = true
+      }
+    }
+    if (migrated) this.save()
   }
 
   private save(): void {

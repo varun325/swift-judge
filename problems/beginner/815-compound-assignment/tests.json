@@ -1,0 +1,41 @@
+[
+ {
+  "input": {
+   "events": [
+    "+5",
+    "*2",
+    "!Over",
+    "/3"
+   ]
+  },
+  "expected": [
+   "Game Over",
+   "10"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "/0",
+    "-20",
+    "!A",
+    "!B"
+   ]
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "x",
+    "+",
+    "*-3"
+   ]
+  },
+  "hidden": true
+ }
+]

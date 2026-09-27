@@ -1,0 +1,21 @@
+[
+ {
+  "input": {
+   "names": [
+    "Earth",
+    "JUPITER",
+    "pluto"
+   ]
+  },
+  "expected": [
+   "earth #3 inner:true giant:false",
+   "jupiter #5 inner:false giant:true",
+   "unknown"
+  ]
+ },
+ {
+  "input": {
+   "names": []
+  }
+ }
+]

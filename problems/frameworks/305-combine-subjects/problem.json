@@ -1,0 +1,41 @@
+{
+  "id": "combine-subjects",
+  "title": "Subjects: Passthrough vs CurrentValue",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Combine",
+  "concepts": [
+    "closures",
+    "capturing-values"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "PassthroughSubject",
+      "url": "https://developer.apple.com/documentation/combine/passthroughsubject"
+    },
+    {
+      "title": "CurrentValueSubject",
+      "url": "https://developer.apple.com/documentation/combine/currentvaluesubject"
+    }
+  ],
+  "signature": {
+    "name": "subjectsDemo",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "One subject has no memory; the other remembers its latest value.",
+    "A late subscriber to a `CurrentValueSubject` receives the current value right away.",
+    "Store cancellables in a `Set<AnyCancellable>` so subscriptions stay alive."
+  ]
+}

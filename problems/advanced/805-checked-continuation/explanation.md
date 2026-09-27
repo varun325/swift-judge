@@ -1,0 +1,1 @@
+A continuation suspends the async function until the callback resumes it — **exactly once** (the *checked* variant traps if you resume twice or warns if you never do). `resume(with: result)` forwards a `Result` directly. This is how you modernise delegate/callback APIs.

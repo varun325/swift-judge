@@ -1,0 +1,47 @@
+[
+ {
+  "input": {
+   "seconds": 62,
+   "events": [
+    "tick",
+    "start",
+    "tick",
+    "tick",
+    "pause",
+    "tick",
+    "reset"
+   ]
+  },
+  "expected": [
+   "1:02",
+   "1:02",
+   "1:01",
+   "1:00",
+   "1:00",
+   "1:00",
+   "1:02"
+  ]
+ },
+ {
+  "input": {
+   "seconds": 2,
+   "events": [
+    "start",
+    "tick",
+    "tick",
+    "tick",
+    "start"
+   ]
+  }
+ },
+ {
+  "input": {
+   "seconds": 0,
+   "events": [
+    "start",
+    "tick"
+   ]
+  },
+  "hidden": true
+ }
+]

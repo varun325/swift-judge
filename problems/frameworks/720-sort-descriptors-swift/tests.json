@@ -1,0 +1,66 @@
+[
+ {
+  "input": {
+   "rows": [
+    [
+     "bo",
+     "90",
+     "SE"
+    ],
+    [
+     "Ana",
+     "90",
+     "BR"
+    ],
+    [
+     "cy",
+     "70",
+     "BR"
+    ],
+    [
+     "Émile",
+     "90",
+     "FR"
+    ]
+   ],
+   "keys": [
+    "score-",
+    "name"
+   ]
+  },
+  "expected": [
+   "Ana",
+   "bo",
+   "Émile",
+   "cy"
+  ]
+ },
+ {
+  "input": {
+   "rows": [
+    [
+     "a",
+     "1",
+     "X"
+    ],
+    [
+     "b",
+     "2",
+     "A"
+    ]
+   ],
+   "keys": [
+    "country"
+   ]
+  }
+ },
+ {
+  "input": {
+   "rows": [],
+   "keys": [
+    "score"
+   ]
+  },
+  "hidden": true
+ }
+]

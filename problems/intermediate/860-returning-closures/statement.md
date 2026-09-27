@@ -1,0 +1,1 @@
+Write `func makeDiscount(code: String) -> (Int) -> Int` returning a pricing closure: `"HALF"` halves, `"TENOFF"` subtracts 10 (min 0), `"FREE"` returns 0, anything else leaves the price. Apply `codes[i]` to `prices[i]` (zip).

@@ -1,0 +1,1 @@
+Text sizes run from `xSmall` to `accessibility5`; the `accessibility*` sizes are huge, so horizontal layouts must reflow vertically. Reading `@Environment(\.dynamicTypeSize)` and comparing with `>=` is how adaptive layouts respect user settings.

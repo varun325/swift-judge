@@ -1,0 +1,1 @@
+Swiftful's *LongPressGesture* hold-to-confirm button. Given how long the finger was held (seconds) and the required duration, return `"<percent>% <state>"` where percent is `min(held / required, 1)` as an integer and state is `"confirmed"` when complete, `"cancelled"` if released under 30%, else `"partial"` (the bar animates back).

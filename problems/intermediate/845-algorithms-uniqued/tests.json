@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "words": [
+    "a",
+    "bb",
+    "c",
+    "dd",
+    "eee"
+   ]
+  },
+  "expected": [
+   "a",
+   "bb",
+   "eee"
+  ]
+ },
+ {
+  "input": {
+   "words": []
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "same",
+    "sane",
+    "lane"
+   ]
+  },
+  "hidden": true
+ }
+]

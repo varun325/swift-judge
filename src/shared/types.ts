@@ -6,7 +6,7 @@ export type Mode = z.infer<typeof Mode>
 export const Difficulty = z.enum(['easy', 'medium', 'hard'])
 export type Difficulty = z.infer<typeof Difficulty>
 
-export const Track = z.enum(['beginner', 'intermediate', 'advanced'])
+export const Track = z.enum(['beginner', 'intermediate', 'advanced', 'swiftui', 'frameworks', 'cs193p'])
 export type Track = z.infer<typeof Track>
 
 /**
@@ -49,6 +49,34 @@ export const DocLink = z.object({
 })
 export type DocLink = z.infer<typeof DocLink>
 
+/** A YouTube lesson that teaches this problem's topic. */
+export const VideoLink = z.object({
+  title: z.string(),
+  url: z.string().url(),
+  channel: z.string(),
+  /** Seconds into the video where this problem's idea is taught (url carries the same &t=). */
+  start: z.number().int().nonnegative().optional(),
+  /** What is being said at `start` — a short transcript quote, so the jump can be trusted. */
+  moment: z.string().optional()
+})
+export type VideoLink = z.infer<typeof VideoLink>
+
+/** A written article or guide (Hacking with Swift, swift.org, Swift Evolution…). */
+export const ArticleLink = z.object({
+  title: z.string(),
+  url: z.string().url(),
+  source: z.string()
+})
+export type ArticleLink = z.infer<typeof ArticleLink>
+
+export const CompassKind = z.enum(['practice', 'js', 'java', 'contrast', 'edge'])
+export type CompassKind = z.infer<typeof CompassKind>
+export const CompassQuestion = z.object({ kind: CompassKind, q: z.string() })
+export type CompassQuestion = z.infer<typeof CompassQuestion>
+
+export const Platform = z.enum(['darwin', 'win32', 'linux'])
+export type Platform = z.infer<typeof Platform>
+
 export const ProblemMeta = z.object({
   id: z.string(),
   title: z.string(),
@@ -59,6 +87,22 @@ export const ProblemMeta = z.object({
   mode: Mode,
   notesRef: z.string().optional(),
   docs: z.array(DocLink).default([]),
+  videos: z.array(VideoLink).default([]),
+  articles: z.array(ArticleLink).default([]),
+  /**
+   * 80/20 for a Senior Staff iOS engineer: 'core' = the vital 20% of topics that carry ~80% of
+   * day-to-day impact; 'edge' = the long-tail 80% of topics that give the final 20% of mastery.
+   */
+  impact: z.enum(['core', 'edge']).optional(),
+  /** Markdown: how this concept maps to (or differs from) JavaScript/TypeScript. */
+  jsBridge: z.string().optional(),
+  /**
+   * Confusion Compass: questions meant to unsettle a shallow understanding. The learner answers
+   * them (in the Playground) rather than being told.
+   */
+  compass: z.array(CompassQuestion).optional(),
+  /** Omit for problems that run everywhere; SwiftUI / Apple-framework problems are ['darwin']. */
+  platforms: z.array(Platform).optional(),
   signature: Signature.optional(),
   compare: Compare.optional(),
   timeLimitMs: z.number().int().positive().default(2000),
@@ -100,6 +144,9 @@ export interface Problem {
 /** What the renderer sees in the problem list. */
 export interface ProblemSummary {
   id: string
+  /** False when this problem needs frameworks the current OS doesn't have (e.g. SwiftUI on Windows). */
+  supported: boolean
+  impact?: 'core' | 'edge'
   title: string
   track: Track
   difficulty: Difficulty
@@ -158,6 +205,21 @@ export interface ProgressEntry {
   revealed?: boolean
   /** How many hints (0–3) the learner has opened. */
   hintsRevealed?: number
+  /** Fibonacci spaced-repetition schedule; set on the first accepted submission. */
+  review?: ReviewState
+}
+
+export interface ReviewState {
+  /** Index into the Fibonacci interval ladder (1, 1, 2, 3, 5, 8 … days). */
+  step: number
+  /** Local day ("YYYY-MM-DD") the problem should be re-solved. */
+  due: string
+  /** Day of the last successful solve or review. */
+  last: string
+  /** Successful on-time reviews so far. */
+  reviews: number
+  /** A submission failed while this review was due; the next success drops a rung instead of climbing. */
+  lapsed?: boolean
 }
 export type Progress = Record<string, ProgressEntry>
 

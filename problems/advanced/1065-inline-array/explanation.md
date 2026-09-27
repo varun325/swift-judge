@@ -1,0 +1,1 @@
+`InlineArray`'s size is part of its **type** (`let count` generic parameter), so it lives directly inside its container — 4 × 8 = 32 bytes, no pointer, no refcount. Copies are real copies. Use it for small fixed buffers in performance-sensitive code; `Array` remains the default.

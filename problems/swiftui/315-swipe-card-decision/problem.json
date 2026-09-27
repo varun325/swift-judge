@@ -1,0 +1,42 @@
+{
+  "id": "swipe-card-decision",
+  "title": "DragGesture: Swipe Card Decisions",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Gestures",
+  "concepts": [
+    "enums",
+    "fundamental-types",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "DragGesture",
+      "url": "https://developer.apple.com/documentation/swiftui/draggesture"
+    },
+    {
+      "title": "DragGesture.Value",
+      "url": "https://developer.apple.com/documentation/swiftui/draggesture/value"
+    }
+  ],
+  "signature": {
+    "name": "swipeDecisions",
+    "params": [
+      {
+        "name": "drags",
+        "type": "[[Double]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Use both the actual translation and the predicted end translation (momentum).",
+    "Check the super-like rule first, then like/nope thresholds, else return.",
+    "Rotation: `min(max(x / 20, -15), 15)`."
+  ]
+}

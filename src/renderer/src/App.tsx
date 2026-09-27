@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { SwiftInfo } from '../../shared/api'
 import type { ProblemSummary, Progress } from '../../shared/types'
 import { BookView } from './components/BookView'
@@ -7,6 +7,8 @@ import { ProblemList } from './components/ProblemList'
 import { PlaygroundView } from './components/PlaygroundView'
 import { ProblemWorkspace } from './components/ProblemWorkspace'
 import { QuizView } from './components/QuizView'
+import { ReviewToday } from './components/ReviewToday'
+import { dayKey, dueReviews } from '../../shared/review'
 
 type Tab = 'problems' | 'playground' | 'concepts' | 'quiz' | 'book'
 
@@ -36,11 +38,14 @@ export function App(): React.JSX.Element {
   const [selected, setSelected] = useStored('selected', '')
   const [info, setInfo] = useState<SwiftInfo>()
   const [bookPath, setBookPath] = useState<string>()
+  const [reviewOpen, setReviewOpen] = useState(false)
+  const [loaded, setLoaded] = useState(false)
 
   const refresh = useCallback(async () => {
     const [list, prog] = await Promise.all([window.judge.listProblems(), window.judge.getProgress()])
     setProblems(list)
     setProgress(prog)
+    setLoaded(true)
   }, [])
 
   useEffect(() => {
@@ -55,6 +60,31 @@ export function App(): React.JSX.Element {
   useEffect(() => {
     if (!selected && problems.length) setSelected(problems[0].id)
   }, [problems, selected, setSelected])
+
+  const due = useMemo(() => {
+    const ids = new Set(problems.map((p) => p.id))
+    return dueReviews(progress, new Date()).filter((d) => ids.has(d.id))
+  }, [problems, progress])
+  const dueIds = useMemo(() => new Set(due.map((d) => d.id)), [due])
+
+  // On the first load each day, greet the learner with what to revisit.
+  useEffect(() => {
+    if (!loaded) return
+    const today = dayKey(new Date())
+    let shown: string | null = null
+    try {
+      shown = localStorage.getItem('review.shownOn')
+    } catch {
+      /* storage unavailable: just show it */
+    }
+    if (shown !== today && due.length > 0) setReviewOpen(true)
+    try {
+      localStorage.setItem('review.shownOn', today)
+    } catch {
+      /* per-viewer convenience only */
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded])
 
   const solved = problems.filter((p) => progress[p.id]?.solved).length
   const openProblem = (id: string): void => {
@@ -80,6 +110,13 @@ export function App(): React.JSX.Element {
           ))}
         </nav>
         <div className="status">
+          <button
+            className={`review-button ${due.length ? 'has-due' : ''}`}
+            onClick={() => setReviewOpen(true)}
+            title="Fibonacci spaced repetition: problems to re-solve today"
+          >
+            ↻ {due.length} to revisit
+          </button>
           <span className="solved-count">
             {solved}/{problems.length} solved
           </span>
@@ -99,7 +136,7 @@ export function App(): React.JSX.Element {
       <main className="body">
         {tab === 'problems' && (
           <>
-            <ProblemList problems={problems} progress={progress} selected={selected} onSelect={setSelected} />
+            <ProblemList problems={problems} progress={progress} dueIds={dueIds} selected={selected} onSelect={setSelected} />
             {selected && problems.some((p) => p.id === selected) ? (
               <ProblemWorkspace
                 key={selected}
@@ -107,6 +144,7 @@ export function App(): React.JSX.Element {
                 solved={Boolean(progress[selected]?.solved)}
                 draft={progress[selected]?.draft}
                 hintsRevealed={progress[selected]?.hintsRevealed ?? 0}
+                review={progress[selected]?.review}
                 onProgress={refresh}
                 onOpenBook={openBook}
                 onNext={() => {
@@ -125,6 +163,17 @@ export function App(): React.JSX.Element {
         {tab === 'quiz' && <QuizView />}
         {tab === 'book' && <BookView initialPath={bookPath} />}
       </main>
+      {reviewOpen && (
+        <ReviewToday
+          due={due}
+          problems={problems}
+          onClose={() => setReviewOpen(false)}
+          onOpen={(id) => {
+            setReviewOpen(false)
+            openProblem(id)
+          }}
+        />
+      )}
     </div>
   )
 }

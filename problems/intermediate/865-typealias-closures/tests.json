@@ -1,0 +1,23 @@
+[
+ {
+  "input": {
+   "inputs": [
+    "swift",
+    "",
+    "hi there",
+    "averyveryverylong"
+   ]
+  },
+  "expected": [
+   "ok",
+   "empty",
+   "has spaces",
+   "too long"
+  ]
+ },
+ {
+  "input": {
+   "inputs": []
+  }
+ }
+]

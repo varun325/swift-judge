@@ -1,0 +1,1 @@
+Write `func download(chunks: Int, failAt: Int) -> AsyncThrowingStream<Int, Error>` that yields percentage progress (`100 * i / chunks` for i in 1…chunks) and **throws** `DownloadError.interrupted` when `i == failAt` (use 0 for "never fails"). Consume it with `for try await`, recording each value, then `"done"` or `"error interrupted"`.

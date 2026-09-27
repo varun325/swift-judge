@@ -1,0 +1,1 @@
+`LocalizedError` lets errors carry user-facing text; `localizedDescription` uses your `errorDescription`. SwiftUI's `.alert(isPresented:error:)` reads these properties, which is how Swiftful wires errors into alerts.

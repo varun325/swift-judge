@@ -1,0 +1,39 @@
+[
+ {
+  "input": {
+   "items": [
+    "a",
+    "b",
+    "a"
+   ]
+  },
+  "expected": [
+   3,
+   2
+  ]
+ },
+ {
+  "input": {
+   "items": []
+  }
+ },
+ {
+  "input": {
+   "items": [
+    "x",
+    "x",
+    "x"
+   ]
+  }
+ },
+ {
+  "input": {
+   "items": [
+    "Swift",
+    "swift",
+    "SWIFT"
+   ]
+  },
+  "hidden": true
+ }
+]

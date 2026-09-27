@@ -1,0 +1,33 @@
+{
+  "id": "character-properties",
+  "title": "Character Properties: Password Strength",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
+    }
+  ],
+  "signature": {
+    "name": "strength",
+    "params": [
+      {
+        "name": "password",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "String"
+  },
+  "hints": [
+    "`Character` has properties such as `isUppercase`, `isLowercase`, `isNumber` and `isLetter`.",
+    "Build an array of five `Bool` checks with `contains(where:)` and count the `true`s.",
+    "`password.contains(where: \\.isUppercase)` — then switch on the count with ranges."
+  ]
+}

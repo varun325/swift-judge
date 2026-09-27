@@ -1,0 +1,45 @@
+{
+  "id": "list-diffing-identity",
+  "title": "Identity in Lists: Diffing by ID",
+  "track": "swiftui",
+  "difficulty": "hard",
+  "topic": "Lists",
+  "concepts": [
+    "equatable-hashable",
+    "protocols",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "CollectionDifference",
+      "url": "https://developer.apple.com/documentation/swift/collectiondifference"
+    },
+    {
+      "title": "Demystify SwiftUI (WWDC21)",
+      "url": "https://developer.apple.com/videos/play/wwdc2021/10022/"
+    }
+  ],
+  "signature": {
+    "name": "diffRows",
+    "params": [
+      {
+        "name": "old",
+        "type": "[[String]]"
+      },
+      {
+        "name": "new",
+        "type": "[[String]]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Diff the id arrays, not the rows themselves.",
+    "`difference(from:).inferringMoves()` pairs removals and insertions of the same id into moves.",
+    "Updates are ids present in both whose title changed."
+  ]
+}

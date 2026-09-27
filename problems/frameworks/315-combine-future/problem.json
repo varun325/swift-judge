@@ -1,0 +1,38 @@
+{
+  "id": "combine-future",
+  "title": "Future & Promise: One-Shot Async Values",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Combine",
+  "concepts": [
+    "closures",
+    "escaping",
+    "result-type"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Future",
+      "url": "https://developer.apple.com/documentation/combine/future"
+    }
+  ],
+  "signature": {
+    "name": "futures",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A `Future` is created with a closure that receives a `promise` callback.",
+    "Call `promise(.success(…))` or `promise(.failure(…))` exactly once.",
+    "`sink(receiveCompletion:receiveValue:)` sees both the value and the completion."
+  ]
+}

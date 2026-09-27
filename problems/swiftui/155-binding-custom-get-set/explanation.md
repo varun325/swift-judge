@@ -1,0 +1,1 @@
+A `Binding` is just a getter/setter pair referring to storage owned elsewhere — like a controlled input's `value` + `onChange` in React. Custom bindings let you validate, derive (`isMuted` from `volume`) or adapt types without extra state.

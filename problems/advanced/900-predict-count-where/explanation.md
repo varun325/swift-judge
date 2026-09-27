@@ -1,0 +1,1 @@
+`count(where:)` (Swift 6) replaces `filter(…).count` without allocating. `split(whereSeparator:)` on arrays returns `[ArraySlice]`. `sorted(using: KeyPathComparator)` (Foundation) sorts by a key path and is stable.

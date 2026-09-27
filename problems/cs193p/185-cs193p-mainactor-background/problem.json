@@ -1,0 +1,53 @@
+{
+  "id": "cs193p-mainactor-background",
+  "title": "L15: Heavy Work Off the Main Actor",
+  "track": "cs193p",
+  "difficulty": "hard",
+  "topic": "L13–L15 · SwiftData & threads",
+  "concepts": [
+    "actors",
+    "async-await",
+    "sendable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "MainActor",
+      "url": "https://developer.apple.com/documentation/swift/mainactor"
+    },
+    {
+      "title": "Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
+    }
+  ],
+  "signature": {
+    "name": "solverDemo",
+    "params": [
+      {
+        "name": "master",
+        "type": "[String]"
+      },
+      {
+        "name": "choices",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Keep UI state on `@MainActor`; mark the heavy async function `@concurrent` (or nonisolated). (`Thread.isMainThread` can't be used directly in async code — wrap it in a sync function.)",
+    "Await the solver from the model and update `statuses` afterwards.",
+    "Record `Thread.isMainThread` inside the solver to prove where it ran."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L15: Multithreading",
+      "url": "https://www.youtube.com/watch?v=F0nefFT2Uik",
+      "channel": "Stanford Online"
+    }
+  ]
+}

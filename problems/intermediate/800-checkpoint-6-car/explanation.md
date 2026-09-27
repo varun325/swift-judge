@@ -1,0 +1,1 @@
+Constants model facts that never change; `private(set)` exposes `gear` for reading while forcing every change through `changeGear`, which enforces the invariant. Because the struct mutates itself, the method is `mutating` and the car must be a `var`.

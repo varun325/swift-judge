@@ -1,0 +1,1 @@
+`struct Todo: Identifiable, Equatable` with `id: Int`, `title`, `isDone`. Keep a `[Todo]` and apply ops: `add <id> <title>` (ignore duplicate ids), `toggle <id>`, `rename <id> <title>`, `delete <id>`. Use `firstIndex(where: { $0.id == id })` and mutate **in place**. Return `"<id>:<title>:<done|todo>"` for the final list.

@@ -1,0 +1,44 @@
+{
+  "id": "paging-target",
+  "title": "Paging ScrollView: Choosing the Target Page",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Lists",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "scrollTargetBehavior(_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/scrolltargetbehavior(_:)"
+    }
+  ],
+  "signature": {
+    "name": "targetPages",
+    "params": [
+      {
+        "name": "gestures",
+        "type": "[[Double]]",
+        "label": "_"
+      },
+      {
+        "name": "pageWidth",
+        "type": "Double"
+      },
+      {
+        "name": "pageCount",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Convert the offset to a fractional page position first.",
+    "Fast flicks move one page in the flick direction; slow releases snap to the nearest page.",
+    "Clamp the result to `0...(pageCount - 1)`."
+  ]
+}

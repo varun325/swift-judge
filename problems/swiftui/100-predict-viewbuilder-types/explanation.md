@@ -1,0 +1,1 @@
+Two children become `TupleView<(Text, Text)>`; an `if` without `else` becomes `Optional<Text>`; `if/else` becomes `_ConditionalContent<Text, Image>`. `some View` hides these types from you, but SwiftUI uses them to diff **structurally** — which is why `AnyView` (which erases them) can hurt performance and animations.

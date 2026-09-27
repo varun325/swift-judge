@@ -1,0 +1,44 @@
+{
+  "id": "closure-multiple-params",
+  "title": "Closures with Multiple Parameters",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "closures",
+    "map-filter-reduce",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Closures — Closure Expressions",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "combine",
+    "params": [
+      {
+        "name": "a",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "op",
+        "type": "String"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "Operators such as `+` and functions such as `max` can be passed as closures.",
+    "`zip(a, b).map(f)` feeds each `(x, y)` pair into a two-argument function.",
+    "For power: `(0..<exponent).reduce(1) { acc, _ in acc * base }`."
+  ]
+}

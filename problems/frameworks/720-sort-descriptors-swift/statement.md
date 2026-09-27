@@ -1,0 +1,1 @@
+SwiftUI's `Table` and SwiftData use `SortDescriptor`s — they work on plain Swift types too (`array.sorted(using:)`). Players are `[name, score, country]`. Build `[SortDescriptor<Player>]` from keys like `score-` (descending) and `name` / `country` (ascending, `.localizedStandard` comparator for strings), apply them in order, and return the names.

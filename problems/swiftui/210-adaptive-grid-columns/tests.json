@@ -1,0 +1,20 @@
+[
+ {
+  "input": {
+   "containerWidths": [
+    375,
+    1024,
+    80
+   ],
+   "minimum": 100,
+   "spacing": 10
+  }
+ },
+ {
+  "input": {
+   "containerWidths": [],
+   "minimum": 50,
+   "spacing": 0
+  }
+ }
+]

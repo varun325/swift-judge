@@ -1,0 +1,1 @@
+Small protocols composed with `&` let each consumer ask for exactly what it needs (interface segregation), and swapping the data source requires no change to `ScreenModel` — the basis of dependency injection and mocking.

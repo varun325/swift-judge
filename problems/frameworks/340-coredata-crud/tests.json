@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "ops": [
+    "add milk 1",
+    "add taxes 3",
+    "add bike 3",
+    "list",
+    "rename milk oat-milk",
+    "delete bike",
+    "list"
+   ]
+  },
+  "expected": [
+   "bike(3),taxes(3),milk(1)",
+   "taxes(3),oat-milk(1)"
+  ]
+ },
+ {
+  "input": {
+   "ops": []
+  }
+ },
+ {
+  "input": {
+   "ops": [
+    "delete ghost",
+    "list"
+   ]
+  },
+  "hidden": true
+ }
+]

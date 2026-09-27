@@ -1,0 +1,38 @@
+{
+  "id": "coordinator-router",
+  "title": "Coordinator / Router for Navigation Logic",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Architecture",
+  "concepts": [
+    "enums",
+    "delegation",
+    "dependency-injection"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NavigationStack",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationstack"
+    }
+  ],
+  "signature": {
+    "name": "appFlow",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Model screens as an enum; the router owns the stack array and the sheet.",
+    "Each event mutates the stack/sheet according to one rule.",
+    "Guard `checkout` on `sheet == .cart`."
+  ]
+}

@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Use after consume",
+  "pattern": "used after consume|consumed"
+ }
+]

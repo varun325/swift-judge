@@ -1,0 +1,22 @@
+[
+ {
+  "input": {
+   "ids": [
+    "r1",
+    "r2"
+   ]
+  },
+  "expected": [
+   "none:outside",
+   "r1:cache",
+   "r1:db",
+   "r2:cache",
+   "r2:db"
+  ]
+ },
+ {
+  "input": {
+   "ids": []
+  }
+ }
+]

@@ -1,0 +1,42 @@
+{
+  "id": "observable-tracking",
+  "title": "@Observable: Fine-Grained Tracking",
+  "track": "swiftui",
+  "difficulty": "hard",
+  "topic": "State & data flow",
+  "concepts": [
+    "property-wrappers",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Observation",
+      "url": "https://developer.apple.com/documentation/observation"
+    },
+    {
+      "title": "Observable()",
+      "url": "https://developer.apple.com/documentation/observation/observable()"
+    }
+  ],
+  "signature": {
+    "name": "trackingDemo",
+    "params": [
+      {
+        "name": "changes",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Only properties read inside the tracking closure are observed.",
+    "Read just `model.items.count`; keep an `armed` flag and re-install only after `onChange` fires.",
+    "Changing `coupon` or an `@ObservationIgnored` property doesn't fire."
+  ]
+}

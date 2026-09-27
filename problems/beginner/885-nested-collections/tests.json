@@ -1,0 +1,49 @@
+[
+ {
+  "input": {
+   "enrolments": [
+    [
+     "math",
+     "ana"
+    ],
+    [
+     "art",
+     "bo"
+    ],
+    [
+     "math",
+     "cy"
+    ],
+    [
+     "math",
+     "ana"
+    ]
+   ]
+  },
+  "expected": [
+   "art: bo",
+   "math: ana, cy",
+   "largest: math"
+  ]
+ },
+ {
+  "input": {
+   "enrolments": []
+  }
+ },
+ {
+  "input": {
+   "enrolments": [
+    [
+     "b",
+     "x"
+    ],
+    [
+     "a",
+     "y"
+    ]
+   ]
+  },
+  "hidden": true
+ }
+]

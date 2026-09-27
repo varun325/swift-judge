@@ -1,0 +1,1 @@
+Accessibility labels describe **meaning**, not visuals: combine a row's pieces with `.accessibilityElement(children: .combine)` or give it one `.accessibilityLabel`. Pluralisation and number reading matter — `Text` with `inflect: true` markdown can pluralise automatically in localised apps.

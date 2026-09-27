@@ -1,0 +1,57 @@
+[
+ {
+  "input": {
+   "events": [
+    "a 1",
+    "a 2",
+    "b x",
+    "a 3",
+    "b y"
+   ],
+   "mode": "combineLatest"
+  },
+  "expected": [
+   "2-x",
+   "3-x",
+   "3-y"
+  ]
+ },
+ {
+  "input": {
+   "events": [
+    "a 1",
+    "a 2",
+    "b x",
+    "a 3",
+    "b y"
+   ],
+   "mode": "zip"
+  },
+  "expected": [
+   "1-x",
+   "2-y"
+  ]
+ },
+ {
+  "input": {
+   "events": [
+    "a 1",
+    "b x",
+    "a 2"
+   ],
+   "mode": "merge"
+  },
+  "expected": [
+   "a1",
+   "bx",
+   "a2"
+  ]
+ },
+ {
+  "input": {
+   "events": [],
+   "mode": "zip"
+  },
+  "hidden": true
+ }
+]

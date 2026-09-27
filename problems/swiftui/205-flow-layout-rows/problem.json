@@ -1,0 +1,44 @@
+{
+  "id": "flow-layout-rows",
+  "title": "Flow Layout: Wrapping Tags into Rows",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Layout",
+  "concepts": [
+    "array-basics",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Layout",
+      "url": "https://developer.apple.com/documentation/swiftui/layout"
+    }
+  ],
+  "signature": {
+    "name": "flowRows",
+    "params": [
+      {
+        "name": "widths",
+        "type": "[Double]"
+      },
+      {
+        "name": "containerWidth",
+        "type": "Double"
+      },
+      {
+        "name": "spacing",
+        "type": "Double"
+      }
+    ],
+    "returns": "[[Int]]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Walk the widths, tracking the current row's used width.",
+    "Adding a view to a non-empty row costs `spacing + width`; if that overflows, start a new row.",
+    "An empty row always accepts the next view, even if it's too wide."
+  ]
+}

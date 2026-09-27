@@ -1,0 +1,1 @@
+`consume` gives you explicit control over lifetimes — useful to avoid an accidental copy of a large buffer, or to prove a value is no longer used. The compiler enforces it: *'data' used after consume*.

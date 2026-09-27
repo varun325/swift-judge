@@ -1,0 +1,50 @@
+{
+  "id": "cs193p-swiftdata-model",
+  "title": "L13: Converting the Model to SwiftData",
+  "track": "cs193p",
+  "difficulty": "hard",
+  "topic": "L13–L15 · SwiftData & threads",
+  "concepts": [
+    "codable",
+    "class-definition",
+    "property-wrappers"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Model()",
+      "url": "https://developer.apple.com/documentation/swiftdata/model()"
+    },
+    {
+      "title": "Transient()",
+      "url": "https://developer.apple.com/documentation/swiftdata/transient()"
+    }
+  ],
+  "signature": {
+    "name": "persistGames",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Mark UI-only state `@Transient`; persisted arrays of strings are fine.",
+    "Append attempts to the relationship and set `lastAttempt`.",
+    "Read back through a new `ModelContext(container)` to see what was actually stored."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L13: SwiftData",
+      "url": "https://www.youtube.com/watch?v=k9wjAdgUY0A",
+      "channel": "Stanford Online"
+    }
+  ]
+}

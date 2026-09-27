@@ -1,0 +1,41 @@
+{
+  "id": "scene-phase-autosave",
+  "title": "scenePhase: Save When Backgrounded",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "State & data flow",
+  "concepts": [
+    "enums",
+    "switch-statement"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ScenePhase",
+      "url": "https://developer.apple.com/documentation/swiftui/scenephase"
+    }
+  ],
+  "signature": {
+    "name": "lifecycleSaves",
+    "params": [
+      {
+        "name": "phases",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "edits",
+        "type": "[Int]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "React to *transitions*, not to the phase value alone.",
+    "Save pending edits on the way into `background`; refresh when coming back from it.",
+    "Skip unknown or unchanged phases."
+  ]
+}

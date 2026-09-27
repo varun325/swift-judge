@@ -1,0 +1,42 @@
+{
+  "id": "coredata-background-context",
+  "title": "Background Contexts & Merging Changes",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Core Data",
+  "concepts": [
+    "async-await",
+    "sendable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSManagedObjectContext.perform(_:)",
+      "url": "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/perform(_:)"
+    },
+    {
+      "title": "Using Core Data in the background",
+      "url": "https://developer.apple.com/documentation/coredata/using-core-data-in-the-background"
+    }
+  ],
+  "signature": {
+    "name": "importInBackground",
+    "params": [
+      {
+        "name": "titles",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Do the work inside `await background.perform { … }` and return object IDs.",
+    "Save the background context; the view context merges automatically when configured.",
+    "On the main context, re-fetch with `existingObject(with: id)`."
+  ]
+}

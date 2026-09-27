@@ -1,0 +1,1 @@
+`protocol Scorer { associatedtype Item; func score(_ item: Item) -> Int }` plus an extension method `func total<S: Sequence>(_ items: S) -> Int where S.Element == Item`. Conform `LengthScorer` (String → count) and `ParityScorer` (Int → 2 if even else 1). Return `[ParityScorer().total(ints), LengthScorer().total(words)]`.

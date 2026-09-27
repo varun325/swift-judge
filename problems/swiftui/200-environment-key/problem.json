@@ -1,0 +1,43 @@
+{
+  "id": "environment-key",
+  "title": "Custom Environment Values",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "State & data flow",
+  "concepts": [
+    "protocols",
+    "static-properties",
+    "extensions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "EnvironmentValues",
+      "url": "https://developer.apple.com/documentation/swiftui/environmentvalues"
+    },
+    {
+      "title": "Entry()",
+      "url": "https://developer.apple.com/documentation/swiftui/entry()"
+    }
+  ],
+  "signature": {
+    "name": "environmentDemo",
+    "params": [
+      {
+        "name": "overrides",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`@Entry` inside `extension EnvironmentValues` declares a key and its default in one line.",
+    "Read and write the new properties on an `EnvironmentValues()` value.",
+    "`env.accentName = p[1]` applies an override."
+  ]
+}

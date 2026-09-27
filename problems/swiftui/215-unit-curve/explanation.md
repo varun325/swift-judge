@@ -1,0 +1,1 @@
+A timing curve maps elapsed time (0…1) to progress (0…1). `easeOut` starts fast (ahead early), `easeIn` starts slow — why `easeOut` feels responsive for things entering the screen. Springs, SwiftUI's default since iOS 17, aren't unit curves: they depend on velocity and can overshoot.

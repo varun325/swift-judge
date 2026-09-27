@@ -1,0 +1,24 @@
+[
+ {
+  "input": {
+   "s": "🇮🇳ab"
+  },
+  "expected": [
+   "ba🇮🇳",
+   "ba🇮🇳",
+   "ba🇮🇳",
+   "agree"
+  ]
+ },
+ {
+  "input": {
+   "s": ""
+  }
+ },
+ {
+  "input": {
+   "s": "swift"
+  },
+  "hidden": true
+ }
+]

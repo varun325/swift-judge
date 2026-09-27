@@ -1,0 +1,32 @@
+[
+ {
+  "input": {
+   "tickets": [
+    "low typo",
+    "critical outage",
+    "high login",
+    "critical backup"
+   ]
+  },
+  "expected": [
+   "[CRITICAL] backup",
+   "[CRITICAL] outage",
+   "[HIGH] login",
+   "[LOW] typo"
+  ]
+ },
+ {
+  "input": {
+   "tickets": []
+  }
+ },
+ {
+  "input": {
+   "tickets": [
+    "urgent x",
+    "medium y"
+   ]
+  },
+  "hidden": true
+ }
+]

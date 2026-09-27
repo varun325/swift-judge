@@ -1,0 +1,1 @@
+`#fileID` is `Module/File.swift`, `#function` the enclosing declaration's name, `#line`/`#column` the source position. Used as **default arguments**, they capture the *caller's* location — which is how `assert`, `fatalError` and logging frameworks report where they were called. At top level, `#function` is the file-scope name.

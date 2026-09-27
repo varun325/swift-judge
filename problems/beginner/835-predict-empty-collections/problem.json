@@ -1,0 +1,23 @@
+{
+  "id": "predict-empty-collections",
+  "title": "Predict: Creating Empty Collections",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Collections",
+  "concepts": [
+    "collection-types",
+    "type-inference"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "hints": [
+    "Each line creates an empty collection with a different spelling.",
+    "A `Set` ignores the second `insert(7)`.",
+    "Line 1: `[\"ana\": 3] [\"bo\"] [7] [1, 2]`."
+  ]
+}

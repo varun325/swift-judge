@@ -1,0 +1,1 @@
+Meetings are `[startMinute, durationMinutes]` on one day (minutes after midnight UTC). Build `DateInterval`s and report every overlapping pair `"i-j <minutes>"` (indices, overlap length in minutes, via `intersection(with:)`). Back-to-back meetings (end == start) don't conflict.

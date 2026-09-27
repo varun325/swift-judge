@@ -1,0 +1,3 @@
+From Swiftful's *How to use Protocols in Swift*: a view model shouldn't care where its text comes from. Define `protocol ButtonTextProtocol { var buttonText: String { get } }` and `protocol ButtonPressedProtocol { func buttonPressed() -> String }`, then `typealias ButtonDataSourceProtocol = ButtonTextProtocol & ButtonPressedProtocol`.
+
+ Implement `DefaultDataSource` (`"Protocols are awesome!"`, pressed → `"default pressed"`) and `AlternativeDataSource` (`"Protocols are lame."`, pressed → `"alternative pressed"`). `struct ScreenModel` takes an `any ButtonDataSourceProtocol`. For each source name (`default`/`alternative`) return `"<text> | <pressed>"`.

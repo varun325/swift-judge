@@ -1,0 +1,1 @@
+`dateComponents(_:from:to:)` measures elapsed calendar units correctly (years aren't 365 days). `nextDate(after:matching:)` searches forward for the next matching month/day and a matching policy decides what happens on Feb 29 in non-leap years.

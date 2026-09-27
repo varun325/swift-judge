@@ -1,0 +1,1 @@
+Snapping relative to the lower bound matters when the range doesn't start at a multiple of the step (e.g. 5…50 in steps of 10 → 5, 15, 25…). Binding a control to a model value that already obeys the rule avoids jumps.

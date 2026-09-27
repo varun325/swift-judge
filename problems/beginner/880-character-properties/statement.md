@@ -1,0 +1,1 @@
+Score a password: +1 each for length ≥ 8, containing an uppercase letter, a lowercase letter, a digit, and a character that's none of those (symbol). 0–2 → `"weak"`, 3–4 → `"medium"`, 5 → `"strong"`. Use `Character` properties (`isUppercase`, `isNumber`…) and `contains(where:)`.

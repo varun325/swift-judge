@@ -1,0 +1,58 @@
+[
+ {
+  "input": {
+   "items": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "edits": [
+    "move 0 2"
+   ]
+  },
+  "expected": [
+   "b",
+   "a",
+   "c",
+   "d"
+  ]
+ },
+ {
+  "input": {
+   "items": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "edits": [
+    "del 0 2",
+    "move 2 0"
+   ]
+  }
+ },
+ {
+  "input": {
+   "items": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "edits": [
+    "move 0 2 4"
+   ]
+  }
+ },
+ {
+  "input": {
+   "items": [],
+   "edits": [
+    "del 0"
+   ]
+  },
+  "hidden": true
+ }
+]

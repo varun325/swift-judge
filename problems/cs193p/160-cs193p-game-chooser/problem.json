@@ -1,0 +1,49 @@
+{
+  "id": "cs193p-game-chooser",
+  "title": "L10: Game Chooser with Custom Identity",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L10–L12 · Complex UIs",
+  "concepts": [
+    "equatable-hashable",
+    "protocols",
+    "protocols"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "List",
+      "url": "https://developer.apple.com/documentation/swiftui/list"
+    },
+    {
+      "title": "Hashable",
+      "url": "https://developer.apple.com/documentation/swift/hashable"
+    }
+  ],
+  "signature": {
+    "name": "chooser",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Store the selection as the game's `id`, not its index or name.",
+    "Implement `==` and `hash(into:)` using only `id`.",
+    "Renaming mutates the element in place, so the selection still points to it."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L10: Building Complex UIs",
+      "url": "https://www.youtube.com/watch?v=NnJ91M9PRYo",
+      "channel": "Stanford Online"
+    }
+  ]
+}

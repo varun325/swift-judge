@@ -1,0 +1,48 @@
+{
+  "id": "infinite-scroll",
+  "title": "Infinite Scroll: When to Load the Next Page",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Product engineering",
+  "concepts": [
+    "optionals",
+    "guard"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "onAppear(perform:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/onappear(perform:)"
+    },
+    {
+      "title": "LazyVStack",
+      "url": "https://developer.apple.com/documentation/swiftui/lazyvstack"
+    }
+  ],
+  "signature": {
+    "name": "feedPaging",
+    "params": [
+      {
+        "name": "pageSize",
+        "type": "Int"
+      },
+      {
+        "name": "totalAvailable",
+        "type": "Int"
+      },
+      {
+        "name": "visibleIndices",
+        "type": "[Int]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Trigger when the appearing index is within the last 3 loaded rows.",
+    "Guard on `hasMore` and `!isLoading`.",
+    "Each load adds up to `pageSize` rows, capped at the total."
+  ]
+}

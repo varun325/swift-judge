@@ -1,0 +1,45 @@
+{
+  "id": "universal-link-matching",
+  "title": "Universal Links: AASA Path Matching",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Product engineering",
+  "concepts": [
+    "codable",
+    "regex",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Supporting universal links in your app",
+      "url": "https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app"
+    },
+    {
+      "title": "Supporting associated domains",
+      "url": "https://developer.apple.com/documentation/xcode/supporting-associated-domains"
+    }
+  ],
+  "signature": {
+    "name": "matchLinks",
+    "params": [
+      {
+        "name": "aasa",
+        "type": "String"
+      },
+      {
+        "name": "urls",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Decode the AASA; the path key is literally `\"/\"` — map it with `CodingKeys`.",
+    "Glob-match `*` and `?` against the URL path (memoised recursion or DP).",
+    "First matching component decides; `exclude: true` means web."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "diag-existential-equatable",
+  "title": "Diagnostic: == on 'any Equatable'",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Opaque & existential types",
+  "concepts": [
+    "existential-any",
+    "equatable-hashable",
+    "generics"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Opaque and Boxed Protocol Types",
+      "book": "LanguageGuide/OpaqueTypes"
+    }
+  ],
+  "hints": [
+    "`==` requires both sides to be the *same* concrete type.",
+    "Box two values as `any Equatable` and compare them.",
+    "`print(a == b)` with both declared `any Equatable`."
+  ]
+}

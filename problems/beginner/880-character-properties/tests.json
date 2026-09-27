@@ -1,0 +1,30 @@
+[
+ {
+  "input": {
+   "password": "abc"
+  },
+  "expected": "weak"
+ },
+ {
+  "input": {
+   "password": "Passw0rd!"
+  },
+  "expected": "strong"
+ },
+ {
+  "input": {
+   "password": "password123"
+  }
+ },
+ {
+  "input": {
+   "password": ""
+  }
+ },
+ {
+  "input": {
+   "password": "ÅBCdefgh"
+  },
+  "hidden": true
+ }
+]

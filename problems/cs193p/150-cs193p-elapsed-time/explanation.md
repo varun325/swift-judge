@@ -1,0 +1,1 @@
+Store a **start time**, not a ticking counter: elapsed time is computed from dates, so it's correct even if the app is suspended and nothing ran. SwiftUI's `Text(startDate, style: .timer)` renders a live timer from a date without re-running `body` every second.

@@ -1,0 +1,1 @@
+Between an actor's `await` points other calls can run (reentrancy), so state checked before an `await` may be stale after it. Registering the in-flight `Task` **synchronously** (before any `await`) closes the gap: later callers find it and await the same result. Downloads = number of distinct keys.

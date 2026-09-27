@@ -1,0 +1,1 @@
+Structs copy (value semantics); classes and actors are reference types, so `a1` and `a2` are the **same** actor. The actor differs from the class by **isolation**: every access from outside is `await`ed and serialised, which makes it safe to share across threads.

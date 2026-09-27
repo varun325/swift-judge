@@ -1,0 +1,19 @@
+[
+ {
+  "input": {
+   "overrides": [
+    "accent=red",
+    "corner=12"
+   ]
+  },
+  "expected": [
+   "blue 8",
+   "red 12"
+  ]
+ },
+ {
+  "input": {
+   "overrides": []
+  }
+ }
+]

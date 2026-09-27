@@ -1,0 +1,1 @@
+`task.cancel()` only sets a flag; `Task.checkCancellation()` throws `CancellationError` when it's set, which ends the work at a safe point. Cancelling before the task starts means the very first check throws. (With `items == 0` there's no check, so the task completes normally.)

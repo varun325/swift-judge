@@ -1,0 +1,35 @@
+{
+  "id": "checkpoint-5-lucky-numbers",
+  "title": "Checkpoint 5: Lucky Numbers Pipeline",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "map-filter-reduce",
+    "closures",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Closures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "luckyNumbers",
+    "params": [
+      {
+        "name": "numbers",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Three higher-order functions, one after another.",
+    "`filter` keeps odd numbers, `sorted()` orders them, `map` builds strings.",
+    "`numbers.filter { !$0.isMultiple(of: 2) }.sorted().map { \"\\($0) is a lucky number\" }`."
+  ]
+}

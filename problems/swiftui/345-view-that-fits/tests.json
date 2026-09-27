@@ -1,0 +1,44 @@
+[
+ {
+  "input": {
+   "idealWidths": [
+    300,
+    180,
+    60
+   ],
+   "available": [
+    400,
+    200,
+    100,
+    10
+   ]
+  },
+  "expected": [
+   0,
+   1,
+   2,
+   2
+  ]
+ },
+ {
+  "input": {
+   "idealWidths": [
+    50
+   ],
+   "available": []
+  }
+ },
+ {
+  "input": {
+   "idealWidths": [
+    100,
+    50
+   ],
+   "available": [
+    100,
+    49.9
+   ]
+  },
+  "hidden": true
+ }
+]

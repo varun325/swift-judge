@@ -1,0 +1,1 @@
+An **HMAC** proves a message came from someone with the key and wasn't altered; **AES-GCM** encrypts *and* authenticates, so any flipped byte makes `open` fail instead of returning garbage. Derive keys with HKDF (never use a raw password), compare MACs with the constant-time helper, and store real keys in the Keychain.

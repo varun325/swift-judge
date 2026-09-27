@@ -11,6 +11,7 @@ import { judge } from './judge/judge'
 import { findSwiftc, setCacheRoot, swiftVersion } from './judge/toolchain'
 import { Playground, runPlayground } from './playground'
 import { ProgressStore } from './progress'
+import { afterSubmit } from '../shared/review'
 
 // Lets e2e runs use a throwaway profile instead of the learner's real progress.
 if (process.env.SWIFT_JUDGE_USER_DATA) app.setPath('userData', process.env.SWIFT_JUDGE_USER_DATA)
@@ -107,10 +108,13 @@ function registerIpc(): void {
     const p = requireProblem(id)
     const result = await judge(p, code, true)
     const prev = progress.get(id)
+    const accepted = result.verdict === 'accepted'
+    const review = afterSubmit(prev, accepted, new Date())
     progress.update(id, {
       attempts: prev.attempts + 1,
       draft: code,
-      ...(result.verdict === 'accepted' && !prev.solved ? { solved: true, solvedAt: new Date().toISOString() } : {})
+      ...(accepted && !prev.solved ? { solved: true, solvedAt: new Date().toISOString() } : {}),
+      ...(review ? { review } : {})
     })
     return result
   })
@@ -134,6 +138,8 @@ function registerIpc(): void {
     return {
       notes: section ? { title: `§${section.number}. ${section.title}`, markdown: section.markdown } : undefined,
       docs: p.meta.docs,
+      videos: p.meta.videos,
+      articles: p.meta.articles,
       concepts: concepts.filter((c) => p.meta.concepts.includes(c.id))
     }
   })
@@ -171,8 +177,18 @@ function watchProblems(): void {
   const onChange = (): void => {
     clearTimeout(timer)
     timer = setTimeout(() => {
-      reloadContent()
-      win?.webContents.send('problemsChanged')
+      try {
+        reloadContent()
+      } catch (e) {
+        // Mid-write (e.g. a batch of problems being regenerated): keep the current bank; the
+        // next change event reloads again.
+        console.error('reload failed, keeping previous content:', e)
+        return
+      }
+      // The window may have been closed (the app keeps running on macOS) — only notify live ones.
+      for (const w of BrowserWindow.getAllWindows()) {
+        if (!w.isDestroyed() && !w.webContents.isDestroyed()) w.webContents.send('problemsChanged')
+      }
     }, 300)
   }
   watch(problemsRoot, { recursive: true }, onChange)
@@ -192,6 +208,9 @@ function createWindow(): void {
       sandbox: false,
       contextIsolation: true
     }
+  })
+  win.on('closed', () => {
+    win = undefined
   })
   win.webContents.setWindowOpenHandler(({ url }) => {
     if (/^https:\/\//.test(url)) void shell.openExternal(url)

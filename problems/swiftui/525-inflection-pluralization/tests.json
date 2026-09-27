@@ -1,0 +1,23 @@
+[
+ {
+  "input": {
+   "counts": [
+    0,
+    1,
+    2
+   ]
+  },
+  "expected": [
+   "0 items in cart",
+   "1 item in cart",
+   "2 items in cart"
+  ]
+ },
+ {
+  "input": {
+   "counts": [
+    1000
+   ]
+  }
+ }
+]

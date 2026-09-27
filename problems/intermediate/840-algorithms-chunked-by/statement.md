@@ -1,0 +1,1 @@
+Paul's *Swift Algorithms* video shows `chunked(on:)`, which groups **consecutive** elements with the same key. Implement `func chunked<K: Equatable>(on key: (Element) -> K) -> [[Element]]` on `Sequence` and use it to group words by their first letter (lowercased) in input order.

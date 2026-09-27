@@ -1,0 +1,41 @@
+{
+  "id": "diffable-snapshot",
+  "title": "Diffable Data Sources: Snapshots",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "UIKit & AppKit",
+  "concepts": [
+    "equatable-hashable",
+    "collection-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSDiffableDataSourceSnapshot",
+      "url": "https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot"
+    },
+    {
+      "title": "Updating collection views using diffable data sources",
+      "url": "https://developer.apple.com/documentation/uikit/updating-collection-views-using-diffable-data-sources"
+    }
+  ],
+  "signature": {
+    "name": "snapshotOps",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Build the full desired state with `appendSections` and `appendItems(_:toSection:)`.",
+    "Item identifiers must be unique — skip ones already present.",
+    "`moveItem(_:afterItem:)`, `deleteItems`, `reloadItems`, then read `itemIdentifiers(inSection:)`."
+  ]
+}

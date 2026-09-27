@@ -1,0 +1,28 @@
+[
+ {
+  "input": {
+   "requests": [
+    "1",
+    "1",
+    "2",
+    "1!",
+    "0",
+    "1"
+   ]
+  },
+  "expected": [
+   "article 1 v1",
+   "article 1 v1",
+   "article 2 v2",
+   "article 1 v3",
+   "err",
+   "article 1 v3",
+   "remote calls 4"
+  ]
+ },
+ {
+  "input": {
+   "requests": []
+  }
+ }
+]

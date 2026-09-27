@@ -1,0 +1,23 @@
+{
+  "id": "builtin-macros",
+  "title": "Built-in Expression Macros",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Swift evolution",
+  "concepts": [
+    "compiler-directives",
+    "main-attribute"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Expressions — Macro-Expansion Expression",
+      "book": "ReferenceManual/Expressions"
+    }
+  ],
+  "hints": [
+    "Default arguments like `#function` are evaluated at the **call site**.",
+    "`#fileID` is `Solution/main.swift` here.",
+    "Inside `start()`, `#function` is `start()`; the line is where `logged` is called."
+  ]
+}

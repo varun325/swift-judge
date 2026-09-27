@@ -1,0 +1,41 @@
+{
+  "id": "accessibility-labels",
+  "title": "Accessibility Labels from Data",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Accessibility",
+  "concepts": [
+    "string-interpolation",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Accessibility for SwiftUI",
+      "url": "https://developer.apple.com/documentation/swiftui/view-accessibility"
+    },
+    {
+      "title": "accessibilityLabel(_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/accessibilitylabel(_:)-1d7jv"
+    }
+  ],
+  "signature": {
+    "name": "a11yLabels",
+    "params": [
+      {
+        "name": "rows",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Describe meaning, not symbols: stars → \"rated 4.2 out of 5\".",
+    "Split cents into dollars and cents, handling singular and zero cents.",
+    "Append \", bestseller\" only when flagged."
+  ]
+}

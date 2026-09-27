@@ -1,0 +1,1 @@
+Swiftful's *Futures and Promises in Combine*. Write `func validate(_ n: Int) -> Future<Int, ValidationError>` that fulfils its promise **synchronously** with `.success(n * 2)` for positive numbers, else `.failure(.notPositive)`. Subscribe with `sink(receiveCompletion:receiveValue:)` and log `"value <v>"`, then `"finished"` or `"failed notPositive"`.

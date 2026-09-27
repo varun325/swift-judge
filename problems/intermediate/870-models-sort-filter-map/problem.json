@@ -1,0 +1,35 @@
+{
+  "id": "models-sort-filter-map",
+  "title": "Sort, Filter & Map on Models",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "map-filter-reduce",
+    "sort-custom",
+    "key-paths"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Closures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "topVerified",
+    "params": [
+      {
+        "name": "rows",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Decode rows into a struct before doing anything else.",
+    "`filter` on two conditions, then `sorted` with a tuple comparison.",
+    "`.sorted { ($1.points, $0.name) < ($0.points, $1.name) }`."
+  ]
+}

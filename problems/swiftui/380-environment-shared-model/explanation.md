@@ -1,0 +1,1 @@
+Because the model is a **class**, every view that receives it shares one instance — writes from one screen are seen by all, and `@Observable` re-renders just the readers. Structs holding the reference (like SwiftUI views) stay cheap to recreate. In a view you'd write `@Environment(Cart.self) private var cart`.

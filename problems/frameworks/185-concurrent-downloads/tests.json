@@ -1,0 +1,35 @@
+[
+ {
+  "input": {
+   "ids": [
+    1,
+    2,
+    3
+   ],
+   "failing": [
+    2
+   ]
+  },
+  "expected": [
+   "1: user1",
+   "2: failed",
+   "3: user3"
+  ]
+ },
+ {
+  "input": {
+   "ids": [],
+   "failing": []
+  }
+ },
+ {
+  "input": {
+   "ids": [
+    5,
+    5
+   ],
+   "failing": []
+  },
+  "hidden": true
+ }
+]

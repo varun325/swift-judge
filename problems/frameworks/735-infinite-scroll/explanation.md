@@ -1,0 +1,1 @@
+Prefetching a few rows before the end hides loading latency; the `isLoading` guard stops the same trigger from firing several loads, and `hasMore` stops requests once the server is exhausted. In real code the load is async and `isLoading` stays true until it finishes.

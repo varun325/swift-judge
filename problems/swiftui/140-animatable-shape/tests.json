@@ -1,0 +1,38 @@
+[
+ {
+  "input": {
+   "from": 0,
+   "to": 20,
+   "steps": 4
+  },
+  "expected": [
+   0,
+   5,
+   10,
+   15,
+   20
+  ]
+ },
+ {
+  "input": {
+   "from": 10,
+   "to": 10,
+   "steps": 2
+  }
+ },
+ {
+  "input": {
+   "from": 30,
+   "to": 0,
+   "steps": 3
+  }
+ },
+ {
+  "input": {
+   "from": 0,
+   "to": 1,
+   "steps": 0
+  },
+  "hidden": true
+ }
+]

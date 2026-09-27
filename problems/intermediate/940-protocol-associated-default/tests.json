@@ -1,0 +1,26 @@
+[
+ {
+  "input": {
+   "ints": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "words": [
+    "hi",
+    "swift"
+   ]
+  },
+  "expected": [
+   6,
+   7
+  ]
+ },
+ {
+  "input": {
+   "ints": [],
+   "words": []
+  }
+ }
+]

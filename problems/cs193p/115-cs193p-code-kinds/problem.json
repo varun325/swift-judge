@@ -1,0 +1,53 @@
+{
+  "id": "cs193p-code-kinds",
+  "title": "L3–L4: Code Kinds with Associated Data",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L3–L5 · Model & type system",
+  "concepts": [
+    "associated-values",
+    "mutating",
+    "typealias"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/"
+    }
+  ],
+  "signature": {
+    "name": "codeBoard",
+    "params": [
+      {
+        "name": "master",
+        "type": "[String]"
+      },
+      {
+        "name": "attempts",
+        "type": "[[String]]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Give each `Kind` case exactly the data it needs as associated values.",
+    "`if case .master(let hidden) = kind` reads the payload.",
+    "Reveal the master by assigning `masterCode.kind = .master(isHidden: false)` once an attempt is all-exact."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L3: Model and UI & Swift Type System",
+      "url": "https://www.youtube.com/watch?v=B42CuI0RO7Y",
+      "channel": "Stanford Online"
+    },
+    {
+      "title": "CS193p 2025 · L4: CodeBreaker's Model",
+      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94",
+      "channel": "Stanford Online"
+    }
+  ]
+}

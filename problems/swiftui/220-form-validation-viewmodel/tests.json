@@ -1,0 +1,26 @@
+[
+ {
+  "input": {
+   "edits": [
+    "email=a@b.co",
+    "password=secret12",
+    "confirm=secret12",
+    "agree"
+   ]
+  }
+ },
+ {
+  "input": {
+   "edits": []
+  }
+ },
+ {
+  "input": {
+   "edits": [
+    "agree",
+    "email=bad"
+   ]
+  },
+  "hidden": true
+ }
+]

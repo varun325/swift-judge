@@ -1,0 +1,39 @@
+{
+  "id": "inline-array",
+  "title": "InlineArray: Fixed-Size, No Heap",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Swift evolution",
+  "concepts": [
+    "memory-layout",
+    "generics",
+    "value-semantics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "InlineArray",
+      "url": "https://developer.apple.com/documentation/swift/inlinearray"
+    },
+    {
+      "title": "SE-0453: InlineArray",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0453-vector.md"
+    }
+  ],
+  "signature": {
+    "name": "inlineDemo",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "The count is part of the type: `InlineArray<4, Int>`.",
+    "Initialise with `InlineArray<4, Int>(repeating: 0)` and index like an array.",
+    "`MemoryLayout<InlineArray<4, Int>>.size` is the full inline size."
+  ]
+}

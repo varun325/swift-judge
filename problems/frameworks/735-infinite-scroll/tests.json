@@ -1,0 +1,39 @@
+[
+ {
+  "input": {
+   "pageSize": 10,
+   "totalAvailable": 25,
+   "visibleIndices": [
+    0,
+    5,
+    6,
+    7,
+    8,
+    15,
+    16,
+    17,
+    22,
+    24
+   ]
+  }
+ },
+ {
+  "input": {
+   "pageSize": 5,
+   "totalAvailable": 3,
+   "visibleIndices": [
+    0,
+    1,
+    2
+   ]
+  }
+ },
+ {
+  "input": {
+   "pageSize": 2,
+   "totalAvailable": 10,
+   "visibleIndices": []
+  },
+  "hidden": true
+ }
+]

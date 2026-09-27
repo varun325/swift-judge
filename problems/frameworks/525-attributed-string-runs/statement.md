@@ -1,0 +1,1 @@
+Paul's *Special Effects with SwiftUI Text* uses `AttributedString`. Highlight every case-insensitive occurrence of each term by setting `.inlinePresentationIntent = .stronglyEmphasized` on its range (`ranges(of:options:)`-style search via `text.range(of:options:range:)` in a loop). Then walk `attributed.runs` and return each run as `"<text>|<bold|plain>"`.

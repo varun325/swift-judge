@@ -1,0 +1,1 @@
+`ScrollViewReader` scrolls by **identity**, not offset, so the target id must match the `id` used in `ForEach`. Computing the target in the model keeps the view simple: `withAnimation { proxy.scrollTo(target, anchor: .bottom) }`. (iOS 17's `scrollPosition(id:)` binds the same idea two-way.)

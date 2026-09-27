@@ -1,0 +1,1 @@
+Swift's `Duration` (used by `Task.sleep(for:)` and clocks) stores seconds + attoseconds. For each millisecond value build `Duration.milliseconds(n)`, add `.seconds(1)`, and format as `"<m>m <s>s <ms>ms"` using `components.seconds` / `components.attoseconds` (1 ms = 10¹⁵ attoseconds).

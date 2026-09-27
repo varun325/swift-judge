@@ -1,0 +1,34 @@
+{
+  "id": "compound-assignment",
+  "title": "Compound Assignment Operators",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Operators",
+  "concepts": [
+    "fundamental-types",
+    "string-interpolation"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Basic Operators — Compound Assignment Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "scoreboard",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`a += b` is shorthand for `a = a + b` — and it works for strings too.",
+    "Take the first character as the operator and parse the rest as an `Int`.",
+    "`switch op { case \"+\": score += n … case \"/\": if n != 0 { score /= n } }`."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "appstorage-onboarding",
+  "title": "@AppStorage: Persisted Onboarding",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "State & data flow",
+  "concepts": [
+    "property-wrappers",
+    "enums"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "AppStorage",
+      "url": "https://developer.apple.com/documentation/swiftui/appstorage"
+    },
+    {
+      "title": "UserDefaults",
+      "url": "https://developer.apple.com/documentation/foundation/userdefaults"
+    }
+  ],
+  "signature": {
+    "name": "onboardingRuns",
+    "params": [
+      {
+        "name": "sessions",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`@AppStorage` is backed by `UserDefaults`; pass a suite store to isolate it.",
+    "Create fresh `AppStorage` wrappers per launch — they read what the previous launch saved.",
+    "Write through `wrappedValue`; clear the suite with `removePersistentDomain(forName:)`."
+  ]
+}

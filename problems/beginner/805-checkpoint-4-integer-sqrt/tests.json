@@ -1,0 +1,46 @@
+[
+ {
+  "input": {
+   "n": 25
+  },
+  "expected": 5
+ },
+ {
+  "input": {
+   "n": 26
+  },
+  "expected": {
+   "$error": "noRoot"
+  }
+ },
+ {
+  "input": {
+   "n": 0
+  },
+  "expected": {
+   "$error": "outOfBounds"
+  }
+ },
+ {
+  "input": {
+   "n": 1
+  }
+ },
+ {
+  "input": {
+   "n": 10000
+  }
+ },
+ {
+  "input": {
+   "n": 10001
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "n": 9801
+  },
+  "hidden": true
+ }
+]

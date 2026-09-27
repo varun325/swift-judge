@@ -1,0 +1,25 @@
+{
+  "id": "predict-serial-queue-order",
+  "title": "Predict: Serial Queue Ordering",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Concurrency (GCD)",
+  "concepts": [
+    "dispatch-sync-async"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "DispatchQueue",
+      "url": "https://developer.apple.com/documentation/dispatch/dispatchqueue"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A serial queue runs blocks one at a time in the order they were enqueued.",
+    "`sync` doesn't return until its block — and everything queued before it — has run.",
+    "The empty `sync {}` waits for `E`."
+  ]
+}

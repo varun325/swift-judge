@@ -1,0 +1,38 @@
+{
+  "id": "magnification-clamp",
+  "title": "MagnifyGesture: Zoom with Limits",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Gestures",
+  "concepts": [
+    "fundamental-types",
+    "mutating"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "MagnifyGesture",
+      "url": "https://developer.apple.com/documentation/swiftui/magnifygesture"
+    }
+  ],
+  "signature": {
+    "name": "zoomSession",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A gesture's magnification is relative to where *this* gesture started.",
+    "Live value = clamp(lastScale × m); commit it on end.",
+    "Clamp with `min(max(v, 1), 4)`."
+  ]
+}

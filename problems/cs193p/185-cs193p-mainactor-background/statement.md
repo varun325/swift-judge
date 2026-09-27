@@ -1,0 +1,3 @@
+L15: the UI (and the view model) live on the **main actor**; long work must not block it. A `@MainActor @Observable final class HintModel` has `status` and `func findHint()`, which awaits a **nonisolated async** solver that brute-forces how many possible codes (all length-`master.count` sequences over `choices`) would produce the same score as a fixed probe guess (the first choice repeated). The solver runs off the main actor; the model updates `status` on the main actor.
+
+ Return the statuses the model went through (`idle`, `thinking`, `<n> candidates`) plus `"main thread during solve: <Bool>"`, recorded by the solver via `Thread.isMainThread`.

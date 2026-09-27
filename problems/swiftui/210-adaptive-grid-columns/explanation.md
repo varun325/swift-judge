@@ -1,0 +1,1 @@
+Adaptive grids trade a fixed column count for a minimum size, so the same grid shows 2 columns on an iPhone and 6 on an iPad. Knowing the formula helps you choose `minimum` values that avoid awkward leftover space.

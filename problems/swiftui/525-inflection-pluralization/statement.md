@@ -1,0 +1,1 @@
+Hand-written `count == 1 ? "item" : "items"` breaks in other languages. Foundation's **automatic grammar agreement** inflects for you: `AttributedString(localized: "^[\(n) item](inflect: true) in cart")`. Return the inflected phrase for each count.

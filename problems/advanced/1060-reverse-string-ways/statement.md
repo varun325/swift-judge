@@ -1,0 +1,1 @@
+Return the reversed string computed three ways, which must all agree: (1) `String(s.reversed())`, (2) a manual loop prepending characters, (3) recursion on `dropFirst()`. Then append `"agree"` or `"differ"`. Use `Character`s so `"🇮🇳ab"` reverses to `"ba🇮🇳"`, not broken flag halves.

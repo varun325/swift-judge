@@ -1,0 +1,1 @@
+The naive "for each guess peg, is it anywhere in the master?" over-counts duplicates (guess `RRRR` against `RGBY` isn't 1 exact + 3 inexact). Removing exact pairs first and then taking `min(count in guess, count in master)` per colour is the correct rule. `zip` + `count(where:)` expresses the exact matches in one line.

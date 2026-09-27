@@ -1,0 +1,41 @@
+{
+  "id": "inflection-pluralization",
+  "title": "Localization: Automatic Grammar Agreement",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Accessibility",
+  "concepts": [
+    "string-interpolation",
+    "compiler-directives"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "AttributedString init(localized:)",
+      "url": "https://developer.apple.com/documentation/foundation/attributedstring/init(localized:options:table:bundle:locale:comment:)"
+    },
+    {
+      "title": "Localization",
+      "url": "https://developer.apple.com/documentation/xcode/localization"
+    }
+  ],
+  "signature": {
+    "name": "cartBadges",
+    "params": [
+      {
+        "name": "counts",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Let Foundation inflect: `^[\\(n) item](inflect: true)`.",
+    "Create it with `AttributedString(localized:)`.",
+    "Convert to a plain string with `String(attributed.characters)`."
+  ]
+}

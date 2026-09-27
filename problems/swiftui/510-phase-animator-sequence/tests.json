@@ -1,0 +1,37 @@
+[
+ {
+  "input": {
+   "triggers": 1,
+   "durations": [
+    0.2,
+    0.5,
+    0.3,
+    0.4
+   ]
+  },
+  "expected": [
+   "0.0s idle scale 1.0 rot 0",
+   "0.2s lift scale 1.2 rot 0",
+   "0.7s spin scale 1.2 rot 180",
+   "1.0s drop scale 1.0 rot 360",
+   "1.4s idle scale 1.0 rot 0"
+  ]
+ },
+ {
+  "input": {
+   "triggers": 0,
+   "durations": [
+    1
+   ]
+  }
+ },
+ {
+  "input": {
+   "triggers": 2,
+   "durations": [
+    0.5
+   ]
+  },
+  "hidden": true
+ }
+]

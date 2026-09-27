@@ -1,0 +1,1 @@
+Offline-first means the **local** state updates immediately and a durable queue replays changes later, in order. Coalescing (create + delete = nothing) saves requests and avoids errors; conflicts (renaming something that no longer exists) need an explicit policy — here, drop and log. `NWPathMonitor` tells you when connectivity returns.

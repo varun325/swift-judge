@@ -1,0 +1,45 @@
+[
+ {
+  "input": {
+   "states": [
+    [
+     "compact",
+     "-",
+     "automatic"
+    ],
+    [
+     "compact",
+     "Undersea",
+     "automatic"
+    ],
+    [
+     "regular",
+     "-",
+     "all"
+    ],
+    [
+     "regular",
+     "Mastermind",
+     "detailOnly"
+    ],
+    [
+     "regular",
+     "-",
+     "detailOnly"
+    ]
+   ]
+  },
+  "expected": [
+   "list",
+   "detail(Undersea)",
+   "list+detail(Choose a game)",
+   "detail(Mastermind)",
+   "list+detail(Choose a game)"
+  ]
+ },
+ {
+  "input": {
+   "states": []
+  }
+ }
+]

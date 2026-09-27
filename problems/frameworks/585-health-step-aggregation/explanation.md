@@ -1,0 +1,1 @@
+"Which day did this happen?" depends on the time zone: a 23:30 UTC walk is *tomorrow* in Kolkata. `startOfDay(for:)` in the user's calendar is the right bucket key; filling gaps with zero keeps charts honest.

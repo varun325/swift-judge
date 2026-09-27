@@ -1,0 +1,1 @@
+Contrast is computed on **perceived luminance**, not raw RGB — green contributes far more than blue. Check both light and dark appearances of every dynamic color pair (asset-catalog colors switch per `colorScheme`), and respect `accessibilityShowButtonShapes`/increased-contrast settings where relevant.

@@ -1,0 +1,1 @@
+`.atomic` writes to a temporary file and renames it into place, so readers see either the old or the new file — never half of one. Treating a corrupt or missing file as "empty" keeps the app launching; real apps also migrate old `version`s. For large or relational data, prefer SwiftData/Core Data.

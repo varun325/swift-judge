@@ -1,0 +1,40 @@
+{
+  "id": "corelocation-distances",
+  "title": "CoreLocation: Distances & Nearest Place",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Maps & location",
+  "concepts": [
+    "sort-custom",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "CLLocation",
+      "url": "https://developer.apple.com/documentation/corelocation/cllocation"
+    }
+  ],
+  "signature": {
+    "name": "nearest",
+    "params": [
+      {
+        "name": "from",
+        "type": "[Double]"
+      },
+      {
+        "name": "places",
+        "type": "[[String]]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Wrap coordinates in `CLLocation` and ask for `distance(from:)`.",
+    "Skip invalid coordinates with a range check, then sort by distance.",
+    "Format kilometres to one decimal place."
+  ]
+}

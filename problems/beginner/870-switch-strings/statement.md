@@ -1,0 +1,1 @@
+Map each forecast to advice with a `switch` on the lowercased string: `"sun"` → `"sunscreen"`, `"rain"` or `"drizzle"` → `"umbrella"`, `"snow"` → `"boots"`, anything starting with `"storm"` → `"stay in"`, else `"enjoy"`.

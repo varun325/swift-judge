@@ -1,0 +1,21 @@
+[
+ {
+  "input": {
+   "behaviours": [
+    "ok",
+    "fail",
+    "empty"
+   ]
+  },
+  "expected": [
+   "idle → loading → loaded(3)",
+   "idle → loading → failed(offline)",
+   "idle → loading → loaded(0)"
+  ]
+ },
+ {
+  "input": {
+   "behaviours": []
+  }
+ }
+]

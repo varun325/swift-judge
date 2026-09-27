@@ -1,0 +1,1 @@
+A Combine pipeline is a chain of operators between a publisher and a subscriber; values flow through as they're emitted. `scan` is `reduce` that emits every intermediate result. `removeDuplicates` only drops **adjacent** repeats. Sequence publishers emit synchronously, so the array is filled before `sink` returns.

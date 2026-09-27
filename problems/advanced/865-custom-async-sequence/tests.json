@@ -1,0 +1,38 @@
+[
+ {
+  "input": {
+   "start": 3,
+   "keepEvensOnly": false
+  },
+  "expected": [
+   3,
+   2,
+   1,
+   0
+  ]
+ },
+ {
+  "input": {
+   "start": 5,
+   "keepEvensOnly": true
+  },
+  "expected": [
+   4,
+   2,
+   0
+  ]
+ },
+ {
+  "input": {
+   "start": -1,
+   "keepEvensOnly": false
+  }
+ },
+ {
+  "input": {
+   "start": 0,
+   "keepEvensOnly": true
+  },
+  "hidden": true
+ }
+]

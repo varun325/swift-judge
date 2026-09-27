@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "ids": [
+    "m1",
+    "m2",
+    "hello-3",
+    "m4"
+   ],
+   "commands": [
+    "bottom",
+    "top",
+    "unread m2",
+    "unread m4",
+    "search HELLO",
+    "search zzz"
+   ]
+  },
+  "expected": [
+   "m4 @bottom",
+   "m1 @top",
+   "hello-3 @top",
+   "m4 @top",
+   "hello-3 @top",
+   "none"
+  ]
+ },
+ {
+  "input": {
+   "ids": [],
+   "commands": [
+    "bottom"
+   ]
+  }
+ }
+]

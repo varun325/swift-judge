@@ -1,0 +1,1 @@
+Without `animatableData`, SwiftUI can only cross-fade a shape; with it, SwiftUI interpolates your property frame by frame and calls `path(in:)` for each value — so the geometry itself animates. For two values use `AnimatablePair`.

@@ -1,0 +1,34 @@
+{
+  "id": "ordered-dedupe",
+  "title": "Remove Duplicates, Keep Order",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Sets",
+  "concepts": [
+    "set-vs-array",
+    "equatable-hashable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types — Sets",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "dedupe",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "A set is great for \"have I seen this?\" — but it has no order.",
+    "Walk the array; keep an element only the first time you insert it into the set.",
+    "`values.filter { seen.insert($0).inserted }`."
+  ]
+}

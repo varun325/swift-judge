@@ -1,0 +1,46 @@
+{
+  "id": "coredata-predicates",
+  "title": "NSPredicate Formats",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Core Data",
+  "concepts": [
+    "fundamental-types",
+    "string-equality"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSPredicate",
+      "url": "https://developer.apple.com/documentation/foundation/nspredicate"
+    },
+    {
+      "title": "Predicate Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html"
+    }
+  ],
+  "signature": {
+    "name": "queryNotes",
+    "params": [
+      {
+        "name": "notes",
+        "type": "[[String]]",
+        "label": "_"
+      },
+      {
+        "name": "queries",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Predicates use a mini-language: `CONTAINS[cd]`, `BETWEEN`, `IN`, `BEGINSWITH`.",
+    "Always substitute values with `%@`, passing arrays for `BETWEEN` and `IN`.",
+    "`NSPredicate(format: \"title CONTAINS[cd] %@ OR body CONTAINS[cd] %@\", text, text)`."
+  ]
+}

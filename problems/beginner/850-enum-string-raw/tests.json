@@ -1,0 +1,31 @@
+[
+ {
+  "input": {
+   "codes": [
+    "L",
+    "XL",
+    "Q"
+   ]
+  },
+  "expected": [
+   "large=L",
+   "extraLarge=XL",
+   "invalid"
+  ]
+ },
+ {
+  "input": {
+   "codes": []
+  }
+ },
+ {
+  "input": {
+   "codes": [
+    "s",
+    "S",
+    "M"
+   ]
+  },
+  "hidden": true
+ }
+]

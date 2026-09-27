@@ -1,0 +1,1 @@
+`UserDefaults` is a small key–value store for preferences. A generic `Codable` wrapper gives type safety and defaults in one place (SwiftUI's `@AppStorage` is the view-aware version). Injecting a suite keeps tests isolated from real settings.

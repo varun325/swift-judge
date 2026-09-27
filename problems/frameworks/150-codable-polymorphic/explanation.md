@@ -1,0 +1,1 @@
+Heterogeneous JSON maps naturally onto an enum with associated values: decode the discriminator, then switch to decode the right payload. Compared with class hierarchies, the compiler forces every consumer to handle every case.

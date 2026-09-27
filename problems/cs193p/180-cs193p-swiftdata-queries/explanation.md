@@ -1,0 +1,1 @@
+`#Predicate` can traverse relationships (`attempts.contains { … }`, `attempts.count`) and SwiftData translates it into a SQL join. It **can't** call computed properties or arbitrary functions — they don't exist in the database — so store what you need to query (e.g. `isComplete`) as a real property.

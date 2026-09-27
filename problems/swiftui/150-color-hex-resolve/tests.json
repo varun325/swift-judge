@@ -1,0 +1,32 @@
+[
+ {
+  "input": {
+   "hexes": [
+    "#FF8000",
+    "00ff00",
+    "#12345",
+    "zzzzzz"
+   ]
+  },
+  "expected": [
+   "255,128,0",
+   "0,255,0",
+   "invalid",
+   "invalid"
+  ]
+ },
+ {
+  "input": {
+   "hexes": []
+  }
+ },
+ {
+  "input": {
+   "hexes": [
+    "#000000",
+    "#FFFFFF"
+   ]
+  },
+  "hidden": true
+ }
+]

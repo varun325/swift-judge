@@ -1,0 +1,54 @@
+{
+  "id": "animatable-pair",
+  "title": "AnimatablePair & VectorArithmetic",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Animation",
+  "concepts": [
+    "protocols",
+    "generics",
+    "operator-overloading"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "AnimatablePair",
+      "url": "https://developer.apple.com/documentation/swiftui/animatablepair"
+    },
+    {
+      "title": "VectorArithmetic",
+      "url": "https://developer.apple.com/documentation/swiftui/vectorarithmetic"
+    }
+  ],
+  "signature": {
+    "name": "interpolatePairs",
+    "params": [
+      {
+        "name": "start",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "end",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "fractions",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[Double]]",
+    "async": true
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Interpolation is `a + (b - a) × t`, written with `VectorArithmetic` operations.",
+    "`scale(by:)` is mutating, so copy the delta into a `var` first.",
+    "`var delta = b - a; delta.scale(by: t); return a + delta`."
+  ]
+}

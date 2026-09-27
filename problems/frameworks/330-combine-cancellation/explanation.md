@@ -1,0 +1,1 @@
+`AnyCancellable` cancels its subscription in `deinit`, so discarding it (`_ = …sink`) ends the subscription immediately — the classic "my sink never fires" bug. Storing it in a `Set<AnyCancellable>` owned by the view model ties it to the owner's lifetime.

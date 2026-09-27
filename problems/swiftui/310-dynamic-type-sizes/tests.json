@@ -1,0 +1,24 @@
+[
+ {
+  "input": {
+   "sizes": [
+    "large",
+    "xxxLarge",
+    "accessibility2",
+    "huge"
+   ]
+  },
+  "expected": [
+   "large: HStack",
+   "xxxLarge: HStack",
+   "accessibility2: VStack",
+   "huge: unknown",
+   "accessibility sizes: 5"
+  ]
+ },
+ {
+  "input": {
+   "sizes": []
+  }
+ }
+]

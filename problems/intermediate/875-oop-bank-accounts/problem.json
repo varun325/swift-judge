@@ -1,0 +1,35 @@
+{
+  "id": "oop-bank-accounts",
+  "title": "Object-Oriented Swift: Accounts",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "inheritance",
+    "encapsulation",
+    "struct-vs-class"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Inheritance",
+      "book": "LanguageGuide/Inheritance"
+    }
+  ],
+  "signature": {
+    "name": "bank",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Classes are reference types — the dictionary stores references you can mutate through.",
+    "`SavingsAccount` overrides `withdraw` and calls `super.withdraw` after its own check.",
+    "`guard balance - amount >= 100 else { return false }; return super.withdraw(amount)`."
+  ]
+}

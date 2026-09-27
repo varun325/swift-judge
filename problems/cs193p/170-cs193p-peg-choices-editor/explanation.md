@@ -1,0 +1,1 @@
+`@Bindable var game: GameConfig` gives `$game.name` bindings into an `@Observable` class. Editing a **draft copy** makes Cancel trivial and keeps half-edited data out of the model. The same sheet serves create and edit by passing an optional original.

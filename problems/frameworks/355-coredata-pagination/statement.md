@@ -1,0 +1,1 @@
+Insert `total` notes titled `n001`, `n002`, …, then page through them sorted by title using `fetchLimit` = pageSize and `fetchOffset` = page × pageSize. Return one line per page `"page <k>: <first>..<last>"`, starting with `"count <total>"` from `count(for:)`. Stop at the first empty page.

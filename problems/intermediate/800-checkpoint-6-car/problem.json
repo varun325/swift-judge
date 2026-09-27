@@ -1,0 +1,38 @@
+{
+  "id": "checkpoint-6-car",
+  "title": "Checkpoint 6: A Car Struct",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "mutating",
+    "private-set",
+    "encapsulation"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ],
+  "signature": {
+    "name": "driveCar",
+    "params": [
+      {
+        "name": "maxGears",
+        "type": "Int"
+      },
+      {
+        "name": "changes",
+        "type": "[Int]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Which properties should never change after creation, and which must be protected from outside writes?",
+    "Use `let` for model/seats/maxGears and `private(set) var gear = 1`; validate inside a `mutating` method.",
+    "`guard (1...maxGears).contains(gear + delta) else { return false }`."
+  ]
+}

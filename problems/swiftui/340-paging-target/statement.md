@@ -1,0 +1,1 @@
+Swiftful's *Paging ScrollView for iOS 17*. A paging behaviour decides the final page from the release offset and velocity `[offset, velocity]`: if `|velocity| > 0.5`, move one page in the velocity's direction from the page you were on (`floor` for positive, `ceil` for negative, of offset/pageWidth); otherwise snap to the **nearest** page. Clamp to `0..<pageCount`.

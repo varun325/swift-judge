@@ -1,0 +1,36 @@
+{
+  "id": "test-doubles-spy",
+  "title": "Test Doubles: Stub, Spy & Fake",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Testing",
+  "concepts": [
+    "dependency-injection",
+    "protocols"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Swift Testing",
+      "url": "https://developer.apple.com/documentation/testing"
+    },
+    {
+      "title": "XCTest",
+      "url": "https://developer.apple.com/documentation/xctest"
+    }
+  ],
+  "signature": {
+    "name": "checkoutTests",
+    "params": [],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Inject protocols so tests can supply doubles.",
+    "The stub decides success or failure; the spy stores tracked events in an array.",
+    "Assert on the view model's state *and* on `spy.events` for each scenario."
+  ]
+}

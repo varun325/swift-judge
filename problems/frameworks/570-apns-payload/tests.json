@@ -1,0 +1,23 @@
+[
+ {
+  "input": {
+   "payloads": [
+    "{\"aps\":{\"alert\":{\"title\":\"Order\",\"body\":\"Shipped\"},\"badge\":2},\"deeplink\":\"myapp://order/42\"}",
+    "{\"aps\":{\"alert\":\"Hi there\"}}",
+    "{\"aps\":{\"content-available\":1}}",
+    "nope"
+   ]
+  },
+  "expected": [
+   "Order | Shipped | badge 2 | visible | myapp://order/42",
+   "- | Hi there | badge - | visible | -",
+   "- | - | badge - | silent | -",
+   "invalid"
+  ]
+ },
+ {
+  "input": {
+   "payloads": []
+  }
+ }
+]

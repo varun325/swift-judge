@@ -1,0 +1,1 @@
+Classes give identity and shared state: the dictionary holds references, so `account.deposit` mutates the stored object directly (no need to write back). The override calls `super` so the base rule still applies.

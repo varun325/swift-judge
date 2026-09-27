@@ -1,0 +1,1 @@
+`session.data(from:)` doesn't throw for 404 or 500 — only for transport failures. You must check `HTTPURLResponse.statusCode` yourself. Injecting the `URLSession` (instead of using `.shared` inside) is what makes this testable with a `URLProtocol` mock.

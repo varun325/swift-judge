@@ -1,0 +1,1 @@
+`Equatable` has a `Self` requirement: `==` compares two values of the **same** type. With existentials the compiler can't know both boxes hold the same type. Write `let a: any Equatable = 1`, `let b: any Equatable = 2` and `print(a == b)`. You pass when it's rejected.

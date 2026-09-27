@@ -1,0 +1,34 @@
+{
+  "id": "nested-collections",
+  "title": "Nested Collections: Class Roster",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Collections",
+  "concepts": [
+    "dictionary-basics",
+    "array-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "roster",
+    "params": [
+      {
+        "name": "enrolments",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Nest collections: a dictionary whose values are sets gives dedupe for free.",
+    "`classes[name, default: []].insert(student)`, then sort keys and each set when printing.",
+    "Largest with ties: compare `(count, name)` tuples with the name ascending."
+  ]
+}

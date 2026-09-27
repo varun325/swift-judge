@@ -1,0 +1,1 @@
+Swift 6.2's `Span<Element>` is a safe view over contiguous memory: bounds-checked, **non-escapable** (can't outlive the storage), and zero-copy. Write `func sum(_ s: Span<Int>) -> Int` and `func maxRun(_ s: Span<Int>) -> Int` (longest run of equal adjacent values), and call both with `values.span`. Return `[sum, maxRun, span.count]`.

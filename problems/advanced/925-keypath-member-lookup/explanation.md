@@ -1,0 +1,1 @@
+With a **key-path** subscript, `audited.volume` is type-checked against `Settings` — autocomplete and typos are caught at compile time, unlike string-based dynamic members. This is how SwiftUI's `Binding` and `@Bindable` forward `$model.property`.

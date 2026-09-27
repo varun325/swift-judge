@@ -1,0 +1,35 @@
+{
+  "id": "opening-existentials",
+  "title": "Implicitly Opened Existentials",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Opaque & existential types",
+  "concepts": [
+    "existential-any",
+    "opaque-vs-generics",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Swift Evolution SE-0352",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0352-implicit-open-existentials.md"
+    }
+  ],
+  "signature": {
+    "name": "describeShapes",
+    "params": [
+      {
+        "name": "sides",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "A protocol with an associated type can still be stored as `any Shape`.",
+    "Pass each `any Shape` to a function taking `some Shape` — Swift opens it for you.",
+    "`report` can use `type(of: s)` and `s.perimeter`."
+  ]
+}

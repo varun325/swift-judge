@@ -1,0 +1,42 @@
+[
+ {
+  "input": {
+   "choices": [
+    "R",
+    "G",
+    "B"
+   ],
+   "slots": 3,
+   "taps": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    9
+   ]
+  }
+ },
+ {
+  "input": {
+   "choices": [],
+   "slots": 2,
+   "taps": [
+    0
+   ]
+  }
+ },
+ {
+  "input": {
+   "choices": [
+    "A"
+   ],
+   "slots": 1,
+   "taps": [
+    0,
+    0
+   ]
+  },
+  "hidden": true
+ }
+]

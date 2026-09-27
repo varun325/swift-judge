@@ -1,0 +1,35 @@
+{
+  "id": "protocols-pop-swiftful",
+  "title": "Protocols for Flexible Data Sources",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Protocols",
+  "concepts": [
+    "pop",
+    "protocols",
+    "dependency-injection"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Protocols",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "screens",
+    "params": [
+      {
+        "name": "sources",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Two small protocols, combined into one requirement with `&`.",
+    "`typealias ButtonDataSourceProtocol = ButtonTextProtocol & ButtonPressedProtocol`, then inject it into `ScreenModel`.",
+    "`ScreenModel(dataSource: source).render()` for each name."
+  ]
+}

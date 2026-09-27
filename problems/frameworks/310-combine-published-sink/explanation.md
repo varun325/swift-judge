@@ -1,0 +1,1 @@
+`$query` is the `@Published` property's publisher. `assign(to: &$results)` republishes into another `@Published` property and ties the subscription's lifetime to the object — no `AnyCancellable` or `[weak self]` needed. `removeDuplicates` means typing the same normalised text twice does no work.

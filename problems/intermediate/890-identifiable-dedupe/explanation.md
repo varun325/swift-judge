@@ -1,0 +1,1 @@
+`Identifiable` just requires an `id`; SwiftUI's `List`/`ForEach` use it to track rows. Mutating `todos[i].isDone` writes through the array subscript — no need to copy out and back. `case ("toggle", let i?)` matches only when the index exists.

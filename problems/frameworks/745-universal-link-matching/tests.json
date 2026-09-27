@@ -1,0 +1,29 @@
+[
+ {
+  "input": {
+   "aasa": "{\"applinks\":{\"details\":[{\"appIDs\":[\"T.x\"],\"components\":[{\"/\":\"/admin/*\",\"exclude\":true},{\"/\":\"/orders/*\"},{\"/\":\"/p/?\"}]}]}}",
+   "urls": [
+    "https://shop.example/orders/42",
+    "https://shop.example/admin/users",
+    "https://shop.example/p/7",
+    "https://shop.example/p/77",
+    "https://shop.example/"
+   ]
+  },
+  "expected": [
+   "app",
+   "web",
+   "app",
+   "web",
+   "web"
+  ]
+ },
+ {
+  "input": {
+   "aasa": "bad",
+   "urls": [
+    "https://x.y/orders/1"
+   ]
+  }
+ }
+]

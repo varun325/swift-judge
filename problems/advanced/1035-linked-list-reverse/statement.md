@@ -1,0 +1,1 @@
+Build a singly linked list with `final class ListNode { var value: Int; var next: ListNode? }`, reverse it **iteratively** by re-pointing `next` references (no new nodes, no arrays), then read it back into an array.

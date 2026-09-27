@@ -1,0 +1,34 @@
+[
+ {
+  "input": {
+   "events": [
+    "notify inbox 3",
+    "notify search 1",
+    "select inbox",
+    "notify inbox 2",
+    "select profile"
+   ]
+  },
+  "expected": [
+   "home -",
+   "search 1",
+   "inbox 2",
+   "profile* -"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "notify home 5",
+    "logout",
+    "select nope"
+   ]
+  },
+  "hidden": true
+ }
+]

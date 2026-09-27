@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Conversion rejected",
+  "pattern": "cannot convert value of type 'String' to specified type 'Int'"
+ }
+]

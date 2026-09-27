@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Other type rejected",
+  "pattern": "inaccessible due to 'private' protection level"
+ }
+]

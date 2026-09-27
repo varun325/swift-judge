@@ -1,0 +1,1 @@
+`prefix(1)` and `dropFirst()` return `Substring`s, and `+` joins them into a `String`. `localizedCaseInsensitiveContains` and `replacingOccurrences` come from Foundation; Swift 5.7+ also has `replacing(_:with:)` in the standard library.

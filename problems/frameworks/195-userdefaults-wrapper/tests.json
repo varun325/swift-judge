@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "writes": [
+    "theme=dark",
+    "font=18",
+    "recent=a",
+    "recent=b",
+    "recent=c",
+    "recent=d"
+   ]
+  },
+  "expected": [
+   "dark",
+   "18",
+   "d,c,b"
+  ]
+ },
+ {
+  "input": {
+   "writes": []
+  }
+ },
+ {
+  "input": {
+   "writes": [
+    "font=x",
+    "theme=light"
+   ]
+  },
+  "hidden": true
+ }
+]

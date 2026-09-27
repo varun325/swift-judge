@@ -1,0 +1,23 @@
+{
+  "id": "diag-type-annotation",
+  "title": "Diagnostic: Type Annotation Mismatch",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Type inference",
+  "concepts": [
+    "type-inference",
+    "fundamental-types"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "The Basics — Type Annotations",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "hints": [
+    "Swift is strict about types, even for literals.",
+    "Annotate the constant as `Int` but give it a string literal.",
+    "`let score: Int = \"100\"`."
+  ]
+}

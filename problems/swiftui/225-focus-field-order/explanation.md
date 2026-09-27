@@ -1,0 +1,1 @@
+`@FocusState` binds focus to an optional enum: `nil` means no field is focused (keyboard hidden). Keeping the "what's next" logic on the enum makes `.onSubmit { focused = focused.next() }` a one-liner.

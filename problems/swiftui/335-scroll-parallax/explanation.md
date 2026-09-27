@@ -1,0 +1,1 @@
+Scroll-linked effects are pure functions of the scroll offset; `visualEffect { content, proxy in … }` (iOS 17) gives you the geometry each frame without re-running `body`. Keep the math separate and it's easy to tune and test.

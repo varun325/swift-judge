@@ -1,0 +1,48 @@
+{
+  "id": "cs193p-elapsed-time",
+  "title": "L9: Elapsed Time with Pause & Resume",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L8–L9 · Animation & time",
+  "concepts": [
+    "optionals",
+    "computed-properties"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Text init(_:style:)",
+      "url": "https://developer.apple.com/documentation/swiftui/text/init(_:style:)"
+    },
+    {
+      "title": "Date",
+      "url": "https://developer.apple.com/documentation/foundation/date"
+    }
+  ],
+  "signature": {
+    "name": "elapsed",
+    "params": [
+      {
+        "name": "events",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Keep accumulated time plus an optional start date.",
+    "Pausing adds `now − start` to the accumulator and clears the start.",
+    "Elapsed = accumulated + (now − start) while running."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L9: Protocols (elapsed time)",
+      "url": "https://www.youtube.com/watch?v=o3D3rqh-IVA",
+      "channel": "Stanford Online"
+    }
+  ]
+}

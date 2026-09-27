@@ -1,0 +1,35 @@
+{
+  "id": "typealias-closures",
+  "title": "typealias for Closure Types",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "typealias",
+    "closures",
+    "escaping"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Declarations — Type Alias Declaration",
+      "book": "ReferenceManual/Declarations"
+    }
+  ],
+  "signature": {
+    "name": "validateAll",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Name the function type once with `typealias`, then store several closures in a global array — Swift 6 will want that function type to be `@Sendable`.",
+    "Each validator returns `String?`; the first non-nil message wins.",
+    "`validators.lazy.compactMap { $0(input) }.first ?? \"ok\"`."
+  ]
+}

@@ -1,0 +1,41 @@
+[
+ {
+  "input": {
+   "books": [
+    [
+     "Dune",
+     "Frank Herbert",
+     "5"
+    ],
+    [
+     "Emma",
+     "Jane Austen",
+     "4"
+    ],
+    [
+     "Persuasion",
+     "Jane Austen",
+     "3"
+    ]
+   ],
+   "queries": [
+    "author jane",
+    "min 4",
+    "range 3 4"
+   ]
+  },
+  "expected": [
+   "Emma,Persuasion (2)",
+   "Dune,Emma (2)",
+   "Emma,Persuasion (2)"
+  ]
+ },
+ {
+  "input": {
+   "books": [],
+   "queries": [
+    "min 1"
+   ]
+  }
+ }
+]

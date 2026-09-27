@@ -1,0 +1,1 @@
+`Angle` stores radians and converts on demand, so you never mix units by accident. `truncatingRemainder` keeps the sign, hence the fix-up for negative angles — and watch out for **negative zero**: snapping −30° gives `-0.0`, which is *not* `< 0`, so a naive `if x < 0 { x += 360 }` leaves `-0` behind. `(x % 360 + 360) % 360` handles both.

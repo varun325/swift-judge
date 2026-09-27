@@ -1,0 +1,1 @@
+Build `https://api.example.com/v1/search` with query items `q=<query>`, `page=<page>` (only if > 1) and one `filter=<f>` item per filter, **in that order**. Let `URLComponents` do the percent-encoding (spaces, `&`, emoji). Return `url.absoluteString`.

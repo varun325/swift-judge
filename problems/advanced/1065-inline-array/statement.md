@@ -1,0 +1,1 @@
+Swift 6.2 adds `InlineArray<let count: Int, Element>` — a fixed-size array stored **inline** (no heap allocation, no copy-on-write). Copy the first four values (pad with 0) into `var board: InlineArray<4, Int>`, double each element in place, copy it to `var copy = board`, set `copy[0] = -1`, and return `[sum of board, board[0], copy[0], MemoryLayout<InlineArray<4, Int>>.size]`.

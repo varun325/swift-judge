@@ -1,0 +1,1 @@
+`===` compares object identity — two different nodes with equal values aren't the same node. A cyclic list is also a **retain cycle**: ARC can't free it until you break a link, which is why the `defer` sets `next = nil`. Floyd's second phase (restart one pointer at the head) finds the loop's entry.

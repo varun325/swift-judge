@@ -1,0 +1,1 @@
+Memory is fastest but lost on relaunch or pressure; disk survives relaunches; the network is slowest. Checking tiers in order and back-filling faster tiers on a miss is the classic image-loading design (Kingfisher and SDWebImage, from Swiftful's package videos, do exactly this).

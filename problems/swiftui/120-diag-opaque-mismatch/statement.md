@@ -1,0 +1,1 @@
+Write a helper `func badge(_ on: Bool) -> some View` (no `@ViewBuilder`) that uses `return Text("on")` in one branch and `return Image(systemName: "xmark")` in another. You pass when the compiler rejects the mismatched underlying types.

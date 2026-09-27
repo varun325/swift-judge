@@ -1,0 +1,28 @@
+[
+ {
+  "input": {
+   "sides": [
+    3,
+    -2
+   ]
+  },
+  "expected": [
+   "Square: 12",
+   "Circle: 12.0"
+  ]
+ },
+ {
+  "input": {
+   "sides": []
+  }
+ },
+ {
+  "input": {
+   "sides": [
+    1,
+    0
+   ]
+  },
+  "hidden": true
+ }
+]

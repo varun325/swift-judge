@@ -1,0 +1,41 @@
+{
+  "id": "observableobject-vs-observable",
+  "title": "ObservableObject vs @Observable",
+  "track": "swiftui",
+  "difficulty": "hard",
+  "topic": "State & data flow",
+  "concepts": [
+    "property-wrappers",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ObservableObject",
+      "url": "https://developer.apple.com/documentation/combine/observableobject"
+    },
+    {
+      "title": "Migrating to the Observable macro",
+      "url": "https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro"
+    }
+  ],
+  "signature": {
+    "name": "invalidations",
+    "params": [
+      {
+        "name": "changes",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`objectWillChange` fires for *every* `@Published` property.",
+    "Count legacy fires with `objectWillChange.sink`; for the modern model, track only `model.name` and re-arm after each fire.",
+    "Apply every change to both models, then return both counts."
+  ]
+}

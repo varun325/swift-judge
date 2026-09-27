@@ -1,0 +1,1 @@
+`localizedStandardContains` is what Finder-style search uses: case- and diacritic-insensitive (`"jose"` matches `"José"`). Keeping the filter a pure function of `(data, query, scope)` makes it trivially testable and lets the view just render.

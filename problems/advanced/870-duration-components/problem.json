@@ -1,0 +1,34 @@
+{
+  "id": "duration-components",
+  "title": "Duration & Clocks",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Duration",
+      "url": "https://developer.apple.com/documentation/swift/duration"
+    }
+  ],
+  "signature": {
+    "name": "formatDurations",
+    "params": [
+      {
+        "name": "millis",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`Duration` supports `+`; `.components` gives `(seconds, attoseconds)`.",
+    "Convert everything to milliseconds: seconds × 1000 + attoseconds ÷ 10¹⁵.",
+    "Then split into minutes, seconds and milliseconds with `/` and `%`."
+  ]
+}

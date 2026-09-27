@@ -1,0 +1,1 @@
+`@Attribute(.unique)` makes inserts **upserts** keyed on that property — ideal for syncing server data idempotently. Paging with `fetchLimit`/`fetchOffset` keeps memory flat for large tables (SwiftUI's `@Query` does similar batching for you).

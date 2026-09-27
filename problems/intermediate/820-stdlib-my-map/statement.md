@@ -1,0 +1,1 @@
+Re-implement `map` as `extension Sequence { func myMap<T>(_ transform: (Element) throws -> T) rethrows -> [T] }` — reserving capacity with `underestimatedCount`. `mapDemo` returns `numbers.myMap { "#\($0 * 2)" }`.

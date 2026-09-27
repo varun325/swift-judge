@@ -1,0 +1,28 @@
+[
+ {
+  "input": {
+   "raw": {
+    "volume": "5",
+    "_debug": "1",
+    "theme": "dark"
+   }
+  },
+  "expected": {
+   "volume": 10
+  }
+ },
+ {
+  "input": {
+   "raw": {}
+  }
+ },
+ {
+  "input": {
+   "raw": {
+    "a": "-3",
+    "b": "x"
+   }
+  },
+  "hidden": true
+ }
+]

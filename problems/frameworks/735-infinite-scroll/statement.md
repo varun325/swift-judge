@@ -1,0 +1,1 @@
+A `LazyVStack` calls `.onAppear` as rows become visible; load the next page when a row within the last `threshold = 3` items appears. Guard against duplicate loads (`isLoading`) and stop at the end (`hasMore`). Loads complete instantly here. For each visible index (in order) log `"load page <n>"` when a load starts, else `"-"`. Start with page 0 already loaded (`pageSize` items).

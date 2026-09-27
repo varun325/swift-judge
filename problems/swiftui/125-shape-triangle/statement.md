@@ -1,0 +1,1 @@
+Swiftful's *Custom Shapes*: implement `struct Triangle: Shape` whose `path(in:)` draws from top-center to bottom-right to bottom-left and closes. For the given rect size, return the path's `boundingRect` as `"w×h"` followed by `"in"`/`"out"` for each point using `path.contains(CGPoint)`.

@@ -1,0 +1,34 @@
+{
+  "id": "string-methods",
+  "title": "String Methods Toolkit",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections",
+    "string-equality"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "analyze",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Many handy string methods live in Foundation — import it.",
+    "Capitalise with `prefix(1).uppercased() + dropFirst()`; search with `localizedCaseInsensitiveContains`.",
+    "`text.replacingOccurrences(of: \" \", with: \"_\")` for item 4."
+  ]
+}

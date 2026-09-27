@@ -1,0 +1,23 @@
+[
+ {
+  "input": {
+   "edits": [
+    "volume=9",
+    "theme=dark"
+   ]
+  },
+  "expected": [
+   "set volume",
+   "set theme",
+   "get volume",
+   "get theme",
+   "volume=9",
+   "theme=dark"
+  ]
+ },
+ {
+  "input": {
+   "edits": []
+  }
+ }
+]

@@ -1,0 +1,22 @@
+[
+ {
+  "input": {
+   "json": "[{\"id\":1,\"status\":\"shipped\"},{\"id\":2,\"status\":\"lost_in_space\"}]"
+  },
+  "expected": [
+   "1:shipped",
+   "2:unknown"
+  ]
+ },
+ {
+  "input": {
+   "json": "[]"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"id\":3}]"
+  },
+  "hidden": true
+ }
+]

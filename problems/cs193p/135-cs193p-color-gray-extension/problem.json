@@ -1,0 +1,50 @@
+{
+  "id": "cs193p-color-gray-extension",
+  "title": "L6: Extending Color & CGFloat vs Double",
+  "track": "cs193p",
+  "difficulty": "easy",
+  "topic": "L5–L7 · Layout, data flow & generics",
+  "concepts": [
+    "extensions",
+    "fundamental-types",
+    "float-vs-double"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Color",
+      "url": "https://developer.apple.com/documentation/swiftui/color"
+    },
+    {
+      "title": "CGFloat",
+      "url": "https://developer.apple.com/documentation/corefoundation/cgfloat"
+    }
+  ],
+  "signature": {
+    "name": "grays",
+    "params": [
+      {
+        "name": "levels",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Add `static func gray(_ brightness: CGFloat) -> Color` in `extension Color`.",
+    "Clamp, convert to `Double`, and use the same value for red, green and blue.",
+    "Resolve and scale each component by 255."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L6: Demonstrating Data Flow",
+      "url": "https://www.youtube.com/watch?v=tvVj6MSBhBA",
+      "channel": "Stanford Online"
+    }
+  ]
+}

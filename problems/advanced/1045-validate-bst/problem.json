@@ -1,0 +1,35 @@
+{
+  "id": "validate-bst",
+  "title": "Validate a Binary Search Tree",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "class-definition",
+    "optionals",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
+    }
+  ],
+  "signature": {
+    "name": "isValidBST",
+    "params": [
+      {
+        "name": "levelOrder",
+        "type": "[Int?]",
+        "label": "_"
+      }
+    ],
+    "returns": "Bool"
+  },
+  "hints": [
+    "Each node must satisfy bounds from *all* its ancestors, not just its parent.",
+    "Recurse with `(low, high)`: going left tightens `high`, going right tightens `low`.",
+    "Use optionals for \"no bound\" instead of `Int.min`/`Int.max`."
+  ]
+}

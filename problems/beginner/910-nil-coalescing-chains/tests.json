@@ -1,0 +1,28 @@
+[
+ {
+  "input": {
+   "nickname": null,
+   "name": "Ana",
+   "tags": [
+    "swift",
+    "ios"
+   ]
+  },
+  "expected": "Ana [2] SWIFT"
+ },
+ {
+  "input": {
+   "nickname": "ace",
+   "name": "Ana",
+   "tags": null
+  }
+ },
+ {
+  "input": {
+   "nickname": null,
+   "name": null,
+   "tags": []
+  },
+  "hidden": true
+ }
+]

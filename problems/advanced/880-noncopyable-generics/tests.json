@@ -1,0 +1,21 @@
+[
+ {
+  "input": {
+   "secrets": [
+    "a",
+    "b"
+   ]
+  },
+  "expected": [
+   "took a",
+   "empty",
+   "took b",
+   "empty"
+  ]
+ },
+ {
+  "input": {
+   "secrets": []
+  }
+ }
+]

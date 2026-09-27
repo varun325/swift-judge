@@ -1,0 +1,1 @@
+Swiftful's *AsyncPublisher*: every publisher exposes `.values`, an `AsyncSequence`. Build the Combine pipeline `values.publisher.filter { $0 > 0 }.map { $0 * 10 }` and consume it with `for await v in pipeline.values`, collecting until you have `take` values (then `break`).

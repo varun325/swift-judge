@@ -1,0 +1,21 @@
+[
+ {
+  "input": {
+   "legs": [
+    "Rome",
+    "Oslo"
+   ]
+  },
+  "expected": [
+   "Leg 1: to Rome",
+   "Leg 2: to Oslo",
+   "1-Rome",
+   "2-Oslo"
+  ]
+ },
+ {
+  "input": {
+   "legs": []
+  }
+ }
+]

@@ -1,0 +1,39 @@
+{
+  "id": "returning-closures",
+  "title": "Returning Closures from Functions",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "closures",
+    "capturing-values",
+    "functions-vs-closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Closures — Capturing Values",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "discounts",
+    "params": [
+      {
+        "name": "prices",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "codes",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "A function's return type can itself be a function type: `-> (Int) -> Int`.",
+    "Switch on the code and return a different closure literal from each case.",
+    "Apply with `makeDiscount(code: code)(price)`."
+  ]
+}

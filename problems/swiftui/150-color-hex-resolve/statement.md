@@ -1,0 +1,1 @@
+Swiftful's *Color, UIColor & Hex Colors*. Add `extension Color { init?(hex: String) }` accepting `"#RRGGBB"` or `"RRGGBB"` (sRGB). Resolve each color with `color.resolve(in: EnvironmentValues())` and return `"r,g,b"` as 0–255 integers, or `"invalid"`.

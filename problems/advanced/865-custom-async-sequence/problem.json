@@ -1,0 +1,39 @@
+{
+  "id": "custom-async-sequence",
+  "title": "Custom AsyncSequence: Countdown",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "custom-collection"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "AsyncSequence",
+      "url": "https://developer.apple.com/documentation/swift/asyncsequence"
+    }
+  ],
+  "signature": {
+    "name": "countdown",
+    "params": [
+      {
+        "name": "start",
+        "type": "Int",
+        "label": "from"
+      },
+      {
+        "name": "keepEvensOnly",
+        "type": "Bool"
+      }
+    ],
+    "returns": "[Int]",
+    "async": true
+  },
+  "hints": [
+    "It's `Sequence`, but `next()` is `async`.",
+    "The iterator holds `current`, returns it, and decrements until below 0.",
+    "Conform with `typealias Element = Int` and `func makeAsyncIterator() -> AsyncIterator`."
+  ]
+}

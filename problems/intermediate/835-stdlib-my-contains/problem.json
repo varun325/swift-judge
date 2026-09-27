@@ -1,0 +1,43 @@
+{
+  "id": "stdlib-my-contains",
+  "title": "Inside the Standard Library: contains",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Standard library internals",
+  "concepts": [
+    "generic-constraints",
+    "extensions",
+    "equatable-hashable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Sequence.contains",
+      "url": "https://developer.apple.com/documentation/swift/sequence/contains(_:)"
+    }
+  ],
+  "signature": {
+    "name": "containsDemo",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "target",
+        "type": "String"
+      },
+      {
+        "name": "minLength",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Bool]"
+  },
+  "hints": [
+    "One version takes a predicate; the other compares with `==`, which needs a constraint.",
+    "Put the equality version in `extension Sequence where Element: Equatable` and reuse the predicate version.",
+    "`for element in self where try predicate(element) { return true }`."
+  ]
+}

@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "forecasts": [
+    "Sun",
+    "drizzle",
+    "Stormy",
+    "fog"
+   ]
+  },
+  "expected": [
+   "sunscreen",
+   "umbrella",
+   "stay in",
+   "enjoy"
+  ]
+ },
+ {
+  "input": {
+   "forecasts": []
+  }
+ },
+ {
+  "input": {
+   "forecasts": [
+    "SNOW",
+    "rain",
+    "storm"
+   ]
+  },
+  "hidden": true
+ }
+]

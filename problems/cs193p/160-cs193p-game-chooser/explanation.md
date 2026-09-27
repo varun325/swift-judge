@@ -1,0 +1,1 @@
+Selecting by `id` (not by index or by the whole value) keeps the selection correct across renames and reorders — `List(selection:)` binds to exactly this. A manual `Hashable` that hashes only the id makes equality mean "same game", which is what SwiftUI needs for stable identity.

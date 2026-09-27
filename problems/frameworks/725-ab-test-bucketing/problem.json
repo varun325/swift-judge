@@ -1,0 +1,45 @@
+{
+  "id": "ab-test-bucketing",
+  "title": "Deterministic A/B Test Bucketing",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Product engineering",
+  "concepts": [
+    "hashing",
+    "fundamental-types",
+    "integer-overflow"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Hasher",
+      "url": "https://developer.apple.com/documentation/swift/hasher"
+    }
+  ],
+  "signature": {
+    "name": "assignVariants",
+    "params": [
+      {
+        "name": "userIDs",
+        "type": "[String]"
+      },
+      {
+        "name": "experiment",
+        "type": "String"
+      },
+      {
+        "name": "splits",
+        "type": "[Int]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Don't use `hashValue` — it changes every launch.",
+    "FNV-1a: `hash ^= byte; hash = hash &* prime` over the UTF-8 bytes.",
+    "Bucket = `hash % 100`; walk cumulative split percentages to pick A, B, C…"
+  ]
+}

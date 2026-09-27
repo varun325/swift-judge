@@ -1,0 +1,35 @@
+{
+  "id": "result-map-flatmap",
+  "title": "Chaining Result with map & flatMap",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "result-type",
+    "error-handling",
+    "compactmap-flatmap"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
+    }
+  ],
+  "signature": {
+    "name": "pipeline",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`Result` has `map` (transform success) and `flatMap` (chain another Result-returning step).",
+    "`parse(input).flatMap(validate).map { $0 * $0 }`, then switch once at the end.",
+    "`Int(s).map(Result.success) ?? .failure(.notANumber)` builds the first Result."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "cs193p-hide-master-code",
+  "title": "L8: Game Over Rules & Not Leaking Secrets",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L8–L9 · Animation & time",
+  "concepts": [
+    "enums",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "withAnimation(_:_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/withanimation(_:_:)"
+    },
+    {
+      "title": "Transaction",
+      "url": "https://developer.apple.com/documentation/swiftui/transaction"
+    }
+  ],
+  "signature": {
+    "name": "playRound",
+    "params": [
+      {
+        "name": "master",
+        "type": "[String]"
+      },
+      {
+        "name": "guesses",
+        "type": "[[String]]"
+      },
+      {
+        "name": "maxAttempts",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Derive `isSolved`, `isOver` and `masterDisplay` from the attempts — don't store flags.",
+    "Reject guesses when the game is over, the length is wrong, or it was already tried.",
+    "`restart()` clears the attempts; the master is hidden again automatically."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L8: Animation Demonstration",
+      "url": "https://www.youtube.com/watch?v=OZK7_p1G8Pw",
+      "channel": "Stanford Online"
+    }
+  ]
+}

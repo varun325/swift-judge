@@ -1,0 +1,43 @@
+{
+  "id": "image-cache-two-tier",
+  "title": "Two-Tier Image Cache: Memory + Disk",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Persistence & caching",
+  "concepts": [
+    "caching",
+    "file-manager",
+    "actors"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSCache",
+      "url": "https://developer.apple.com/documentation/foundation/nscache"
+    },
+    {
+      "title": "FileManager",
+      "url": "https://developer.apple.com/documentation/foundation/filemanager"
+    }
+  ],
+  "signature": {
+    "name": "twoTierCache",
+    "params": [
+      {
+        "name": "requests",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Check memory, then disk, then the network, in that order.",
+    "On a disk hit, put the value into memory; on a network hit, write to both.",
+    "Purging memory simulates a relaunch: the next `get` should hit disk."
+  ]
+}

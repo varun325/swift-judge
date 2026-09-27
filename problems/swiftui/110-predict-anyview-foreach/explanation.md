@@ -1,0 +1,1 @@
+`AnyView` erases everything to one type (SwiftUI must then compare contents dynamically). `ForEach` keeps the data, ID and content types — `ForEach<Range<Int>, Int, Text>`. `Group` is a transparent wrapper around a tuple view.

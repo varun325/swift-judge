@@ -1,0 +1,54 @@
+{
+  "id": "cs193p-swiftdata-queries",
+  "title": "L14–L15: Predicates Across Relationships",
+  "track": "cs193p",
+  "difficulty": "hard",
+  "topic": "L13–L15 · SwiftData & threads",
+  "concepts": [
+    "closures",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Predicate",
+      "url": "https://developer.apple.com/documentation/foundation/predicate"
+    },
+    {
+      "title": "FetchDescriptor",
+      "url": "https://developer.apple.com/documentation/swiftdata/fetchdescriptor"
+    }
+  ],
+  "signature": {
+    "name": "gameQueries",
+    "params": [
+      {
+        "name": "games",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Store queryable facts (`isComplete`) as stored properties.",
+    "Relationship predicates: `$0.attempts.contains { $0.exact >= 3 }`.",
+    "`$0.attempts.count <= 2` counts the related rows."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L14: SwiftData Demonstration",
+      "url": "https://www.youtube.com/watch?v=1PDZl0LPryw",
+      "channel": "Stanford Online"
+    },
+    {
+      "title": "CS193p 2025 · L15: Multithreading",
+      "url": "https://www.youtube.com/watch?v=F0nefFT2Uik",
+      "channel": "Stanford Online"
+    }
+  ]
+}

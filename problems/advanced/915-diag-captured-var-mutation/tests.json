@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Race rejected",
+  "pattern": "concurrently-executing|data race|sending|Sendable|captured"
+ }
+]

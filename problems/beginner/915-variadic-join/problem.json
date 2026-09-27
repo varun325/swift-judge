@@ -1,0 +1,34 @@
+{
+  "id": "variadic-join",
+  "title": "Variadic Parameters: Build a Path",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Functions",
+  "concepts": [
+    "variadic",
+    "default-params"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Functions — Variadic Parameters",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "paths",
+    "params": [
+      {
+        "name": "parts",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Inside the function, a variadic parameter is an ordinary array.",
+    "Put the logic in a `components: [String]` overload and have the variadic one forward to it.",
+    "Trim with `trimmingCharacters(in: CharacterSet(charactersIn: \"/\"))` (Foundation)."
+  ]
+}

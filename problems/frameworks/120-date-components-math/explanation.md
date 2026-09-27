@@ -1,0 +1,1 @@
+`Calendar` handles month lengths, leap years and DST; `date(byAdding: .month)` clamps Jan 31 → Feb 28/29. Always set the calendar's `timeZone` and a POSIX locale for fixed-format parsing, or results change with the user's settings.

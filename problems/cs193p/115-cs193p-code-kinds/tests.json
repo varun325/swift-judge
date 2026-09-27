@@ -1,0 +1,55 @@
+[
+ {
+  "input": {
+   "master": [
+    "R",
+    "G",
+    "B",
+    "Y"
+   ],
+   "attempts": [
+    [
+     "R",
+     "R",
+     "G",
+     "G"
+    ],
+    [
+     "R",
+     "G",
+     "B",
+     "Y"
+    ]
+   ]
+  },
+  "expected": [
+   "master:RGBY",
+   "attempt:RRGG 1E1I",
+   "attempt:RGBY 4E0I",
+   "won"
+  ]
+ },
+ {
+  "input": {
+   "master": [
+    "R",
+    "G"
+   ],
+   "attempts": [
+    [
+     "G",
+     "R"
+    ]
+   ]
+  }
+ },
+ {
+  "input": {
+   "master": [
+    "A"
+   ],
+   "attempts": []
+  },
+  "hidden": true
+ }
+]

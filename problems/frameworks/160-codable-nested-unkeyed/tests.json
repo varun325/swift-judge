@@ -1,0 +1,22 @@
+[
+ {
+  "input": {
+   "json": "{\"data\":{\"series\":[{\"label\":\"A\",\"points\":[[0,1.5],[1,2.0]]},{\"label\":\"B\",\"points\":[]}]}}"
+  },
+  "expected": [
+   "A: 3.5 over 2 points",
+   "B: 0.0 over 0 points"
+  ]
+ },
+ {
+  "input": {
+   "json": "{\"data\":{\"series\":[]}}"
+  }
+ },
+ {
+  "input": {
+   "json": "{\"data\":{\"series\":[{\"label\":\"C\",\"points\":[[0]]}]}}"
+  },
+  "hidden": true
+ }
+]

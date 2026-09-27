@@ -1,0 +1,31 @@
+[
+ {
+  "input": {
+   "events": [
+    "appear a",
+    "change a",
+    "change b",
+    "disappear"
+   ]
+  },
+  "expected": [
+   "cancelled a",
+   "cancelled b"
+  ]
+ },
+ {
+  "input": {
+   "events": [
+    "appear x"
+   ]
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "appear a",
+    "change b"
+   ]
+  }
+ }
+]

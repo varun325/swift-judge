@@ -1,0 +1,1 @@
+For `@State var count`, `count` is the `Int` and `$count` is a `Binding<Int>` — the projected value. `Binding` also forwards key paths and subscripts (`$array[0]` is a `Binding<String>`), which is how you bind into collections. `.constant` is handy for previews.

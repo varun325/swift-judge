@@ -1,0 +1,1 @@
+Data normally flows *down* in SwiftUI; preferences flow *up*. A parent reads the reduced value with `.onPreferenceChange(Key.self)` — e.g. to size every column to the tallest child. `reduce` must be associative because SwiftUI folds in tree order.

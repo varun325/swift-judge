@@ -1,0 +1,29 @@
+[
+ {
+  "input": {
+   "sentences": [
+    "a b",
+    "c"
+   ]
+  },
+  "expected": [
+   "a",
+   "b",
+   "c"
+  ]
+ },
+ {
+  "input": {
+   "sentences": []
+  }
+ },
+ {
+  "input": {
+   "sentences": [
+    "",
+    "one  two"
+   ]
+  },
+  "hidden": true
+ }
+]

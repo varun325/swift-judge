@@ -1,0 +1,34 @@
+[
+ {
+  "input": {
+   "writes": [
+    70,
+    150,
+    -1,
+    1000,
+    -5
+   ]
+  },
+  "expected": [
+   "70 muted:false",
+   "100 muted:false",
+   "0 muted:true",
+   "50 muted:false",
+   "0 muted:true"
+  ]
+ },
+ {
+  "input": {
+   "writes": []
+  }
+ },
+ {
+  "input": {
+   "writes": [
+    0,
+    30
+   ]
+  },
+  "hidden": true
+ }
+]

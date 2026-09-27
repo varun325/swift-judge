@@ -1,0 +1,37 @@
+{
+  "id": "sectioned-list",
+  "title": "Sectioned Lists: Grouping by Letter",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Lists",
+  "concepts": [
+    "dictionary-basics",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Section",
+      "url": "https://developer.apple.com/documentation/swiftui/section"
+    }
+  ],
+  "signature": {
+    "name": "sections",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`Dictionary(grouping:by:)` builds sections from a key function.",
+    "Key: uppercased first letter, or `#` for non-letters.",
+    "Sort keys with `(isHash ? 1 : 0, key)` tuples so `#` comes last."
+  ]
+}

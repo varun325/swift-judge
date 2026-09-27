@@ -1,0 +1,1 @@
+A `Future` runs its closure **once, immediately** when created (eagerly — like a JS `Promise`), then delivers one value and completes, or fails. Wrap it in `Deferred` to make it lazy. In async/await code, a plain `async throws` function replaces most Futures.

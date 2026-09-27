@@ -1,0 +1,38 @@
+{
+  "id": "swiftdata-relationships",
+  "title": "SwiftData Relationships & Cascade Delete",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "SwiftData",
+  "concepts": [
+    "class-definition",
+    "retain-cycle"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)",
+      "url": "https://developer.apple.com/documentation/swiftdata/relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:)"
+    }
+  ],
+  "signature": {
+    "name": "libraryGraph",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Declare the to-many side with `@Relationship(deleteRule: .cascade, inverse: \\Book.author)`.",
+    "Insert the book, then append it to the author's `books` — the inverse is set for you.",
+    "Count books with `fetchCount(FetchDescriptor<Book>())` after saving."
+  ]
+}

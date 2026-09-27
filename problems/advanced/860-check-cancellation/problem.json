@@ -1,0 +1,38 @@
+{
+  "id": "check-cancellation",
+  "title": "Cooperative Cancellation with checkCancellation",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Task",
+      "url": "https://developer.apple.com/documentation/swift/task"
+    }
+  ],
+  "signature": {
+    "name": "batch",
+    "params": [
+      {
+        "name": "items",
+        "type": "Int"
+      },
+      {
+        "name": "cancelEarly",
+        "type": "Bool"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "Cancellation is a flag the task must check.",
+    "Call `try Task.checkCancellation()` at the top of each loop iteration.",
+    "`catch is CancellationError` distinguishes cancellation from other errors."
+  ]
+}

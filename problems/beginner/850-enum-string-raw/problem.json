@@ -1,0 +1,34 @@
+{
+  "id": "enum-string-raw",
+  "title": "String Raw Values & Case Names",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Enums",
+  "concepts": [
+    "enums",
+    "associated-values"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations — Raw Values",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "parseSizes",
+    "params": [
+      {
+        "name": "codes",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "An enum can have `String` raw values different from its case names.",
+    "Use `Size(rawValue:)` — it returns an optional.",
+    "`\"\\(size)=\\(size.rawValue)\"`."
+  ]
+}

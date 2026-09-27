@@ -1,0 +1,35 @@
+{
+  "id": "linked-list-reverse",
+  "title": "Reverse a Linked List (Class Nodes)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "class-definition",
+    "optionals",
+    "value-vs-reference"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Classes and Structures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures"
+    }
+  ],
+  "signature": {
+    "name": "reverseList",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "Walk the list keeping `previous` and `current`.",
+    "Save `current.next`, point `current.next` at `previous`, then advance both.",
+    "The new head is the last `previous`."
+  ]
+}

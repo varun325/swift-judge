@@ -1,0 +1,40 @@
+{
+  "id": "format-currency-percent",
+  "title": "FormatStyle: Currency, Percent & Numbers",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Formatting",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "FormatStyle",
+      "url": "https://developer.apple.com/documentation/foundation/formatstyle"
+    },
+    {
+      "title": "Data formatting",
+      "url": "https://developer.apple.com/documentation/foundation/data-formatting"
+    }
+  ],
+  "signature": {
+    "name": "formatted",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`value.formatted(style)` with a `.currency`, `.percent` or `.number` style.",
+    "Chain `.locale(Locale(identifier: …))` onto each style.",
+    "Compact: `.number.notation(.compactName)`."
+  ]
+}

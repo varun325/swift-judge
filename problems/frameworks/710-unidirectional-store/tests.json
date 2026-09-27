@@ -1,0 +1,24 @@
+[
+ {
+  "input": {
+   "actions": [
+    "+",
+    "+",
+    "fact",
+    "-"
+   ]
+  },
+  "expected": [
+   "1 - -",
+   "2 - -",
+   "2 loading -",
+   "2 - fact about 2",
+   "1 - -"
+  ]
+ },
+ {
+  "input": {
+   "actions": []
+  }
+ }
+]

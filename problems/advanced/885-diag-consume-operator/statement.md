@@ -1,0 +1,1 @@
+`consume x` ends a variable's lifetime early (even for copyable types), so using it afterwards is an error. Inside a function, write `let data = [1, 2, 3]`, then `let moved = consume data`, then `print(data.count)`. You pass when the compiler reports the use after consume.

@@ -1,0 +1,1 @@
+Keying by `ObjectIdentifier(T.self)` lets a dictionary hold one factory per protocol; the generic `resolve` casts back. Lifetimes decide sharing. Compile-time injection (initialisers) is still preferable — containers trade type safety for convenience, which is why `resolve` returns an optional.

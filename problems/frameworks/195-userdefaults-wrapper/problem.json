@@ -1,0 +1,38 @@
+{
+  "id": "userdefaults-wrapper",
+  "title": "UserDefaults with a Typed Wrapper",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Persistence & caching",
+  "concepts": [
+    "property-wrappers",
+    "generics",
+    "codable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "UserDefaults",
+      "url": "https://developer.apple.com/documentation/foundation/userdefaults"
+    }
+  ],
+  "signature": {
+    "name": "settingsRoundTrip",
+    "params": [
+      {
+        "name": "writes",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A property wrapper can read and write `UserDefaults` in its `wrappedValue`.",
+    "Encode values as JSON `Data` so any `Codable` type works; return the default when missing.",
+    "A fresh `Preferences()` reads what the previous one saved."
+  ]
+}

@@ -1,0 +1,1 @@
+Write `func zipWith(_ a: [Int], _ b: [Int], _ f: (Int, Int) -> Int) -> [Int]`. `combine` chooses the closure from `op`: `"add"`, `"max"`, `"pow"` (a to the power b, b ≥ 0) — passing operators directly where possible (`zipWith(a, b, +)`).

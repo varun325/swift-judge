@@ -1,0 +1,31 @@
+[
+ {
+  "input": {
+   "ops": [
+    "author Austen",
+    "author Herbert",
+    "book Emma Austen",
+    "book Persuasion Austen",
+    "book Dune Herbert",
+    "delete-book Emma",
+    "report",
+    "delete-author Austen",
+    "report"
+   ]
+  },
+  "expected": [
+   "Austen:1",
+   "Herbert:1",
+   "books 2",
+   "Herbert:1",
+   "books 1"
+  ]
+ },
+ {
+  "input": {
+   "ops": [
+    "report"
+   ]
+  }
+ }
+]

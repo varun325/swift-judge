@@ -1,0 +1,42 @@
+{
+  "id": "rotation-snap",
+  "title": "RotateGesture: Snap to 90°",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Gestures",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "RotateGesture",
+      "url": "https://developer.apple.com/documentation/swiftui/rotategesture"
+    },
+    {
+      "title": "Angle",
+      "url": "https://developer.apple.com/documentation/swiftui/angle"
+    }
+  ],
+  "signature": {
+    "name": "snapAngles",
+    "params": [
+      {
+        "name": "degrees",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double]",
+    "async": true
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Snap first: `(degrees / 90).rounded() * 90`.",
+    "Normalise with `truncatingRemainder(dividingBy: 360)` and add 360 if negative.",
+    "Wrap values in `Angle.degrees(_:)` and read `.degrees` back."
+  ]
+}

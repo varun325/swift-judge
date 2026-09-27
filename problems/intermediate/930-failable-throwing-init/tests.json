@@ -1,0 +1,25 @@
+[
+ {
+  "input": {
+   "inputs": [
+    "Ana@Mail.com",
+    "nope",
+    "@x.io",
+    "a@",
+    "a@b@c"
+   ]
+  },
+  "expected": [
+   "ana@mail.com ok",
+   "missingAt",
+   "emptyUser",
+   "emptyDomain",
+   "missingAt"
+  ]
+ },
+ {
+  "input": {
+   "inputs": []
+  }
+ }
+]

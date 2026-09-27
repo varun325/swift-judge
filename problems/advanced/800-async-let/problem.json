@@ -1,0 +1,35 @@
+{
+  "id": "async-let",
+  "title": "async let: Parallel Child Tasks",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "task-group"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — Calling Asynchronous Functions in Parallel",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "dashboard",
+    "params": [
+      {
+        "name": "userID",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "timeLimitMs": 700,
+  "hints": [
+    "Awaiting each call in turn runs them one after another.",
+    "`async let x = f()` starts `f` right away; you `await x` later.",
+    "`async let profile = loadProfile(userID)` ×3, then `return await [profile, feed, notifications]`."
+  ]
+}

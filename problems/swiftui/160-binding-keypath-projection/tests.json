@@ -1,0 +1,20 @@
+[
+ {
+  "input": {
+   "edits": [
+    "name=Ana",
+    "age=31",
+    "age=x"
+   ]
+  },
+  "expected": [
+   "Ana 31",
+   "writes 2"
+  ]
+ },
+ {
+  "input": {
+   "edits": []
+  }
+ }
+]

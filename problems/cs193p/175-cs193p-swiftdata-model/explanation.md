@@ -1,0 +1,1 @@
+`@Model` classes persist stored properties automatically (arrays of `Codable` values included); `@Transient` opts UI-only state out, so a fresh context sees its default. Sorting by an **optional** date happens in Swift here because "nil last" isn't expressible in every predicate/sort — L15 discusses these query limits. Cascade delete removes a game's attempts.

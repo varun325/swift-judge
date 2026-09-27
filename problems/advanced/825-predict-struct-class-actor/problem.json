@@ -1,0 +1,24 @@
+{
+  "id": "predict-struct-class-actor",
+  "title": "Predict: Struct vs Class vs Actor",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "value-vs-reference",
+    "actors",
+    "struct-vs-class"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Concurrency — Actors",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "hints": [
+    "Two of these three are reference types.",
+    "`a2.bump()` changes the same actor that `a1` refers to.",
+    "Last line: `1 2 true`."
+  ]
+}

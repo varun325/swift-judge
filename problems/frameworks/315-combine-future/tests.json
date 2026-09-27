@@ -1,0 +1,20 @@
+[
+ {
+  "input": {
+   "inputs": [
+    3,
+    -1
+   ]
+  },
+  "expected": [
+   "value 6",
+   "finished",
+   "failed notPositive"
+  ]
+ },
+ {
+  "input": {
+   "inputs": []
+  }
+ }
+]

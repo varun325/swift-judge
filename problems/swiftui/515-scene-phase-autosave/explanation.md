@@ -1,0 +1,1 @@
+`.onChange(of: scenePhase) { old, new in … }` is where you save; `inactive` also happens for things like Control Center, so saving only on `background` avoids needless writes. Returning from background is a good moment to refresh stale data.

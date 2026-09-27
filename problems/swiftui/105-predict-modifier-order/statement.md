@@ -1,0 +1,1 @@
+Every modifier **wraps** the view it's applied to in a new `ModifiedContent` type. Predict the types — then reason about why `padding().background(.red)` looks different from `background(.red).padding()`.

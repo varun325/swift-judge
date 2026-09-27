@@ -1,0 +1,42 @@
+{
+  "id": "file-persistence-versioned",
+  "title": "Saving Codable Data to Disk (with Versions)",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Persistence & caching",
+  "concepts": [
+    "codable",
+    "file-manager",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Data.write(to:options:)",
+      "url": "https://developer.apple.com/documentation/foundation/data/write(to:options:)"
+    },
+    {
+      "title": "FileManager",
+      "url": "https://developer.apple.com/documentation/foundation/filemanager"
+    }
+  ],
+  "signature": {
+    "name": "persistTodos",
+    "params": [
+      {
+        "name": "sessions",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Encode to JSON `Data` and write it with `.atomic`.",
+    "On load, fall back to a default `Store` if the file is missing or can't be decoded.",
+    "Bump `version` only when something actually changed."
+  ]
+}

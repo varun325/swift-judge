@@ -1,0 +1,30 @@
+[
+ {
+  "input": {
+   "inputs": [
+    "4",
+    "x",
+    "-2"
+   ]
+  },
+  "expected": [
+   "ok 16",
+   "error notANumber",
+   "error negative"
+  ]
+ },
+ {
+  "input": {
+   "inputs": []
+  }
+ },
+ {
+  "input": {
+   "inputs": [
+    "0",
+    "3037000499"
+   ]
+  },
+  "hidden": true
+ }
+]

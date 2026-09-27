@@ -1,0 +1,45 @@
+{
+  "id": "shape-star",
+  "title": "Custom Shape: Star with N Points",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Drawing",
+  "concepts": [
+    "protocols",
+    "stride"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Shape",
+      "url": "https://developer.apple.com/documentation/swiftui/shape"
+    },
+    {
+      "title": "Path",
+      "url": "https://developer.apple.com/documentation/swiftui/path"
+    }
+  ],
+  "signature": {
+    "name": "starInfo",
+    "params": [
+      {
+        "name": "points",
+        "type": "Int"
+      },
+      {
+        "name": "size",
+        "type": "Double"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Place 2×corners points around the center, alternating outer and inner radius.",
+    "Angle for point i: `Double(i) * .pi / Double(corners) - .pi / 2`.",
+    "Count elements with `path.forEach { if case .move = $0 … }` or a switch."
+  ]
+}

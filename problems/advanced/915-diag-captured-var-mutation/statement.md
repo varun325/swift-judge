@@ -1,0 +1,1 @@
+In an `async` function declare `var count = 0`, then start `Task { count += 1 }` while also doing `count += 1` in the function. You pass when Swift 6 rejects the concurrent mutation of the captured variable.

@@ -1,0 +1,58 @@
+[
+ {
+  "input": {
+   "now": 100,
+   "transactions": [
+    [
+     "pro.monthly",
+     "90",
+     "120",
+     "n"
+    ],
+    [
+     "pro.yearly",
+     "10",
+     "95",
+     "n"
+    ],
+    [
+     "lifetime",
+     "50",
+     "-",
+     "y"
+    ]
+   ]
+  },
+  "expected": [
+   "pro",
+   "pro.monthly",
+   "renews 120"
+  ]
+ },
+ {
+  "input": {
+   "now": 0,
+   "transactions": []
+  }
+ },
+ {
+  "input": {
+   "now": 500,
+   "transactions": [
+    [
+     "lifetime",
+     "1",
+     "-",
+     "n"
+    ],
+    [
+     "pro.monthly",
+     "480",
+     "510",
+     "n"
+    ]
+   ]
+  },
+  "hidden": true
+ }
+]

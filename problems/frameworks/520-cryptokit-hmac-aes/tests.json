@@ -1,0 +1,26 @@
+[
+ {
+  "input": {
+   "messages": [
+    "hello",
+    "transfer $100",
+    "bye"
+   ],
+   "tamperIndex": 1
+  },
+  "expected": [
+   "sig ok",
+   "hello",
+   "sig bad",
+   "decrypt failed",
+   "sig ok",
+   "bye"
+  ]
+ },
+ {
+  "input": {
+   "messages": [],
+   "tamperIndex": 0
+  }
+ }
+]

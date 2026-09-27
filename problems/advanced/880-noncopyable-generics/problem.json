@@ -1,0 +1,35 @@
+{
+  "id": "noncopyable-generics",
+  "title": "Noncopyable Generics",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Swift evolution",
+  "concepts": [
+    "ownership",
+    "generics",
+    "memory-safety"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Swift Evolution SE-0427",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0427-noncopyable-generics.md"
+    }
+  ],
+  "signature": {
+    "name": "vaultDemo",
+    "params": [
+      {
+        "name": "secrets",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`~Copyable` in a generic constraint removes the implicit `Copyable` requirement.",
+    "A vault containing a noncopyable item must itself be `~Copyable`; store with a `consuming` parameter.",
+    "Extract with `item.take()`, which moves the value out and leaves `nil`."
+  ]
+}

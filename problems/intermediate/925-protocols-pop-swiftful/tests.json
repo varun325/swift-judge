@@ -1,0 +1,19 @@
+[
+ {
+  "input": {
+   "sources": [
+    "default",
+    "alternative"
+   ]
+  },
+  "expected": [
+   "Protocols are awesome! | default pressed",
+   "Protocols are lame. | alternative pressed"
+  ]
+ },
+ {
+  "input": {
+   "sources": []
+  }
+ }
+]

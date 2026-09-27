@@ -1,0 +1,13 @@
+[
+ {
+  "input": {},
+  "expected": [
+   "1",
+   "two",
+   "3.0",
+   "true",
+   "true",
+   "false"
+  ]
+ }
+]

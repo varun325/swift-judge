@@ -1,0 +1,35 @@
+[
+ {
+  "input": {
+   "values": [
+    1,
+    2.5,
+    7,
+    9.9,
+    10
+   ],
+   "binWidth": 5
+  },
+  "expected": [
+   "0-5: 2",
+   "5-10: 2",
+   "10-15: 1"
+  ]
+ },
+ {
+  "input": {
+   "values": [],
+   "binWidth": 1
+  }
+ },
+ {
+  "input": {
+   "values": [
+    -1.5,
+    0.2
+   ],
+   "binWidth": 0.5
+  },
+  "hidden": true
+ }
+]

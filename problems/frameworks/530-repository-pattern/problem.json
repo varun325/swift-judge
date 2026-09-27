@@ -1,0 +1,39 @@
+{
+  "id": "repository-pattern",
+  "title": "Repository Pattern with Caching",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Architecture",
+  "concepts": [
+    "dependency-injection",
+    "protocols",
+    "caching"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/"
+    }
+  ],
+  "signature": {
+    "name": "repositoryDemo",
+    "params": [
+      {
+        "name": "requests",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "The repository depends on a protocol, not a concrete network client.",
+    "Return the cached value unless `forceRefresh`; cache only successes.",
+    "An actor keeps the cache dictionary safe under concurrency."
+  ]
+}

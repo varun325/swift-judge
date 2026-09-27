@@ -1,0 +1,34 @@
+{
+  "id": "stdlib-my-compactmap",
+  "title": "Inside the Standard Library: compactMap",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Standard library internals",
+  "concepts": [
+    "compactmap-flatmap",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Sequence.compactMap",
+      "url": "https://developer.apple.com/documentation/swift/sequence/compactmap(_:)"
+    }
+  ],
+  "signature": {
+    "name": "compactDemo",
+    "params": [
+      {
+        "name": "tokens",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "It's `map`, but the closure returns an optional.",
+    "Loop, call the transform, and append only when `if let value = try transform(element)` succeeds.",
+    "`tokens.myCompactMap { Int($0) }`."
+  ]
+}

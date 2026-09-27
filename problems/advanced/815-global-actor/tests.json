@@ -1,0 +1,21 @@
+[
+ {
+  "input": {
+   "events": [
+    "open",
+    "",
+    "tap"
+   ]
+  },
+  "expected": [
+   "open",
+   "tap",
+   "count 2"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ }
+]

@@ -8,6 +8,7 @@
  *
  *   npm run validate                 # everything
  *   npm run validate -- closures     # ids/paths containing "closures"
+ *   npm run validate -- --content-only  # skip impact / jsBridge / reference checks (authoring)
  */
 import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
@@ -18,7 +19,8 @@ import { setCacheRoot } from '../src/main/judge/toolchain'
 import type { Concept, Problem } from '../src/shared/types'
 
 const root = join(import.meta.dirname, '..')
-const filter = process.argv[2]
+const contentOnly = process.argv.includes('--content-only') // skip enrichment checks while authoring
+const filter = process.argv.slice(2).find((a) => !a.startsWith('--'))
 setCacheRoot(join(root, '.cache'))
 mkdirSync(join(root, '.cache'), { recursive: true })
 
@@ -33,10 +35,14 @@ async function check(p: Problem): Promise<string[]> {
   const { mode } = p.meta
   if (p.tests.length === 0) issues.push('no tests')
   if (p.meta.hints.length !== 3) issues.push(`expected 3 hints, found ${p.meta.hints.length}`)
+  if (!contentOnly && !p.meta.impact) issues.push('missing impact (core | edge)')
+  if (!contentOnly && !p.meta.jsBridge?.trim()) issues.push('missing jsBridge (JavaScript comparison)')
+  if (!contentOnly && p.meta.videos.length + p.meta.articles.length + p.meta.docs.filter((d) => d.url).length === 0) issues.push('no external references (Apple docs, videos or articles)')
   if (mode === 'function' && !p.meta.signature && !p.harness) issues.push('function mode needs signature or harness.swift')
   if (mode === 'diagnostic' && p.tests.some((t) => t.severity !== 'none' && !t.pattern)) issues.push('diagnostic test without pattern')
   for (const c of p.meta.concepts) if (conceptIds.size && !conceptIds.has(c)) issues.push(`unknown concept "${c}"`)
 
+  if (p.meta.platforms && !(p.meta.platforms as string[]).includes(process.platform)) return issues
   const ref = await judge(p, mode === 'predict' ? '' : p.solution, true)
   if (mode === 'predict') {
     if (ref.verdict === 'internal_error') issues.push(`snippet failed: ${ref.message}`)

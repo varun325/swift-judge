@@ -1,0 +1,1 @@
+Reversing by `Character` keeps grapheme clusters intact; reversing UTF-16 units (as naive JavaScript `split('').reverse()` does) breaks emoji. The recursive version works on `Substring`s so `dropFirst()` doesn't copy.

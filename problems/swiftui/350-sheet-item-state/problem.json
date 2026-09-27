@@ -1,0 +1,38 @@
+{
+  "id": "sheet-item-state",
+  "title": "Sheets & Alerts Driven by Optional Items",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Navigation",
+  "concepts": [
+    "enums",
+    "optionals",
+    "protocols"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "sheet(item:onDismiss:content:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:)"
+    }
+  ],
+  "signature": {
+    "name": "presentations",
+    "params": [
+      {
+        "name": "actions",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Replace several Bools with one optional enum.",
+    "The enum's `id` must distinguish cases *and* their payloads.",
+    "Opening while `active != nil` is a replacement; `dismiss` sets it back to `nil`."
+  ]
+}

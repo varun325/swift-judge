@@ -1,0 +1,1 @@
+L6 adds `static func gray(_ brightness: CGFloat) -> Color` in an `extension Color` (drawing APIs take `CGFloat`; general math uses `Double`). Implement it (clamp brightness to 0…1, equal RGB), resolve each colour with `resolve(in: EnvironmentValues())`, and return `"<r>,<g>,<b>"` as 0–255 integers.

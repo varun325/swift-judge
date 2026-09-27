@@ -1,0 +1,35 @@
+{
+  "id": "checkpoint-7-animals",
+  "title": "Checkpoint 7: Animal Class Hierarchy",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "inheritance",
+    "overloading-overriding",
+    "initializers"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Inheritance",
+      "book": "LanguageGuide/Inheritance"
+    }
+  ],
+  "signature": {
+    "name": "zoo",
+    "params": [
+      {
+        "name": "specs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Model the tree: Animal → Dog → Corgi/Poodle, Animal → Cat → Persian/Lion.",
+    "`Cat` needs `init(isTame:)` that sets `isTame` before calling `super.init(legs: 4)`; subclasses call it with fixed values.",
+    "Build `[Animal]` with a `switch` in `compactMap`, then map to `\"\\($0.speak()) (\\($0.legs) legs)\"`."
+  ]
+}

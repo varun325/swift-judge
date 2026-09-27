@@ -1,0 +1,34 @@
+{
+  "id": "skipping-items",
+  "title": "continue: Skipping Items",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Loops",
+  "concepts": [
+    "break-continue",
+    "for-in"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Control Flow — Continue",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "sumValidReadings",
+    "params": [
+      {
+        "name": "readings",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "Two loop-control keywords: one skips an item, one stops the loop.",
+    "Check for `\"END\"` first (break), then `guard let value = Int(reading), value >= 0 else { continue }`.",
+    "Accumulate `sum += value; used += 1` after the guard."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "checkpoint-9-optional-random",
+  "title": "Checkpoint 9: One-Line Optional Default",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "nil-coalescing",
+    "optional-chaining"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Optional Chaining",
+      "book": "LanguageGuide/OptionalChaining"
+    }
+  ],
+  "signature": {
+    "name": "pickNumber",
+    "params": [
+      {
+        "name": "numbers",
+        "type": "[Int]?",
+        "label": "_"
+      },
+      {
+        "name": "index",
+        "type": "Int"
+      }
+    ],
+    "returns": "Int"
+  },
+  "hints": [
+    "`??` supplies the fallback; you need one expression that's nil for both a nil and an empty array.",
+    "`Optional.flatMap { … }` lets you return `nil` for the empty case too.",
+    "`numbers.flatMap { $0.isEmpty ? nil : $0[abs(index) % $0.count] } ?? 100`."
+  ]
+}

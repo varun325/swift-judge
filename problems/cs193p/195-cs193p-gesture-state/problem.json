@@ -1,0 +1,48 @@
+{
+  "id": "cs193p-gesture-state",
+  "title": "L16: Combining Pinch & Drag Gestures",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L16 · Shapes, gestures, persistence",
+  "concepts": [
+    "mutating",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "GestureState",
+      "url": "https://developer.apple.com/documentation/swiftui/gesturestate"
+    },
+    {
+      "title": "SimultaneousGesture",
+      "url": "https://developer.apple.com/documentation/swiftui/simultaneousgesture"
+    }
+  ],
+  "signature": {
+    "name": "boardGestures",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Keep committed values and in-flight values separately.",
+    "Rendered = committed zoom × in-flight zoom, committed pan + in-flight pan.",
+    "`end` folds in-flight into committed; `cancel` just resets in-flight."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L16: Shapes, Gestures, Persistence",
+      "url": "https://www.youtube.com/watch?v=skECWIKpBVY",
+      "channel": "Stanford Online"
+    }
+  ]
+}

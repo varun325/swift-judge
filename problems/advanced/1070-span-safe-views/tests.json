@@ -1,0 +1,32 @@
+[
+ {
+  "input": {
+   "values": [
+    1,
+    1,
+    2,
+    2,
+    2,
+    3
+   ]
+  },
+  "expected": [
+   11,
+   3,
+   6
+  ]
+ },
+ {
+  "input": {
+   "values": []
+  }
+ },
+ {
+  "input": {
+   "values": [
+    5
+   ]
+  },
+  "hidden": true
+ }
+]

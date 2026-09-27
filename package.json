@@ -17,7 +17,9 @@
     "e2e": "electron-vite build && node scripts/e2e.mjs",
     "package": "electron-vite build && node scripts/package.mjs",
     "install-app": "npm run package && node scripts/package.mjs --install",
-    "package:win": "electron-vite build && node scripts/package.mjs --win"
+    "package:win": "electron-vite build && node scripts/package.mjs --win",
+    "package:dmg": "electron-vite build && node scripts/package.mjs && node scripts/package.mjs --dmg",
+    "check-links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "zod": "^4.6.5"
@@ -117,6 +119,10 @@
     },
     "portable": {
       "artifactName": "Swift Judge ${version} Portable.${ext}"
+    },
+    "dmg": {
+      "artifactName": "Swift Judge ${version} arm64.${ext}",
+      "title": "Swift Judge"
     }
   }
 }

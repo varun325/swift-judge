@@ -1,0 +1,1 @@
+Extend `String.StringInterpolation` with `mutating func appendInterpolation(cents value: Int)` so `"Total: \(cents: 1234)"` produces `"Total: $12.34"` (negatives as `-$0.50`). Map each amount to `"Total: \(cents: amount)"`.

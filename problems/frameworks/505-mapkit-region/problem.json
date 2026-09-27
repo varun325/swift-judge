@@ -1,0 +1,42 @@
+{
+  "id": "mapkit-region",
+  "title": "MapKit: Regions That Fit Annotations",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Maps & location",
+  "concepts": [
+    "higher-order-functions",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "MKCoordinateRegion",
+      "url": "https://developer.apple.com/documentation/mapkit/mkcoordinateregion"
+    }
+  ],
+  "signature": {
+    "name": "regionFor",
+    "params": [
+      {
+        "name": "points",
+        "type": "[[Double]]",
+        "label": "_"
+      },
+      {
+        "name": "padding",
+        "type": "Double"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Find the min and max latitude and longitude.",
+    "Center = midpoints; span = (max − min) × padding, with a 0.01° floor.",
+    "Build `MKCoordinateRegion(center:span:)` and read its fields back."
+  ]
+}

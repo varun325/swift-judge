@@ -1,0 +1,1 @@
+A `Shape` draws itself for whatever rect it's given, so the same `PegRow` works at any size; `GeometryReader` (or a `Layout`) tells you that size. Choosing the diameter as the smaller of "fits the height" and "fits the width after spacing" keeps pegs circular.

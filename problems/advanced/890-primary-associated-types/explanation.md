@@ -1,0 +1,1 @@
+`some Sequence<Int>` hides the concrete type (`LazyMapSequence<[Int], Int>`) while still promising the element type — no type erasure needed. `any Sequence<Int>` lets different concrete sequences share one array.

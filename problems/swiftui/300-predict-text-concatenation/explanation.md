@@ -1,0 +1,1 @@
+`bold()`, `italic()`, `font(_:)` and `foregroundStyle(_:)` have `Text`-returning overloads, so styled runs can be joined with `+` into one `Text` (one text layout, correct line wrapping). General view modifiers like `padding()` return `ModifiedContent`, which can't be concatenated.

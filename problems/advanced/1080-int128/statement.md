@@ -1,0 +1,1 @@
+`Int` overflows at 20!. Swift 6 adds `Int128`/`UInt128`. Compute n! for each n using `Int128` with **overflow detection** (`multipliedReportingOverflow`), returning the value as a string or `"overflow"`.

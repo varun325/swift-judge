@@ -1,0 +1,40 @@
+{
+  "id": "unidirectional-store",
+  "title": "Unidirectional Data Flow (TCA/Redux-Style Store)",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Architecture",
+  "concepts": [
+    "enums",
+    "associated-values",
+    "mutating",
+    "async-await"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "The Composable Architecture (GitHub)",
+      "url": "https://github.com/pointfreeco/swift-composable-architecture"
+    }
+  ],
+  "signature": {
+    "name": "storeRun",
+    "params": [
+      {
+        "name": "actions",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "State is a struct; actions are an enum; the reducer mutates `inout` state.",
+    "Side effects are returned as async closures that produce the next action.",
+    "The store runs the reducer, records state, then awaits the effect and sends its action."
+  ]
+}

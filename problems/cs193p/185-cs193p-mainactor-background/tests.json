@@ -1,0 +1,30 @@
+[
+ {
+  "input": {
+   "master": [
+    "R",
+    "G",
+    "B"
+   ],
+   "choices": [
+    "R",
+    "G",
+    "B"
+   ]
+  },
+  "expected": [
+   "idle",
+   "thinking",
+   "12 candidates",
+   "main thread during solve: false"
+  ]
+ },
+ {
+  "input": {
+   "master": [],
+   "choices": [
+    "R"
+   ]
+  }
+ }
+]

@@ -1,0 +1,38 @@
+{
+  "id": "apns-payload",
+  "title": "Parsing Push Notification Payloads",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Platform features",
+  "concepts": [
+    "codable",
+    "codable-keys",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generating a remote notification",
+      "url": "https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification"
+    }
+  ],
+  "signature": {
+    "name": "handlePush",
+    "params": [
+      {
+        "name": "payloads",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Try decoding `alert` as a `String` first, then as a nested container.",
+    "Map `content-available` with a custom `CodingKeys` raw value.",
+    "Silent = `content-available == 1` with no title or body."
+  ]
+}

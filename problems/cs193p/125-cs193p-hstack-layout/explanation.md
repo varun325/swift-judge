@@ -1,0 +1,1 @@
+Offering to the least flexible children first means a `Text` gets what it needs before a stretchy `Rectangle` or `Spacer` soaks up the rest; `layoutPriority` changes the order. That's why a long label can squeeze an image, and why `.layoutPriority(1)` on the important view fixes truncation. (This is a simplified model of SwiftUI's real algorithm.)

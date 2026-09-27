@@ -1,0 +1,27 @@
+[
+ {
+  "input": {
+   "ops": [
+    "section fruit",
+    "section veg",
+    "add fruit apple,pear,fig",
+    "add veg kale",
+    "move apple after fig",
+    "delete pear",
+    "reload kale",
+    "add fruit fig"
+   ]
+  },
+  "expected": [
+   "fruit: fig,apple",
+   "veg: kale",
+   "items 3",
+   "reloaded kale"
+  ]
+ },
+ {
+  "input": {
+   "ops": []
+  }
+ }
+]

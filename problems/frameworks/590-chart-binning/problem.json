@@ -1,0 +1,41 @@
+{
+  "id": "chart-binning",
+  "title": "Binning Data for Swift Charts",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Platform features",
+  "concepts": [
+    "dictionary-basics",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Swift Charts",
+      "url": "https://developer.apple.com/documentation/charts"
+    }
+  ],
+  "signature": {
+    "name": "histogram",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "binWidth",
+        "type": "Double"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Bucket index = `floor(value / width)`.",
+    "Count per bucket, then emit every bucket from min to max.",
+    "Format whole-number bounds without `.0`."
+  ]
+}

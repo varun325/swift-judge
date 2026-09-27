@@ -1,0 +1,45 @@
+{
+  "id": "countdown-viewmodel",
+  "title": "Timer-Driven Countdown View Model",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "State & data flow",
+  "concepts": [
+    "property-wrappers",
+    "enums",
+    "computed-properties"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Timer",
+      "url": "https://developer.apple.com/documentation/foundation/timer"
+    },
+    {
+      "title": "onReceive(_:perform:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:)"
+    }
+  ],
+  "signature": {
+    "name": "countdown",
+    "params": [
+      {
+        "name": "seconds",
+        "type": "Int"
+      },
+      {
+        "name": "events",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Ticks only count while running; the model decides what a tick means.",
+    "`tick()` guards `isRunning` and stops (and flags `finished`) at zero.",
+    "Format with `remaining / 60` and a zero-padded `remaining % 60`."
+  ]
+}

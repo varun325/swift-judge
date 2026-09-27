@@ -1,0 +1,1 @@
+List formatting handles commas and conjunctions per language (the Oxford comma in English); byte counts pick sensible units; name formatting knows given/family order and initials for each locale. Hand-rolled string joining gets all of these wrong somewhere.

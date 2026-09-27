@@ -1,0 +1,1 @@
+Layering (override > remote > default) lets you ship code dark, roll out gradually, and let QA force states. Deterministic bucketing (a stable per-user number) keeps a user's experience consistent between launches. Decoding failures must degrade to safe defaults, never crash.

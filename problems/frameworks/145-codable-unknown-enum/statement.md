@@ -1,0 +1,1 @@
+Servers add new values over time. `enum Status: String, Decodable { case pending, shipped, delivered, unknown }` must decode **any** unexpected string as `.unknown` instead of failing the whole payload. Implement `init(from:)` on the enum. Decode `[{"id": 1, "status": "…"}]` and return `"<id>:<status>"`.

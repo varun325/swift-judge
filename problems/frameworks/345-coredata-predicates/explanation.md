@@ -1,0 +1,1 @@
+`[c]` = case-insensitive, `[d]` = diacritic-insensitive. `%@` substitutes values safely (quoting and escaping) — string-building predicates is both a correctness and an injection bug, just like SQL. SwiftData's `#Predicate` replaces these strings with type-checked Swift.

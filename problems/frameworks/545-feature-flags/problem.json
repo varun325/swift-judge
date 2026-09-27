@@ -1,0 +1,45 @@
+{
+  "id": "feature-flags",
+  "title": "Feature Flags & Remote Config",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Architecture",
+  "concepts": [
+    "codable",
+    "enums",
+    "nil-coalescing"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
+    }
+  ],
+  "signature": {
+    "name": "flags",
+    "params": [
+      {
+        "name": "remoteJSON",
+        "type": "String"
+      },
+      {
+        "name": "overrides",
+        "type": "[String]"
+      },
+      {
+        "name": "userBucket",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Resolve each flag in order: local override, then remote, then default.",
+    "Decode remote config as `[String: RemoteFlag]`; invalid JSON means an empty dictionary.",
+    "Rollout: on only when `enabled && userBucket < rolloutPercent`."
+  ]
+}

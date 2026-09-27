@@ -1,0 +1,1 @@
+`URLComponents` splits scheme, host, path and query items safely (no manual string slicing). For custom schemes the first segment is the **host**. Mapping URLs to an array of routes lets you set a `NavigationPath` in one assignment.

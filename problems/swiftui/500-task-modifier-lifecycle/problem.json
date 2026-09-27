@@ -1,0 +1,38 @@
+{
+  "id": "task-modifier-lifecycle",
+  "title": ".task(id:): Automatic Restart & Cancellation",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "State & data flow",
+  "concepts": [
+    "async-await",
+    "task-group"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "task(id:priority:_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/task(id:priority:_:)"
+    }
+  ],
+  "signature": {
+    "name": "taskLifecycle",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Keep a reference to the current `Task` so you can cancel it.",
+    "Restart only when the id actually changes; `disappear` cancels.",
+    "The task checks `Task.isCancelled` after its sleep."
+  ]
+}

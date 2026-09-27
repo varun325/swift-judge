@@ -120,6 +120,24 @@ describe('judge (runs swiftc)', { timeout: 120_000 }, () => {
     const r = await judge(p, 'let n = Int(readLine()!)!\nfor i in 1...max(n,1) { print(i) }', true)
     expect(r.verdict).not.toBe('accepted')
   })
+  it('stdio mode: compile errors and crashes point at the learner\'s own lines', async () => {
+    const p = load('fizzbuzz-stdio')
+    const ce = await judge(p, 'let n = 1\nlet x: Int = "oops"\nprint(n)', true)
+    expect(ce.verdict).toBe('compile_error')
+    expect(ce.diagnostics.map((d) => [d.file, d.line])).toContainEqual(['main.swift', 2])
+    const crash = await judge(p, 'let xs: [Int] = []\nlet n = Int(readLine()!)!\nprint(xs[n])', true)
+    expect(crash.verdict).toBe('runtime_error')
+    const bad = crash.tests.find((t) => t.status === 'runtime_error')!
+    expect(bad.stderr).toMatch(/Index out of range/)
+    const nilCrash = await judge(p, 'let s: String? = nil\n\nprint(s!)', true)
+    expect(nilCrash.tests[0].stderr).toMatch(/main\.swift:3: Fatal error: Unexpectedly found nil/)
+  })
+  it('crashes exit quietly with 128 + signal, and are still reported as crashes', async () => {
+    const p = load('two-sum')
+    const r = await judge(p, 'func f(_ n: Int) -> Int { f(n + 1) + 1 }\nfunc twoSum(_ nums: [Int], target: Int) -> [Int] { [f(0)] }', true)
+    expect(r.tests[0].status).toBe('runtime_error')
+    if (process.platform === 'darwin') expect(r.tests[0].stderr).toMatch(/SIGSEGV|stack overflow/)
+  })
   it('diagnostic mode: passes only when the expected error appears', async () => {
     const p = load('diag-private-access')
     expect((await judge(p, p.solution, true)).verdict).toBe('accepted')

@@ -1,0 +1,47 @@
+[
+ {
+  "input": {
+   "snapshots": [
+    [
+     "0:apple",
+     "1:pear"
+    ],
+    [
+     "0:pear"
+    ]
+   ]
+  },
+  "expected": [
+   "unstable pear"
+  ]
+ },
+ {
+  "input": {
+   "snapshots": [
+    [
+     "a:x",
+     "a:y"
+    ]
+   ]
+  }
+ },
+ {
+  "input": {
+   "snapshots": [
+    [
+     "u1:x",
+     "u2:y"
+    ],
+    [
+     "u2:y"
+    ]
+   ]
+  }
+ },
+ {
+  "input": {
+   "snapshots": []
+  },
+  "hidden": true
+ }
+]

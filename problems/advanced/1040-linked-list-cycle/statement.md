@@ -1,0 +1,1 @@
+Build a list from `values`; if `loopTo >= 0`, point the last node's `next` back at node `loopTo` (creating a cycle). Detect the cycle with slow/fast pointers compared by **identity** (`===`), and if found also return the index where the cycle starts. Return `["cycle at <i>"]` or `["no cycle"]`. Break the cycle before returning so the nodes can be freed.

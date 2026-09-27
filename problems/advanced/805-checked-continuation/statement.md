@@ -1,0 +1,1 @@
+A legacy API (given) reports through a completion handler: `legacyFetch(_:completion:)` calls back with `.success(value)` or `.failure(LegacyError.notFound)`. Wrap it as `func fetch(_ key: String) async throws -> String` using `withCheckedThrowingContinuation`, then fetch each key returning the value or `"missing <key>"`.

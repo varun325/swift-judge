@@ -1,0 +1,34 @@
+{
+  "id": "max-profit-stock",
+  "title": "Best Time to Buy and Sell",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "map-filter-reduce",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Sequence.reduce(_:_:)",
+      "url": "https://developer.apple.com/documentation/swift/sequence/reduce(_:_:)"
+    }
+  ],
+  "signature": {
+    "name": "maxProfit",
+    "params": [
+      {
+        "name": "prices",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  },
+  "hints": [
+    "For each day, the best sale today is `price − cheapest price so far`.",
+    "Keep two running values: minimum price and best profit.",
+    "A `reduce` over a `(minPrice, best)` tuple does it in one line."
+  ]
+}

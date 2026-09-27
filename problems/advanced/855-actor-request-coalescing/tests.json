@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "keys": [
+    "a",
+    "b",
+    "a",
+    "a",
+    "c",
+    "b"
+   ]
+  },
+  "expected": [
+   "img:a",
+   "img:b",
+   "img:c",
+   "downloads 3"
+  ]
+ },
+ {
+  "input": {
+   "keys": []
+  }
+ },
+ {
+  "input": {
+   "keys": [
+    "x",
+    "x",
+    "x",
+    "x"
+   ]
+  },
+  "hidden": true
+ }
+]

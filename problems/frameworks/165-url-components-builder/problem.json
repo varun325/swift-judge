@@ -1,0 +1,48 @@
+{
+  "id": "url-components-builder",
+  "title": "Building URLs with URLComponents",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Networking",
+  "concepts": [
+    "optionals",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "URLComponents",
+      "url": "https://developer.apple.com/documentation/foundation/urlcomponents"
+    },
+    {
+      "title": "URLQueryItem",
+      "url": "https://developer.apple.com/documentation/foundation/urlqueryitem"
+    }
+  ],
+  "signature": {
+    "name": "searchURL",
+    "params": [
+      {
+        "name": "query",
+        "type": "String"
+      },
+      {
+        "name": "page",
+        "type": "Int"
+      },
+      {
+        "name": "filters",
+        "type": "[String]"
+      }
+    ],
+    "returns": "String"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Never build URLs with string interpolation — use `URLComponents`.",
+    "Set scheme, host, path and `queryItems` (an array, so order and repeats are kept).",
+    "Only add `page` when it's greater than 1."
+  ]
+}

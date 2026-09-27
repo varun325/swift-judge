@@ -1,0 +1,44 @@
+[
+ {
+  "input": {
+   "sessions": [
+    [
+     "next",
+     "name Ana"
+    ],
+    [
+     "next"
+    ],
+    [
+     "skip"
+    ],
+    []
+   ]
+  },
+  "expected": [
+   "launch step 0 name -",
+   "launch step 1 name Ana",
+   "launch step 2 name Ana",
+   "launch step 3 name Ana"
+  ]
+ },
+ {
+  "input": {
+   "sessions": []
+  }
+ },
+ {
+  "input": {
+   "sessions": [
+    [
+     "next",
+     "next",
+     "next",
+     "next"
+    ],
+    []
+   ]
+  },
+  "hidden": true
+ }
+]

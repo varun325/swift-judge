@@ -1,0 +1,1 @@
+`move(fromOffsets:toOffset:)` interprets the destination **before** removing the moved items — so moving index 0 to offset 2 lands it after the old index 1. This matches what `List`'s drag-to-reorder reports, so you can pass the parameters straight through.

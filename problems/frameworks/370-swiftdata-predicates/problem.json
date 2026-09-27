@@ -1,0 +1,46 @@
+{
+  "id": "swiftdata-predicates",
+  "title": "SwiftData #Predicate Queries",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "SwiftData",
+  "concepts": [
+    "closures",
+    "key-paths"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Predicate",
+      "url": "https://developer.apple.com/documentation/foundation/predicate"
+    },
+    {
+      "title": "FetchDescriptor",
+      "url": "https://developer.apple.com/documentation/swiftdata/fetchdescriptor"
+    }
+  ],
+  "signature": {
+    "name": "findBooks",
+    "params": [
+      {
+        "name": "books",
+        "type": "[[String]]",
+        "label": "_"
+      },
+      {
+        "name": "queries",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`#Predicate { $0.rating >= n }` builds a type-checked query.",
+    "Capture query values into local `let`s before using them in the macro.",
+    "`context.fetchCount(descriptor)` counts without loading models."
+  ]
+}

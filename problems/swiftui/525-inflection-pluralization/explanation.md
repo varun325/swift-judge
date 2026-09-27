@@ -1,0 +1,1 @@
+The `^[…](inflect: true)` markdown attribute tells Foundation to make the noun agree with the number — for English, Spanish, French, German and more — and SwiftUI's `Text` supports it directly. For full control (Arabic has six plural forms), use String Catalogs' plural variations.

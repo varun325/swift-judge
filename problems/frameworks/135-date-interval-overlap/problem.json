@@ -1,0 +1,37 @@
+{
+  "id": "date-interval-overlap",
+  "title": "DateInterval: Meeting Overlaps",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Dates & calendars",
+  "concepts": [
+    "optionals",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "DateInterval",
+      "url": "https://developer.apple.com/documentation/foundation/dateinterval"
+    }
+  ],
+  "signature": {
+    "name": "conflicts",
+    "params": [
+      {
+        "name": "meetings",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Build a `DateInterval` per meeting from a fixed reference date.",
+    "Compare each pair with `intersection(with:)`.",
+    "Only count overlaps with `duration > 0`."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "switch-strings",
+  "title": "switch on Strings",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Switch",
+  "concepts": [
+    "switch-statement"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Control Flow — Switch",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "weatherAdvice",
+    "params": [
+      {
+        "name": "forecasts",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`switch` works on `String` values, and a case can list several strings.",
+    "Lowercase first; use `case let f where f.hasPrefix(\"storm\")` for prefixes.",
+    "`case \"rain\", \"drizzle\": \"umbrella\"`."
+  ]
+}

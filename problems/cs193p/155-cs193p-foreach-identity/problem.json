@@ -1,0 +1,49 @@
+{
+  "id": "cs193p-foreach-identity",
+  "title": "L10: The Three Rules for ForEach Identity",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L10–L12 · Complex UIs",
+  "concepts": [
+    "equatable-hashable",
+    "protocols",
+    "set-vs-array"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
+    },
+    {
+      "title": "Identifiable",
+      "url": "https://developer.apple.com/documentation/swift/identifiable"
+    }
+  ],
+  "signature": {
+    "name": "checkIdentities",
+    "params": [
+      {
+        "name": "snapshots",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Uniqueness is per snapshot; stability is across snapshots.",
+    "Track the last id each content had; a different id later means instability.",
+    "Use a `Set` to detect duplicates within a snapshot."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L10: Building Complex UIs",
+      "url": "https://www.youtube.com/watch?v=NnJ91M9PRYo",
+      "channel": "Stanford Online"
+    }
+  ]
+}

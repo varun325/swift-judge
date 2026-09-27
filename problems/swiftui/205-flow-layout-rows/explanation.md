@@ -1,0 +1,1 @@
+SwiftUI's `Layout` protocol asks you to size and place subviews yourself. Keeping the row-breaking math in a pure function makes it testable; `sizeThatFits` uses it to report height, `placeSubviews` to position each subview.

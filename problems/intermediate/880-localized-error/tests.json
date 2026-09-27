@@ -1,0 +1,32 @@
+[
+ {
+  "input": {
+   "sizes": [
+    5,
+    0,
+    30,
+    -1
+   ]
+  },
+  "expected": [
+   "uploaded 5MB",
+   "The file is empty. — Choose a different file.",
+   "The file is larger than 25 MB. — Compress the file and try again.",
+   "You're offline. — Check your connection."
+  ]
+ },
+ {
+  "input": {
+   "sizes": []
+  }
+ },
+ {
+  "input": {
+   "sizes": [
+    25,
+    26
+   ]
+  },
+  "hidden": true
+ }
+]

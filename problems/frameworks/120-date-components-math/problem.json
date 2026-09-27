@@ -1,0 +1,45 @@
+{
+  "id": "date-components-math",
+  "title": "Calendar Math: Adding Months Safely",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Dates & calendars",
+  "concepts": [
+    "fundamental-types",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Calendar",
+      "url": "https://developer.apple.com/documentation/foundation/calendar"
+    },
+    {
+      "title": "DateComponents",
+      "url": "https://developer.apple.com/documentation/foundation/datecomponents"
+    }
+  ],
+  "signature": {
+    "name": "addMonths",
+    "params": [
+      {
+        "name": "isoDates",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "months",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Let `Calendar` do date math — never add seconds for months.",
+    "Configure a Gregorian calendar and `DateFormatter` with UTC and `en_US_POSIX`.",
+    "`calendar.date(byAdding: .month, value: months, to: date)`."
+  ]
+}

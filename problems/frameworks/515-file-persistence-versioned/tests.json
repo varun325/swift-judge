@@ -1,0 +1,32 @@
+[
+ {
+  "input": {
+   "sessions": [
+    [
+     "add milk",
+     "add eggs"
+    ],
+    [
+     "done milk"
+    ],
+    [
+     "corrupt"
+    ],
+    [
+     "add jam"
+    ]
+   ]
+  },
+  "expected": [
+   "v2: milk,eggs",
+   "v3: eggs",
+   "v3: eggs",
+   "v2: jam"
+  ]
+ },
+ {
+  "input": {
+   "sessions": []
+  }
+ }
+]

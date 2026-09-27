@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "words": [
+    "apple",
+    "fig"
+   ],
+   "target": "fig",
+   "minLength": 5
+  },
+  "expected": [
+   true,
+   true
+  ]
+ },
+ {
+  "input": {
+   "words": [],
+   "target": "x",
+   "minLength": 0
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "a"
+   ],
+   "target": "b",
+   "minLength": 2
+  },
+  "hidden": true
+ }
+]

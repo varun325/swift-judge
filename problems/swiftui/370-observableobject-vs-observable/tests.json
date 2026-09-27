@@ -1,0 +1,30 @@
+[
+ {
+  "input": {
+   "changes": [
+    "followers 10",
+    "name Ana",
+    "followers 11",
+    "followers 12"
+   ]
+  },
+  "expected": [
+   4,
+   1
+  ]
+ },
+ {
+  "input": {
+   "changes": []
+  }
+ },
+ {
+  "input": {
+   "changes": [
+    "name a",
+    "name b"
+   ]
+  },
+  "hidden": true
+ }
+]

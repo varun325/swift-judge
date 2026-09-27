@@ -1,0 +1,37 @@
+{
+  "id": "codable-unknown-enum",
+  "title": "Decoding Unknown Enum Values Safely",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "enums"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Decodable",
+      "url": "https://developer.apple.com/documentation/swift/decodable"
+    }
+  ],
+  "signature": {
+    "name": "decodeOrders",
+    "params": [
+      {
+        "name": "json",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "One unexpected string shouldn't fail the whole decode.",
+    "Write `init(from:)` using a `singleValueContainer()`.",
+    "`self = Status(rawValue: raw) ?? .unknown`."
+  ]
+}

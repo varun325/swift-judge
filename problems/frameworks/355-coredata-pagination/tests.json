@@ -1,0 +1,27 @@
+[
+ {
+  "input": {
+   "total": 7,
+   "pageSize": 3
+  },
+  "expected": [
+   "count 7",
+   "page 0: n001..n003",
+   "page 1: n004..n006",
+   "page 2: n007..n007"
+  ]
+ },
+ {
+  "input": {
+   "total": 0,
+   "pageSize": 5
+  }
+ },
+ {
+  "input": {
+   "total": 4,
+   "pageSize": 4
+  },
+  "hidden": true
+ }
+]

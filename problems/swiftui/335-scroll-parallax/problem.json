@@ -1,0 +1,45 @@
+{
+  "id": "scroll-parallax",
+  "title": "Scroll Effects: Parallax & Fade",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Layout",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "visualEffect(_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/visualeffect(_:)"
+    },
+    {
+      "title": "ScrollView",
+      "url": "https://developer.apple.com/documentation/swiftui/scrollview"
+    }
+  ],
+  "signature": {
+    "name": "headerEffects",
+    "params": [
+      {
+        "name": "offsets",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "headerHeight",
+        "type": "Double"
+      }
+    ],
+    "returns": "[[Double]]"
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Each effect is a small formula of the scroll offset.",
+    "Pulling down (negative y) stretches; scrolling up (positive y) moves and fades.",
+    "`opacity = 1 − min(max(y, 0) / h, 1)`."
+  ]
+}

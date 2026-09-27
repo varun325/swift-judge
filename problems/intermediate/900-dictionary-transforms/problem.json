@@ -1,0 +1,34 @@
+{
+  "id": "dictionary-transforms",
+  "title": "mapValues, compactMapValues & grouping",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics",
+    "compactmap-flatmap"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
+    }
+  ],
+  "signature": {
+    "name": "settings",
+    "params": [
+      {
+        "name": "raw",
+        "type": "[String: String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String: Int]"
+  },
+  "hints": [
+    "Dictionaries have value-only transforms that keep their keys.",
+    "`compactMapValues` drops values whose transform returns nil.",
+    "`raw.compactMapValues { Int($0) }.mapValues { $0 * 2 }.filter { !$0.key.hasPrefix(\"_\") }`."
+  ]
+}

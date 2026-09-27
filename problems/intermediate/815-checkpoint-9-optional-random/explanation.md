@@ -1,0 +1,1 @@
+The original Checkpoint 9 answer is `numbers?.randomElement() ?? Int.random(in: 1...100)` — `randomElement()` already returns `nil` for an empty array. Here `Optional.flatMap` does the same job deterministically.

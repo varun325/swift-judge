@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Mismatched opaque types",
+  "pattern": "underlying types|opaque return type"
+ }
+]

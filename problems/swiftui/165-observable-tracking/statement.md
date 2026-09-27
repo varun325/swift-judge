@@ -1,0 +1,3 @@
+Swiftful's *@Observable Macro*. With `@Observable final class CartModel { var items: [String] = []; var coupon = ""; @ObservationIgnored var analyticsCount = 0 }`, a SwiftUI view re-renders only when a property **it read** changes.
+
+ Simulate a view that reads only `items.count`: install `withObservationTracking({ _ = model.items.count }, onChange: …)` and re-install it **only after it fires** (as SwiftUI does when it re-renders) — installing a new tracker on every change would stack pending observers. Apply changes `add <x>`, `coupon <c>`, `track`; return how many times the "view" was notified, then the final item count.

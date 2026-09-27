@@ -1,0 +1,1 @@
+Making each child task return an **optional** (instead of throwing) isolates failures: one bad request doesn't cancel the group. Tagging results with their index restores input order, because task groups deliver results in completion order.

@@ -1,0 +1,1 @@
+The view model owns UI state on the `@MainActor`, depends on a **protocol** (so tests inject a mock), and models loading as an enum — impossible states like "loading and failed" can't exist. The service call hops off the main actor while it waits.

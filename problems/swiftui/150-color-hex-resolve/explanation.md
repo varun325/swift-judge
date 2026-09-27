@@ -1,0 +1,1 @@
+`Color` is a *description* resolved against an environment (light/dark mode, color space) at render time — `resolve(in:)` exposes the concrete components (iOS 17 / macOS 14). A failable initialiser makes invalid hex strings impossible to use by accident.

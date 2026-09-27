@@ -1,0 +1,1 @@
+Unlike `Dictionary(grouping:)`, chunking only groups **adjacent** runs, so order is preserved and a key can appear in several chunks. The real package returns lazy slices; this version builds arrays for clarity.

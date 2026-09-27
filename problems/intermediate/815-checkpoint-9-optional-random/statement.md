@@ -1,0 +1,1 @@
+Checkpoint 9 asks for a one-line function that accepts an optional array of integers and returns a random element — or a random number from 1 to 100 if the array is nil or empty. To keep tests deterministic, return the element at `index % count` instead of a random one, or `100` as the fallback — **in one expression**, no `if`.

@@ -1,0 +1,1 @@
+`root.name` is a *derived* binding: writing through it reads the whole `Profile`, changes one field, and writes the whole value back through the root setter — which is why each edit counts as one root write. That's exactly what `$model.name` passes into a `TextField`.

@@ -1,0 +1,1 @@
+Managed objects are **not** thread-safe: each belongs to its context's queue, and you access it only inside `perform`. `NSManagedObjectID` is the Sendable handle you pass across, then re-fetch with `existingObject(with:)`. Heavy imports on a background context keep the UI responsive; automatic merging updates the main context.

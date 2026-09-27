@@ -1,0 +1,45 @@
+{
+  "id": "health-step-aggregation",
+  "title": "Aggregating Samples by Day (HealthKit-style)",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Platform features",
+  "concepts": [
+    "dictionary-basics",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "HealthKit",
+      "url": "https://developer.apple.com/documentation/healthkit"
+    },
+    {
+      "title": "HKStatisticsCollectionQuery",
+      "url": "https://developer.apple.com/documentation/healthkit/hkstatisticscollectionquery"
+    }
+  ],
+  "signature": {
+    "name": "dailySteps",
+    "params": [
+      {
+        "name": "samples",
+        "type": "[[String]]",
+        "label": "_"
+      },
+      {
+        "name": "timeZone",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Bucket each sample by `calendar.startOfDay(for:)` in the given time zone.",
+    "Sum counts per bucket in a dictionary.",
+    "Walk day by day from the first to the last bucket, filling missing days with 0."
+  ]
+}

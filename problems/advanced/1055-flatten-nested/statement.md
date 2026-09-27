@@ -1,0 +1,1 @@
+Decode JSON like `[1, [2, [3, 4]], [], 5]` into `indirect enum Nested: Decodable { case value(Int), list([Nested]) }` (try `Int` first, then `[Nested]`, via a single-value container), then flatten it recursively. Invalid JSON → `[]`.

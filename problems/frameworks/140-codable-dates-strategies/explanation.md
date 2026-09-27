@@ -1,0 +1,1 @@
+JSON has no date type; APIs send strings or numbers. The decoder's `dateDecodingStrategy` converts them once, centrally, so your models keep a real `Date`. The default strategy expects seconds since **2001** (Apple's reference date) — a classic source of dates in the wrong decade.

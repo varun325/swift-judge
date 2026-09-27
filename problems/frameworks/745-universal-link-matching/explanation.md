@@ -1,0 +1,1 @@
+Universal links are verified by the AASA file your server hosts; ordering matters because the first matching component wins, so put `exclude` rules **before** broad patterns. Wildcard matching with memoised recursion is the same algorithm as glob matching.

@@ -1,0 +1,1 @@
+Swiftful's *Publishers and Subscribers in Combine*. Turn `readings` into a publisher (`readings.publisher`) and build a pipeline: drop negatives (`filter`), drop **consecutive** duplicates (`removeDuplicates`), keep a running total (`scan(0, +)`), then `sink` the values into an array.

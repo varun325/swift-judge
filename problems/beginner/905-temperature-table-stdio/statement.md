@@ -1,0 +1,1 @@
+Input: three integers `from to step` on one line. Print a Celsius → Fahrenheit table from `from` to `to` inclusive (step may be negative), one row per line formatted `"<C>°C = <F>°F"`, with F rounded to the nearest integer.

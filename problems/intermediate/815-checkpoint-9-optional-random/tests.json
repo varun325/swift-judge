@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "numbers": [
+    4,
+    8,
+    15
+   ],
+   "index": 4
+  },
+  "expected": 8
+ },
+ {
+  "input": {
+   "numbers": null,
+   "index": 0
+  },
+  "expected": 100
+ },
+ {
+  "input": {
+   "numbers": [],
+   "index": 3
+  },
+  "expected": 100
+ },
+ {
+  "input": {
+   "numbers": [
+    7
+   ],
+   "index": -5
+  },
+  "hidden": true
+ }
+]

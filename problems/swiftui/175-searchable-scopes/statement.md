@@ -1,0 +1,1 @@
+Swiftful's *Searchable, Search Suggestions, Search Scopes*. Contacts are `[name, group]` with groups `family`, `work`, `friends`. Implement the filter behind `.searchable(text:)` + `.searchScopes`: scope `all` or a group; the query matches names with `localizedStandardContains` (case- and diacritic-insensitive). An empty query returns everything in scope. Results sorted by name.

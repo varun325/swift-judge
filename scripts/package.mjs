@@ -3,6 +3,7 @@
  *   node scripts/package.mjs            # build the .app
  *   node scripts/package.mjs --install  # copy the built .app into /Applications
  *   node scripts/package.mjs --win      # Windows x64: NSIS installer + portable .exe in dist/
+ *   node scripts/package.mjs --dmg      # wrap the already built, signed .app in dist/*.dmg
  *
  * The packaged app records this project folder in Resources/source-root.json, so it reads
  * problems, notes and docs live from here (and keeps the plug-in workflow). A copy is also
@@ -22,7 +23,14 @@ function recordSourceRoot() {
   fs.writeFileSync(path.join(root, 'build', 'source-root.json'), JSON.stringify({ root }, null, 2) + '\n')
 }
 
-if (process.argv.includes('--win')) {
+if (process.argv.includes('--dmg')) {
+  if (!fs.existsSync(built)) throw new Error(`No build at ${built} — run \`npm run package\` first.`)
+  // Package the signed .app as-is, so the copy inside the image keeps a valid signature.
+  execFileSync('npx', ['electron-builder', '--mac', 'dmg', '--arm64', '--prepackaged', built], { cwd: root, stdio: 'inherit' })
+  const dmg = fs.readdirSync(path.join(root, 'dist')).find((f) => f.endsWith('.dmg'))
+  execFileSync('hdiutil', ['verify', path.join(root, 'dist', dmg)], { stdio: 'inherit' })
+  console.log(`built dist/${dmg}`)
+} else if (process.argv.includes('--win')) {
   // On Windows the recorded macOS path won't exist, so the app uses its bundled problems.
   recordSourceRoot()
   execFileSync('npx', ['electron-builder', '--win', '--x64'], { cwd: root, stdio: 'inherit' })

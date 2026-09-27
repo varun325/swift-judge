@@ -1,0 +1,1 @@
+Model methods that change the model are `mutating`; the view's `.onTapGesture { game.changeGuessPeg(at: i) }` just forwards the intent and SwiftUI re-renders because `game` is `@State`. `if let … , let …` unwraps the current peg and finds its index in one statement.

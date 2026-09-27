@@ -1,0 +1,53 @@
+{
+  "id": "cs193p-mastermind-match",
+  "title": "L4–L5: Scoring a Guess (Exact & Inexact)",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L3–L5 · Model & type system",
+  "concepts": [
+    "dictionary-basics",
+    "higher-order-functions",
+    "enums"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/"
+    }
+  ],
+  "signature": {
+    "name": "score",
+    "params": [
+      {
+        "name": "master",
+        "type": "[String]"
+      },
+      {
+        "name": "guesses",
+        "type": "[[String]]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Count exact matches first, position by position.",
+    "For the remaining (non-exact) positions, count each colour on both sides.",
+    "Inexact = Σ over colours of `min(guessCount, masterCount)`."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L4: CodeBreaker's Model",
+      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94",
+      "channel": "Stanford Online"
+    },
+    {
+      "title": "CS193p 2025 · L5: Layout & Data Flow",
+      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE",
+      "channel": "Stanford Online"
+    }
+  ]
+}

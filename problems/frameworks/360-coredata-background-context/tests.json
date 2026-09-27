@@ -1,0 +1,21 @@
+[
+ {
+  "input": {
+   "titles": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "expected": [
+   "background saved 3",
+   "main sees 3",
+   "a"
+  ]
+ },
+ {
+  "input": {
+   "titles": []
+  }
+ }
+]

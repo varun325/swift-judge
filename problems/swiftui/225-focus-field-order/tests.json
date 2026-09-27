@@ -1,0 +1,37 @@
+[
+ {
+  "input": {
+   "actions": [
+    "submit",
+    "submit",
+    "back",
+    "tap password",
+    "submit",
+    "dismiss"
+   ]
+  },
+  "expected": [
+   "username",
+   "email",
+   "username",
+   "password",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "input": {
+   "actions": []
+  }
+ },
+ {
+  "input": {
+   "actions": [
+    "back",
+    "tap nope",
+    "submit"
+   ]
+  },
+  "hidden": true
+ }
+]

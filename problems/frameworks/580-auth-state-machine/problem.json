@@ -1,0 +1,42 @@
+{
+  "id": "auth-state-machine",
+  "title": "Authentication State Machine",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Cloud & backend",
+  "concepts": [
+    "enums",
+    "associated-values",
+    "switch-statement"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Firebase Authentication for Apple platforms",
+      "url": "https://firebase.google.com/docs/auth/ios/start"
+    },
+    {
+      "title": "Sign in with Apple",
+      "url": "https://developer.apple.com/documentation/sign_in_with_apple"
+    }
+  ],
+  "signature": {
+    "name": "authFlow",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Switch on `(currentState, eventName)` and return the next state or nil.",
+    "Pattern-match associated values: `case (.signedIn(let uid, true), \"link\")`.",
+    "Log `\"ignored\"` when the transition isn't legal."
+  ]
+}

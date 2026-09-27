@@ -1,0 +1,3 @@
+Build `final class Container` that registers factories by **protocol type**: `func register<T>(_ type: T.Type, lifetime: Lifetime, factory: @escaping () -> T)` and `func resolve<T>(_ type: T.Type) -> T?`, where `Lifetime` is `.transient` (new instance each time) or `.singleton` (cached). Key the registry by `ObjectIdentifier(type)`.
+
+ Register `AnalyticsService` (singleton) and `APIClient` (transient) — real or mock implementations depending on `useMocks`. Resolve each twice and return `[analytics name, "analytics same:<Bool>", api name, "api same:<Bool>", resolve(Unregistered.self) == nil ? "missing" : "found"]`.

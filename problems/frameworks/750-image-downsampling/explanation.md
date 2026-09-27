@@ -1,0 +1,1 @@
+Decoded image memory depends on **pixels**, not file size: width × height × 4 bytes. Downsampling with ImageIO (`kCGImageSourceThumbnailMaxPixelSize`) before display is the biggest memory win in image-heavy feeds — what Kingfisher's `DownsamplingImageProcessor` does.

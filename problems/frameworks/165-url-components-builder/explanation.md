@@ -1,0 +1,1 @@
+String-concatenating URLs breaks on spaces, `&` and non-ASCII. `URLComponents` percent-encodes each part correctly and supports repeated keys. (Note: it leaves `+` unencoded in queries, which some servers read as a space — encode it yourself if your API needs that.)

@@ -1,0 +1,3 @@
+L11 makes CodeBreaker adaptive. A two-column `NavigationSplitView` behaves differently by **horizontal size class**: in `regular` width (iPad, Mac) both columns show side by side; in `compact` width (iPhone) it collapses into a stack showing the list **or** the detail. Each state is `[sizeClass, selectedGame or "-", columnVisibility]` with visibility `all`, `detailOnly` or `automatic`.
+
+ Return what's on screen: `"list+detail(<game or placeholder>)"`, `"list"`, or `"detail(<game>)"`. In compact width: a selection shows its detail, otherwise the list. In regular width: `detailOnly` hides the list; otherwise both show (placeholder text `"Choose a game"` when nothing is selected).

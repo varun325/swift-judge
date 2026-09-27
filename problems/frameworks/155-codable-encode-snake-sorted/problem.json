@@ -1,0 +1,48 @@
+{
+  "id": "codable-encode-snake-sorted",
+  "title": "Encoding: snake_case, Sorted & Pretty",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "codable-keys"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "JSONEncoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsonencoder"
+    }
+  ],
+  "signature": {
+    "name": "encodeProfile",
+    "params": [
+      {
+        "name": "name",
+        "type": "String"
+      },
+      {
+        "name": "followerCount",
+        "type": "Int"
+      },
+      {
+        "name": "isVerified",
+        "type": "Bool"
+      },
+      {
+        "name": "nickname",
+        "type": "String?"
+      }
+    ],
+    "returns": "String"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Configure `keyEncodingStrategy` and `outputFormatting` on the encoder.",
+    "`.convertToSnakeCase` turns `followerCount` into `follower_count`.",
+    "Decode the `Data` result to a `String` with UTF-8."
+  ]
+}

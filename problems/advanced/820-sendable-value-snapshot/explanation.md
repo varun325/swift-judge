@@ -1,0 +1,1 @@
+Immutable value types of `Sendable` members are automatically safe to share across concurrency domains — each task gets its own copy. That's why snapshotting mutable models into Sendable structs is the standard way to hand data to background work in Swift 6.

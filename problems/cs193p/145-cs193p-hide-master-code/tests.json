@@ -1,0 +1,73 @@
+[
+ {
+  "input": {
+   "master": [
+    "R",
+    "G",
+    "B",
+    "Y"
+   ],
+   "guesses": [
+    [
+     "R",
+     "R",
+     "G",
+     "G"
+    ],
+    [
+     "R",
+     "R",
+     "G",
+     "G"
+    ],
+    [
+     "R",
+     "G"
+    ],
+    [
+     "R",
+     "G",
+     "B",
+     "Y"
+    ],
+    [
+     "Y",
+     "Y",
+     "Y",
+     "Y"
+    ],
+    [
+     "restart"
+    ]
+   ],
+   "maxAttempts": 5
+  },
+  "expected": [
+   "1 ???? playing",
+   "1 ???? rejected",
+   "1 ???? rejected",
+   "2 RGBY solved",
+   "2 RGBY rejected",
+   "0 ???? playing"
+  ]
+ },
+ {
+  "input": {
+   "master": [
+    "A",
+    "B"
+   ],
+   "guesses": [
+    [
+     "B",
+     "A"
+    ],
+    [
+     "A",
+     "A"
+    ]
+   ],
+   "maxAttempts": 2
+  }
+ }
+]

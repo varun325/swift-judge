@@ -1,0 +1,24 @@
+[
+ {
+  "input": {
+   "json": "[{\"type\":\"text\",\"body\":\"hi\"},{\"type\":\"image\",\"url\":\"a.png\",\"width\":640},{\"type\":\"poll\",\"question\":\"Tabs?\",\"options\":[\"y\",\"n\"]},{\"type\":\"video\"}]"
+  },
+  "expected": [
+   "text: hi",
+   "image 640px",
+   "poll Tabs? (2 options)",
+   "unsupported video"
+  ]
+ },
+ {
+  "input": {
+   "json": "[]"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"type\":\"image\",\"url\":\"x\"}]"
+  },
+  "hidden": true
+ }
+]

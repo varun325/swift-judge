@@ -1,0 +1,38 @@
+{
+  "id": "unit-curve",
+  "title": "Animation Curves: Sampling UnitCurve",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Animation",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "UnitCurve",
+      "url": "https://developer.apple.com/documentation/swiftui/unitcurve"
+    }
+  ],
+  "signature": {
+    "name": "sampleCurves",
+    "params": [
+      {
+        "name": "times",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[Double]]",
+    "async": true
+  },
+  "compare": "float:1e-3",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`UnitCurve` has static curves like `.linear`, `.easeIn`, `.easeOut`, `.easeInOut`.",
+    "Call `curve.value(at: t)` for each time.",
+    "Round with `(x * 1000).rounded() / 1000`."
+  ]
+}

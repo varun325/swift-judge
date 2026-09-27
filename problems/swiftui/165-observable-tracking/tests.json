@@ -1,0 +1,30 @@
+[
+ {
+  "input": {
+   "changes": [
+    "add apple",
+    "coupon SAVE",
+    "track",
+    "add pear"
+   ]
+  },
+  "expected": [
+   "notified 2",
+   "items 2"
+  ]
+ },
+ {
+  "input": {
+   "changes": []
+  }
+ },
+ {
+  "input": {
+   "changes": [
+    "coupon X",
+    "track"
+   ]
+  },
+  "hidden": true
+ }
+]

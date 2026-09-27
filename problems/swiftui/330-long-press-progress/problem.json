@@ -1,0 +1,41 @@
+{
+  "id": "long-press-progress",
+  "title": "LongPressGesture: Hold-to-Confirm Progress",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Gestures",
+  "concepts": [
+    "fundamental-types",
+    "enums"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "LongPressGesture",
+      "url": "https://developer.apple.com/documentation/swiftui/longpressgesture"
+    }
+  ],
+  "signature": {
+    "name": "holdProgress",
+    "params": [
+      {
+        "name": "holds",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "required",
+        "type": "Double"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Progress is held ÷ required, capped at 1.",
+    "Decide the state from the progress: complete, under 30%, or in between.",
+    "Truncate the percentage with `rounded(.down)`."
+  ]
+}

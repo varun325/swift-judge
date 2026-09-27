@@ -1,0 +1,40 @@
+{
+  "id": "view-that-fits",
+  "title": "ViewThatFits: Picking the First Fit",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Layout",
+  "concepts": [
+    "optionals",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ViewThatFits",
+      "url": "https://developer.apple.com/documentation/swiftui/viewthatfits"
+    }
+  ],
+  "signature": {
+    "name": "chooseLayouts",
+    "params": [
+      {
+        "name": "idealWidths",
+        "type": "[Double]"
+      },
+      {
+        "name": "available",
+        "type": "[Double]"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Try the options in order and take the first that fits.",
+    "`firstIndex { $0 <= width }` finds it.",
+    "Fall back to the last index when none fit."
+  ]
+}

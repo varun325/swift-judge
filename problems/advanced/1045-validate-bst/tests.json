@@ -1,0 +1,65 @@
+[
+ {
+  "input": {
+   "levelOrder": [
+    2,
+    1,
+    3
+   ]
+  },
+  "expected": true
+ },
+ {
+  "input": {
+   "levelOrder": [
+    5,
+    1,
+    4,
+    null,
+    null,
+    3,
+    6
+   ]
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "levelOrder": [
+    5,
+    4,
+    6,
+    null,
+    null,
+    3,
+    7
+   ]
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "levelOrder": []
+  }
+ },
+ {
+  "input": {
+   "levelOrder": [
+    2,
+    2,
+    2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "levelOrder": [
+    -9223372036854775808,
+    null,
+    9223372036854775807
+   ]
+  },
+  "hidden": true
+ }
+]

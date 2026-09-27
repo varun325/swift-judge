@@ -1,0 +1,45 @@
+{
+  "id": "iso8601-timezones",
+  "title": "ISO 8601 & Time Zones",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Dates & calendars",
+  "concepts": [
+    "fundamental-types",
+    "codable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Date.ISO8601FormatStyle",
+      "url": "https://developer.apple.com/documentation/foundation/date/iso8601formatstyle"
+    },
+    {
+      "title": "TimeZone",
+      "url": "https://developer.apple.com/documentation/foundation/timezone"
+    }
+  ],
+  "signature": {
+    "name": "localTimes",
+    "params": [
+      {
+        "name": "timestamps",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "zones",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`Date(ts, strategy: .iso8601)` parses timestamps with offsets.",
+    "A `Date` has no zone; set `DateFormatter.timeZone` to render it in one.",
+    "Format with `HH:mm zzz` for each `TimeZone(identifier:)`."
+  ]
+}

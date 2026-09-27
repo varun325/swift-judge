@@ -1,0 +1,42 @@
+{
+  "id": "notificationcenter-async",
+  "title": "NotificationCenter as an AsyncSequence",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Foundation essentials",
+  "concepts": [
+    "async-await",
+    "delegation"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NotificationCenter",
+      "url": "https://developer.apple.com/documentation/foundation/notificationcenter"
+    },
+    {
+      "title": "NotificationCenter.notifications(named:object:)",
+      "url": "https://developer.apple.com/documentation/foundation/notificationcenter/notifications(named:object:)"
+    }
+  ],
+  "signature": {
+    "name": "broadcast",
+    "params": [
+      {
+        "name": "messages",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`center.notifications(named:)` is an async sequence of notifications.",
+    "Start the listener, wait until it has created its sequence, then post.",
+    "Read `note.userInfo?[\"text\"]` and stop at `\"bye\"`."
+  ]
+}

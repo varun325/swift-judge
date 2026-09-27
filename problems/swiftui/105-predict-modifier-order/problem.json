@@ -1,0 +1,26 @@
+{
+  "id": "predict-modifier-order",
+  "title": "Predict: Why Modifier Order Matters",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "View composition",
+  "concepts": [
+    "generics",
+    "result-builders"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "ViewModifier",
+      "url": "https://developer.apple.com/documentation/swiftui/viewmodifier"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Each modifier returns a *new* view that wraps the previous one.",
+    "The outermost type is the **last** modifier you applied.",
+    "The two types are different, so the last line prints `false`."
+  ]
+}

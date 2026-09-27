@@ -1,0 +1,1 @@
+`combineLatest` is for **state** (form validation: re-evaluate when any field changes). `zip` pairs values **one-to-one** in order (request/response). `merge` interleaves same-typed streams (events from several sources). Choosing the wrong one is a common Combine bug.

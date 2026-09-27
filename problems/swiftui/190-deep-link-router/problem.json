@@ -1,0 +1,42 @@
+{
+  "id": "deep-link-router",
+  "title": "Deep Links to Routes",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Navigation",
+  "concepts": [
+    "enums",
+    "optionals",
+    "failable-init"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "onOpenURL(perform:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/onopenurl(perform:)"
+    },
+    {
+      "title": "URLComponents",
+      "url": "https://developer.apple.com/documentation/foundation/urlcomponents"
+    }
+  ],
+  "signature": {
+    "name": "routes",
+    "params": [
+      {
+        "name": "links",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`URLComponents` gives you `scheme`, `host`, `path` and `queryItems`.",
+    "For `myapp://profile/7`, `host` is `profile` and `path` is `/7`.",
+    "Switch on the number of path parts and the literal segments."
+  ]
+}

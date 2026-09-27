@@ -1,0 +1,46 @@
+{
+  "id": "animatable-shape",
+  "title": "Animatable Shapes: animatableData",
+  "track": "swiftui",
+  "difficulty": "hard",
+  "topic": "Animation",
+  "concepts": [
+    "protocols",
+    "computed-properties"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Animatable",
+      "url": "https://developer.apple.com/documentation/swiftui/animatable"
+    }
+  ],
+  "signature": {
+    "name": "animateCorner",
+    "params": [
+      {
+        "name": "from",
+        "type": "Double"
+      },
+      {
+        "name": "to",
+        "type": "Double"
+      },
+      {
+        "name": "steps",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Double]",
+    "async": true
+  },
+  "compare": "float:1e-6",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "SwiftUI animates a shape by writing interpolated values into `animatableData`.",
+    "Make `animatableData` a computed property that reads and writes `cornerRadius`.",
+    "Read the first `.move` point with `path.forEach { if case .move(let p) = $0 { … } }`."
+  ]
+}

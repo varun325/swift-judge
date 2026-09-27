@@ -1,0 +1,1 @@
+Enums **without** raw values get `Comparable` synthesised from case order. With a `String` raw value (as here, for parsing) you must write `<` yourself — using `allCases` order keeps it in sync with the declaration.

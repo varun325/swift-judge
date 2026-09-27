@@ -1,0 +1,1 @@
+Calendar triggers match **components**, not intervals, so "every day at 9" survives DST changes. `.strict` matching skips months that lack day 31 — other policies would move to the next or previous valid day. Computing the date yourself lets you show "Next reminder: …" in the UI.

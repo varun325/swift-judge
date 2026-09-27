@@ -1,0 +1,1 @@
+Adaptive UIs react to **size classes**, not device models — an iPad in Split View can be compact. `NavigationSplitView` handles the collapse automatically; your job is to supply a sensible detail placeholder and to bind column visibility when you want to control it.

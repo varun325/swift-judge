@@ -1,0 +1,1 @@
+Fetch `GET /users/<id>` for every id **concurrently** (task group), decoding `{"name": …}`. Failed requests (status ≥ 400, set up via `failing`) should not cancel the others: return per id, **in input order**, `"<id>: <name>"` or `"<id>: failed"`. The mock server (given) serves the routes.

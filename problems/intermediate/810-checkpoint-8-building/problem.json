@@ -1,0 +1,34 @@
+{
+  "id": "checkpoint-8-building",
+  "title": "Checkpoint 8: Building Protocol",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Protocols",
+  "concepts": [
+    "protocols",
+    "protocol-extension"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Protocols",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "listings",
+    "params": [
+      {
+        "name": "specs",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "A protocol lists requirements; an extension can implement a requirement for everyone.",
+    "Add a `kind` requirement and implement `salesSummary()` once in `extension Building`.",
+    "Conform `House`/`Office` with stored `rooms`/`cost` and computed `kind`/`agent`."
+  ]
+}

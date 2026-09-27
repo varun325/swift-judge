@@ -1,0 +1,1 @@
+Nodes are **classes** because list nodes need identity and shared references. `while let node = current` walks optionals safely; three pointers (`previous`, `current`, `next`) flip links in O(n) time, O(1) space. (Very long lists of strong `next` references can overflow the stack when ARC deallocates them recursively — real code often breaks them iteratively.)

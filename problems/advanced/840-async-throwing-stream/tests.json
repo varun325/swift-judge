@@ -1,0 +1,39 @@
+[
+ {
+  "input": {
+   "chunks": 4,
+   "failAt": 0
+  },
+  "expected": [
+   "25%",
+   "50%",
+   "75%",
+   "100%",
+   "done"
+  ]
+ },
+ {
+  "input": {
+   "chunks": 4,
+   "failAt": 3
+  },
+  "expected": [
+   "25%",
+   "50%",
+   "error interrupted"
+  ]
+ },
+ {
+  "input": {
+   "chunks": 0,
+   "failAt": 0
+  }
+ },
+ {
+  "input": {
+   "chunks": 3,
+   "failAt": 1
+  },
+  "hidden": true
+ }
+]

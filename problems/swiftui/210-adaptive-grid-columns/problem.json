@@ -1,0 +1,48 @@
+{
+  "id": "adaptive-grid-columns",
+  "title": "LazyVGrid: Adaptive Column Math",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Layout",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "GridItem",
+      "url": "https://developer.apple.com/documentation/swiftui/griditem"
+    },
+    {
+      "title": "LazyVGrid",
+      "url": "https://developer.apple.com/documentation/swiftui/lazyvgrid"
+    }
+  ],
+  "signature": {
+    "name": "adaptiveColumns",
+    "params": [
+      {
+        "name": "containerWidths",
+        "type": "[Double]"
+      },
+      {
+        "name": "minimum",
+        "type": "Double"
+      },
+      {
+        "name": "spacing",
+        "type": "Double"
+      }
+    ],
+    "returns": "[[Double]]"
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Each extra column costs its minimum width plus one spacing.",
+    "`count = max(1, floor((W + s) / (m + s)))`.",
+    "Then share the remaining width equally: `(W − s × (count − 1)) / count`."
+  ]
+}

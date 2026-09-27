@@ -1,0 +1,37 @@
+{
+  "id": "review-prompt-rules",
+  "title": "When to Ask for an App Store Review",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Product engineering",
+  "concepts": [
+    "guard",
+    "control-flow"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "RequestReviewAction",
+      "url": "https://developer.apple.com/documentation/storekit/requestreviewaction"
+    }
+  ],
+  "signature": {
+    "name": "reviewPrompts",
+    "params": [
+      {
+        "name": "events",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Track success count, last crash day and previous prompt days.",
+    "All four conditions must hold on a `success` event.",
+    "Count prompts within the last 365 days with `count(where:)`."
+  ]
+}

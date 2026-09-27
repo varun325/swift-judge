@@ -1,0 +1,35 @@
+{
+  "id": "algorithms-uniqued",
+  "title": "Swift Algorithms: uniqued(on:)",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Algorithms package",
+  "concepts": [
+    "set-vs-array",
+    "generics",
+    "equatable-hashable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Swift Algorithms (GitHub)",
+      "url": "https://github.com/apple/swift-algorithms"
+    }
+  ],
+  "signature": {
+    "name": "uniqueByLength",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "You need a set of *keys* you've already seen.",
+    "Keep an element only if inserting its key into the set succeeds.",
+    "`for element in self where seen.insert(try key(element)).inserted { result.append(element) }`."
+  ]
+}

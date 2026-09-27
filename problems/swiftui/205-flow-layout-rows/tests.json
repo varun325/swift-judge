@@ -1,0 +1,57 @@
+[
+ {
+  "input": {
+   "widths": [
+    40,
+    60,
+    30,
+    80,
+    20
+   ],
+   "containerWidth": 120,
+   "spacing": 8
+  },
+  "expected": [
+   [
+    0,
+    1
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    4
+   ]
+  ]
+ },
+ {
+  "input": {
+   "widths": [],
+   "containerWidth": 100,
+   "spacing": 4
+  }
+ },
+ {
+  "input": {
+   "widths": [
+    200,
+    10
+   ],
+   "containerWidth": 100,
+   "spacing": 4
+  }
+ },
+ {
+  "input": {
+   "widths": [
+    30,
+    30,
+    30
+   ],
+   "containerWidth": 100,
+   "spacing": 5
+  },
+  "hidden": true
+ }
+]

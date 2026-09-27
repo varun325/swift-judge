@@ -6,7 +6,7 @@ import type {
 import { stringifyExact } from '../../shared/json'
 import { compareJson, compareText } from './compare'
 import { presentCompilerOutput, stripPaths } from './diagnostics'
-import { generateDriver, parseDriverOutput, wrapCustomHarness } from './harness'
+import { generateDriver, parseDriverOutput, withQuietCrashes, wrapCustomHarness } from './harness'
 import { mapLimit, run } from './runner'
 import { compile, getCacheRoot, sha, typecheck, type SourceFile } from './toolchain'
 
@@ -36,7 +36,7 @@ function sourcesFor(p: Problem, code: string): SourceFile[] {
   if (p.meta.mode === 'function') {
     return [{ name: 'user.swift', content: code }, { name: 'main.swift', content: driverFor(p) }]
   }
-  return [{ name: 'main.swift', content: code }]
+  return [{ name: 'main.swift', content: withQuietCrashes(code) }]
 }
 
 /** Drop warnings that come from the judge's own driver so the learner only sees their code's. */
@@ -264,6 +264,9 @@ async function judgePredict(p: Problem, prediction: string, tests: TestCase[]): 
  */
 export async function judge(p: Problem, code: string, submit: boolean): Promise<JudgeResult> {
   const tests = submit ? p.tests : p.tests.filter((t) => !t.hidden)
+  if (p.meta.platforms && !(p.meta.platforms as string[]).includes(process.platform)) {
+    return failure('internal_error', `This problem uses Apple frameworks (such as SwiftUI, Combine or SwiftData) that only exist on macOS, so it can't be judged on ${process.platform}. Read the Learn tab and try it on a Mac.`)
+  }
   try {
     if (p.meta.mode === 'diagnostic') return await judgeDiagnostic(p, code, tests)
     if (p.meta.mode === 'predict') return await judgePredict(p, code, tests)

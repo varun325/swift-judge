@@ -1,0 +1,1 @@
+Synthesised encoding **omits** nil optionals (it uses `encodeIfPresent`), rather than writing `null`. `.sortedKeys` makes output deterministic (great for tests and caching), and the snake-case strategy keeps Swift names idiomatic.

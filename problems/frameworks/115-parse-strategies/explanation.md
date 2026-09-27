@@ -1,0 +1,1 @@
+Parsing is the inverse of formatting: `style.parseStrategy.parse(_:)` understands `$1,234.50` in `en_US`. `Decimal` stores base-10 digits, so `19.99 × 100` is exactly `1999` — use it for money, never `Double`.

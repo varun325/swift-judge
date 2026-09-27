@@ -1,0 +1,1 @@
+`@Observable` tracks **which properties were read** during a render, so changing `coupon` (never read) or an `@ObservationIgnored` property doesn't invalidate the view — unlike `ObservableObject`, where any `@Published` change re-renders every observer. `onChange` fires once per installation, so SwiftUI re-registers after each render.

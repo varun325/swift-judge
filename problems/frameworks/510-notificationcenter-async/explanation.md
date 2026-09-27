@@ -1,0 +1,1 @@
+`NotificationCenter` is a process-wide publish/subscribe bus (like an `EventEmitter`). The async `notifications(named:)` sequence replaces selector-based observers and removes itself when the loop ends. Waiting for a "ready" signal before posting avoids missing early notifications — the same subscribe-before-publish timing issue as with Combine subjects.

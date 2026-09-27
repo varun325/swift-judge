@@ -1,0 +1,1 @@
+A **stub** returns canned answers (controls inputs); a **spy** records calls (lets you assert on side effects); a **fake** is a lightweight working implementation (e.g. in-memory repository). Protocol-based injection makes all three trivial — no mocking framework needed, unlike typical JS test setups.

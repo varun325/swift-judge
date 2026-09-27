@@ -1,0 +1,1 @@
+Format styles also **parse**. For each user-typed price, try `Decimal.FormatStyle.Currency(code: "USD", locale: en_US).parseStrategy` and then plain `Double(input)`; return the parsed value in cents (`Int`) or `"invalid"`. Use `Decimal` to avoid binary rounding.

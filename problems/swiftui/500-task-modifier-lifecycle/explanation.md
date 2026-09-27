@@ -1,0 +1,1 @@
+`.task` ties async work to a view's lifetime — no manual cancellation, no leaks. With `id:`, a changed value cancels the in-flight work and starts fresh (perfect for search), and unchanged values do nothing. Your async code must honour cancellation (`Task.sleep` throws; check `Task.isCancelled`).

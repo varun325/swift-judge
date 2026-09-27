@@ -1,0 +1,1 @@
+`@Model` turns a plain class into a persistent, observable model — no model file, no `NSManagedObject`. `ModelContext` inserts, deletes and autosaves; `FetchDescriptor` pairs a type-checked `#Predicate` with `SortDescriptor`s. It's Core Data underneath, with a Swift-native API.

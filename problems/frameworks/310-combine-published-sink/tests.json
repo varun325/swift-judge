@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "typed": [
+    "a",
+    "ap",
+    "AP ",
+    "b",
+    ""
+   ]
+  },
+  "expected": [
+   "apple,apricot",
+   "apple,apricot",
+   "apple,apricot",
+   "banana,blueberry",
+   "apple,apricot,banana,blueberry,cherry"
+  ]
+ },
+ {
+  "input": {
+   "typed": []
+  }
+ },
+ {
+  "input": {
+   "typed": [
+    "z"
+   ]
+  },
+  "hidden": true
+ }
+]

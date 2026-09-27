@@ -1,0 +1,1 @@
+Integer division truncates toward zero and `%` keeps the sign of the dividend. Converting `Double → Int` truncates too. A literal like `7.0 / 2` is all-`Double`, but `Double(a / b)` divides as integers first.

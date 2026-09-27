@@ -1,0 +1,34 @@
+{
+  "id": "localized-error",
+  "title": "Custom Errors with LocalizedError",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Error handling",
+  "concepts": [
+    "error-handling",
+    "enums"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "LocalizedError",
+      "url": "https://developer.apple.com/documentation/foundation/localizederror"
+    }
+  ],
+  "signature": {
+    "name": "uploadMessages",
+    "params": [
+      {
+        "name": "sizes",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`LocalizedError` adds `errorDescription` and `recoverySuggestion` to an error type.",
+    "Switch on `self` in computed properties to provide text per case (including associated values).",
+    "`catch let error as LocalizedError { \"\\(error.localizedDescription) — \\(error.recoverySuggestion ?? \"\")\" }`."
+  ]
+}

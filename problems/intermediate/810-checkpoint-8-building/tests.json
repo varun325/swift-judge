@@ -1,0 +1,27 @@
+[
+ {
+  "input": {
+   "specs": [
+    [
+     0,
+     3,
+     250000
+    ],
+    [
+     1,
+     20,
+     1200000
+    ]
+   ]
+  },
+  "expected": [
+   "House with 3 rooms, $250000, sold by Ana",
+   "Office with 20 rooms, $1200000, sold by Bo"
+  ]
+ },
+ {
+  "input": {
+   "specs": []
+  }
+ }
+]

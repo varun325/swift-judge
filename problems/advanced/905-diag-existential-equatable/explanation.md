@@ -1,0 +1,1 @@
+`any Equatable` erases the concrete type, so `==` (which needs `Self == Self`) can't be called on two of them. Generics (`<T: Equatable>`) keep the type known, which is why they're preferred for such APIs.

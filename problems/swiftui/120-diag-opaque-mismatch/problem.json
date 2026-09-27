@@ -1,0 +1,26 @@
+{
+  "id": "diag-opaque-mismatch",
+  "title": "Diagnostic: some View Must Be One Type",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "View composition",
+  "concepts": [
+    "opaque-types",
+    "result-builders"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "An opaque return type must be the same concrete type on every path.",
+    "Return `Text` on one path and `Image` on the other with explicit `return`s.",
+    "Remove `@ViewBuilder` and use `return Text(...)` / `return Image(...)`."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "checkpoint-4-integer-sqrt",
+  "title": "Checkpoint 4: Integer Square Root with Errors",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "error-handling",
+    "functions-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Error Handling",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ],
+  "signature": {
+    "name": "integerSqrt",
+    "params": [
+      {
+        "name": "n",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Int",
+    "throws": true
+  },
+  "hints": [
+    "Which checks can fail before you even start looping?",
+    "Guard the range with `(1...10_000).contains(n)`, then loop `1...100` looking for `i * i == n`.",
+    "`for i in 1...100 where i * i == n { return i }` then `throw SqrtError.noRoot`."
+  ]
+}

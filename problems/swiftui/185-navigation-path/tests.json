@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "commands": [
+    "push profile 7",
+    "push settings",
+    "save",
+    "pop",
+    "root"
+   ]
+  },
+  "expected": [
+   "depth 1",
+   "depth 2",
+   "restored 2",
+   "depth 1",
+   "depth 0"
+  ]
+ },
+ {
+  "input": {
+   "commands": []
+  }
+ },
+ {
+  "input": {
+   "commands": [
+    "pop",
+    "push detail a",
+    "push detail b",
+    "save"
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+`NavigationStack(path:)` renders one screen per element of the path, so navigation becomes **data** — push = append, pop = removeLast, pop-to-root = reset. Because the routes are `Codable`, `path.codable` lets you persist and restore the whole stack (state restoration, deep links).

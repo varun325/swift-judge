@@ -1,0 +1,1 @@
+Return the intersection of two arrays **including duplicates** (each element as many times as it appears in both), in the order it appears in `b`. `Set` intersection would lose the duplicates — use a count dictionary.

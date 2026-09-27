@@ -1,0 +1,19 @@
+[
+ {
+  "input": {
+   "messages": [
+    "hi",
+    "how are you"
+   ]
+  },
+  "expected": [
+   "hi",
+   "how are you"
+  ]
+ },
+ {
+  "input": {
+   "messages": []
+  }
+ }
+]

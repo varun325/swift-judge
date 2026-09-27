@@ -1,0 +1,39 @@
+{
+  "id": "algorithms-windows",
+  "title": "Swift Algorithms: windows & adjacentPairs",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Algorithms package",
+  "concepts": [
+    "custom-collection",
+    "half-open-range",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Swift Algorithms (GitHub)",
+      "url": "https://github.com/apple/swift-algorithms"
+    }
+  ],
+  "signature": {
+    "name": "movingStats",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "window",
+        "type": "Int"
+      }
+    ],
+    "returns": "[[Int]]"
+  },
+  "hints": [
+    "A window is a slice `self[start..<end]`; slide both indices forward together.",
+    "Use `index(_:offsetBy:)` for the first end, then `formIndex(after:)` on both each step.",
+    "`adjacentPairs` is `Array(zip(self, dropFirst()))`."
+  ]
+}

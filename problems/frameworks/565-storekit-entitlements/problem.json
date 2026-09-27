@@ -1,0 +1,45 @@
+{
+  "id": "storekit-entitlements",
+  "title": "StoreKit: Subscription Entitlement Logic",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Platform features",
+  "concepts": [
+    "enums",
+    "optionals",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "StoreKit",
+      "url": "https://developer.apple.com/documentation/storekit"
+    },
+    {
+      "title": "Transaction",
+      "url": "https://developer.apple.com/documentation/storekit/transaction"
+    }
+  ],
+  "signature": {
+    "name": "entitlement",
+    "params": [
+      {
+        "name": "now",
+        "type": "Int"
+      },
+      {
+        "name": "transactions",
+        "type": "[[String]]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Filter out revoked and expired transactions first.",
+    "Map product ids to tiers and take the maximum (`Comparable` enum).",
+    "The renewal date is the latest expiry among active subscriptions."
+  ]
+}

@@ -69,13 +69,13 @@
   "input": {
    "json": {
     "qpt": "ytf",
-    "e.bz": "jfvl",
+    "fy.l.kq": "jfvl",
     "l.ej": "ccdm",
-    "fy.l.kq": "s"
+    "e.bz": "s"
    },
    "paths": [
     "nope",
-    "e.bz",
+    "fy.l.kq",
     "a.b",
     "l.ej"
    ]
@@ -100,8 +100,8 @@
   "name": "random 5",
   "input": {
    "json": {
-    "lr": "e",
-    "jt": "ym"
+    "jt": "e",
+    "lr": "ym"
    },
    "paths": [
     "nope"
@@ -113,12 +113,12 @@
   "name": "random 6",
   "input": {
    "json": {
-    "z.ur.f": "jzf",
-    "eq": "cp",
-    "ir": "s"
+    "eq": "jzf",
+    "ir": "cp",
+    "z.ur.f": "s"
    },
    "paths": [
-    "z.ur.f"
+    "eq"
    ]
   },
   "hidden": true
@@ -127,9 +127,9 @@
   "name": "random 7",
   "input": {
    "json": {
-    "ndv": "lnydp",
+    "t": "lnydp",
     "ko": "w",
-    "t": "weh"
+    "ndv": "weh"
    },
    "paths": []
   },
@@ -139,9 +139,9 @@
   "name": "random 8",
   "input": {
    "json": {
-    "ca.xie": "hqpd",
+    "yow.l.brq": "hqpd",
     "sor.orp.ebq": "hm",
-    "yow.l.brq": "bwu",
+    "ca.xie": "bwu",
     "ksp.lwb": "xmpo"
    },
    "paths": []

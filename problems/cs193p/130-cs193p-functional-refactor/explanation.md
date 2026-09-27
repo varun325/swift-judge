@@ -1,0 +1,1 @@
+`map`'s closure runs **immediately**, so `labels` captured `bonus` at 1. The inner closures in `makers` capture the **variable** `bonus` and only run later, when it's 100. `enumerated()` gives `(offset, element)` tuples a closure can destructure.

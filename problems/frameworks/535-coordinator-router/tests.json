@@ -1,0 +1,40 @@
+[
+ {
+  "input": {
+   "events": [
+    "loggedIn",
+    "tapProduct 7",
+    "openCart",
+    "checkout",
+    "paid",
+    "back",
+    "back",
+    "logout"
+   ]
+  },
+  "expected": [
+   "home",
+   "home>product7",
+   "home>product7 [cart]",
+   "home>product7>checkout",
+   "home>receipt",
+   "home",
+   "home",
+   "login"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "checkout",
+    "back"
+   ]
+  },
+  "hidden": true
+ }
+]

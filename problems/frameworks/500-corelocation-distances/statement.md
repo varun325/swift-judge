@@ -1,0 +1,1 @@
+Swiftful's *SwiftUI Map App*. Given the user's `[lat, lon]` and places `[name, lat, lon]`, compute each place's distance with `CLLocation.distance(from:)` (metres, great-circle) and return places sorted nearest-first as `"<name> <km, 1 decimal> km"`. Places with invalid coordinates (latitude outside ±90, longitude outside ±180) are skipped.

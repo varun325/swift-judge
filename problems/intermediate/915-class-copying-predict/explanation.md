@@ -1,0 +1,1 @@
+Copying an array of classes copies the **references**: both arrays point to the same `Box` objects, so mutating one box is visible through both — but appending only changes one array. Arrays of structs copy the values themselves.

@@ -1,0 +1,36 @@
+{
+  "id": "actor-request-coalescing",
+  "title": "Actor Reentrancy: Coalesce Duplicate Requests",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "actors",
+    "async-await",
+    "caching"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — Actors",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "coalesced",
+    "params": [
+      {
+        "name": "keys",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "Two concurrent callers can both see an empty cache if you `await` before recording anything.",
+    "Store the in-flight `Task` in a dictionary *before* awaiting it; later callers await the same task.",
+    "`if let existing = tasks[key] { return await existing.value }` then create, store and await a new `Task`."
+  ]
+}

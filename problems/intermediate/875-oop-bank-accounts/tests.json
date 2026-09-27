@@ -1,0 +1,39 @@
+[
+ {
+  "input": {
+   "ops": [
+    "open a savings",
+    "dep a 150",
+    "wd a 60",
+    "wd a 50",
+    "show a",
+    "wd z 1"
+   ]
+  },
+  "expected": [
+   "ok",
+   "ok",
+   "refused",
+   "ok",
+   "a: 100",
+   "no account"
+  ]
+ },
+ {
+  "input": {
+   "ops": []
+  }
+ },
+ {
+  "input": {
+   "ops": [
+    "open c checking",
+    "wd c 1",
+    "dep c 5",
+    "wd c 5",
+    "show c"
+   ]
+  },
+  "hidden": true
+ }
+]

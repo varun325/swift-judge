@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "rows": [
+    [
+     "Mug",
+     "1999",
+     "4.24",
+     "y"
+    ],
+    [
+     "Pen",
+     "100",
+     "5",
+     "n"
+    ],
+    [
+     "Card",
+     "101",
+     "0",
+     "n"
+    ]
+   ]
+  },
+  "expected": [
+   "Mug, 19 dollars 99 cents, rated 4.2 out of 5 stars, bestseller",
+   "Pen, 1 dollar, rated 5.0 out of 5 stars",
+   "Card, 1 dollar 1 cent, rated 0.0 out of 5 stars"
+  ]
+ },
+ {
+  "input": {
+   "rows": []
+  }
+ }
+]

@@ -1,0 +1,35 @@
+{
+  "id": "actor-nonisolated",
+  "title": "Actors & nonisolated Members",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "actors",
+    "sendable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — Actors",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "libraryDemo",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "Actor methods are awaited from outside; a `nonisolated` member isn't.",
+    "`nonisolated var label` may only read the `let name`, never `books`.",
+    "`out.append(await library.checkout(title) ? \"ok\" : \"unavailable\")`."
+  ]
+}

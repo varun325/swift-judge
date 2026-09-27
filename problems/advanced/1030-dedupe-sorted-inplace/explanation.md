@@ -1,0 +1,1 @@
+Two pointers over a sorted array: the writer marks the end of the unique prefix. `removeLast(k)` trims in place. Because arrays are values, `inout` is how you get in-place mutation of the caller's array.

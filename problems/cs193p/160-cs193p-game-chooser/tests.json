@@ -1,0 +1,27 @@
+[
+ {
+  "input": {
+   "ops": [
+    "add Mastermind classic",
+    "add Undersea ocean",
+    "select Undersea",
+    "rename Undersea Deep",
+    "remove Mastermind",
+    "remove Deep"
+   ]
+  },
+  "expected": [
+   "Mastermind | selected: none",
+   "Mastermind,Undersea | selected: none",
+   "Mastermind,Undersea | selected: Undersea",
+   "Mastermind,Deep | selected: Deep",
+   "Deep | selected: Deep",
+   " | selected: none"
+  ]
+ },
+ {
+  "input": {
+   "ops": []
+  }
+ }
+]

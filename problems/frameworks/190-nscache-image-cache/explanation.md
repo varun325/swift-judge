@@ -1,0 +1,1 @@
+`NSCache` is thread-safe and evicts automatically under memory pressure — perfect for images and derived data, never for anything you can't recompute. Its limits are **hints**, not guarantees, so tests must not depend on exact eviction. Keys are `NSString` because it's an Objective-C class.

@@ -1,0 +1,41 @@
+{
+  "id": "environment-shared-model",
+  "title": "Sharing an @Observable Model via the Environment",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "State & data flow",
+  "concepts": [
+    "value-vs-reference",
+    "dependency-injection"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "environment(_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/environment(_:)-4516h"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    }
+  ],
+  "signature": {
+    "name": "cartScreens",
+    "params": [
+      {
+        "name": "actions",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Shared, mutable app state lives in a class so everyone sees the same instance.",
+    "Give both screen structs the same `Cart` reference.",
+    "`list.cart === badge.cart` proves identity."
+  ]
+}

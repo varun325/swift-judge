@@ -1,0 +1,42 @@
+[
+ {
+  "input": {
+   "value": 2.5
+  },
+  "expected": [
+   3,
+   2,
+   3,
+   2,
+   2.5
+  ]
+ },
+ {
+  "input": {
+   "value": -2.567
+  },
+  "expected": [
+   -3,
+   -3,
+   -2,
+   -2,
+   -2.57
+  ]
+ },
+ {
+  "input": {
+   "value": 0
+  }
+ },
+ {
+  "input": {
+   "value": 1.005
+  }
+ },
+ {
+  "input": {
+   "value": -0.5
+  },
+  "hidden": true
+ }
+]

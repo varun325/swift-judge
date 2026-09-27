@@ -1,0 +1,1 @@
+`some View` promises **one** concrete type. Two different `return` types break that promise. `@ViewBuilder` fixes it by combining both branches into `_ConditionalContent<Text, Image>` — which is why `body` (implicitly a view builder) can branch freely.

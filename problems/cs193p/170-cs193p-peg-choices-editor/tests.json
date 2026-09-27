@@ -1,0 +1,38 @@
+[
+ {
+  "input": {
+   "actions": [
+    "new",
+    "name Earth",
+    "addPeg T",
+    "save",
+    "addPeg G",
+    "addPeg T",
+    "save",
+    "removePeg T",
+    "addPeg B",
+    "save",
+    "edit Mastermind",
+    "removePeg Y",
+    "cancel"
+   ]
+  }
+ },
+ {
+  "input": {
+   "actions": []
+  }
+ },
+ {
+  "input": {
+   "actions": [
+    "edit Mastermind",
+    "name ",
+    "save",
+    "name Classic",
+    "save"
+   ]
+  },
+  "hidden": true
+ }
+]

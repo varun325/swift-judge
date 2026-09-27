@@ -1,0 +1,1 @@
+Decode `[{"name": …, "at": …}]` into `struct Event: Decodable { let name: String; let at: Date }` using the chosen `dateDecodingStrategy`: `iso8601`, `secondsSince1970`, `millisecondsSince1970`, or `custom` (format `dd/MM/yyyy`, UTC). Return `"<name> <ISO 8601 of at>"` per event, or `["error"]`.

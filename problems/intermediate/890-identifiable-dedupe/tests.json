@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "ops": [
+    "add 1 milk",
+    "add 2 eggs",
+    "toggle 1",
+    "rename 2 bread",
+    "add 1 dup",
+    "delete 3"
+   ]
+  },
+  "expected": [
+   "1:milk:done",
+   "2:bread:todo"
+  ]
+ },
+ {
+  "input": {
+   "ops": []
+  }
+ },
+ {
+  "input": {
+   "ops": [
+    "add 5 a b c",
+    "delete 5",
+    "toggle 5"
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,23 @@
+{
+  "id": "access-control-module",
+  "title": "Access Levels in One File",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Access control",
+  "concepts": [
+    "fileprivate-vs-private",
+    "access-control"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Access Control",
+      "book": "LanguageGuide/AccessControl"
+    }
+  ],
+  "hints": [
+    "An extension in the same file counts as \"inside\" for `private`.",
+    "Add a separate type that tries to read the private property.",
+    "`struct Thief { func steal() -> Int { Safe().code } }`."
+  ]
+}

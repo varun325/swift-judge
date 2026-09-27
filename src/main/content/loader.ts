@@ -90,12 +90,18 @@ export function loadAll(root: string): LoadedBank {
   return { problems, errors }
 }
 
-const TRACK_ORDER = { beginner: 0, intermediate: 1, advanced: 2 } as const
+const TRACK_ORDER = { beginner: 0, intermediate: 1, advanced: 2, swiftui: 3, frameworks: 4, cs193p: 5 } as const
+
+export function supportedHere(p: Problem): boolean {
+  return !p.meta.platforms || (p.meta.platforms as string[]).includes(process.platform)
+}
 
 export function summarize(problems: Iterable<Problem>): ProblemSummary[] {
   return [...problems]
     .map((p) => ({
       id: p.meta.id,
+      supported: supportedHere(p),
+      impact: p.meta.impact,
       title: p.meta.title,
       track: p.meta.track,
       difficulty: p.meta.difficulty,
@@ -104,7 +110,7 @@ export function summarize(problems: Iterable<Problem>): ProblemSummary[] {
       concepts: p.meta.concepts,
       order: relativeOrder(p.dir)
     }))
-    .sort((a, b) => TRACK_ORDER[a.track] - TRACK_ORDER[b.track] || a.order.localeCompare(b.order))
+    .sort((a, b) => TRACK_ORDER[a.track] - TRACK_ORDER[b.track] || a.order.localeCompare(b.order, undefined, { numeric: true }))
     .map(({ order: _order, ...s }) => s)
 }
 

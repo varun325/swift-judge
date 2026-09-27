@@ -1,0 +1,1 @@
+Declare `enum Trace { @TaskLocal static var requestID = "none" }`. For each id, run `Trace.$requestID.withValue(id) { … }` and inside it spawn **two child tasks** (a task group) that each log `"<requestID>:<step>"` for steps `db` and `cache` — child tasks inherit the task-local value. Also log once outside any `withValue`. Return logs sorted.

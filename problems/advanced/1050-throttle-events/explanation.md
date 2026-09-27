@@ -1,0 +1,1 @@
+**Throttle** limits the rate (first event wins, then a cooldown) — good for scroll handlers. **Debounce** waits for silence (last event wins) — good for search-as-you-type. In Combine you'd write `$query.debounce(for: .milliseconds(300), scheduler: RunLoop.main)`.

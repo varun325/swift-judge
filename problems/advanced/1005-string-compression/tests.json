@@ -1,0 +1,30 @@
+[
+ {
+  "input": {
+   "s": "aaabccdddd"
+  },
+  "expected": "a3b1c2d4"
+ },
+ {
+  "input": {
+   "s": "abc"
+  },
+  "expected": "abc"
+ },
+ {
+  "input": {
+   "s": ""
+  }
+ },
+ {
+  "input": {
+   "s": "🍎🍎🍎🍎"
+  }
+ },
+ {
+  "input": {
+   "s": "aabb"
+  },
+  "hidden": true
+ }
+]

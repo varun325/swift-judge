@@ -1,0 +1,70 @@
+[
+ {
+  "input": {
+   "contacts": [
+    [
+     "José",
+     "family"
+    ],
+    [
+     "Ana",
+     "work"
+    ],
+    [
+     "joseph",
+     "friends"
+    ]
+   ],
+   "query": "jose",
+   "scope": "all"
+  },
+  "expected": [
+   "José",
+   "joseph"
+  ]
+ },
+ {
+  "input": {
+   "contacts": [
+    [
+     "José",
+     "family"
+    ],
+    [
+     "Ana",
+     "work"
+    ]
+   ],
+   "query": "",
+   "scope": "work"
+  }
+ },
+ {
+  "input": {
+   "contacts": [],
+   "query": "x",
+   "scope": "all"
+  }
+ },
+ {
+  "input": {
+   "contacts": [
+    [
+     "Émile",
+     "work"
+    ],
+    [
+     "emma",
+     "work"
+    ],
+    [
+     "Bo",
+     "family"
+    ]
+   ],
+   "query": "EM",
+   "scope": "work"
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+Everything inside an actor is isolated: callers must `await`. A `nonisolated` member opts out — legal only if it touches immutable (`let`, Sendable) state, so it can be called synchronously. Actor `let` properties of Sendable type are also readable without `await`.

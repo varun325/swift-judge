@@ -1,0 +1,37 @@
+[
+ {
+  "input": {
+   "events": [
+    "emit hi",
+    "score 5",
+    "subscribe",
+    "emit yo",
+    "finish",
+    "emit lost"
+   ]
+  },
+  "expected": [
+   "early:0",
+   "early:hi",
+   "early:5",
+   "early:yo",
+   "--",
+   "late:5",
+   "late:yo"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "subscribe",
+    "score 1"
+   ]
+  },
+  "hidden": true
+ }
+]

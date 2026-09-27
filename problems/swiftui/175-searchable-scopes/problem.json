@@ -1,0 +1,46 @@
+{
+  "id": "searchable-scopes",
+  "title": "Searchable Lists with Scopes",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Lists",
+  "concepts": [
+    "string-equality",
+    "enums",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "searchable(text:placement:prompt:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt:)"
+    }
+  ],
+  "signature": {
+    "name": "search",
+    "params": [
+      {
+        "name": "contacts",
+        "type": "[[String]]",
+        "label": "_"
+      },
+      {
+        "name": "query",
+        "type": "String"
+      },
+      {
+        "name": "scope",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Filter by scope first, then by the query.",
+    "Use `localizedStandardContains` so case and accents don't matter.",
+    "An empty (trimmed) query matches everything in the scope."
+  ]
+}

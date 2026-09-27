@@ -1,0 +1,55 @@
+[
+ {
+  "input": {
+   "tokens": [
+    "1",
+    "x",
+    "3"
+   ],
+   "recovery": "replace"
+  },
+  "expected": [
+   "1",
+   "-1",
+   "done"
+  ]
+ },
+ {
+  "input": {
+   "tokens": [
+    "1",
+    "x",
+    "3"
+   ],
+   "recovery": "catch"
+  },
+  "expected": [
+   "1",
+   "0",
+   "done"
+  ]
+ },
+ {
+  "input": {
+   "tokens": [
+    "1",
+    "x",
+    "3"
+   ],
+   "recovery": "perItem"
+  },
+  "expected": [
+   "1",
+   "-1",
+   "3",
+   "done"
+  ]
+ },
+ {
+  "input": {
+   "tokens": [],
+   "recovery": "replace"
+  },
+  "hidden": true
+ }
+]

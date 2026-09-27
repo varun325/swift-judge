@@ -1,0 +1,49 @@
+{
+  "id": "cryptokit-hmac-aes",
+  "title": "CryptoKit: HMAC Signatures & AES-GCM",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Security",
+  "concepts": [
+    "hashing",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "CryptoKit",
+      "url": "https://developer.apple.com/documentation/cryptokit"
+    },
+    {
+      "title": "HMAC",
+      "url": "https://developer.apple.com/documentation/cryptokit/hmac"
+    },
+    {
+      "title": "AES.GCM",
+      "url": "https://developer.apple.com/documentation/cryptokit/aes/gcm"
+    }
+  ],
+  "signature": {
+    "name": "secureMessages",
+    "params": [
+      {
+        "name": "messages",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "tamperIndex",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Derive a `SymmetricKey` with `HKDF<SHA256>.deriveKey`.",
+    "Sign with `HMAC<SHA256>.authenticationCode`; verify with `isValidAuthenticationCode`.",
+    "Seal with `AES.GCM.seal`, tamper with `combined`, then `AES.GCM.open` fails."
+  ]
+}

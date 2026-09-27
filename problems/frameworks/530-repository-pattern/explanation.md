@@ -1,0 +1,1 @@
+A repository hides the data source (network, cache, database) behind one API, so view models don't care — and tests inject a mock remote. Making it an actor keeps the cache thread-safe. Failures aren't cached, so the next request retries.

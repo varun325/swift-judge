@@ -1,0 +1,52 @@
+{
+  "id": "cs193p-hstack-layout",
+  "title": "L5: How HStack Divides Space",
+  "track": "cs193p",
+  "difficulty": "hard",
+  "topic": "L5–L7 · Layout, data flow & generics",
+  "concepts": [
+    "sort-custom",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Layout",
+      "url": "https://developer.apple.com/documentation/swiftui/layout"
+    },
+    {
+      "title": "layoutPriority(_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/layoutpriority(_:)"
+    }
+  ],
+  "signature": {
+    "name": "layoutWidths",
+    "params": [
+      {
+        "name": "available",
+        "type": "Double"
+      },
+      {
+        "name": "children",
+        "type": "[[Double]]"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9",
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Everyone gets their minimum first; only the leftover is negotiated.",
+    "Process priority groups from high to low; inside a group, least flexible first.",
+    "Each child's offer is `leftover / remainingInGroup`; it takes at most `max − min`."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L5: Layout & Data Flow",
+      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE",
+      "channel": "Stanford Online"
+    }
+  ]
+}

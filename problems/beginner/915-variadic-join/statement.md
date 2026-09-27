@@ -1,0 +1,1 @@
+Write `func joinPath(_ components: String..., separator: String = "/") -> String` that trims `/` from both ends of every component, drops empty ones, and joins them with the separator, starting with the separator. `paths` calls `joinPath` via an array-taking helper for each group, then also appends `joinPath("a", "b", separator: "::")` to prove the variadic form works.

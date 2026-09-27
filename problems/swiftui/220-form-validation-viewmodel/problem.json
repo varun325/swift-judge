@@ -1,0 +1,42 @@
+{
+  "id": "form-validation-viewmodel",
+  "title": "Form Validation View Model",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Controls & input",
+  "concepts": [
+    "computed-properties",
+    "property-wrappers",
+    "guard"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Form",
+      "url": "https://developer.apple.com/documentation/swiftui/form"
+    },
+    {
+      "title": "Observation",
+      "url": "https://developer.apple.com/documentation/observation"
+    }
+  ],
+  "signature": {
+    "name": "signUpStates",
+    "params": [
+      {
+        "name": "edits",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Store only the inputs; compute errors from them.",
+    "Make `errors` a computed property that appends messages in a fixed order.",
+    "`canSubmit` is simply `errors.isEmpty`."
+  ]
+}

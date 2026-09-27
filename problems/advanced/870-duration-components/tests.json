@@ -1,0 +1,28 @@
+[
+ {
+  "input": {
+   "millis": [
+    0,
+    61500
+   ]
+  },
+  "expected": [
+   "0m 1s 0ms",
+   "1m 2s 500ms"
+  ]
+ },
+ {
+  "input": {
+   "millis": []
+  }
+ },
+ {
+  "input": {
+   "millis": [
+    999,
+    3600000
+   ]
+  },
+  "hidden": true
+ }
+]

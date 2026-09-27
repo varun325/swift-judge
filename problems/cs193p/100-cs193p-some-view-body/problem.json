@@ -1,0 +1,38 @@
+{
+  "id": "cs193p-some-view-body",
+  "title": "L1: What Is `some View`?",
+  "track": "cs193p",
+  "difficulty": "easy",
+  "topic": "L1–L2 · Views & modifiers",
+  "concepts": [
+    "opaque-types",
+    "computed-properties"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "View",
+      "url": "https://developer.apple.com/documentation/swiftui/view"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`body` is a computed property, not stored.",
+    "The type is built from nested generics: the modifier wraps the VStack, which wraps a TupleView.",
+    "Reading `body` twice runs it twice."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L1: Intro to Xcode and SwiftUI",
+      "url": "https://www.youtube.com/watch?v=kCjDulwChRQ",
+      "channel": "Stanford Online"
+    },
+    {
+      "title": "CS193p 2025 · L2: Code Breaker App",
+      "url": "https://www.youtube.com/watch?v=63UHypFKRRM",
+      "channel": "Stanford Online"
+    }
+  ]
+}

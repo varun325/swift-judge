@@ -1,0 +1,52 @@
+{
+  "id": "cs193p-tap-to-cycle",
+  "title": "L4: Tap-to-Cycle Peg Selection",
+  "track": "cs193p",
+  "difficulty": "easy",
+  "topic": "L3–L5 · Model & type system",
+  "concepts": [
+    "mutating",
+    "optionals",
+    "nil-coalescing"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "onTapGesture(count:perform:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/ontapgesture(count:perform:)"
+    }
+  ],
+  "signature": {
+    "name": "cyclePegs",
+    "params": [
+      {
+        "name": "choices",
+        "type": "[String]"
+      },
+      {
+        "name": "slots",
+        "type": "Int"
+      },
+      {
+        "name": "taps",
+        "type": "[Int]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A missing peg is `nil`; the first tap sets it to the first choice.",
+    "Otherwise find the current choice's index and move to `(i + 1) % count`.",
+    "Guard against invalid indices and an empty choice list."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L4: CodeBreaker's Model",
+      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94",
+      "channel": "Stanford Online"
+    }
+  ]
+}

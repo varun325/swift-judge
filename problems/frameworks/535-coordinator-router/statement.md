@@ -1,0 +1,3 @@
+Swiftful's *SwiftfulRouting* and SwiftUI Advanced Architecture move navigation decisions out of views. Build an `@Observable final class AppRouter` holding `var stack: [Screen]` and `var sheet: Screen?`, with `enum Screen: Hashable { case login, home, product(Int), cart, checkout, receipt }`.
+
+ Handle events: `loggedIn` (stack = [home]), `tapProduct <id>`, `openCart` (sheet), `checkout` (dismiss sheet; push checkout — only if the cart sheet is showing), `paid` (replace stack with [home, receipt]), `back` (pop, never below 1), `logout` (stack = [login], sheet nil). Log the stack (and sheet) after each event.

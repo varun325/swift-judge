@@ -1,0 +1,38 @@
+{
+  "id": "offline-sync-queue",
+  "title": "Offline-First Sync Queue",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Product engineering",
+  "concepts": [
+    "enums",
+    "associated-values",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NWPathMonitor",
+      "url": "https://developer.apple.com/documentation/network/nwpathmonitor"
+    }
+  ],
+  "signature": {
+    "name": "syncQueue",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Queue mutations as enum values; flush them in order whenever you're online.",
+    "Before flushing, remove create/delete pairs for the same item.",
+    "Rename/delete of a missing server item is dropped and logged."
+  ]
+}

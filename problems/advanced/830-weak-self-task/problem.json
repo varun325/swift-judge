@@ -1,0 +1,35 @@
+{
+  "id": "weak-self-task",
+  "title": "Tasks, Cancellation & [weak self]",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "closures-memory",
+    "weak-unowned",
+    "async-await"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — Task Cancellation",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "screenLifecycle",
+    "params": [
+      {
+        "name": "cancelOnDisappear",
+        "type": "Bool"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "A `Task { }` captures `self` strongly unless you say otherwise.",
+    "Capture `[weak self, log]` (the logger separately!), check `Task.isCancelled` after the sleep, and `guard let self` before touching state.",
+    "Cancel in `onDisappear` with `task?.cancel()`."
+  ]
+}

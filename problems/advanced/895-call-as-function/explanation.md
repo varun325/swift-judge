@@ -1,0 +1,1 @@
+`callAsFunction` makes an instance callable with normal, type-checked parameters (used by SwiftUI's `DismissAction` and ML libraries). `@dynamicCallable` accepts any number of arguments of one type — mainly for interop with dynamic languages.

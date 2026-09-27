@@ -1,0 +1,29 @@
+[
+ {
+  "input": {
+   "requests": [
+    "get a",
+    "get a",
+    "purge-memory",
+    "get a",
+    "get b",
+    "purge-disk",
+    "purge-memory",
+    "get a"
+   ]
+  },
+  "expected": [
+   "network",
+   "memory",
+   "disk",
+   "network",
+   "network",
+   "downloads 3"
+  ]
+ },
+ {
+  "input": {
+   "requests": []
+  }
+ }
+]

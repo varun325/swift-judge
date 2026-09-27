@@ -1,0 +1,1 @@
+A `Shape` is just a function from a rectangle to a `Path` — resolution-independent, so it adapts to any frame. Paths support hit-testing (`contains`) and geometry queries, which is how custom tappable shapes work.

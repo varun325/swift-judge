@@ -1,0 +1,1 @@
+`GridItem(.adaptive(minimum: m), spacing: s)` fits as many columns as possible: `count = max(1, floor((W + s) / (m + s)))`, and each column's width is `(W − s × (count − 1)) / count`. For each container width return `[count, width rounded to 2 decimals]`.

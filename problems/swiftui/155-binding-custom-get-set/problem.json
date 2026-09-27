@@ -1,0 +1,39 @@
+{
+  "id": "binding-custom-get-set",
+  "title": "Custom Bindings with get/set",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "State & data flow",
+  "concepts": [
+    "closures",
+    "computed-properties",
+    "property-wrappers"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Binding",
+      "url": "https://developer.apple.com/documentation/swiftui/binding"
+    }
+  ],
+  "signature": {
+    "name": "bindingDemo",
+    "params": [
+      {
+        "name": "writes",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`Binding(get:set:)` takes two closures that read and write the real storage.",
+    "Clamp in the setter; the derived binding reads/writes through the first binding.",
+    "`set: { volume.wrappedValue = $0 ? 0 : 50 }` for `isMuted`."
+  ]
+}

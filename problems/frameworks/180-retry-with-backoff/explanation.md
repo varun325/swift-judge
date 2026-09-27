@@ -1,0 +1,1 @@
+`catch where …` retries only retryable errors while attempts remain; anything else propagates immediately. Exponential backoff (1, 2, 4, 8…) avoids hammering a struggling server; production code also adds jitter and respects `Retry-After`.

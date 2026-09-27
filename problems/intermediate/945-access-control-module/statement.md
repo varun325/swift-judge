@@ -1,0 +1,1 @@
+`private` is visible to the enclosing declaration **and its extensions in the same file**; it's not visible to *other* types in the file. Write `struct Safe { private var code = 42 }`, an `extension Safe` that reads `code` (allowed), and a separate `struct Thief` whose method reads `Safe().code` (rejected). You pass when only the `Thief` access is an error.

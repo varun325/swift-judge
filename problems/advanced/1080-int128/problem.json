@@ -1,0 +1,34 @@
+{
+  "id": "int128",
+  "title": "Int128 & Overflow Headroom",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Swift evolution",
+  "concepts": [
+    "integer-overflow",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Int128",
+      "url": "https://developer.apple.com/documentation/swift/int128"
+    }
+  ],
+  "signature": {
+    "name": "factorials",
+    "params": [
+      {
+        "name": "ns",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Use `Int128` as the accumulator.",
+    "`multipliedReportingOverflow(by:)` returns the product and an overflow flag.",
+    "Negative inputs have no factorial."
+  ]
+}

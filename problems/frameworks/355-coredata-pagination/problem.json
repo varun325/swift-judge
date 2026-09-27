@@ -1,0 +1,44 @@
+{
+  "id": "coredata-pagination",
+  "title": "Fetch Limits, Offsets & Counts",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Core Data",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSFetchRequest.fetchOffset",
+      "url": "https://developer.apple.com/documentation/coredata/nsfetchrequest/fetchoffset"
+    },
+    {
+      "title": "NSFetchRequest.fetchLimit",
+      "url": "https://developer.apple.com/documentation/coredata/nsfetchrequest/fetchlimit"
+    }
+  ],
+  "signature": {
+    "name": "pages",
+    "params": [
+      {
+        "name": "total",
+        "type": "Int"
+      },
+      {
+        "name": "pageSize",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Let the store page for you with `fetchLimit` and `fetchOffset`.",
+    "Sort by title so pages are stable; loop until a page comes back empty.",
+    "`context.count(for:)` gives the total cheaply."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "checkpoint-2-unique-count",
+  "title": "Checkpoint 2: Count Unique Items",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Collections",
+  "concepts": [
+    "set-vs-array",
+    "collection-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types — Sets",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "uniqueReport",
+    "params": [
+      {
+        "name": "items",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "Which collection type refuses to store duplicates?",
+    "Build a `Set` from the array; its `count` is the unique count.",
+    "`[items.count, Set(items).count]`"
+  ]
+}

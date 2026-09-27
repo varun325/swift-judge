@@ -1,0 +1,48 @@
+[
+ {
+  "input": {
+   "notes": [
+    [
+     "Café plan",
+     "menu",
+     "2"
+    ],
+    [
+     "Draft essay",
+     "intro",
+     "5"
+    ],
+    [
+     "Taxes",
+     "cafe receipts",
+     "4"
+    ],
+    [
+     "Bike",
+     "fix tyre",
+     "1"
+    ]
+   ],
+   "queries": [
+    "search CAFE",
+    "between 2 4",
+    "in Bike,Taxes,Nope",
+    "urgent"
+   ]
+  },
+  "expected": [
+   "Café plan,Taxes",
+   "Café plan,Taxes",
+   "Bike,Taxes",
+   "Taxes"
+  ]
+ },
+ {
+  "input": {
+   "notes": [],
+   "queries": [
+    "urgent"
+   ]
+  }
+ }
+]

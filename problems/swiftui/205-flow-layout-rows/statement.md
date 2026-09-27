@@ -1,0 +1,1 @@
+A custom `Layout` for wrapping tags ("chips") needs this core algorithm in `placeSubviews`/`sizeThatFits`: place subviews left to right, starting a new row when the next one (plus spacing) wouldn't fit. A single subview wider than the container still gets its own row. Return the subview **indices** in each row.

@@ -1,0 +1,1 @@
+Implement `struct Countdown: AsyncSequence` (with a nested `AsyncIterator` whose `mutating func next() async -> Int?` counts down to 0 and yields with `await Task.yield()` between values). Consume it, optionally using the async `filter` operator for even numbers, and return the values.

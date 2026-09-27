@@ -1,0 +1,1 @@
+Widgets are **pre-rendered snapshots**: your `TimelineProvider` returns entries with dates, and WidgetKit swaps them in without running your app. Fewer, meaningful entries save the widget's refresh budget, and the reload policy says when to ask for more.

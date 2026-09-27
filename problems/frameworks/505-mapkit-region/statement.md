@@ -1,0 +1,1 @@
+Compute the `MKCoordinateRegion` that fits all annotations: center = midpoint of min/max latitude and longitude; span = (max − min) × padding, with a minimum span of 0.01° each way. Return `[centerLat, centerLon, latDelta, lonDelta]` rounded to 4 decimals (build a real `MKCoordinateRegion` and read it back). Empty input → `[]`.

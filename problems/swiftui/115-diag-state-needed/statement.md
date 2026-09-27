@@ -1,0 +1,1 @@
+A SwiftUI view is a **struct**, and `body` is not `mutating`. Write a view with a plain `var count = 0` and a `Button("+") { count += 1 }` inside `body`. You pass when the compiler rejects the mutation — the problem `@State` solves.

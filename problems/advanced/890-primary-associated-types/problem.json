@@ -1,0 +1,35 @@
+{
+  "id": "primary-associated-types",
+  "title": "Primary Associated Types: some Collection<Int>",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Opaque & existential types",
+  "concepts": [
+    "opaque-types",
+    "associated-types",
+    "existential-any"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Opaque and Boxed Protocol Types",
+      "book": "LanguageGuide/OpaqueTypes"
+    }
+  ],
+  "signature": {
+    "name": "primaryDemo",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "`Collection<Int>` constrains the element type without naming a concrete collection.",
+    "Return `values.lazy.map { $0 * $0 }` as `some Sequence<Int>`.",
+    "`[any Sequence<Int>]` can hold an array, a reversed view and your lazy sequence together."
+  ]
+}

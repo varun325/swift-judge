@@ -1,0 +1,38 @@
+{
+  "id": "binding-keypath-projection",
+  "title": "Binding Projections: $model.property",
+  "track": "swiftui",
+  "difficulty": "hard",
+  "topic": "State & data flow",
+  "concepts": [
+    "key-paths",
+    "dynamic-member-lookup"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Binding",
+      "url": "https://developer.apple.com/documentation/swiftui/binding"
+    }
+  ],
+  "signature": {
+    "name": "projectionDemo",
+    "params": [
+      {
+        "name": "edits",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`Binding` supports `@dynamicMemberLookup` with writable key paths.",
+    "`let nameBinding: Binding<String> = root.name` derives a child binding.",
+    "Writing to a child binding calls the **root** setter with the updated struct."
+  ]
+}

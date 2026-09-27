@@ -1,0 +1,49 @@
+{
+  "id": "cs193p-file-persistence",
+  "title": "L16: Persisting Games to the File System",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L16 · Shapes, gestures, persistence",
+  "concepts": [
+    "codable",
+    "file-manager",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "FileManager",
+      "url": "https://developer.apple.com/documentation/foundation/filemanager"
+    },
+    {
+      "title": "JSONEncoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsonencoder"
+    }
+  ],
+  "signature": {
+    "name": "saveAndLoad",
+    "params": [
+      {
+        "name": "games",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Make the model `Codable` and `Equatable`.",
+    "Encode to JSON, write atomically, then read and decode it back.",
+    "Compare the loaded array with the original using `==`."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L16: Shapes, Gestures, Persistence",
+      "url": "https://www.youtube.com/watch?v=skECWIKpBVY",
+      "channel": "Stanford Online"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "scroll-reader-target",
+  "title": "ScrollViewReader: Choosing a Scroll Target",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Lists",
+  "concepts": [
+    "optionals",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ScrollViewReader",
+      "url": "https://developer.apple.com/documentation/swiftui/scrollviewreader"
+    },
+    {
+      "title": "ScrollViewProxy.scrollTo(_:anchor:)",
+      "url": "https://developer.apple.com/documentation/swiftui/scrollviewproxy/scrollto(_:anchor:)"
+    }
+  ],
+  "signature": {
+    "name": "scrollTargets",
+    "params": [
+      {
+        "name": "ids",
+        "type": "[String]"
+      },
+      {
+        "name": "commands",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Scroll targets are ids, so compute which id you want.",
+    "`unread x` means the message right after `x`, falling back to the last.",
+    "Search with `localizedCaseInsensitiveContains` and take the first match."
+  ]
+}

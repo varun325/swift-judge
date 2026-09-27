@@ -1,0 +1,1 @@
+Adding "one month" isn't adding 30 days. With a Gregorian calendar in **UTC**, add `months` to each ISO date (`yyyy-MM-dd`) using `calendar.date(byAdding: .month, …)`, and return the result as `yyyy-MM-dd` plus the weekday name (`en_US_POSIX`). Watch Jan 31 + 1 month.

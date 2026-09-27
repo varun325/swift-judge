@@ -1,0 +1,1 @@
+A static method in an extension reads like a built-in colour: `.gray(0.5)`. `CGFloat` is the Core Graphics float type (a `Double` on 64-bit), and Swift requires explicit conversion between the two — which is why drawing code is full of `CGFloat(…)`.

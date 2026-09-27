@@ -1,0 +1,37 @@
+[
+ {
+  "input": {
+   "now": "2024-01-30T10:00:00Z",
+   "rules": [
+    "daily 09:00",
+    "weekly 2 08:30",
+    "monthly 31 07:00",
+    "hourly 5"
+   ]
+  },
+  "expected": [
+   "2024-01-31T09:00:00Z",
+   "2024-02-05T08:30:00Z",
+   "2024-01-31T07:00:00Z",
+   "invalid"
+  ]
+ },
+ {
+  "input": {
+   "now": "2024-02-29T23:59:00Z",
+   "rules": [
+    "monthly 30 00:00",
+    "daily 23:59"
+   ]
+  }
+ },
+ {
+  "input": {
+   "now": "bad",
+   "rules": [
+    "daily 01:00"
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+`body` is just a computed property — it runs **every time it's read**, and SwiftUI reads it whenever state changes, so keep it cheap and side-effect free. `some View` hides a precise type (here a padded VStack of a TupleView) that SwiftUI uses to diff efficiently.

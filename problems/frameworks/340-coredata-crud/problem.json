@@ -1,0 +1,42 @@
+{
+  "id": "coredata-crud",
+  "title": "Core Data: Create, Fetch & Sort",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Core Data",
+  "concepts": [
+    "class-definition",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSPersistentContainer",
+      "url": "https://developer.apple.com/documentation/coredata/nspersistentcontainer"
+    },
+    {
+      "title": "NSFetchRequest",
+      "url": "https://developer.apple.com/documentation/coredata/nsfetchrequest"
+    }
+  ],
+  "signature": {
+    "name": "notesCRUD",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Everything happens in a context: insert, mutate, delete, then `save()`.",
+    "`NSFetchRequest<NSManagedObject>(entityName: \"Note\")` with a predicate and sort descriptors.",
+    "Sort with two `NSSortDescriptor`s: priority descending, title ascending."
+  ]
+}

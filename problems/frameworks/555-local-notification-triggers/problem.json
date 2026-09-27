@@ -1,0 +1,44 @@
+{
+  "id": "local-notification-triggers",
+  "title": "Scheduling Logic for Local Notifications",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Platform features",
+  "concepts": [
+    "fundamental-types",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "UNCalendarNotificationTrigger",
+      "url": "https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger"
+    },
+    {
+      "title": "Calendar.nextDate(after:matching:matchingPolicy:repeatedTimePolicy:direction:)",
+      "url": "https://developer.apple.com/documentation/foundation/calendar/nextdate(after:matching:matchingpolicy:repeatedtimepolicy:direction:)"
+    }
+  ],
+  "signature": {
+    "name": "nextReminders",
+    "params": [
+      {
+        "name": "now",
+        "type": "String"
+      },
+      {
+        "name": "rules",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Build `DateComponents` with hour/minute and optionally weekday or day.",
+    "`calendar.nextDate(after:matching:matchingPolicy:)` finds the next occurrence.",
+    "Use `.strict` so day 31 skips shorter months."
+  ]
+}

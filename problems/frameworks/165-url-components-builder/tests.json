@@ -1,0 +1,29 @@
+[
+ {
+  "input": {
+   "query": "swift & ios",
+   "page": 1,
+   "filters": []
+  }
+ },
+ {
+  "input": {
+   "query": "café 🦅",
+   "page": 3,
+   "filters": [
+    "video",
+    "new"
+   ]
+  }
+ },
+ {
+  "input": {
+   "query": "",
+   "page": 2,
+   "filters": [
+    "a b"
+   ]
+  },
+  "hidden": true
+ }
+]

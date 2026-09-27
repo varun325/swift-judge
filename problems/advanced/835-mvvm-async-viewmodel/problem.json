@@ -1,0 +1,36 @@
+{
+  "id": "mvvm-async-viewmodel",
+  "title": "MVVM with async/await",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Architecture",
+  "concepts": [
+    "dependency-injection",
+    "async-await",
+    "actors"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "MainActor",
+      "url": "https://developer.apple.com/documentation/swift/mainactor"
+    }
+  ],
+  "signature": {
+    "name": "loadScreen",
+    "params": [
+      {
+        "name": "behaviours",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "Model the screen's states as an enum and inject the service through a protocol.",
+    "Set `.loading`, then `.loaded(try await service.fetchTitles())` or `.failed` in the `catch`.",
+    "Record each state in `didSet` on the state property."
+  ]
+}

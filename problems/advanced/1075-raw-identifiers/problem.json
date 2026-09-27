@@ -1,0 +1,23 @@
+{
+  "id": "raw-identifiers",
+  "title": "Raw Identifiers with Backticks",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Swift evolution",
+  "concepts": [
+    "functions-basics",
+    "enums"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "SE-0451: Raw identifiers",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0451-escaped-identifiers.md"
+    }
+  ],
+  "hints": [
+    "Backticked names are ordinary identifiers once declared.",
+    "Interpolating an enum case prints its (backticked) name without backticks.",
+    "The first line prints the raw value of `` `2` `` and the case name of `` `1.1` ``."
+  ]
+}

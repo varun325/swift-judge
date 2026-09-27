@@ -1,0 +1,24 @@
+[
+ {
+  "input": {
+   "ops": [
+    "game Mastermind RGBY",
+    "game Undersea ABCD",
+    "attempt Mastermind RRGG 3",
+    "attempt Mastermind RGBY 5",
+    "select Mastermind",
+    "game Earth TGBR",
+    "delete Earth"
+   ]
+  },
+  "expected": [
+   "Mastermind: 2 attempts, last 5, selected false",
+   "Undersea: 0 attempts, last never, selected false"
+  ]
+ },
+ {
+  "input": {
+   "ops": []
+  }
+ }
+]

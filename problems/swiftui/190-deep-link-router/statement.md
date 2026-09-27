@@ -1,0 +1,1 @@
+Parse deep links for `.onOpenURL` into a navigation stack. Scheme must be `myapp`. Paths: `myapp://profile/<id>` → `[profile(id)]`; `myapp://settings` → `[settings]`; `myapp://profile/<id>/posts/<postID>` → `[profile(id), post(postID)]`; query `?tab=<name>` selects a tab. Return `"<tab>: <routes joined by ' > '>"` (tab defaults to `home`) or `"invalid"`.

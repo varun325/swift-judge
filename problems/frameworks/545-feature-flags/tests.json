@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "remoteJSON": "{\"newCheckout\":{\"enabled\":true,\"rolloutPercent\":30},\"darkIcons\":{\"enabled\":false}}",
+   "overrides": [
+    "aiSearch=on"
+   ],
+   "userBucket": 12
+  },
+  "expected": [
+   "newCheckout=on (remote)",
+   "darkIcons=off (remote)",
+   "aiSearch=on (override)"
+  ]
+ },
+ {
+  "input": {
+   "remoteJSON": "oops",
+   "overrides": [],
+   "userBucket": 50
+  }
+ },
+ {
+  "input": {
+   "remoteJSON": "{\"newCheckout\":{\"enabled\":true,\"rolloutPercent\":30}}",
+   "overrides": [
+    "darkIcons=maybe"
+   ],
+   "userBucket": 30
+  },
+  "hidden": true
+ }
+]

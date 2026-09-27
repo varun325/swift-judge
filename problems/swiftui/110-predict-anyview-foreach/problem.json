@@ -1,0 +1,30 @@
+{
+  "id": "predict-anyview-foreach",
+  "title": "Predict: AnyView, Group & ForEach Types",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "View composition",
+  "concepts": [
+    "type-erasure",
+    "opaque-types"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "AnyView",
+      "url": "https://developer.apple.com/documentation/swiftui/anyview"
+    },
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`AnyView` hides the wrapped type completely.",
+    "`ForEach`'s generic parameters are the data, the ID type and the content view.",
+    "`ForEach<Range<Int>, Int, Text>` for the loop."
+  ]
+}

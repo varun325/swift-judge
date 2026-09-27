@@ -1,0 +1,42 @@
+{
+  "id": "retry-with-backoff",
+  "title": "Retrying Requests with Backoff",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Networking",
+  "concepts": [
+    "async-await",
+    "error-handling",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Task.sleep(for:)",
+      "url": "https://developer.apple.com/documentation/swift/task/sleep(for:tolerance:clock:)"
+    }
+  ],
+  "signature": {
+    "name": "retrying",
+    "params": [
+      {
+        "name": "failuresBeforeSuccess",
+        "type": "Int"
+      },
+      {
+        "name": "maxAttempts",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Loop: try the operation, and on a retryable error sleep then try again.",
+    "`catch where attempt < maxAttempts && isRetryable(error)` retries; otherwise the error escapes.",
+    "Delay = `base * (1 << (attempt - 1))`."
+  ]
+}

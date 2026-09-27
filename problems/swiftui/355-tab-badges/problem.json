@@ -1,0 +1,42 @@
+{
+  "id": "tab-badges",
+  "title": "TabView Selection & Badges",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Navigation",
+  "concepts": [
+    "enums",
+    "case-iterable",
+    "dictionary-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "TabView",
+      "url": "https://developer.apple.com/documentation/swiftui/tabview"
+    },
+    {
+      "title": "badge(_:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/badge(_:)-84e43"
+    }
+  ],
+  "signature": {
+    "name": "tabBar",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Use an enum for tab selection and a `[Tab: Int]` for badges.",
+    "Selecting inbox clears its badge; `logout` resets everything.",
+    "Print tabs in `allCases` order, marking the selected one."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "failable-throwing-init",
+  "title": "Throwing Initialisers vs Failable",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Structs",
+  "concepts": [
+    "failable-init",
+    "initializers",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Initialization — Failable Initializers",
+      "book": "LanguageGuide/Initialization"
+    }
+  ],
+  "signature": {
+    "name": "makeEmails",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "`init?` can only say \"no\"; a throwing init can say *why*.",
+    "Validate in the throwing init; the failable init can call it with `try?` and assign `self`.",
+    "`guard let email = try? Email(validating: raw) else { return nil }; self = email`."
+  ]
+}

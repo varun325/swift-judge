@@ -1,0 +1,1 @@
+In Combine an error **terminates** the stream — `replaceError`/`catch` substitute a final value, but no more upstream values arrive. To survive per-item failures, handle errors **inside** a `flatMap` so each item gets its own short-lived publisher. `eraseToAnyPublisher()` hides the long operator type.

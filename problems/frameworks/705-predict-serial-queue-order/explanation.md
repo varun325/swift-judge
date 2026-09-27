@@ -1,0 +1,1 @@
+On a serial queue, `sync` enqueues behind everything already queued and waits for it — so by the time `C` runs, `A` and `B` are done, and `D` only appends after `sync` returns. The empty `sync {}` at the end is a common way to wait for queued `async` work (`E`). Calling `sync` on the queue you're already on would deadlock.

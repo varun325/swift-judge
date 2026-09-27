@@ -1,0 +1,37 @@
+{
+  "id": "combine-cancellation",
+  "title": "AnyCancellable Lifetimes",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Combine",
+  "concepts": [
+    "arc",
+    "closures-memory"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "AnyCancellable",
+      "url": "https://developer.apple.com/documentation/combine/anycancellable"
+    }
+  ],
+  "signature": {
+    "name": "lifetimes",
+    "params": [
+      {
+        "name": "steps",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A subscription dies when its `AnyCancellable` is deallocated.",
+    "`_ = subject.sink { … }` is cancelled right away; `.store(in: &kept)` keeps it alive.",
+    "`cancel` should cancel everything in the set and empty it."
+  ]
+}

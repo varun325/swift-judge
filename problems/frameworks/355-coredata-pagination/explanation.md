@@ -1,0 +1,1 @@
+`fetchLimit`/`fetchOffset` push paging into the store (SQL `LIMIT`/`OFFSET`), so you never load the whole table; `count(for:)` asks for a count without materialising objects. Firestore pagination (Swiftful's Firebase series) solves the same problem with cursors.

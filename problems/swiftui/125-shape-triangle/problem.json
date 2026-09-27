@@ -1,0 +1,49 @@
+{
+  "id": "shape-triangle",
+  "title": "Custom Shape: Triangle Path",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Drawing",
+  "concepts": [
+    "protocols",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Shape",
+      "url": "https://developer.apple.com/documentation/swiftui/shape"
+    },
+    {
+      "title": "Path",
+      "url": "https://developer.apple.com/documentation/swiftui/path"
+    }
+  ],
+  "signature": {
+    "name": "triangleInfo",
+    "params": [
+      {
+        "name": "width",
+        "type": "Double"
+      },
+      {
+        "name": "height",
+        "type": "Double"
+      },
+      {
+        "name": "points",
+        "type": "[[Double]]"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A `Shape` only needs `func path(in rect: CGRect) -> Path`.",
+    "Use `rect.midX`, `rect.maxX`, `rect.maxY` for the corners, then `closeSubpath()`.",
+    "`path.boundingRect` and `path.contains(CGPoint(x:y:))` answer the questions."
+  ]
+}

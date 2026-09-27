@@ -1,0 +1,1 @@
+`ObservableObject` has one coarse signal (`objectWillChange`) — every `@Published` write re-renders every observing view, even ones that don't show that property. `@Observable` tracks per-property access, so the name label ignores follower updates. That's the main performance reason to migrate.

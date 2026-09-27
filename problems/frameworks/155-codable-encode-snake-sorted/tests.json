@@ -1,0 +1,18 @@
+[
+ {
+  "input": {
+   "name": "Ana",
+   "followerCount": 120,
+   "isVerified": true,
+   "nickname": null
+  }
+ },
+ {
+  "input": {
+   "name": "Bo/Co",
+   "followerCount": 0,
+   "isVerified": false,
+   "nickname": "b"
+  }
+ }
+]

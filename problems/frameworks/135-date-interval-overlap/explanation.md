@@ -1,0 +1,1 @@
+`DateInterval` bundles start + duration with `intersects`, `intersection(with:)` and `contains`. Note the intersection of back-to-back intervals is zero-length (they share an endpoint), so check the duration, not just non-nil.

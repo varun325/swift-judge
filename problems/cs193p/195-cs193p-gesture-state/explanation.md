@@ -1,0 +1,1 @@
+`@GestureState` is exactly the "in-flight" half: it tracks the gesture while it's active and snaps back to its initial value when it ends or is cancelled — you commit to `@State` in `.onEnded`. Rendering `committed ∘ inFlight` gives smooth feedback without corrupting the model mid-gesture.

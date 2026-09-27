@@ -1,0 +1,45 @@
+{
+  "id": "combine-combinelatest-zip",
+  "title": "combineLatest vs zip vs merge",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Combine",
+  "concepts": [
+    "tuples",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Publisher.combineLatest(_:)",
+      "url": "https://developer.apple.com/documentation/combine/publisher/combinelatest(_:)"
+    },
+    {
+      "title": "Publisher.zip(_:)",
+      "url": "https://developer.apple.com/documentation/combine/publisher/zip(_:)"
+    }
+  ],
+  "signature": {
+    "name": "combine",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "mode",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Each operator combines two streams differently: latest values, strict pairs, or interleaving.",
+    "`a.combineLatest(b)`, `a.zip(b)`, and `a.map(…).merge(with: b.map(…))`.",
+    "`combineLatest` only starts emitting once both have a value."
+  ]
+}

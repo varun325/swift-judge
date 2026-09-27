@@ -1,0 +1,1 @@
+For small, self-contained data, `Codable` + a JSON file is simpler than a database: one encode, one atomic write. `Equatable` makes the round-trip check a one-liner. Switch to SwiftData once you need queries, relationships or partial updates.

@@ -1,0 +1,38 @@
+[
+ {
+  "input": {
+   "games": [
+    [
+     "Mastermind",
+     "y",
+     "1,2,4"
+    ],
+    [
+     "Undersea",
+     "n",
+     "0,1"
+    ],
+    [
+     "Earth",
+     "y",
+     "3"
+    ],
+    [
+     "Blank",
+     "n",
+     ""
+    ]
+   ]
+  },
+  "expected": [
+   "Earth,Mastermind",
+   "Earth,Mastermind",
+   "Blank,Earth,Undersea"
+  ]
+ },
+ {
+  "input": {
+   "games": []
+  }
+ }
+]

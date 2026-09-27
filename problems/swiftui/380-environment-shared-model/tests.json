@@ -1,0 +1,23 @@
+[
+ {
+  "input": {
+   "actions": [
+    "add tea",
+    "badge",
+    "add jam",
+    "remove tea",
+    "badge"
+   ]
+  },
+  "expected": [
+   "badge 1",
+   "badge 1",
+   "same instance true"
+  ]
+ },
+ {
+  "input": {
+   "actions": []
+  }
+ }
+]

@@ -1,0 +1,46 @@
+{
+  "id": "swiftdata-crud",
+  "title": "SwiftData: @Model CRUD",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "SwiftData",
+  "concepts": [
+    "class-definition",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "SwiftData",
+      "url": "https://developer.apple.com/documentation/swiftdata/"
+    },
+    {
+      "title": "Model()",
+      "url": "https://developer.apple.com/documentation/swiftdata/model()"
+    },
+    {
+      "title": "ModelContext",
+      "url": "https://developer.apple.com/documentation/swiftdata/modelcontext"
+    }
+  ],
+  "signature": {
+    "name": "booksCRUD",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Mark the class `@Model`; create a `ModelContainer` with `isStoredInMemoryOnly: true`.",
+    "Insert with `context.insert`, delete with `context.delete`, mutate properties directly.",
+    "Fetch with `FetchDescriptor<Book>(sortBy: [SortDescriptor(\\.rating, order: .reverse), SortDescriptor(\\.title)])`."
+  ]
+}

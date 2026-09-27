@@ -1,0 +1,1 @@
+Prepare data for a `List` with `Section`s: group names by uppercased first letter (non-letters under `"#"`, listed last), sort sections alphabetically and names within each section case-insensitively. Return `"<letter>: <names joined by ', '>"`.

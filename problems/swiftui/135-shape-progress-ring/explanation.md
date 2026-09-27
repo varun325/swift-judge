@@ -1,0 +1,1 @@
+`trim(from:to:)` draws a fraction of a path's length — the basis of progress rings and "drawing" animations (animate the `to` value). An ellipse path starts at the **right-hand** point (3 o'clock), which is why rings are usually rotated −90° to start at the top.

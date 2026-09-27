@@ -1,0 +1,29 @@
+{
+  "id": "parameter-packs",
+  "title": "Parameter Packs (Variadic Generics)",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Swift evolution",
+  "concepts": [
+    "generics",
+    "variadic",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Parameter Packs",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "packsDemo",
+    "params": [],
+    "returns": "[String]"
+  },
+  "hints": [
+    "A type parameter pack is written `each T`; a value pack parameter is `repeat each T`.",
+    "Iterate the pack with `for v in repeat each value { … }` (Swift 6).",
+    "For optionals: parameter `repeat (each T)?`, and return false on the first `nil`."
+  ]
+}

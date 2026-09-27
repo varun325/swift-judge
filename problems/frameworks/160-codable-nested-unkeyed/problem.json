@@ -1,0 +1,37 @@
+{
+  "id": "codable-nested-unkeyed",
+  "title": "Nested & Unkeyed Containers",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "codable-keys"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "UnkeyedDecodingContainer",
+      "url": "https://developer.apple.com/documentation/swift/unkeyeddecodingcontainer"
+    }
+  ],
+  "signature": {
+    "name": "decodeChart",
+    "params": [
+      {
+        "name": "json",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A point is a JSON array, so decode it with `unkeyedContainer()` in order.",
+    "Skip the `data` wrapper with `nestedContainer(keyedBy:forKey:)`.",
+    "`var c = try decoder.unkeyedContainer(); x = try c.decode(Int.self); y = try c.decode(Double.self)`."
+  ]
+}

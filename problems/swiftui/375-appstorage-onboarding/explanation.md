@@ -1,0 +1,1 @@
+`@AppStorage` is a property wrapper over `UserDefaults` that also re-renders views when the value changes. Values survive relaunches; injecting a custom `store:` keeps tests and previews isolated. Store small settings only — not models or secrets (use files/SwiftData and the Keychain).

@@ -1,0 +1,35 @@
+{
+  "id": "closures-as-parameters",
+  "title": "Closures as Parameters (with Params & Returns)",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "closures",
+    "trailing-closure",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Closures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "travel",
+    "params": [
+      {
+        "name": "legs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "A closure parameter has a function type like `(String, Int) -> String`.",
+    "Inside `plan`, call `describe(stop, index + 1)` for each stop.",
+    "Second call: `plan(route: legs) { \"\\($1)-\\($0)\" }`."
+  ]
+}

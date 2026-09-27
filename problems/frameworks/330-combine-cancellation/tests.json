@@ -1,0 +1,25 @@
+[
+ {
+  "input": {
+   "steps": [
+    "sub",
+    "temp",
+    "send 1",
+    "sub",
+    "send 2",
+    "cancel",
+    "send 3"
+   ]
+  },
+  "expected": [
+   "s1:1",
+   "s1:2",
+   "s3:2"
+  ]
+ },
+ {
+  "input": {
+   "steps": []
+  }
+ }
+]

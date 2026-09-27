@@ -3,6 +3,7 @@ import { join } from 'node:path'
 import type { PlaygroundPage, PlaygroundRun, PlaygroundSummary } from '../shared/api'
 import { presentCompilerOutput } from './judge/diagnostics'
 import { run } from './judge/runner'
+import { withQuietCrashes } from './judge/harness'
 import { compile } from './judge/toolchain'
 
 const RUN_TIMEOUT_MS = 10_000
@@ -106,7 +107,7 @@ export class Playground {
 
 /** Compile `code` as main.swift and run it once with the given stdin. */
 export async function runPlayground(code: string, stdin: string): Promise<PlaygroundRun> {
-  const built = await compile([{ name: 'main.swift', content: code }], '6')
+  const built = await compile([{ name: 'main.swift', content: withQuietCrashes(code) }], '6')
   const compilerOutput = presentCompilerOutput(built.output, 'main.swift')
   if (!built.ok || !built.binary) {
     return { ok: false, phase: 'compile', diagnostics: built.diagnostics, compilerOutput, stdout: '', stderr: '', exitCode: null, ms: 0, compileMs: built.ms }

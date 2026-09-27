@@ -1,0 +1,1 @@
+Given ISO dates (UTC), return `[age in whole years, days lived, days until next birthday]` using `calendar.dateComponents([.year], from:to:)`, `[.day]`, and `nextDate(after:matching:matchingPolicy:)` for the next birthday (Feb 29 birthdays → use `.nextTimePreservingSmallerComponents`). If today **is** the birthday, days until next is 0.

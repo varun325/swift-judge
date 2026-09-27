@@ -1,0 +1,37 @@
+{
+  "id": "combine-published-sink",
+  "title": "@Published + $property Pipelines",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Combine",
+  "concepts": [
+    "property-wrappers",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Published",
+      "url": "https://developer.apple.com/documentation/combine/published"
+    }
+  ],
+  "signature": {
+    "name": "searchPipeline",
+    "params": [
+      {
+        "name": "typed",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`$query` is a publisher of every value `query` takes.",
+    "Normalise, `removeDuplicates()`, `dropFirst()`, map to results.",
+    "Finish with `.assign(to: &$results)` — it manages its own lifetime."
+  ]
+}

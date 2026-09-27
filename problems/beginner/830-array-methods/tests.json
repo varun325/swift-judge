@@ -1,0 +1,42 @@
+[
+ {
+  "input": {
+   "commands": [
+    "add b",
+    "add a",
+    "front c",
+    "remove b",
+    "sort"
+   ]
+  },
+  "expected": [
+   "a",
+   "c"
+  ]
+ },
+ {
+  "input": {
+   "commands": []
+  }
+ },
+ {
+  "input": {
+   "commands": [
+    "add x",
+    "add y",
+    "add z",
+    "swap",
+    "reverse"
+   ]
+  }
+ },
+ {
+  "input": {
+   "commands": [
+    "remove q",
+    "add two words"
+   ]
+  },
+  "hidden": true
+ }
+]

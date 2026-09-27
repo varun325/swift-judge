@@ -1,0 +1,39 @@
+{
+  "id": "span-safe-views",
+  "title": "Span: Safe, Non-Escaping Memory Views",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Swift evolution",
+  "concepts": [
+    "ownership",
+    "memory-safety",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Span",
+      "url": "https://developer.apple.com/documentation/swift/span"
+    },
+    {
+      "title": "SE-0447: Span",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0447-span-access-shared-contiguous-storage.md"
+    }
+  ],
+  "signature": {
+    "name": "spanStats",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "`values.span` gives a `Span<Int>` view without copying.",
+    "Index it like an array inside the functions; it can't be stored or returned.",
+    "Track the current and best run lengths in one pass."
+  ]
+}

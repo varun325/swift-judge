@@ -1,0 +1,19 @@
+[
+ {
+  "input": {
+   "useMocks": false
+  },
+  "expected": [
+   "live analytics",
+   "analytics same:true",
+   "live api",
+   "api same:false",
+   "missing"
+  ]
+ },
+ {
+  "input": {
+   "useMocks": true
+  }
+ }
+]

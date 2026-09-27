@@ -1,0 +1,23 @@
+{
+  "id": "predict-shadowing",
+  "title": "Predict: Shadowing in if let & Scopes",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "optional-binding",
+    "guard"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "The Basics — Optional Binding",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "hints": [
+    "Inside `if let name { }` there is a second, unwrapped `name`.",
+    "`type(of:)` shows `String` inside the `if let` and `Optional<String>` outside.",
+    "The `do` block prints 6; after it, `count` is 3 again."
+  ]
+}

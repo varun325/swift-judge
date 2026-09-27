@@ -1,0 +1,41 @@
+[
+ {
+  "input": {
+   "events": [
+    "pay",
+    "ship",
+    "cancel",
+    "deliver"
+   ]
+  },
+  "expected": [
+   "pay: paid",
+   "ship: shipped",
+   "cancel: rejected",
+   "deliver: delivered"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "cancel",
+    "pay"
+   ]
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "ship",
+    "pay",
+    "pay"
+   ]
+  },
+  "hidden": true
+ }
+]

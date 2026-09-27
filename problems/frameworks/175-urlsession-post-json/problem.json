@@ -1,0 +1,41 @@
+{
+  "id": "urlsession-post-json",
+  "title": "URLRequest: POST JSON & Headers (Mocked)",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Networking",
+  "concepts": [
+    "codable",
+    "async-await"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "URLRequest",
+      "url": "https://developer.apple.com/documentation/foundation/urlrequest"
+    }
+  ],
+  "signature": {
+    "name": "createTodo",
+    "params": [
+      {
+        "name": "title",
+        "type": "String"
+      },
+      {
+        "name": "token",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Configure a `URLRequest`: `httpMethod`, `setValue(_:forHTTPHeaderField:)`, `httpBody`.",
+    "Encode `NewTodo` with a sorted-keys `JSONEncoder` as the body.",
+    "Send with `session.data(for: request)` and decode `Created`."
+  ]
+}

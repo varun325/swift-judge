@@ -1,0 +1,23 @@
+{
+  "id": "diag-captured-var-mutation",
+  "title": "Diagnostic: Mutating a Captured var Concurrently",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "sendable",
+    "capturing-values"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Sendable",
+      "url": "https://developer.apple.com/documentation/swift/sendable"
+    }
+  ],
+  "hints": [
+    "Task closures run concurrently with the code that created them.",
+    "Mutate the same captured `var` inside a `Task` and outside it.",
+    "`Task { count += 1 }` followed by `count += 1`."
+  ]
+}

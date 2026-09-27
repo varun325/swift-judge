@@ -1,0 +1,42 @@
+{
+  "id": "coredata-relationships",
+  "title": "Relationships & Delete Rules",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Core Data",
+  "concepts": [
+    "retain-cycle",
+    "class-definition"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSRelationshipDescription",
+      "url": "https://developer.apple.com/documentation/coredata/nsrelationshipdescription"
+    },
+    {
+      "title": "NSDeleteRule",
+      "url": "https://developer.apple.com/documentation/coredata/nsdeleterule"
+    }
+  ],
+  "signature": {
+    "name": "folders",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Set the to-one side (`note.folder`); the inverse to-many updates itself.",
+    "Deleting a folder cascades to its notes; deleting a note nullifies its folder link.",
+    "Report with `notes` set counts and `context.count(for:)`."
+  ]
+}

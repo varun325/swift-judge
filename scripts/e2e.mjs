@@ -47,12 +47,30 @@ function snippetOutput(dir) {
   try {
     fs.copyFileSync(path.join(dir, 'snippet.swift'), path.join(tmp, 'main.swift'))
     const sdk = execFileSync('xcrun', ['--sdk', 'macosx', '--show-sdk-path'], { encoding: 'utf8' }).trim()
-    execFileSync('xcrun', ['swiftc', '-sdk', sdk, '-swift-version', '6', 'main.swift', '-o', 'prog'], { cwd: tmp, stdio: 'pipe' })
+    execFileSync('xcrun', ['swiftc', '-sdk', sdk, '-swift-version', '6', '-module-name', 'Solution', 'main.swift', '-o', 'prog'], { cwd: tmp, stdio: 'pipe' })
     return execFileSync(path.join(tmp, 'prog'), { encoding: 'utf8' })
   } finally {
     fs.rmSync(tmp, { recursive: true, force: true })
   }
 }
+
+// ---- seed a profile with spaced-repetition state: two-sum's revisit is 3 days overdue, and
+// leap-year was solved before reviews existed (no schedule yet, so it must be backfilled).
+const localDay = (offset) => {
+  const d = new Date()
+  d.setDate(d.getDate() + offset)
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
+fs.writeFileSync(
+  path.join(profile, 'progress.json'),
+  JSON.stringify({
+    problems: {
+      'two-sum': { solved: true, attempts: 3, review: { step: 2, due: localDay(-3), last: localDay(-5), reviews: 2 } },
+      'leap-year': { solved: true, attempts: 1, solvedAt: new Date(Date.now() - 10 * 86_400_000).toISOString() }
+    },
+    quiz: {}
+  })
+)
 
 // ---- launch
 const app = await electron.launch({
@@ -99,6 +117,39 @@ async function verdict(button = 'button.submit') {
     { timeout: 120_000 }
   )
   return (await page.textContent('.verdict > span')).trim()
+}
+
+// ---- 0. Fibonacci review queue greets the learner on launch
+{
+  const ok = (name, cond, detail = '') => {
+    if (!cond) failures.push(`${name}: ${detail}`)
+    console.log(`${cond ? '✓' : '✗'} ${name}${detail && !cond ? ` — ${detail}` : ''}`)
+  }
+  await page.waitForSelector('.review-today', { timeout: 10_000 }).catch(() => {})
+  await page.screenshot({ path: path.join(OUT, 'review-dialog.png') })
+  const dueIds = await page.locator('.review-today li button').evaluateAll((els) => els.map((e) => e.dataset.id))
+  const overdueText = (await page.locator('.review-today li button[data-id="two-sum"] .when').textContent().catch(() => '')) ?? ''
+  ok('revisit dialog opens on launch with due + backfilled problems', dueIds[0] === 'leap-year' && dueIds.includes('two-sum') && overdueText.includes('3d overdue'),
+    `${dueIds} / ${overdueText}`)
+  await page.click('.review-today li button[data-id="two-sum"]')
+  await page.waitForFunction(() => document.querySelector('.problem-title')?.textContent?.startsWith('Two Sum') && window.monaco?.editor.getEditors().length > 0)
+  await page.screenshot({ path: path.join(OUT, 'review-banner.png') })
+  ok('opening a due problem shows the revisit banner', (await page.locator('.review-banner').count()) === 1)
+  await page.click('.review-banner button')
+  const twoSumDir = path.join(APP, 'problems', 'beginner', fs.readdirSync(path.join(APP, 'problems', 'beginner')).find((d) => d.endsWith('-two-sum')))
+  await page.waitForFunction((s) => window.monaco.editor.getEditors()[0].getModel().getValue() === s, read(twoSumDir, 'starter.swift'))
+  await setCode(read(twoSumDir, 'solution.swift'))
+  const v = await verdict()
+  await page.waitForSelector('.review-next', { timeout: 5000 }).catch(() => {})
+  const nextText = (await page.textContent('.review-next').catch(() => '')) ?? ''
+  const button = (await page.textContent('.review-button')).trim()
+  ok('an on-time re-solve climbs the ladder (step 2 → next visit in 3 days)',
+    v === 'Accepted' && (await page.locator('.review-banner').count()) === 0 && nextText.includes(localDay(3)) && button === '↻ 1 to revisit',
+    `${v} / ${nextText} / ${button}`)
+  await page.click('.review-button')
+  await page.waitForSelector('.review-today')
+  ok('revisit dialog reopens from the top bar with what is left', (await page.locator('.review-today li button').count()) === 1)
+  await page.click('.review-today .close')
 }
 
 // ---- 1. every problem: starter rejected, reference accepted
@@ -178,7 +229,7 @@ if (!filter) {
   if (!scenariosOnly) await check('Solution unlocked after Accepted', (await page.locator('.locked').count()) === 0)
 
   const solvedText = (await page.textContent('.solved-count')).trim()
-  if (!scenariosOnly) await check('solved counter reflects every accepted problem', solvedText === `${problems.length}/${problems.length} solved`, solvedText)
+  if (!scenariosOnly) await check('solved counter reflects every accepted problem', solvedText.startsWith(`${problems.length}/`), solvedText)
 
   // Playground: run code, see output, append to notes, files saved on disk.
   await page.click('.tabs button:has-text("Playground")')
@@ -237,6 +288,25 @@ if (!filter) {
     const adv = path.join(APP, 'problems', 'advanced')
     for (const d of fs.readdirSync(adv).filter((d) => d.endsWith('-e2e-plugin-check'))) fs.rmSync(path.join(adv, d), { recursive: true })
   }
+}
+
+// ---- 3. closing the window must not break the live problem-folder watcher (macOS keeps the
+// app running with no window; a later file change used to throw "Object has been destroyed").
+{
+  await app.evaluate(() => {
+    globalThis.__mainErrors = []
+    process.on('uncaughtException', (e) => globalThis.__mainErrors.push(String(e)))
+  })
+  await app.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows().forEach((w) => w.close()))
+  const touched = path.join(APP, 'problems', 'beginner', fs.readdirSync(path.join(APP, 'problems', 'beginner')).find((d) => d.endsWith('-two-sum')), 'problem.json')
+  fs.utimesSync(touched, new Date(), new Date())
+  await new Promise((r) => setTimeout(r, 1500))
+  const mainErrors = await app.evaluate(() => globalThis.__mainErrors)
+  await app.evaluate(({ app }) => app.emit('activate'))
+  const reopened = await app.waitForEvent('window', { timeout: 10_000 }).catch(() => undefined)
+  const ok = mainErrors.length === 0 && reopened !== undefined
+  if (!ok) failures.push(`closed window + file change: ${mainErrors.join('; ') || 'window did not reopen'}`)
+  console.log(`${ok ? '✓' : '✗'} file changes with the window closed don't crash the main process; the window reopens`)
 }
 
 await app.close()

@@ -1,0 +1,1 @@
+Secrets belong behind **model** rules, not just view styling: if the view merely hides the master with `.opacity(0)`, an animation (or accessibility) can still expose it. Computed properties like `isOver` and `masterDisplay` derive state instead of storing flags that can drift out of sync.

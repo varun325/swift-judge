@@ -1,0 +1,1 @@
+The `@Entry` macro (iOS 18 / Xcode 16) generates the `EnvironmentKey` boilerplate. Environment values flow **down** the view tree; `.environment(\.accentName, "red")` overrides them for a subtree — SwiftUI's built-in dependency injection, similar to React context.

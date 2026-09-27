@@ -1,0 +1,1 @@
+`guard` handles the out-of-range case first; the `for … where` loop returns as soon as it finds the root, and falling out of the loop means there isn't one. The judge shows thrown errors as `{"$error": "…"}`.

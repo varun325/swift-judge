@@ -1,0 +1,30 @@
+{
+  "id": "predict-property-wrapper-types",
+  "title": "Predict: @State, Binding & Projected Values",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "State & data flow",
+  "concepts": [
+    "property-wrappers",
+    "generics"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
+    },
+    {
+      "title": "Binding",
+      "url": "https://developer.apple.com/documentation/swiftui/binding"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`wrappedValue` is the plain value; `projectedValue` is what `$` gives you.",
+    "A `State<Int>`'s projected value is a `Binding<Int>`.",
+    "Subscripting a `Binding<[String]>` gives a `Binding<String>`."
+  ]
+}

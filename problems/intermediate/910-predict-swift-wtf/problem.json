@@ -1,0 +1,24 @@
+{
+  "id": "predict-swift-wtf",
+  "title": "Predict: Swift WTF Moments",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Swift quirks",
+  "concepts": [
+    "strings-are-collections",
+    "value-vs-reference",
+    "integer-overflow"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "The Basics",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "hints": [
+    "Arrays are values; emoji families are single characters; `&+` wraps.",
+    "`.some(nil)` is not equal to `nil` at the outer level — but its unwrapped value is.",
+    "`0.1 + 0.2` prints `0.30000000000000004`."
+  ]
+}

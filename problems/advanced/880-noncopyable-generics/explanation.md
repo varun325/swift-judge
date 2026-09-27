@@ -1,0 +1,1 @@
+`<Item: ~Copyable>` means "Item might not be copyable", so the generic code may only move or borrow items. `Optional.take()` moves the value out and leaves `nil` — the only way to extract a noncopyable value from storage.

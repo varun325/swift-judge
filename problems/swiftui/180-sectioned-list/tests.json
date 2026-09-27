@@ -1,0 +1,33 @@
+[
+ {
+  "input": {
+   "names": [
+    "bob",
+    "Alice",
+    "anna",
+    "42 Club",
+    "Ben"
+   ]
+  },
+  "expected": [
+   "A: Alice, anna",
+   "B: Ben, bob",
+   "#: 42 Club"
+  ]
+ },
+ {
+  "input": {
+   "names": []
+  }
+ },
+ {
+  "input": {
+   "names": [
+    "éclair",
+    "Zed",
+    "_x"
+   ]
+  },
+  "hidden": true
+ }
+]

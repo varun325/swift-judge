@@ -1,0 +1,1 @@
+Encode `struct Profile: Encodable { let name: String; let followerCount: Int; let isVerified: Bool; let nickname: String? }` with `keyEncodingStrategy = .convertToSnakeCase` and `outputFormatting = [.sortedKeys, .withoutEscapingSlashes]`. Return the JSON string. Note what happens to a `nil` optional.

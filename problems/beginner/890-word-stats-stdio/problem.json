@@ -1,0 +1,23 @@
+{
+  "id": "word-stats-stdio",
+  "title": "Word Statistics (stdin)",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Standard I/O",
+  "concepts": [
+    "strings-are-collections",
+    "dictionary-basics"
+  ],
+  "mode": "stdio",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "hints": [
+    "Read everything first, then split on whitespace.",
+    "Track the longest word with a strict `>` so the first one wins ties; count letters in a dictionary.",
+    "Pick the top letter with `counts.min { ($1.value, $0.key) < ($0.value, $1.key) }`."
+  ]
+}

@@ -1,0 +1,1 @@
+Charts should show empty bins (a gap *is* information). `floor(v / w)` assigns the bucket; negative values work too because `.down` rounds toward −∞. In Swift Charts you'd feed these as `BarMark(x: .value("Range", label), y: .value("Count", n))`.

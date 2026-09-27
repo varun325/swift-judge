@@ -1,0 +1,41 @@
+{
+  "id": "nscache-image-cache",
+  "title": "NSCache: Memory Cache with Limits",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Persistence & caching",
+  "concepts": [
+    "caching",
+    "class-definition",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NSCache",
+      "url": "https://developer.apple.com/documentation/foundation/nscache"
+    }
+  ],
+  "signature": {
+    "name": "cacheRun",
+    "params": [
+      {
+        "name": "countLimit",
+        "type": "Int"
+      },
+      {
+        "name": "ops",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`NSCache` needs class keys and values — bridge `String` to `NSString`.",
+    "Wrap it so callers use plain `String`s.",
+    "Use `setObject(_:forKey:)`, `object(forKey:)`, `removeObject(forKey:)`, `removeAllObjects()`."
+  ]
+}

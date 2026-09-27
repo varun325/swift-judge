@@ -1,0 +1,26 @@
+{
+  "id": "predict-viewbuilder-types",
+  "title": "Predict: What @ViewBuilder Really Builds",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "View composition",
+  "concepts": [
+    "result-builders",
+    "opaque-types"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Several child views are packed into a tuple view.",
+    "An `if` without `else` produces an optional; `if/else` produces a two-branch conditional type.",
+    "Line 1 is `VStack<TupleView<(Text, Text)>>`."
+  ]
+}

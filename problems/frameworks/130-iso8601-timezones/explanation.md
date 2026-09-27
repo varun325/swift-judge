@@ -1,0 +1,1 @@
+A `Date` is an absolute instant — it has no time zone. Zones only matter when parsing or displaying. Storing and transmitting ISO 8601 with an offset (or UTC `Z`) avoids ambiguity; display converts to the viewer's zone.

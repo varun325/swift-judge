@@ -1,0 +1,38 @@
+{
+  "id": "async-throwing-stream",
+  "title": "AsyncThrowingStream: Progress Updates",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "AsyncThrowingStream",
+      "url": "https://developer.apple.com/documentation/swift/asyncthrowingstream"
+    }
+  ],
+  "signature": {
+    "name": "downloadProgress",
+    "params": [
+      {
+        "name": "chunks",
+        "type": "Int"
+      },
+      {
+        "name": "failAt",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "A stream's continuation can `yield` values, `finish()`, or `finish(throwing:)`.",
+    "Loop over the chunks, yielding percentages; on the failing chunk, finish with the error and return.",
+    "Consume with `for try await percent in download(…)` inside `do`/`catch`."
+  ]
+}

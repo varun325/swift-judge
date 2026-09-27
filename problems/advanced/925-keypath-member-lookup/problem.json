@@ -1,0 +1,35 @@
+{
+  "id": "keypath-member-lookup",
+  "title": "Type-Safe @dynamicMemberLookup with Key Paths",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Advanced features",
+  "concepts": [
+    "dynamic-member-lookup",
+    "key-paths",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Attributes — dynamicMemberLookup",
+      "book": "ReferenceManual/Attributes"
+    }
+  ],
+  "signature": {
+    "name": "auditDemo",
+    "params": [
+      {
+        "name": "edits",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "A `@dynamicMemberLookup` subscript can take a `WritableKeyPath<Value, T>` instead of a `String`.",
+    "Getter reads `value[keyPath: keyPath]`; setter logs then writes it.",
+    "Key paths are `Hashable`, so `[PartialKeyPath<Value>: String]` can map them to names."
+  ]
+}

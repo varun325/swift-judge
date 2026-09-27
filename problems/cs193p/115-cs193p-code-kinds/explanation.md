@@ -1,0 +1,1 @@
+An enum with associated data models "what kind of code is this, and what extra data does each kind carry" — the master knows if it's hidden, an attempt carries its matches. `if case .master(let hidden) = kind` extracts the payload. `var kind` inside a struct can be reassigned because the model is a mutable value.

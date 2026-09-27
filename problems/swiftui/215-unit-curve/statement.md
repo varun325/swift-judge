@@ -1,0 +1,1 @@
+Swiftful's *Animation Curves and Animation Timing*. `UnitCurve` exposes the timing curves SwiftUI animations use. For each `t` return `[linear, easeIn, easeOut, easeInEaseOut]` values from `UnitCurve.<curve>.value(at: t)`, rounded to 3 decimals. Note which curve is ahead at `t = 0.25`.

@@ -1,0 +1,1 @@
+A snapshot describes the **whole** desired state by identifiers; `dataSource.apply(snapshot)` computes and animates the difference — no more `performBatchUpdates` index bookkeeping crashes. Identifiers must be unique `Hashable` values (duplicates crash), which is why the solution filters them.

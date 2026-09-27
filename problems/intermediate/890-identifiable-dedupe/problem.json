@@ -1,0 +1,35 @@
+{
+  "id": "identifiable-dedupe",
+  "title": "Identifiable Models & Updates by ID",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Protocols",
+  "concepts": [
+    "protocols",
+    "equatable-hashable",
+    "uuid"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Identifiable",
+      "url": "https://developer.apple.com/documentation/swift/identifiable"
+    }
+  ],
+  "signature": {
+    "name": "applyEdits",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Find the element's index by id, then mutate through the subscript.",
+    "Switch on `(command, index)` — `let i?` matches only when the item exists, `nil` when it doesn't.",
+    "`case (\"toggle\", let i?): todos[i].isDone.toggle()`."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "diag-actor-isolation",
+  "title": "Diagnostic: Reading Actor State Synchronously",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "actors"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Concurrency — Actors",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "hints": [
+    "Actor state can only be touched from inside the actor, or with `await`.",
+    "Write a synchronous function that returns `c.value`.",
+    "`func read(_ c: Counter) -> Int { c.value }`."
+  ]
+}

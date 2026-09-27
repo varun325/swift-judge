@@ -1,0 +1,41 @@
+[
+ {
+  "input": {
+   "words": [
+    "apple",
+    "avocado",
+    "banana",
+    "Blueberry",
+    "apricot"
+   ]
+  },
+  "expected": [
+   [
+    "apple",
+    "avocado"
+   ],
+   [
+    "banana",
+    "Blueberry"
+   ],
+   [
+    "apricot"
+   ]
+  ]
+ },
+ {
+  "input": {
+   "words": []
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "",
+    "x",
+    ""
+   ]
+  },
+  "hidden": true
+ }
+]

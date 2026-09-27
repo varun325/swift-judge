@@ -1,0 +1,23 @@
+{
+  "id": "predict-ranges",
+  "title": "Predict: Range Operators",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Ranges",
+  "concepts": [
+    "half-open-range",
+    "stride"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Basic Operators — Range Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "hints": [
+    "`...` includes the upper bound; `..<` stops before it.",
+    "`1..<1` is empty; `(0..<10).contains(10)` is false.",
+    "Line 1 prints `[\"Bo\", \"Cy\", \"Di\"]`."
+  ]
+}

@@ -1,0 +1,1 @@
+`each T` declares a pack of types; `repeat each value` expands it. Swift 6 lets you iterate a pack with `for v in repeat each value`. This is how SwiftUI's `ViewBuilder` and `zip`-like APIs escape the old "overload for 1…10 arguments" pattern.

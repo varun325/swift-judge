@@ -1,0 +1,1 @@
+*cannot assign to property: 'self' is immutable*. Views are short-lived value descriptions; SwiftUI recreates them freely. `@State` moves the storage **outside** the struct into SwiftUI-managed memory, and its nonmutating setter triggers a re-render — like `useState` but owned by the framework's view graph.

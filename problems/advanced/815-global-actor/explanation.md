@@ -1,0 +1,1 @@
+A global actor is a singleton actor you can apply as an attribute, isolating unrelated declarations to one serial executor — `@MainActor` is the built-in example. Code isolated to the same global actor calls each other synchronously; outsiders `await`.

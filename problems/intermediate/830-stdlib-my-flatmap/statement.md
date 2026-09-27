@@ -1,0 +1,1 @@
+Implement `func myFlatMap<S: Sequence>(_ transform: (Element) throws -> S) rethrows -> [S.Element]` on `Sequence`, concatenating the sequences each element produces. `flatDemo` splits every sentence into words and flattens.

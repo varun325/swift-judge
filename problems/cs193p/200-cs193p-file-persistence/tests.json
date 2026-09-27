@@ -1,0 +1,23 @@
+[
+ {
+  "input": {
+   "games": [
+    [
+     "Mastermind",
+     "RGBY",
+     "RRGG,RGBY"
+    ],
+    [
+     "Undersea",
+     "ABCD",
+     ""
+    ]
+   ]
+  }
+ },
+ {
+  "input": {
+   "games": []
+  }
+ }
+]

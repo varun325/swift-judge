@@ -1,0 +1,53 @@
+[
+ {
+  "input": {
+   "posts": [
+    [
+     "a",
+     "5"
+    ],
+    [
+     "b",
+     "9"
+    ],
+    [
+     "c",
+     "5"
+    ],
+    [
+     "d",
+     "7"
+    ],
+    [
+     "e",
+     "1"
+    ]
+   ],
+   "pageSize": 2
+  },
+  "expected": [
+   "b,d",
+   "a,c",
+   "e",
+   "end"
+  ]
+ },
+ {
+  "input": {
+   "posts": [],
+   "pageSize": 3
+  }
+ },
+ {
+  "input": {
+   "posts": [
+    [
+     "x",
+     "1"
+    ]
+   ],
+   "pageSize": 0
+  },
+  "hidden": true
+ }
+]

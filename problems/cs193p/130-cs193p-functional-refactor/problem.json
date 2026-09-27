@@ -1,0 +1,34 @@
+{
+  "id": "cs193p-functional-refactor",
+  "title": "L5: From For-Loops to map & Captured Locals",
+  "track": "cs193p",
+  "difficulty": "easy",
+  "topic": "L5–L7 · Layout, data flow & generics",
+  "concepts": [
+    "closures",
+    "capturing-values",
+    "map-filter-reduce"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`map` runs its closure right away; the closures it *returns* run later.",
+    "Captured variables are read when the closure runs, not when it's created.",
+    "The second line prints `[\"R100\", \"G100\", \"B100\"]`."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L5: Layout & Data Flow",
+      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE",
+      "channel": "Stanford Online"
+    }
+  ]
+}

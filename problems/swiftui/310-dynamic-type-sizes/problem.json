@@ -1,0 +1,43 @@
+{
+  "id": "dynamic-type-sizes",
+  "title": "Accessibility: Dynamic Type Sizes",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Accessibility",
+  "concepts": [
+    "enums",
+    "case-iterable",
+    "comparable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "DynamicTypeSize",
+      "url": "https://developer.apple.com/documentation/swiftui/dynamictypesize"
+    },
+    {
+      "title": "Accessibility",
+      "url": "https://developer.apple.com/documentation/accessibility"
+    }
+  ],
+  "signature": {
+    "name": "layoutFor",
+    "params": [
+      {
+        "name": "sizes",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`DynamicTypeSize` is `CaseIterable` and `Comparable`.",
+    "Build a name → size dictionary from `allCases`, then compare with `>= .accessibility1`.",
+    "Count `allCases.filter(\\.isAccessibilitySize)`."
+  ]
+}

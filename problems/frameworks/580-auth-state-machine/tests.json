@@ -1,0 +1,44 @@
+[
+ {
+  "input": {
+   "events": [
+    "start anonymous",
+    "success u1",
+    "link x",
+    "signOut",
+    "start google",
+    "failure cancelled",
+    "start email",
+    "success u2",
+    "delete",
+    "delete"
+   ]
+  },
+  "expected": [
+   "signingIn(anonymous)",
+   "signedIn(u1, anonymous)",
+   "signedIn(u1)",
+   "signedOut",
+   "signingIn(google)",
+   "failed(cancelled)",
+   "signingIn(email)",
+   "signedIn(u2)",
+   "signedOut",
+   "ignored"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "success x",
+    "link y"
+   ]
+  },
+  "hidden": true
+ }
+]

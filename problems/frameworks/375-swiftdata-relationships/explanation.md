@@ -1,0 +1,1 @@
+`@Relationship(deleteRule: .cascade, inverse:)` gives the same guarantees as Core Data: appending to `author.books` also sets `book.author`, and deleting an author deletes their books. Without the inverse/cascade you'd leave orphaned rows behind.

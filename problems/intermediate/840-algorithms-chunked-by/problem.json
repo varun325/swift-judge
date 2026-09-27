@@ -1,0 +1,35 @@
+{
+  "id": "algorithms-chunked-by",
+  "title": "Swift Algorithms: chunked(on:)",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Algorithms package",
+  "concepts": [
+    "custom-collection",
+    "generics",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Swift Algorithms (GitHub)",
+      "url": "https://github.com/apple/swift-algorithms"
+    }
+  ],
+  "signature": {
+    "name": "groupRuns",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[String]]"
+  },
+  "hints": [
+    "Walk the sequence remembering the previous element's key.",
+    "Same key as last time → append to the last chunk; different key → start a new chunk.",
+    "`if let lastKey, lastKey == k { chunks[chunks.count - 1].append(element) } else { chunks.append([element]) }`."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "concurrent-downloads",
+  "title": "Concurrent Downloads with a Task Group (Mocked)",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Networking",
+  "concepts": [
+    "task-group",
+    "async-await",
+    "codable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "URLSession",
+      "url": "https://developer.apple.com/documentation/foundation/urlsession"
+    }
+  ],
+  "signature": {
+    "name": "loadProfiles",
+    "params": [
+      {
+        "name": "ids",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "failing",
+        "type": "[Int]"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Spawn one child task per id; carry the index with the result.",
+    "Have each child return `String?` so failures don't cancel siblings.",
+    "Put results into an array by index, then format with the ids."
+  ]
+}

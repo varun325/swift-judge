@@ -1,0 +1,1 @@
+Write `func plan(route: [String], using describe: (String, Int) -> String) -> [String]` that calls `describe(stop, legNumber)` for each stop (legs numbered from 1). Call it with a **trailing closure** returning `"Leg <n>: to <stop>"`, and a second time with shorthand `$0`/`$1` returning `"<n>-<stop>"`. Return both results concatenated.

@@ -1,0 +1,38 @@
+{
+  "id": "codable-polymorphic",
+  "title": "Polymorphic JSON with a Type Discriminator",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "associated-values",
+    "codable-keys"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    }
+  ],
+  "signature": {
+    "name": "feed",
+    "params": [
+      {
+        "name": "json",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Decode the `type` key first, then decide which other keys to read.",
+    "Use one `CodingKeys` enum containing every key any variant uses.",
+    "Map unknown types to `.unsupported(type)` rather than throwing."
+  ]
+}

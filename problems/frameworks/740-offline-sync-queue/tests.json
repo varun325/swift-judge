@@ -1,0 +1,29 @@
+[
+ {
+  "input": {
+   "events": [
+    "offline",
+    "create a",
+    "create b",
+    "delete b",
+    "rename a c",
+    "status",
+    "online",
+    "status",
+    "delete zzz"
+   ]
+  },
+  "expected": [
+   "server: ",
+   "sent create a",
+   "sent rename a->c",
+   "server: c",
+   "dropped delete zzz"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ }
+]

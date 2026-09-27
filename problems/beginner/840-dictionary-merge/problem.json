@@ -1,0 +1,38 @@
+{
+  "id": "dictionary-merge",
+  "title": "Merging Dictionaries",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "mergeInventories",
+    "params": [
+      {
+        "name": "a",
+        "type": "[String: Int]",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "[String: Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String: Int]"
+  },
+  "hints": [
+    "Dictionaries have a method that merges another dictionary and resolves key clashes.",
+    "`merging(_:uniquingKeysWith:)` takes a function `(old, new) -> value` — an operator can be that function.",
+    "`a.merging(b, uniquingKeysWith: +).filter { $0.value > 0 }`."
+  ]
+}

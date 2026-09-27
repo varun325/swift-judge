@@ -1,0 +1,1 @@
+Auth is a state machine; modelling it as an enum with associated values makes illegal states (signed in *and* failed) unrepresentable, and a pattern-matching `switch` over `(state, event)` documents every legal transition. Anonymous → linked accounts keep the same user id, so their data survives the upgrade.

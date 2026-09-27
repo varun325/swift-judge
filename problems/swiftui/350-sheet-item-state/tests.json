@@ -1,0 +1,34 @@
+[
+ {
+  "input": {
+   "actions": [
+    "open settings",
+    "open profile 7",
+    "dismiss",
+    "dismiss",
+    "open share x"
+   ]
+  },
+  "expected": [
+   "present settings",
+   "replace settings with profile-7",
+   "dismiss profile-7",
+   "nothing to dismiss",
+   "present share-x"
+  ]
+ },
+ {
+  "input": {
+   "actions": []
+  }
+ },
+ {
+  "input": {
+   "actions": [
+    "open profile abc",
+    "open unknown"
+   ]
+  },
+  "hidden": true
+ }
+]

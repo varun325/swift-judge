@@ -1,0 +1,40 @@
+{
+  "id": "protocol-associated-default",
+  "title": "Protocol Requirements with Associated Defaults",
+  "track": "intermediate",
+  "difficulty": "hard",
+  "topic": "Protocols",
+  "concepts": [
+    "associated-types",
+    "protocol-extension",
+    "generic-constraints"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Associated Types",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "scoreAll",
+    "params": [
+      {
+        "name": "ints",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "Each conforming type decides what `Item` is by how it writes `score`.",
+    "Write `total` once in an extension, generic over any sequence whose elements are `Item`.",
+    "`func total<S: Sequence>(_ items: S) -> Int where S.Element == Item { items.reduce(0) { $0 + score($1) } }`."
+  ]
+}

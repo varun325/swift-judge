@@ -1,0 +1,35 @@
+{
+  "id": "global-actor",
+  "title": "Custom Global Actors",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "actors",
+    "sendable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Attributes — globalActor",
+      "book": "ReferenceManual/Attributes"
+    }
+  ],
+  "signature": {
+    "name": "analyticsDemo",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "`@globalActor` turns an actor with a `static let shared` into an attribute.",
+    "Put `@AnalyticsActor` on the class, the logging function and a runner; call the runner with `await`.",
+    "Within `@AnalyticsActor` code, `log(e, to: tracker)` needs no `await`."
+  ]
+}

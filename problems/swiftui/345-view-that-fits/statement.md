@@ -1,0 +1,1 @@
+Swiftful's *ViewThatFits*: SwiftUI tries each child in order and shows the **first** whose ideal width fits the available width; if none fit, it shows the **last**. Given the children's ideal widths, return the chosen index for each available width.

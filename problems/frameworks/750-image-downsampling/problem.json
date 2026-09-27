@@ -1,0 +1,37 @@
+{
+  "id": "image-downsampling",
+  "title": "Image Downsampling Math",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Performance",
+  "concepts": [
+    "fundamental-types",
+    "memory-layout"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Image I/O: CGImageSourceCreateThumbnailAtIndex",
+      "url": "https://developer.apple.com/documentation/imageio/cgimagesourcecreatethumbnailatindex(_:_:_:)"
+    }
+  ],
+  "signature": {
+    "name": "downsample",
+    "params": [
+      {
+        "name": "images",
+        "type": "[[Double]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Memory = pixels × 4 bytes, regardless of the JPEG's file size.",
+    "Aspect-fill: the scale factor is the larger of the two ratios, capped at 1.",
+    "Round the thumbnail dimensions up to whole pixels."
+  ]
+}

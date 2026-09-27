@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "events": [
+    "change 2",
+    "end",
+    "change 1.5",
+    "end",
+    "change 0.1",
+    "doubletap"
+   ]
+  },
+  "expected": [
+   2,
+   2,
+   3,
+   3,
+   1,
+   1
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "change 10",
+    "change 0.5"
+   ]
+  },
+  "hidden": true
+ }
+]

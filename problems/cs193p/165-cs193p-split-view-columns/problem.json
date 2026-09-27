@@ -1,0 +1,49 @@
+{
+  "id": "cs193p-split-view-columns",
+  "title": "L11: NavigationSplitView & Size Classes",
+  "track": "cs193p",
+  "difficulty": "easy",
+  "topic": "L10–L12 · Complex UIs",
+  "concepts": [
+    "enums",
+    "optionals",
+    "switch-statement"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NavigationSplitView",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationsplitview"
+    },
+    {
+      "title": "UserInterfaceSizeClass",
+      "url": "https://developer.apple.com/documentation/swiftui/userinterfacesizeclass"
+    }
+  ],
+  "signature": {
+    "name": "visibleColumns",
+    "params": [
+      {
+        "name": "states",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Compact width shows one column at a time; regular width can show both.",
+    "In compact, the selection decides list vs detail.",
+    "In regular, `detailOnly` with a selection hides the list; otherwise show both with a placeholder."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L11: iPad and Mac",
+      "url": "https://www.youtube.com/watch?v=PXcl5cjVNT0",
+      "channel": "Stanford Online"
+    }
+  ]
+}

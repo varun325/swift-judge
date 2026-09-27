@@ -1,0 +1,1 @@
+`FormatStyle` (iOS 15+) replaces most `NumberFormatter` code with composable, value-type styles. Locale changes grouping, decimal separators and symbol placement (`1.234,50 €`). Always pin a locale in tests — output depends on it.

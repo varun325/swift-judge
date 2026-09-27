@@ -1,0 +1,35 @@
+{
+  "id": "cs193p-generic-code-view",
+  "title": "L7: Generic Views with @ViewBuilder",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L5–L7 · Layout, data flow & generics",
+  "concepts": [
+    "generics",
+    "generic-constraints",
+    "result-builders",
+    "escaping"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
+    }
+  ],
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Each call site specialises the generic with a different concrete view type.",
+    "`Button(\"Guess\") {}` is a `Button<Text>`.",
+    "The default `onTap` returns `\"none\"`."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L7: Animation (Generics & custom View modifiers)",
+      "url": "https://www.youtube.com/watch?v=RYemrq0e7KM",
+      "channel": "Stanford Online"
+    }
+  ]
+}

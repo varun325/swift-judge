@@ -1,0 +1,10 @@
+[
+ {
+  "input": {},
+  "expected": [
+   "success: pass",
+   "failure: pass",
+   "invalid: pass"
+  ]
+ }
+]

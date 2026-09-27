@@ -1,0 +1,33 @@
+{
+  "id": "array-methods",
+  "title": "Array Methods: insert, remove, firstIndex",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Arrays",
+  "concepts": [
+    "array-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types — Arrays",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "playlist",
+    "params": [
+      {
+        "name": "commands",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "Arrays have `append`, `insert(_:at:)`, `remove(at:)`, `firstIndex(of:)`, `swapAt`, `reverse()` and `sort()`.",
+    "Split each command into a verb and an optional argument, then switch on them.",
+    "`if let i = songs.firstIndex(of: name) { songs.remove(at: i) }`."
+  ]
+}

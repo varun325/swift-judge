@@ -1,0 +1,44 @@
+{
+  "id": "phase-animator-sequence",
+  "title": "PhaseAnimator: Stepping Through Phases",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Animation",
+  "concepts": [
+    "enums",
+    "case-iterable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "PhaseAnimator",
+      "url": "https://developer.apple.com/documentation/swiftui/phaseanimator"
+    },
+    {
+      "title": "phaseAnimator(_:trigger:content:animation:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/phaseanimator(_:trigger:content:animation:)"
+    }
+  ],
+  "signature": {
+    "name": "phaseTimeline",
+    "params": [
+      {
+        "name": "triggers",
+        "type": "Int"
+      },
+      {
+        "name": "durations",
+        "type": "[Double]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Put visual values (scale, rotation) on the phase enum as computed properties.",
+    "Each trigger walks lift → spin → drop → idle.",
+    "Accumulate time from the per-transition durations."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "combine-error-handling",
+  "title": "Combine Errors: tryMap, catch & replaceError",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Combine",
+  "concepts": [
+    "error-handling",
+    "result-type"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Publisher.tryMap(_:)",
+      "url": "https://developer.apple.com/documentation/combine/publisher/trymap(_:)"
+    },
+    {
+      "title": "Publisher.catch(_:)",
+      "url": "https://developer.apple.com/documentation/combine/publisher/catch(_:)"
+    }
+  ],
+  "signature": {
+    "name": "parseStream",
+    "params": [
+      {
+        "name": "tokens",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "recovery",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`tryMap` turns a thrown error into a failed stream.",
+    "Errors end a stream; recovering outside means the rest of the input is lost.",
+    "Handle the error inside `flatMap { Just($0).tryMap(…).replaceError(with: -1) }` to continue."
+  ]
+}

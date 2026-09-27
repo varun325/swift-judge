@@ -1,0 +1,41 @@
+{
+  "id": "codable-dates-strategies",
+  "title": "Codable Date Strategies",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "codable-keys"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "JSONDecoder.DateDecodingStrategy",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder/datedecodingstrategy"
+    }
+  ],
+  "signature": {
+    "name": "decodeEvents",
+    "params": [
+      {
+        "name": "json",
+        "type": "String",
+        "label": "_"
+      },
+      {
+        "name": "strategy",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Set `decoder.dateDecodingStrategy` before decoding.",
+    "Use `.iso8601`, `.secondsSince1970`, `.millisecondsSince1970` or `.formatted(dateFormatter)`.",
+    "Render with `date.ISO8601Format()`."
+  ]
+}

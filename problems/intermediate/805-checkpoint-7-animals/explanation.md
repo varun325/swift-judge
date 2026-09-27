@@ -1,0 +1,1 @@
+Each level adds or overrides behaviour; `Cat`'s designated init sets its own property **before** `super.init` (two-phase initialisation). The array is `[Animal]`, but each call dispatches to the runtime type.

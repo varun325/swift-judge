@@ -1,0 +1,1 @@
+`AttributedString` is a Swift value type (unlike `NSAttributedString`) where styles are typed attributes on ranges. `runs` groups consecutive characters with identical attributes — exactly what `Text(attributed)` renders. Markdown in `Text("**bold**")` produces the same attribute.

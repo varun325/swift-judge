@@ -1,0 +1,34 @@
+{
+  "id": "majority-element",
+  "title": "Majority Element (Boyer–Moore Voting)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "map-filter-reduce",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Sequence.reduce(_:_:)",
+      "url": "https://developer.apple.com/documentation/swift/sequence/reduce(_:_:)"
+    }
+  ],
+  "signature": {
+    "name": "majority",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int?"
+  },
+  "hints": [
+    "Keep a candidate and a vote count; a zero count means pick a new candidate.",
+    "Increment for matches, decrement otherwise.",
+    "Verify the survivor actually appears more than n/2 times."
+  ]
+}

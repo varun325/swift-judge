@@ -1,0 +1,1 @@
+Three services each take ~300 ms (given). Load all three **in parallel** with `async let`, then return `[profile, feed, notifications]`. Sequential awaits take ~900 ms and exceed the 700 ms time limit.

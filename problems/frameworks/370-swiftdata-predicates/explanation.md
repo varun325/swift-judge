@@ -1,0 +1,1 @@
+`#Predicate` is a macro: it looks like a Swift closure but is translated into a query the store can execute. It's type-checked (typos and type mismatches are compile errors) but supports only a subset of Swift — capture plain values into local constants first, as here.

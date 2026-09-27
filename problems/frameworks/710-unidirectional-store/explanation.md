@@ -1,0 +1,1 @@
+All state changes go through one pure reducer (`(inout State, Action) -> Effect?`), and side effects come back as **actions** — a single, testable path for every change. This is Redux's model with Swift value types: `inout` state instead of returning a new object, and enums with payloads as actions.

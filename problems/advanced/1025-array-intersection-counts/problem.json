@@ -1,0 +1,39 @@
+{
+  "id": "array-intersection-counts",
+  "title": "Intersection with Multiplicity",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Interview coding challenges",
+  "concepts": [
+    "dictionary-basics",
+    "set-vs-array"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
+    }
+  ],
+  "signature": {
+    "name": "intersect",
+    "params": [
+      {
+        "name": "a",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "hints": [
+    "A set loses duplicates; count occurrences instead.",
+    "Build counts for `a`, then walk `b`, consuming a count each time you keep an element.",
+    "`b.filter { … }` with a mutable counts dictionary captured by the closure."
+  ]
+}

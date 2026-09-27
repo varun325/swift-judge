@@ -1,0 +1,1 @@
+Centralising navigation in a router makes flows testable without UI and keeps views dumb: a view calls `router.handle(.checkout)` and a `NavigationStack(path: $router.stack)` renders the result. Rules like "checkout only from the cart" live in one place.

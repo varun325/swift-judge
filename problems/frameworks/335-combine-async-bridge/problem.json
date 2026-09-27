@@ -1,0 +1,46 @@
+{
+  "id": "combine-async-bridge",
+  "title": "Bridging Combine to async/await with .values",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "Combine",
+  "concepts": [
+    "async-await",
+    "property-wrappers"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Publisher.values",
+      "url": "https://developer.apple.com/documentation/combine/publisher/values-1dm9r"
+    },
+    {
+      "title": "AsyncPublisher",
+      "url": "https://developer.apple.com/documentation/combine/asyncpublisher"
+    }
+  ],
+  "signature": {
+    "name": "bridge",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "take",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Any publisher has a `.values` async sequence.",
+    "Build the pipeline with `filter` and `map`, then `for await v in pipeline.values`.",
+    "`break` once you've collected `take` values."
+  ]
+}

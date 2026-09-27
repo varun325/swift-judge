@@ -1,0 +1,1 @@
+`Span` replaces `UnsafeBufferPointer` for most read-only access: same speed, but the compiler proves it can't be used after the array is freed (it's `~Escapable`), and indexing is bounds-checked. APIs taking `Span` accept arrays, `InlineArray`s and other contiguous storage without copying.

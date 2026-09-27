@@ -1,0 +1,36 @@
+{
+  "id": "sendable-value-snapshot",
+  "title": "Sendable Snapshots Across Tasks",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "sendable",
+    "value-vs-reference",
+    "task-group"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Sendable",
+      "url": "https://developer.apple.com/documentation/swift/sendable"
+    }
+  ],
+  "signature": {
+    "name": "processOrders",
+    "params": [
+      {
+        "name": "totals",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "hints": [
+    "What kind of type can be safely copied into many concurrent tasks?",
+    "A `struct` with only `let` Sendable properties is `Sendable`; spawn one child task per snapshot.",
+    "Collect `(id, text)` pairs from the group, then sort by id."
+  ]
+}

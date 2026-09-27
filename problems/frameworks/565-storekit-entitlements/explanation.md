@@ -1,0 +1,1 @@
+StoreKit verifies purchases (signed JWS); **your** code maps verified transactions to features. Checking revocation (refunds, Family Sharing changes) and expiry on every launch — and listening to `Transaction.updates` — keeps access correct without a server.

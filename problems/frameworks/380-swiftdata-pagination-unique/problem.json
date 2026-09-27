@@ -1,0 +1,46 @@
+{
+  "id": "swiftdata-pagination-unique",
+  "title": "SwiftData: Unique Attributes & Pagination",
+  "track": "frameworks",
+  "difficulty": "hard",
+  "topic": "SwiftData",
+  "concepts": [
+    "equatable-hashable",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Attribute(_:originalName:hashModifier:)",
+      "url": "https://developer.apple.com/documentation/swiftdata/attribute(_:originalname:hashmodifier:)"
+    },
+    {
+      "title": "FetchDescriptor",
+      "url": "https://developer.apple.com/documentation/swiftdata/fetchdescriptor"
+    }
+  ],
+  "signature": {
+    "name": "syncTags",
+    "params": [
+      {
+        "name": "incoming",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "pageSize",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A `.unique` attribute turns a second insert with the same key into an update.",
+    "Read the existing `uses` first so the new insert carries the incremented count.",
+    "Page with `fetchLimit` and increasing `fetchOffset` until a page is empty."
+  ]
+}

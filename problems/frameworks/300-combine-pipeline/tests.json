@@ -1,0 +1,44 @@
+[
+ {
+  "input": {
+   "readings": [
+    3,
+    3,
+    -1,
+    4,
+    4,
+    4,
+    2
+   ]
+  },
+  "expected": [
+   3,
+   7,
+   9
+  ]
+ },
+ {
+  "input": {
+   "readings": []
+  }
+ },
+ {
+  "input": {
+   "readings": [
+    -5,
+    -6
+   ]
+  }
+ },
+ {
+  "input": {
+   "readings": [
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  "hidden": true
+ }
+]

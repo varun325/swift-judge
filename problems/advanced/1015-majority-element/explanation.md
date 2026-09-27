@@ -1,0 +1,1 @@
+Pairing each non-candidate with a candidate vote cancels them out; a true majority always survives. The verification pass is needed because the algorithm always produces *some* candidate, even when no majority exists.

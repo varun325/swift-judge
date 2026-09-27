@@ -1,0 +1,52 @@
+{
+  "id": "format-bytes-lists-names",
+  "title": "Formatting Bytes, Lists & Names",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Formatting",
+  "concepts": [
+    "fundamental-types",
+    "string-interpolation"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ByteCountFormatStyle",
+      "url": "https://developer.apple.com/documentation/foundation/bytecountformatstyle"
+    },
+    {
+      "title": "ListFormatStyle",
+      "url": "https://developer.apple.com/documentation/foundation/listformatstyle"
+    },
+    {
+      "title": "PersonNameComponents",
+      "url": "https://developer.apple.com/documentation/foundation/personnamecomponents"
+    }
+  ],
+  "signature": {
+    "name": "describeUpload",
+    "params": [
+      {
+        "name": "files",
+        "type": "[String]"
+      },
+      {
+        "name": "sizes",
+        "type": "[Int]"
+      },
+      {
+        "name": "fullName",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Arrays of strings can be formatted as a list with `.list(type: .and)`.",
+    "Sizes need `Int64` for `.byteCount(style: .file)`.",
+    "Build `PersonNameComponents` and format with `.name(style: .abbreviated)`."
+  ]
+}

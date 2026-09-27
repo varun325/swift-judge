@@ -1,0 +1,1 @@
+Using array **indices** as ids fails stability: delete item 0 and every other item's id shifts, so SwiftUI animates the wrong rows and loses their state. Give models a real identity (`Identifiable` with a stored `UUID` or database id) — exactly React's rule for `key`.

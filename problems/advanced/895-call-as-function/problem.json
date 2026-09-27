@@ -1,0 +1,34 @@
+{
+  "id": "call-as-function",
+  "title": "callAsFunction & @dynamicCallable",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Advanced features",
+  "concepts": [
+    "dynamic-member-lookup",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Declarations — Methods with Special Names",
+      "book": "ReferenceManual/Declarations"
+    }
+  ],
+  "signature": {
+    "name": "callablesDemo",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "A method named `callAsFunction` makes `value(...)` legal.",
+    "Horner's method: `coefficients.reduce(0) { $0 * x + $1 }`.",
+    "`@dynamicCallable` requires `dynamicallyCall(withArguments:)`."
+  ]
+}

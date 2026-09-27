@@ -1,0 +1,42 @@
+[
+ {
+  "input": {
+   "prices": [
+    100,
+    5,
+    40,
+    7
+   ],
+   "codes": [
+    "HALF",
+    "TENOFF",
+    "FREE",
+    "NOPE"
+   ]
+  },
+  "expected": [
+   50,
+   0,
+   0,
+   7
+  ]
+ },
+ {
+  "input": {
+   "prices": [],
+   "codes": []
+  }
+ },
+ {
+  "input": {
+   "prices": [
+    1,
+    2
+   ],
+   "codes": [
+    "HALF"
+   ]
+  },
+  "hidden": true
+ }
+]

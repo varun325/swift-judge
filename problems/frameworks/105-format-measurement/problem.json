@@ -1,0 +1,41 @@
+{
+  "id": "format-measurement",
+  "title": "Measurements & Unit Conversion",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Formatting",
+  "concepts": [
+    "generics",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Measurement",
+      "url": "https://developer.apple.com/documentation/foundation/measurement"
+    },
+    {
+      "title": "UnitLength",
+      "url": "https://developer.apple.com/documentation/foundation/unitlength"
+    }
+  ],
+  "signature": {
+    "name": "runs",
+    "params": [
+      {
+        "name": "kilometres",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`Measurement(value:unit:)` and `.converted(to: .miles)`.",
+    "Format with a `Measurement<UnitLength>.FormatStyle` pinned to `en_US`.",
+    "Pace: `Duration.seconds(km * 330).formatted(.time(pattern: .hourMinuteSecond))`."
+  ]
+}

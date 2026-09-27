@@ -1,0 +1,1 @@
+Task-local values flow down the task tree (to child tasks and `async let`) without threading a parameter through every call — perfect for request IDs and tracing. Outside `withValue` you see the default.

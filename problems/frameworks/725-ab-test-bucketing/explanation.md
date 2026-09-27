@@ -1,0 +1,1 @@
+`hashValue`/`Hasher` change between launches (to defeat hash-flooding), so persisted or cross-device decisions need a stable hash like FNV-1a. Salting with the experiment name makes different experiments independent. Unassigned leftover percentage falls into `control`.

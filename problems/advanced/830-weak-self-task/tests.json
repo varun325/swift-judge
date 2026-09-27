@@ -1,0 +1,16 @@
+[
+ {
+  "input": {
+   "cancelOnDisappear": true
+  },
+  "expected": [
+   "cancelled",
+   "deinit"
+  ]
+ },
+ {
+  "input": {
+   "cancelOnDisappear": false
+  }
+ }
+]

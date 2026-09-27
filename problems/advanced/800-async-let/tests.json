@@ -1,0 +1,23 @@
+[
+ {
+  "input": {
+   "userID": 7
+  },
+  "expected": [
+   "profile 7",
+   "feed 7",
+   "notifications 7"
+  ]
+ },
+ {
+  "input": {
+   "userID": 0
+  }
+ },
+ {
+  "input": {
+   "userID": 42
+  },
+  "hidden": true
+ }
+]

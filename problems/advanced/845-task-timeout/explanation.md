@@ -1,0 +1,1 @@
+`group.next()` returns the **first** child to finish (or rethrows its error); cancelling the group then stops the loser. This is the idiomatic structured-concurrency timeout — no timers, no leaked work.

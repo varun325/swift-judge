@@ -1,0 +1,35 @@
+{
+  "id": "functions-returning-tuples",
+  "title": "Returning Multiple Values",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Functions",
+  "concepts": [
+    "tuples",
+    "functions-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Functions — Functions with Multiple Return Values",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "stats",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9",
+  "hints": [
+    "A tuple return lets one function produce several values; make it optional for the empty case.",
+    "Sort once; the median is the middle element (or the average of the two middle ones).",
+    "`guard let (mean, median, range) = summary(values) else { return [] }`."
+  ]
+}

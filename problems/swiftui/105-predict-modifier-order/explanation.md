@@ -1,0 +1,1 @@
+`one` is `ModifiedContent<ModifiedContent<Text, _PaddingLayout>, _BackgroundStyleModifier<Color>>`: the background wraps the **padded** view, so the red fills the padding too. `two` pads **after** the background, leaving the padding clear. Modifiers aren't flags on one view — they're nested wrappers, applied inside-out.

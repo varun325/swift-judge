@@ -1,0 +1,41 @@
+{
+  "id": "attributed-string-runs",
+  "title": "AttributedString: Styling Runs",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Foundation essentials",
+  "concepts": [
+    "strings-are-collections",
+    "string-interpolation"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "AttributedString",
+      "url": "https://developer.apple.com/documentation/foundation/attributedstring"
+    }
+  ],
+  "signature": {
+    "name": "highlight",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      },
+      {
+        "name": "terms",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Create `AttributedString(text)` and find ranges with `range(of:options:)`.",
+    "Set `attributed[range].inlinePresentationIntent = .stronglyEmphasized`; continue searching after the range.",
+    "Map `attributed.runs` to `(text, isBold)` strings."
+  ]
+}

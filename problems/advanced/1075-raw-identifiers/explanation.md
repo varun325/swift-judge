@@ -1,0 +1,1 @@
+Backticks have long let you use keywords as names (`` `class` ``); SE-0451 extends them to spaces, digits-first names and more. The main use is readable test names — `@Test func `adds two numbers`()` — and enum cases mirroring external identifiers like versions.

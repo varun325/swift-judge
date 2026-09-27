@@ -1,0 +1,43 @@
+{
+  "id": "navigation-path",
+  "title": "NavigationPath: Push, Pop & Restore",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Navigation",
+  "concepts": [
+    "codable",
+    "equatable-hashable",
+    "enums"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "NavigationPath",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationpath"
+    },
+    {
+      "title": "NavigationStack",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationstack"
+    }
+  ],
+  "signature": {
+    "name": "navigate",
+    "params": [
+      {
+        "name": "commands",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A `NavigationPath` is a type-erased list of `Hashable` route values.",
+    "`append` pushes, `removeLast()` pops, `NavigationPath()` resets.",
+    "Save with `path.codable` + `JSONEncoder`; restore with `NavigationPath(decodedRepresentation)`."
+  ]
+}

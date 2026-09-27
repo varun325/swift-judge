@@ -1,0 +1,47 @@
+{
+  "id": "list-offsets",
+  "title": "List onDelete & onMove Offsets",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Lists",
+  "concepts": [
+    "array-basics",
+    "inout"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "List",
+      "url": "https://developer.apple.com/documentation/swiftui/list"
+    },
+    {
+      "title": "DynamicViewContent.onMove",
+      "url": "https://developer.apple.com/documentation/swiftui/dynamicviewcontent/onmove(perform:)"
+    }
+  ],
+  "signature": {
+    "name": "editList",
+    "params": [
+      {
+        "name": "items",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "edits",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "SwiftUI extends `Array` with offset-based `remove` and `move`.",
+    "Build `IndexSet`s from the numbers and call `remove(atOffsets:)` / `move(fromOffsets:toOffset:)`.",
+    "For `move`, the last number is the destination; the others are sources."
+  ]
+}

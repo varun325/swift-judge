@@ -1,0 +1,1 @@
+Closures capture variables **by reference**; a `Task` closure runs concurrently, so both sides could mutate `count` at once — a data race. Swift 6 rejects it at compile time. Use an actor, or capture an immutable copy (`[count]`).

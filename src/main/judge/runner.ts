@@ -23,6 +23,17 @@ export interface RunOutput {
 const DEFAULT_MAX_OUTPUT = 1024 * 1024
 
 /** Spawn a process, feed stdin, enforce a wall-clock timeout and an output cap. */
+/**
+ * Judged programs on macOS catch fatal signals and exit with 128 + signal, so the OS doesn't file
+ * a crash report (see QUIET_CRASHES in harness.ts). Translate that back into the signal.
+ */
+const QUIET_CRASH_SIGNALS: Partial<Record<number, NodeJS.Signals>> = {
+  132: 'SIGILL', 133: 'SIGTRAP', 134: 'SIGABRT', 136: 'SIGFPE', 138: 'SIGBUS', 139: 'SIGSEGV'
+}
+function quietCrashSignal(code: number | null): NodeJS.Signals | null {
+  return process.platform === 'darwin' && code !== null ? (QUIET_CRASH_SIGNALS[code] ?? null) : null
+}
+
 export function run(cmd: string, args: string[], opts: RunOptions): Promise<RunOutput> {
   const max = opts.maxOutputBytes ?? DEFAULT_MAX_OUTPUT
   return new Promise((resolve) => {
@@ -84,7 +95,7 @@ export function run(cmd: string, args: string[], opts: RunOptions): Promise<RunO
       clearTimeout(watchdog)
       resolve({
         code,
-        signal,
+        signal: signal ?? quietCrashSignal(code),
         stdout: Buffer.concat(out).toString('utf8'),
         stderr: Buffer.concat(err).toString('utf8'),
         timedOut,

@@ -1,0 +1,1 @@
+L7 refactors `CodeView` to accept **any** ancillary view (match markers or a guess button) via a generic `AncillaryView: View` with a `@ViewBuilder` init, plus an `@escaping` action. Predict the concrete types and the action output.

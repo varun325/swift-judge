@@ -1,0 +1,22 @@
+{
+  "id": "diag-consume-operator",
+  "title": "Diagnostic: The consume Operator",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Swift evolution",
+  "concepts": [
+    "ownership"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Swift Evolution SE-0366",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0366-move-function.md"
+    }
+  ],
+  "hints": [
+    "`consume` ends a binding's lifetime at that point.",
+    "After `let moved = consume data`, any use of `data` is an error.",
+    "Add `print(data.count)` after the consume."
+  ]
+}

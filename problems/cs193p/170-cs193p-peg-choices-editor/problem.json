@@ -1,0 +1,49 @@
+{
+  "id": "cs193p-peg-choices-editor",
+  "title": "L12: @Bindable Editor for Create & Edit",
+  "track": "cs193p",
+  "difficulty": "medium",
+  "topic": "L10–L12 · Complex UIs",
+  "concepts": [
+    "property-wrappers",
+    "optionals",
+    "dependency-injection"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Bindable",
+      "url": "https://developer.apple.com/documentation/swiftui/bindable"
+    },
+    {
+      "title": "sheet(isPresented:onDismiss:content:)",
+      "url": "https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)"
+    }
+  ],
+  "signature": {
+    "name": "editGames",
+    "params": [
+      {
+        "name": "actions",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Edit a draft copy; only `save` touches the real list.",
+    "Validation is a computed property returning the first problem or nil.",
+    "`save` appends for a new game, or writes the draft's fields back for an edit."
+  ],
+  "videos": [
+    {
+      "title": "CS193p 2025 · L12: Even More Complex UIs",
+      "url": "https://www.youtube.com/watch?v=gNok5P7HLCw",
+      "channel": "Stanford Online"
+    }
+  ]
+}

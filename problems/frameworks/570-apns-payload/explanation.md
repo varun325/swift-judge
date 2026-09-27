@@ -1,0 +1,1 @@
+APNs payloads are loosely typed: `alert` can be a string or a dictionary, and keys contain hyphens. A custom `init(from:)` that tries one shape then another keeps the model strict elsewhere. Silent pushes (`content-available`, no alert) wake the app for background refresh.

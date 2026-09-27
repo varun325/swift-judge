@@ -1,0 +1,38 @@
+{
+  "id": "focus-field-order",
+  "title": "FocusState: Moving Between Fields",
+  "track": "swiftui",
+  "difficulty": "easy",
+  "topic": "Controls & input",
+  "concepts": [
+    "enums",
+    "case-iterable",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "FocusState",
+      "url": "https://developer.apple.com/documentation/swiftui/focusstate"
+    }
+  ],
+  "signature": {
+    "name": "focusSequence",
+    "params": [
+      {
+        "name": "actions",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Focus is an optional enum: `nil` means nothing focused.",
+    "Use `allCases` order to find the next/previous case; past the end becomes `nil`.",
+    "Extend `Optional where Wrapped == Field` so you can call `focused.next()`."
+  ]
+}

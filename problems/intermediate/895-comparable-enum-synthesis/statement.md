@@ -1,0 +1,1 @@
+`enum Priority: Comparable, CaseIterable { case low, medium, high, critical }` — Swift synthesises `<` from **declaration order**. Tickets are `"<priority> <title>"`; sort by priority descending then title ascending, and return `"[PRIORITY] title"` (uppercased case name).

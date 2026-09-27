@@ -1,0 +1,35 @@
+{
+  "id": "stdlib-my-flatmap",
+  "title": "Inside the Standard Library: flatMap",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Standard library internals",
+  "concepts": [
+    "compactmap-flatmap",
+    "generics",
+    "generic-constraints"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Sequence.flatMap",
+      "url": "https://developer.apple.com/documentation/swift/sequence/flatmap(_:)-jo2y"
+    }
+  ],
+  "signature": {
+    "name": "flatDemo",
+    "params": [
+      {
+        "name": "sentences",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "hints": [
+    "The closure returns a whole sequence per element; you need to concatenate them.",
+    "Make the method generic over `S: Sequence` and return `[S.Element]`.",
+    "`result.append(contentsOf: try transform(element))`."
+  ]
+}

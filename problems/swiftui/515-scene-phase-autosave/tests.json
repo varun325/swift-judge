@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "phases": [
+    "inactive",
+    "background",
+    "background",
+    "active",
+    "inactive",
+    "active"
+   ],
+   "edits": [
+    2,
+    1,
+    0,
+    0,
+    3,
+    0
+   ]
+  },
+  "expected": [
+   "-",
+   "save 3",
+   "-",
+   "refresh",
+   "-",
+   "-"
+  ]
+ },
+ {
+  "input": {
+   "phases": [],
+   "edits": []
+  }
+ }
+]

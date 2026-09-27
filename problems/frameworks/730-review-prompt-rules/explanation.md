@@ -1,0 +1,1 @@
+Apple limits prompts to three per 365 days and may show none; asking after a user **succeeded** (finished a task) and not after a crash produces better ratings. Keeping these rules in a pure function makes them testable and easy to tune.

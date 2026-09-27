@@ -1,0 +1,1 @@
+Swiftful's *MagnificationGesture*. Keep `lastScale` (committed) and `currentScale` (live). Events: `change <m>` → `currentScale = clamp(lastScale × m)`; `end` → commit (`lastScale = currentScale`); `doubletap` → reset both to 1. Clamp to 1…4. Return `currentScale` after each event (2 decimals).

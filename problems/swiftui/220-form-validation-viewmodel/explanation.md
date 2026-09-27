@@ -1,0 +1,1 @@
+Derived state (errors, `canSubmit`) is computed, not stored — it can never go stale, and `@Observable` tracks the stored properties it reads. The view only binds fields and shows `errors`; the model is testable without any UI.

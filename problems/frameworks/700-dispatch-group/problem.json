@@ -1,0 +1,41 @@
+{
+  "id": "dispatch-group",
+  "title": "GCD: DispatchGroup & Concurrent Queues",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Concurrency (GCD)",
+  "concepts": [
+    "dispatch-sync-async",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "DispatchGroup",
+      "url": "https://developer.apple.com/documentation/dispatch/dispatchgroup"
+    },
+    {
+      "title": "DispatchQueue",
+      "url": "https://developer.apple.com/documentation/dispatch/dispatchqueue"
+    }
+  ],
+  "signature": {
+    "name": "gcdBatch",
+    "params": [
+      {
+        "name": "items",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "`group.enter()` before dispatching, `group.leave()` when the work finishes.",
+    "Append results through a serial queue so concurrent writes don't race.",
+    "`group.wait()` then sort — completion order isn't deterministic."
+  ]
+}

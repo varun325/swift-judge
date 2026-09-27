@@ -1,0 +1,29 @@
+[
+ {
+  "input": {
+   "keys": [
+    "a",
+    "xy",
+    "swift"
+   ]
+  },
+  "expected": [
+   "A",
+   "missing xy",
+   "SWIFT"
+  ]
+ },
+ {
+  "input": {
+   "keys": []
+  }
+ },
+ {
+  "input": {
+   "keys": [
+    "x"
+   ]
+  },
+  "hidden": true
+ }
+]

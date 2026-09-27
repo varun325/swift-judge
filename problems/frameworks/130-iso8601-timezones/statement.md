@@ -1,0 +1,1 @@
+Parse each ISO 8601 timestamp (with offset, e.g. `2024-03-10T01:30:00-08:00`) using `Date.ISO8601FormatStyle`, then show it in each named zone as `"HH:mm zzz"` via a `DateFormatter` (`en_US_POSIX`). Return one line per timestamp: zone renderings joined by ` / `, or `"invalid"`.

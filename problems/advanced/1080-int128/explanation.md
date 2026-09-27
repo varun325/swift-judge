@@ -1,0 +1,1 @@
+`Int128` doubles the range (≈1.7 × 10³⁸), enough for 33! but not 35!. Overflow still **traps** by default; the `…ReportingOverflow` methods let you detect it. For truly unbounded integers you need a big-integer library — Swift has no built-in `BigInt` (unlike JavaScript's `BigInt`).

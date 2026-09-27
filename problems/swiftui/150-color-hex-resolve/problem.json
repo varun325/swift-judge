@@ -1,0 +1,42 @@
+{
+  "id": "color-hex-resolve",
+  "title": "Color from Hex & Resolving Components",
+  "track": "swiftui",
+  "difficulty": "medium",
+  "topic": "Drawing",
+  "concepts": [
+    "extensions",
+    "failable-init"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Color",
+      "url": "https://developer.apple.com/documentation/swiftui/color"
+    },
+    {
+      "title": "Color.Resolved",
+      "url": "https://developer.apple.com/documentation/swiftui/color/resolved"
+    }
+  ],
+  "signature": {
+    "name": "hexColors",
+    "params": [
+      {
+        "name": "hexes",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Parse the six hex digits with `UInt32(_, radix: 16)` and split channels with shifts and masks.",
+    "`Color(.sRGB, red:green:blue:)` builds the color; `resolve(in: EnvironmentValues())` reads it back.",
+    "Scale each resolved component by 255 and round."
+  ]
+}

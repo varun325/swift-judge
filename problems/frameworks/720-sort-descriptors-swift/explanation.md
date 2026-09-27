@@ -1,0 +1,1 @@
+A list of sort descriptors is a data description of "sort by A, then B" — you can store it, bind it to a table's column headers, or pass it to a SwiftData `@Query`. `.localizedStandard` sorts strings the way Finder does (`"file2" < "file10"`, case/diacritic-insensitive).

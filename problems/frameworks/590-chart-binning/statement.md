@@ -1,0 +1,1 @@
+Swift Charts draws what you give it — preparing data is your job. Bin values into half-open buckets `[k×w, (k+1)×w)` and return `"<start>-<end>: <count>"` for every bucket from the lowest to the highest non-empty one (including empty buckets in between), with bounds formatted without trailing `.0` for whole numbers.

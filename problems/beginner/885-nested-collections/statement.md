@@ -1,0 +1,1 @@
+Each enrolment is `[className, student]`. Build `[String: [String]]` (class → students, no duplicates, alphabetical) and return lines `"<class>: <students joined by ', '>"` sorted by class name, followed by `"largest: <class>"` (the class with most students; ties → alphabetically first; `"none"` if empty).

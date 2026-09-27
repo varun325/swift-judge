@@ -1,0 +1,37 @@
+{
+  "id": "parse-strategies",
+  "title": "Parsing Input with ParseStrategy",
+  "track": "frameworks",
+  "difficulty": "medium",
+  "topic": "Formatting",
+  "concepts": [
+    "failable-init",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ParseStrategy",
+      "url": "https://developer.apple.com/documentation/foundation/parsestrategy"
+    }
+  ],
+  "signature": {
+    "name": "parsePrices",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "A currency format style has a `parseStrategy` that reads `$1,234.50`.",
+    "Fall back to `Decimal(string:locale:)` for plain numbers.",
+    "Multiply by 100 and round a `Decimal` with `NSDecimalRound`."
+  ]
+}

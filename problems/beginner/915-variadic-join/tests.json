@@ -1,0 +1,36 @@
+[
+ {
+  "input": {
+   "parts": [
+    [
+     "/usr/",
+     "local",
+     "bin/"
+    ]
+   ]
+  },
+  "expected": [
+   "/usr/local/bin",
+   "::a::b"
+  ]
+ },
+ {
+  "input": {
+   "parts": []
+  }
+ },
+ {
+  "input": {
+   "parts": [
+    [
+     "",
+     "/"
+    ],
+    [
+     "x"
+    ]
+   ]
+  },
+  "hidden": true
+ }
+]

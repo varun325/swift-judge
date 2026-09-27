@@ -1,0 +1,1 @@
+`VectorArithmetic` is the algebra SwiftUI's animation engine needs: subtract to get a delta, scale by progress, add back. `AnimatablePair` nests to animate any number of values (`AnimatablePair<CGFloat, AnimatablePair<…>>`).

@@ -1,0 +1,41 @@
+{
+  "id": "combine-pipeline",
+  "title": "Combine: map, filter, scan & removeDuplicates",
+  "track": "frameworks",
+  "difficulty": "easy",
+  "topic": "Combine",
+  "concepts": [
+    "map-filter-reduce",
+    "higher-order-functions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Publisher",
+      "url": "https://developer.apple.com/documentation/combine/publisher"
+    },
+    {
+      "title": "Processing Published Elements with Subscribers",
+      "url": "https://developer.apple.com/documentation/combine/processing-published-elements-with-subscribers"
+    }
+  ],
+  "signature": {
+    "name": "runningTotals",
+    "params": [
+      {
+        "name": "readings",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  },
+  "platforms": [
+    "darwin"
+  ],
+  "hints": [
+    "Any sequence has a `.publisher`.",
+    "Chain `filter`, `removeDuplicates()`, `scan(0, +)`, then `sink`.",
+    "Keep the returned `AnyCancellable` alive until you're done."
+  ]
+}

@@ -1,0 +1,1 @@
+Add a custom environment value the modern way: `extension EnvironmentValues { @Entry var accentName: String = "blue"; @Entry var cornerStyle: Int = 8 }`. Starting from `EnvironmentValues()`, read the defaults, apply overrides `accent=<v>` / `corner=<n>` (as `.environment(\.accentName, …)` would), and return `"<accentName> <cornerStyle>"` before and after.

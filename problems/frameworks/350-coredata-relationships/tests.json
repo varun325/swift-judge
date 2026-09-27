@@ -1,0 +1,31 @@
+[
+ {
+  "input": {
+   "ops": [
+    "folder home",
+    "folder work",
+    "note milk home",
+    "note taxes home",
+    "note deck work",
+    "delete-note milk",
+    "report",
+    "delete-folder home",
+    "report"
+   ]
+  },
+  "expected": [
+   "home:1",
+   "work:1",
+   "notes 2",
+   "work:1",
+   "notes 1"
+  ]
+ },
+ {
+  "input": {
+   "ops": [
+    "report"
+   ]
+  }
+ }
+]

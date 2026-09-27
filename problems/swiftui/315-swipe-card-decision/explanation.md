@@ -1,0 +1,1 @@
+`predictedEndTranslation` includes the fling's momentum, so a short, fast flick still counts as a swipe — this is what makes gestures feel native. Keeping the decision a pure function of the gesture values makes it testable; the view just animates the result. (Backticks let you use `return` as a case name.)

@@ -1,0 +1,3 @@
+Swiftful's *SwiftUI Advanced Architecture* compares MVVM with unidirectional architectures like TCA. Build one: `struct AppState: Equatable { var count = 0; var fact: String?; var isLoading = false }`, `enum Action { case increment, decrement, factButtonTapped, factResponse(String) }`, and a **pure** `reduce(_ state: inout AppState, _ action: Action) -> Effect?`, where an effect is async work that produces another action. A `@MainActor final class Store` sends actions, runs effects, and feeds their results back in.
+
+ The fact effect returns `"fact about <count>"`. Actions: `+`, `-`, `fact`. Log the state after every action the store processes (including effect results) as `"<count> <loading|-> <fact|->"`.

@@ -1,0 +1,1 @@
+Process `items` units of work in a `Task`, calling `try Task.checkCancellation()` before each unit and `await Task.yield()` after it. If `cancelEarly`, cancel the task **immediately** after creating it. Return `"processed <n>"` or `"cancelled after <n>"` using the task's result (`try await task.value`).
