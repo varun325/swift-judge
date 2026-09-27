@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain, shell } from 'electron'
+import { app, BrowserWindow, ipcMain, safeStorage, shell } from 'electron'
 import { existsSync, readFileSync, watch } from 'node:fs'
 import { join } from 'node:path'
 import type { LearnBundle, ProblemView } from '../shared/api'
@@ -11,6 +11,8 @@ import { judge } from './judge/judge'
 import { findSwiftc, setCacheRoot, swiftVersion } from './judge/toolchain'
 import { Playground, runPlayground } from './playground'
 import { ProgressStore } from './progress'
+import { loadFirebaseConfig } from './cloud/config'
+import { CloudService } from './cloud/service'
 import { afterSubmit } from '../shared/review'
 
 // Lets e2e runs use a throwaway profile instead of the learner's real progress.
@@ -46,6 +48,7 @@ let concepts: Concept[] = []
 let quiz: QuizItem[] = []
 let progress: ProgressStore
 let playground: Playground
+let cloud: CloudService
 let win: BrowserWindow | undefined
 
 /**
@@ -117,6 +120,12 @@ function view(p: Problem): ProblemView {
   }
 }
 
+/** Run a Playground mutation and schedule a cloud upload. */
+function withSync<T>(result: T): T {
+  cloud.changed()
+  return result
+}
+
 function registerIpc(): void {
   ipcMain.handle('listProblems', () => summarize(problems.values()))
   ipcMain.handle('getProblem', (_e, id: string) => view(requireProblem(id)))
@@ -167,14 +176,21 @@ function registerIpc(): void {
   ipcMain.handle('saveQuizAnswer', (_e, id: string, correct: boolean) => progress.answerQuiz(id, correct))
   ipcMain.handle('getQuizProgress', () => progress.quiz())
   ipcMain.handle('swiftInfo', () => ({ version: swiftVersion(), swiftc: findSwiftc(), problemsRoot, loadErrors }))
+  ipcMain.handle('cloud:status', () => cloud.current())
+  ipcMain.handle('cloud:signIn', (_e, email: string, password: string, create: boolean) => cloud.signIn(email, password, create))
+  ipcMain.handle('cloud:resetPassword', (_e, email: string) => cloud.resetPassword(email))
+  ipcMain.handle('cloud:signOut', () => cloud.signOut())
+  ipcMain.handle('cloud:syncNow', () => cloud.syncNow())
+
   ipcMain.handle('pg:root', () => playground.root)
   ipcMain.handle('pg:list', () => playground.list())
   ipcMain.handle('pg:load', (_e, id: string) => playground.load(id))
-  ipcMain.handle('pg:save', (_e, id: string, part: { code?: string; notes?: string }) => playground.save(id, part))
-  ipcMain.handle('pg:create', (_e, title: string) => playground.create(title))
-  ipcMain.handle('pg:ensure', (_e, title: string, code: string, notes: string) => playground.ensure(title, code, notes))
-  ipcMain.handle('pg:rename', (_e, id: string, title: string) => playground.rename(id, title))
+  ipcMain.handle('pg:save', (_e, id: string, part: { code?: string; notes?: string }) => withSync(playground.save(id, part)))
+  ipcMain.handle('pg:create', (_e, title: string) => withSync(playground.create(title)))
+  ipcMain.handle('pg:ensure', (_e, title: string, code: string, notes: string) => withSync(playground.ensure(title, code, notes)))
+  ipcMain.handle('pg:rename', (_e, id: string, title: string) => withSync(playground.rename(id, title)))
   ipcMain.handle('pg:remove', async (_e, id: string) => {
+    cloud.changed()
     // Move to the macOS Trash rather than deleting, so notes are recoverable.
     for (const file of playground.filesFor(id)) await shell.trashItem(file)
   })
@@ -243,13 +259,53 @@ app.whenReady().then(() => {
   progress = new ProgressStore(join(app.getPath('userData'), 'progress.json'))
   // Playground pages live next to swift-notes.md when that folder exists, else in userData.
   playground = openPlayground()
+  cloud = new CloudService({
+    // Firebase web config: env override → project folder (dev / local install) → bundled in the build.
+    config: loadFirebaseConfig([
+      process.env.SWIFT_JUDGE_FIREBASE_CONFIG ?? '',
+      process.env.SWIFT_JUDGE_FIREBASE_CONFIG ? '' : join(appRoot, 'firebase.config.json'),
+      process.env.SWIFT_JUDGE_FIREBASE_CONFIG ? '' : join(process.resourcesPath ?? '', 'firebase.config.json')
+    ]),
+    sessionFile: join(app.getPath('userData'), 'cloud-session.bin'),
+    box: {
+      available: () => safeStorage.isEncryptionAvailable(),
+      encrypt: (t) => safeStorage.encryptString(t),
+      decrypt: (b) => safeStorage.decryptString(b)
+    },
+    deps: {
+      progress,
+      playground: () => playground,
+      stateFile: join(app.getPath('userData'), 'cloud-sync-state.json'),
+      removePage: async (id) => {
+        for (const file of playground.filesFor(id)) await shell.trashItem(file)
+      }
+    },
+    notify: (status, changed) => {
+      const dataChanged = Boolean(changed && (changed.changedProblems || changed.changedQuiz || changed.changedPlayground))
+      for (const w of BrowserWindow.getAllWindows()) {
+        if (!w.isDestroyed() && !w.webContents.isDestroyed()) w.webContents.send('cloud:changed', status, dataChanged)
+      }
+    }
+  })
+  progress.onChange = () => cloud.changed()
   reloadContent()
   registerIpc()
   watchProblems()
   createWindow()
+  cloud.start()
+  app.on('browser-window-focus', () => cloud.focused())
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
+})
+
+// Upload the last changes before quitting (bounded, so quitting never hangs).
+let flushed = false
+app.on('before-quit', (event) => {
+  if (flushed || !cloud?.current().signedIn) return
+  event.preventDefault()
+  flushed = true
+  void cloud.flush().finally(() => app.quit())
 })
 
 app.on('window-all-closed', () => {

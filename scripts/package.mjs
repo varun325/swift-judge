@@ -24,6 +24,10 @@ const target = path.join('/Applications', appName)
 function recordSourceRoot(local) {
   fs.mkdirSync(path.join(root, 'build'), { recursive: true })
   fs.writeFileSync(path.join(root, 'build', 'source-root.json'), JSON.stringify(local ? { root } : {}, null, 2) + '\n')
+  // Cloud sync: bundle the local, git-ignored firebase.config.json when present; otherwise the
+  // build is offline-only ({} means "no cloud"). The file never enters git (see check-secrets).
+  const firebase = path.join(root, 'firebase.config.json')
+  fs.writeFileSync(path.join(root, 'build', 'firebase.config.json'), fs.existsSync(firebase) ? fs.readFileSync(firebase) : '{}\n')
 }
 
 if (process.argv.includes('--dmg')) {

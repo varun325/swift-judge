@@ -31,9 +31,11 @@ function useStoredId(initial?: string): [string, (id: string) => void] {
 interface Props {
   /** Page to show on mount (e.g. a Confusion Compass page opened from a problem). */
   openPage?: string
+  /** Changes when another machine's pages were synced in. */
+  cloudVersion?: number
 }
 
-export function PlaygroundView({ openPage }: Props): React.JSX.Element {
+export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX.Element {
   const [pages, setPages] = useState<PlaygroundSummary[]>([])
   const [root, setRoot] = useState('')
   const [pageId, setPageId] = useStoredId(openPage)
@@ -109,6 +111,24 @@ export function PlaygroundView({ openPage }: Props): React.JSX.Element {
       setResult(undefined)
     })
   }, [pageId])
+
+  // Pages synced in from another machine: refresh the list, and the open page unless mid-edit.
+  useEffect(() => {
+    if (!cloudVersion) return
+    void refreshList().then((list) => {
+      if (!list.some((p) => p.id === pageId)) {
+        if (list[0]) setPageId(list[0].id)
+        return
+      }
+      if (pending.current) return
+      void window.judge.playground.load(pageId).then((page) => {
+        loaded.current = { code: page.code, notes: page.notes }
+        setCode(page.code)
+        setNotes(page.notes)
+      })
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cloudVersion])
 
   const switchTo = async (id: string): Promise<void> => {
     await flush()

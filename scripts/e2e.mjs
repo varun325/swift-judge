@@ -78,7 +78,8 @@ const app = await electron.launch({
   args: [APP],
   cwd: APP,
   timeout: 30_000,
-  env: { ...process.env, SWIFT_JUDGE_USER_DATA: profile, SWIFT_JUDGE_PLAYGROUND: playgroundDir }
+  // No cloud in UI tests: point the Firebase config at nothing so the app runs offline-only.
+  env: { ...process.env, SWIFT_JUDGE_USER_DATA: profile, SWIFT_JUDGE_PLAYGROUND: playgroundDir, SWIFT_JUDGE_FIREBASE_CONFIG: '/nonexistent' }
 })
 const page = await app.firstWindow()
 const pageErrors = []

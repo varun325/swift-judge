@@ -61,6 +61,39 @@ folder**, so problems you add here show up in the installed app. If the folder i
 Windows) the app uses the copy bundled inside it. Progress lives in the app's userData folder
 (`~/Library/Application Support/swift-judge/`, or `%APPDATA%\swift-judge\` on Windows).
 
+## Cloud sync (optional, Firebase)
+
+Sign in with email and password (the **☁ Sign in** button in the top bar) and your progress syncs
+across machines: solved state, attempts, hints used, the revisit schedule, code drafts, quiz
+answers and Playground pages (code + notes, including Confusion Compass answers). The app stays
+local-first: everything works offline and merges when you're back online.
+
+- **Merging** is field-wise, so working on two machines never loses progress: solved stays solved,
+  counters take the maximum, the newer draft wins, and the revisit schedule from the most recent
+  solve wins. A Playground page edited on two machines between syncs is kept twice
+  (`page` and `page-conflict`).
+- **When it syncs**: on sign-in (full merge), at launch, 8 s after you change something, when the
+  window gains focus, every 5 minutes, and once more when you quit. Pulls are incremental by server
+  time, so a day of use stays far inside Firebase's free Spark quotas.
+- **Security**: `firestore.rules` lets each account read and write only `users/<its uid>/…`, with a
+  fixed document shape. Your sign-in session is stored encrypted by the OS (Keychain / DPAPI).
+
+### Setting up your own Firebase project
+
+1. Create a project at console.firebase.google.com (the free Spark plan is enough) and add a
+   **Web app**. Copy `firebase.config.example.json` to `firebase.config.json` and fill in `apiKey`,
+   `authDomain` and `projectId` from the web app's config. `firebase.config.json` is git-ignored.
+2. **Authentication → Sign-in method → Email/Password → Enable.**
+3. **Firestore Database → Create database** (production mode).
+4. Deploy the rules: `npx firebase-tools login`, then
+   `npm run firebase:rules -- --project <project-id>` (or paste `firestore.rules` into
+   Firestore → Rules).
+
+Builds pick up `firebase.config.json` when you package (`npm run package*`); without it the app is
+offline-only and hides sign-in. The Firebase web config isn't a secret (security rules enforce
+access), but it still never goes into git: `npm run check-secrets` scans for keys, and a local
+pre-commit hook runs the same check (`cp scripts/pre-commit .git/hooks/` on a fresh clone).
+
 ## Develop
 
 ```bash
@@ -176,6 +209,8 @@ validator checks it agrees with the reference.
 | `npm run package:dmg` | build the macOS `.dmg` |
 | `npm run vendor-docs` | refreshes `docs/swift-book` and `docs/interview` from GitHub |
 | `npm run typecheck` | TypeScript check |
+| `npm run check-secrets` | fails if any tracked file contains an API key, private key, service account or local-only file |
+| `npm run firebase:rules -- --project <id>` | deploys `firestore.rules` (after `npx firebase-tools login`) |
 
 ## Layout
 

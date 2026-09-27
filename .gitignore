@@ -8,3 +8,10 @@ build/source-root.json
 
 # YouTube transcript cache (third-party text; re-fetched by authoring/references/build.py)
 authoring/research/transcripts/
+
+# Firebase: project config and CLI project alias stay local (see firebase.config.example.json)
+firebase.config.json
+.firebaserc
+build/firebase.config.json
+.firebase/
+firebase-debug.log

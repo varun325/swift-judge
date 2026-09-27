@@ -23,6 +23,18 @@ const api: JudgeApi = {
   getQuizProgress: call('getQuizProgress') as JudgeApi['getQuizProgress'],
   swiftInfo: call('swiftInfo') as JudgeApi['swiftInfo'],
   openExternal: call('openExternal') as JudgeApi['openExternal'],
+  cloud: {
+    status: call('cloud:status') as JudgeApi['cloud']['status'],
+    signIn: call('cloud:signIn') as JudgeApi['cloud']['signIn'],
+    resetPassword: call('cloud:resetPassword') as JudgeApi['cloud']['resetPassword'],
+    signOut: call('cloud:signOut') as JudgeApi['cloud']['signOut'],
+    syncNow: call('cloud:syncNow') as JudgeApi['cloud']['syncNow'],
+    onChange: (cb) => {
+      const listener = (_e: unknown, status: Parameters<typeof cb>[0], dataChanged: boolean): void => cb(status, dataChanged)
+      ipcRenderer.on('cloud:changed', listener)
+      return () => ipcRenderer.removeListener('cloud:changed', listener)
+    }
+  },
   playground: {
     root: call('pg:root') as JudgeApi['playground']['root'],
     list: call('pg:list') as JudgeApi['playground']['list'],

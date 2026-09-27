@@ -28,6 +28,19 @@ export interface LearnBundle {
   concepts: Concept[]
 }
 
+/** Account + sync state shown in the top bar. */
+export interface CloudStatus {
+  /** This build has a Firebase config; otherwise the app is offline-only and hides sign-in. */
+  enabled: boolean
+  signedIn: boolean
+  email?: string
+  state: 'idle' | 'syncing' | 'offline' | 'error'
+  lastSync?: number
+  error?: string
+  /** Playground pages edited on two machines at once, kept as copies ("page → page-conflict"). */
+  conflicts?: string[]
+}
+
 export interface SwiftInfo {
   version: string
   swiftc: string
@@ -82,6 +95,15 @@ export interface JudgeApi {
   swiftInfo(): Promise<SwiftInfo>
   openExternal(url: string): Promise<void>
   onProblemsChanged(cb: () => void): () => void
+  cloud: {
+    status(): Promise<CloudStatus>
+    signIn(email: string, password: string, create: boolean): Promise<CloudStatus>
+    resetPassword(email: string): Promise<void>
+    signOut(): Promise<CloudStatus>
+    syncNow(): Promise<CloudStatus>
+    /** Status changes and data pulled from another machine. */
+    onChange(listener: (status: CloudStatus, dataChanged: boolean) => void): () => void
+  }
   playground: {
     root(): Promise<string>
     list(): Promise<PlaygroundSummary[]>

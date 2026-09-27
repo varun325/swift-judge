@@ -207,6 +207,10 @@ export interface ProgressEntry {
   hintsRevealed?: number
   /** Fibonacci spaced-repetition schedule; set on the first accepted submission. */
   review?: ReviewState
+  /** When this entry last changed on this machine (ms since epoch); drives cloud sync. */
+  updatedAt?: number
+  /** When `draft` last changed; the newer draft wins when two machines merge. */
+  draftUpdatedAt?: number
 }
 
 export interface ReviewState {

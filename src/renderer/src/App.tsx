@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import type { SwiftInfo } from '../../shared/api'
+import type { CloudStatus, SwiftInfo } from '../../shared/api'
 import type { ProblemSummary, Progress } from '../../shared/types'
 import { BookView } from './components/BookView'
 import { ConceptsView } from './components/ConceptsView'
@@ -8,6 +8,7 @@ import { PlaygroundView } from './components/PlaygroundView'
 import { ProblemWorkspace } from './components/ProblemWorkspace'
 import { QuizView } from './components/QuizView'
 import { ReviewToday } from './components/ReviewToday'
+import { AccountDialog, statusLine } from './components/AccountDialog'
 import { dayKey, dueReviews } from '../../shared/review'
 
 type Tab = 'problems' | 'playground' | 'concepts' | 'quiz' | 'book'
@@ -40,6 +41,10 @@ export function App(): React.JSX.Element {
   const [bookPath, setBookPath] = useState<string>()
   const [reviewOpen, setReviewOpen] = useState(false)
   const [playgroundPage, setPlaygroundPage] = useState<string>()
+  const [cloud, setCloud] = useState<CloudStatus>()
+  const [accountOpen, setAccountOpen] = useState(false)
+  /** Bumped when another machine's changes arrive, so views re-read their data. */
+  const [cloudVersion, setCloudVersion] = useState(0)
   const [loaded, setLoaded] = useState(false)
 
   const refresh = useCallback(async () => {
@@ -55,6 +60,17 @@ export function App(): React.JSX.Element {
     return window.judge.onProblemsChanged(() => {
       void refresh()
       void window.judge.swiftInfo().then(setInfo)
+    })
+  }, [refresh])
+
+  useEffect(() => {
+    void window.judge.cloud.status().then(setCloud)
+    return window.judge.cloud.onChange((status, dataChanged) => {
+      setCloud(status)
+      if (dataChanged) {
+        void refresh()
+        setCloudVersion((v) => v + 1)
+      }
     })
   }, [refresh])
 
@@ -118,6 +134,15 @@ export function App(): React.JSX.Element {
           ))}
         </nav>
         <div className="status">
+          {cloud?.enabled && (
+            <button
+              className={`account-button ${cloud.signedIn ? cloud.state : 'signed-out'}`}
+              onClick={() => setAccountOpen(true)}
+              title={statusLine(cloud)}
+            >
+              {!cloud.signedIn ? '☁ Sign in' : cloud.state === 'syncing' ? '⟳ Syncing' : cloud.state === 'idle' ? '☁ Synced' : cloud.state === 'offline' ? '☁ Offline' : '⚠ Sync issue'}
+            </button>
+          )}
           <button
             className={`review-button ${due.length ? 'has-due' : ''}`}
             onClick={() => setReviewOpen(true)}
@@ -170,11 +195,12 @@ export function App(): React.JSX.Element {
             )}
           </>
         )}
-        {tab === 'playground' && <PlaygroundView openPage={playgroundPage} />}
+        {tab === 'playground' && <PlaygroundView openPage={playgroundPage} cloudVersion={cloudVersion} />}
         {tab === 'concepts' && <ConceptsView problems={problems} progress={progress} onOpen={openProblem} />}
-        {tab === 'quiz' && <QuizView />}
+        {tab === 'quiz' && <QuizView key={cloudVersion} />}
         {tab === 'book' && <BookView initialPath={bookPath} />}
       </main>
+      {accountOpen && cloud && <AccountDialog status={cloud} onClose={() => setAccountOpen(false)} />}
       {reviewOpen && (
         <ReviewToday
           due={due}

@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, statSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, statSync, utimesSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { PlaygroundPage, PlaygroundRun, PlaygroundSummary } from '../shared/api'
 import { presentCompilerOutput } from './judge/diagnostics'
@@ -8,7 +8,7 @@ import { compile } from './judge/toolchain'
 
 const RUN_TIMEOUT_MS = 10_000
 
-const WELCOME_CODE = `// Scratch space: write any Swift, press ⌘↵ to compile and run.
+export const WELCOME_CODE = `// Scratch space: write any Swift, press ⌘↵ to compile and run.
 // Top-level code works here, just like main.swift.
 
 struct Point { var x = 0, y = 0 }
@@ -19,7 +19,7 @@ b.x = 10
 print(a.x, b.x)  // 0 10
 `
 
-const WELCOME_NOTES = `# Scratchpad
+export const WELCOME_NOTES = `# Scratchpad
 
 Notes for this page live in a plain Markdown file next to the code, so you can
 read them anywhere. Use **Append run to notes** to paste the code and its output
@@ -86,6 +86,35 @@ export class Playground {
     for (let n = 2; existsSync(this.paths(id).code) || existsSync(this.paths(id).notes); n++) id = `${base}-${n}`
     this.save(id, { code, notes: notes || `# ${title}\n\n` })
     return id
+  }
+
+  /** Code, notes and last-modified time of a page, or undefined if it doesn't exist (for sync). */
+  snapshot(id: string): { code: string; notes: string; updatedAt: number } | undefined {
+    const { code, notes } = this.paths(id)
+    if (!existsSync(code) && !existsSync(notes)) return undefined
+    const files = [code, notes].filter(existsSync)
+    return {
+      code: existsSync(code) ? readFileSync(code, 'utf8') : '',
+      notes: existsSync(notes) ? readFileSync(notes, 'utf8') : '',
+      updatedAt: Math.max(...files.map((f) => statSync(f).mtimeMs))
+    }
+  }
+
+  /** Write a page that came from the cloud, keeping its original modification time. */
+  putFromCloud(id: string, code: string, notes: string, updatedAt: number): void {
+    const paths = this.paths(id)
+    writeFileSync(paths.code, code)
+    writeFileSync(paths.notes, notes)
+    const t = new Date(updatedAt)
+    utimesSync(paths.code, t, t)
+    utimesSync(paths.notes, t, t)
+  }
+
+  /** A free id based on `id` (e.g. for a conflict copy). */
+  freeId(id: string): string {
+    let next = id
+    for (let n = 2; this.snapshot(next); n++) next = `${id}-${n}`
+    return next
   }
 
   /** The page for `title`, created with this content only if it doesn't exist yet (answers are never overwritten). */

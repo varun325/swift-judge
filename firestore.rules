@@ -1,0 +1,30 @@
+rules_version = '2';
+
+// Swift Judge cloud sync. Each signed-in user can only read and write their own documents under
+// users/{uid}/{problems|quiz|playground}/{id}. Documents are {data: JSON string, updatedAt: int,
+// deleted?: bool, syncedAt: server time}; anything else is rejected.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/{collection}/{docId} {
+      function isOwner() {
+        return request.auth != null && request.auth.uid == uid;
+      }
+      function isValidDoc() {
+        let d = request.resource.data;
+        return collection in ['problems', 'quiz', 'playground']
+          && d.keys().hasOnly(['data', 'updatedAt', 'deleted', 'syncedAt'])
+          && d.keys().hasAll(['data', 'updatedAt', 'syncedAt'])
+          && d.data is string && d.data.size() <= 262144
+          && d.updatedAt is int
+          && (!('deleted' in d) || d.deleted is bool)
+          && d.syncedAt == request.time;
+      }
+      allow read, delete: if isOwner();
+      allow create, update: if isOwner() && isValidDoc();
+    }
+    // Everything else is closed.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

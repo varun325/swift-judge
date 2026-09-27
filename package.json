@@ -20,7 +20,9 @@
     "package:win": "electron-vite build && node scripts/package.mjs --win",
     "package:dmg": "electron-vite build && node scripts/package.mjs --portable && node scripts/package.mjs --dmg",
     "check-links": "node scripts/check-links.mjs",
-    "stress": "tsx scripts/stress.ts"
+    "stress": "tsx scripts/stress.ts",
+    "check-secrets": "node scripts/check-secrets.mjs --all",
+    "firebase:rules": "npx --yes firebase-tools deploy --only firestore:rules"
   },
   "dependencies": {
     "zod": "^4.6.5"
@@ -79,6 +81,10 @@
       {
         "from": "build/source-root.json",
         "to": "source-root.json"
+      },
+      {
+        "from": "build/firebase.config.json",
+        "to": "firebase.config.json"
       }
     ],
     "asar": true,
