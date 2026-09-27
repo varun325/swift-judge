@@ -16,7 +16,8 @@
     "vendor-docs": "tsx scripts/vendor-docs.ts",
     "e2e": "electron-vite build && node scripts/e2e.mjs",
     "package": "electron-vite build && node scripts/package.mjs",
-    "install-app": "npm run package && node scripts/package.mjs --install"
+    "install-app": "npm run package && node scripts/package.mjs --install",
+    "package:win": "electron-vite build && node scripts/package.mjs --win"
   },
   "dependencies": {
     "zod": "^4.6.5"
@@ -90,6 +91,32 @@
       "category": "public.app-category.education",
       "icon": "build/icon.png",
       "identity": null
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "Swift Judge Setup ${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "Swift Judge ${version} Portable.${ext}"
     }
   }
 }

@@ -4,7 +4,7 @@ import { join } from 'node:path'
 import { beforeAll, describe, expect, it } from 'vitest'
 import { loadAll } from '../src/main/content/loader'
 import { compareJson, compareText } from '../src/main/judge/compare'
-import { parseDiagnostics } from '../src/main/judge/diagnostics'
+import { parseDiagnostics, stripPaths } from '../src/main/judge/diagnostics'
 import { generateDriver, parseDriverOutput } from '../src/main/judge/harness'
 import { judge } from '../src/main/judge/judge'
 import { setCacheRoot } from '../src/main/judge/toolchain'
@@ -45,6 +45,12 @@ describe('diagnostics + harness', () => {
   it('parses llvm-style diagnostics', () => {
     const d = parseDiagnostics('/tmp/x/user.swift:3:5: error: cannot find \'y\' in scope\n  y = 1\n  ^')
     expect(d).toEqual([{ file: 'user.swift', line: 3, column: 5, severity: 'error', message: "cannot find 'y' in scope" }])
+  })
+  it('handles Windows-style paths (drive letters, backslashes, spaces)', () => {
+    const out = 'C:\\Users\\Ann Lee\\AppData\\Local\\Temp\\swj-1\\user.swift:4:9: error: cannot find \'x\' in scope'
+    expect(parseDiagnostics(out)).toEqual([{ file: 'user.swift', line: 4, column: 9, severity: 'error', message: "cannot find 'x' in scope" }])
+    expect(stripPaths(out)).toBe("user.swift:4:9: error: cannot find 'x' in scope")
+    expect(stripPaths('/private/var/folders/x y/swj-2/main.swift:1:1: warning: w')).toBe('main.swift:1:1: warning: w')
   })
   it('generates labels, inout and throws correctly', () => {
     const src = generateDriver({

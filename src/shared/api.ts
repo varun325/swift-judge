@@ -60,6 +60,7 @@ export interface PlaygroundRun {
 }
 
 export interface JudgeApi {
+  platform: string
   listProblems(): Promise<ProblemSummary[]>
   getProblem(id: string): Promise<ProblemView>
   run(id: string, code: string): Promise<JudgeResult>

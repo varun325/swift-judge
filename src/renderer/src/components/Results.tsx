@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { JudgeResult, TestResult, Verdict } from '../../../shared/types'
+import { RUN_KEY, SUBMIT_KEY } from '../platform'
 
 const VERDICT: Record<Verdict, { label: string; cls: string }> = {
   accepted: { label: 'Accepted', cls: 'ok' },
@@ -35,7 +36,7 @@ export function Results({ result, busy, action, onNext }: Props): React.JSX.Elem
     return (
       <div className="results">
         <div className="muted hint">
-          <strong>Run</strong> (⌘↵) checks the visible tests · <strong>Submit</strong> (⌘⇧↵) judges every test, hidden ones included
+          <strong>Run</strong> ({RUN_KEY}) checks the visible tests · <strong>Submit</strong> ({SUBMIT_KEY}) judges every test, hidden ones included
         </div>
       </div>
     )

@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import type { LearnBundle, ProblemView } from '../../../shared/api'
 import type { JudgeResult } from '../../../shared/types'
 import { monaco } from '../monaco'
+import { RUN_KEY, SUBMIT_KEY } from '../platform'
 import { Hints } from './Hints'
 import { Markdown } from './Markdown'
 import { Results } from './Results'
@@ -194,10 +195,10 @@ export function ProblemWorkspace({ id, solved, draft, hintsRevealed, onProgress,
           <span className="file">{isPredict ? 'your predicted output' : USER_FILE[meta.mode]}</span>
           <div className="actions">
             <button className="ghost" onClick={reset} title="Reset to starter code">Reset</button>
-            <button className="run" disabled={Boolean(busy)} onClick={() => void act('run')} title="⌘↵">
+            <button className="run" disabled={Boolean(busy)} onClick={() => void act('run')} title={RUN_KEY}>
               {busy === 'run' ? 'Running…' : '▶ Run'}
             </button>
-            <button className="submit" disabled={Boolean(busy)} onClick={() => void act('submit')} title="⌘⇧↵">
+            <button className="submit" disabled={Boolean(busy)} onClick={() => void act('submit')} title={SUBMIT_KEY}>
               {busy === 'submit' ? 'Judging…' : 'Submit'}
             </button>
           </div>

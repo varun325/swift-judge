@@ -2,6 +2,7 @@ import Editor, { type OnMount } from '@monaco-editor/react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { PlaygroundRun, PlaygroundSummary } from '../../../shared/api'
 import { monaco } from '../monaco'
+import { FILE_MANAGER, RUN_KEY } from '../platform'
 import { Markdown } from './Markdown'
 
 const SAVE_DELAY_MS = 500
@@ -219,10 +220,10 @@ export function PlaygroundView(): React.JSX.Element {
           <span className="file">{pageId}.swift <span className="muted">{saved ? '· saved' : '· saving…'}</span></span>
           <div className="actions">
             <button className="ghost" onClick={() => void renamePage()}>Rename</button>
-            <button className="ghost" onClick={() => void window.judge.playground.reveal(pageId)}>Show in Finder</button>
+            <button className="ghost" onClick={() => void window.judge.playground.reveal(pageId)}>Show in {FILE_MANAGER}</button>
             <button className="ghost" onClick={() => void deletePage()}>Delete</button>
             <button className={`ghost ${showStdin ? 'on' : ''}`} onClick={() => setShowStdin(!showStdin)}>stdin</button>
-            <button className="run pg-run" disabled={running} onClick={() => void runCode()} title="⌘↵">
+            <button className="run pg-run" disabled={running} onClick={() => void runCode()} title={RUN_KEY}>
               {running ? 'Running…' : '▶ Run'}
             </button>
           </div>
@@ -269,7 +270,7 @@ export function PlaygroundView(): React.JSX.Element {
             {result && result.compileMs > 0 && <span className="muted small">compiled in {result.compileMs} ms</span>}
             {result && <button className="link pg-append" onClick={appendRunToNotes}>Append run to notes ↘</button>}
           </div>
-          {!result && !running && <div className="muted hint">Press ▶ Run or ⌘↵ to compile and run with swiftc.</div>}
+          {!result && !running && <div className="muted hint">Press ▶ Run or {RUN_KEY} to compile and run with swiftc.</div>}
           {running && <div className="muted hint">Compiling & running…</div>}
           {result?.phase === 'compile' && <pre className="console error">{result.compilerOutput}</pre>}
           {result?.phase === 'run' && (

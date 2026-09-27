@@ -110,5 +110,5 @@ export function summarize(problems: Iterable<Problem>): ProblemSummary[] {
 
 /** Folder names are NNN-slug, so sorting by path gives curriculum order. */
 function relativeOrder(dir: string): string {
-  return dir.split('/').slice(-2).join('/')
+  return dir.split(/[\\/]/).slice(-2).join('/')
 }

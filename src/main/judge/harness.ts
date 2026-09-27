@@ -19,12 +19,11 @@ func __errJSON(_ error: any Swift.Error) -> Swift.String {
     return Swift.String(decoding: data, as: Swift.UTF8.self)
 }
 let __data = Foundation.FileHandle.standardInput.readDataToEndOfFile()
-let __inputs: [__Input]
+var __inputs: [__Input] = []
 do {
     __inputs = try Foundation.JSONDecoder().decode([__Input].self, from: __data)
 } catch {
     Foundation.FileHandle.standardError.write(Foundation.Data("JUDGE_INPUT_ERROR: \\(error)\\n".utf8))
-    Foundation.exit(3)
 }
 let __enc = Foundation.JSONEncoder()
 __enc.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
@@ -39,14 +38,26 @@ for (__k, __in) in __inputs.enumerated() {
     }
     let __ms = Swift.Double(Dispatch.DispatchTime.now().uptimeNanoseconds - __t0) / 1e6
     Swift.print("\\u{1F}JUDGE\\u{1F}\\(__k)\\u{1F}\\(__ms)\\u{1F}\\(__json)")
+    // Flush after every case so finished results survive a crash in a later case and the
+    // judge's progress watchdog sees them immediately (user print()s share the same buffer,
+    // so ordering is preserved).
+    _ = fflush(nil)
 }
 `
 
 // Every name the driver uses is module-qualified, so user types (a custom `FileHandle`,
-// `Data`, `Log`…) can't shadow them.
+// `Data`, `Log`…) can't shadow them. The C library module differs per platform.
 const PRELUDE = `import Foundation
 import Dispatch
-Foundation.setvbuf(Foundation.stdout, nil, Foundation._IONBF, 0)
+#if canImport(Darwin)
+import Darwin
+_ = setvbuf(stdout, nil, _IONBF, 0)  // unbuffered: even a crashing case's prints are kept
+#elseif canImport(Glibc)
+import Glibc
+_ = setvbuf(stdout, nil, _IONBF, 0)
+#elseif canImport(ucrt)
+import ucrt  // Windows: stdout is a C macro Swift can't import; rely on the per-case fflush
+#endif
 `
 
 function callArgs(sig: Signature): string {

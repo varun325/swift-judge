@@ -5,7 +5,7 @@ import type {
 } from '../../shared/types'
 import { stringifyExact } from '../../shared/json'
 import { compareJson, compareText } from './compare'
-import { presentCompilerOutput } from './diagnostics'
+import { presentCompilerOutput, stripPaths } from './diagnostics'
 import { generateDriver, parseDriverOutput, wrapCustomHarness } from './harness'
 import { mapLimit, run } from './runner'
 import { compile, getCacheRoot, sha, typecheck, type SourceFile } from './toolchain'
@@ -58,7 +58,7 @@ async function build(p: Problem, code: string): Promise<Built> {
   const userFile = USER_FILE[p.meta.mode]
   const res = await compile(sourcesFor(p, code), p.meta.swiftVersion)
   const diagnostics = res.diagnostics.filter((d) => d.file === userFile || d.severity === 'error')
-  const output = presentCompilerOutput(filterOutput(res.output, userFile), userFile)
+  const output = presentCompilerOutput(filterOutput(stripPaths(res.output), userFile), userFile)
   if (!res.ok || !res.binary) return { ok: false, diagnostics, output, ms: res.ms }
   return { ok: true, binary: res.binary, diagnostics, output, ms: res.ms }
 }
@@ -70,6 +70,15 @@ function crashReason(stderr: string, code: number | null, signal: string | null)
     return `runtime trap (${signal}) — usually integer overflow, force-unwrapping nil, an out-of-range index, or a failed precondition`
   }
   if (signal === 'SIGSEGV' || signal === 'SIGBUS') return `crash (${signal}) — often unbounded recursion (stack overflow)`
+  // Windows reports crashes as NTSTATUS exit codes rather than signals.
+  const status = code === null ? 0 : code >>> 0
+  const windows: Record<number, string> = {
+    0xc000001d: 'runtime trap (illegal instruction) — usually integer overflow, force-unwrapping nil, an out-of-range index, or a failed precondition',
+    0x80000003: 'runtime trap (breakpoint) — usually integer overflow, force-unwrapping nil, an out-of-range index, or a failed precondition',
+    0xc00000fd: 'crash (stack overflow) — often unbounded recursion',
+    0xc0000005: 'crash (access violation)'
+  }
+  if (windows[status]) return windows[status]
   if (signal) return `process killed by ${signal}`
   return `exit code ${code}`
 }
@@ -87,7 +96,7 @@ async function runFunctionCases(binary: string, inputs: unknown[], timeLimitMs: 
       progressTimeoutMs: timeLimitMs + 1000,
       progressMarker: '\u001FJUDGE'
     })
-    if (res.code === 3 && res.stderr.includes('JUDGE_INPUT_ERROR')) {
+    if (res.stderr.includes('JUDGE_INPUT_ERROR')) {
       throw new Error(`test input doesn't decode into the function's parameter types:\n${res.stderr}`)
     }
     const { cases, trailing } = parseDriverOutput(res.stdout)

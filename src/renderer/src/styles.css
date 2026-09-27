@@ -53,10 +53,11 @@ code, pre { font-family: 'SF Mono', Menlo, monospace; font-size: 12.5px; }
 /* ---------- layout */
 .app { display: flex; flex-direction: column; height: 100%; }
 .topbar {
-  display: flex; align-items: center; gap: 24px; height: 46px; padding: 0 16px 0 84px; /* room for traffic lights */
+  display: flex; align-items: center; gap: 24px; height: 46px; padding: 0 16px;
   background: var(--panel); border-bottom: 1px solid var(--border); -webkit-app-region: drag;
 }
 .topbar button, .topbar select { -webkit-app-region: no-drag; }
+.platform-darwin .topbar { padding-left: 84px; } /* room for the traffic lights */
 .brand { font-weight: 700; letter-spacing: .01em; }
 .brand .logo { color: var(--accent); }
 .tabs { display: flex; gap: 4px; }

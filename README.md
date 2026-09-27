@@ -11,24 +11,49 @@ problem's reference solution, so adding a problem never requires hand-computing 
   the approach, then nearly the key line of code. Hints used are saved with your progress.
 - **Learn tab** per problem: the matching section of your `swift-notes.md`, the relevant chapter of
   *The Swift Programming Language* (offline), and the interview questions it drills
+- **Playground** for free-form Swift with an output panel and Markdown notes saved as plain files
 - **Concepts** view (166 interview questions from five sources, each linked to problems),
   **Quiz** (40 quick-recall MCQs) and an offline **Swift Book** reader
 
 ## Requirements
 
-- macOS with Xcode or the Swift toolchain (`xcrun --find swiftc`) — built against Swift 6.4
-- Node 20+ (tested with 24)
+- **macOS**: Xcode or the Command Line Tools (`xcrun --find swiftc`) — built against Swift 6.4
+- **Windows 10/11 x64**: [Swift for Windows](https://www.swift.org/install/windows/) — its installer
+  also needs the Visual Studio Build Tools with the "Desktop development with C++" workload.
+  `swiftc` must be on `PATH` (the installer does this); or set `SWIFTC` to its full path.
+- Node 20+ to build from source (tested with 24)
 
-## Run
+## Install
+
+| Platform | Build | Result |
+|---|---|---|
+| macOS (Apple Silicon) | `npm run install-app` | builds, ad-hoc signs and copies **Swift Judge.app** to `/Applications` |
+| Windows x64 | `npm run package:win` (on the Mac; needs Rosetta 2 for NSIS) | `dist/Swift Judge Setup 0.1.0.exe` (installer) and `dist/Swift Judge 0.1.0 Portable.exe` |
+
+The builds aren't signed with a paid certificate. macOS opens the locally built app normally;
+on Windows, SmartScreen shows "Windows protected your PC" the first time — choose **More info → Run anyway**.
+
+Where content comes from: the Mac app reads problems, notes and docs **live from this project
+folder**, so problems you add here show up in the installed app. If the folder is missing (e.g. on
+Windows) the app uses the copy bundled inside it. Progress lives in the app's userData folder
+(`~/Library/Application Support/swift-judge/`, or `%APPDATA%\swift-judge\` on Windows).
+
+## Develop
 
 ```bash
 npm install          # if npm blocks install scripts: npm approve-scripts electron esbuild
-npm run dev          # launch the app with hot reload
-npm run build && npm start   # production build
+npm run dev          # launch with hot reload
 ```
 
-Keyboard: **⌘↵** Run (visible tests) · **⌘⇧↵** Submit (all tests, incl. hidden).
-Progress and drafts are stored in the app's userData folder (`~/Library/Application Support/swift-judge/`).
+Keyboard: **⌘↵ / Ctrl+Enter** Run (visible tests) · **⌘⇧↵ / Ctrl+Shift+Enter** Submit (all tests, incl. hidden).
+
+## Playground
+
+A scratch Swift editor (⌘↵ / Ctrl+Enter compiles and runs it, with optional stdin), an output
+panel, and Markdown notes with a live preview you can minimise. **Append run to notes** records the
+code and its output. Each page is two plain files — `<name>.swift` and `<name>.md` — in
+`varun_notes/playground/` (next to `swift-notes.md`), or in the app's userData folder when that
+isn't available. Deleting a page moves both files to the Trash / Recycle Bin.
 
 ## Adding a problem (the plug-in contract)
 
@@ -113,6 +138,8 @@ validator checks it agrees with the reference.
 | `npm run validate [-- filter]` | compiles every reference solution, runs all tests, checks starters, hints and concept ids |
 | `npm run e2e [-- filter]` | builds the app and drives the real window: every problem's starter must be rejected and reference accepted, plus UI scenario checks |
 | `npm run new-problem -- <track> <slug> [mode]` | scaffolds a problem folder |
+| `npm run package` / `npm run install-app` | build the macOS app / build and install it into `/Applications` |
+| `npm run package:win` | build the Windows x64 installer and portable `.exe` |
 | `npm run vendor-docs` | refreshes `docs/swift-book` and `docs/interview` from GitHub |
 | `npm run typecheck` | TypeScript check |
 

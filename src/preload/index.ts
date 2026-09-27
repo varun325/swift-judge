@@ -4,6 +4,7 @@ import type { JudgeApi } from '../shared/api'
 const call = (channel: string) => (...args: unknown[]) => ipcRenderer.invoke(channel, ...args)
 
 const api: JudgeApi = {
+  platform: process.platform,
   listProblems: call('listProblems') as JudgeApi['listProblems'],
   getProblem: call('getProblem') as JudgeApi['getProblem'],
   run: call('run') as JudgeApi['run'],
