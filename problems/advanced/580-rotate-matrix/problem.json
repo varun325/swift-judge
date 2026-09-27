@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Void"
-  }
+  },
+  "hints": [
+    "A 90° clockwise rotation = transpose, then reverse each row.",
+    "Swap `matrix[i][j]` with `matrix[j][i]` for `j > i` using tuple assignment, then `reverse()` each row.",
+    "`(matrix[i][j], matrix[j][i]) = (matrix[j][i], matrix[i][j])`."
+  ]
 }

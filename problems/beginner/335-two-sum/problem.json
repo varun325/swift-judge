@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A dictionary lookup is O(1). What should the keys and values be?",
+    "Map each value you've already seen to its index. For each number, check whether `target - n` has been seen **before** storing `n`.",
+    "`if let j = seen[target - n] { return [j, i] }; seen[n] = i` inside `for (i, n) in nums.enumerated()`."
+  ]
 }

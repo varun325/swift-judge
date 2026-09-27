@@ -25,5 +25,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Count steps until the value reaches 1.",
+    "Use a `while value != 1` loop; halve even numbers, apply `3n + 1` to odd ones.",
+    "`value = value.isMultiple(of: 2) ? value / 2 : 3 * value + 1; steps += 1`."
+  ]
 }

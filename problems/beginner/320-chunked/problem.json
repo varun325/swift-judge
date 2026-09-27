@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[[String]]"
-  }
+  },
+  "hints": [
+    "`stride(from:to:by:)` generates the start index of every chunk.",
+    "Map each start index to a slice, clamping the end with `min` so the last chunk doesn't go out of bounds.",
+    "`stride(from: 0, to: items.count, by: size).map { Array(items[$0 ..< min($0 + size, items.count)]) }`."
+  ]
 }

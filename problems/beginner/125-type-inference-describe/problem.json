@@ -20,5 +20,10 @@
     "name": "inferredTypes",
     "params": [],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`type(of:)` returns the dynamic type of any value; `String(describing:)` turns it into text.",
+    "Build an array literal of eight `String(describing: type(of: …))` expressions, one for each literal, in order.",
+    "The first two: `String(describing: type(of: 42))`, `String(describing: type(of: 3.0))` — repeat for `\"hi\"`, `true`, `[1, 2]`, `[\"a\": 1]`, `(1, \"x\")`, `1...3`."
+  ]
 }

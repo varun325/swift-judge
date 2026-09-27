@@ -15,5 +15,10 @@
       "title": "Closures — Capturing Values",
       "book": "LanguageGuide/Closures"
     }
+  ],
+  "hints": [
+    "Each iteration of a `for`-`in` loop gets a **new** loop constant.",
+    "The first three closures captured different `i` values. The next three all captured the same `counter` variable, which ends at 100.",
+    "Output: `loop 1`, `loop 2`, `loop 3`, three `shared 100`, then `snapshot 3`."
   ]
 }

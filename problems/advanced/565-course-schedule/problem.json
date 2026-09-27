@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Kahn's algorithm: repeatedly take a course with no remaining prerequisites.",
+    "Track in-degrees; keep available courses in a set and always take its `min()`.",
+    "`while let course = available.min() { … }` — return `[]` if fewer than `numCourses` were taken."
+  ]
 }

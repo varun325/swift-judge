@@ -14,5 +14,10 @@
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
     }
+  ],
+  "hints": [
+    "Read every line with `while let line = readLine()`.",
+    "Count lines, whitespace-separated words, and characters per line (newlines aren't included).",
+    "`words += line.split(whereSeparator: \\.isWhitespace).count; chars += line.count`."
   ]
 }

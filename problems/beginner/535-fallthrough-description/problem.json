@@ -26,5 +26,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "Swift cases don't fall through unless you write `fallthrough`.",
+    "Start with `\"The number \\(n) is\"`; the prime case appends its text and falls through; `default` appends `\" an integer.\"`.",
+    "`case 2, 3, 5, 7, 11, 13, 17, 19: description += \" a prime number, and also\"; fallthrough`."
+  ]
 }

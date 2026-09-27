@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`unowned` references don't keep the object alive and are non-optional.",
+    "The customer owns the card strongly; the card refers back with `unowned let customer`.",
+    "`unowned let customer: Customer` in `CreditCard`."
+  ]
 }

@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[Int?]"
-  }
+  },
+  "hints": [
+    "`try?` turns a thrown error into `nil`.",
+    "Throw when dividing by zero, and use `dividedReportingOverflow` to catch `Int.min / -1`.",
+    "`pairs.map { try? divide($0[0], by: $0[1]) }`."
+  ]
 }

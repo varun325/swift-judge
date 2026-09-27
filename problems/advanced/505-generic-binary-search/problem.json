@@ -39,5 +39,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Extend `RandomAccessCollection where Element: Comparable`.",
+    "Use `startIndex`/`endIndex` and `index(_:offsetBy:)`, not `0..<count` — slices keep their original indices.",
+    "`let mid = index(low, offsetBy: distance(from: low, to: high) / 2)`."
+  ]
 }

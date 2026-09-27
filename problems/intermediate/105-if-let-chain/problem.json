@@ -30,5 +30,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "One `if` can bind several optionals and test conditions, separated by commas.",
+    "Unwrap each string, convert it with `Int(...)`, and check both are positive — all in the same `if`.",
+    "`if let width, let w = Int(width), let height, let h = Int(height), w > 0, h > 0 { return \"area \\(w * h)\" }`."
+  ]
 }

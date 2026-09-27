@@ -16,5 +16,10 @@
       "title": "Control Flow — For-In Loops",
       "book": "LanguageGuide/ControlFlow"
     }
+  ],
+  "hints": [
+    "Parse the input line into two integers with `split` and `compactMap`.",
+    "`stride(from:through:by:)` is simply empty when the end is below the start — unlike `1...upTo`.",
+    "`for i in stride(from: 1, through: upTo, by: 1) { print(\"\\(n) x \\(i) = \\(n * i)\") }`."
   ]
 }

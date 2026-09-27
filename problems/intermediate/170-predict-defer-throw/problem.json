@@ -16,5 +16,10 @@
       "title": "Error Handling",
       "book": "LanguageGuide/ErrorHandling"
     }
+  ],
+  "hints": [
+    "`defer` blocks run in reverse order, even when the scope exits because of a throw.",
+    "Trace `work(false)`: start, finish, then both cleanups (B before A). Then `work(true)` throws after start — the cleanups run **before** the `catch`.",
+    "After `caught Boom()`, `try? work(true)` prints its start and cleanups again, then `nil`."
   ]
 }

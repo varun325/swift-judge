@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "One `case` can list several patterns separated by commas.",
+    "Switch on the lowercased character: list the vowels together, then use `case _ where …` for digits and letters. Order matters.",
+    "`case \"a\", \"e\", \"i\", \"o\", \"u\": return \"vowel\"` then `case _ where ch.isNumber: return \"digit\"`."
+  ]
 }

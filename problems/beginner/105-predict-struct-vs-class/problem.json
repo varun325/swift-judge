@@ -16,5 +16,10 @@
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
     }
+  ],
+  "hints": [
+    "One type copies on assignment, the other shares. Which is which?",
+    "`b` is a copy of the struct `a`; `d` and `c` point at the **same** object — `===` checks exactly that.",
+    "Output: `0 10`, then `10 10`, then `true`."
   ]
 }

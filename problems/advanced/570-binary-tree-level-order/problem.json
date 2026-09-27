@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[[Int]]"
-  }
+  },
+  "hints": [
+    "Enum values are immutable, so build children before parents.",
+    "First use a level-order queue to record each node's left/right positions; then build recursively from index 0.",
+    "`case .node(.empty, let v, .empty): v` matches leaves when summing."
+  ]
 }

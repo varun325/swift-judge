@@ -28,5 +28,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Value types can offer fluent APIs by returning modified copies.",
+    "Each method does `var copy = self`, changes one field, and returns the copy.",
+    "`func method(_ m: String) -> Self { var copy = self; copy.method = m; return copy }`."
+  ]
 }

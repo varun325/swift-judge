@@ -32,5 +32,10 @@
     ],
     "returns": "[Double]"
   },
-  "compare": "float:1e-9"
+  "compare": "float:1e-9",
+  "hints": [
+    "Operators are `static func`s; new operators need a declaration and precedence group.",
+    "Define `+`, prefix `-`, `*` in both orders, `+=` with `inout`, and `•` for the dot product.",
+    "`infix operator • : MultiplicationPrecedence` and `static func • (l: Vector2, r: Vector2) -> Double { l.x * r.x + l.y * r.y }`."
+  ]
 }

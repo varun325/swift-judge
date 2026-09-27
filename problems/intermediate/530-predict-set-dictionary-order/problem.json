@@ -15,5 +15,10 @@
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
     }
+  ],
+  "hints": [
+    "Duplicates disappear in a set; only sorted output is deterministic.",
+    "Count the unique values in each set, sort the intersection, then count letters in \"mississippi\".",
+    "`7 4` (the repeated 2 and 8 in `b` collapse), then `[1, 2]`, then `true true`, then `i4m1p2s4`."
   ]
 }

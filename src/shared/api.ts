@@ -41,6 +41,7 @@ export interface JudgeApi {
   saveDraft(id: string, code: string): Promise<void>
   resetDraft(id: string): Promise<void>
   revealSolution(id: string): Promise<string>
+  revealHint(id: string, level: number): Promise<void>
   getProgress(): Promise<Progress>
   getLearn(id: string): Promise<LearnBundle>
   listBook(): Promise<BookChapter[]>

@@ -27,5 +27,10 @@
       }
     ],
     "returns": "Void"
-  }
+  },
+  "hints": [
+    "An `inout` parameter lets you change the caller's array directly.",
+    "Save one element in a temporary `let`, overwrite it with the other, then write the saved value back.",
+    "`let temp = pair[0]; pair[0] = pair[1]; pair[1] = temp` — or simply `pair.swapAt(0, 1)`."
+  ]
 }

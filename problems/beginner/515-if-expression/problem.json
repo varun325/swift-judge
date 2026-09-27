@@ -29,5 +29,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "Since Swift 5.9, `if` can be an expression that produces a value.",
+    "Compute the BMI, then write `let category = if … { \"…\" } else if … { \"…\" } else { \"…\" }`.",
+    "`let bmi = weightKg / (heightM * heightM)` and the chain `< 18.5`, `< 25`, `< 30`, else \"obese\"."
+  ]
 }

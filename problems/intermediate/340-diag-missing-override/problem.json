@@ -15,5 +15,10 @@
       "title": "Inheritance — Overriding",
       "book": "LanguageGuide/Inheritance"
     }
+  ],
+  "hints": [
+    "Swift refuses to let a subclass silently shadow a parent method.",
+    "Remove the `override` keyword from the subclass's `speak()`.",
+    "`class Dog: Animal { func speak() { print(\"Woof\") } }`."
   ]
 }

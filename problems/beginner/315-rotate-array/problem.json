@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Rotating by `k` is the same as rotating by `k % count` — and guard against an empty array (`% 0` traps).",
+    "The result is the last `shift` elements followed by the rest; one-sided range slices make that easy.",
+    "`let s = k % nums.count; return Array(nums[(nums.count - s)...] + nums[..<(nums.count - s)])`."
+  ]
 }

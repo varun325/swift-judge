@@ -15,5 +15,10 @@
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
     }
+  ],
+  "hints": [
+    "Group scores by name in a dictionary of arrays.",
+    "Skip malformed lines and out-of-range scores; sort the dictionary by name before printing.",
+    "`Int((Double(sum) / Double(count)).rounded())` for averages; `flatMap` all scores for the class average."
   ]
 }

@@ -101,6 +101,12 @@ function registerIpc(): void {
     progress.update(id, { revealed: true })
     return p.meta.mode === 'predict' ? '' : p.solution
   })
+  ipcMain.handle('revealHint', (_e, id: string, level: number) => {
+    const p = requireProblem(id)
+    const current = progress.get(id).hintsRevealed ?? 0
+    const next = Math.min(Math.max(current, level), p.meta.hints.length)
+    if (next !== current) progress.update(id, { hintsRevealed: next })
+  })
   ipcMain.handle('getProgress', () => progress.all())
   ipcMain.handle('getLearn', (_e, id: string): LearnBundle => {
     const p = requireProblem(id)

@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`WritableKeyPath` lets you write through a key path.",
+    "Write a generic `update(&value, keyPath, to:)`, then read the fields back with an array of `PartialKeyPath<Profile>`.",
+    "`value[keyPath: keyPath] = newValue` in the helper; read with `profile[keyPath: $0]`."
+  ]
 }

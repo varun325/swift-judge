@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`deinit` runs the moment the last strong reference to an object disappears.",
+    "Removing the first element releases it immediately; the rest are released when the array's `do { }` scope ends.",
+    "`items.removeFirst(); log.lines.append(\"removed\")` inside the `do` block."
+  ]
 }

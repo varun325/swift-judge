@@ -15,5 +15,10 @@
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
     }
+  ],
+  "hints": [
+    "A `Character` is what a person sees as one character — even if it's several scalars.",
+    "A flag is 1 character, 2 scalars, 8 UTF-8 bytes. `e` + combining accent equals `é`.",
+    "`1 2 8`, then `café 4 true`, then `Hello Swift`…"
   ]
 }

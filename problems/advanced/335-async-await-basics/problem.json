@@ -26,5 +26,10 @@
     "returns": "[String]",
     "async": true
   },
-  "timeLimitMs": 1500
+  "timeLimitMs": 1500,
+  "hints": [
+    "`await` in a loop runs one fetch at a time.",
+    "Use `withTaskGroup` to start all fetches at once; carry each index so you can restore input order.",
+    "`group.addTask { (i, await fetchUser(id)) }` then `for await (i, user) in group { result[i] = user }`."
+  ]
 }

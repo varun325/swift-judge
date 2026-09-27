@@ -16,5 +16,10 @@
       "title": "Properties — Type Properties",
       "book": "LanguageGuide/Properties"
     }
+  ],
+  "hints": [
+    "`static let` properties are initialised lazily, on first access, exactly once.",
+    "Accessing `timeout` doesn't initialise `apiURL`.",
+    "`program start`, `making timeout`, `timeout`, `timeout`, `making apiURL`, `apiURL`."
   ]
 }

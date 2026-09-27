@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Implement `<` (and `==` where needed) to conform to `Comparable`.",
+    "Parse into three integers padded with zeros; compare them lexicographically. Exclude the original text from equality.",
+    "`static func < (a: Version, b: Version) -> Bool { a.parts.lexicographicallyPrecedes(b.parts) }`."
+  ]
 }

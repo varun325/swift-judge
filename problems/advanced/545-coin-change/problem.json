@@ -30,5 +30,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Bottom-up DP: the best for amount `v` uses the best for `v - coin`.",
+    "Store `Int?` per amount (`nil` = unreachable), taking the min over coins.",
+    "`best[value] = coins.compactMap { $0 <= value ? best[value - $0].map { $0 + 1 } : nil }.min()`."
+  ]
 }

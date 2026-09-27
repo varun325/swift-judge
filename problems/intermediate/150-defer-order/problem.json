@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`defer` runs when its **scope** exits — in a `for` loop, that's the end of each iteration.",
+    "Use recursion so each resource's scope is nested inside the previous one; log `close` in a `defer`.",
+    "In the helper: `log.lines.append(\"open \\(name)\"); defer { log.lines.append(\"close \\(name)\") }; open(steps.dropFirst(), log)`."
+  ]
 }

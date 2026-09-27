@@ -25,5 +25,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Sliding window: remember where each character was last seen.",
+    "When a repeated character appears inside the window, move the window start just past its previous position.",
+    "`if let prev = lastSeen[ch], prev >= start { start = prev + 1 }; lastSeen[ch] = i; best = max(best, i - start + 1)`."
+  ]
 }

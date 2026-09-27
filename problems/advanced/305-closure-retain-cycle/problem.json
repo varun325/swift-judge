@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A stored closure that captures `self` strongly creates a cycle.",
+    "Add a capture list with `weak self` and unwrap it at the start of the closure.",
+    "`onTick = { [weak self] in guard let self else { return }; count += 1; log.lines.append(\"tick \\(count)\") }`."
+  ]
 }

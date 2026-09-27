@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`keyDecodingStrategy = .convertFromSnakeCase` renames keys before matching.",
+    "Add a `CodingKeys` enum that maps `email` to `\"e-mail\"`; decode with `try?` and return `[\"invalid\"]` on failure.",
+    "`case email = \"e-mail\"` in `CodingKeys`, and `decoder.decode([User].self, from: Data(json.utf8))`."
+  ]
 }

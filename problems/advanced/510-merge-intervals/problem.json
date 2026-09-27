@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[[Int]]"
-  }
+  },
+  "hints": [
+    "Sort by start first.",
+    "Each interval either overlaps the last merged one (extend its end) or starts a new one.",
+    "`if let last = result.last, iv[0] <= last[1] { result[result.count - 1][1] = max(last[1], iv[1]) } else { result.append(iv) }`."
+  ]
 }

@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Two objects holding strong references to each other are never freed.",
+    "Make the child's back-reference to its parent `weak`.",
+    "`weak var parent: Parent?`."
+  ]
 }

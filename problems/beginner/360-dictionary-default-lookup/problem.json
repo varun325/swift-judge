@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A dictionary subscript can take a `default:` value for missing keys.",
+    "Put the five known codes in a dictionary, then map each code to its phrase or to the fallback text.",
+    "`codes.map { phrases[$0, default: \"Unknown (\\($0))\"] }`."
+  ]
 }

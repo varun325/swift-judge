@@ -16,5 +16,10 @@
       "title": "Error Handling",
       "book": "LanguageGuide/ErrorHandling"
     }
+  ],
+  "hints": [
+    "A throwing helper keeps validation out of the main loop.",
+    "Parse the command, throw the right error, and match each error with its own `catch` pattern.",
+    "`catch LedgerError.insufficient(let needed) { print(\"error: need \\(needed) more\") }`."
   ]
 }

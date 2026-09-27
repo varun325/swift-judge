@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A protocol extension can supply default implementations.",
+    "Provide the default `greet()` and a `greetTwice()` in the extension; `Pirate` implements its own `greet()`.",
+    "`func greetTwice() -> String { greet() + \" \" + greet() }` in `extension Greeter`."
+  ]
 }

@@ -34,5 +34,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`~Copyable` values have one owner; `consuming` methods take that ownership.",
+    "`close()` logs and sets `closed = true`; `deinit` logs `auto-close` only if not closed.",
+    "`consuming func close() { log.lines.append(\"close \\(name)\"); closed = true }`."
+  ]
 }

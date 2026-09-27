@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[[Int]]"
-  }
+  },
+  "hints": [
+    "An `indirect enum` can model an immutable linked list.",
+    "`prepending` wraps `self` in a new node; `reversed` folds the list into a new one; `AnyIterator` walks the nodes.",
+    "`guard case let .node(value, next) = current else { return nil }; current = next; return value`."
+  ]
 }

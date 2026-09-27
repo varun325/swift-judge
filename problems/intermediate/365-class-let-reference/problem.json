@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`let` on a class reference fixes **which** object, not the object's properties.",
+    "Rename through `alias`; `original` sees it because both point to the same object. `===` checks identity.",
+    "`[original.name, \"\\(original === alias)\", \"\\(clone === original)\"]`."
+  ]
 }

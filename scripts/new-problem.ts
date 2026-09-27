@@ -29,7 +29,12 @@ const meta: Record<string, unknown> = {
   topic: 'TODO',
   concepts: [],
   mode,
-  docs: [{ title: 'TODO chapter', book: 'LanguageGuide/TheBasics' }]
+  docs: [{ title: 'TODO chapter', book: 'LanguageGuide/TheBasics' }],
+  hints: [
+    'Hint 1 — a nudge: which Swift feature or idea applies?',
+    'Hint 2 — the approach: how to structure the solution.',
+    'Hint 3 — nearly there: the key line or expression.'
+  ]
 }
 if (mode === 'function') {
   meta.signature = { name: fn, params: [{ label: '_', name: 'input', type: '[Int]' }], returns: 'Int' }

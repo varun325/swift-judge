@@ -15,5 +15,10 @@
       "title": "Methods — Modifying Value Types",
       "book": "LanguageGuide/Methods"
     }
+  ],
+  "hints": [
+    "A `let` struct value can't change at all — not even through methods.",
+    "Change `var c` to `let c` and keep the `increment()` call.",
+    "`let c = Counter()` followed by `c.increment()`."
   ]
 }

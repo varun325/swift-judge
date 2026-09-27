@@ -16,5 +16,10 @@
       "title": "Protocols — Protocols as Types",
       "book": "LanguageGuide/Protocols"
     }
+  ],
+  "hints": [
+    "Through a protocol type, you can only use the protocol's members.",
+    "Call the `Car`-only method directly on the `any Vehicle` parameter.",
+    "`func commute(_ vehicle: any Vehicle) { vehicle.openSunroof() }`."
   ]
 }

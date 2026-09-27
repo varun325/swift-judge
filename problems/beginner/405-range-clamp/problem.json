@@ -35,5 +35,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Extending the `Comparable` protocol gives a method to every comparable type.",
+    "Clamp with `min` and `max` against the range's `lowerBound` and `upperBound`.",
+    "`func clamped(to range: ClosedRange<Self>) -> Self { min(max(self, range.lowerBound), range.upperBound) }`."
+  ]
 }

@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Enums with associated values get synthesised `Codable`.",
+    "Encode the parsed events with `.sortedKeys`, decode them back, and compare with `==`.",
+    "`encoder.outputFormatting = [.sortedKeys]` then `back == parsed ? \"equal\" : \"different\"`."
+  ]
 }

@@ -34,5 +34,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Functions are values with types like `(Int) -> Int`.",
+    "Define both helpers inside `stepper`, pick one into a `let step: (Int) -> Int`, then call it in a loop.",
+    "`let step: (Int) -> Int = backward ? stepBackward : stepForward`."
+  ]
 }

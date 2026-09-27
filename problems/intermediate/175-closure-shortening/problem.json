@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Closures can drop their types, `return` and parameter names (`$0`).",
+    "Filter the names starting with \"t\" (case-insensitive), then sort by a tuple of (length, name).",
+    "`team.filter { $0.lowercased().hasPrefix(\"t\") }.sorted { ($0.count, $0) < ($1.count, $1) }`."
+  ]
 }

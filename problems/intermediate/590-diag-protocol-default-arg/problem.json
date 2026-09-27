@@ -15,5 +15,10 @@
       "title": "Protocols — Method Requirements",
       "book": "LanguageGuide/Protocols"
     }
+  ],
+  "hints": [
+    "Default argument values aren't allowed in protocol requirements.",
+    "Add `= false` to the `urgent` parameter in the protocol.",
+    "`func send(_ message: String, urgent: Bool = false)`."
   ]
 }

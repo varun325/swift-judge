@@ -13,5 +13,10 @@
       "title": "Swift Evolution SE-0390",
       "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md"
     }
+  ],
+  "hints": [
+    "Assigning a noncopyable value **moves** it.",
+    "Inside a function, move `a` into `b`, then read `a.id`.",
+    "`let a = Token(id: 1); let b = a; print(a.id)`."
   ]
 }

@@ -19,5 +19,10 @@
     "name": "layouts",
     "params": [],
     "returns": "[[Int]]"
-  }
+  },
+  "hints": [
+    "`MemoryLayout<T>` reports `size`, `stride` and `alignment`.",
+    "Write a generic helper returning the three numbers for a type, and put the 8-byte field first in `Packed`.",
+    "`func info<T>(_: T.Type) -> [Int] { [MemoryLayout<T>.size, MemoryLayout<T>.stride, MemoryLayout<T>.alignment] }`."
+  ]
 }

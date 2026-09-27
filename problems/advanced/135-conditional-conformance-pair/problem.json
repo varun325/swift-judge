@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A generic type can conform to a protocol only when its parameters do.",
+    "Add empty extensions with `where` clauses — Swift synthesises `==` and hashing.",
+    "`extension Pair: Hashable where A: Hashable, B: Hashable {}`."
+  ]
 }

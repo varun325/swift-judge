@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A get/set pair should round-trip: set a value, read it back, get the same number.",
+    "The getter computes `allowed - taken`. Solve that for `allowed` when you want `remaining == newValue`.",
+    "`set { vacationAllowed = vacationTaken + newValue }`."
+  ]
 }

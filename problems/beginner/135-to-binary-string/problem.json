@@ -30,5 +30,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "`String` has an initialiser that formats any integer in a given base.",
+    "You don't need a loop — the standard library handles negatives and lowercase letters for you.",
+    "`String(value, radix: radix)`."
+  ]
 }

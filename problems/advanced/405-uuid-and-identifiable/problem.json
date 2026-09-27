@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`UUID(uuidString:)` is failable; `uuidString` is always uppercase.",
+    "Map each string to `valid <UUID>` or `invalid`, then append the three facts about generated UUIDs.",
+    "`UUID(uuidString: s).map { \"valid \\($0.uuidString)\" } ?? \"invalid\"`."
+  ]
 }

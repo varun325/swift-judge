@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`precondition` stops the program in all builds; validate user input with normal code instead.",
+    "Filter out negative ages **before** calling `validatedAge`, then add a summary line.",
+    "`let valid = ages.filter { $0 >= 0 }` and append `\"rejected \\(ages.count - valid.count)\"`."
+  ]
 }

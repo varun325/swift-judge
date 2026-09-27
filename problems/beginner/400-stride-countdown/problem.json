@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "`stride` can count down with a negative step.",
+    "`through:` includes the end value if you land on it; `to:` excludes it.",
+    "`Array(stride(from: start, through: 0, by: -step))`."
+  ]
 }

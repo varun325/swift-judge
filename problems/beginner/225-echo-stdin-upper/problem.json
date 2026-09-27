@@ -14,5 +14,10 @@
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
     }
+  ],
+  "hints": [
+    "`readLine()` returns `nil` at the end of input — that fits `while let` perfectly.",
+    "For each line, print the uppercased line followed by its character count.",
+    "`while let line = readLine() { print(\"\\(line.uppercased()) (\\(line.count) chars)\") }`."
   ]
 }

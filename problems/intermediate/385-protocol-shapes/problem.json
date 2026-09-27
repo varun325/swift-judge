@@ -28,5 +28,10 @@
     ],
     "returns": "[String]"
   },
-  "compare": "exact"
+  "compare": "exact",
+  "hints": [
+    "A protocol lists requirements that different types can satisfy in their own way.",
+    "Conform three structs; store them in `[any Shape]`; format numbers with `String(format: \"%.2f\", x)` after `import Foundation`.",
+    "`var area: Double { .pi * r * r }` and `func perimeter() -> Double { 2 * .pi * r }` for the circle."
+  ]
 }

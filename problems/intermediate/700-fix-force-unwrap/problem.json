@@ -27,5 +27,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "`!` crashes when the value is `nil` — and bad input makes `nil` likely.",
+    "Replace each `!` with a binding in a `guard`, and skip the line when a binding fails or the quantity is negative.",
+    "`guard let colon = line.firstIndex(of: \":\"), let qty = Int(line[line.index(after: colon)...]), qty >= 0 else { continue }`."
+  ]
 }

@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Keep a running total as you walk through the array.",
+    "Append the total after adding each element. `reserveCapacity` avoids reallocations.",
+    "`var total = 0; for n in nums { total += n; result.append(total) }`."
+  ]
 }

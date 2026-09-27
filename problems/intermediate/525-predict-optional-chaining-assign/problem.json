@@ -15,5 +15,10 @@
       "title": "Optional Chaining",
       "book": "LanguageGuide/OptionalChaining"
     }
+  ],
+  "hints": [
+    "An assignment through `?.` evaluates to `Void?` — `nil` if the chain broke.",
+    "The first assignment fails (no room yet); the second succeeds. `dict[key]?.append` never inserts a missing key.",
+    "`not assigned`, then `assigned kitchen`, then `[1, 2, 3] nil`."
   ]
 }

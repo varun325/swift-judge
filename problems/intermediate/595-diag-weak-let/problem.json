@@ -14,5 +14,10 @@
       "title": "ARC — Weak References",
       "book": "LanguageGuide/AutomaticReferenceCounting"
     }
+  ],
+  "hints": [
+    "ARC sets weak references to `nil` — so they must be optional.",
+    "Declare the weak property with a **non-optional** type.",
+    "`weak let owner: Owner` with an `init(owner:)`."
   ]
 }

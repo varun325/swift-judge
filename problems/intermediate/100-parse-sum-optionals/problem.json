@@ -27,5 +27,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "`Int(\"42\")` is a failable initialiser: it returns `Int?`.",
+    "Transform every token and drop the failures in one step, then add everything up.",
+    "`tokens.compactMap { Int($0) }.reduce(0, +)`."
+  ]
 }

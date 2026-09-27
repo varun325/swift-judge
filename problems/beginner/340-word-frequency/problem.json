@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String: Int]"
-  }
+  },
+  "hints": [
+    "`dict[key, default: 0] += 1` is the counting idiom.",
+    "Lowercase the text and split it wherever a character **isn't** a letter.",
+    "`for word in text.lowercased().split(whereSeparator: { !$0.isLetter }) { counts[String(word), default: 0] += 1 }`."
+  ]
 }

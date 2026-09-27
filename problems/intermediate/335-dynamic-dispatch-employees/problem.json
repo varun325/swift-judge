@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A subclass replaces a parent method with `override`; the object's real type decides which runs.",
+    "Each subclass overrides `summary()`; the manager's version calls `super.summary()`.",
+    "`override func summary() -> String { \"I schedule meetings for \\(hours) hours, then \" + super.summary() }`."
+  ]
 }

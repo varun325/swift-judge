@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A `switch` case uses `~=` to decide whether it matches.",
+    "Overload `~=` for a `Prefix` struct and for a `(String) -> Bool` closure.",
+    "`func ~= (pattern: Prefix, value: String) -> Bool { value.hasPrefix(pattern.text) }`."
+  ]
 }

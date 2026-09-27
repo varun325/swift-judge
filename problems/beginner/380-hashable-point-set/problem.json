@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Tuples can't go into a `Set`, but a struct can if it's `Hashable`.",
+    "Declaring `: Hashable` is enough — Swift synthesises `==` and hashing because both properties are `Int`.",
+    "`struct Point: Hashable { let x: Int; let y: Int }` and `Set(coords.map { Point(x: $0[0], y: $0[1]) }).count`."
+  ]
 }

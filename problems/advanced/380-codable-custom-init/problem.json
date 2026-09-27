@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Write `init(from decoder:)` when JSON doesn't match your model.",
+    "Use a nested container for `info`, try the price as `Double` then as `String`, and `decodeIfPresent` for tags.",
+    "`let info = try c.nestedContainer(keyedBy: InfoKeys.self, forKey: .info)` and `tags = try c.decodeIfPresent([String].self, forKey: .tags) ?? []`."
+  ]
 }

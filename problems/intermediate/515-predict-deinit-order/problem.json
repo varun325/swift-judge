@@ -17,5 +17,10 @@
       "title": "Deinitialization",
       "book": "LanguageGuide/Deinitialization"
     }
+  ],
+  "hints": [
+    "An object is freed when its **last** strong reference goes away — immediately.",
+    "`a = nil` doesn't free A because `b` still holds it; reassigning `b` does.",
+    "`init A`, `a released`, `init B`, `deinit A`, `b reassigned`…"
   ]
 }

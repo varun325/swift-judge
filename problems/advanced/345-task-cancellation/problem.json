@@ -30,5 +30,10 @@
     ],
     "returns": "Int",
     "async": true
-  }
+  },
+  "hints": [
+    "Cancellation is cooperative: tasks check `Task.isCancelled` themselves.",
+    "One child task per array returns its index if it finds the target; collect all results and take the minimum.",
+    "`for await found in group { if let found { best = min(best ?? found, found) } }`."
+  ]
 }

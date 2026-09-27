@@ -14,5 +14,10 @@
       "title": "The Basics — Comments",
       "book": "LanguageGuide/TheBasics"
     }
+  ],
+  "hints": [
+    "In Swift, `/* … */` comments can contain other `/* … */` comments.",
+    "The outer comment only ends at its **matching** `*/`, so everything between — including `print(\"four\")` — is commented out.",
+    "Printed lines: `one`, `five`, and then `seven eight`."
   ]
 }

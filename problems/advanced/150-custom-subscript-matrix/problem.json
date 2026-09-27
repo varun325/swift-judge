@@ -33,5 +33,10 @@
       }
     ],
     "returns": "[[Int]]"
-  }
+  },
+  "hints": [
+    "A subscript can take several parameters and have both a getter and a setter.",
+    "Store a flat array and map `(row, col)` to `row * cols + col`; check bounds with `precondition`.",
+    "`static func *` loops `i`, `j`, `k`: `out[i, j] += a[i, k] * b[k, j]`."
+  ]
 }

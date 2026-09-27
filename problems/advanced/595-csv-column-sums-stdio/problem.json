@@ -15,5 +15,10 @@
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
     }
+  ],
+  "hints": [
+    "Keep empty cells when splitting so columns stay aligned.",
+    "Split with `omittingEmptySubsequences: false`, trim each cell, and add it if it parses as `Double`.",
+    "Print whole sums as `Int`: `sum == sum.rounded() ? String(Int(sum)) : String(sum)`."
   ]
 }

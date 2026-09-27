@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Delegates are stored `weak` to avoid retain cycles — which needs a class-only protocol.",
+    "Declare `protocol DownloaderDelegate: AnyObject`, store `weak var delegate`, and log \"dropped\" when it's `nil`.",
+    "`if let delegate { delegate.didFinish(file) } else { log.lines.append(\"dropped \\(file)\") }`."
+  ]
 }

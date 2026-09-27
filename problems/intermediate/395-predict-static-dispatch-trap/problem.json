@@ -15,5 +15,10 @@
       "title": "Protocols — Protocol Extensions",
       "book": "LanguageGuide/Protocols"
     }
+  ],
+  "hints": [
+    "Protocol **requirements** dispatch dynamically; methods that exist only in an extension dispatch statically.",
+    "Through `any Animal`, `describe()` finds Cat's version, but `nickname()` uses the extension's version.",
+    "Line 1: `a cat | kitty`. Line 2: `a cat | critter`."
   ]
 }

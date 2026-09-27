@@ -30,5 +30,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "Floating-point numbers rarely compare exactly equal — compare within a tolerance.",
+    "Compute the absolute difference and compare it to `1e-9` scaled by the larger magnitude (at least 1).",
+    "`abs(a - b) <= 1e-9 * max(1, abs(a), abs(b))`."
+  ]
 }

@@ -14,5 +14,10 @@
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
     }
+  ],
+  "hints": [
+    "Store each person as a labelled tuple.",
+    "Sort by the tuple (lowercased last name, lowercased first name).",
+    "`print(\"\\(p.last.uppercased()), \\(p.first)\")` for each sorted person."
   ]
 }

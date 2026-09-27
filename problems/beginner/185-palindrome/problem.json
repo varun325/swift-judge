@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "`Character` has properties like `isLetter` and `isNumber`.",
+    "Lowercase the text, keep only letters and numbers, then compare it with its reverse.",
+    "`let cleaned = text.lowercased().filter { $0.isLetter || $0.isNumber }; return cleaned == String(cleaned.reversed())`."
+  ]
 }

@@ -15,5 +15,10 @@
       "title": "Generics",
       "book": "LanguageGuide/Generics"
     }
+  ],
+  "hints": [
+    "`Collection` needs `startIndex`, `endIndex`, `index(after:)` and a subscript.",
+    "Store up to `capacity` elements plus a `head` index; once full, overwrite at `head` and advance it.",
+    "`subscript(position: Int) -> Element { storage[(head + position) % storage.count] }`."
   ]
 }

@@ -33,5 +33,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "A serial `DispatchQueue` runs one block at a time.",
+    "Wrap every read and write of `value` in `queue.sync`; mark the class `@unchecked Sendable`.",
+    "`func increment() { queue.sync { value += 1 } }` and `DispatchQueue.concurrentPerform(iterations: threads) { _ in … }`."
+  ]
 }

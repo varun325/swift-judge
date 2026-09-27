@@ -25,5 +25,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Put everything in a `Set` for O(1) lookups.",
+    "Only start counting a run at its **first** number — where `n - 1` isn't in the set — then count upwards.",
+    "`for n in set where !set.contains(n - 1) { var len = 1; while set.contains(n + len) { len += 1 }; best = max(best, len) }`."
+  ]
 }

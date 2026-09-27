@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String: [String]]"
-  }
+  },
+  "hints": [
+    "Iterating a dictionary gives `(key, value)` pairs.",
+    "Append each student to the list for their grade using `default: []`, then sort every list.",
+    "`result[grade, default: []].append(student)` in the loop, then `result.mapValues { $0.sorted() }`."
+  ]
 }

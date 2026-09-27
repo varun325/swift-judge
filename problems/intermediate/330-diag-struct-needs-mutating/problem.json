@@ -14,5 +14,10 @@
       "title": "Methods — Modifying Value Types",
       "book": "LanguageGuide/Methods"
     }
+  ],
+  "hints": [
+    "Inside a non-`mutating` struct method, `self` is immutable.",
+    "Remove the `mutating` keyword from the method that changes `score`.",
+    "`func addPoint() { score += 1 }`."
   ]
 }

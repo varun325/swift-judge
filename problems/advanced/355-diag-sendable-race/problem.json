@@ -14,5 +14,10 @@
       "title": "Concurrency — Sendable Types",
       "book": "LanguageGuide/Concurrency"
     }
+  ],
+  "hints": [
+    "Swift 6 rejects sharing a non-`Sendable` class between concurrent tasks.",
+    "Make `Counter` a plain class and mutate one instance both inside a `Task` and in the enclosing function.",
+    "`let counter = Counter(); Task { counter.value += 1 }; counter.value += 1`."
   ]
 }

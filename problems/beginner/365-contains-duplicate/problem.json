@@ -25,5 +25,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "A `Set` can't hold duplicates.",
+    "If converting to a set makes the collection smaller, something was repeated.",
+    "`Set(nums).count != nums.count`."
+  ]
 }

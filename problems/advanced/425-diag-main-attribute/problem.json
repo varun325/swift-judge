@@ -13,5 +13,10 @@
       "title": "Attributes — main",
       "book": "ReferenceManual/Attributes"
     }
+  ],
+  "hints": [
+    "A program has one entry point; `main.swift`'s top-level code already is one.",
+    "Mark the struct with `@main` and remove the top-level `App.main()` call.",
+    "`@main struct App { static func main() { print(\"hello\") } }`."
   ]
 }

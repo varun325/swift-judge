@@ -14,5 +14,10 @@
       "title": "Memory Safety — Conflicting Access to In-Out Parameters",
       "book": "LanguageGuide/MemorySafety"
     }
+  ],
+  "hints": [
+    "Swift forbids two simultaneous write accesses to the same variable.",
+    "Pass the **same** variable as both `inout` arguments.",
+    "`var score = 42; balance(&score, &score)`."
   ]
 }

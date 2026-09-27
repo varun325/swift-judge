@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`some Drawable` returns one specific hidden type.",
+    "`makeTriangle` returns a `Triangle`; `flipped` wraps its argument in a generic `Flipped<D: Drawable>` that reverses the lines.",
+    "`base.draw().split(separator: \"/\").reversed().joined(separator: \"/\")`."
+  ]
 }

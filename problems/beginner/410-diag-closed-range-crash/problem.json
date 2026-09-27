@@ -15,5 +15,10 @@
       "title": "Basic Operators — Range Operators",
       "book": "LanguageGuide/BasicOperators"
     }
+  ],
+  "hints": [
+    "`0..<5` and `0...5` are different types: `Range` and `ClosedRange`.",
+    "Keep the `Range<Int>` annotation but change the literal to the closed-range operator.",
+    "`let r: Range<Int> = 0...5`."
   ]
 }

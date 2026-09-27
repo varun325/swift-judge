@@ -30,5 +30,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "`Character.asciiValue` gives a `UInt8?` — `nil` for non-ASCII characters.",
+    "Normalise the shift into `0..<26` first (Swift's `%` keeps the sign), then shift each letter relative to `A` (65) or `a` (97).",
+    "`let k = ((shift % 26) + 26) % 26` and for letters: `Character(UnicodeScalar((Int(ascii - base) + k) % 26 + Int(base))!)`."
+  ]
 }

@@ -16,5 +16,10 @@
       "title": "Control Flow — Switch",
       "book": "LanguageGuide/ControlFlow"
     }
+  ],
+  "hints": [
+    "`fallthrough` jumps into the next case's body without checking its pattern.",
+    "-5 matches the `where n < 0` case and falls into `case 0`; 20 matches the round case and falls into `default`.",
+    "`-5 -> negative small `, `0 -> small `, `7 -> digit `, `20 -> round other`, `99 -> other`."
   ]
 }

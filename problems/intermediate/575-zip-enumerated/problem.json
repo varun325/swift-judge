@@ -32,5 +32,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`zip` pairs two sequences and stops at the shorter one.",
+    "Zip names with times, sort by time, take three, then number them with `enumerated()`.",
+    "`zip(names, times).sorted { $0.1 < $1.1 }.prefix(3).enumerated().map { \"\\($0.offset + 1). …\" }`."
+  ]
 }

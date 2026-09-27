@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Protocol requirements act like abstract methods; the extension holds the shared algorithm.",
+    "`render()` in the extension builds the header, the rows from `rows()`, and a count footer.",
+    "`let body = rows(); return [\"== \\(title) ==\"] + body + [\"(\\(body.count) rows)\"]`."
+  ]
 }

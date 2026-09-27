@@ -36,5 +36,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Repeatedly finalise the closest unvisited node.",
+    "Build adjacency lists, keep distances as `Int?`, and relax each neighbour of the chosen node.",
+    "`if dist[v].map({ candidate < $0 }) ?? true { dist[v] = candidate }`."
+  ]
 }

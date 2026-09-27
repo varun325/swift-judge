@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A closure you store for later must be marked `@escaping`.",
+    "Keep an array of `(String) -> Void` handlers; `publish` loops over them.",
+    "`func subscribe(_ handler: @escaping (String) -> Void) { handlers.append(handler) }`."
+  ]
 }

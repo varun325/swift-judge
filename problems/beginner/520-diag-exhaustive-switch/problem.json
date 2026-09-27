@@ -15,5 +15,10 @@
       "title": "Control Flow — Switch",
       "book": "LanguageGuide/ControlFlow"
     }
+  ],
+  "hints": [
+    "A `switch` over an enum must cover every case — unless there's a `default`.",
+    "Remove the `default` and list only three of the four cases.",
+    "Cases `.sun`, `.rain` and `.wind` only — leave `.snow` out and drop `default`."
   ]
 }

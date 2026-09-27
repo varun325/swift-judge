@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A closure can capture a local variable and keep it alive.",
+    "Declare `var total = 0` inside `makeCounter` and return a closure that adds `step` to it and returns it.",
+    "`return { total += step; return total }`."
+  ]
 }

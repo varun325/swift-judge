@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A `catch` clause can list several patterns and bind associated values.",
+    "Call `try buy(request)` in a `do`, then add catches for the two \"unavailable\" cases together, the funds case, and a bare `catch`.",
+    "`catch VendingError.invalidSelection, VendingError.outOfStock { return \"unavailable\" }` and `catch VendingError.insufficientFunds(let needed)`."
+  ]
 }

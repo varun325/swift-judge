@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[Int?]"
-  }
+  },
+  "hints": [
+    "`?.` short-circuits to `nil` at the first missing link.",
+    "Build `Address?` and `Person?` from the record (`\"-\"` means missing), then chain through them.",
+    "`company.ceo?.address?.city.count`."
+  ]
 }

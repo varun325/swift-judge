@@ -31,5 +31,10 @@
       }
     ],
     "returns": "String?"
-  }
+  },
+  "hints": [
+    "You can't subscript a `String` with an `Int` — you need a `String.Index`.",
+    "`index(_:offsetBy:limitedBy:)` returns `nil` instead of crashing when you'd walk past the limit. Also reject negative offsets and `endIndex`.",
+    "`guard offset >= 0, let i = text.index(text.startIndex, offsetBy: offset, limitedBy: text.endIndex), i < text.endIndex else { return nil }; return String(text[i])`."
+  ]
 }

@@ -16,5 +16,10 @@
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
     }
+  ],
+  "hints": [
+    "`for var p in array` gives you a copy of each struct.",
+    "Mutating the copy doesn't change the array; mutating `players[i]` does. Class elements are shared references.",
+    "Line 1: `[1, 2]`. Line 2: `[10, 20]`. Line 3: `[10, 20]`."
   ]
 }

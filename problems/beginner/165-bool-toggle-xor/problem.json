@@ -35,5 +35,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "`Bool` isn't a number in Swift, so you can't add them up directly.",
+    "Put the three flags in an array and count how many are `true`.",
+    "`[a, b, c].filter { $0 }.count == 1`."
+  ]
 }

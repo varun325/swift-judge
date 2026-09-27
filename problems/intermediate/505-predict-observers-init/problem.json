@@ -15,5 +15,10 @@
       "title": "Properties — Property Observers",
       "book": "LanguageGuide/Properties"
     }
+  ],
+  "hints": [
+    "Property observers don't fire when a type sets its own property during `init`.",
+    "After `init done`, every assignment fires both observers — including via `bump()` and assigning the same value.",
+    "First lines: `init done`, then `will 20 -> 22`, `did 20 -> 22`."
   ]
 }

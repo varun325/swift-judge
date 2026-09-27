@@ -15,5 +15,10 @@
       "title": "Structures and Classes — value types",
       "book": "LanguageGuide/ClassesAndStructures"
     }
+  ],
+  "hints": [
+    "Is `Array` a value type or a reference type in Swift?",
+    "`var arr2 = arr1` makes an independent copy, so `append` on `arr2` can't affect `arr1`.",
+    "First line: `3 4`. Printing an array of strings shows each element **with quotes**: `[\"a\", \"b\", \"c\"]`."
   ]
 }

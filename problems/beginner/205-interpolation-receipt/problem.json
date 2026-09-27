@@ -32,5 +32,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "Keep money in integer cents; `/ 100` gives dollars and `% 100` gives cents.",
+    "Write a small helper that formats cents as `$D.CC`, padding the cents to two digits.",
+    "Pad with `\\(remainder < 10 ? \"0\" : \"\")\\(remainder)`, then interpolate everything: `\"\\(quantity) x \\(item) @ \\(dollars(unitCents)) = \\(dollars(quantity * unitCents))\"`."
+  ]
 }

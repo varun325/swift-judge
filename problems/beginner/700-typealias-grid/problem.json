@@ -34,5 +34,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A `typealias` is just another name for an existing type.",
+    "Loop over row and column offsets from -1 to 1, skip `(0, 0)`, and keep cells whose indices are valid.",
+    "`for dr in -1...1 { for dc in -1...1 where !(dr == 0 && dc == 0) { … if grid.indices.contains(r), grid[r].indices.contains(c) { … } } }`."
+  ]
 }

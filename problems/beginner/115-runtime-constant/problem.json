@@ -29,5 +29,10 @@
       }
     ],
     "returns": "Double"
-  }
+  },
+  "hints": [
+    "A `let` doesn't need its value at declaration — only exactly one assignment before use.",
+    "Declare `let rate: Double` without a value, assign it in both the `if` and the `else`, then compute the cost.",
+    "`return max(10.0, rate * weightKg)` — `max` enforces the minimum."
+  ]
 }

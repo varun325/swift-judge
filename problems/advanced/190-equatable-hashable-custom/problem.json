@@ -25,5 +25,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "If you customise `==`, you must hash exactly the same data.",
+    "Compute a normalised form (lowercase, strip dots and `+suffix` from the local part) and use it in both `==` and `hash(into:)`.",
+    "`func hash(into hasher: inout Hasher) { hasher.combine(normalized) }`."
+  ]
 }

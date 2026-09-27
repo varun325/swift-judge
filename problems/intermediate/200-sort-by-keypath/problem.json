@@ -32,5 +32,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A key path like `\\Person.age` can read a property from any value.",
+    "In an extension on `Sequence`, sort using `$0[keyPath: keyPath] < $1[keyPath: keyPath]`, generic over a `Comparable` value type.",
+    "`func sorted<V: Comparable>(by keyPath: KeyPath<Element, V>) -> [Element] { sorted { $0[keyPath: keyPath] < $1[keyPath: keyPath] } }`."
+  ]
 }

@@ -7,6 +7,8 @@ problem's reference solution, so adding a problem never requires hand-computing 
 - **225 problems · 2,545 test cases** across beginner / intermediate / advanced tracks
 - **Four judge modes**: implement a function · stdin→stdout programs · make-the-compiler-say-X
   diagnostics · predict-the-output (checked by actually running the code)
+- **Three hints per problem**, unlocked one at a time: a nudge toward the right Swift feature, then
+  the approach, then nearly the key line of code. Hints used are saved with your progress.
 - **Learn tab** per problem: the matching section of your `swift-notes.md`, the relevant chapter of
   *The Swift Programming Language* (offline), and the interview questions it drills
 - **Concepts** view (166 interview questions from five sources, each linked to problems),
@@ -79,7 +81,12 @@ validator checks it agrees with the reference.
                                       // stdio/predict: trimmed (default) | exact | unorderedLines | float:<eps>
   "timeLimitMs": 2000,
   "swiftVersion": "6",
-  "starterFails": false               // true for fix-the-compile-error problems
+  "starterFails": false,              // true for fix-the-compile-error problems
+  "hints": [                          // exactly 3 (validate enforces it), each more revealing
+    "Nudge: which Swift feature applies?",
+    "Approach: how to structure the solution.",
+    "Almost there: the key line or expression."
+  ]
 }
 ```
 
@@ -103,7 +110,8 @@ validator checks it agrees with the reference.
 | Command | What it does |
 |---|---|
 | `npm test` | judge unit tests (compare modes, harness, crash isolation, timeouts, every mode end-to-end) |
-| `npm run validate [-- filter]` | compiles every reference solution, runs all tests, checks starters and concept ids |
+| `npm run validate [-- filter]` | compiles every reference solution, runs all tests, checks starters, hints and concept ids |
+| `npm run e2e [-- filter]` | builds the app and drives the real window: every problem's starter must be rejected and reference accepted, plus UI scenario checks |
 | `npm run new-problem -- <track> <slug> [mode]` | scaffolds a problem folder |
 | `npm run vendor-docs` | refreshes `docs/swift-book` and `docs/interview` from GitHub |
 | `npm run typecheck` | TypeScript check |

@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`static` members belong to the type, not to each instance.",
+    "Keep `capacity` as a `static let`; the method takes the roster `inout`, so no mutable global state is needed.",
+    "`guard roster.count < capacity else { return \"full\" }; roster.append(name)`."
+  ]
 }

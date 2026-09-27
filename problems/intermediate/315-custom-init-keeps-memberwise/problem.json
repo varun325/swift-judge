@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Writing an `init` inside a struct removes the free memberwise initialiser.",
+    "Put your custom `init(name:)` in an **extension** so both initialisers exist.",
+    "`extension Player { init(name: String) { self.name = name; self.number = name.unicodeScalars.reduce(0) { $0 + Int($1.value) } % 100 } }`."
+  ]
 }

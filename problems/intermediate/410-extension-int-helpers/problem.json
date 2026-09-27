@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Extensions can add computed properties and methods to types you don't own.",
+    "`isPrime`: trial division up to the square root. `digits`: map the characters of `String(magnitude)`. `times`: loop `self` times.",
+    "`var digits: [Int] { String(magnitude).compactMap(\\.wholeNumberValue) }`."
+  ]
 }

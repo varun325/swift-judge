@@ -152,6 +152,22 @@ if (!filter) {
   const skipped = await page.locator('.case.skipped').count()
   await check('infinite loop → Time Limit Exceeded, rest skipped, under 10s', tle === 'Time Limit Exceeded' && skipped > 0 && Date.now() - started < 10_000, `${tle}, ${skipped} skipped, ${Date.now() - started}ms`)
 
+  // Hints: three per problem, unlocked strictly in order, remembered across visits.
+  await openProblem('leap-year')
+  const locked = await page.locator('.locked-hint').count()
+  const secondDisabled = await page.locator('.locked-hint[data-level="2"]').isDisabled()
+  await page.click('.locked-hint[data-level="1"]')
+  await page.waitForSelector('.hint.open[data-level="1"]')
+  const secondEnabled = await page.locator('.locked-hint[data-level="2"]').isEnabled()
+  await page.click('.locked-hint[data-level="2"]')
+  await page.waitForSelector('.hint.open[data-level="2"]')
+  await openProblem('two-sum')
+  await openProblem('leap-year')
+  const reopened = await page.locator('.hint.open').count()
+  const usedLabel = (await page.textContent('.hints .label')).trim()
+  await check('hints unlock in order and persist', locked === 3 && secondDisabled && secondEnabled && reopened === 2 && usedLabel.includes('2/3'),
+    `locked=${locked} secondDisabled=${secondDisabled} secondEnabled=${secondEnabled} reopened=${reopened} label=${usedLabel}`)
+
   await openProblem('two-sum')
   await page.click('.pane-tabs button:has-text("Learn")')
   await check('Learn tab shows notes and book link', (await page.locator('.learn .doc-link').count()) > 0 && (await page.textContent('.learn')).includes('From your notes'))

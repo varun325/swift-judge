@@ -14,5 +14,10 @@
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
     }
+  ],
+  "hints": [
+    "Each node stores its children in a `[Character: Node]` dictionary.",
+    "`insert` walks and creates nodes; a shared `find(prefix)` powers both `search` (check `isEnd`) and `startsWith`.",
+    "`func search(_ w: String) -> Bool { find(w)?.isEnd ?? false }`."
   ]
 }

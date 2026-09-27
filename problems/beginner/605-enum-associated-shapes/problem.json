@@ -28,5 +28,10 @@
     ],
     "returns": "Double"
   },
-  "compare": "float:1e-9"
+  "compare": "float:1e-9",
+  "hints": [
+    "Each enum case can carry its own values.",
+    "Add an `area` computed property that switches on `self` and binds each case's values; parse specs with a failable `init?`.",
+    "`case let .rectangle(w, h): w * h` — and sum with `specs.compactMap(Shape.init(spec:)).reduce(0) { $0 + $1.area }`."
+  ]
 }

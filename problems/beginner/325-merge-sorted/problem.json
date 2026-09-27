@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Two pointers, one per array — both arrays are already sorted.",
+    "Repeatedly append the smaller front element and advance that pointer; append the leftovers at the end.",
+    "`while i < a.count && j < b.count { … }` then `result += a[i...]; result += b[j...]`."
+  ]
 }

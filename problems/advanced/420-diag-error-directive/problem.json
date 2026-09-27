@@ -13,5 +13,10 @@
       "title": "Statements — Compile-Time Diagnostic Statement",
       "book": "ReferenceManual/Statements"
     }
+  ],
+  "hints": [
+    "`#error(\"…\")` stops the build with your own message.",
+    "Put it in the `#else` branch, which is compiled because `HAS_KEY` isn't defined.",
+    "`#error(\"Set API_KEY before building\")`."
   ]
 }

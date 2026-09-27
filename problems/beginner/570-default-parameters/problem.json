@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Parameters with default values can be left out at the call site.",
+    "Write `greet(_:greeting:punctuation:)` with defaults, then call it three different ways depending on the index.",
+    "`greet(name)`, `greet(name, greeting: \"Hi\")` and `greet(name, punctuation: \".\")`."
+  ]
 }

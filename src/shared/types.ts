@@ -64,7 +64,9 @@ export const ProblemMeta = z.object({
   timeLimitMs: z.number().int().positive().default(2000),
   swiftVersion: z.enum(['5', '6']).default('6'),
   /** Starter code is intentionally broken (fix-the-bug problems); validate expects it to fail. */
-  starterFails: z.boolean().optional()
+  starterFails: z.boolean().optional(),
+  /** Exactly three hints, each more revealing: concept nudge → approach → near-solution. */
+  hints: z.array(z.string()).default([])
 })
 export type ProblemMeta = z.infer<typeof ProblemMeta>
 
@@ -154,6 +156,8 @@ export interface ProgressEntry {
   draft?: string
   solvedAt?: string
   revealed?: boolean
+  /** How many hints (0–3) the learner has opened. */
+  hintsRevealed?: number
 }
 export type Progress = Record<string, ProgressEntry>
 

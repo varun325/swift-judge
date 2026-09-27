@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`throws(BankError)` declares exactly which error type can be thrown.",
+    "Throw `.invalidAmount` for non-positive amounts and `.insufficientFunds(short:)` when the amount exceeds the balance.",
+    "Inside the `map` closure, write `do throws(BankError) { … } catch { switch error { … } }` so `error` is a `BankError`."
+  ]
 }

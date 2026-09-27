@@ -14,5 +14,10 @@
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
     }
+  ],
+  "hints": [
+    "Parse each line into `[Int]` and skip empty lines.",
+    "Column `c` of the input becomes row `c` of the output.",
+    "`for c in 0..<width { print(rows.map { String($0[c]) }.joined(separator: \" \")) }`."
   ]
 }

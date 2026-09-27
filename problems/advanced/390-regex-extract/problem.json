@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Regex literals like `/(\\d{4})-(\\d{2})-(\\d{2})/` have typed captures.",
+    "Use `matches(of:)`, destructure `match.output`, and check the month and day ranges numerically.",
+    "`let (_, year, month, day) = match.output` then return `\"\\(day)/\\(month)/\\(year)\"`."
+  ]
 }

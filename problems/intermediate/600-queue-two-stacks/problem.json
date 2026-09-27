@@ -16,5 +16,10 @@
       "title": "Generics — Generic Types",
       "book": "LanguageGuide/Generics"
     }
+  ],
+  "hints": [
+    "Two stacks: push into one, pop from the other.",
+    "Only when the outbox is empty, move everything from the inbox (reversed) into it.",
+    "`if outbox.isEmpty { outbox = inbox.reversed(); inbox.removeAll() }; return outbox.popLast()` — and `peek` is `outbox.last ?? inbox.first`."
   ]
 }

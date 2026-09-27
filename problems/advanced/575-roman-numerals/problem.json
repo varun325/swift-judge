@@ -25,5 +25,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "Greedy: always use the largest value that still fits.",
+    "Keep an ordered array of `(value, symbol)` pairs that includes the subtractive pairs like 900 = \"CM\".",
+    "`result += String(repeating: symbol, count: n / value); n %= value`."
+  ]
 }

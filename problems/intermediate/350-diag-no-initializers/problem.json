@@ -15,5 +15,10 @@
       "title": "Initialization — Automatic Initializer Inheritance",
       "book": "LanguageGuide/Initialization"
     }
+  ],
+  "hints": [
+    "A subclass inherits its parent's initialisers only if its new stored properties have defaults.",
+    "Remove the default value from `axles`.",
+    "`class Truck: Vehicle { var axles: Int }`."
   ]
 }

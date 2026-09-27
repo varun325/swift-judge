@@ -32,5 +32,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "A `@resultBuilder` turns the statements in a closure into calls to `build…` methods.",
+    "Implement `buildExpression`, `buildBlock`, `buildOptional`, `buildEither(first:)`/`(second:)` and `buildArray`, all producing `[String]`.",
+    "`static func buildBlock(_ parts: [String]...) -> [String] { parts.flatMap { $0 } }`."
+  ]
 }

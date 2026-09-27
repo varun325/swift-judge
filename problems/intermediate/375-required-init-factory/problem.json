@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`Self(...)` constructs the dynamic type — which only works if every subclass has that init.",
+    "Mark the init `required`. `Dragon` re-declares it and doubles the level; `Goblin` inherits it.",
+    "`class func make(level: Int) -> Self { Self(level: level) }`."
+  ]
 }

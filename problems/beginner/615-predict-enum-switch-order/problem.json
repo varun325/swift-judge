@@ -15,5 +15,10 @@
       "title": "Enumerations — Associated Values",
       "book": "LanguageGuide/Enumerations"
     }
+  ],
+  "hints": [
+    "`if case` and `for case` match a single pattern without a full `switch`.",
+    "Only purchases add to `total`; the `for case` loop only visits purchases over 1000 cents.",
+    "`spent 1449`, then `big: book`, then `ANA`, then the event count."
   ]
 }

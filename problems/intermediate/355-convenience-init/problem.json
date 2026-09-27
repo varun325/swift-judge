@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Convenience initialisers must call another initialiser of the same class with `self.init(...)`.",
+    "`init(white:)` passes one value three times; `init?(hex:)` checks the format, parses base 16, then extracts channels with shifts and masks.",
+    "`Int(hex.dropFirst(), radix: 16)` then `(value >> 16) & 0xFF`, `(value >> 8) & 0xFF`, `value & 0xFF`."
+  ]
 }

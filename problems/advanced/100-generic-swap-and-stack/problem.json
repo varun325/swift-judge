@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A generic type has a placeholder, like `Stack<Element>`.",
+    "Back the stack with a private `[Element]`; `pop` can use `popLast()`, which returns an optional.",
+    "Drain with `while let x = a.pop() { out.append(String(x)) }`."
+  ]
 }

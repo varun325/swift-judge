@@ -16,5 +16,10 @@
       "title": "Properties — Lazy Stored Properties",
       "book": "LanguageGuide/Properties"
     }
+  ],
+  "hints": [
+    "Stored defaults run during init; `lazy` runs once on first access; computed runs every time.",
+    "`computing eager` prints before `created`; `computing lazy` prints once; `computing computed` prints on both reads.",
+    "Start: `start`, `computing eager`, `created`, `computing lazy`, `4`, `4`…"
   ]
 }

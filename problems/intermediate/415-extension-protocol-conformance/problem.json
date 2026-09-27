@@ -36,5 +36,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "You can add a protocol conformance to an existing type in an extension.",
+    "Conform `Int` and `String`, then conform `Array` only `where Element: Summarizable`.",
+    "`extension Array: Summarizable where Element: Summarizable { var summary: String { \"[\" + map(\\.summary).joined(separator: \",\") + \"]\" } }`."
+  ]
 }

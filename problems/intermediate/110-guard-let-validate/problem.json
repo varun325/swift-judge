@@ -33,5 +33,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "`guard` states what must be true and exits early otherwise; its bindings stay in scope afterwards.",
+    "Write one `guard` per rule, in order, each returning its own error message.",
+    "`guard let username, (3...16).contains(username.count) else { return \"bad username\" }` — and split the email with `omittingEmptySubsequences: false`."
+  ]
 }

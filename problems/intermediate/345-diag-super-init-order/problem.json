@@ -15,5 +15,10 @@
       "title": "Initialization — Two-Phase Initialization",
       "book": "LanguageGuide/Initialization"
     }
+  ],
+  "hints": [
+    "Phase 1 of class initialisation: a subclass sets its own properties **before** calling `super.init`.",
+    "Swap the two lines so `super.init` comes first.",
+    "`super.init(isElectric: isElectric)` then `self.isConvertible = isConvertible`."
   ]
 }

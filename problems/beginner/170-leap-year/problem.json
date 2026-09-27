@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "`isMultiple(of:)` reads better than `% x == 0`.",
+    "Divisible by 4 **and** (not divisible by 100 **or** divisible by 400).",
+    "`year.isMultiple(of: 4) && (!year.isMultiple(of: 100) || year.isMultiple(of: 400))`."
+  ]
 }

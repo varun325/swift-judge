@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "Use an array as a stack of opening brackets.",
+    "Map each closing bracket to its opener; on a closer, the popped element must match.",
+    "`if let open = pairs[ch] { guard stack.popLast() == open else { return false } } else { stack.append(ch) }`."
+  ]
 }

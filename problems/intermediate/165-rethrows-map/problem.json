@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A `rethrows` function only throws when the closure you pass it throws.",
+    "Loop over `self`, call `try transform(element)`, and collect the results.",
+    "`for element in self { out.append(try transform(element)) }` — then `(try? words.myMap(parse)) != nil`."
+  ]
 }

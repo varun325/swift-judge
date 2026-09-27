@@ -16,5 +16,10 @@
       "title": "Control Flow — Switch",
       "book": "LanguageGuide/ControlFlow"
     }
+  ],
+  "hints": [
+    "You can `switch` on a tuple of two values.",
+    "Switch on `(i % 3, i % 5)` and use `_` for \"don't care\". Guard `n >= 1` — `1...0` traps.",
+    "`case (0, 0): print(\"FizzBuzz\")`, `case (0, _): print(\"Fizz\")`, `case (_, 0): print(\"Buzz\")`, `default: print(i)`."
   ]
 }

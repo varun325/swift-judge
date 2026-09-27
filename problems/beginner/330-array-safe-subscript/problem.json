@@ -36,5 +36,10 @@
       }
     ],
     "returns": "[String?]"
-  }
+  },
+  "hints": [
+    "Subscripts can have argument labels, and you can add them in an extension.",
+    "In `extension Collection`, return `self[index]` only if `indices.contains(index)`, else `nil`.",
+    "`subscript(safe index: Index) -> Element? { indices.contains(index) ? self[index] : nil }` and `indices.map { items[safe: $0] }`."
+  ]
 }

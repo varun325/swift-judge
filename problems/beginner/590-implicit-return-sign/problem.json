@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A function whose body is a single expression doesn't need `return` — and `switch` can be that expression.",
+    "Switch on `n` with a one-sided range `..<0`, the value `0`, and `default`.",
+    "`switch n { case ..<0: \"negative\"; case 0: \"zero\"; default: \"positive\" }`."
+  ]
 }

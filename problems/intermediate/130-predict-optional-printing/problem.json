@@ -17,5 +17,10 @@
       "title": "The Basics — Optionals",
       "book": "LanguageGuide/TheBasics"
     }
+  ],
+  "hints": [
+    "Printing an optional shows its `Optional(…)` wrapper.",
+    "An `Int!` is only force-unwrapped where a non-optional is **required**; `let d = c` keeps it optional.",
+    "The first two lines are `Optional(5)` and `nil`; `print(type(of: d))` shows `Optional<Int>`."
   ]
 }

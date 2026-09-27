@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String: String]"
-  }
+  },
+  "hints": [
+    "`Dictionary(uniqueKeysWithValues:)` crashes on duplicate keys.",
+    "Use `Dictionary(_:uniquingKeysWith:)` and merge old and new names in the closure.",
+    "`{ old, new in old.split(separator: \"|\").contains(Substring(new)) ? old : old + \"|\" + new }`."
+  ]
 }

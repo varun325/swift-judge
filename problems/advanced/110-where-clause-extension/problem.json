@@ -32,5 +32,10 @@
     ],
     "returns": "[Double]"
   },
-  "compare": "float:1e-9"
+  "compare": "float:1e-9",
+  "hints": [
+    "An extension can apply only when `Element` meets a constraint.",
+    "Write one extension for `Element: BinaryInteger` and one for `Element: BinaryFloatingPoint`, each with its own `average`.",
+    "`isEmpty ? 0 : Double(reduce(0, +)) / Double(count)` for integers."
+  ]
 }

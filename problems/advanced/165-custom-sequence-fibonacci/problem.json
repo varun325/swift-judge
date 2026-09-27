@@ -28,5 +28,10 @@
       }
     ],
     "returns": "[[Int]]"
-  }
+  },
+  "hints": [
+    "A `Sequence` only needs `makeIterator()`; the iterator's `next()` produces values.",
+    "Keep `a` and `b` in the iterator; return `a` and advance. Use `.lazy` before filtering an infinite sequence.",
+    "`defer { (a, b) = (b, a &+ b) }; return a` inside `next()`."
+  ]
 }

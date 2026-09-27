@@ -36,5 +36,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Each parameter can have an external label and a different internal name.",
+    "The signature is already written — use `start`, `end` and `step` inside the body.",
+    "`Array(stride(from: start, through: end, by: step))`."
+  ]
 }

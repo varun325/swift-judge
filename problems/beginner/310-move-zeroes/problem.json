@@ -27,5 +27,10 @@
       }
     ],
     "returns": "Void"
-  }
+  },
+  "hints": [
+    "Use two indices: one reading every element, one marking where the next non-zero goes.",
+    "Whenever the reader finds a non-zero, swap it into the write position and advance the writer.",
+    "`var write = 0; for read in nums.indices where nums[read] != 0 { nums.swapAt(write, read); write += 1 }`."
+  ]
 }

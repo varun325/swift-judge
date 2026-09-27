@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Pass a dependency in through the initialiser, typed as a protocol.",
+    "Define `Clock`, a `FixedClock` for tests, and a `Sendable` `SystemClock` singleton as the default argument.",
+    "`init(clock: any Clock = SystemClock.shared)` and `switch clock.hour { case ..<12: … }`."
+  ]
 }

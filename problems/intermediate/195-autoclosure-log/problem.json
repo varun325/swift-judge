@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`@autoclosure` wraps an argument in a closure, so it's only evaluated if you call it.",
+    "Guard on the level first; call `message()` only when it passes.",
+    "`guard level >= 2 else { return }; log.lines.append(\"LOG \\(message())\")`."
+  ]
 }

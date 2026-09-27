@@ -36,5 +36,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Tuple assignment evaluates the right side fully before assigning.",
+    "Keep two variables and update them together each step.",
+    "`(x, y) = (y, x + y)` for Fibonacci and `(p, q) = (q, p % q)` for GCD."
+  ]
 }

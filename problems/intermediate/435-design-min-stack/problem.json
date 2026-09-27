@@ -16,5 +16,10 @@
       "title": "Generics — Generic Types",
       "book": "LanguageGuide/Generics"
     }
+  ],
+  "hints": [
+    "Store the running minimum alongside each pushed value.",
+    "Push the pair `(value, min(value, previous min))`; the minimum is always on top.",
+    "`items.append((x, Swift.min(x, items.last?.min ?? x)))` and `func min() -> Int? { items.last?.min }`."
   ]
 }

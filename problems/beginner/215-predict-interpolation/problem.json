@@ -15,5 +15,10 @@
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
     }
+  ],
+  "hints": [
+    "`print` takes `separator:` and `terminator:`; `debugPrint` shows strings with quotes.",
+    "`terminator: \" | \"` means the next print continues on the same line. Arrays always print their elements in debug form.",
+    "Line 2 is `1-2-3 | same line`; `debugPrint(name)` prints `\"Swift\"` with quotes; the array prints as `[\"Swift\", \"6\"]`."
   ]
 }

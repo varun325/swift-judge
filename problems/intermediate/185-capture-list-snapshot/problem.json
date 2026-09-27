@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A capture list `[x]` copies the value when the closure is created.",
+    "`byRef` captures the variable itself; `bySnapshot` captures a copy. Change `x` after creating both.",
+    "`let bySnapshot = { [x] in x }` — after `x += 5`, return `[byRef(), bySnapshot()]`."
+  ]
 }

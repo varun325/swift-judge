@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Conforming to `CaseIterable` gives you `allCases`.",
+    "Add a computed `price` that switches on `self`, then filter `allCases`.",
+    "`Coffee.allCases.filter { $0.price <= maxPrice }.map(\\.rawValue)`."
+  ]
 }

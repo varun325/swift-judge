@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int?"
-  }
+  },
+  "hints": [
+    "Track the two largest **distinct** values seen so far in optionals.",
+    "When a bigger value arrives, the old largest becomes second; skip values equal to the largest.",
+    "Short version: `Array(Set(nums)).sorted(by: >).dropFirst().first`."
+  ]
 }

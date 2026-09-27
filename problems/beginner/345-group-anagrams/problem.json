@@ -27,5 +27,10 @@
     ],
     "returns": "[[String]]"
   },
-  "compare": "json-unordered-deep"
+  "compare": "json-unordered-deep",
+  "hints": [
+    "Anagrams become identical when you sort their letters.",
+    "Group the words by their sorted-letter key — `Dictionary(grouping:by:)` does this in one call.",
+    "`Array(Dictionary(grouping: words) { String($0.sorted()) }.values)`."
+  ]
 }

@@ -17,5 +17,10 @@
       "title": "Access Control",
       "book": "LanguageGuide/AccessControl"
     }
+  ],
+  "hints": [
+    "`private` members are only visible inside the type (and its extensions in the same file).",
+    "Mark `secret` as `private` and keep the read from top-level code.",
+    "`private var secret = \"1234\"` with `print(vault.secret)` below."
   ]
 }

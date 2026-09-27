@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[[String]]"
-  }
+  },
+  "hints": [
+    "Sets have built-in methods for intersection, difference and more.",
+    "Convert both arrays to sets, then use `intersection`, `subtracting` (both directions) and `symmetricDifference` — sorting each result.",
+    "`[sa.intersection(sb).sorted(), sa.subtracting(sb).sorted(), sb.subtracting(sa).sorted(), sa.symmetricDifference(sb).sorted()]`."
+  ]
 }

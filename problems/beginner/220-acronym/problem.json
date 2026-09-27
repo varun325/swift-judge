@@ -26,5 +26,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "`split(whereSeparator:)` takes a closure deciding what counts as a separator.",
+    "Split on spaces **and** hyphens, take the first character of each piece, then uppercase.",
+    "`String(phrase.split(whereSeparator: { $0 == \" \" || $0 == \"-\" }).compactMap(\\.first)).uppercased()`."
+  ]
 }

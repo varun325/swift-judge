@@ -26,5 +26,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "`split(separator:)` skips empty pieces by default — perfect for runs of spaces.",
+    "Split into words, reverse the array, join with single spaces.",
+    "`sentence.split(separator: \" \").reversed().joined(separator: \" \")`."
+  ]
 }

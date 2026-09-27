@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "The answer for `i` is (product of everything left) × (product of everything right).",
+    "One pass left-to-right stores prefix products; a second pass right-to-left multiplies in suffix products.",
+    "`for i in nums.indices.reversed() { answer[i] *= suffix; suffix *= nums[i] }`."
+  ]
 }

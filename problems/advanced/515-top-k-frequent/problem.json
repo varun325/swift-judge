@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Count first, then sort the dictionary entries.",
+    "Sort by count descending, then word ascending, and take `k`.",
+    "`counts.sorted { ($1.value, $0.key) < ($0.value, $1.key) }.prefix(k).map(\\.key)`."
+  ]
 }

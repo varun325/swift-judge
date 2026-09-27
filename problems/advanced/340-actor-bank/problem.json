@@ -28,5 +28,10 @@
     ],
     "returns": "Int",
     "async": true
-  }
+  },
+  "hints": [
+    "An `actor` protects its mutable state by running one call at a time.",
+    "Deposit from separate child tasks in a task group, each calling `await account.deposit(amount)`.",
+    "`actor Account { private var balance = 0; func deposit(_ a: Int) { balance += a }; var current: Int { balance } }`."
+  ]
 }

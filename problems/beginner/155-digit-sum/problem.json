@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "`% 10` gives the last digit; `/ 10` removes it.",
+    "Loop while the number is non-zero. Watch out: `abs(Int.min)` overflows — work with the unsigned `magnitude` instead.",
+    "`var x = n.magnitude` then `while x > 0 { total += x % 10; x /= 10 }` (with `total` as `UInt`)."
+  ]
 }

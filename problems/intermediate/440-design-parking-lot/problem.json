@@ -16,5 +16,10 @@
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
     }
+  ],
+  "hints": [
+    "Keep a count of free slots per size.",
+    "A nested `enum Size: Int` maps car types 1–3; reject invalid types with the failable initialiser.",
+    "`guard let size = Size(rawValue: carType), let slots = free[size], slots > 0 else { return false }; free[size] = slots - 1`."
   ]
 }

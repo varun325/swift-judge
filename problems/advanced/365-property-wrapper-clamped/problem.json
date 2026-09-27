@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "A `@propertyWrapper` needs a `wrappedValue`; `projectedValue` is exposed as `$name`.",
+    "Clamp in the `wrappedValue` setter and count how often a write was clamped in `projectedValue`.",
+    "`init(wrappedValue: Value, _ range: ClosedRange<Value>)` — then `@Clamped(0...100) var volume = 50`."
+  ]
 }

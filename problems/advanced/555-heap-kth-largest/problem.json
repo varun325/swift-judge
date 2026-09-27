@@ -31,5 +31,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "A heap keeps the smallest (or largest) element on top in O(log n).",
+    "Store a comparator closure; sift up on insert and sift down on pop. Keep a min-heap of size k.",
+    "`heap.insert(n); if heap.count > k { _ = heap.popTop() }` — the answer is `heap.peek!`."
+  ]
 }

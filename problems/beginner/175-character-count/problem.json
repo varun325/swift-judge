@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A `String` offers several views: characters, Unicode scalars, UTF-16 and UTF-8.",
+    "Each view has its own `count`.",
+    "`[text.count, text.unicodeScalars.count, text.utf16.count, text.utf8.count]`."
+  ]
 }

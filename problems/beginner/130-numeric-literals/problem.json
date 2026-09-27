@@ -19,5 +19,10 @@
     "name": "literalValues",
     "params": [],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Swift integer literals can be written in several bases using a prefix.",
+    "Binary uses `0b`, octal `0o`, hex `0x`; underscores are ignored inside numbers.",
+    "`[17, 0b10001, 0o21, 0x11, 1_000_000]`."
+  ]
 }

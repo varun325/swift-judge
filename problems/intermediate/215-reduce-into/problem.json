@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String: [String]]"
-  }
+  },
+  "hints": [
+    "`reduce(into:)` mutates one accumulator instead of copying it every step.",
+    "Start with an empty dictionary and append each word under its length.",
+    "`words.reduce(into: [:]) { groups, word in groups[String(word.count), default: []].append(word) }`."
+  ]
 }

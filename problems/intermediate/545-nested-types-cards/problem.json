@@ -28,5 +28,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Types can be nested inside other types.",
+    "Nest `Suit` and `Rank` inside `Card`. Build the deck by `flatMap`-ing suits over ranks.",
+    "`Suit.allCases.flatMap { suit in Rank.allCases.map { Card(rank: $0, suit: suit) } }`."
+  ]
 }

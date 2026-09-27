@@ -33,5 +33,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Functions can share a name if their parameter types differ.",
+    "Write three `describe(_:)` functions for `Int`, `String` and `Bool`; the compiler chooses by argument type.",
+    "`ints.map(describe) + words.map(describe) + flags.map(describe)`."
+  ]
 }

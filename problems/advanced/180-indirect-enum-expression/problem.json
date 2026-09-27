@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int?"
-  }
+  },
+  "hints": [
+    "A recursive enum needs `indirect` so its cases can contain the enum.",
+    "Parse RPN with a stack of `Expr`: numbers push, operators pop two (or one for `neg`) and push the combined node.",
+    "`guard let b = stack.popLast(), let a = stack.popLast() else { return nil }; stack.append(.add(a, b))`."
+  ]
 }

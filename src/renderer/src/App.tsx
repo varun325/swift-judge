@@ -105,6 +105,7 @@ export function App(): React.JSX.Element {
                 id={selected}
                 solved={Boolean(progress[selected]?.solved)}
                 draft={progress[selected]?.draft}
+                hintsRevealed={progress[selected]?.hintsRevealed ?? 0}
                 onProgress={refresh}
                 onOpenBook={openBook}
                 onNext={() => {

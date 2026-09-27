@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "You can name a loop with a label and `break` out of it from an inner loop.",
+    "Label the outer loop, record `[row, col]` when you find the target, then `break` the label.",
+    "`search: for (r, row) in grid.enumerated() { for (c, v) in row.enumerated() where v == target { found = [r, c]; break search } }`."
+  ]
 }

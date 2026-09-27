@@ -25,5 +25,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "In a raw string `#\"…\"#`, backslashes are literal characters.",
+    "Interpolation inside a raw string needs a `#` between the backslash and the parenthesis.",
+    "`#\"C:\\Users\\\\#(user)\\Documents\"#`."
+  ]
 }

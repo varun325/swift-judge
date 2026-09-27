@@ -27,5 +27,10 @@
     ],
     "returns": "String",
     "throws": true
-  }
+  },
+  "hints": [
+    "Errors are values of a type that conforms to `Error` — usually an enum.",
+    "Check the length first, then the obvious passwords, then return based on length.",
+    "`if password.count < 5 { throw PasswordError.short }`; `if [\"12345\", \"password\"].contains(password) { throw PasswordError.obvious }`."
+  ]
 }

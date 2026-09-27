@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import type { LearnBundle, ProblemView } from '../../../shared/api'
 import type { JudgeResult } from '../../../shared/types'
 import { monaco } from '../monaco'
+import { Hints } from './Hints'
 import { Markdown } from './Markdown'
 import { Results } from './Results'
 
@@ -12,6 +13,7 @@ interface Props {
   id: string
   solved: boolean
   draft?: string
+  hintsRevealed: number
   onProgress: () => void
   onOpenBook: (path: string) => void
   onNext: () => void
@@ -19,7 +21,7 @@ interface Props {
 
 const USER_FILE = { function: 'user.swift', stdio: 'main.swift', diagnostic: 'main.swift', predict: 'main.swift' }
 
-export function ProblemWorkspace({ id, solved, draft, onProgress, onOpenBook, onNext }: Props): React.JSX.Element {
+export function ProblemWorkspace({ id, solved, draft, hintsRevealed, onProgress, onOpenBook, onNext }: Props): React.JSX.Element {
   const [problem, setProblem] = useState<ProblemView>()
   const [learn, setLearn] = useState<LearnBundle>()
   const [left, setLeft] = useState<LeftTab>('description')
@@ -162,6 +164,7 @@ export function ProblemWorkspace({ id, solved, draft, onProgress, onOpenBook, on
                   ))}
                 </div>
               )}
+              <Hints id={id} hints={meta.hints} initiallyRevealed={hintsRevealed} onReveal={onProgress} />
             </>
           )}
           {left === 'learn' && learn && <LearnPanel learn={learn} onOpenBook={onOpenBook} />}

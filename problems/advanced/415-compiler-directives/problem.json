@@ -20,5 +20,10 @@
     "name": "buildInfo",
     "params": [],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`#if` is decided at compile time; `#available` at runtime.",
+    "Use `#if swift(>=6.0)`, `#if os(macOS)`, `#if arch(arm64)`, `#if canImport(Foundation)`, `#if DEBUG`, then `if #available(macOS 13, *)`.",
+    "Each check appends one string to an array, in the order the statement lists."
+  ]
 }

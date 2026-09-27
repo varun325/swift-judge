@@ -30,5 +30,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`@dynamicMemberLookup` turns `x.name` into a call to `subscript(dynamicMember:)`.",
+    "Return a new `Config` with the member appended to a dotted prefix; `value` reads `storage[prefix]`.",
+    "`path.split(separator: \".\").reduce(self) { $0[dynamicMember: String($1)] }.value`."
+  ]
 }

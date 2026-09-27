@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Struct methods that change stored properties must be `mutating`.",
+    "`private(set)` lets anyone read `funds` but only the struct write it. Refuse withdrawals larger than the balance.",
+    "`guard amount <= funds else { return false }; funds -= amount; return true`."
+  ]
 }

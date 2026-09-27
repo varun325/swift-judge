@@ -26,5 +26,10 @@
       }
     ],
     "returns": "String"
-  }
+  },
+  "hints": [
+    "A `switch` can match ranges of numbers.",
+    "Use closed and half-open range patterns for each band, and `default` for anything outside `0...100`.",
+    "`case 90...100: \"A\"`, `case 80..<90: \"B\"`, … `case 0..<60: \"F\"`, `default: \"invalid\"`."
+  ]
 }

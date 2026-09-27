@@ -29,5 +29,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "`??` supplies a fallback when an optional is `nil`, and it chains.",
+    "Use `Optional.flatMap` to turn a `String?` into an `Int?` without ending up with `Int??`.",
+    "`args[\"port\"].flatMap { Int($0) } ?? env[\"PORT\"].flatMap { Int($0) } ?? 8080`."
+  ]
 }

@@ -30,5 +30,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "2-D dynamic programming over positions in both strings.",
+    "`dp[i][j]` = LCS of the suffixes starting at `i` and `j`; fill from the end backwards.",
+    "`dp[i][j] = x[i] == y[j] ? 1 + dp[i + 1][j + 1] : max(dp[i + 1][j], dp[i][j + 1])`."
+  ]
 }

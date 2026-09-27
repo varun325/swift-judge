@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int?"
-  }
+  },
+  "hints": [
+    "`Optional` has `map` and `flatMap`, just like arrays.",
+    "Use `flatMap` for steps that can fail (first field, `Int(...)`) and `map` for the final squaring.",
+    "`csv.flatMap { $0.split(separator: \",\", omittingEmptySubsequences: false).first }.flatMap { Int($0) }.map { $0 * $0 }`."
+  ]
 }

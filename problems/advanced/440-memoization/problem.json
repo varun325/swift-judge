@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "Cache results in a dictionary that the closure captures.",
+    "Pass the memoised function into `body` so recursive calls also go through the cache.",
+    "`if let hit = cache.value[input] { return hit }; let result = body(recurse.value!, input); cache.value[input] = result`."
+  ]
 }

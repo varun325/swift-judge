@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`RegexBuilder` builds regexes with a result-builder DSL.",
+    "Use `Reference`s for captures, `ChoiceOf` for the level, and `TryCapture` with a transform for the code. Match with `wholeMatch`.",
+    "`TryCapture(as: code) { OneOrMore(.digit) } transform: { Int($0) }`."
+  ]
 }

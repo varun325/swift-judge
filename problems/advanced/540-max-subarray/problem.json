@@ -25,5 +25,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Kadane: the best sum ending here either extends the previous one or starts fresh.",
+    "Track `current` and `best` in a `reduce` over the rest of the array.",
+    "`let current = max(x, acc.current + x); return (current, max(acc.best, current))`."
+  ]
 }

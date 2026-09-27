@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A function can return a tuple with labels — and an optional tuple for the empty case.",
+    "Start from the first element (guard it exists), then update min and max in one loop over the rest.",
+    "`guard var lo = nums.first else { return nil }; var hi = lo; for n in nums.dropFirst() { lo = Swift.min(lo, n); hi = Swift.max(hi, n) }; return (lo, hi)`."
+  ]
 }

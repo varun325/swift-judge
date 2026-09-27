@@ -15,5 +15,10 @@
       "title": "Control Flow — Tuples",
       "book": "LanguageGuide/ControlFlow"
     }
+  ],
+  "hints": [
+    "A `switch` checks cases top to bottom and runs only the first match.",
+    "`_` matches anything, `let` binds, and `where` adds a condition. `(3, 0)` matches `(_, 0)` before any later case.",
+    "The outputs are: `origin`, `x-axis at 3`, `y-axis at -2`, `diagonal 2`, then work out `(-1, 5)` against the range case."
   ]
 }

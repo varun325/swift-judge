@@ -28,5 +28,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`class func` can be overridden by subclasses; `static func` can't.",
+    "Override `kind()` in `Circle`, then call both methods on a `Shape.Type` metatype.",
+    "`let type: Shape.Type = k == \"circle\" ? Circle.self : Shape.self` then `\"\\(type.kind())/\\(type.library())\"`."
+  ]
 }

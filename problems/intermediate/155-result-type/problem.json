@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`Result<Success, Failure>` stores success or failure as a value.",
+    "Return `.failure(...)` for each bad case; switch on the result to build each line; `get()` turns it back into throwing style.",
+    "`results.compactMap { try? $0.get() }.reduce(0, +)` gives the total."
+  ]
 }

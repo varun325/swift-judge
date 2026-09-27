@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Multiplying by 33 repeatedly will exceed `Int.max`. Swift has operators that wrap instead of trapping.",
+    "Loop over `text.utf8` (the bytes) and update the hash with the **wrapping** versions of `*` and `+`.",
+    "`hash = hash &* 33 &+ Int(byte)` inside `for byte in text.utf8`."
+  ]
 }

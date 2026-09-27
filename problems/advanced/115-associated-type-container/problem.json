@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`associatedtype Item` lets each conforming type choose its element type.",
+    "Conform both types, then write a generic function whose `where` clause says the two item types match and are `Equatable`.",
+    "`where C1.Item == C2.Item, C1.Item: Equatable` and compare `a[i] == b[i]` for every index."
+  ]
 }

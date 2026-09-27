@@ -25,5 +25,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "Check the boundary: can an 18-year-old vote?",
+    "`x ? true : false` is just `x`.",
+    "`age >= 18`."
+  ]
 }

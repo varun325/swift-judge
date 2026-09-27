@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "Every unvisited land cell starts a new island.",
+    "Convert rows to `[[Character]]`; when you find land, count it and flood-fill (BFS/DFS) its neighbours to water.",
+    "`guard grid.indices.contains(ny), grid[ny].indices.contains(nx), grid[ny][nx] == \"1\" else { continue }`."
+  ]
 }

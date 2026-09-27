@@ -32,6 +32,7 @@ async function check(p: Problem): Promise<string[]> {
   const issues: string[] = []
   const { mode } = p.meta
   if (p.tests.length === 0) issues.push('no tests')
+  if (p.meta.hints.length !== 3) issues.push(`expected 3 hints, found ${p.meta.hints.length}`)
   if (mode === 'function' && !p.meta.signature && !p.harness) issues.push('function mode needs signature or harness.swift')
   if (mode === 'diagnostic' && p.tests.some((t) => t.severity !== 'none' && !t.pattern)) issues.push('diagnostic test without pattern')
   for (const c of p.meta.concepts) if (conceptIds.size && !conceptIds.has(c)) issues.push(`unknown concept "${c}"`)

@@ -32,5 +32,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "A function can return another function.",
+    "`add(a)` returns a closure that waits for `b`.",
+    "`func add(_ a: Int) -> (Int) -> Int { { b in a + b } }` — then `xs.map(add(base)) + [add(1)(add(2)(3))]`."
+  ]
 }

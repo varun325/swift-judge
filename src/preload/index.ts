@@ -11,6 +11,7 @@ const api: JudgeApi = {
   saveDraft: call('saveDraft') as JudgeApi['saveDraft'],
   resetDraft: call('resetDraft') as JudgeApi['resetDraft'],
   revealSolution: call('revealSolution') as JudgeApi['revealSolution'],
+  revealHint: call('revealHint') as JudgeApi['revealHint'],
   getProgress: call('getProgress') as JudgeApi['getProgress'],
   getLearn: call('getLearn') as JudgeApi['getLearn'],
   listBook: call('listBook') as JudgeApi['listBook'],

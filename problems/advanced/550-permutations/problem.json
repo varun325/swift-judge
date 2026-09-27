@@ -26,5 +26,10 @@
     ],
     "returns": "[[Int]]"
   },
-  "compare": "json-unordered"
+  "compare": "json-unordered",
+  "hints": [
+    "Backtracking: choose, recurse, un-choose.",
+    "Keep a `path` and a `used` array in the outer function; a nested function adds each unused number and recurses.",
+    "`used[i] = true; path.append(nums[i]); backtrack(); path.removeLast(); used[i] = false`."
+  ]
 }

@@ -32,5 +32,10 @@
     ],
     "returns": "[Double]"
   },
-  "compare": "float:1e-9"
+  "compare": "float:1e-9",
+  "hints": [
+    "A generic parameter can be a compile-time tag that's never stored.",
+    "`Length<Unit>` stores only a `Double`; `+` is only defined for two lengths with the same `Unit`.",
+    "`Length<To>(value: value * Unit.metersPerUnit / To.metersPerUnit)` to convert."
+  ]
 }

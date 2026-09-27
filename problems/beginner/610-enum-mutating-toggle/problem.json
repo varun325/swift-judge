@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "To change an enum value from inside a method, the method must be `mutating`.",
+    "Assign the next case to `self` based on the current one.",
+    "`mutating func next() { self = switch self { case .red: .green; case .green: .yellow; case .yellow: .red } }`."
+  ]
 }

@@ -31,5 +31,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Protocol requirements can't have default argument values.",
+    "Add a one-parameter `send(_:)` in a protocol extension that forwards `urgent: false`.",
+    "`extension Notifier { func send(_ message: String) -> String { send(message, urgent: false) } }`."
+  ]
 }

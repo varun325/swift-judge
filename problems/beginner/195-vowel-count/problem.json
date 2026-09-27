@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Int"
-  }
+  },
+  "hints": [
+    "A `Set` gives fast membership checks.",
+    "Lowercase the text and count the characters contained in a set of vowels. Annotate the set's element type so the literal becomes `Set<Character>`.",
+    "`let vowels: Set<Character> = [\"a\", \"e\", \"i\", \"o\", \"u\"]; return text.lowercased().filter { vowels.contains($0) }.count`."
+  ]
 }

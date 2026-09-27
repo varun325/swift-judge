@@ -15,5 +15,10 @@
       "title": "Types — Self Type",
       "book": "ReferenceManual/Types"
     }
+  ],
+  "hints": [
+    "`type(of: self)` and `Self` refer to the object's runtime type.",
+    "`pet` is a `Dog` stored in an `Animal` variable, so it describes and clones itself as a `Dog`.",
+    "Line 1: `Dog is a dog`; line 2: `Dog`."
   ]
 }

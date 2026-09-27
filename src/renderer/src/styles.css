@@ -215,3 +215,14 @@ button.link:hover { text-decoration: underline; }
 .hljs-title.function_, .hljs-title { color: var(--hl-fn); }
 .hljs-meta, .hljs-attr, .hljs-attribute { color: var(--hl-attr); }
 .hljs-subst { color: var(--text); }
+
+/* ---------- hints */
+.hints { margin-top: 22px; display: flex; flex-direction: column; gap: 6px; }
+.hint { border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; background: var(--panel-2); text-align: left; }
+.hint.open { border-left: 3px solid var(--warn); }
+.hint.open .markdown p:first-child { margin-top: 4px; }
+.hint.open .markdown p:last-child { margin-bottom: 2px; }
+.hint-title { font-size: 12px; font-weight: 700; color: var(--warn); }
+.locked-hint { font-size: 13px; color: var(--text); }
+.locked-hint:disabled { color: var(--muted); cursor: not-allowed; opacity: .7; }
+.locked-hint:not(:disabled):hover { border-color: var(--warn); }

@@ -26,5 +26,10 @@
       }
     ],
     "returns": "Bool"
-  }
+  },
+  "hints": [
+    "Every integer is either greater than 20 **or** less than 39 — so `||` is always true.",
+    "\"Between\" means both conditions must hold. Or ask a range whether it contains the value.",
+    "`(21...38).contains(temp)` — and return the condition directly instead of `if … return true`."
+  ]
 }

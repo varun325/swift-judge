@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`[Any]` loses static types; `case let x as T` recovers them in a `switch`.",
+    "Parse each token (Int, then Double, then Bool, else String), then switch with type-casting patterns.",
+    "`case let i as Int: \"int \\(i)\"` … and count strings with `values.filter { $0 is String }.count`."
+  ]
 }

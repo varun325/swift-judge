@@ -26,5 +26,10 @@
     ],
     "returns": "[Double?]"
   },
-  "compare": "float:1e-9"
+  "compare": "float:1e-9",
+  "hints": [
+    "Inside the function, a variadic `Double...` parameter is just a `[Double]`.",
+    "Put the real work in an array-taking overload and have the variadic version forward to it.",
+    "`func average(_ numbers: Double...) -> Double? { average(of: numbers) }`, with `numbers.isEmpty ? nil : sum / Double(count)`."
+  ]
 }

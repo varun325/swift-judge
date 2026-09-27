@@ -26,5 +26,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "To store different transformer types together, hide them behind one wrapper type.",
+    "`AnyTransformer` stores the base's `transform` method as a closure; `then` builds a new closure that runs both.",
+    "`init<T: Transformer>(_ base: T) where T.Input == In, T.Output == Out { _transform = base.transform }`."
+  ]
 }

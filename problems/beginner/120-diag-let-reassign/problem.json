@@ -14,5 +14,10 @@
       "title": "The Basics — Constants and Variables",
       "book": "LanguageGuide/TheBasics"
     }
+  ],
+  "hints": [
+    "Constants declared with `let` can never be given a new value.",
+    "Keep the `let` declaration and add a second line that assigns a different value to the same name.",
+    "Add `maxLoginAttempts = 5` on the line after the declaration."
   ]
 }

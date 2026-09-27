@@ -25,5 +25,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`willSet` sees `newValue`; `didSet` runs after the store.",
+    "Log in `willSet`; in `didSet`, clamp the property into `0...100` (this doesn't re-trigger the observers), then log the final value.",
+    "`didSet { volume = min(max(volume, 0), 100); log.append(\"did \\(volume)\") }`."
+  ]
 }

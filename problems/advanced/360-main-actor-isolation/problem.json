@@ -26,5 +26,10 @@
     ],
     "returns": "[String]",
     "async": true
-  }
+  },
+  "hints": [
+    "`@MainActor` isolates a type to the main actor; outsiders must `await`.",
+    "Mark the helper `nonisolated static`; from `uiDemo`, await the initialiser, `load`, and reading `items`.",
+    "`let vm = await ViewModel(); await vm.load(names); let items = await vm.items`."
+  ]
 }

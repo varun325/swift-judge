@@ -31,5 +31,10 @@
       }
     ],
     "returns": "Int?"
-  }
+  },
+  "hints": [
+    "Plain `+` traps on overflow. Integers have methods that report overflow instead.",
+    "`addingReportingOverflow(_:)` returns a tuple of the (wrapped) result and a `Bool` telling you whether it overflowed.",
+    "`let (sum, overflow) = a.addingReportingOverflow(b); return overflow ? nil : sum`."
+  ]
 }

@@ -28,5 +28,10 @@
       }
     ],
     "returns": "[Int]"
-  }
+  },
+  "hints": [
+    "The pattern `x?` matches only non-nil values.",
+    "Use `for case let x? in values`; count nils with `if case .none = v`.",
+    "`for case let x? in values where x > 10 { big += x }`."
+  ]
 }

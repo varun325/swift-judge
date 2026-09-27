@@ -27,5 +27,10 @@
     ],
     "returns": "Double"
   },
-  "compare": "float:1e-9"
+  "compare": "float:1e-9",
+  "hints": [
+    "Swift never mixes `Int` and `Double` implicitly — and integer division truncates.",
+    "Convert `celsius` to `Double` **before** multiplying and dividing.",
+    "`Double(celsius) * 9 / 5 + 32`."
+  ]
 }

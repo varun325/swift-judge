@@ -27,5 +27,10 @@
     ],
     "returns": "[String]",
     "throws": true
-  }
+  },
+  "hints": [
+    "`FileManager` methods throw; `defer` guarantees cleanup.",
+    "Create a UUID-named temp directory, write each file (creating parent folders), then enumerate recursively.",
+    "`for case let url as URL in enumerator` — resolve symlinks on both sides before making paths relative."
+  ]
 }

@@ -15,5 +15,10 @@
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
     }
+  ],
+  "hints": [
+    "`isKnownUniquelyReferenced(&storage)` tells you whether anyone else shares your buffer.",
+    "Keep items in a private class; before mutating, copy the storage if it's shared (and count the copy).",
+    "`if !isKnownUniquelyReferenced(&storage) { storage = Storage(storage.items); counter.copies += 1 }`."
   ]
 }

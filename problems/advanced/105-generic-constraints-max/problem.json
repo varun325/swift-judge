@@ -29,5 +29,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "Constrain the placeholder to what you need: `T: Hashable & Comparable`.",
+    "Count occurrences in a dictionary, then pick the entry with the highest count — breaking ties by the smaller key.",
+    "`counts.max { a, b in (a.value, b.key) < (b.value, a.key) }?.key`."
+  ]
 }

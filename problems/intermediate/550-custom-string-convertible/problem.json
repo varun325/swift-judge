@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "`description` is used by interpolation; `debugDescription` by `String(reflecting:)`.",
+    "Format cents as dollars with a sign and zero-padded cents; debug form is `Money(cents: n)`.",
+    "`\"\\(sign)$\\(abs / 100).\\(fraction < 10 ? \"0\" : \"\")\\(fraction)\"` using `cents.magnitude`."
+  ]
 }

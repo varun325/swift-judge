@@ -16,5 +16,10 @@
       "book": "LanguageGuide/StringsAndCharacters"
     }
   ],
-  "compare": "trimmed"
+  "compare": "trimmed",
+  "hints": [
+    "`String(repeating:count:)` builds runs of the same character.",
+    "Row `i` has `h - i` spaces and `2i - 1` stars — no trailing spaces.",
+    "`print(String(repeating: \" \", count: h - i) + String(repeating: \"*\", count: 2 * i - 1))`."
+  ]
 }

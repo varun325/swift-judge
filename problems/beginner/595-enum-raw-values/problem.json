@@ -27,5 +27,10 @@
       }
     ],
     "returns": "[String]"
-  }
+  },
+  "hints": [
+    "An enum with `Int` raw values gets a failable `init?(rawValue:)`.",
+    "Give `mercury` the raw value 1; the rest auto-increment. Map each position through the initialiser.",
+    "`Planet(rawValue: $0).map { \"\\($0)\" } ?? \"unknown\"`."
+  ]
 }
