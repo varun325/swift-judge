@@ -1,0 +1,163 @@
+[
+ {
+  "input": {
+   "nums": [
+    7,
+    10
+   ]
+  },
+  "expected": [
+   "7: prime=true digits=[7] ticks=7",
+   "10: prime=false digits=[1, 0] ticks=10"
+  ]
+ },
+ {
+  "input": {
+   "nums": []
+  }
+ },
+ {
+  "input": {
+   "nums": [
+    0,
+    1,
+    2,
+    -13,
+    97
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "nums": [
+    95
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "nums": [
+    92
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "nums": [
+    30,
+    34,
+    87,
+    -5,
+    56
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "nums": [
+    -3,
+    93
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "nums": [
+    105,
+    1,
+    46
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "nums": [
+    113,
+    45
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "nums": [
+    59,
+    66,
+    82,
+    -5
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "nums": [
+    9,
+    103,
+    30,
+    -8,
+    28
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "nums": [
+    73,
+    39,
+    24,
+    106
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "nums": [
+    71,
+    23
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "nums": [
+    -6,
+    83,
+    117,
+    25
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "nums": [
+    109,
+    12,
+    48
+   ]
+  },
+  "hidden": true
+ }
+]

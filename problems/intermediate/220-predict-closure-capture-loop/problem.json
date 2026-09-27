@@ -1,0 +1,19 @@
+{
+  "id": "predict-closure-capture-loop",
+  "title": "Predict: Closures Created in a Loop",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "capturing-values",
+    "capture-list"
+  ],
+  "mode": "predict",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Closures — Capturing Values",
+      "book": "LanguageGuide/Closures"
+    }
+  ]
+}

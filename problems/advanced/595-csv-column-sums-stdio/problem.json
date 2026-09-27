@@ -1,0 +1,19 @@
+{
+  "id": "csv-column-sums-stdio",
+  "title": "CSV Column Sums (stdin)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Standard I/O",
+  "concepts": [
+    "compactmap-flatmap",
+    "dictionary-basics",
+    "string-interpolation"
+  ],
+  "mode": "stdio",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+From your notes: `class Vehicle { let isElectric: Bool; init(isElectric:) }` and `class Car: Vehicle` with its own `let isConvertible: Bool`. In `Car`'s init, call `super.init(isElectric:)` **before** assigning `self.isConvertible`. You pass when the compiler rejects it.

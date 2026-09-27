@@ -1,0 +1,36 @@
+{
+  "id": "sort-by-keypath",
+  "title": "Sort by Any Key Path",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Closures",
+  "concepts": [
+    "key-paths",
+    "sort-custom",
+    "generics"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Expressions — Key-Path Expression",
+      "book": "ReferenceManual/Expressions"
+    }
+  ],
+  "signature": {
+    "name": "sortPeople",
+    "params": [
+      {
+        "name": "rows",
+        "type": "[[String]]",
+        "label": "_"
+      },
+      {
+        "name": "key",
+        "type": "String",
+        "label": "by"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

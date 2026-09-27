@@ -1,0 +1,34 @@
+{
+  "id": "stride-countdown",
+  "title": "Countdown with stride",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Ranges",
+  "concepts": [
+    "stride",
+    "half-open-range"
+  ],
+  "mode": "function",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Control Flow — For-In Loops",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "countdown",
+    "params": [
+      {
+        "name": "start",
+        "type": "Int",
+        "label": "from"
+      },
+      {
+        "name": "step",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

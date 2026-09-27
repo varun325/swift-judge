@@ -1,0 +1,1 @@
+Iterating a dictionary yields `(key, value)` tuples you can destructure. Because iteration order is **unspecified** (and changes between runs), the sort is what makes the output deterministic. `mapValues` keeps keys and transforms values.

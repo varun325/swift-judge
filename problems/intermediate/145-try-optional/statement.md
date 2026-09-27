@@ -1,0 +1,1 @@
+Write `func divide(_ a: Int, by b: Int) throws -> Int` that throws a `DivisionError.byZero` when `b == 0` (and also throws `.overflow` for `Int.min / -1`, which would trap). `safeDivisions` returns `try? divide(...)` for each `[a, b]` pair.

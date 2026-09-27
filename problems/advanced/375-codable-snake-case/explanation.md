@@ -1,0 +1,1 @@
+With `.convertFromSnakeCase`, the decoder converts JSON keys to camelCase **before** matching `CodingKeys` raw values — so custom raw values must be written in the converted form (`"e-mail"` has no underscore, so it passes through unchanged). Optional properties decode missing keys as `nil`.

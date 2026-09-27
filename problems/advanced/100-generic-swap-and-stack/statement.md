@@ -1,0 +1,1 @@
+Write `struct Stack<Element>` with `push`, `pop() -> Element?`, `peek: Element?` and `isEmpty`. Push all `ints` onto an `Stack<Int>` and all `words` onto a `Stack<String>`, then pop everything from each and return the popped values as strings (ints first, then words).

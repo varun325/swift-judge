@@ -1,0 +1,1 @@
+Swift 6 turns data-race warnings into **errors**: a non-Sendable class instance can't be sent into a concurrently executing task while still being used locally (*sending 'counter' risks causing data races*). The fix is an actor, a `Sendable` type, or not sharing.

@@ -1,0 +1,1 @@
+`catch` clauses pattern-match top to bottom like `switch` cases; a clause can list **several patterns** and bind associated values. A final bare `catch` (with implicit `error`) is needed because Swift can't prove untyped throws exhaustive.

@@ -1,0 +1,20 @@
+{
+  "id": "design-min-stack",
+  "title": "Design: Min Stack (struct)",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Structs",
+  "concepts": [
+    "mutating",
+    "generics",
+    "optionals"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Generics — Generic Types",
+      "book": "LanguageGuide/Generics"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "caesar-cipher",
+  "title": "Caesar Cipher",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters — Unicode Scalars",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "caesar",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      },
+      {
+        "name": "shift",
+        "type": "Int"
+      }
+    ],
+    "returns": "String"
+  }
+}

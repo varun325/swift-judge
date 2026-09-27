@@ -1,0 +1,33 @@
+{
+  "id": "retain-cycle-parent-child",
+  "title": "Break a Retain Cycle with weak",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Memory management",
+  "concepts": [
+    "retain-cycle",
+    "weak-unowned",
+    "arc",
+    "deinit",
+    "memory-leaks"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "ARC — Strong Reference Cycles Between Class Instances",
+      "book": "LanguageGuide/AutomaticReferenceCounting"
+    }
+  ],
+  "signature": {
+    "name": "cycleDemo",
+    "params": [
+      {
+        "name": "childNames",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

@@ -1,0 +1,1 @@
+Overloads share a base name but differ in parameter types, labels or return type; resolution happens **at compile time**. Note `ints.map(describe)` — passing an overloaded function by name works because the expected type `(Int) -> String` disambiguates it.

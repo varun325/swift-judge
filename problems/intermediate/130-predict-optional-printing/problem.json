@@ -1,0 +1,21 @@
+{
+  "id": "predict-optional-printing",
+  "title": "Predict: Printing Optionals",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "optionals",
+    "implicitly-unwrapped",
+    "nil-coalescing",
+    "nil-vs-null"
+  ],
+  "mode": "predict",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "The Basics — Optionals",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ]
+}

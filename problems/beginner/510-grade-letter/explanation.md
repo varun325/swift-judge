@@ -1,0 +1,1 @@
+Range patterns match through `~=`. Since Swift 5.9 a `switch` is an **expression**: each case yields a value, so the function body is one expression with an implicit return. `default` is required — `Int` has more values than your cases cover.

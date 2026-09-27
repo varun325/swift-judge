@@ -1,0 +1,1 @@
+Nesting `Suit` and `Rank` inside `Card` scopes their names (`Card.Suit`) to where they belong. Raw values can be `Character`s. `max(by:)` with ties returns the **last** of the equal maximal elements — a detail worth checking whenever ties matter, and a reason to make comparisons total (e.g. break ties by suit).

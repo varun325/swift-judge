@@ -1,0 +1,217 @@
+[
+ {
+  "input": {
+   "words": [
+    "eat",
+    "tea",
+    "tan",
+    "ate",
+    "nat",
+    "bat"
+   ]
+  }
+ },
+ {
+  "input": {
+   "words": []
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "a"
+   ]
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "abc",
+    "bca",
+    "cab",
+    "xyz",
+    "zyx",
+    "q"
+   ]
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "",
+    ""
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "words": [
+    "bca",
+    "tan",
+    "bca",
+    "nat",
+    "cab"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "words": [
+    "bca",
+    "tea",
+    "eat",
+    "bca",
+    "bat",
+    "bca",
+    "cab",
+    "z",
+    "nat",
+    "tea"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "words": [
+    "bca",
+    "nat",
+    "bat",
+    "tan"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "words": [
+    "z",
+    "tab",
+    "tea",
+    "tea",
+    "ate",
+    "z"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "words": [
+    "tab",
+    "abc",
+    "cab",
+    "cab",
+    "tan"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "words": [
+    "nat",
+    "bat",
+    "tea",
+    "tan",
+    "bca"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "words": [
+    "eat",
+    "eat",
+    "z",
+    "tan",
+    "bat",
+    "bat",
+    "bat",
+    "nat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "words": [
+    "abc",
+    "ate",
+    "tea",
+    "cab"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "words": [
+    "cab",
+    "abc",
+    "cab",
+    "bat",
+    "ate",
+    "cab",
+    "nat",
+    "tea",
+    "z",
+    "bca"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "words": [
+    "bat",
+    "bca",
+    "eat",
+    "bca",
+    "bat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "words": [
+    "tan",
+    "z",
+    "nat",
+    "cab",
+    "eat",
+    "nat",
+    "ate",
+    "nat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "words": [
+    "nat",
+    "nat",
+    "tab",
+    "tab"
+   ]
+  },
+  "hidden": true
+ }
+]

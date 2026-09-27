@@ -1,0 +1,271 @@
+[
+ {
+  "input": {
+   "words": [
+    "i",
+    "love",
+    "leetcode",
+    "i",
+    "love",
+    "coding"
+   ],
+   "k": 2
+  },
+  "expected": [
+   "i",
+   "love"
+  ]
+ },
+ {
+  "input": {
+   "words": [
+    "the",
+    "day",
+    "is",
+    "sunny",
+    "the",
+    "the",
+    "the",
+    "sunny",
+    "is",
+    "is"
+   ],
+   "k": 4
+  }
+ },
+ {
+  "input": {
+   "words": [],
+   "k": 3
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "b",
+    "a",
+    "c"
+   ],
+   "k": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "words": [
+    "swift",
+    "tea",
+    "apple",
+    "tan",
+    "tea",
+    "tea",
+    "tan",
+    "nat",
+    "tan",
+    "tea",
+    "ate"
+   ],
+   "k": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "words": [
+    "apple",
+    "swift",
+    "nat",
+    "tea",
+    "apple",
+    "apple",
+    "eat",
+    "swift",
+    "ate",
+    "ate"
+   ],
+   "k": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "words": [
+    "apple",
+    "code",
+    "ate",
+    "ate",
+    "eat",
+    "ate",
+    "swift",
+    "tea",
+    "swift",
+    "code",
+    "eat",
+    "tea",
+    "apple",
+    "code"
+   ],
+   "k": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "words": [
+    "eat",
+    "nat",
+    "swift",
+    "ate",
+    "ate",
+    "tea",
+    "nat"
+   ],
+   "k": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "words": [
+    "swift",
+    "ate",
+    "code",
+    "tea",
+    "apple",
+    "swift",
+    "code",
+    "tea",
+    "nat",
+    "swift",
+    "nat",
+    "tan",
+    "swift",
+    "nat"
+   ],
+   "k": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "words": [
+    "code",
+    "tan",
+    "eat",
+    "swift",
+    "tea",
+    "swift",
+    "code",
+    "ate"
+   ],
+   "k": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "words": [
+    "tan",
+    "nat",
+    "swift",
+    "tea",
+    "swift",
+    "tea"
+   ],
+   "k": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "words": [
+    "tan"
+   ],
+   "k": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "words": [
+    "tan",
+    "nat",
+    "apple",
+    "code",
+    "eat",
+    "eat",
+    "code",
+    "nat",
+    "swift"
+   ],
+   "k": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "words": [
+    "nat",
+    "ate",
+    "tan",
+    "code",
+    "code",
+    "swift",
+    "eat",
+    "swift",
+    "nat",
+    "nat",
+    "swift",
+    "tea",
+    "swift",
+    "swift",
+    "swift"
+   ],
+   "k": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "words": [
+    "tea",
+    "nat",
+    "apple",
+    "nat"
+   ],
+   "k": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "words": [
+    "swift",
+    "tea",
+    "tea",
+    "apple",
+    "apple",
+    "code",
+    "ate",
+    "tan",
+    "nat",
+    "code",
+    "apple"
+   ],
+   "k": 7
+  },
+  "hidden": true
+ }
+]

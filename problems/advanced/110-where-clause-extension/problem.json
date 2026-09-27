@@ -1,0 +1,36 @@
+{
+  "id": "where-clause-extension",
+  "title": "Constrained Extensions with where",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Generics",
+  "concepts": [
+    "where-clause",
+    "generic-constraints",
+    "extensions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Extensions with a Generic Where Clause",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "statsDemo",
+    "params": [
+      {
+        "name": "ints",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "doubles",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9"
+}

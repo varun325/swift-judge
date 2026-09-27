@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Exclusivity violation reported",
+  "pattern": "overlapping accesses|not allowed to alias"
+ }
+]

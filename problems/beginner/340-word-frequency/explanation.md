@@ -1,0 +1,1 @@
+`dict[key, default: 0] += 1` is *the* counting idiom — it reads the default when the key is missing and writes back in one step. Alternatively: `Dictionary(words.map { ($0, 1) }, uniquingKeysWith: +)`. Dictionaries are unordered, so the judge compares them as JSON objects.

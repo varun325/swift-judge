@@ -1,0 +1,30 @@
+{
+  "id": "number-of-islands",
+  "title": "Number of Islands (BFS)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "inout",
+    "array-basics",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "numIslands",
+    "params": [
+      {
+        "name": "grid",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

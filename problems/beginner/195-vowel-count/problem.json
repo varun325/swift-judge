@@ -1,0 +1,30 @@
+{
+  "id": "vowel-count",
+  "title": "Count Vowels with a Set",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections",
+    "set-vs-array"
+  ],
+  "mode": "function",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "vowelCount",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

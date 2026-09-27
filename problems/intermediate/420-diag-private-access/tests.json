@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Access denied",
+  "pattern": "inaccessible due to 'private' protection level"
+ }
+]

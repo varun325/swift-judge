@@ -1,0 +1,30 @@
+{
+  "id": "second-largest",
+  "title": "Second Largest Distinct",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Arrays",
+  "concepts": [
+    "array-basics",
+    "optionals"
+  ],
+  "mode": "function",
+  "notesRef": "6",
+  "docs": [
+    {
+      "title": "Collection Types — Arrays",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "secondLargest",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int?"
+  }
+}

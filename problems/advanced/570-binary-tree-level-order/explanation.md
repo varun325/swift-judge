@@ -1,0 +1,1 @@
+Nested patterns like `.node(.empty, let v, .empty)` match leaves directly. Since `indirect` enums are immutable values, you first compute the child positions (the level-order queue), then build recursively from the leaves up. `values.first ?? nil` flattens a `Int??`.

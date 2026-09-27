@@ -1,0 +1,31 @@
+{
+  "id": "memoization",
+  "title": "Memoize Any Function",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Design patterns",
+  "concepts": [
+    "caching",
+    "closures",
+    "generics",
+    "capturing-values"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Closures — Capturing Values",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "memoDemo",
+    "params": [
+      {
+        "name": "n",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

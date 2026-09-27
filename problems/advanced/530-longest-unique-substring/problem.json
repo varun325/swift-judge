@@ -1,0 +1,29 @@
+{
+  "id": "longest-unique-substring",
+  "title": "Longest Substring Without Repeats",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "dictionary-basics",
+    "strings-are-collections"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "lengthOfLongestSubstring",
+    "params": [
+      {
+        "name": "s",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

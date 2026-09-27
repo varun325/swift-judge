@@ -1,0 +1,30 @@
+{
+  "id": "default-parameters",
+  "title": "Default Parameter Values",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Functions",
+  "concepts": [
+    "default-params",
+    "functions-basics"
+  ],
+  "mode": "function",
+  "notesRef": "18",
+  "docs": [
+    {
+      "title": "Functions — Default Parameter Values",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "greetAll",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

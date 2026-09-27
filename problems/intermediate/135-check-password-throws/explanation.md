@@ -1,0 +1,1 @@
+Errors are ordinary values of types conforming to `Error`; enums fit because failure modes are a closed set. `throws` marks the function, `throw` raises, and callers must `try`. Note `"12345"` is 5 characters, so it passes the length check and hits `.obvious`.

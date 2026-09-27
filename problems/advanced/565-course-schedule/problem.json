@@ -1,0 +1,34 @@
+{
+  "id": "course-schedule",
+  "title": "Topological Sort: Course Order",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "dictionary-basics",
+    "array-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "courseOrder",
+    "params": [
+      {
+        "name": "numCourses",
+        "type": "Int",
+        "label": "_"
+      },
+      {
+        "name": "prerequisites",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "top-k-frequent",
+  "title": "Top K Frequent Words",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "dictionary-basics",
+    "sort-custom",
+    "tuple-comparison"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "topKFrequent",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "k",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

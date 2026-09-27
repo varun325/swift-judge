@@ -1,0 +1,58 @@
+[
+ {
+  "input": {
+   "maxPrice": 4
+  },
+  "expected": [
+   "espresso",
+   "latte",
+   "cappuccino"
+  ]
+ },
+ {
+  "input": {
+   "maxPrice": 1
+  }
+ },
+ {
+  "input": {
+   "maxPrice": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "maxPrice": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "maxPrice": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "maxPrice": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "maxPrice": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "maxPrice": 6
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+Write `func mostFrequent<T: Hashable & Comparable>(_ items: [T]) -> T?` returning the most frequent element — ties broken by the **smallest** value. Return `[mostFrequent(ints) as String, mostFrequent(words)]`, using `"none"` for `nil`.

@@ -1,0 +1,113 @@
+[
+ {
+  "input": {
+   "text": "The cat and the hat."
+  },
+  "expected": {
+   "the": 2,
+   "cat": 1,
+   "and": 1,
+   "hat": 1
+  }
+ },
+ {
+  "input": {
+   "text": ""
+  }
+ },
+ {
+  "input": {
+   "text": "Go go GO! gopher"
+  }
+ },
+ {
+  "input": {
+   "text": "it's 2 o'clock"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "protocol tea"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "async. await. ate. heap. await. protocol. protocol. tan. tea. eat. filter"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "eat ios noon reduce tea"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "mac mac async"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "await 42 enum 42 mac 42 mac 42 noon 42 async 42 reduce 42 struct 42 trie 42 swift 42 queue"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "queue apple swift async nat filter filter queue ios map"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "class, map, a, mac, tea, mac"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "eat noon ios async ios stack"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "stack. a. trie. heap. queue"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": "async 42 heap 42 stack 42 closure 42 bb 42 await 42 trie"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "map. stack. code. tan. apple"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "apple 42 a 42 swift 42 bb 42 closure 42 apple 42 stack"
+  },
+  "hidden": true
+ }
+]

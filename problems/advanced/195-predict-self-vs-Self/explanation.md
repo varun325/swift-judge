@@ -1,0 +1,1 @@
+`type(of: self)` and `Self` both resolve to the **runtime** type, so a `Dog` stored in an `Animal` variable describes and clones itself as a `Dog`. `Self()` requires a `required init` so every subclass can be constructed that way.

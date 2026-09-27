@@ -1,0 +1,1 @@
+Subscripts can take several parameters (`m[1, 2]`) and have getters and setters, so `out[i, j] += …` works. `precondition` stays on in release builds (unlike `assert`), giving a clear message instead of silent corruption.

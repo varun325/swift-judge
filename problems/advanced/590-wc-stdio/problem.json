@@ -1,0 +1,18 @@
+{
+  "id": "wc-stdio",
+  "title": "Word Count Clone (stdin)",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Standard I/O",
+  "concepts": [
+    "strings-are-collections",
+    "for-in"
+  ],
+  "mode": "stdio",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ]
+}

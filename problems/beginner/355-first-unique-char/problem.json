@@ -1,0 +1,30 @@
+{
+  "id": "first-unique-char",
+  "title": "First Unique Character",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics",
+    "strings-are-collections"
+  ],
+  "mode": "function",
+  "notesRef": "7",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "firstUniqueIndex",
+    "params": [
+      {
+        "name": "s",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

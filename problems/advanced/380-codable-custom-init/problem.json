@@ -1,0 +1,30 @@
+{
+  "id": "codable-custom-init",
+  "title": "Custom init(from:) for Messy JSON",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "codable-keys",
+    "error-handling"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    }
+  ],
+  "signature": {
+    "name": "decodeProducts",
+    "params": [
+      {
+        "name": "json",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

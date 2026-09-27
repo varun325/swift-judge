@@ -1,0 +1,29 @@
+{
+  "id": "contains-duplicate",
+  "title": "Contains Duplicate",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Sets",
+  "concepts": [
+    "set-vs-array"
+  ],
+  "mode": "function",
+  "notesRef": "8",
+  "docs": [
+    {
+      "title": "Collection Types — Sets",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "containsDuplicate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "Bool"
+  }
+}

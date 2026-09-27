@@ -1,0 +1,1 @@
+A `typealias` is just another name — `Grid` **is** `[[Int]]`, so `neighbours` can pass its `[[Int]]` straight in. Aliases shine for tuple types and closure types (`typealias Handler = (Result<Data, Error>) -> Void`). For a genuinely distinct type, use a struct.

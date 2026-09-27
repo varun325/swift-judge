@@ -1,0 +1,1 @@
+Phase 1 initialises every stored property from the subclass **up**; only after `super.init` returns (phase 2) may you use `self`. Swapping the order is rejected — your notes recorded the exact wording from Swift 6.4.

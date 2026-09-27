@@ -1,0 +1,1 @@
+`container(keyedBy:)` gives keyed access; `nestedContainer` steps into sub-objects; `decodeIfPresent` handles optional keys. Trying one type then another with `try?` absorbs inconsistent APIs. `DecodingError`'s cases tell you exactly what went wrong and where (`codingPath`). `@unknown default` handles cases added in future SDKs.

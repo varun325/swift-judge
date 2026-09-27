@@ -1,0 +1,1 @@
+`0..<5` is a `Range<Int>` and `0...5` is a `ClosedRange<Int>` — **different types**, so the compiler rejects the mismatch. (By contrast, `5...0` has the right type and only traps at *runtime*: *Range requires lowerBound <= upperBound*.)

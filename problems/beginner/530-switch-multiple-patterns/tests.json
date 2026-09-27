@@ -1,0 +1,114 @@
+[
+ {
+  "input": {
+   "text": "Hi 5!"
+  },
+  "expected": [
+   "consonant",
+   "vowel",
+   "space",
+   "digit",
+   "other"
+  ]
+ },
+ {
+  "input": {
+   "text": ""
+  }
+ },
+ {
+  "input": {
+   "text": "AEIOUxyz"
+  }
+ },
+ {
+  "input": {
+   "text": "ß9 é"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "x"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "l,TgnGNRv🦅qq"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "SuJms"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "0GuuDPsCWsXj"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "Jé"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "Yh,gr UQ"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "BkIuCblNwE"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "Vnu0xqaulU0"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "ZYn"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": "pOBKdeNvRsV"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "kEU"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "ECNWM"
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,19 @@
+{
+  "id": "predict-static-dispatch-trap",
+  "title": "Predict: Protocol Extension Dispatch Trap",
+  "track": "intermediate",
+  "difficulty": "hard",
+  "topic": "Protocols",
+  "concepts": [
+    "method-dispatch",
+    "protocol-extension"
+  ],
+  "mode": "predict",
+  "notesRef": "24",
+  "docs": [
+    {
+      "title": "Protocols — Protocol Extensions",
+      "book": "LanguageGuide/Protocols"
+    }
+  ]
+}

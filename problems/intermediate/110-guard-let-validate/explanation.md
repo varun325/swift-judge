@@ -1,0 +1,1 @@
+`guard` inverts the logic: state what must be true, exit otherwise. Bindings made by `guard let` remain in scope **after** the guard — unlike `if let`. `omittingEmptySubsequences: false` keeps empty pieces so `"@x"` is detected.

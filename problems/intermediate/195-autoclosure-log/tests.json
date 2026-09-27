@@ -1,0 +1,50 @@
+[
+ {
+  "input": {
+   "level": 1
+  },
+  "expected": [
+   "computed B",
+   "LOG msg B"
+  ]
+ },
+ {
+  "input": {
+   "level": 2
+  }
+ },
+ {
+  "input": {
+   "level": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "level": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "level": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "level": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "level": -1
+  },
+  "hidden": true
+ }
+]

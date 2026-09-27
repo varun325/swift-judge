@@ -1,0 +1,144 @@
+[
+ {
+  "input": {
+   "text": "Swift",
+   "offset": 1
+  },
+  "expected": "w"
+ },
+ {
+  "input": {
+   "text": "abc",
+   "offset": 3
+  },
+  "expected": null
+ },
+ {
+  "input": {
+   "text": "🇮🇳ok",
+   "offset": 0
+  }
+ },
+ {
+  "input": {
+   "text": "abc",
+   "offset": -1
+  }
+ },
+ {
+  "input": {
+   "text": "",
+   "offset": 0
+  }
+ },
+ {
+  "input": {
+   "text": "héllo",
+   "offset": 1
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "text": "abc",
+   "offset": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "kvOizéf",
+   "offset": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "0",
+   "offset": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": ".,OVvQMZei",
+   "offset": 11
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "E",
+   "offset": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "Wt",
+   "offset": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "O🦅PI",
+   "offset": -1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "",
+   "offset": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "o",
+   "offset": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "",
+   "offset": -1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": "",
+   "offset": -2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "Zx?s K",
+   "offset": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "olO",
+   "offset": 0
+  },
+  "hidden": true
+ }
+]

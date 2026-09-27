@@ -1,0 +1,1 @@
+A property wrapper moves "how this property is stored" into a reusable type. `@Clamped(0...100) var volume = 50` calls `init(wrappedValue: 50, 0...100)`. The `projectedValue` is exposed with a `$` prefix — that's how SwiftUI's `$binding` works. (`trimmingCharacters` comes from Foundation.)

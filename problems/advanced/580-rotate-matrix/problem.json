@@ -1,0 +1,30 @@
+{
+  "id": "rotate-matrix",
+  "title": "Rotate an Image In Place",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "inout",
+    "array-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Functions — In-Out Parameters",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "rotate",
+    "params": [
+      {
+        "name": "matrix",
+        "type": "[[Int]]",
+        "inout": true,
+        "label": "_"
+      }
+    ],
+    "returns": "Void"
+  }
+}

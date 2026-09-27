@@ -1,0 +1,1 @@
+Phantom type parameters tag values at compile time with **zero runtime cost**. `Length<Meters>` and `Length<Feet>` are different types, so mixing units (the Mars Climate Orbiter bug) is a type error rather than a crash in orbit. Same trick: `ID<User>` vs `ID<Order>`.

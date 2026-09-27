@@ -1,0 +1,35 @@
+{
+  "id": "protocol-composition-delegate",
+  "title": "Delegation with a Weak Delegate",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Protocols",
+  "concepts": [
+    "delegation",
+    "protocol-composition",
+    "weak-unowned"
+  ],
+  "mode": "function",
+  "notesRef": "23",
+  "docs": [
+    {
+      "title": "Protocols — Delegation",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "downloadDemo",
+    "params": [
+      {
+        "name": "files",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "keepDelegate",
+        "type": "Bool"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

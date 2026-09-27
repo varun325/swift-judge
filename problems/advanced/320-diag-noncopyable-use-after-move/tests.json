@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Use after move rejected",
+  "pattern": "consumed|after consume|used after"
+ }
+]

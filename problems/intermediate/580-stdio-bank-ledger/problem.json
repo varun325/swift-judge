@@ -1,0 +1,20 @@
+{
+  "id": "stdio-bank-ledger",
+  "title": "Bank Ledger (stdin)",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "error-handling",
+    "multi-pattern-catch",
+    "guard"
+  ],
+  "mode": "stdio",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ]
+}

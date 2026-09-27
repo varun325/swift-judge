@@ -1,0 +1,1 @@
+One-sided ranges slice from an index to the end (`nums[i...]`) or from the start (`nums[..<i]`). Slices are `ArraySlice`s — views sharing storage — and `+` concatenates them. Guard against `% 0`, which traps.

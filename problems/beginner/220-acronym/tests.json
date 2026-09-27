@@ -1,0 +1,114 @@
+[
+ {
+  "input": {
+   "phrase": "Portable Network Graphics"
+  },
+  "expected": "PNG"
+ },
+ {
+  "input": {
+   "phrase": "Complementary metal-oxide semiconductor"
+  },
+  "expected": "CMOS"
+ },
+ {
+  "input": {
+   "phrase": ""
+  }
+ },
+ {
+  "input": {
+   "phrase": "  as soon   as possible "
+  }
+ },
+ {
+  "input": {
+   "phrase": "ruby on-rails"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "phrase": "a"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "phrase": "reduce  code  queue  apple  stack  code"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "phrase": "mac"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "phrase": "trie-bat-noon"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "phrase": "a - mac - swift - await"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "phrase": "a zc"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "phrase": "closure  heap  bat  eat"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "phrase": "noon noon"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "phrase": "bat-struct-class-ate-struct-map"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "phrase": "ntody  tea"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "phrase": "reduce - b"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "phrase": "eat - apple - async - ate"
+  },
+  "hidden": true
+ }
+]

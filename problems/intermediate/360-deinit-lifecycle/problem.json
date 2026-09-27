@@ -1,0 +1,31 @@
+{
+  "id": "deinit-lifecycle",
+  "title": "deinit and Object Lifetime",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "deinit",
+    "arc",
+    "arc-vs-gc"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Deinitialization",
+      "book": "LanguageGuide/Deinitialization"
+    }
+  ],
+  "signature": {
+    "name": "lifecycle",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

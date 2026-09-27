@@ -1,0 +1,1 @@
+`T: Hashable & Comparable` composes two constraints — `Hashable` for dictionary keys, `Comparable` for tie-breaking. The tuple comparison `(count, -key)` trick is expressed as `(a.value, b.key) < (b.value, a.key)` so a *smaller* key wins ties.

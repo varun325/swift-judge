@@ -1,0 +1,1 @@
+`Collection` requires four members; everything else is a default implementation in protocol extensions. Logical positions `0..<count` map to physical slots `(head + i) % count`, hiding the wraparound. `dropFirst()` returns a `Slice<RingBuffer>` sharing the same indices.

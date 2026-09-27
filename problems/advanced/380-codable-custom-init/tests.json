@@ -1,0 +1,88 @@
+[
+ {
+  "input": {
+   "json": "[{\"info\":{\"name\":\"Pen\"},\"price\":\"1.5\"},{\"info\":{\"name\":\"Ink\"},\"price\":2.999,\"tags\":[\"a\",\"b\"]}]"
+  },
+  "expected": [
+   "Pen 150 []",
+   "Ink 300 [a,b]"
+  ]
+ },
+ {
+  "input": {
+   "json": "[{\"price\":1}]"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"info\":{\"name\":\"X\"},\"price\":true}]"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"info\":{\"name\":\"X\"},\"price\":\"abc\"}]"
+  }
+ },
+ {
+  "input": {
+   "json": "{"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "json": "[{\"info\": {\"name\": \"Yywpcc\"}, \"price\": 51.09, \"tags\": [\"u\"]}, {\"price\": \"abc\", \"tags\": [\"b\", \"zc\", \"qa\"]}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "json": "[{\"info\": {\"name\": \"Uyolf\"}, \"price\": \"abc\", \"tags\": []}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "json": "[{\"info\": {\"name\": \"Edwfm\"}, \"price\": \"75.2\", \"tags\": [\"wq\", \"iuv\", \"pl\"]}, {\"info\": {\"name\": \"Vzff\"}, \"price\": \"84.19\"}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "json": "[{\"info\": {\"name\": \"Kbqc\"}, \"price\": 96.34}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "json": "[]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "json": "[{\"info\": {\"name\": \"Wfbza\"}, \"price\": \"93.83\", \"tags\": [\"p\", \"ad\"]}, {\"info\": {\"name\": \"Dhiumn\"}, \"price\": \"61.14\", \"tags\": [\"qrt\", \"x\", \"pty\"]}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "json": "[{\"price\": \"abc\", \"tags\": [\"kn\", \"rp\", \"ly\"]}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "json": "[{\"info\": {\"name\": \"Fpgj\"}, \"price\": 75.18}, {\"info\": {\"name\": \"Jgwsoj\"}, \"price\": \"69.82\"}]"
+  },
+  "hidden": true
+ }
+]

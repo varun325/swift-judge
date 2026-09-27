@@ -1,0 +1,30 @@
+{
+  "id": "keypath-writable",
+  "title": "WritableKeyPath Updates",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Advanced features",
+  "concepts": [
+    "key-paths",
+    "generics",
+    "inout"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Expressions — Key-Path Expression",
+      "book": "ReferenceManual/Expressions"
+    }
+  ],
+  "signature": {
+    "name": "applyUpdates",
+    "params": [
+      {
+        "name": "updates",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

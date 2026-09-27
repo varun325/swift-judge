@@ -1,0 +1,31 @@
+{
+  "id": "convenience-init",
+  "title": "Designated vs Convenience Initialisers",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "convenience-init",
+    "initializer-delegation",
+    "failable-init"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Initialization — Initializer Delegation for Class Types",
+      "book": "LanguageGuide/Initialization"
+    }
+  ],
+  "signature": {
+    "name": "makeColors",
+    "params": [
+      {
+        "name": "specs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

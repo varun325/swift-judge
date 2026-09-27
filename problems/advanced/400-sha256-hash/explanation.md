@@ -1,0 +1,1 @@
+`SHA256.hash(data:)` returns a digest that's a `Sequence` of bytes; hex-encode with `%02x`. `hashValue` / `Hasher` are randomly seeded **per process** (to resist hash-flooding) — the same string hashes differently on each run, and it isn't cryptographically secure.

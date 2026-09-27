@@ -1,0 +1,199 @@
+[
+ {
+  "input": {
+   "grades": {
+    "ana": "A",
+    "bo": "B",
+    "cy": "A"
+   }
+  },
+  "expected": {
+   "A": [
+    "ana",
+    "cy"
+   ],
+   "B": [
+    "bo"
+   ]
+  }
+ },
+ {
+  "input": {
+   "grades": {}
+  }
+ },
+ {
+  "input": {
+   "grades": {
+    "z": "C",
+    "y": "C",
+    "x": "C"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "grades": {
+    "lqi": "A",
+    "avd": "A",
+    "wmcl": "B",
+    "hyei": "D",
+    "fm": "B",
+    "qr": "F",
+    "ep": "B",
+    "rki": "F"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "grades": {
+    "gvsd": "B"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "grades": {
+    "fycq": "B",
+    "ih": "D",
+    "rmfx": "C",
+    "lauv": "B",
+    "ardr": "D",
+    "lvm": "D",
+    "ixnyo": "B"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "grades": {
+    "kqosg": "D",
+    "slq": "F",
+    "kbebm": "D",
+    "lxnkb": "C",
+    "vkci": "C",
+    "kkw": "A",
+    "tzf": "F",
+    "cc": "B"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "grades": {
+    "pmr": "C",
+    "zvd": "A",
+    "jvv": "D",
+    "odb": "C",
+    "trxig": "D"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "grades": {
+    "qeb": "B",
+    "yzv": "B",
+    "cyr": "D",
+    "dphcv": "C",
+    "xpzk": "F",
+    "cwr": "C",
+    "qib": "F"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "grades": {
+    "ndlc": "C",
+    "jj": "D",
+    "kvbbi": "C",
+    "sl": "B",
+    "ra": "F",
+    "grmma": "B",
+    "bl": "B",
+    "cbrh": "F"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "grades": {
+    "vzxaa": "F",
+    "iop": "D",
+    "nlmcu": "D",
+    "zq": "B",
+    "cpa": "D",
+    "cguk": "D",
+    "qbb": "F",
+    "hkazi": "F"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "grades": {
+    "bbl": "B",
+    "grpek": "F",
+    "lhat": "C",
+    "mslc": "A",
+    "rr": "B",
+    "qjy": "B",
+    "op": "D"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "grades": {
+    "tmt": "A",
+    "cexuy": "B",
+    "idbr": "B",
+    "vj": "F"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "grades": {
+    "tedi": "B"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "grades": {
+    "da": "F",
+    "bl": "B",
+    "hd": "B",
+    "ke": "B"
+   }
+  },
+  "hidden": true
+ }
+]

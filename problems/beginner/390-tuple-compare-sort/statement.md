@@ -1,0 +1,1 @@
+Each entry is `[name, points, wins]` (numbers as strings). Return names sorted by **points descending**, then **wins descending**, then **name ascending** — compare tuples instead of writing nested `if`s.

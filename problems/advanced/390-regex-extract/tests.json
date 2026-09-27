@@ -1,0 +1,106 @@
+[
+ {
+  "input": {
+   "text": "Due 2024-03-15, moved to 2024-13-01 then 2025-01-02."
+  },
+  "expected": [
+   "15/03/2024",
+   "02/01/2025"
+  ]
+ },
+ {
+  "input": {
+   "text": ""
+  }
+ },
+ {
+  "input": {
+   "text": "2024-02-30 and 1999-12-31 and 12024-01-01"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "2025-10-09 vlzozjlh dqwvb 91"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "eie 1991-00-21 37 2009-08-03"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "ykoltivp 1990-10-06 2024-01-14"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "27 zygxw 2 1999-07-25"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "2010-08-33 2022-09-07"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "2015-05-04 a mpfdx h vpv"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "jnwkxvzp"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "qti 44 1992-07-04 87"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "2010-02-33 2030-03-24 lqmljsu txgc 1995-03-25"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": "63 2012-11-10 73 roav 2020-10-07"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "xkfy"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "sryhy 25"
+  },
+  "hidden": true
+ }
+]

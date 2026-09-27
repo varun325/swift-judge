@@ -1,0 +1,80 @@
+[
+ {
+  "input": {
+   "kinds": [
+    "shape",
+    "circle"
+   ]
+  },
+  "expected": [
+   "shape/geometry",
+   "circle/geometry"
+  ]
+ },
+ {
+  "input": {
+   "kinds": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "kinds": [
+    "shape",
+    "circle",
+    "circle",
+    "circle",
+    "shape"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "kinds": [
+    "shape",
+    "shape",
+    "shape",
+    "circle"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "kinds": [
+    "circle",
+    "shape",
+    "shape",
+    "circle",
+    "circle"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "kinds": [
+    "shape",
+    "shape"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "kinds": [
+    "shape",
+    "circle",
+    "shape",
+    "circle",
+    "circle"
+   ]
+  },
+  "hidden": true
+ }
+]

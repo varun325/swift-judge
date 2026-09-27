@@ -1,0 +1,18 @@
+{
+  "id": "diag-weak-let",
+  "title": "Diagnostic: weak Must Be an Optional var",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Memory management",
+  "concepts": [
+    "weak-unowned"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "ARC — Weak References",
+      "book": "LanguageGuide/AutomaticReferenceCounting"
+    }
+  ]
+}

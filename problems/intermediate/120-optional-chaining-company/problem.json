@@ -1,0 +1,29 @@
+{
+  "id": "optional-chaining-company",
+  "title": "Optional Chaining Through a Model",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "optional-chaining"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "Optional Chaining",
+      "book": "LanguageGuide/OptionalChaining"
+    }
+  ],
+  "signature": {
+    "name": "ceoCityLengths",
+    "params": [
+      {
+        "name": "records",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int?]"
+  }
+}

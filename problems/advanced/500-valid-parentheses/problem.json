@@ -1,0 +1,30 @@
+{
+  "id": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Algorithms",
+  "concepts": [
+    "switch-statement",
+    "array-basics",
+    "dictionary-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "isValid",
+    "params": [
+      {
+        "name": "s",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "Bool"
+  }
+}

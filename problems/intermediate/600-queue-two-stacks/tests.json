@@ -1,0 +1,237 @@
+[
+ {
+  "input": {
+   "ops": [
+    "enqueue 1",
+    "enqueue 2",
+    "peek",
+    "dequeue",
+    "enqueue 3",
+    "count",
+    "dequeue",
+    "dequeue",
+    "dequeue"
+   ]
+  },
+  "expected": [
+   null,
+   null,
+   1,
+   1,
+   null,
+   2,
+   2,
+   3,
+   null
+  ]
+ },
+ {
+  "input": {
+   "ops": [
+    "dequeue",
+    "peek",
+    "count"
+   ]
+  }
+ },
+ {
+  "input": {
+   "ops": [
+    "enqueue 5",
+    "dequeue",
+    "enqueue 6",
+    "peek"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "ops": [
+    "count",
+    "count",
+    "count",
+    "enqueue 15",
+    "dequeue",
+    "enqueue 73",
+    "enqueue 54",
+    "dequeue",
+    "enqueue -4",
+    "count"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "ops": [
+    "enqueue 39",
+    "peek",
+    "enqueue 23",
+    "enqueue 66",
+    "peek",
+    "enqueue 86",
+    "dequeue",
+    "count",
+    "peek",
+    "enqueue 16",
+    "count",
+    "dequeue",
+    "count",
+    "dequeue",
+    "enqueue -8",
+    "enqueue 23",
+    "enqueue 58",
+    "enqueue -9"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "ops": [
+    "enqueue 38",
+    "count",
+    "dequeue",
+    "enqueue 44",
+    "dequeue",
+    "peek",
+    "peek",
+    "dequeue",
+    "enqueue 10",
+    "peek",
+    "enqueue 92",
+    "enqueue 11",
+    "enqueue 32",
+    "enqueue 90",
+    "peek",
+    "count",
+    "enqueue 9",
+    "count"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "ops": [
+    "peek",
+    "peek",
+    "count",
+    "count"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "ops": [
+    "peek",
+    "count",
+    "count",
+    "peek"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "ops": [
+    "dequeue",
+    "peek",
+    "enqueue 95",
+    "dequeue",
+    "count",
+    "dequeue",
+    "peek"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "ops": [
+    "peek"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "ops": [
+    "enqueue 14",
+    "enqueue 40",
+    "peek",
+    "peek",
+    "peek",
+    "enqueue 67",
+    "count",
+    "enqueue 50",
+    "enqueue 50"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "ops": [
+    "dequeue",
+    "dequeue",
+    "enqueue -2",
+    "peek",
+    "enqueue 24",
+    "dequeue"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "ops": [
+    "peek",
+    "enqueue 20",
+    "peek"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "ops": [
+    "enqueue 48",
+    "dequeue",
+    "dequeue",
+    "count",
+    "peek"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "ops": [
+    "dequeue",
+    "peek",
+    "dequeue",
+    "count",
+    "dequeue",
+    "enqueue 39",
+    "peek",
+    "dequeue"
+   ]
+  },
+  "hidden": true
+ }
+]

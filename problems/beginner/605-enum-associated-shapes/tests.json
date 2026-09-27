@@ -1,0 +1,169 @@
+[
+ {
+  "input": {
+   "specs": [
+    "rectangle 3 4",
+    "triangle 6 2"
+   ]
+  },
+  "expected": 18.0
+ },
+ {
+  "input": {
+   "specs": [
+    "circle 1"
+   ]
+  }
+ },
+ {
+  "input": {
+   "specs": []
+  }
+ },
+ {
+  "input": {
+   "specs": [
+    "hexagon 2",
+    "circle x",
+    "rectangle 2 2 2",
+    "rectangle 0.5 4"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "specs": [
+    "rectangle 2 0.1"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "specs": [
+    "circle",
+    "circle 4",
+    "circle",
+    "circle 2"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "specs": [
+    "circle 3",
+    "circle",
+    "rectangle 7 0.4",
+    "hexagon 1",
+    "circle"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "specs": [
+    "rectangle 9 4.9"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "specs": [
+    "circle",
+    "circle",
+    "hexagon 1"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "specs": [
+    "rectangle 1 4.1",
+    "hexagon 1",
+    "circle",
+    "circle 3"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "specs": [
+    "circle",
+    "triangle 8 5",
+    "circle"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "specs": [
+    "circle",
+    "hexagon 1",
+    "circle 2"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "specs": [
+    "rectangle 4 2.5",
+    "hexagon 1",
+    "hexagon 1",
+    "circle",
+    "rectangle 4 0.7"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "specs": [
+    "rectangle 5 3.0",
+    "triangle 5 8",
+    "circle 4"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "specs": [
+    "rectangle 3 4.5",
+    "triangle 6 6",
+    "rectangle 3 1.5"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "specs": [
+    "hexagon 1",
+    "triangle 6 6",
+    "rectangle 8 3.7",
+    "triangle 8 2"
+   ]
+  },
+  "hidden": true
+ }
+]

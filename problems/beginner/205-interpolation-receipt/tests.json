@@ -1,0 +1,147 @@
+[
+ {
+  "input": {
+   "item": "Coffee",
+   "quantity": 3,
+   "unitCents": 250
+  },
+  "expected": "3 x Coffee @ $2.50 = $7.50"
+ },
+ {
+  "input": {
+   "item": "Bagel",
+   "quantity": 1,
+   "unitCents": 105
+  }
+ },
+ {
+  "input": {
+   "item": "Gum",
+   "quantity": 10,
+   "unitCents": 5
+  }
+ },
+ {
+  "input": {
+   "item": "Laptop",
+   "quantity": 1,
+   "unitCents": 129999
+  }
+ },
+ {
+  "input": {
+   "item": "Free sample",
+   "quantity": 2,
+   "unitCents": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "item": "Scone",
+   "quantity": 20,
+   "unitCents": 16403
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "item": "Pen",
+   "quantity": 4,
+   "unitCents": 21755
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "item": "Scone",
+   "quantity": 11,
+   "unitCents": 25627
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "item": "Pen",
+   "quantity": 20,
+   "unitCents": 13210
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "item": "Pen",
+   "quantity": 6,
+   "unitCents": 43479
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "item": "Notebook",
+   "quantity": 15,
+   "unitCents": 23981
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "item": "Notebook",
+   "quantity": 8,
+   "unitCents": 49229
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "item": "Scone",
+   "quantity": 20,
+   "unitCents": 15838
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "item": "Scone",
+   "quantity": 3,
+   "unitCents": 9765
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "item": "Scone",
+   "quantity": 17,
+   "unitCents": 17161
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "item": "Pen",
+   "quantity": 10,
+   "unitCents": 43250
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "item": "Notebook",
+   "quantity": 18,
+   "unitCents": 34790
+  },
+  "hidden": true
+ }
+]

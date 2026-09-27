@@ -1,0 +1,42 @@
+[
+ {
+  "input": "a,b,c\n1,2,3\n4,x,6.5\n"
+ },
+ {
+  "input": "price\n"
+ },
+ {
+  "input": "x,y\n1,\n,2\n 3 , 4\n",
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": "why,afa,qezx\n,34,76\nx,,x\nx,1.0,x\n",
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": "o,nrt\n5.7,21\n,\n",
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": "mva,qqqq,q,h\nx,8.3,x,x\n,0.2,4.8,6\n11,2.4,80,\n,,1.9,x\n",
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": "h,o\n-1,x\n49,\n52,17\n5,-4\nx,\n",
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": "vsu,wtc,c\nx,0.3,x\nx,86,4.8\n",
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": "widg,gkeu,tqba,wlh\n57,97,,0.1\n1.1,x,,\n,49,,77\n45,,,\n4.3,x,x,38\n",
+  "hidden": true
+ }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "abstract-class-emulation",
+  "title": "Emulating an Abstract Class",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Protocols",
+  "concepts": [
+    "abstract-class",
+    "pop",
+    "protocol-extension",
+    "protocol-vs-class",
+    "multiple-inheritance"
+  ],
+  "mode": "function",
+  "notesRef": "23",
+  "docs": [
+    {
+      "title": "Protocols",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "report",
+    "params": [
+      {
+        "name": "sizes",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

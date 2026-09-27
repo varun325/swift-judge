@@ -1,0 +1,188 @@
+[
+ {
+  "input": {
+   "raw": [
+    "30",
+    "x",
+    "-1",
+    "200"
+   ]
+  },
+  "expected": [
+   "ok 30",
+   "fail notANumber",
+   "fail negative",
+   "fail unrealistic",
+   "total 30"
+  ]
+ },
+ {
+  "input": {
+   "raw": []
+  }
+ },
+ {
+  "input": {
+   "raw": [
+    "0",
+    "150",
+    "151"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "raw": [
+    "91",
+    "170",
+    "dzl",
+    "13",
+    "vn"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "raw": [
+    "141",
+    "sv",
+    "ugb",
+    "90",
+    "op",
+    "197",
+    "rxj"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "raw": [
+    "157",
+    "i",
+    "119",
+    "42",
+    "nwl",
+    "123",
+    "105",
+    "66"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "raw": [
+    "d",
+    "d"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "raw": [
+    "bj",
+    "189"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "raw": [
+    "111",
+    "196"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "raw": [
+    "vf",
+    "141",
+    "p",
+    "r",
+    "a",
+    "158",
+    "141"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "raw": [
+    "37",
+    "66",
+    "42",
+    "146"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "raw": [
+    "84"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "raw": [
+    "h",
+    "64",
+    "32",
+    "zyu",
+    "de"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "raw": [
+    "x",
+    "aaw",
+    "176",
+    "ub",
+    "a",
+    "fcl",
+    "rx"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "raw": [
+    "13",
+    "42",
+    "102",
+    "33",
+    "bi",
+    "120",
+    "v",
+    "197"
+   ]
+  },
+  "hidden": true
+ }
+]

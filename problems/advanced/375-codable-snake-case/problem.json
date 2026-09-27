@@ -1,0 +1,29 @@
+{
+  "id": "codable-snake-case",
+  "title": "Codable with snake_case & CodingKeys",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "codable-keys"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    }
+  ],
+  "signature": {
+    "name": "decodeUsers",
+    "params": [
+      {
+        "name": "json",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

@@ -1,0 +1,1 @@
+`await` in a loop runs fetches **one after another**. A `TaskGroup` starts child tasks concurrently and yields results in **completion order** — carrying the index lets you rebuild input order. For a fixed small number of calls, `async let a = f(); async let b = g()` is simpler.

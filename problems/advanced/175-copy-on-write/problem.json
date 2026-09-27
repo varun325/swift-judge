@@ -1,0 +1,19 @@
+{
+  "id": "copy-on-write",
+  "title": "Implement Copy-on-Write",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Collections deep dive",
+  "concepts": [
+    "copy-on-write",
+    "value-semantics",
+    "memory-layout"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ]
+}

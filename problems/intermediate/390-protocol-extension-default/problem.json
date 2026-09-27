@@ -1,0 +1,31 @@
+{
+  "id": "protocol-extension-default",
+  "title": "Protocol Extensions: Default Behaviour",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Protocols",
+  "concepts": [
+    "protocol-extension",
+    "pop",
+    "extension-vs-protocol-extension"
+  ],
+  "mode": "function",
+  "notesRef": "24",
+  "docs": [
+    {
+      "title": "Protocols — Protocol Extensions",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "greetings",
+    "params": [
+      {
+        "name": "kinds",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

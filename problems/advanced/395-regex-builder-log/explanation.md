@@ -1,0 +1,1 @@
+`RegexBuilder` is a **result builder** DSL: readable, composable and still compiled to the same engine. `Reference` names captures; `TryCapture` transforms (and can reject) a capture; `.reluctant` makes the message lazy so `" (code "` can match after it.

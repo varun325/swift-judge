@@ -1,0 +1,125 @@
+[
+ {
+  "input": {
+   "words": [
+    "undo",
+    "refactoring",
+    "redo",
+    "swift"
+   ]
+  },
+  "expected": [
+   "negation",
+   "long",
+   "repeat",
+   "plain"
+  ]
+ },
+ {
+  "input": {
+   "words": []
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "unbelievable",
+    "re",
+    ""
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "words": [
+    "unghaf"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "words": [
+    "unteevreu",
+    "fewlvbn",
+    "rezzb",
+    "reuvmxe",
+    "le"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "words": [
+    "unbqwhbw",
+    "dnu"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "words": [
+    "db",
+    "unlktxewpoi",
+    "euitfrdof",
+    "preflnde"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "words": [
+    "preamakqsn",
+    "unqkwphcdn"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "words": [
+    "sczdopm",
+    "preh",
+    "unfyed",
+    "ew",
+    "reaet",
+    "rezsvefm"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "words": [
+    "unwhnvylqjr",
+    "unpcqoti"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "words": [
+    "k",
+    "rexermyam",
+    "yynqd",
+    "rey",
+    "prel",
+    "unjm"
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "generic-constraints-max",
+  "title": "Generic Constraints: Most Frequent",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Generics",
+  "concepts": [
+    "generic-constraints",
+    "equatable-hashable",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Type Constraints",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "modeDemo",
+    "params": [
+      {
+        "name": "ints",
+        "type": "[Int]"
+      },
+      {
+        "name": "words",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

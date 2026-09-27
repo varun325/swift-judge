@@ -1,0 +1,18 @@
+{
+  "id": "diag-exclusivity",
+  "title": "Diagnostic: Overlapping inout Access",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Memory management",
+  "concepts": [
+    "memory-safety",
+    "inout"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Memory Safety — Conflicting Access to In-Out Parameters",
+      "book": "LanguageGuide/MemorySafety"
+    }
+  ]
+}

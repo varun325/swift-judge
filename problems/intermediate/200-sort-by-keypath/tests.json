@@ -1,0 +1,432 @@
+[
+ {
+  "input": {
+   "rows": [
+    [
+     "cy",
+     "30",
+     "Rome"
+    ],
+    [
+     "ana",
+     "25",
+     "Oslo"
+    ],
+    [
+     "bo",
+     "25",
+     "Lima"
+    ]
+   ],
+   "key": "age"
+  },
+  "expected": [
+   "ana",
+   "bo",
+   "cy"
+  ]
+ },
+ {
+  "input": {
+   "rows": [
+    [
+     "cy",
+     "30",
+     "Rome"
+    ],
+    [
+     "ana",
+     "25",
+     "Oslo"
+    ],
+    [
+     "bo",
+     "25",
+     "Lima"
+    ]
+   ],
+   "key": "city"
+  }
+ },
+ {
+  "input": {
+   "rows": [
+    [
+     "cy",
+     "30",
+     "Rome"
+    ],
+    [
+     "ana",
+     "25",
+     "Oslo"
+    ]
+   ],
+   "key": "name"
+  }
+ },
+ {
+  "input": {
+   "rows": [],
+   "key": "age"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "rows": [],
+   "key": "city"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "rows": [
+    [
+     "snvrf",
+     "27",
+     "Oslo"
+    ],
+    [
+     "vsr",
+     "24",
+     "Lima"
+    ],
+    [
+     "yib",
+     "25",
+     "Lima"
+    ]
+   ],
+   "key": "age"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "rows": [
+    [
+     "ahj",
+     "36",
+     "Pune"
+    ],
+    [
+     "qxb",
+     "29",
+     "Pune"
+    ],
+    [
+     "bhyzb",
+     "63",
+     "Oslo"
+    ],
+    [
+     "xienn",
+     "19",
+     "Oslo"
+    ],
+    [
+     "ht",
+     "35",
+     "Pune"
+    ],
+    [
+     "povpg",
+     "61",
+     "Rome"
+    ]
+   ],
+   "key": "name"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "rows": [
+    [
+     "bq",
+     "51",
+     "Oslo"
+    ],
+    [
+     "up",
+     "56",
+     "Lima"
+    ],
+    [
+     "etncc",
+     "21",
+     "Kyiv"
+    ],
+    [
+     "cpq",
+     "25",
+     "Lima"
+    ],
+    [
+     "yl",
+     "65",
+     "Oslo"
+    ],
+    [
+     "avnn",
+     "67",
+     "Kyiv"
+    ],
+    [
+     "ktj",
+     "63",
+     "Rome"
+    ]
+   ],
+   "key": "name"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "rows": [
+    [
+     "nalzp",
+     "21",
+     "Oslo"
+    ],
+    [
+     "cnbsl",
+     "50",
+     "Oslo"
+    ],
+    [
+     "xtg",
+     "59",
+     "Lima"
+    ],
+    [
+     "lbef",
+     "48",
+     "Lima"
+    ],
+    [
+     "jzdaq",
+     "63",
+     "Rome"
+    ],
+    [
+     "mfjl",
+     "48",
+     "Lima"
+    ],
+    [
+     "xsqb",
+     "27",
+     "Lima"
+    ]
+   ],
+   "key": "name"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "rows": [
+    [
+     "ondo",
+     "59",
+     "Lima"
+    ],
+    [
+     "txtpi",
+     "63",
+     "Kyiv"
+    ],
+    [
+     "olprz",
+     "44",
+     "Pune"
+    ],
+    [
+     "hl",
+     "30",
+     "Kyiv"
+    ],
+    [
+     "akzs",
+     "45",
+     "Lima"
+    ]
+   ],
+   "key": "name"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "rows": [
+    [
+     "uo",
+     "41",
+     "Kyiv"
+    ],
+    [
+     "ipkyf",
+     "57",
+     "Kyiv"
+    ]
+   ],
+   "key": "age"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "rows": [
+    [
+     "tryn",
+     "58",
+     "Rome"
+    ],
+    [
+     "nu",
+     "59",
+     "Lima"
+    ],
+    [
+     "afep",
+     "51",
+     "Pune"
+    ]
+   ],
+   "key": "name"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "rows": [
+    [
+     "mefcb",
+     "20",
+     "Pune"
+    ],
+    [
+     "tn",
+     "36",
+     "Lima"
+    ]
+   ],
+   "key": "name"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "rows": [
+    [
+     "jl",
+     "65",
+     "Oslo"
+    ],
+    [
+     "xe",
+     "18",
+     "Kyiv"
+    ],
+    [
+     "hdze",
+     "58",
+     "Pune"
+    ],
+    [
+     "lwpg",
+     "47",
+     "Lima"
+    ],
+    [
+     "yh",
+     "55",
+     "Pune"
+    ]
+   ],
+   "key": "city"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "rows": [
+    [
+     "mc",
+     "55",
+     "Kyiv"
+    ],
+    [
+     "bqos",
+     "33",
+     "Kyiv"
+    ],
+    [
+     "rbk",
+     "25",
+     "Rome"
+    ],
+    [
+     "ivo",
+     "46",
+     "Pune"
+    ]
+   ],
+   "key": "name"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "rows": [
+    [
+     "aav",
+     "45",
+     "Lima"
+    ],
+    [
+     "ad",
+     "49",
+     "Kyiv"
+    ],
+    [
+     "guv",
+     "61",
+     "Lima"
+    ],
+    [
+     "rbnpz",
+     "62",
+     "Pune"
+    ],
+    [
+     "npv",
+     "63",
+     "Pune"
+    ],
+    [
+     "ls",
+     "22",
+     "Lima"
+    ]
+   ],
+   "key": "city"
+  },
+  "hidden": true
+ }
+]

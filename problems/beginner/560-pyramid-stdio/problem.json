@@ -1,0 +1,20 @@
+{
+  "id": "pyramid-stdio",
+  "title": "Print a Pyramid (stdin)",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Loops",
+  "concepts": [
+    "for-in",
+    "strings-are-collections"
+  ],
+  "mode": "stdio",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Strings and Characters — Initializing an Empty String",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "compare": "trimmed"
+}

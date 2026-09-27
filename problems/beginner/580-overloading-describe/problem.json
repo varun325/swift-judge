@@ -1,0 +1,37 @@
+{
+  "id": "overloading-describe",
+  "title": "Overloading by Type",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Functions",
+  "concepts": [
+    "overloading-overriding",
+    "functions-basics"
+  ],
+  "mode": "function",
+  "notesRef": "15",
+  "docs": [
+    {
+      "title": "Functions",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "describeAll",
+    "params": [
+      {
+        "name": "ints",
+        "type": "[Int]"
+      },
+      {
+        "name": "words",
+        "type": "[String]"
+      },
+      {
+        "name": "flags",
+        "type": "[Bool]"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

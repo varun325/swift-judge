@@ -1,0 +1,3 @@
+Build `struct Card` with **nested** `enum Suit: Character, CaseIterable { case spades = "♠", hearts = "♥", diamonds = "♦", clubs = "♣" }` and `enum Rank: Int, CaseIterable, Comparable { case two = 2, …, jack, queen, king, ace }` (with a `symbol` computed property: 2–10 as digits, J Q K A).
+
+ `static var fullDeck: [Card]` iterates suits then ranks. For each index in `draws`, return the card as `"<symbol><suit>"` (e.g. `"A♠"`), then append `"highest: <card>"` for the highest rank among the draws (if several share the highest rank, report whichever `max(by:)` returns — run it and see; `"none"` if no draws).

@@ -1,0 +1,1 @@
+A `defer` runs when its **enclosing scope** exits — however it exits. Nested scopes unwind innermost first, so cleanup happens in reverse order of acquisition (just like multiple `defer`s in one scope run bottom-up).

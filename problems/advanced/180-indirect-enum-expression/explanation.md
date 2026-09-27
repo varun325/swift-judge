@@ -1,0 +1,1 @@
+A recursive enum needs `indirect` so the payload is boxed on the heap (otherwise the type would have infinite size). Compared to a class hierarchy you keep **value semantics** and an exhaustive `switch` — adding a case forces you to update `evaluate`.

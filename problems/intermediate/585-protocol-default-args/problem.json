@@ -1,0 +1,35 @@
+{
+  "id": "protocol-default-args",
+  "title": "Protocol Requirements with Defaults",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Protocols",
+  "concepts": [
+    "protocols",
+    "protocol-extension",
+    "default-params"
+  ],
+  "mode": "function",
+  "notesRef": "23",
+  "docs": [
+    {
+      "title": "Protocols — Protocol Extensions",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "notify",
+    "params": [
+      {
+        "name": "channels",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "message",
+        "type": "String"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

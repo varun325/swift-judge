@@ -1,0 +1,383 @@
+[
+ {
+  "input": {
+   "ops": [
+    "insert",
+    "search",
+    "search",
+    "startsWith",
+    "insert",
+    "search"
+   ],
+   "words": [
+    "apple",
+    "apple",
+    "app",
+    "app",
+    "app",
+    "app"
+   ]
+  },
+  "expected": [
+   null,
+   true,
+   false,
+   true,
+   null,
+   true
+  ]
+ },
+ {
+  "input": {
+   "ops": [
+    "search",
+    "startsWith"
+   ],
+   "words": [
+    "a",
+    ""
+   ]
+  }
+ },
+ {
+  "input": {
+   "ops": [
+    "insert",
+    "insert",
+    "startsWith",
+    "search",
+    "search"
+   ],
+   "words": [
+    "café",
+    "cab",
+    "ca",
+    "cafe",
+    "café"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "ops": [
+    "startsWith",
+    "startsWith",
+    "startsWith",
+    "insert",
+    "insert",
+    "insert",
+    "search"
+   ],
+   "words": [
+    "",
+    "",
+    "",
+    "app",
+    "apple",
+    "b",
+    "bat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "ops": [
+    "insert",
+    "insert",
+    "insert",
+    "startsWith",
+    "insert"
+   ],
+   "words": [
+    "b",
+    "app",
+    "bath",
+    "bat",
+    "cat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "ops": [
+    "insert",
+    "search",
+    "search",
+    "search",
+    "startsWith",
+    "insert",
+    "startsWith",
+    "search",
+    "startsWith",
+    "startsWith",
+    "search",
+    "insert",
+    "search"
+   ],
+   "words": [
+    "bat",
+    "b",
+    "b",
+    "ape",
+    "apply",
+    "apple",
+    "b",
+    "cat",
+    "ape",
+    "bath",
+    "b",
+    "apply",
+    ""
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "ops": [
+    "startsWith",
+    "search",
+    "search",
+    "insert",
+    "startsWith",
+    "search",
+    "insert"
+   ],
+   "words": [
+    "cat",
+    "app",
+    "b",
+    "bat",
+    "apply",
+    "b",
+    "bat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "ops": [
+    "insert",
+    "insert",
+    "insert",
+    "search",
+    "startsWith",
+    "search",
+    "search",
+    "insert",
+    "startsWith"
+   ],
+   "words": [
+    "apple",
+    "apply",
+    "b",
+    "bat",
+    "cat",
+    "apple",
+    "b",
+    "cat",
+    ""
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "ops": [
+    "startsWith",
+    "insert",
+    "search"
+   ],
+   "words": [
+    "apple",
+    "bat",
+    "apply"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "ops": [
+    "insert",
+    "insert",
+    "insert",
+    "search",
+    "insert",
+    "startsWith",
+    "insert",
+    "insert",
+    "search",
+    "startsWith",
+    "startsWith",
+    "insert",
+    "insert"
+   ],
+   "words": [
+    "bat",
+    "",
+    "apple",
+    "ape",
+    "bath",
+    "bat",
+    "apple",
+    "b",
+    "bath",
+    "cat",
+    "ape",
+    "b",
+    ""
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "ops": [
+    "insert",
+    "search",
+    "search",
+    "startsWith",
+    "insert",
+    "search",
+    "insert"
+   ],
+   "words": [
+    "b",
+    "ape",
+    "app",
+    "",
+    "apple",
+    "cat",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "ops": [
+    "insert",
+    "insert",
+    "insert",
+    "insert",
+    "search",
+    "startsWith",
+    "insert",
+    "startsWith",
+    "startsWith",
+    "insert",
+    "insert"
+   ],
+   "words": [
+    "bat",
+    "bath",
+    "b",
+    "",
+    "cat",
+    "",
+    "bat",
+    "app",
+    "b",
+    "cat",
+    "app"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "ops": [
+    "insert",
+    "startsWith",
+    "insert",
+    "startsWith",
+    "search",
+    "insert",
+    "startsWith",
+    "insert",
+    "startsWith",
+    "insert"
+   ],
+   "words": [
+    "bath",
+    "apply",
+    "apple",
+    "ape",
+    "app",
+    "app",
+    "apple",
+    "b",
+    "bat",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "ops": [
+    "search",
+    "startsWith",
+    "insert",
+    "search",
+    "insert",
+    "search",
+    "insert",
+    "insert",
+    "search",
+    "startsWith"
+   ],
+   "words": [
+    "app",
+    "bath",
+    "app",
+    "app",
+    "app",
+    "bat",
+    "app",
+    "ape",
+    "apply",
+    "bath"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "ops": [
+    "search",
+    "insert",
+    "insert",
+    "startsWith",
+    "insert",
+    "startsWith"
+   ],
+   "words": [
+    "app",
+    "bat",
+    "app",
+    "apply",
+    "app",
+    "ape"
+   ]
+  },
+  "hidden": true
+ }
+]

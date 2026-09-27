@@ -1,0 +1,34 @@
+{
+  "id": "generic-swap-and-stack",
+  "title": "Generic Stack<Element>",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Generics",
+  "concepts": [
+    "generics",
+    "mutating"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Generic Types",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "stackDemo",
+    "params": [
+      {
+        "name": "ints",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

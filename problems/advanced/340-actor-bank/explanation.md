@@ -1,0 +1,1 @@
+An actor serialises access to its state: calls from outside are `await`ed and run one at a time, so `balance += amount` can't interleave. Swift 6's strict concurrency checking rejects capturing a non-`Sendable` class in concurrent tasks; actors are `Sendable` by construction.

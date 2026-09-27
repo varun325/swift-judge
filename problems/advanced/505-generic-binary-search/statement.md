@@ -1,0 +1,1 @@
+Add `func binarySearch(_ target: Element) -> Index?` to every `RandomAccessCollection where Element: Comparable` (assume sorted input). Return `[index of target in nums or -1, index of word in words or -1, index of target in nums[2...] or -1]` — the slice case proves you used the collection's own **indices**, not `0..<count`.

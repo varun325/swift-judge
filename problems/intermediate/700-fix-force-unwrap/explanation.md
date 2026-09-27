@@ -1,0 +1,1 @@
+`!` means "I promise this isn't nil — crash otherwise" (*Fatal error: Unexpectedly found nil while unwrapping an Optional value*). With data you don't control, bind with `guard let`/`if let` and handle the failure. Reserve `!` for genuine programmer errors.

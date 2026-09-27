@@ -1,0 +1,1753 @@
+[
+ {
+  "id": "let-vs-var",
+  "topic": "Basics",
+  "question": "What is the difference between `let` and `var`?",
+  "answer": "`let` declares a constant: it must be initialised exactly once and can't be reassigned. `var` declares a variable. For **value types**, `let` also freezes the whole value (you can't call `mutating` methods on it); for **class** references, `let` only freezes the *reference* — the object's `var` properties can still change. Prefer `let` by default; the compiler warns when a `var` is never mutated.",
+  "sources": [
+   "Devinterview",
+   "FullStack.Cafe",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "runtime-constants",
+  "topic": "Basics",
+  "question": "How do you define a constant whose value is only known at runtime?",
+  "answer": "A `let` doesn't need a compile-time value — it just needs to be assigned exactly once before use. `let start = Date()` or a `let` assigned in both branches of an `if` are fine; definite-initialisation analysis checks every path. `static let` properties are lazily initialised once, thread-safely.",
+  "sources": [
+   "Devinterview"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "type-inference",
+  "topic": "Basics",
+  "question": "What is type inference?",
+  "answer": "The compiler deduces a type from context so you don't write it: `let n = 42` is `Int`, `let x = 3.0` is `Double`, `[1, 2]` is `[Int]`. Annotate when the default isn't what you want (`let f: Float = 3`), when there's no initial value, or to speed up complex expressions. Inference works bidirectionally, including closure parameter types from the function you pass them to.",
+  "sources": [
+   "Devinterview",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "fundamental-types",
+  "topic": "Basics",
+  "question": "What fundamental data types does Swift have?",
+  "answer": "`Int` (64-bit on modern platforms) and sized variants (`Int8`…`UInt64`), `Double`/`Float`, `Bool`, `String`, `Character`, plus tuples and `Optional`. They're all **structs** in the standard library, which is why they have methods (`5.isMultiple(of: 5)`). There is no `char` primitive — `Character` is an extended grapheme cluster.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "float-vs-double",
+  "topic": "Basics",
+  "question": "What is the difference between `Float`, `Double` (and `CGFloat`)?",
+  "answer": "`Float` is 32-bit (~6–7 significant digits), `Double` is 64-bit (~15–16 digits) and is what Swift infers for literals like `3.14`. `CGFloat` is Core Graphics' native float (64-bit on 64-bit platforms) and bridges implicitly with `Double` since Swift 5.5. Floating point is binary, so `0.1 + 0.2 != 0.3` — compare with a tolerance.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "numeric-literals",
+  "topic": "Basics",
+  "question": "What kinds of literals does Swift support?",
+  "answer": "Integer literals in decimal (`17`), binary (`0b10001`), octal (`0o21`) and hex (`0x11`); floating-point literals incl. exponents (`1.25e2`, hex `0xFp2`); underscores for readability (`1_000_000`); string, multiline (`\"\"\"`) and raw (`#\"...\"#`) string literals; boolean, `nil`, array and dictionary literals. Types opt in via `ExpressibleBy…Literal` protocols.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "integer-overflow",
+  "topic": "Basics",
+  "question": "What happens when an integer overflows?",
+  "answer": "Plain arithmetic **traps** at runtime (a crash, not silent wraparound) — a safety feature. Use the overflow operators `&+`, `&-`, `&*` to wrap deliberately, or `addingReportingOverflow(_:)` to detect it. `Int.max`/`Int.min` give the bounds.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "comments",
+  "topic": "Basics",
+  "question": "How do you write single-line and multi-line comments?",
+  "answer": "`//` for single-line, `/* … */` for multi-line — and unlike C, block comments **nest**, so you can comment out code that already contains comments. `///` and `/** */` are documentation comments picked up by Quick Help and DocC.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "typealias",
+  "topic": "Basics",
+  "question": "What is a `typealias`?",
+  "answer": "A new name for an existing type: `typealias Grid = [[Int]]`, `typealias Completion = (Result<Data, Error>) -> Void`. It doesn't create a distinct type (a `Grid` *is* a `[[Int]]`) — for a genuinely distinct type use a struct wrapper or phantom type. Protocols use `associatedtype` instead.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "print-vs-debugprint",
+  "topic": "Basics",
+  "question": "What is the difference between `print` and `debugPrint`?",
+  "answer": "`print` uses `CustomStringConvertible.description` (`\"hi\"` prints as `hi`), `debugPrint` uses `CustomDebugStringConvertible.debugDescription` (`\"hi\"` prints as `\"hi\"`, with quotes and escapes). Both take `separator:` and `terminator:`; `dump` prints a recursive structural view.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "immutability",
+  "topic": "Basics",
+  "question": "Why is immutability important in Swift?",
+  "answer": "Immutable values can't change under you, so they're easier to reason about, safe to share across threads (value types + `let` are `Sendable`-friendly), and let the compiler optimise. Swift nudges you there with `let`, value-type collections, `mutating` markers and the \"never mutated\" warning.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "swift-advantages",
+  "topic": "Basics",
+  "question": "Why is Swift preferred over Objective-C? What are its key features?",
+  "answer": "Safety (optionals, bounds and overflow checks, definite initialisation), speed (value types, static dispatch, generics specialisation), expressiveness (type inference, closures, enums with associated values, pattern matching, tuples), protocol-oriented design and modern concurrency (`async`/`await`, actors). ARC manages memory for both.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "nil-vs-null",
+  "topic": "Basics",
+  "question": "What's the difference between Swift's `nil` and other languages' `null`?",
+  "answer": "In Swift `nil` isn't a null pointer — it's `Optional.none`, the absence of a value for **any** type (including `Int`). Only optionals can hold it, so non-optional types are guaranteed to have a value and the compiler forces you to handle the missing case.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "equality-vs-identity",
+  "topic": "Operators & ranges",
+  "question": "What's the difference between `==` and `===`?",
+  "answer": "`==` asks *are these values equal?* — defined by `Equatable`. `===` asks *are these the same object instance?* — only for class instances (`AnyObject`). Two distinct objects with identical contents are `==` (if Equatable) but not `===`.",
+  "sources": [
+   "FullStack.Cafe",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "half-open-range",
+  "topic": "Operators & ranges",
+  "question": "What are closed, half-open and one-sided ranges?",
+  "answer": "`a...b` includes `b`; `a..<b` excludes it (perfect for `0..<array.count`); one-sided `a...`, `...b`, `..<b` run to the end/start of a collection (`array[2...]`). A closed range with `a > b` traps at runtime.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "stride",
+  "topic": "Operators & ranges",
+  "question": "What does `stride` do?",
+  "answer": "`stride(from:to:by:)` excludes the end, `stride(from:through:by:)` includes it. They step by any amount, including negative and fractional: `stride(from: 10, through: 0, by: -2)`. Use it where C would use `for (i = 10; i >= 0; i -= 2)`.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "ternary",
+  "topic": "Operators & ranges",
+  "question": "How does the ternary conditional operator work?",
+  "answer": "`condition ? a : b` evaluates to one of two expressions of the same type. Great for simple choices; if either branch has side effects or the condition is long, an `if` expression (`let x = if c { a } else { b }`, Swift 5.9+) reads better. `c ? true : false` is just `c`.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "nil-coalescing",
+  "topic": "Operators & ranges",
+  "question": "What does the nil-coalescing operator `??` do?",
+  "answer": "`a ?? b` unwraps `a` if it has a value, otherwise evaluates `b` — lazily (it's an `@autoclosure`). It chains: `a ?? b ?? c`. The result is non-optional when `b` is non-optional.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "operator-overloading",
+  "topic": "Operators & ranges",
+  "question": "What is operator overloading?",
+  "answer": "Defining an existing operator (`+`, `==`, `<`) for your own types as a `static func` — e.g. `static func + (l: Vector, r: Vector) -> Vector`. Conforming to `Equatable`/`Comparable` is just implementing `==` / `<`. Keep semantics unsurprising.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "custom-operators",
+  "topic": "Operators & ranges",
+  "question": "How do you define a custom operator?",
+  "answer": "Declare it (`infix operator **: MultiplicationPrecedence`, or `prefix`/`postfix`), then implement it as a function. You can create precedence groups with associativity. Use sparingly — custom symbols are hard to search for and read.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "tuple-comparison",
+  "topic": "Operators & ranges",
+  "question": "How would you compare two tuples?",
+  "answer": "Tuples of up to 6 `Equatable` elements support `==`, and of `Comparable` elements support `<` (lexicographic, left to right). Tuples can't conform to protocols themselves, so for more elements or as dictionary keys, use a struct.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "pattern-matching-operator",
+  "topic": "Operators & ranges",
+  "question": "What is the `~=` pattern-matching operator?",
+  "answer": "`switch` and `case` patterns call `~=` under the hood — that's how `case 1...5:` matches a range. Overload `static func ~= (pattern: P, value: V) -> Bool` to make your own patterns work in `switch`.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "strings-are-collections",
+  "topic": "Strings",
+  "question": "What does it mean that strings are collections?",
+  "answer": "`String` is a `BidirectionalCollection` of `Character`s, so `map`, `filter`, `reversed()`, `for c in s` all work. But indexes are `String.Index`, not `Int`, because characters are variable-width grapheme clusters — \"é\" or \"👨‍👩‍👧\" are one `Character` spanning several code units. `count` is O(n).",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "string-equality",
+  "topic": "Strings",
+  "question": "How do you check whether two strings are equal?",
+  "answer": "`==` compares with **canonical equivalence**: \"é\" (one scalar) equals \"e\" + combining accent. For case-insensitive comparison use `a.lowercased() == b.lowercased()` or `caseInsensitiveCompare` / `compare(_:options:)` from Foundation.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "raw-strings",
+  "topic": "Strings",
+  "question": "What are raw strings?",
+  "answer": "Strings wrapped in `#` — `#\"C:\\path\\n\"#` — where backslashes and quotes are literal. Interpolation needs the matching number of hashes: `\\#(value)`. Ideal for regexes and JSON snippets.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "string-interpolation",
+  "topic": "Strings",
+  "question": "How does string interpolation work?",
+  "answer": "`\"\\(expr)\"` embeds any value using its `description`. It's extensible: `DefaultStringInterpolation` can be extended with `appendInterpolation(_:)` overloads to add custom formats like `\"\\(price, format: .currency)\"`.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "regex",
+  "topic": "Strings",
+  "question": "What is a regular expression in Swift?",
+  "answer": "Since Swift 5.7, `Regex` is built in: literals `/\\d+/`, `try Regex(\"…\")` or the `RegexBuilder` DSL. Use `firstMatch(of:)`, `matches(of:)`, `wholeMatch(of:)`, `replacing(_:with:)`, `split(separator: regex)`. Captures are strongly typed tuples.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "collection-types",
+  "topic": "Collections",
+  "question": "What collection types does Swift provide?",
+  "answer": "`Array` (ordered, duplicates allowed, O(1) index), `Set` (unordered, unique, O(1) membership, needs `Hashable`), `Dictionary` (unordered key→value, unique `Hashable` keys). All are **value types** with copy-on-write, and all are generic.",
+  "sources": [
+   "Devinterview",
+   "FullStack.Cafe",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "array-basics",
+  "topic": "Collections",
+  "question": "What are arrays in Swift?",
+  "answer": "Ordered, zero-indexed, homogeneous `[Element]` collections. Out-of-bounds subscripts trap. Useful API: `append`, `insert(_:at:)`, `remove(at:)`, `first`/`last` (optional), `firstIndex(of:)`, `contains`, `sorted`, `reversed`, `enumerated`, `zip`.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "dictionary-basics",
+  "topic": "Collections",
+  "question": "How do dictionaries work, and how are they different from arrays?",
+  "answer": "Unordered `[Key: Value]` maps. Subscript reads return an optional (the key may be missing); `dict[k, default: 0] += 1` is the counting idiom; assigning `nil` removes a key. Unlike arrays, there's no ordering and lookup is by hashed key, not position.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "set-vs-array",
+  "topic": "Collections",
+  "question": "When would you use a `Set` instead of an `Array`?",
+  "answer": "When order doesn't matter and elements are unique, and you need fast membership tests (O(1) vs O(n)) or set algebra: `union`, `intersection`, `subtracting`, `symmetricDifference`, `isSubset(of:)`. Elements must be `Hashable`.",
+  "sources": [
+   "FullStack.Cafe",
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "sort-custom",
+  "topic": "Collections",
+  "question": "How do you sort an array of custom objects by a property?",
+  "answer": "`people.sorted { $0.age < $1.age }` returns a new array; `sort(by:)` sorts in place. For multiple keys, compare tuples: `{ ($0.last, $0.first) < ($1.last, $1.first) }`. Conform to `Comparable` to get plain `sorted()`. Swift's sort is stable (introsort-free since 5.0, currently a stable merge-based sort).",
+  "sources": [
+   "FullStack.Cafe",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "map-filter-reduce",
+  "topic": "Collections",
+  "question": "Compare `map`, `filter` and `reduce`.",
+  "answer": "`map` transforms every element (same count out), `filter` keeps elements matching a predicate, `reduce(initial, combine)` folds everything into one value. `reduce(into:)` is the efficient form when building collections. Chain them for declarative pipelines.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "compactmap-flatmap",
+  "topic": "Collections",
+  "question": "What is the difference between `map`, `compactMap` and `flatMap`?",
+  "answer": "`map` → one output per input (may be optionals). `compactMap` → drops `nil` results (`[\"1\",\"x\"].compactMap(Int.init)` is `[1]`). `flatMap` → each element maps to a sequence and the results are concatenated (flattens one level).",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "higher-order-functions",
+  "topic": "Collections",
+  "question": "What are higher-order functions?",
+  "answer": "Functions that take or return other functions — `map`, `filter`, `reduce`, `sorted(by:)`, `forEach`, `contains(where:)`, `first(where:)`, `allSatisfy`. They replace hand-written loops with intent-revealing names.",
+  "sources": [
+   "Naukri Code360",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "lazy-sequences",
+  "topic": "Collections",
+  "question": "What are lazy sequences?",
+  "answer": "`array.lazy.map { … }.filter { … }` builds a view that computes elements on demand instead of allocating intermediate arrays — great with `first(where:)` or huge/infinite sequences. Beware: closures may run more than once per element if you iterate repeatedly.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "custom-collection",
+  "topic": "Collections",
+  "question": "How do you implement a custom collection type?",
+  "answer": "Conform to `Sequence` (provide `makeIterator()`) for single-pass iteration, or `Collection` (`startIndex`, `endIndex`, `index(after:)`, `subscript(position:)`) to get multi-pass iteration plus `count`, `first`, `map`, slicing and more for free.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "subscripts",
+  "topic": "Collections",
+  "question": "What is subscripting, and how do you write a custom subscript?",
+  "answer": "Subscripts give `[]` access to your type: `subscript(row: Int, col: Int) -> Int { get set }`. They can take multiple/labelled parameters, be generic, `static`, or overloaded. Dictionary's `subscript(key:default:)` is an example.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "uuid",
+  "topic": "Collections",
+  "question": "What is a UUID and when would you use it?",
+  "answer": "A 128-bit universally unique identifier (`UUID()`, `uuidString` like `E621E1F8-C36C-495A-93FC-0C247A3E6E5F`). Use it to identify values that don't have a natural key (`Identifiable` models, file names, request IDs). Collisions are practically impossible.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "copy-on-write",
+  "topic": "Collections",
+  "question": "What is copy-on-write?",
+  "answer": "Standard collections share their storage buffer when copied; the actual copy happens only when one copy is **mutated** while the buffer is shared. You get value semantics with the performance of passing references. Implement it for your own types using a class buffer + `isKnownUniquelyReferenced(&buffer)`.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "tuples",
+  "topic": "Tuples",
+  "question": "What are tuples and why are they useful?",
+  "answer": "Lightweight, fixed-size groupings of values of possibly different types: `(code: 404, message: \"Not Found\")`. Perfect for returning multiple values from a function and for switching on several values at once. Access by label or `.0`. They can't conform to protocols, so use a struct for anything long-lived.",
+  "sources": [
+   "Devinterview",
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "control-flow",
+  "topic": "Control flow",
+  "question": "How does Swift handle flow control with loops and conditions?",
+  "answer": "`if`/`else`, `guard`, `switch`; loops `for-in` (over any `Sequence`), `while`, `repeat-while`. Conditions must be `Bool` — no implicit truthiness. `if` and `switch` can be expressions (5.9+).",
+  "sources": [
+   "Devinterview"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "for-in",
+  "topic": "Control flow",
+  "question": "How does the `for-in` loop work?",
+  "answer": "It iterates any `Sequence`: ranges, arrays, dictionaries (as `(key, value)` tuples), strings, `stride`, `zip`. Add `where` to filter, `enumerated()` for indices, and use `_` when you don't need the value.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "break-continue",
+  "topic": "Control flow",
+  "question": "What do `break`, `continue`, `fallthrough` and `return` do?",
+  "answer": "Control-transfer statements. `continue` skips to the next iteration; `break` exits the innermost loop or `switch`; labelled statements (`outer: for …` then `break outer`) exit nested loops; `fallthrough` continues into the next `switch` case; `return`/`throw` leave the function.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "switch-statement",
+  "topic": "Control flow",
+  "question": "What makes Swift `switch` powerful?",
+  "answer": "It must be **exhaustive**, doesn't fall through implicitly, and matches patterns: ranges, tuples, `let` bindings, `where` clauses, enum cases with associated values, type-casting patterns (`case let s as String`) and multiple patterns per case. Leaving out `default` on an enum switch makes adding a new case a compile error — a feature.",
+  "sources": [
+   "Devinterview",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "fallthrough",
+  "topic": "Control flow",
+  "question": "What does `fallthrough` do?",
+  "answer": "It makes a `switch` case continue into the **next case's body** without checking its pattern (C-style). It can't be used if the next case binds variables. Rarely needed — prefer listing multiple patterns in one case.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "where-clause",
+  "topic": "Control flow",
+  "question": "What is the `where` clause used for?",
+  "answer": "Extra conditions on patterns and generics: `for x in xs where x > 0`, `case let n where n.isMultiple(of: 2)`, `catch let e as MyError where e.code == 1`, and generic constraints `func f<T>(_ t: T) where T: Hashable`, `extension Array where Element: Numeric`.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "guard",
+  "topic": "Control flow",
+  "question": "When would you use `guard`?",
+  "answer": "For early exit: `guard condition else { return }`. The `else` must leave the scope (`return`, `throw`, `break`, `continue` or a `Never` call). Values bound with `guard let` stay available **after** the guard, keeping the happy path unindented.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "pattern-matching",
+  "topic": "Control flow",
+  "question": "What is pattern matching in Swift?",
+  "answer": "Destructuring and testing values with patterns in `switch`, `if case`, `guard case`, `for case`: wildcard `_`, bindings `let x`, tuples, enum cases with associated values, optionals `x?`, type casts `is`/`as`, ranges and expression patterns via `~=`.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "functions-basics",
+  "topic": "Functions",
+  "question": "How do functions work in Swift?",
+  "answer": "Declared with `func name(label param: Type) -> Return`. Parameters are constants. Functions are first-class values with types like `(Int, Int) -> Int`, can be nested, overloaded, and return tuples for multiple values.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "argument-labels",
+  "topic": "Functions",
+  "question": "What are argument labels and why use them?",
+  "answer": "Each parameter has an external **argument label** (used at the call site) and an internal **name**. `func move(from start: Int, to end: Int)` reads as `move(from: 1, to: 5)`. `_` removes the label. Labels are part of the function's name, enabling overloads like `remove(at:)` vs `remove(_:)`.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "default-params",
+  "topic": "Functions",
+  "question": "How do default parameter values work?",
+  "answer": "`func greet(_ name: String, loudly: Bool = false)` lets callers omit trailing arguments. Defaults are evaluated at each call and can reference other defaults. They reduce the need for overloads.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "variadic",
+  "topic": "Functions",
+  "question": "What is a variadic function?",
+  "answer": "A parameter written `Type...` accepts zero or more values, received as an array: `func sum(_ xs: Int...) -> Int`. Since Swift 5.4 a function can have several variadic parameters. You can't pass an existing array to a variadic parameter directly.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "inout",
+  "topic": "Functions",
+  "question": "What is an `inout` parameter and when should you use one?",
+  "answer": "`inout` lets a function modify the caller's variable: the argument is passed with `&` and written back when the function returns (copy-in copy-out). Use it for in-place algorithms like `swap(&a, &b)`; otherwise prefer returning a new value — clearer and composable.",
+  "sources": [
+   "FullStack.Cafe",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "implicit-return",
+  "topic": "Functions",
+  "question": "When does a function not need a `return` keyword?",
+  "answer": "When its body is a single expression (Swift 5.1+), for functions, closures, computed properties and subscripts. Since 5.9, `if`/`switch` expressions can be that single expression too.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "overloading-overriding",
+  "topic": "Functions",
+  "question": "What is the difference between method overloading and overriding?",
+  "answer": "**Overloading**: several functions with the same base name but different parameter types, labels or return types, resolved at compile time. **Overriding**: a subclass replaces an inherited method with `override`, chosen at runtime via dynamic dispatch.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "functions-vs-methods",
+  "topic": "Functions",
+  "question": "What is the difference between a function and a method?",
+  "answer": "A method is a function associated with a type — instance methods get implicit `self`, type methods are `static`/`class`. Free functions live at global scope. Method references like `Person.greet` are curried: `Person.greet(p)()`.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "currying",
+  "topic": "Functions",
+  "question": "What is function currying?",
+  "answer": "Turning a function of several arguments into a chain of single-argument functions: `func add(_ a: Int) -> (Int) -> Int { { b in a + b } }` so `add(2)(3) == 5`. It enables partial application — `let addTwo = add(2)`.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "never-type",
+  "topic": "Functions",
+  "question": "What is the `Never` type?",
+  "answer": "A return type for functions that never return normally — `fatalError`, `preconditionFailure`, infinite loops. The compiler knows code after them is unreachable, so they satisfy `guard … else` and non-`Void` return requirements.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "closures",
+  "topic": "Closures",
+  "question": "What are closures?",
+  "answer": "Self-contained blocks of code that can be passed around and that **capture** constants and variables from their surrounding scope. Global and nested functions are special cases of closures. Syntax: `{ (params) -> Return in body }`, shortened via inference, implicit returns and `$0` shorthand.",
+  "sources": [
+   "FullStack.Cafe",
+   "Turing",
+   "Naukri Code360",
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "trailing-closure",
+  "topic": "Closures",
+  "question": "What is trailing closure syntax?",
+  "answer": "When the last argument(s) are closures, write them after the parentheses: `nums.sorted { $0 > $1 }`, dropping `()` entirely if it's the only argument. Multiple trailing closures use labels for the extra ones.",
+  "sources": [
+   "FullStack.Cafe",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "capturing-values",
+  "topic": "Closures",
+  "question": "How do closures capture values?",
+  "answer": "By **reference** to the variable by default — a closure sees later changes and can mutate captured `var`s (a counter closure keeps its own state alive). A **capture list** `[x]` captures the current value instead, and `[weak self]`/`[unowned self]` change reference strength.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "capture-list",
+  "topic": "Closures",
+  "question": "What is a capture list?",
+  "answer": "`{ [a, weak self, unowned b] in … }` — evaluated when the closure is **created**: value captures snapshot the current value; `weak`/`unowned` avoid strong references (and thus retain cycles).",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "escaping",
+  "topic": "Closures",
+  "question": "What is the difference between escaping and non-escaping closures?",
+  "answer": "By default a closure parameter is **non-escaping**: it must be called (or not) before the function returns, which lets the compiler optimise and lets you use `self` implicitly. Mark it `@escaping` if it's stored or called later (completion handlers, stored callbacks); then think about capture and retain cycles.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "autoclosure",
+  "topic": "Closures",
+  "question": "What is `@autoclosure` and when should you use it?",
+  "answer": "It wraps an argument expression in a closure automatically, delaying its evaluation: `func log(_ msg: @autoclosure () -> String)`. Used by `assert`, `&&`, `??` so expensive right-hand sides aren't evaluated unless needed. Overuse hides evaluation semantics from callers.",
+  "sources": [
+   "FullStack.Cafe",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "computed-vs-closure-property",
+  "topic": "Closures",
+  "question": "Computed property vs a property set to a closure?",
+  "answer": "A computed property runs its getter **every access**. `var x: Int = { … }()` runs a closure **once** at initialisation and stores the result. `lazy var x = { … }()` runs once on first access.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "functions-vs-closures",
+  "topic": "Closures",
+  "question": "What is the difference between functions and closures?",
+  "answer": "Functions are named closures. Closures can be anonymous inline expressions and capture context; both are reference types with function types like `(Int) -> Bool`, so they're interchangeable wherever that type is expected.",
+  "sources": [
+   "FullStack.Cafe",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "closures-memory",
+  "topic": "Closures",
+  "question": "How does ARC handle memory for closures?",
+  "answer": "Closures are reference types that strongly retain what they capture. If an object stores a closure that captures `self` strongly, you have a cycle: object → closure → object. Break it with `[weak self]` (then `guard let self`) or `[unowned self]` when the closure can't outlive the object.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "optionals",
+  "topic": "Optionals",
+  "question": "What are optionals and why do they exist?",
+  "answer": "`T?` is `Optional<T>`, an enum with cases `.some(T)` and `.none` (`nil`). They make the possibility of \"no value\" explicit in the type system, so non-optional values are guaranteed present and the compiler forces you to handle absence.",
+  "sources": [
+   "Devinterview",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "optional-binding",
+  "topic": "Optionals",
+  "question": "What is optional binding, and how is it different from force unwrapping?",
+  "answer": "`if let x = opt { … }` / `guard let x = opt else { … }` safely test and unwrap in one step (shorthand `if let x`). Force unwrapping `opt!` crashes if `nil` — use only when `nil` is a programmer error you'd want to trap on.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "if-let-vs-guard",
+  "topic": "Optionals",
+  "question": "What is the difference between `if let` and `guard let`?",
+  "answer": "`if let` scopes the unwrapped value **inside** its braces; `guard let` requires the else branch to exit and makes the value available for the **rest** of the scope. Use `guard` for preconditions/early exits, `if let` when there's work to do only in the present case.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "multiple-optional-binding",
+  "topic": "Optionals",
+  "question": "How do you bind multiple optionals at once?",
+  "answer": "Comma-separate the clauses: `if let a = x, let b = y, a < b { … }` — all must succeed, evaluated left to right, and later clauses can use earlier bindings.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "optional-chaining",
+  "topic": "Optionals",
+  "question": "What problem does optional chaining solve?",
+  "answer": "`person?.address?.city` calls through a chain of optionals and short-circuits to `nil` at the first missing link, producing an optional result instead of nested `if let`s. Works for properties, methods and subscripts; assignments through a chain return `Void?` to tell you if they happened.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "implicitly-unwrapped",
+  "topic": "Optionals",
+  "question": "What's the difference between `String?` and `String!`?",
+  "answer": "Both can hold `nil`. `String!` is an *implicitly unwrapped optional*: it's force-unwrapped automatically when used where a non-optional is needed (crashing if `nil`). It exists for values that are `nil` only briefly during setup (e.g. IBOutlets). Prefer `?`.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "forced-unwrapping",
+  "topic": "Optionals",
+  "question": "What is forced unwrapping?",
+  "answer": "`value!` extracts the wrapped value and traps with \"Unexpectedly found nil\" if there isn't one. Reasonable only when `nil` would be a bug, and then `guard let … else { preconditionFailure(\"why\") }` documents intent better.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "error-handling",
+  "topic": "Error handling",
+  "question": "How does Swift handle errors?",
+  "answer": "Functions marked `throws` can `throw` any `Error`-conforming value (usually an enum). Callers must mark the call with `try` and either propagate (`throws` themselves) or handle with `do { try … } catch { … }`. Swift 6 adds typed throws: `throws(MyError)`.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "try-variants",
+  "topic": "Error handling",
+  "question": "What is the difference between `try`, `try?` and `try!`?",
+  "answer": "`try` propagates/requires a `catch`. `try?` converts the result to an optional, returning `nil` on error (the error is discarded). `try!` asserts no error will be thrown and crashes if one is.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "multi-pattern-catch",
+  "topic": "Error handling",
+  "question": "What are multi-pattern catch clauses?",
+  "answer": "A single `catch` can list several patterns: `catch VendingError.outOfStock, VendingError.invalidSelection { … }`. Patterns can bind values and use `where`. A final bare `catch` binds `error`.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "defer",
+  "topic": "Error handling",
+  "question": "What does `defer` do?",
+  "answer": "Schedules code to run when the current **scope exits** — normally, via `return`, `break` or a thrown error. Perfect for cleanup (closing files, unlocking). Multiple `defer`s run in **reverse** order of declaration.",
+  "sources": [
+   "FullStack.Cafe",
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "rethrows",
+  "topic": "Error handling",
+  "question": "What is the difference between `throws` and `rethrows`?",
+  "answer": "A `rethrows` function only throws if a closure argument throws — so `map` needs `try` only when you pass a throwing closure. `throws` means the function itself may throw regardless.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "result-type",
+  "topic": "Error handling",
+  "question": "When would you use Swift's `Result` type?",
+  "answer": "`Result<Success, Failure: Error>` stores the outcome of an operation as a value: `.success(v)` or `.failure(e)`. Useful for callbacks, storing outcomes, or transforming with `map`/`flatMap`. Convert with `Result { try f() }` and `try result.get()`. With `async throws`, it's needed less often.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "assert",
+  "topic": "Error handling",
+  "question": "What does `assert()` do?",
+  "answer": "`assert(cond, msg)` checks a condition in **debug** builds only and traps if false; it's compiled out of `-O` builds. `precondition` checks in release too; `fatalError` always traps. Use assertions for internal invariants, not user input.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "enums",
+  "topic": "Enums",
+  "question": "What are enumerations in Swift?",
+  "answer": "A type with a closed set of cases: `enum Direction { case north, south }`. Enums are value types with methods, computed properties, initialisers and protocol conformances. `switch` over them must be exhaustive.",
+  "sources": [
+   "Devinterview",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "associated-values",
+  "topic": "Enums",
+  "question": "What are associated values, and how do they differ from raw values?",
+  "answer": "**Raw values** are compile-time constants of one type shared by every instance of a case (`case get = \"GET\"`), with `init?(rawValue:)`. **Associated values** attach per-instance data of any types to a case: `case failure(code: Int, message: String)`. An enum can't have both.",
+  "sources": [
+   "Devinterview",
+   "FullStack.Cafe",
+   "Turing",
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "case-iterable",
+  "topic": "Enums",
+  "question": "What does `CaseIterable` do?",
+  "answer": "Conforming a (payload-free) enum to `CaseIterable` synthesises `static var allCases`, so you can loop over cases, count them, or build pickers without maintaining a list by hand.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "indirect-enums",
+  "topic": "Enums",
+  "question": "What are `indirect` enums, and how do they compare to classes for recursive data?",
+  "answer": "`indirect` lets a case contain the enum itself (expression trees, linked lists) by boxing the payload on the heap. Unlike classes, they keep **value semantics**, exhaustive switching and no inheritance.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "struct-vs-class",
+  "topic": "Structs & classes",
+  "question": "What are the differences between structs and classes?",
+  "answer": "Structs are **value types** (copied on assignment), get a memberwise initialiser, need `mutating` to change themselves, and can't inherit. Classes are **reference types** (shared), support inheritance, deinitialisers, identity (`===`) and are ARC-managed. Default to structs.",
+  "sources": [
+   "Devinterview",
+   "FullStack.Cafe",
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "value-vs-reference",
+  "topic": "Structs & classes",
+  "question": "What's the difference between a value type and a reference type?",
+  "answer": "Assigning or passing a **value type** creates an independent copy; mutating one doesn't affect the other. A **reference type** variable holds a pointer to a shared instance; all references see mutations. Structs, enums, tuples and standard collections are value types; classes, closures and actors are reference types.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "value-semantics",
+  "topic": "Structs & classes",
+  "question": "What are value semantics and their benefits?",
+  "answer": "A type has value semantics when copies are independent. Benefits: local reasoning, no unexpected sharing, thread safety, and cheap copies thanks to copy-on-write. Classes can simulate it (immutable classes, COW wrappers).",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "mutating",
+  "topic": "Structs & classes",
+  "question": "What does the `mutating` keyword mean?",
+  "answer": "Struct and enum methods can't modify `self` unless marked `mutating`. Calling one on a `let` constant is a compile error. Inside, `self` is effectively `inout` — you can even reassign `self = …`.",
+  "sources": [
+   "FullStack.Cafe",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "class-definition",
+  "topic": "Structs & classes",
+  "question": "How do you define a class?",
+  "answer": "`class Name: Superclass, Protocol { stored properties; init; methods; deinit }`. All stored properties must be initialised before use — either with defaults or in a designated `init`.",
+  "sources": [
+   "Devinterview"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "inheritance",
+  "topic": "Structs & classes",
+  "question": "What are the key principles of inheritance?",
+  "answer": "Classes inherit properties/methods from a single superclass, `override` them (explicitly marked), call up with `super`, and can prevent overriding with `final`. Structs/enums can't inherit — use protocols for shared behaviour.",
+  "sources": [
+   "Devinterview"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "multiple-inheritance",
+  "topic": "Structs & classes",
+  "question": "Does Swift support multiple inheritance?",
+  "answer": "No — a class has at most one superclass. But any type can conform to **multiple protocols**, and protocol extensions supply default implementations, which gives most benefits of multiple inheritance without the diamond problem.",
+  "sources": [
+   "Devinterview"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "encapsulation",
+  "topic": "Structs & classes",
+  "question": "How does encapsulation work with classes and structs?",
+  "answer": "Hide implementation with access control (`private`, `fileprivate`, `private(set)`), expose computed properties and methods as the interface, and keep invariants inside the type.",
+  "sources": [
+   "Devinterview"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "initializers",
+  "topic": "Structs & classes",
+  "question": "What does `init()` do and what are the rules for initialisers?",
+  "answer": "Initialisers set every stored property before the instance is used. Structs get a free memberwise init. Classes have **designated** inits (fully initialise, call `super.init`) and **convenience** inits (must delegate across to another init of the same class).",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "convenience-init",
+  "topic": "Structs & classes",
+  "question": "What is a convenience initialiser?",
+  "answer": "A secondary `convenience init` in a class that must call another initialiser of the **same** class (`self.init(...)`), usually supplying defaults. Designated inits delegate **up**, convenience inits delegate **across**.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "failable-init",
+  "topic": "Structs & classes",
+  "question": "What is a failable initialiser?",
+  "answer": "`init?(…)` may `return nil` when inputs are invalid, producing an optional instance: `Int(\"42\")` is a failable init returning `Int?`. `init!` exists but is rare.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "required-init",
+  "topic": "Structs & classes",
+  "question": "What does the `required` keyword mean?",
+  "answer": "`required init` forces every subclass to implement that initialiser (or inherit it). It's needed for protocol init requirements on non-final classes, so `T.init()` works for any subclass.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "initializer-delegation",
+  "topic": "Structs & classes",
+  "question": "What is initialiser delegation?",
+  "answer": "Initialisers calling other initialisers to avoid duplication. Value types: `self.init(...)`. Classes: designated → `super.init` (delegate up), convenience → `self.init` (delegate across).",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "two-phase-init",
+  "topic": "Structs & classes",
+  "question": "What is two-phase initialisation?",
+  "answer": "Phase 1: each class in the hierarchy initialises its **own** stored properties, bottom-up, via `super.init`. Phase 2: once everything is initialised, inits may customise, call methods and use `self`. This guarantees no property is read before being set.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "deinit",
+  "topic": "Structs & classes",
+  "question": "What is `deinit` and when should you use it?",
+  "answer": "A class's deinitialiser runs automatically right before ARC frees the instance. Use it for cleanup (close files, remove observers, invalidate timers) — and while learning, as a leak detector by printing from it. Structs have no `deinit`.",
+  "sources": [
+   "FullStack.Cafe",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "computed-properties",
+  "topic": "Structs & classes",
+  "question": "What is a computed property?",
+  "answer": "A property with a getter (and optional setter) that calculates its value each access instead of storing it: `var area: Double { width * height }`. The setter receives `newValue`.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "property-observers",
+  "topic": "Structs & classes",
+  "question": "What are property observers?",
+  "answer": "`willSet` (with `newValue`) and `didSet` (with `oldValue`) run around assignments to a stored property — not during `init` of the same type. Great for validation, clamping and triggering updates.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "lazy-properties",
+  "topic": "Structs & classes",
+  "question": "What is a lazy property?",
+  "answer": "`lazy var` isn't initialised until first accessed, then stored. Useful for expensive setup or values depending on `self`. Must be `var`, and isn't thread-safe.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "lazy-vs-computed",
+  "topic": "Structs & classes",
+  "question": "What is the difference between a `lazy var` and a computed property?",
+  "answer": "A lazy var computes **once** on first access and stores the result; a computed property recalculates **on every access** and stores nothing.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "static-vs-class",
+  "topic": "Structs & classes",
+  "question": "What's the difference between `static` and `class` members?",
+  "answer": "Both belong to the type, not instances. `static` members can't be overridden; `class` methods/computed properties (classes only) **can** be overridden by subclasses. `static` = `class final`.",
+  "sources": [
+   "FullStack.Cafe",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "static-properties",
+  "topic": "Structs & classes",
+  "question": "What are static properties and methods?",
+  "answer": "Members shared by the type itself: `static let maxLevel = 99`, `Math.square(3)`. `static let` is lazily initialised once, thread-safely — the basis for the singleton pattern.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "final",
+  "topic": "Structs & classes",
+  "question": "What does `final` do, and why use it?",
+  "answer": "Prevents a class from being subclassed or a member from being overridden. Communicates intent and enables **static dispatch** (faster calls). Consider making classes `final` by default.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "self-usage",
+  "topic": "Structs & classes",
+  "question": "When would you use `self` in a method?",
+  "answer": "To disambiguate a property from a parameter (`self.name = name`), in escaping closures (where explicit `self` makes capture visible, unless using `[self]`), or to pass/return the instance. Otherwise it's implicit.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "upcast-downcast",
+  "topic": "Structs & classes",
+  "question": "What is the difference between upcasting and downcasting?",
+  "answer": "Upcasting treats a subclass instance as its superclass — always safe, implicit or with `as`. Downcasting goes the other way and might fail — `as?` returns an optional, `as!` traps on failure.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "abstract-class",
+  "topic": "Structs & classes",
+  "question": "Is there a way to create an abstract class?",
+  "answer": "No `abstract` keyword. Options: a protocol with default implementations (usually best), or a base class whose methods call `fatalError(\"subclass must override\")` with an `init` that isn't public.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "singleton",
+  "topic": "Structs & classes",
+  "question": "How do you implement a singleton, and when is it a good idea?",
+  "answer": "`final class Settings { static let shared = Settings(); private init() {} }` — `static let` guarantees lazy, thread-safe single initialisation and `private init` prevents other instances. Good for truly global resources; overuse hurts testability — prefer dependency injection.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "access-control",
+  "topic": "Access control",
+  "question": "What access levels does Swift have?",
+  "answer": "From most to least open: `open` (subclass/override outside the module), `public`, `internal` (the **default**: whole module), `fileprivate` (the file), `private` (the enclosing declaration + its same-file extensions). `private(set)` restricts only the setter.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "open-vs-public",
+  "topic": "Access control",
+  "question": "What is the difference between `open` and `public`?",
+  "answer": "Both are visible outside the module, but only `open` classes can be **subclassed** and `open` members **overridden** outside it. `public` lets other modules use but not extend.",
+  "sources": [
+   "FullStack.Cafe",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "fileprivate-vs-private",
+  "topic": "Access control",
+  "question": "What is the difference between `fileprivate` and `private`?",
+  "answer": "`private` is visible within the enclosing declaration and its extensions **in the same file**; `fileprivate` is visible anywhere in the file.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "private-set",
+  "topic": "Access control",
+  "question": "What does `private(set)` do?",
+  "answer": "Keeps the getter at the property's access level but makes the setter private: outsiders can read, only the type can write. Ideal for exposing state that must change only through methods.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "protocols",
+  "topic": "Protocols",
+  "question": "What is a protocol and what is it for?",
+  "answer": "A blueprint of requirements — methods, properties, initialisers, associated types — that classes, structs and enums adopt. Code can depend on the protocol instead of a concrete type, enabling polymorphism, testing with mocks and generic algorithms.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "protocol-vs-class",
+  "topic": "Protocols",
+  "question": "What's the difference between a protocol and a class? Is it like a Java interface?",
+  "answer": "A class is a concrete reference type with storage and inheritance; a protocol only states requirements. Unlike Java interfaces, Swift protocols can be adopted by value types, have associated types, be extended retroactively and get default implementations via extensions.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "protocol-extension",
+  "topic": "Protocols",
+  "question": "What is a protocol extension?",
+  "answer": "An extension on a protocol that adds **default implementations** or new methods for every conforming type: `extension Collection { var isNotEmpty: Bool { !isEmpty } }`. Can be constrained with `where`.",
+  "sources": [
+   "Naukri Code360",
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "extension-vs-protocol-extension",
+  "topic": "Protocols",
+  "question": "What is the difference between an extension and a protocol extension?",
+  "answer": "An extension adds functionality to **one** concrete type. A protocol extension adds it to **every** type that conforms to the protocol — and methods not declared as requirements are statically dispatched.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "pop",
+  "topic": "Protocols",
+  "question": "What is protocol-oriented programming?",
+  "answer": "Designing around protocols + extensions + value types instead of class hierarchies: small focused protocols, default behaviour in extensions, composition over inheritance. Benefits: works with structs, retroactive conformance, easy mocking. Drawbacks: can make type relationships complex and harder to debug.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "protocol-composition",
+  "topic": "Protocols",
+  "question": "What is protocol composition?",
+  "answer": "Combining protocols into one requirement with `&`: `func save(_ x: Codable & Identifiable)` or `typealias Model = Codable & Hashable`. You can include a class too: `UIView & Themeable`.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "associated-types",
+  "topic": "Protocols",
+  "question": "What are associated types in protocols?",
+  "answer": "Placeholders a protocol declares with `associatedtype Item` that each conforming type fills in (often inferred). They make protocols generic — `Collection.Element`. Constrain them with `where` clauses.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "equatable-hashable",
+  "topic": "Protocols",
+  "question": "What is the difference between `Equatable` and `Hashable`?",
+  "answer": "`Equatable` requires `==`. `Hashable` refines it and requires `hash(into:)` so values can be `Set` elements or `Dictionary` keys. Both are synthesised for structs/enums whose members conform. Equal values **must** hash equally.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "comparable",
+  "topic": "Protocols",
+  "question": "How do you make a type Comparable?",
+  "answer": "Conform to `Comparable` and implement `static func <`. You get `>`, `<=`, `>=`, `min`, `max`, `sorted()` for free. Enums without associated values get synthesised `Comparable` by case order.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "delegation",
+  "topic": "Protocols",
+  "question": "How would you explain delegation?",
+  "answer": "One object hands off some responsibilities to another via a protocol: `protocol DownloaderDelegate: AnyObject { func didFinish(_ data: Data) }`, stored as `weak var delegate` (to avoid cycles). It decouples the worker from whoever reacts to its events.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "dependency-injection",
+  "topic": "Protocols",
+  "question": "How do you implement dependency injection?",
+  "answer": "Pass dependencies in instead of creating them inside: initialiser injection (preferred), property injection or method injection, usually typed as protocols so tests can supply fakes. Property wrappers or containers can automate it.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "conditional-conformance",
+  "topic": "Protocols",
+  "question": "What are conditional conformances?",
+  "answer": "A generic type conforms to a protocol only when its type parameters do: `extension Array: Equatable where Element: Equatable`. That's why `[Int]` is Equatable but `[SomeNonEquatable]` isn't.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "self-vs-Self",
+  "topic": "Protocols",
+  "question": "What's the difference between `self` and `Self`?",
+  "answer": "`self` is the current **instance** (or the type itself inside static methods). `Self` is the current **type** — in protocols it means \"the conforming type\" (`static func make() -> Self`), in classes the dynamic type.",
+  "sources": [
+   "FullStack.Cafe",
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "any-anyobject",
+  "topic": "Protocols",
+  "question": "What is the difference between `Any` and `AnyObject`?",
+  "answer": "`Any` can hold an instance of any type — structs, enums, functions, optionals. `AnyObject` holds only class instances. Using them discards static type information, so you need casts to get it back.",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "type-casting",
+  "topic": "Protocols",
+  "question": "What is type casting, and how do `is`, `as`, `as?` and `as!` differ?",
+  "answer": "`is` checks a type (`Bool`). `as` does guaranteed conversions (upcasts, literal bridging). `as?` attempts a downcast and returns an optional. `as!` force-downcasts and traps on failure.",
+  "sources": [
+   "Devinterview",
+   "FullStack.Cafe",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "existential-any",
+  "topic": "Protocols",
+  "question": "What does `any Protocol` mean?",
+  "answer": "An **existential** — a box that can hold any conforming value, whose concrete type can change at runtime (`var shapes: [any Shape]`). It costs dynamic dispatch and allocation, and exposes only the protocol's members.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "opaque-types",
+  "topic": "Protocols",
+  "question": "What are opaque return types (`some`)?",
+  "answer": "`func make() -> some Shape` returns one **specific** concrete type that the caller doesn't get to see, but the compiler does — preserving type identity (so associated types and `Self` requirements work) while hiding implementation. It's \"reverse generics\": the callee picks the type.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "opaque-vs-generics",
+  "topic": "Protocols",
+  "question": "How do opaque return types compare with generics?",
+  "answer": "With generics (`func f<T: Shape>(_: T)`) the **caller** chooses the concrete type. With `some Shape` as a return type the **implementation** chooses it. `some` in parameter position is sugar for a generic parameter.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "type-erasure",
+  "topic": "Protocols",
+  "question": "What is type erasure and when would you use it?",
+  "answer": "Wrapping values of different concrete types behind one concrete wrapper type, e.g. `AnyPublisher`, `AnyHashable`, or your own `AnyShape` storing closures forwarded to the wrapped value. Historically needed for protocols with associated types; `any P<T>` covers many cases now.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "dynamic-member-lookup",
+  "topic": "Protocols",
+  "question": "What is `@dynamicMemberLookup`?",
+  "answer": "Lets a type resolve `value.anything` through `subscript(dynamicMember:)` — with `String` members (dynamic, e.g. JSON wrappers) or type-safe `KeyPath` members (forwarding wrappers).",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "method-dispatch",
+  "topic": "Protocols",
+  "question": "How does method dispatch work in Swift?",
+  "answer": "**Static/direct** dispatch for structs, enums, `final`, `private` and protocol-extension-only methods; **table (vtable/witness table)** dispatch for overridable class methods and protocol requirements; **message** dispatch for `@objc dynamic`. A method declared only in a protocol extension is statically dispatched — calling it through the protocol type ignores a conforming type's own version.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "extensions",
+  "topic": "Extensions",
+  "question": "What are extensions used for?",
+  "answer": "Adding computed properties, methods, initialisers, subscripts, nested types and protocol conformances to existing types — including ones you don't own like `Int` or `String`. They can't add stored properties or override existing members.",
+  "sources": [
+   "FullStack.Cafe",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "generics",
+  "topic": "Generics",
+  "question": "What are generics and why are they useful?",
+  "answer": "Code written once for any type satisfying constraints: `func swapValues<T>(_ a: inout T, _ b: inout T)`, `struct Stack<Element>`. They keep full type safety (no `Any` casts) and are specialised for performance. `Array`, `Dictionary`, `Optional` and `Result` are all generic.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "generic-constraints",
+  "topic": "Generics",
+  "question": "How do you constrain generic types?",
+  "answer": "Constrain placeholders with protocols or superclasses — `<T: Comparable>` — and add `where` clauses for relationships: `where C.Element == Int`, `where T: Hashable & Codable`.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "phantom-types",
+  "topic": "Generics",
+  "question": "What are phantom types and when would you use them?",
+  "answer": "A generic parameter that's never stored — used only to tag a value at compile time: `struct ID<Entity> { let raw: UUID }` makes `ID<User>` and `ID<Order>` incompatible; `Distance<Meters>` can't be added to `Distance<Feet>`.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "key-paths",
+  "topic": "Generics",
+  "question": "What are key paths?",
+  "answer": "Typed references to properties: `\\Person.name` is a `KeyPath<Person, String>`. Read with `p[keyPath: kp]`, write through `WritableKeyPath`. Great for generic sorting, `map(\\.name)` and bindings.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "arc",
+  "topic": "Memory management",
+  "question": "How does Swift manage memory (ARC)?",
+  "answer": "Automatic Reference Counting: each class instance tracks how many **strong** references point to it and is deallocated (running `deinit`) when the count reaches zero. Value types are copied/stack-allocated or inline and aren't reference counted themselves.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "arc-vs-gc",
+  "topic": "Memory management",
+  "question": "What is the difference between ARC and garbage collection?",
+  "answer": "ARC inserts retain/release at compile time and frees objects deterministically the moment the last reference goes; there are no GC pauses. The cost: it can't collect **cycles** by itself, so you must break them with `weak`/`unowned`.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "strong-reference",
+  "topic": "Memory management",
+  "question": "What's a strong reference, and why do we need it?",
+  "answer": "The default kind of reference: it keeps the object alive. Without at least one strong reference, ARC frees the object immediately.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "weak-unowned",
+  "topic": "Memory management",
+  "question": "What is the difference between `weak` and `unowned`?",
+  "answer": "Both don't keep the object alive. `weak` is always an optional `var` and becomes `nil` when the object is freed — use when the referent can go away first. `unowned` is non-optional and assumes the referent outlives you; accessing it after deallocation traps.",
+  "sources": [
+   "FullStack.Cafe",
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "retain-cycle",
+  "topic": "Memory management",
+  "question": "What is a retain cycle and how do you prevent it?",
+  "answer": "Two or more objects holding strong references to each other (or an object and a closure it stores), so counts never reach zero — a leak. Break one edge with `weak`/`unowned` (parent→child strong, child→parent weak; `[weak self]` in stored closures). `deinit` printing is a quick detector; Xcode's memory graph finds them.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "memory-safety",
+  "topic": "Memory management",
+  "question": "How does memory safety work in Swift?",
+  "answer": "Variables are initialised before use, arrays are bounds-checked, integer overflow traps, ARC prevents use-after-free, and the **law of exclusivity** forbids overlapping accesses (e.g. passing the same variable as two `inout` arguments) — enforced at compile time and at runtime.",
+  "sources": [
+   "Naukri Code360",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "ownership",
+  "topic": "Memory management",
+  "question": "What is ownership in Swift (`~Copyable`, `consuming`, `borrowing`)?",
+  "answer": "Swift 5.9+ lets types opt out of copyability with `~Copyable`; such values have a single owner and are **moved**. Parameters can be `borrowing` (read-only access) or `consuming` (take ownership), and the `consume` operator ends a binding's lifetime early. It enables unique resources like file handles with compile-time guarantees.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "memory-leaks",
+  "topic": "Memory management",
+  "question": "What causes memory leaks in Swift and how do you find them?",
+  "answer": "Mostly retain cycles: delegates held strongly, closures capturing `self` stored on `self`, parent/child references. Detect with `deinit` logging, Instruments' Leaks, or the Xcode memory graph; fix with `weak`/`unowned` capture.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "caching",
+  "topic": "Memory management",
+  "question": "What is an efficient way to cache data in memory?",
+  "answer": "A dictionary for O(1) lookup plus an eviction policy — e.g. an LRU cache (dictionary + doubly linked list, O(1) get/put). `NSCache` gives automatic eviction under memory pressure. Memoisation caches pure function results.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "memory-layout",
+  "topic": "Memory management",
+  "question": "How does Swift's memory layout affect performance?",
+  "answer": "Value types are stored inline (stack, or inside their container) with no reference counting; classes live on the heap with refcounts. `MemoryLayout<T>.size/stride/alignment` shows the layout; property order affects padding. Fewer heap allocations and less refcounting = faster.",
+  "sources": [
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "async-await",
+  "topic": "Concurrency",
+  "question": "How does Swift handle asynchronous tasks?",
+  "answer": "Structured concurrency: `async` functions suspend at `await` without blocking threads; `async let` and `TaskGroup` run child tasks in parallel; `Task {}` starts unstructured work; cancellation is cooperative. Older code uses GCD (`DispatchQueue`) and completion handlers.",
+  "sources": [
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "actors",
+  "topic": "Concurrency",
+  "question": "How do you handle thread safety in Swift?",
+  "answer": "Modern: **actors** serialise access to their mutable state (calls from outside are `await`ed), and Swift 6's strict concurrency checking uses `Sendable` to prove data-race safety at compile time. Older approaches: serial `DispatchQueue`, locks (`NSLock`, `Mutex`).",
+  "sources": [
+   "Turing",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "dispatch-sync-async",
+  "topic": "Concurrency",
+  "question": "What is the difference between `DispatchQueue.async` and `sync`?",
+  "answer": "`async` schedules work and returns immediately; `sync` blocks the caller until the work finishes. Calling `sync` onto the queue you're already on (e.g. `main.sync` from main) deadlocks. A serial queue runs one task at a time in order.",
+  "sources": [
+   "FullStack.Cafe"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "task-group",
+  "topic": "Concurrency",
+  "question": "What is a TaskGroup?",
+  "answer": "`withTaskGroup(of:)` / `withThrowingTaskGroup` spawns a dynamic number of child tasks and collects results as they finish (in **completion** order, not submission order). All children finish or are cancelled before the group returns.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "sendable",
+  "topic": "Concurrency",
+  "question": "What is `Sendable`?",
+  "answer": "A marker protocol for types safe to share across concurrency domains: value types of Sendable members, actors, immutable final classes. Swift 6 language mode makes non-Sendable sharing a compile **error**, which is why global mutable `var`s are flagged.",
+  "sources": [],
+  "problemIds": []
+ },
+ {
+  "id": "property-wrappers",
+  "topic": "Advanced features",
+  "question": "What are property wrappers? Give an example.",
+  "answer": "A `@propertyWrapper` type with a `wrappedValue` that encapsulates storage logic, reused as an attribute: `@Clamped(0...100) var volume = 50`, `@Trimmed var name`. Can expose a `projectedValue` via `$name`. SwiftUI's `@State` is one.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "result-builders",
+  "topic": "Advanced features",
+  "question": "What are result builders?",
+  "answer": "A `@resultBuilder` type with static `buildBlock` (plus `buildOptional`, `buildEither`, `buildArray` …) that turns a sequence of statements in a closure into a single combined value — the DSL mechanism behind SwiftUI's view bodies and `RegexBuilder`.",
+  "sources": [
+   "Turing",
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "codable",
+  "topic": "Advanced features",
+  "question": "What does `Codable` do?",
+  "answer": "`Codable` = `Encodable & Decodable`. The compiler synthesises encoding/decoding for types whose properties are Codable, so `JSONDecoder().decode(User.self, from: data)` just works. Customise with `CodingKeys`, `init(from:)` and `encode(to:)`.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "codable-keys",
+  "topic": "Advanced features",
+  "question": "Why do key decoding strategies and `CodingKeys` matter?",
+  "answer": "JSON rarely matches Swift naming. `decoder.keyDecodingStrategy = .convertFromSnakeCase` maps `first_name` → `firstName`; a `CodingKeys` enum renames/omits individual keys; custom `init(from:)` handles nesting, defaults and type mismatches.",
+  "sources": [
+   "Hacking with Swift",
+   "Naukri Code360"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "availability",
+  "topic": "Advanced features",
+  "question": "What do `#available` and `@available` do?",
+  "answer": "`@available(macOS 14, *)` marks declarations as needing an OS version; `if #available(macOS 14, *) { … }` checks at runtime and lets you use newer APIs in that branch. `@available(*, deprecated, message:)` deprecates your own APIs.",
+  "sources": [
+   "Hacking with Swift",
+   "Turing"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "compiler-directives",
+  "topic": "Advanced features",
+  "question": "What do `#if`, `#error`, `canImport()` and `targetEnvironment()` do?",
+  "answer": "Compile-time conditions: `#if DEBUG`, `#if os(macOS)`, `#if swift(>=6.0)`, `#if canImport(UIKit)`, `#if targetEnvironment(simulator)` include/exclude code. `#error(\"msg\")` / `#warning(\"msg\")` emit a diagnostic deliberately.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "main-attribute",
+  "topic": "Advanced features",
+  "question": "What does the `@main` attribute do?",
+  "answer": "Marks the type that provides the program's entry point via a `static func main()` (sync or `async`). It replaces `main.swift` top-level code; SwiftUI's `App` and ArgumentParser use it.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "hashing",
+  "topic": "Advanced features",
+  "question": "How would you calculate a secure hash for some data?",
+  "answer": "With CryptoKit: `SHA256.hash(data: Data(string.utf8))` returns a digest you can hex-encode. `Hasher`/`hashValue` are **not** secure or stable across runs — never use them for persistence or security.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ },
+ {
+  "id": "file-manager",
+  "topic": "Advanced features",
+  "question": "How do you list files in a directory?",
+  "answer": "`FileManager.default.contentsOfDirectory(atPath:)` (or `contentsOfDirectory(at:includingPropertiesForKeys:)` with URLs); `enumerator(at:)` walks recursively. All throw, so handle errors.",
+  "sources": [
+   "Hacking with Swift"
+  ],
+  "problemIds": []
+ }
+]

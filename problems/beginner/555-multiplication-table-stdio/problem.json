@@ -1,0 +1,20 @@
+{
+  "id": "multiplication-table-stdio",
+  "title": "Multiplication Table (stdin)",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Loops",
+  "concepts": [
+    "for-in",
+    "half-open-range",
+    "string-interpolation"
+  ],
+  "mode": "stdio",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Control Flow — For-In Loops",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "try-optional",
+  "title": "try? to Optional",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Error handling",
+  "concepts": [
+    "try-variants",
+    "error-handling"
+  ],
+  "mode": "function",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling — Converting Errors to Optional Values",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ],
+  "signature": {
+    "name": "safeDivisions",
+    "params": [
+      {
+        "name": "pairs",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int?]"
+  }
+}

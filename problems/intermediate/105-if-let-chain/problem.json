@@ -1,0 +1,34 @@
+{
+  "id": "if-let-chain",
+  "title": "Bind Several Optionals",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "optional-binding",
+    "multiple-optional-binding",
+    "if-let-vs-guard"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "The Basics — Optional Binding",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "rectangleArea",
+    "params": [
+      {
+        "name": "width",
+        "type": "String?"
+      },
+      {
+        "name": "height",
+        "type": "String?"
+      }
+    ],
+    "returns": "String"
+  }
+}

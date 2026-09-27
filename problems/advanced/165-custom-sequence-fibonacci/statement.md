@@ -1,0 +1,3 @@
+Write `struct Fibonacci: Sequence` (infinite) with a nested `Iterator: IteratorProtocol`, starting 0, 1, 1, 2…
+
+ Return `[Array(Fibonacci().prefix(take)), Fibonacci().lazy.filter { $0.isMultiple(of: 2) }.prefix(while: { $0 <= limit }) as array]`. Laziness is essential — the sequence never ends.

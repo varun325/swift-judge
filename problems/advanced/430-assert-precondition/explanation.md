@@ -1,0 +1,1 @@
+`assert` is checked in debug builds only (`-Onone`), `precondition` in release too (except `-Ounchecked`), `fatalError` always. Use them for **programmer errors**; validate user input with normal control flow. Try calling `validatedAge(-1)` and look at the judge's runtime-error message.

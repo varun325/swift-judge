@@ -1,0 +1,1 @@
+Swift 6.4 reports *inout arguments are not allowed to alias each other* (other forms of the same bug say *overlapping accesses …, but modification requires exclusive access*). Two simultaneous write accesses to the same memory are forbidden; Swift catches this statically when it can and at runtime otherwise. Copy one value first if you really need both.

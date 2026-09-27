@@ -1,0 +1,1 @@
+`index(_:offsetBy:limitedBy:)` returns `nil` instead of trapping when you'd walk past the limit. Note `endIndex` is *one past* the last character, so it must be excluded too. Each step is O(1) but walking `n` characters is O(n).

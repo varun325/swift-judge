@@ -1,0 +1,3 @@
+Write `func validatedAge(_ age: Int) -> Int` that uses `precondition(age >= 0, "age must be non-negative")` and returns the age. Then `checkedAges` returns `"ok <age>"` for each age.
+
+ The hidden tests include a negative age — so the judge will report a **runtime error** whose message is your precondition text. That's the expected behaviour here: the reference solution *also* traps… so instead, have `checkedAges` **filter out negatives before** calling `validatedAge`, and append `"rejected <n>"` for how many were filtered. Use `assert` for the internal invariant that the output count equals the input count.

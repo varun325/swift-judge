@@ -1,0 +1,36 @@
+{
+  "id": "result-builder-html",
+  "title": "Result Builder: Tiny HTML DSL",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Advanced features",
+  "concepts": [
+    "result-builders",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Attributes — resultBuilder",
+      "book": "ReferenceManual/Attributes"
+    }
+  ],
+  "signature": {
+    "name": "renderPage",
+    "params": [
+      {
+        "name": "title",
+        "type": "String"
+      },
+      {
+        "name": "items",
+        "type": "[String]"
+      },
+      {
+        "name": "showFooter",
+        "type": "Bool"
+      }
+    ],
+    "returns": "String"
+  }
+}

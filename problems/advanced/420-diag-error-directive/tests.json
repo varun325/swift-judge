@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Custom error emitted",
+  "pattern": "Set API_KEY before building"
+ }
+]

@@ -1,0 +1,29 @@
+{
+  "id": "pattern-match-operator",
+  "title": "Custom ~= Patterns in switch",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Advanced features",
+  "concepts": [
+    "pattern-matching-operator",
+    "pattern-matching"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Patterns — Expression Pattern",
+      "book": "ReferenceManual/Patterns"
+    }
+  ],
+  "signature": {
+    "name": "classifyAll",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

@@ -1,0 +1,189 @@
+[
+ {
+  "input": {
+   "team": [
+    "Gloria",
+    "Suzzanne",
+    "Tiffany",
+    "Tasha",
+    "trisha"
+   ]
+  },
+  "expected": [
+   "Tasha",
+   "trisha",
+   "Tiffany"
+  ]
+ },
+ {
+  "input": {
+   "team": []
+  }
+ },
+ {
+  "input": {
+   "team": [
+    "tom",
+    "Tim",
+    "ann",
+    "tea"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "team": [
+    "Atihs",
+    "tj",
+    "Aqrhqh",
+    "Mpq",
+    "Madc",
+    "Athu",
+    "Tnrv"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "team": [
+    "Ala"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "team": [
+    "Tev",
+    "Tpqhmcvs",
+    "Aslcjpgm"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "team": [
+    "Tyd",
+    "tof",
+    "Mctjqbr",
+    "Ttycnwrl"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "team": [
+    "Arwnznwe",
+    "Meuyi",
+    "Twakhq",
+    "Ahcitgv",
+    "Appife",
+    "tdipkuv",
+    "tw",
+    "Myuohgn"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "team": [
+    "Ml",
+    "Mulyra",
+    "Mbkyqn"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "team": [
+    "Ahkfpcsl",
+    "Tyvd",
+    "Afl",
+    "Magec",
+    "Annxelao",
+    "Mf",
+    "Mxfujqqr"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "team": [
+    "Tcbbk",
+    "Twbk",
+    "Tkkznb",
+    "Acz",
+    "thw"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "team": [
+    "Mrvsd",
+    "tu",
+    "Tawdg",
+    "Acg",
+    "Mjetnf"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "team": [
+    "Mnxpogtj",
+    "tgzy",
+    "tqo",
+    "Mjvgoy",
+    "Tkh"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "team": [
+    "Mvyirwx",
+    "Mpfvena",
+    "ttqvxqf",
+    "Twwlnibd",
+    "tkdiqbg",
+    "tqxlzm",
+    "Aurfl"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "team": [
+    "Admas",
+    "Mtif",
+    "Mxrycl",
+    "Tcnbtasv"
+   ]
+  },
+  "hidden": true
+ }
+]

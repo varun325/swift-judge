@@ -1,0 +1,113 @@
+[
+ {
+  "input": {
+   "codes": [
+    200,
+    404
+   ]
+  },
+  "expected": [
+   "OK",
+   "Not Found"
+  ]
+ },
+ {
+  "input": {
+   "codes": []
+  }
+ },
+ {
+  "input": {
+   "codes": [
+    418,
+    500,
+    301,
+    201
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "codes": [
+    201,
+    404,
+    200,
+    447,
+    462
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "codes": [
+    404,
+    413,
+    201,
+    500
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "codes": [
+    201,
+    201,
+    500,
+    201,
+    500,
+    113,
+    201,
+    201
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "codes": [
+    404,
+    301,
+    500,
+    200,
+    200,
+    301,
+    301,
+    201
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "codes": [
+    201,
+    301,
+    201,
+    500,
+    500,
+    201,
+    301,
+    511
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "codes": [
+    301,
+    301
+   ]
+  },
+  "hidden": true
+ }
+]

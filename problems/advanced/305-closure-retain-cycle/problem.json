@@ -1,0 +1,31 @@
+{
+  "id": "closure-retain-cycle",
+  "title": "[weak self] in Stored Closures",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Memory management",
+  "concepts": [
+    "closures-memory",
+    "capture-list",
+    "retain-cycle",
+    "self-usage",
+    "memory-leaks"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ARC — Strong Reference Cycles for Closures",
+      "book": "LanguageGuide/AutomaticReferenceCounting"
+    }
+  ],
+  "signature": {
+    "name": "timerDemo",
+    "params": [
+      {
+        "name": "ticks",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

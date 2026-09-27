@@ -1,0 +1,1 @@
+Each `for-in` iteration gets a **fresh** `i` constant, so the first closures print 1, 2, 3. The second group all capture the **same** `counter` variable and print its value at call time (100). The capture list froze `counter` at 3 when `snapshot` was created.

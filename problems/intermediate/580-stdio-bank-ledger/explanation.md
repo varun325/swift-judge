@@ -1,0 +1,1 @@
+Throwing functions keep validation logic out of the loop; `catch` patterns with bindings turn each error into a message. Top-level `main.swift` code needs a final bare `catch` because Swift can't prove the others exhaustive.

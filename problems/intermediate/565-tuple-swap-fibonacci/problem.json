@@ -1,0 +1,40 @@
+{
+  "id": "tuple-swap-fibonacci",
+  "title": "Tuple Assignment: Fibonacci & GCD",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Tuples",
+  "concepts": [
+    "tuples",
+    "control-flow"
+  ],
+  "mode": "function",
+  "notesRef": "16",
+  "docs": [
+    {
+      "title": "The Basics — Tuples",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "fibAndGcd",
+    "params": [
+      {
+        "name": "n",
+        "type": "Int",
+        "label": "_"
+      },
+      {
+        "name": "a",
+        "type": "Int",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

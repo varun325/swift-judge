@@ -1,0 +1,20 @@
+{
+  "id": "predict-struct-vs-class",
+  "title": "Predict: Struct Copy vs Class Share",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Value types",
+  "concepts": [
+    "value-vs-reference",
+    "struct-vs-class",
+    "immutability"
+  ],
+  "mode": "predict",
+  "notesRef": "1",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ]
+}

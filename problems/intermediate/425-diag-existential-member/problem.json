@@ -1,0 +1,20 @@
+{
+  "id": "diag-existential-member",
+  "title": "Diagnostic: Protocol Type Hides Members",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Protocols",
+  "concepts": [
+    "existential-any",
+    "protocols",
+    "type-casting"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "23",
+  "docs": [
+    {
+      "title": "Protocols — Protocols as Types",
+      "book": "LanguageGuide/Protocols"
+    }
+  ]
+}

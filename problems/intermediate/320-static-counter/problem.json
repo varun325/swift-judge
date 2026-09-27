@@ -1,0 +1,30 @@
+{
+  "id": "static-counter",
+  "title": "static Properties",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "static-properties",
+    "struct-vs-class"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Properties — Type Properties",
+      "book": "LanguageGuide/Properties"
+    }
+  ],
+  "signature": {
+    "name": "schoolRoll",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

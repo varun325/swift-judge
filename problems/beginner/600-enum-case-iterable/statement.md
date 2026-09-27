@@ -1,0 +1,1 @@
+Declare `enum Coffee: String, CaseIterable { case espresso, latte, cappuccino, mocha }` with a computed `price: Int` property — 2, 4, 4, 5 respectively. Return the raw values of every coffee costing at most `maxPrice`, in declaration order.

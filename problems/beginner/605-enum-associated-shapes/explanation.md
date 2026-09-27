@@ -1,0 +1,1 @@
+Associated values attach **per-instance** data to a case; `case let .rectangle(w, h)` binds them. A failable `init?` on the enum is a neat parser. Note `Shape.init(spec:)` passed as a function to `compactMap`.

@@ -1,0 +1,260 @@
+[
+ {
+  "input": {
+   "nums": [
+    2,
+    7,
+    11,
+    15
+   ],
+   "target": 9
+  },
+  "expected": [
+   0,
+   1
+  ]
+ },
+ {
+  "input": {
+   "nums": [
+    3,
+    3
+   ],
+   "target": 6
+  },
+  "expected": [
+   0,
+   1
+  ]
+ },
+ {
+  "input": {
+   "nums": [
+    1,
+    2
+   ],
+   "target": 7
+  },
+  "expected": []
+ },
+ {
+  "input": {
+   "nums": [
+    -3,
+    4,
+    3,
+    90
+   ],
+   "target": 0
+  }
+ },
+ {
+  "input": {
+   "nums": [],
+   "target": 0
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "nums": [
+    5,
+    75,
+    25
+   ],
+   "target": 100
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "nums": [
+    -56,
+    -7,
+    -24
+   ],
+   "target": -80
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "nums": [
+    -23,
+    -6,
+    38,
+    15
+   ],
+   "target": 1000
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "nums": [
+    -56,
+    56,
+    -27,
+    59,
+    6,
+    -23,
+    -20,
+    -8,
+    -51,
+    -50,
+    33
+   ],
+   "target": -78
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "nums": [
+    -38,
+    31,
+    -12,
+    -16,
+    -3,
+    5
+   ],
+   "target": -50
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "nums": [
+    -54,
+    -49,
+    28,
+    -10,
+    26,
+    16,
+    32,
+    50,
+    -46,
+    35,
+    -11,
+    -26
+   ],
+   "target": 1000
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "nums": [
+    11,
+    17,
+    58
+   ],
+   "target": 1000
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "nums": [
+    35,
+    38
+   ],
+   "target": 73
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "nums": [
+    56,
+    14,
+    -38,
+    -4,
+    -57,
+    39,
+    -41,
+    7
+   ],
+   "target": 1000
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "nums": [
+    -36,
+    19,
+    51,
+    5,
+    -17,
+    29,
+    39,
+    -2,
+    -3,
+    -54,
+    -18,
+    33
+   ],
+   "target": 1000
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "nums": [
+    -26,
+    -52,
+    23,
+    -3,
+    5,
+    13
+   ],
+   "target": -13
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "nums": [
+    -42,
+    -11,
+    37,
+    -12,
+    13,
+    -45,
+    -9
+   ],
+   "target": 1000
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "nums": [
+    26,
+    21,
+    -7,
+    -42,
+    29,
+    -51,
+    -30,
+    55,
+    -20
+   ],
+   "target": 25
+  },
+  "hidden": true
+ }
+]

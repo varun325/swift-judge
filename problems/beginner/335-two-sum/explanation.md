@@ -1,0 +1,1 @@
+`enumerated()` yields `(offset, element)` pairs. A dictionary lookup returns an **optional**, so `if let` checks and unwraps at once. Storing `seen[n] = i` *after* the lookup stops a number pairing with itself.

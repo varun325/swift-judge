@@ -1,0 +1,1 @@
+`self` → `onTick` closure → `self` is a cycle. `[weak self]` captures a weak optional reference; `guard let self` (Swift 5.8 shorthand) upgrades it for the closure body and allows implicit `self`. `[unowned self]` also works if the closure can never outlive the object.

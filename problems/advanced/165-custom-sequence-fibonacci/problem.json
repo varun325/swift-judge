@@ -1,0 +1,32 @@
+{
+  "id": "custom-sequence-fibonacci",
+  "title": "Custom Sequence: Fibonacci",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Collections deep dive",
+  "concepts": [
+    "custom-collection",
+    "lazy-sequences"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Protocols — Collections",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "fibDemo",
+    "params": [
+      {
+        "name": "limit",
+        "type": "Int"
+      },
+      {
+        "name": "take",
+        "type": "Int"
+      }
+    ],
+    "returns": "[[Int]]"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "curried-add",
+  "title": "Currying & Partial Application",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "currying",
+    "closures",
+    "functions-vs-methods"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Closures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "curryDemo",
+    "params": [
+      {
+        "name": "base",
+        "type": "Int",
+        "label": "_"
+      },
+      {
+        "name": "xs",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

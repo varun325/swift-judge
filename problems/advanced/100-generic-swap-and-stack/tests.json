@@ -1,0 +1,120 @@
+[
+ {
+  "input": {
+   "ints": [
+    1,
+    2,
+    3
+   ],
+   "words": [
+    "a",
+    "b"
+   ]
+  },
+  "expected": [
+   "3",
+   "2",
+   "1",
+   "b",
+   "a"
+  ]
+ },
+ {
+  "input": {
+   "ints": [],
+   "words": []
+  }
+ },
+ {
+  "input": {
+   "ints": [
+    9
+   ],
+   "words": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "ints": [],
+   "words": [
+    "waz",
+    "d",
+    "uy",
+    "xiz"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "ints": [
+    -5,
+    9,
+    3,
+    0
+   ],
+   "words": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "ints": [
+    -1,
+    3,
+    -2,
+    -3,
+    2,
+    3
+   ],
+   "words": [
+    "og",
+    "ua",
+    "qv"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "ints": [
+    1,
+    -5
+   ],
+   "words": [
+    "ov",
+    "pdd",
+    "fa"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "ints": [
+    8
+   ],
+   "words": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "ints": [
+    3,
+    8,
+    -2,
+    7
+   ],
+   "words": []
+  },
+  "hidden": true
+ }
+]

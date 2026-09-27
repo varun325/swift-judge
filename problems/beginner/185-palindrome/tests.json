@@ -1,0 +1,125 @@
+[
+ {
+  "input": {
+   "text": "A man, a plan, a canal: Panama"
+  },
+  "expected": true
+ },
+ {
+  "input": {
+   "text": "race a car"
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "text": ""
+  }
+ },
+ {
+  "input": {
+   "text": "Was it a car or a cat I saw?"
+  }
+ },
+ {
+  "input": {
+   "text": "été"
+  }
+ },
+ {
+  "input": {
+   "text": "0P"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "text": "No lemon, no melon"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "gvlcxCLVG,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "hyvnpxPNVYH,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "voxOV,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": ","
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "ZdToU U1wUz1"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "wnuaikkiaunw"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "hbvcixICVBH,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "zltwxWTLZ,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "wjqhayxYAHQJW,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": "ycyhxHYCY,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "1PcEIPOb!Z"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "cc"
+  },
+  "hidden": true
+ }
+]

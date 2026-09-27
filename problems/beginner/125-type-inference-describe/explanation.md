@@ -1,0 +1,1 @@
+Integer literals default to `Int`, float literals to `Double`, and collection literals are inferred from their elements (`Array<Int>`, `Dictionary<String, Int>`). `1...3` is a `ClosedRange<Int>`. Look at your output: `type(of:)` prints the *full* generic names — `[Int]` is sugar for `Array<Int>`.

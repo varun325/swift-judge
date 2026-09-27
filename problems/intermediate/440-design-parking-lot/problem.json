@@ -1,0 +1,20 @@
+{
+  "id": "design-parking-lot",
+  "title": "Design: Parking Lot (classes)",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "class-definition",
+    "struct-vs-class",
+    "enums"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ]
+}

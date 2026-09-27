@@ -1,0 +1,1 @@
+Inside the function a variadic `Double...` **is** a `[Double]`. Swift has no "splat" to pass an array into a variadic parameter, so the standard pattern is an array-taking overload that the variadic one forwards to.

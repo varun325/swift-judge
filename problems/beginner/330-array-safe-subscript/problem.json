@@ -1,0 +1,40 @@
+{
+  "id": "array-safe-subscript",
+  "title": "Safe Subscript Extension",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Arrays",
+  "concepts": [
+    "subscripts",
+    "extensions",
+    "optionals"
+  ],
+  "mode": "function",
+  "notesRef": "6",
+  "docs": [
+    {
+      "title": "Subscripts",
+      "book": "LanguageGuide/Subscripts"
+    },
+    {
+      "title": "Extensions",
+      "book": "LanguageGuide/Extensions"
+    }
+  ],
+  "signature": {
+    "name": "pick",
+    "params": [
+      {
+        "name": "items",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "indices",
+        "type": "[Int]",
+        "label": "at"
+      }
+    ],
+    "returns": "[String?]"
+  }
+}

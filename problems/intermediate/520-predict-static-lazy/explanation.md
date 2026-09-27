@@ -1,0 +1,1 @@
+Type properties (`static let`) and globals are initialised **lazily** on first access, exactly once, and thread-safely — which is why `static let shared = …` is the canonical singleton. Accessing `timeout` doesn't initialise `apiURL`.

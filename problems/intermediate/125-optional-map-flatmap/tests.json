@@ -1,0 +1,121 @@
+[
+ {
+  "input": {
+   "csv": "4,x,y"
+  },
+  "expected": 16
+ },
+ {
+  "input": {
+   "csv": "x,4"
+  },
+  "expected": null
+ },
+ {
+  "input": {
+   "csv": null
+  },
+  "expected": null
+ },
+ {
+  "input": {
+   "csv": ""
+  }
+ },
+ {
+  "input": {
+   "csv": "-3"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "csv": ",5"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "csv": ",-84"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "csv": "62,-52"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "csv": "cs"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "csv": "82,,-99,10"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "csv": ",-20,49,-29"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "csv": "44,ar,,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "csv": ",-85,,b"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "csv": "21,frv"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "csv": ",-2"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "csv": ",,55,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "csv": "mnn,hbx,-30,"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "csv": ",85,88"
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,34 @@
+{
+  "id": "task-cancellation",
+  "title": "Cooperative Cancellation",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "task-group"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — Task Cancellation",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "firstMatch",
+    "params": [
+      {
+        "name": "haystacks",
+        "type": "[[Int]]",
+        "label": "_"
+      },
+      {
+        "name": "target",
+        "type": "Int"
+      }
+    ],
+    "returns": "Int",
+    "async": true
+  }
+}

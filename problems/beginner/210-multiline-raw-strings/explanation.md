@@ -1,0 +1,1 @@
+In a raw string `\` is literal, so `\(user)` would be printed verbatim — interpolation needs the same number of `#` as the delimiter: `\#(user)`. Multiline literals use `"""` and strip indentation up to the closing delimiter.

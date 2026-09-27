@@ -1,0 +1,31 @@
+{
+  "id": "move-zeroes",
+  "title": "Move Zeroes In Place",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Arrays",
+  "concepts": [
+    "inout",
+    "array-basics"
+  ],
+  "mode": "function",
+  "notesRef": "6",
+  "docs": [
+    {
+      "title": "Collection Types — Modifying an Array",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "moveZeroes",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "inout": true,
+        "label": "_"
+      }
+    ],
+    "returns": "Void"
+  }
+}

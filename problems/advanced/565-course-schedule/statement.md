@@ -1,0 +1,1 @@
+`[a, b]` means course `b` must come before `a`. Return a valid order using **Kahn's algorithm**, always taking the **smallest** available course next (so the answer is unique), or `[]` if there's a cycle.

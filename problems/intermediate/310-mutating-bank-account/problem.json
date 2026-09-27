@@ -1,0 +1,35 @@
+{
+  "id": "mutating-bank-account",
+  "title": "mutating Methods & private(set)",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "mutating",
+    "private-set",
+    "encapsulation"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Methods — Modifying Value Types from Within Instance Methods",
+      "book": "LanguageGuide/Methods"
+    },
+    {
+      "title": "Access Control — Getters and Setters",
+      "book": "LanguageGuide/AccessControl"
+    }
+  ],
+  "signature": {
+    "name": "bankOps",
+    "params": [
+      {
+        "name": "ops",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

@@ -1,0 +1,97 @@
+[
+ {
+  "input": {
+   "files": [
+    "a",
+    "b"
+   ],
+   "keepDelegate": true
+  },
+  "expected": [
+   "shown a",
+   "shown b"
+  ]
+ },
+ {
+  "input": {
+   "files": [
+    "a"
+   ],
+   "keepDelegate": false
+  },
+  "expected": [
+   "dropped a"
+  ]
+ },
+ {
+  "input": {
+   "files": [],
+   "keepDelegate": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "files": [
+    "vt",
+    "tccq",
+    "y"
+   ],
+   "keepDelegate": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "files": [
+    "rf",
+    "rycp"
+   ],
+   "keepDelegate": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "files": [
+    "wjk",
+    "hg"
+   ],
+   "keepDelegate": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "files": [
+    "zwuc",
+    "zaek"
+   ],
+   "keepDelegate": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "files": [
+    "b",
+    "ljvh"
+   ],
+   "keepDelegate": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "files": [],
+   "keepDelegate": false
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,30 @@
+{
+  "id": "result-type",
+  "title": "Result Instead of throws",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "result-type",
+    "error-handling"
+  ],
+  "mode": "function",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ],
+  "signature": {
+    "name": "parseAges",
+    "params": [
+      {
+        "name": "raw",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

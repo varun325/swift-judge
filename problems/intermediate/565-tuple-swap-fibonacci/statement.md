@@ -1,0 +1,1 @@
+Return `[fib(n), gcd(a, b)]` where both loops update two variables **simultaneously** with tuple assignment — `(x, y) = (y, x + y)` — and no temporary variable. `fib(0) = 0`, `n ≤ 90`; `gcd` of non-negative numbers (`gcd(0, 0) = 0`).

@@ -1,0 +1,81 @@
+[
+ {
+  "input": {
+   "strings": [
+    "e621e1f8-c36c-495a-93fc-0c247a3e6e5f",
+    "nope"
+   ]
+  },
+  "expected": [
+   "valid E621E1F8-C36C-495A-93FC-0C247A3E6E5F",
+   "invalid",
+   "unique",
+   "36",
+   "ids differ"
+  ]
+ },
+ {
+  "input": {
+   "strings": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "strings": [
+    "79d165c6-91c9-e7a1-da8b-a1b1f270e042"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "strings": [
+    "tojcza",
+    "fgohuhqbjyppjmcjtystgflnymxw"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "strings": [
+    "fnwprnmpfrplpt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "strings": [
+    "17f1f79e-6a06-2224-ebb9-306adb899721",
+    "906ed0e6-0c6d-e649-15c0-f4b4f3259041"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "strings": [
+    "8ff38bff-f907-d9b1-3e00-f82657cdad38",
+    "e3d79deb-3d5f-7140-ef2e-a73af57f9069"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "strings": [
+    "9e58ac8f-441e-c21e-69d5-f28da20c606c",
+    "0bf928e8-674e-d3d5-00e1-cb0c15538fb3",
+    "hxxrxfehnhilrfuh"
+   ]
+  },
+  "hidden": true
+ }
+]

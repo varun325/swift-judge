@@ -1,0 +1,59 @@
+[
+ {
+  "input": {
+   "ticks": 2
+  },
+  "expected": [
+   "tick 1",
+   "tick 2",
+   "deinit ticker",
+   "end"
+  ]
+ },
+ {
+  "input": {
+   "ticks": 0
+  }
+ },
+ {
+  "input": {
+   "ticks": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "ticks": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "ticks": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "ticks": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "ticks": 8
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "ticks": 3
+  },
+  "hidden": true
+ }
+]

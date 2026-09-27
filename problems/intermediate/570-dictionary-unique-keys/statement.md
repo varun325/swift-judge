@@ -1,0 +1,1 @@
+Rows are `[id, name]`, and ids may repeat. `Dictionary(uniqueKeysWithValues:)` **crashes** on duplicate keys — so use `Dictionary(_:uniquingKeysWith:)` keeping the **last** name for each id, but join with `"|"` when the names differ (`"ann|anna"`) — keep first-then-later order.

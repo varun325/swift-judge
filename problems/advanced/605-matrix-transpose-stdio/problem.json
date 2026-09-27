@@ -1,0 +1,18 @@
+{
+  "id": "matrix-transpose-stdio",
+  "title": "Transpose a Matrix (stdin)",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Standard I/O",
+  "concepts": [
+    "compactmap-flatmap",
+    "array-basics"
+  ],
+  "mode": "stdio",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ]
+}

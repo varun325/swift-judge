@@ -1,0 +1,1 @@
+`for var p in players` gives you a **copy** of each struct, so the array is unchanged. Mutating through the index (`players[i]`) changes the array's own element. With a class, the loop constant is a reference to the shared object — even a `let` loop variable can mutate it.

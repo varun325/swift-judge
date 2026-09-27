@@ -1,0 +1,30 @@
+{
+  "id": "reverse-words",
+  "title": "Reverse the Words",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections",
+    "map-filter-reduce"
+  ],
+  "mode": "function",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "reverseWords",
+    "params": [
+      {
+        "name": "sentence",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "String"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "required-init-factory",
+  "title": "required init & Self",
+  "track": "intermediate",
+  "difficulty": "hard",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "required-init",
+    "self-vs-Self"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Initialization — Required Initializers",
+      "book": "LanguageGuide/Initialization"
+    }
+  ],
+  "signature": {
+    "name": "spawnAll",
+    "params": [
+      {
+        "name": "kinds",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

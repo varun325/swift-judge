@@ -1,0 +1,1 @@
+A `Character` is an **extended grapheme cluster** — what a human sees as one character. `"👨‍👩‍👧"` is 1 `Character` but 5 scalars, 8 UTF-16 units and 18 UTF-8 bytes. That's why `String` can't be indexed by `Int`, and why `count` is O(n).

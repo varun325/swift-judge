@@ -1,0 +1,49 @@
+[
+ {
+  "input": "5\n"
+ },
+ {
+  "input": "15\n"
+ },
+ {
+  "input": "0\n"
+ },
+ {
+  "input": "1\n",
+  "hidden": true
+ },
+ {
+  "input": "-3\n",
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": "24\n",
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": "19\n",
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": "9\n",
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": "34\n",
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": "41\n",
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": "2\n",
+  "hidden": true
+ }
+]

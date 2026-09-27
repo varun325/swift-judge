@@ -1,0 +1,1 @@
+If you customise `==`, you **must** hash exactly the same fields — equal values must produce equal hashes, or `Set` and `Dictionary` silently break. `hash(into:)` feeds components into a `Hasher`, which is randomly seeded per process (never persist hash values).

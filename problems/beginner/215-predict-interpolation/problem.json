@@ -1,0 +1,19 @@
+{
+  "id": "predict-interpolation",
+  "title": "Predict: print, debugPrint & terminator",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "String interpolation",
+  "concepts": [
+    "print-vs-debugprint",
+    "string-interpolation"
+  ],
+  "mode": "predict",
+  "notesRef": "5",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ]
+}

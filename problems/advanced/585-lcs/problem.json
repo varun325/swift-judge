@@ -1,0 +1,34 @@
+{
+  "id": "lcs",
+  "title": "Longest Common Subsequence",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "array-basics",
+    "strings-are-collections"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "lcs",
+    "params": [
+      {
+        "name": "a",
+        "type": "String",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

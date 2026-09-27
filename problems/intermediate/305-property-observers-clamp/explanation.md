@@ -1,0 +1,1 @@
+`willSet` sees `newValue` before the store; `didSet` sees `oldValue` after it. Assigning to the property **inside its own `didSet`** doesn't re-trigger observers — which is exactly what makes clamping there safe.

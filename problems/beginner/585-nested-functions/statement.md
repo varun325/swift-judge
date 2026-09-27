@@ -1,0 +1,1 @@
+Inside `stepper`, define two **nested** functions `stepForward(_:)` (+1) and `stepBackward(_:)` (-1). Pick one into a `let step: (Int) -> Int` based on `backward`, then apply it `steps` times starting from `start`, collecting every value **after** each step.

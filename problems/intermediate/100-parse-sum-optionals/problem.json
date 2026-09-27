@@ -1,0 +1,31 @@
+{
+  "id": "parse-sum-optionals",
+  "title": "Sum the Parsable Numbers",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "optionals",
+    "compactmap-flatmap",
+    "failable-init"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "The Basics — Optionals",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "sumOfNumbers",
+    "params": [
+      {
+        "name": "tokens",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

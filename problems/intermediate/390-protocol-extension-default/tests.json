@@ -1,0 +1,70 @@
+[
+ {
+  "input": {
+   "kinds": [
+    "en",
+    "pirate"
+   ]
+  },
+  "expected": [
+   "Hello, I'm Ann Hello, I'm Ann",
+   "Ahoy! Jack here Ahoy! Jack here"
+  ]
+ },
+ {
+  "input": {
+   "kinds": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "kinds": [
+    "pirate",
+    "en"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "kinds": [
+    "pirate",
+    "en",
+    "en"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "kinds": [
+    "pirate"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "kinds": [
+    "en"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "kinds": [
+    "pirate",
+    "pirate",
+    "pirate",
+    "en"
+   ]
+  },
+  "hidden": true
+ }
+]

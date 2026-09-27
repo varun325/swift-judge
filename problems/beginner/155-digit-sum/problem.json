@@ -1,0 +1,30 @@
+{
+  "id": "digit-sum",
+  "title": "Sum of Digits",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Numbers",
+  "concepts": [
+    "fundamental-types",
+    "map-filter-reduce"
+  ],
+  "mode": "function",
+  "notesRef": "3",
+  "docs": [
+    {
+      "title": "Basic Operators — Remainder Operator",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "digitSum",
+    "params": [
+      {
+        "name": "n",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

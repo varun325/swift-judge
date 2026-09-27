@@ -1,0 +1,1 @@
+A flag emoji is one `Character` built from two regional-indicator scalars (8 UTF-8 bytes). `"e"` + combining accent is **canonically equivalent** to `"é"`, so `==` is true and `count` is 4. Slicing uses `String.Index`, and `prefix`/`suffix`/`dropFirst` return `Substring`s.

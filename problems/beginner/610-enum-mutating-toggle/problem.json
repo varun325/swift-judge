@@ -1,0 +1,33 @@
+{
+  "id": "enum-mutating-toggle",
+  "title": "Mutating Enum: Traffic Light",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Enums",
+  "concepts": [
+    "mutating",
+    "enums"
+  ],
+  "mode": "function",
+  "notesRef": "9",
+  "docs": [
+    {
+      "title": "Enumerations",
+      "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "Methods — Modifying Value Types",
+      "book": "LanguageGuide/Methods"
+    }
+  ],
+  "signature": {
+    "name": "lightSequence",
+    "params": [
+      {
+        "name": "steps",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

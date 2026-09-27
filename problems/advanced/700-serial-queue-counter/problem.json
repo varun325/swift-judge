@@ -1,0 +1,37 @@
+{
+  "id": "serial-queue-counter",
+  "title": "GCD: A Serial Queue Guards State",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "dispatch-sync-async",
+    "actors",
+    "sendable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Dispatch",
+      "url": "https://developer.apple.com/documentation/dispatch"
+    },
+    {
+      "title": "Concurrency",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "hammer",
+    "params": [
+      {
+        "name": "threads",
+        "type": "Int"
+      },
+      {
+        "name": "incrementsEach",
+        "type": "Int"
+      }
+    ],
+    "returns": "Int"
+  }
+}

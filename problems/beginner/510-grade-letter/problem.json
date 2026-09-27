@@ -1,0 +1,30 @@
+{
+  "id": "grade-letter",
+  "title": "Letter Grade",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Conditionals",
+  "concepts": [
+    "control-flow",
+    "switch-statement"
+  ],
+  "mode": "function",
+  "notesRef": "11",
+  "docs": [
+    {
+      "title": "Control Flow — Conditional Statements",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "letterGrade",
+    "params": [
+      {
+        "name": "score",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "String"
+  }
+}

@@ -1,0 +1,208 @@
+[
+ {
+  "input": {
+   "values": [
+    -5,
+    3,
+    12
+   ],
+   "low": 0,
+   "high": 10
+  },
+  "expected": [
+   0,
+   3,
+   10
+  ]
+ },
+ {
+  "input": {
+   "values": [],
+   "low": 0,
+   "high": 1
+  }
+ },
+ {
+  "input": {
+   "values": [
+    5,
+    5
+   ],
+   "low": 5,
+   "high": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "values": [
+    4,
+    39,
+    -47,
+    37
+   ],
+   "low": -1,
+   "high": 13
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "values": [
+    1
+   ],
+   "low": -30,
+   "high": -4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "values": [
+    25,
+    -4,
+    -2,
+    -1,
+    -37,
+    -46
+   ],
+   "low": -29,
+   "high": -17
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "values": [
+    4,
+    -23,
+    44,
+    -24,
+    -11
+   ],
+   "low": -9,
+   "high": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "values": [
+    -2,
+    0,
+    5,
+    -6,
+    -43,
+    -20,
+    -14,
+    38
+   ],
+   "low": -12,
+   "high": -9
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "values": [
+    -31,
+    37,
+    -42,
+    27,
+    33,
+    3
+   ],
+   "low": -20,
+   "high": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "values": [
+    -17,
+    -50,
+    20
+   ],
+   "low": -13,
+   "high": 26
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "values": [
+    44,
+    -19
+   ],
+   "low": -7,
+   "high": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "values": [
+    -28,
+    -9,
+    -12,
+    -26,
+    -44,
+    -15,
+    3,
+    14,
+    45,
+    -42
+   ],
+   "low": -22,
+   "high": 8
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "values": [
+    -23
+   ],
+   "low": 2,
+   "high": 22
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "values": [
+    46,
+    39,
+    -49
+   ],
+   "low": 10,
+   "high": 14
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "values": [
+    -6,
+    26,
+    -1
+   ],
+   "low": -16,
+   "high": 7
+  },
+  "hidden": true
+ }
+]

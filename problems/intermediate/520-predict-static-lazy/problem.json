@@ -1,0 +1,20 @@
+{
+  "id": "predict-static-lazy",
+  "title": "Predict: static let Is Lazy",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "static-properties",
+    "singleton",
+    "lazy-properties"
+  ],
+  "mode": "predict",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Properties — Type Properties",
+      "book": "LanguageGuide/Properties"
+    }
+  ]
+}

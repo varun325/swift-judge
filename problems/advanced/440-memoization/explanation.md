@@ -1,0 +1,1 @@
+Memoisation trades memory for time: naive Fibonacci is O(2ⁿ), memoised O(n). The recursion trick passes the memoised function into `body`, tying the knot through a mutable box. Note the box creates a cycle (`memo` → box → `memo`) — acceptable for a demo, but real code would break it or use a class with a method.

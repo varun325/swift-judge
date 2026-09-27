@@ -1,0 +1,34 @@
+{
+  "id": "float-compare",
+  "title": "Comparing Doubles Safely",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Numbers",
+  "concepts": [
+    "float-vs-double"
+  ],
+  "mode": "function",
+  "notesRef": "3",
+  "docs": [
+    {
+      "title": "The Basics — Floating-Point Numbers",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "nearlyEqual",
+    "params": [
+      {
+        "name": "a",
+        "type": "Double",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "Double",
+        "label": "_"
+      }
+    ],
+    "returns": "Bool"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "diag-mutating-let",
+  "title": "Diagnostic: mutating Method on a let",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "mutating",
+    "let-vs-var"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Methods — Modifying Value Types",
+      "book": "LanguageGuide/Methods"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+[
+ {
+  "input": {
+   "user": "varun"
+  },
+  "expected": "C:\\Users\\varun\\Documents"
+ },
+ {
+  "input": {
+   "user": "a b"
+  }
+ },
+ {
+  "input": {
+   "user": ""
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "user": "qqjv"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "user": "rvfcba"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "user": "ljaukzpopc"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "user": "nvdpmr"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "user": "qdn"
+  },
+  "hidden": true
+ }
+]

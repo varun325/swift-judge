@@ -1,0 +1,1 @@
+`grid.map(Array.init)` turns each `String` into `[Character]` for O(1) indexing. Tuples make great lightweight coordinates, and destructuring `let (y, x) = …` unpacks them. `indices.contains` is the bounds check. (Using `removeLast()` makes it DFS order — either works for counting.)

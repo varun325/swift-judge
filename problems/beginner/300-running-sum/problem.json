@@ -1,0 +1,30 @@
+{
+  "id": "running-sum",
+  "title": "Running Sum",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Arrays",
+  "concepts": [
+    "array-basics",
+    "map-filter-reduce"
+  ],
+  "mode": "function",
+  "notesRef": "6",
+  "docs": [
+    {
+      "title": "Collection Types — Arrays",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "runningSum",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

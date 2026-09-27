@@ -1,0 +1,126 @@
+[
+ {
+  "input": {
+   "year": 2024
+  },
+  "expected": true
+ },
+ {
+  "input": {
+   "year": 1900
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "year": 2000
+  },
+  "expected": true
+ },
+ {
+  "input": {
+   "year": 2023
+  }
+ },
+ {
+  "input": {
+   "year": 2100
+  }
+ },
+ {
+  "input": {
+   "year": 2400
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "year": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "year": 52
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "year": 400
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "year": 2900
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "year": 1231
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "year": 2424
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "year": 1221
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "year": 157
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "year": 1500
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "year": 1100
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "year": 1200
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "year": 2017
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "year": 116
+  },
+  "hidden": true
+ }
+]

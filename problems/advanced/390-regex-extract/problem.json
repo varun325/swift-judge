@@ -1,0 +1,29 @@
+{
+  "id": "regex-extract",
+  "title": "Swift Regex: Extract Dates",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Strings deep dive",
+  "concepts": [
+    "regex",
+    "strings-are-collections"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Regex",
+      "url": "https://developer.apple.com/documentation/swift/regex"
+    }
+  ],
+  "signature": {
+    "name": "extractDates",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

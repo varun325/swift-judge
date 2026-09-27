@@ -1,0 +1,29 @@
+{
+  "id": "repeat-while-collatz",
+  "title": "Collatz Steps (repeat-while)",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Loops",
+  "concepts": [
+    "control-flow"
+  ],
+  "mode": "function",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Control Flow — Repeat-While",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "collatzSteps",
+    "params": [
+      {
+        "name": "n",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

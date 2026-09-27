@@ -1,0 +1,1 @@
+`@main` designates the entry point via `static func main()` (which can be `async throws`). It can't be combined with top-level code — in a package you'd name the file anything *but* `main.swift`, or compile with `-parse-as-library`.

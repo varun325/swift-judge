@@ -1,0 +1,18 @@
+{
+  "id": "predict-nested-comments",
+  "title": "Predict: Comments That Nest",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Constants & variables",
+  "concepts": [
+    "comments"
+  ],
+  "mode": "predict",
+  "notesRef": "10",
+  "docs": [
+    {
+      "title": "The Basics — Comments",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ]
+}

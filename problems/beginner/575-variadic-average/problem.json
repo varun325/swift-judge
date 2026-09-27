@@ -1,0 +1,30 @@
+{
+  "id": "variadic-average",
+  "title": "Variadic Average",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Functions",
+  "concepts": [
+    "variadic"
+  ],
+  "mode": "function",
+  "notesRef": "15",
+  "docs": [
+    {
+      "title": "Functions — Variadic Parameters",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "averages",
+    "params": [
+      {
+        "name": "groups",
+        "type": "[[Double]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double?]"
+  },
+  "compare": "float:1e-9"
+}

@@ -1,0 +1,126 @@
+[
+ {
+  "input": {
+   "ints": [
+    1,
+    2
+   ],
+   "words": [
+    "hi",
+    "🦅"
+   ],
+   "flags": [
+    true,
+    false
+   ]
+  },
+  "expected": [
+   "[int(1),int(2)]",
+   "[str(2),str(1)]",
+   "[int(1),int(0)]"
+  ]
+ },
+ {
+  "input": {
+   "ints": [],
+   "words": [],
+   "flags": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "ints": [
+    0,
+    76,
+    79,
+    10
+   ],
+   "words": [
+    "damp"
+   ],
+   "flags": [
+    false,
+    true,
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "ints": [
+    79,
+    55
+   ],
+   "words": [
+    "rj",
+    "ndfcm",
+    "gyosl"
+   ],
+   "flags": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "ints": [
+    46,
+    50,
+    9
+   ],
+   "words": [
+    "ean",
+    "budw"
+   ],
+   "flags": [
+    false
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "ints": [],
+   "words": [
+    "fug"
+   ],
+   "flags": [
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "ints": [],
+   "words": [
+    "pmfjt",
+    "ustf",
+    "haf"
+   ],
+   "flags": [
+    false,
+    true,
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "ints": [],
+   "words": [
+    "p",
+    "mvbk"
+   ],
+   "flags": []
+  },
+  "hidden": true
+ }
+]

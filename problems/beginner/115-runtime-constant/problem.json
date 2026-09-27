@@ -1,0 +1,33 @@
+{
+  "id": "runtime-constant",
+  "title": "Constants Decided at Runtime",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Constants & variables",
+  "concepts": [
+    "let-vs-var",
+    "runtime-constants"
+  ],
+  "mode": "function",
+  "notesRef": "10",
+  "docs": [
+    {
+      "title": "The Basics — Constants and Variables",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "shippingCost",
+    "params": [
+      {
+        "name": "weightKg",
+        "type": "Double"
+      },
+      {
+        "name": "express",
+        "type": "Bool"
+      }
+    ],
+    "returns": "Double"
+  }
+}

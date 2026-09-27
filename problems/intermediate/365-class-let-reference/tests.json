@@ -1,0 +1,81 @@
+[
+ {
+  "input": {
+   "renames": [
+    "Justin",
+    "Ed"
+   ]
+  },
+  "expected": [
+   "Ed",
+   "true",
+   "false"
+  ]
+ },
+ {
+  "input": {
+   "renames": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "renames": [
+    "Bsx"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "renames": [
+    "Fml"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "renames": [
+    "Bda"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "renames": [
+    "Rmxud",
+    "Apto",
+    "Ts"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "renames": [
+    "Xoi",
+    "Pnq",
+    "Iujlx",
+    "Ia"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "renames": [
+    "Lh",
+    "St",
+    "Gfkak"
+   ]
+  },
+  "hidden": true
+ }
+]

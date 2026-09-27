@@ -1,0 +1,30 @@
+{
+  "id": "main-actor-isolation",
+  "title": "@MainActor & nonisolated",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "actors",
+    "sendable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — The Main Actor",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "uiDemo",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "async": true
+  }
+}

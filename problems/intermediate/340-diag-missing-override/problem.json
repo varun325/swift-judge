@@ -1,0 +1,19 @@
+{
+  "id": "diag-missing-override",
+  "title": "Diagnostic: Missing override",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "inheritance",
+    "overloading-overriding"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Inheritance — Overriding",
+      "book": "LanguageGuide/Inheritance"
+    }
+  ]
+}

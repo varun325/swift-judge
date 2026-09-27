@@ -1,0 +1,1 @@
+*'secret' is inaccessible due to 'private' protection level*. `private` limits access to the enclosing declaration (and its extensions in the same file). `fileprivate` would allow the whole file; `internal` (the default) the whole module.

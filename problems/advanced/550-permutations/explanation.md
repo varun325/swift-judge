@@ -1,0 +1,1 @@
+A nested function can capture and mutate the enclosing function's `var`s — no need to pass everything around. Every choice is undone after recursing (`removeLast`, `used[i] = false`): that's backtracking.

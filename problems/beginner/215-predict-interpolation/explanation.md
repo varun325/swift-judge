@@ -1,0 +1,1 @@
+`print` joins items with `separator` (default space) and ends with `terminator` (default newline). `debugPrint` shows strings *with quotes*, and arrays always print their elements in debug form. `6.0` prints as `6.0` — Swift keeps the decimal for `Double`.

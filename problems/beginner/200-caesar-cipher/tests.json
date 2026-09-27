@@ -1,0 +1,138 @@
+[
+ {
+  "input": {
+   "text": "Hello, World!",
+   "shift": 3
+  },
+  "expected": "Khoor, Zruog!"
+ },
+ {
+  "input": {
+   "text": "abc",
+   "shift": -1
+  },
+  "expected": "zab"
+ },
+ {
+  "input": {
+   "text": "xyz",
+   "shift": 29
+  }
+ },
+ {
+  "input": {
+   "text": "Ünïcode 123",
+   "shift": 5
+  }
+ },
+ {
+  "input": {
+   "text": "",
+   "shift": 10
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "text": "Swift",
+   "shift": -52
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "moTC1blEnlXzr",
+   "shift": 10
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "RN wE9",
+   "shift": -37
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "RsJUGMCFoJWPufi9Up1",
+   "shift": -41
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "  l9H",
+   "shift": 85
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "GrXtu!jl🦅?Dk",
+   "shift": 17
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "",
+   "shift": 89
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "",
+   "shift": 54
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "ZtGoANFz?Bbaoéo",
+   "shift": -42
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "LOLnMpYzZ1j",
+   "shift": 78
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": "FaTnnjf0onddrwEQé ACYRl",
+   "shift": -1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "mx",
+   "shift": -4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "GTFdtNWvUpSKt",
+   "shift": -54
+  },
+  "hidden": true
+ }
+]

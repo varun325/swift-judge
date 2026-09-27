@@ -1,0 +1,1 @@
+`static` members belong to the type, accessed as `School.capacity`. `static let` is lazily initialised once, thread-safely. Under Swift 6 strict concurrency, `static var counter = 0` is an **error** (*not concurrency-safe*) unless isolated to an actor (e.g. `@MainActor`) — a common surprise from older tutorials.

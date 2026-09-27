@@ -1,0 +1,232 @@
+[
+ {
+  "input": {
+   "a": [
+    "swift",
+    "ios",
+    "ml"
+   ],
+   "b": [
+    "ml",
+    "python",
+    "swift"
+   ]
+  },
+  "expected": [
+   [
+    "ml",
+    "swift"
+   ],
+   [
+    "ios"
+   ],
+   [
+    "python"
+   ],
+   [
+    "ios",
+    "python"
+   ]
+  ]
+ },
+ {
+  "input": {
+   "a": [],
+   "b": [
+    "x"
+   ]
+  }
+ },
+ {
+  "input": {
+   "a": [
+    "a",
+    "a",
+    "b"
+   ],
+   "b": [
+    "b",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "a": [
+    "code",
+    "swift",
+    "ate",
+    "map"
+   ],
+   "b": [
+    "map",
+    "tan",
+    "swift"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "a": [],
+   "b": [
+    "code"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "a": [
+    "filter"
+   ],
+   "b": [
+    "tan"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "a": [
+    "apple",
+    "map",
+    "code"
+   ],
+   "b": [
+    "tan",
+    "swift",
+    "tan",
+    "tea",
+    "apple",
+    "filter"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "a": [],
+   "b": [
+    "eat",
+    "apple",
+    "ate",
+    "map",
+    "eat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "a": [],
+   "b": [
+    "map",
+    "code",
+    "apple",
+    "reduce",
+    "swift"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "a": [
+    "swift",
+    "nat",
+    "nat",
+    "bat"
+   ],
+   "b": [
+    "code"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "a": [
+    "bat",
+    "filter",
+    "swift"
+   ],
+   "b": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "a": [
+    "map",
+    "code",
+    "nat",
+    "map"
+   ],
+   "b": [
+    "code",
+    "code"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "a": [
+    "reduce",
+    "tea",
+    "code",
+    "tea",
+    "filter",
+    "swift"
+   ],
+   "b": [
+    "tan",
+    "tea",
+    "code",
+    "swift"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "a": [],
+   "b": [
+    "filter",
+    "ate",
+    "filter",
+    "tan",
+    "apple",
+    "nat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "a": [],
+   "b": [
+    "code",
+    "code",
+    "filter",
+    "tan",
+    "nat"
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+A stored property's default runs during initialisation; a `lazy var` runs **once**, on first access, then stores the result; a computed property runs **every** time. `lazy` requires `var` (and a mutable instance), because first access mutates storage.

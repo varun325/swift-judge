@@ -1,0 +1,1 @@
+The **optional pattern** `x?` matches `.some(x)` and binds the payload — `for case let x? in` iterates only present values (like `compactMap`, but lazy and loop-shaped). `Optional` is just an enum, so `.none`/`.some` patterns work too.

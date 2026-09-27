@@ -1,0 +1,1 @@
+Tuples of `Comparable` elements compare **lexicographically** — first elements, then second on a tie, and so on (up to 6 elements). Negating turns descending keys into ascending ones. Key-path `map(\.name)` works on tuple labels too.

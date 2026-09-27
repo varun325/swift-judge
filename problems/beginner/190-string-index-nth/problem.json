@@ -1,0 +1,35 @@
+{
+  "id": "string-index-nth",
+  "title": "The nth Character",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections",
+    "swift-advantages"
+  ],
+  "mode": "function",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters — String Indices",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "character",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "in"
+      },
+      {
+        "name": "offset",
+        "type": "Int",
+        "label": "at"
+      }
+    ],
+    "returns": "String?"
+  }
+}

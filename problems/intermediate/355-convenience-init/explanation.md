@@ -1,0 +1,1 @@
+Designated inits fully initialise the class (delegating **up** to `super.init` in subclasses); convenience inits must delegate **across** with `self.init(...)`. A failable `init?` returns `nil` on bad input. Bit shifts and masks extract the channels.

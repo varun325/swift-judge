@@ -1,0 +1,1 @@
+Duplicates vanish in a `Set` literal. Anything you print from a set or dictionary should be `sorted()` first — otherwise the output (and your tests) will flicker between runs because hashing is randomly seeded per process.

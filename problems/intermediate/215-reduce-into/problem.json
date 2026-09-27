@@ -1,0 +1,30 @@
+{
+  "id": "reduce-into",
+  "title": "reduce(into:) to Build a Histogram",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "map-filter-reduce",
+    "dictionary-basics"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Closures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "lengthHistogram",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String: [String]]"
+  }
+}

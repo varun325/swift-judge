@@ -1,0 +1,30 @@
+{
+  "id": "leap-year",
+  "title": "Leap Year",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Booleans",
+  "concepts": [
+    "fundamental-types",
+    "control-flow"
+  ],
+  "mode": "function",
+  "notesRef": "4",
+  "docs": [
+    {
+      "title": "Basic Operators — Logical Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "isLeapYear",
+    "params": [
+      {
+        "name": "year",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Bool"
+  }
+}

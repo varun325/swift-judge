@@ -1,0 +1,18 @@
+{
+  "id": "diag-let-reassign",
+  "title": "Diagnostic: Reassigning a let",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Constants & variables",
+  "concepts": [
+    "let-vs-var"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "10",
+  "docs": [
+    {
+      "title": "The Basics — Constants and Variables",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ]
+}

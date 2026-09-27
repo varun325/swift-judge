@@ -1,0 +1,137 @@
+[
+ {
+  "input": {
+   "ints": [
+    1
+   ],
+   "words": [
+    "hi"
+   ],
+   "flags": [
+    true,
+    false
+   ]
+  },
+  "expected": [
+   "int 1",
+   "string 'hi' (2)",
+   "bool yes",
+   "bool no"
+  ]
+ },
+ {
+  "input": {
+   "ints": [],
+   "words": [],
+   "flags": []
+  }
+ },
+ {
+  "input": {
+   "ints": [
+    -3,
+    0
+   ],
+   "words": [
+    "",
+    "🦅"
+   ],
+   "flags": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "ints": [
+    4,
+    -9,
+    8
+   ],
+   "words": [
+    "fauzv",
+    "ajw",
+    "dz"
+   ],
+   "flags": [
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "ints": [],
+   "words": [
+    "zh"
+   ],
+   "flags": [
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "ints": [
+    3,
+    5,
+    -3
+   ],
+   "words": [
+    "qb",
+    "qhzo",
+    "vy"
+   ],
+   "flags": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "ints": [
+    -9
+   ],
+   "words": [
+    "dcui",
+    "gz"
+   ],
+   "flags": [
+    false,
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "ints": [
+    -4
+   ],
+   "words": [],
+   "flags": [
+    false
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "ints": [
+    -2
+   ],
+   "words": [],
+   "flags": [
+    false,
+    false,
+    true
+   ]
+  },
+  "hidden": true
+ }
+]

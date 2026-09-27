@@ -1,0 +1,1 @@
+Assigning a **struct** copies it — `a` and `b` are independent. Assigning a **class** reference copies the *pointer* — `c` and `d` name the same object, which `===` confirms. Note `let d` still allows `d.x = 10`: `let` freezes the reference, not the object.

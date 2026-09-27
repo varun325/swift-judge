@@ -1,0 +1,326 @@
+[
+ {
+  "input": {
+   "records": [
+    [
+     "Acme",
+     "Ana",
+     "Lisbon"
+    ],
+    [
+     "Void",
+     "-",
+     "-"
+    ],
+    [
+     "Solo",
+     "Bo",
+     "-"
+    ]
+   ]
+  },
+  "expected": [
+   6,
+   null,
+   null
+  ]
+ },
+ {
+  "input": {
+   "records": []
+  }
+ },
+ {
+  "input": {
+   "records": [
+    [
+     "X",
+     "Y",
+     "São Paulo"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "records": [
+    [
+     "fdyaqe",
+     "dyi",
+     "-"
+    ],
+    [
+     "ullfkz",
+     "-",
+     "dhsvasal"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "records": [
+    [
+     "bbppz",
+     "-",
+     "-"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "records": [
+    [
+     "gsvllo",
+     "-",
+     "ddlwgkqce"
+    ],
+    [
+     "ypt",
+     "ai",
+     "-"
+    ],
+    [
+     "ysxg",
+     "reder",
+     "jivapfevg"
+    ],
+    [
+     "gxlvx",
+     "-",
+     "-"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "records": [
+    [
+     "ntte",
+     "-",
+     "-"
+    ],
+    [
+     "hpg",
+     "ylpzg",
+     "bthvx"
+    ],
+    [
+     "chiuul",
+     "zzz",
+     "fyql"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "records": [
+    [
+     "eaxn",
+     "gmmj",
+     "-"
+    ],
+    [
+     "xpg",
+     "dzgj",
+     "-"
+    ],
+    [
+     "ugdgh",
+     "uh",
+     "-"
+    ],
+    [
+     "ftrtn",
+     "gru",
+     "pzvjvvac"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "records": [
+    [
+     "uohy",
+     "po",
+     "-"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "records": [
+    [
+     "jhnt",
+     "-",
+     "-"
+    ],
+    [
+     "yyobmm",
+     "onmuv",
+     "xzyfjsk"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "records": [
+    [
+     "ehr",
+     "-",
+     "-"
+    ],
+    [
+     "gzmsg",
+     "spd",
+     "-"
+    ],
+    [
+     "jor",
+     "gcfol",
+     "rndg"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "records": [
+    [
+     "eejq",
+     "-",
+     "-"
+    ],
+    [
+     "vsswma",
+     "-",
+     "odfpbjy"
+    ],
+    [
+     "yqsgm",
+     "-",
+     "-"
+    ],
+    [
+     "cjrp",
+     "-",
+     "-"
+    ],
+    [
+     "tfsk",
+     "xfd",
+     "-"
+    ],
+    [
+     "ggc",
+     "-",
+     "mbgaafiit"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "records": [
+    [
+     "non",
+     "mvtyc",
+     "dbt"
+    ],
+    [
+     "wmepfj",
+     "-",
+     "wdda"
+    ],
+    [
+     "dpctc",
+     "-",
+     "-"
+    ],
+    [
+     "axhzz",
+     "-",
+     "-"
+    ],
+    [
+     "fijqxq",
+     "-",
+     "yahia"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "records": [
+    [
+     "chyw",
+     "be",
+     "hxoaxasrd"
+    ],
+    [
+     "mgh",
+     "-",
+     "-"
+    ],
+    [
+     "firogc",
+     "nsxg",
+     "-"
+    ],
+    [
+     "hchcy",
+     "mdqzo",
+     "-"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "records": [
+    [
+     "hllg",
+     "squw",
+     "-"
+    ],
+    [
+     "oiv",
+     "-",
+     "-"
+    ]
+   ]
+  },
+  "hidden": true
+ }
+]

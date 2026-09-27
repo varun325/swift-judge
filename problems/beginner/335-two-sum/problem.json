@@ -1,0 +1,34 @@
+{
+  "id": "two-sum",
+  "title": "Two Sum with a Dictionary",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics",
+    "optional-binding"
+  ],
+  "mode": "function",
+  "notesRef": "7",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "twoSum",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "target",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

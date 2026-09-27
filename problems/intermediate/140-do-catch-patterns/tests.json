@@ -1,0 +1,131 @@
+[
+ {
+  "input": {
+   "requests": [
+    "chips",
+    "soda",
+    "caviar",
+    "shake",
+    "gum"
+   ]
+  },
+  "expected": [
+   "got chips",
+   "unavailable",
+   "insert 99 more",
+   "error",
+   "unavailable"
+  ]
+ },
+ {
+  "input": {
+   "requests": []
+  }
+ },
+ {
+  "input": {
+   "requests": [
+    "candy",
+    "candy"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "requests": [
+    "gvyecz",
+    "txsbqp",
+    "soda",
+    "shake"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "requests": [
+    "gum",
+    "bylcyu",
+    "candy",
+    "shake",
+    "chips",
+    "soda",
+    "soda"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "requests": [
+    "candy",
+    "candy",
+    "soda",
+    "candy",
+    "candy"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "requests": [
+    "chips"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "requests": [
+    "caviar",
+    "caviar",
+    "soda",
+    "gum",
+    "shake",
+    "caviar"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "requests": [
+    "gum"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "requests": [
+    "chips",
+    "umldbt",
+    "gum",
+    "chips",
+    "soda"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "requests": [
+    "oob",
+    "shake",
+    "shake",
+    "gum"
+   ]
+  },
+  "hidden": true
+ }
+]

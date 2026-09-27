@@ -1,0 +1,114 @@
+[
+ {
+  "input": {
+   "lines": [
+    "[ERROR] 2024-05-01 disk full (code 28)",
+    "[INFO] 2024-05-01 ok"
+   ]
+  },
+  "expected": [
+   "ERROR|28|disk full",
+   "skip"
+  ]
+ },
+ {
+  "input": {
+   "lines": []
+  }
+ },
+ {
+  "input": {
+   "lines": [
+    "[WARN] 2023-12-31 low battery (code 7)",
+    "[DEBUG] 2023-12-31 x (code 1)"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "lines": [
+    "actor map",
+    "stack apple whu"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "lines": [
+    "[ERROR] 2010-05-10 filter heap eat (code 91)"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "lines": [
+    "mac tan actor",
+    "[INFO] 2026-06-15 trie (code 453)",
+    "swift closure code nat"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "lines": [
+    "[WARN] 2013-02-18 await class (code 394)",
+    "[WARN] 2014-06-10 noon class mac (code 308)",
+    "code",
+    "await apple apple"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "lines": [
+    "[ERROR] 2018-07-11 class reduce stack (code 16)",
+    "[DEBUG] 2018-08-16 nat (code 474)",
+    "[ERROR] 2016-02-17 level (code 132)",
+    "[DEBUG] 2016-02-19 filter (code 199)"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "lines": [
+    "struct tan",
+    "struct"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "lines": [
+    "[WARN] 2028-09-19 i reduce apple (code 140)",
+    "[ERROR] 2013-01-13 heap bat (code 456)",
+    "[INFO] 2018-05-14 stack x ate (code 78)",
+    "swift"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "lines": [
+    "level",
+    "class queue"
+   ]
+  },
+  "hidden": true
+ }
+]

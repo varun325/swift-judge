@@ -1,0 +1,1 @@
+Add `extension Sequence { func sorted<V: Comparable>(by keyPath: KeyPath<Element, V>) -> [Element] }`. Rows are `[name, age, city]`; build `Person` structs and sort by `\.name`, `\.age` or `\.city` depending on `key`. Return the names in order (ties keep input order — the standard sort is stable).

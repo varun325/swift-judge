@@ -1,0 +1,34 @@
+{
+  "id": "coin-change",
+  "title": "Coin Change (Dynamic Programming)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "array-basics",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "coinChange",
+    "params": [
+      {
+        "name": "coins",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "amount",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

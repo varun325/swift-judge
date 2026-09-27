@@ -1,0 +1,42 @@
+[
+ {
+  "input": "deposit 100\nwithdraw 30\nwithdraw 100\nrefund 5\ndeposit -3\n"
+ },
+ {
+  "input": ""
+ },
+ {
+  "input": "withdraw 1\ndeposit x\n",
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": "withdraw 72\ndeposit 83\ndeposit x\nwithdraw 134\nwithdraw 47\nrefund 3\nrefund 3\nrefund 3\n",
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": "deposit 66\ndeposit x\n",
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": "withdraw 49\ndeposit x\ndeposit 21\n",
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": "withdraw 4\ndeposit x\nrefund 3\ndeposit 83\n",
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": "deposit 11\ndeposit x\nrefund 3\ndeposit 89\ndeposit 99\ndeposit 9\nwithdraw 144\n",
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": "deposit x\ndeposit x\ndeposit x\nwithdraw 74\ndeposit 63\nrefund 3\nrefund 3\ndeposit 41\n",
+  "hidden": true
+ }
+]

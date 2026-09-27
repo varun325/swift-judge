@@ -1,0 +1,1 @@
+Add `average` to **any** `Collection` whose `Element: BinaryInteger` (returns `Double`), and a separate `average` for `Element: BinaryFloatingPoint` (returns `Element`). Empty collections average to 0. Return `[ints.average, Double(doubles.average), Array(ints.prefix(2)).average]`.

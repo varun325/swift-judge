@@ -1,0 +1,1 @@
+Grouping with `dict[key, default: []].append(x)`, then **sorting the dictionary** gives deterministic output. `flatMap` concatenates every student's list. `.rounded()` uses schoolbook rounding (halves away from zero).

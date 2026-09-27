@@ -1,0 +1,30 @@
+{
+  "id": "hashable-point-set",
+  "title": "Unique Points (Hashable)",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Sets",
+  "concepts": [
+    "equatable-hashable",
+    "set-vs-array"
+  ],
+  "mode": "function",
+  "notesRef": "8",
+  "docs": [
+    {
+      "title": "Collection Types — Hash Values for Set Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "uniquePointCount",
+    "params": [
+      {
+        "name": "coords",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

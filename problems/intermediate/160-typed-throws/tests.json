@@ -1,0 +1,187 @@
+[
+ {
+  "input": {
+   "balance": 100,
+   "amounts": [
+    30,
+    100,
+    70,
+    0
+   ]
+  },
+  "expected": [
+   "ok -> 70",
+   "short by 30",
+   "ok -> 0",
+   "invalid"
+  ]
+ },
+ {
+  "input": {
+   "balance": 0,
+   "amounts": []
+  }
+ },
+ {
+  "input": {
+   "balance": 50,
+   "amounts": [
+    -5,
+    50,
+    1
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "balance": 189,
+   "amounts": [
+    90
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "balance": 168,
+   "amounts": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "balance": 142,
+   "amounts": [
+    118,
+    116,
+    43,
+    40
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "balance": 141,
+   "amounts": [
+    4,
+    90,
+    65,
+    86
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "balance": 14,
+   "amounts": [
+    6,
+    73,
+    68,
+    65,
+    81,
+    9,
+    115,
+    18
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "balance": 100,
+   "amounts": [
+    12,
+    98,
+    117,
+    85,
+    88,
+    106
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "balance": 152,
+   "amounts": [
+    104,
+    -4,
+    113,
+    87,
+    16
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "balance": 90,
+   "amounts": [
+    91
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "balance": 24,
+   "amounts": [
+    113,
+    23,
+    98,
+    16,
+    55,
+    39,
+    100,
+    35
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "balance": 74,
+   "amounts": [
+    90,
+    118,
+    95
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "balance": 184,
+   "amounts": [
+    17,
+    73,
+    96,
+    63,
+    120
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "balance": 66,
+   "amounts": []
+  },
+  "hidden": true
+ }
+]

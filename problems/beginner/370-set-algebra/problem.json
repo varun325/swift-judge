@@ -1,0 +1,35 @@
+{
+  "id": "set-algebra",
+  "title": "Set Algebra on Tags",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Sets",
+  "concepts": [
+    "set-vs-array",
+    "collection-types"
+  ],
+  "mode": "function",
+  "notesRef": "8",
+  "docs": [
+    {
+      "title": "Collection Types — Fundamental Set Operations",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "tagReport",
+    "params": [
+      {
+        "name": "a",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[String]]"
+  }
+}

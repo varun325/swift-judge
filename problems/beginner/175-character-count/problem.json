@@ -1,0 +1,29 @@
+{
+  "id": "character-count",
+  "title": "Characters vs Bytes",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections"
+  ],
+  "mode": "function",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters — Counting Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "lengths",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

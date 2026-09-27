@@ -1,0 +1,19 @@
+{
+  "id": "diag-no-initializers",
+  "title": "Diagnostic: Class Has No Initializers",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "initializers",
+    "class-definition"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Initialization — Automatic Initializer Inheritance",
+      "book": "LanguageGuide/Initialization"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+A closure that's **stored** outlives the call, so it must be `@escaping` — without it: *converting non-escaping parameter to generic parameter may allow it to escape*. Escaping closures are where retain cycles (`self` → handler → `self`) come from.

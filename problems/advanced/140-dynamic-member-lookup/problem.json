@@ -1,0 +1,34 @@
+{
+  "id": "dynamic-member-lookup",
+  "title": "@dynamicMemberLookup JSON Wrapper",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Advanced features",
+  "concepts": [
+    "dynamic-member-lookup",
+    "subscripts",
+    "optional-chaining"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Attributes — dynamicMemberLookup",
+      "book": "ReferenceManual/Attributes"
+    }
+  ],
+  "signature": {
+    "name": "jsonPaths",
+    "params": [
+      {
+        "name": "json",
+        "type": "[String: String]",
+        "label": "_"
+      },
+      {
+        "name": "paths",
+        "type": "[String]"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

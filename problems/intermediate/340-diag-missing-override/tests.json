@@ -1,0 +1,6 @@
+[
+ {
+  "name": "override required",
+  "pattern": "requires an 'override' keyword"
+ }
+]

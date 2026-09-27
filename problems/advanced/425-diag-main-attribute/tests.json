@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Conflicting entry points",
+  "pattern": "'main' attribute cannot be used in a module that contains top-level code|main"
+ }
+]

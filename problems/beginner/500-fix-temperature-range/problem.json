@@ -1,0 +1,30 @@
+{
+  "id": "fix-temperature-range",
+  "title": "Fix the Bug: Always-True Range Check",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Conditionals",
+  "concepts": [
+    "control-flow",
+    "half-open-range"
+  ],
+  "mode": "function",
+  "notesRef": "11",
+  "docs": [
+    {
+      "title": "Basic Operators — Logical Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "isPleasant",
+    "params": [
+      {
+        "name": "temp",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Bool"
+  }
+}

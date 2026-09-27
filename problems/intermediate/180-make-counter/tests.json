@@ -1,0 +1,204 @@
+[
+ {
+  "input": {
+   "calls": [
+    "a",
+    "a",
+    "b",
+    "a",
+    "b"
+   ]
+  },
+  "expected": [
+   1,
+   2,
+   10,
+   3,
+   20
+  ]
+ },
+ {
+  "input": {
+   "calls": []
+  }
+ },
+ {
+  "input": {
+   "calls": [
+    "b",
+    "b",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "calls": [
+    "b",
+    "a",
+    "b",
+    "b",
+    "a",
+    "b",
+    "b",
+    "b",
+    "a"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "calls": [
+    "b",
+    "a",
+    "b",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "calls": [
+    "a",
+    "b",
+    "b",
+    "b",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "calls": [
+    "a",
+    "b",
+    "a",
+    "b",
+    "b",
+    "a",
+    "b",
+    "a"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "calls": [
+    "a",
+    "a",
+    "b",
+    "a",
+    "b",
+    "a",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "calls": [
+    "b",
+    "a",
+    "b",
+    "b",
+    "b",
+    "a",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "calls": [
+    "a",
+    "a",
+    "a",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "calls": [
+    "b",
+    "a",
+    "a",
+    "b",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "calls": [
+    "b",
+    "a",
+    "b",
+    "a",
+    "a",
+    "b",
+    "a",
+    "a"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "calls": [
+    "b",
+    "b",
+    "b",
+    "b",
+    "a",
+    "a",
+    "b",
+    "a"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "calls": [
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "calls": [
+    "b",
+    "a",
+    "a",
+    "a",
+    "b",
+    "a",
+    "b"
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,19 @@
+{
+  "id": "diag-closed-range-crash",
+  "title": "Diagnostic: A Range That Can't Exist",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Ranges",
+  "concepts": [
+    "half-open-range",
+    "type-inference"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Basic Operators — Range Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ]
+}

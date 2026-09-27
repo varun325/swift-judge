@@ -1,0 +1,86 @@
+[
+ {
+  "input": {
+   "age": 18
+  },
+  "expected": true
+ },
+ {
+  "input": {
+   "age": 17
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "age": 30
+  }
+ },
+ {
+  "input": {
+   "age": 0
+  }
+ },
+ {
+  "input": {
+   "age": 19
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "age": 26
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "age": 39
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "age": 23
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "age": 38
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "age": 21
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "age": 15
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "age": 31
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "age": 5
+  },
+  "hidden": true
+ }
+]

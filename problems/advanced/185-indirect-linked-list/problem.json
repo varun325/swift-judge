@@ -1,0 +1,30 @@
+{
+  "id": "indirect-linked-list",
+  "title": "indirect enum: Immutable Linked List",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Enums deep dive",
+  "concepts": [
+    "indirect-enums",
+    "custom-collection",
+    "value-semantics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations — Recursive Enumerations",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "listDemo",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[Int]]"
+  }
+}

@@ -1,0 +1,1 @@
+*cannot use mutating member on immutable value: 'c' is a 'let' constant*. For a struct, `let` freezes the **whole value**, including every `var` property — the opposite of a class, where `let` only freezes the reference.

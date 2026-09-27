@@ -1,0 +1,21 @@
+{
+  "id": "predict-deinit-order",
+  "title": "Predict: When deinit Runs",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "deinit",
+    "arc",
+    "strong-reference",
+    "arc-vs-gc"
+  ],
+  "mode": "predict",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Deinitialization",
+      "book": "LanguageGuide/Deinitialization"
+    }
+  ]
+}

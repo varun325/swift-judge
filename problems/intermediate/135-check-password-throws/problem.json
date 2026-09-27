@@ -1,0 +1,31 @@
+{
+  "id": "check-password-throws",
+  "title": "Throwing Password Check",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Error handling",
+  "concepts": [
+    "error-handling",
+    "enums"
+  ],
+  "mode": "function",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ],
+  "signature": {
+    "name": "checkPassword",
+    "params": [
+      {
+        "name": "password",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "String",
+    "throws": true
+  }
+}

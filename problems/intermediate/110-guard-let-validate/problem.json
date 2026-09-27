@@ -1,0 +1,37 @@
+{
+  "id": "guard-let-validate",
+  "title": "guard let: Validate a Sign-up",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "guard",
+    "if-let-vs-guard"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "Control Flow — Early Exit",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "validateSignup",
+    "params": [
+      {
+        "name": "username",
+        "type": "String?"
+      },
+      {
+        "name": "age",
+        "type": "String?"
+      },
+      {
+        "name": "email",
+        "type": "String?"
+      }
+    ],
+    "returns": "String"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "class-let-reference",
+  "title": "let on a Class Reference",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "let-vs-var",
+    "value-vs-reference",
+    "equality-vs-identity"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Structures and Classes — Classes Are Reference Types",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ],
+  "signature": {
+    "name": "referenceDemo",
+    "params": [
+      {
+        "name": "renames",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

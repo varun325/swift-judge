@@ -1,0 +1,1 @@
+`split(separator:)` omits empty subsequences by default, which swallows the repeated spaces. It returns `[Substring]` — views into the original string — and `joined(separator:)` accepts those directly.

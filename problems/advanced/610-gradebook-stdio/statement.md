@@ -1,0 +1,1 @@
+Lines are `"name score"` (a name may appear many times; ignore malformed lines or scores outside 0…100). Print one line per student, sorted by name: `"<name> avg=<average rounded to nearest int> best=<max> n=<count>"`, then a final line `"class avg=<rounded average of all valid scores>"` (or `"class avg=n/a"`).

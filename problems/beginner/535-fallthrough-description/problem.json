@@ -1,0 +1,30 @@
+{
+  "id": "fallthrough-description",
+  "title": "fallthrough: Describe a Number",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Switch",
+  "concepts": [
+    "fallthrough",
+    "break-continue"
+  ],
+  "mode": "function",
+  "notesRef": "12",
+  "docs": [
+    {
+      "title": "Control Flow — Fallthrough",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "describe",
+    "params": [
+      {
+        "name": "n",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "String"
+  }
+}

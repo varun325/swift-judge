@@ -1,0 +1,151 @@
+[
+ {
+  "input": {
+   "json": {
+    "host": "localhost",
+    "db.port": "5432"
+   },
+   "paths": [
+    "host",
+    "db.port",
+    "db.user"
+   ]
+  },
+  "expected": [
+   "localhost",
+   "5432",
+   "missing"
+  ]
+ },
+ {
+  "input": {
+   "json": {},
+   "paths": []
+  }
+ },
+ {
+  "input": {
+   "json": {
+    "a.b.c": "deep"
+   },
+   "paths": [
+    "a.b.c",
+    "a.b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "json": {
+    "lms.jfs.s": "q"
+   },
+   "paths": [
+    "a.b",
+    "a.b",
+    "a.b",
+    "a.b",
+    "nope"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "json": {
+    "k.s.iqa": "njln",
+    "kki.f": "ilw"
+   },
+   "paths": [
+    "kki.f"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "json": {
+    "qpt": "ytf",
+    "e.bz": "jfvl",
+    "l.ej": "ccdm",
+    "fy.l.kq": "s"
+   },
+   "paths": [
+    "nope",
+    "e.bz",
+    "a.b",
+    "l.ej"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "json": {
+    "r.j": "jdli"
+   },
+   "paths": [
+    "nope",
+    "nope",
+    "nope"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "json": {
+    "lr": "e",
+    "jt": "ym"
+   },
+   "paths": [
+    "nope"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "json": {
+    "z.ur.f": "jzf",
+    "eq": "cp",
+    "ir": "s"
+   },
+   "paths": [
+    "z.ur.f"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "json": {
+    "ndv": "lnydp",
+    "ko": "w",
+    "t": "weh"
+   },
+   "paths": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "json": {
+    "ca.xie": "hqpd",
+    "sor.orp.ebq": "hm",
+    "yow.l.brq": "bwu",
+    "ksp.lwb": "xmpo"
+   },
+   "paths": []
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,30 @@
+{
+  "id": "min-max-tuple",
+  "title": "Min and Max in One Pass",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Tuples",
+  "concepts": [
+    "tuples",
+    "optionals"
+  ],
+  "mode": "function",
+  "notesRef": "16",
+  "docs": [
+    {
+      "title": "Functions — Functions with Multiple Return Values",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "bounds",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

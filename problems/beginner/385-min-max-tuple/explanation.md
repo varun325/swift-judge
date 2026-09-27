@@ -1,0 +1,1 @@
+Returning an **optional tuple** handles the empty case in the type. Labels (`min:`, `max:`) make the call site self-documenting. `Swift.min` disambiguates the global function from the tuple labels in scope.

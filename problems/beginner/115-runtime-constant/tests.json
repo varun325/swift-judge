@@ -1,0 +1,138 @@
+[
+ {
+  "input": {
+   "weightKg": 2,
+   "express": false
+  },
+  "expected": 10.0
+ },
+ {
+  "input": {
+   "weightKg": 4,
+   "express": true
+  },
+  "expected": 20.0
+ },
+ {
+  "input": {
+   "weightKg": 0,
+   "express": true
+  }
+ },
+ {
+  "input": {
+   "weightKg": 10,
+   "express": false
+  }
+ },
+ {
+  "input": {
+   "weightKg": 1.5,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "weightKg": 100,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "weightKg": 27.18,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "weightKg": 7.96,
+   "express": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "weightKg": 30.26,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "weightKg": 18.71,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "weightKg": 27.87,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "weightKg": 44.99,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "weightKg": 10.35,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "weightKg": 18.24,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "weightKg": 46.38,
+   "express": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "weightKg": 31.71,
+   "express": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "weightKg": 22.98,
+   "express": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "weightKg": 10.22,
+   "express": true
+  },
+  "hidden": true
+ }
+]

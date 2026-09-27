@@ -1,0 +1,34 @@
+{
+  "id": "chunked",
+  "title": "Split into Chunks",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Arrays",
+  "concepts": [
+    "array-basics",
+    "stride"
+  ],
+  "mode": "function",
+  "notesRef": "6",
+  "docs": [
+    {
+      "title": "Control Flow — stride",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "chunked",
+    "params": [
+      {
+        "name": "items",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "size",
+        "type": "Int"
+      }
+    ],
+    "returns": "[[String]]"
+  }
+}

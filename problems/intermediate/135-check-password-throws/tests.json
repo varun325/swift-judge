@@ -1,0 +1,124 @@
+[
+ {
+  "input": {
+   "password": "abc"
+  },
+  "expected": {
+   "$error": "short"
+  }
+ },
+ {
+  "input": {
+   "password": "12345"
+  },
+  "expected": {
+   "$error": "obvious"
+  }
+ },
+ {
+  "input": {
+   "password": "swiftly"
+  }
+ },
+ {
+  "input": {
+   "password": "correct horse battery"
+  }
+ },
+ {
+  "input": {
+   "password": "password"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "password": ""
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "password": "8ir1ht4b"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "password": "43vk"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "password": "y0u2q09d"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "password": "k4rmx1"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "password": "csf6j2a2qvdzo"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "password": "7dxs8oetb"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "password": "0pfmgpwc"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "password": "rcq2a068pvk"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "password": "hp"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "password": "wuk72z"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "password": "4oh4pfe6l89qjz"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "password": "dj"
+  },
+  "hidden": true
+ }
+]

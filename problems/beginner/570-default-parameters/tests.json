@@ -1,0 +1,94 @@
+[
+ {
+  "input": {
+   "names": [
+    "Ana",
+    "Bo",
+    "Cy"
+   ]
+  },
+  "expected": [
+   "Hello, Ana!",
+   "Hi, Bo!",
+   "Hello, Cy."
+  ]
+ },
+ {
+  "input": {
+   "names": []
+  }
+ },
+ {
+  "input": {
+   "names": [
+    "Solo"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "names": [
+    "Hwnx",
+    "Tjt",
+    "Gqjjp",
+    "Beibw"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "names": [
+    "Kwjta",
+    "Zdmlv",
+    "Vlw"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "names": [
+    "Wn",
+    "Nyyjpr",
+    "Znhnsp",
+    "Qtnnn"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "names": [
+    "Ljhcgj"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "names": [
+    "Zy",
+    "Kuqa",
+    "Csb"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "names": [
+    "Fh",
+    "Ykpfcm"
+   ]
+  },
+  "hidden": true
+ }
+]

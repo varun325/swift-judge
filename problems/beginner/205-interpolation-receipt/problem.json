@@ -1,0 +1,36 @@
+{
+  "id": "interpolation-receipt",
+  "title": "Receipt Line with Interpolation",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "String interpolation",
+  "concepts": [
+    "string-interpolation"
+  ],
+  "mode": "function",
+  "notesRef": "5",
+  "docs": [
+    {
+      "title": "Strings and Characters — String Interpolation",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "receiptLine",
+    "params": [
+      {
+        "name": "item",
+        "type": "String"
+      },
+      {
+        "name": "quantity",
+        "type": "Int"
+      },
+      {
+        "name": "unitCents",
+        "type": "Int"
+      }
+    ],
+    "returns": "String"
+  }
+}

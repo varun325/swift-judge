@@ -1,0 +1,1 @@
+`Result<Success, Failure>` stores an outcome as a value — storable, passable, switchable. `get()` converts back to throwing style. With a concrete `Failure` type, the switch over errors is exhaustive.

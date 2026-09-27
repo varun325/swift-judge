@@ -1,0 +1,92 @@
+[
+ {
+  "input": {
+   "sizes": [
+    3,
+    1
+   ]
+  },
+  "expected": [
+   "***/**/*",
+   "*"
+  ]
+ },
+ {
+  "input": {
+   "sizes": []
+  }
+ },
+ {
+  "input": {
+   "sizes": [
+    5
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "sizes": [
+    6,
+    2,
+    1,
+    2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "sizes": [
+    2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "sizes": [
+    3,
+    3,
+    4,
+    2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "sizes": [
+    6,
+    6,
+    1
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "sizes": [
+    1,
+    5,
+    6
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "sizes": [
+    6,
+    6
+   ]
+  },
+  "hidden": true
+ }
+]

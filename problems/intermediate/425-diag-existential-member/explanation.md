@@ -1,0 +1,1 @@
+*value of type 'any Vehicle' has no member 'openSunroof'*. Through a protocol type you only see the protocol's members; to reach concrete API you must downcast (`as? Car`) — which is often a sign the protocol is missing a requirement.

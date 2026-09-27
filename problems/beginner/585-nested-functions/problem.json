@@ -1,0 +1,38 @@
+{
+  "id": "nested-functions",
+  "title": "Nested Functions & Function Types",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Functions",
+  "concepts": [
+    "functions-basics",
+    "closures",
+    "functions-vs-closures"
+  ],
+  "mode": "function",
+  "notesRef": "15",
+  "docs": [
+    {
+      "title": "Functions — Nested Functions",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "stepper",
+    "params": [
+      {
+        "name": "backward",
+        "type": "Bool"
+      },
+      {
+        "name": "start",
+        "type": "Int"
+      },
+      {
+        "name": "steps",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

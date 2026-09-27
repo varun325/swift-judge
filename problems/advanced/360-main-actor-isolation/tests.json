@@ -1,0 +1,74 @@
+[
+ {
+  "input": {
+   "names": [
+    "a",
+    "b"
+   ]
+  },
+  "expected": [
+   "A",
+   "B",
+   "count 2"
+  ]
+ },
+ {
+  "input": {
+   "names": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "names": [
+    "aal",
+    "o",
+    "bhj"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "names": [
+    "igza",
+    "a",
+    "p"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "names": [
+    "erpmn",
+    "li"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "names": [
+    "ppcuh",
+    "aq"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "names": [
+    "wr",
+    "bwji",
+    "mbrpx",
+    "ncooj"
+   ]
+  },
+  "hidden": true
+ }
+]

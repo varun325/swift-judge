@@ -1,0 +1,20 @@
+{
+  "id": "predict-for-var-copy",
+  "title": "Predict: Mutating Structs in a Loop",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "value-vs-reference",
+    "for-in",
+    "mutating"
+  ],
+  "mode": "predict",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ]
+}

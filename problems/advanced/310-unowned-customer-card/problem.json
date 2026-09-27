@@ -1,0 +1,33 @@
+{
+  "id": "unowned-customer-card",
+  "title": "unowned References",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Memory management",
+  "concepts": [
+    "weak-unowned",
+    "arc"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "ARC — Unowned References",
+      "book": "LanguageGuide/AutomaticReferenceCounting"
+    }
+  ],
+  "signature": {
+    "name": "cardDemo",
+    "params": [
+      {
+        "name": "customers",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "withCard",
+        "type": "[Bool]"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

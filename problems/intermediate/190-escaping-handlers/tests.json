@@ -1,0 +1,92 @@
+[
+ {
+  "input": {
+   "events": [
+    "start",
+    "stop"
+   ]
+  },
+  "expected": [
+   "A:start",
+   "B:start",
+   "A:stop",
+   "B:stop"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "events": [
+    "bpzwr",
+    "uqrgw",
+    "wjh",
+    "ubn",
+    "bkc"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "events": [
+    "rsd",
+    "ijkp",
+    "trwkm",
+    "eylhd"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "events": [
+    "kxsr"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "events": [
+    "yfs",
+    "ewbvm",
+    "le",
+    "luikca"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "events": [
+    "cbi",
+    "xjtd",
+    "tz",
+    "phgh",
+    "yc"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "events": [
+    "nyyfg",
+    "mquoq",
+    "uf",
+    "qg"
+   ]
+  },
+  "hidden": true
+ }
+]

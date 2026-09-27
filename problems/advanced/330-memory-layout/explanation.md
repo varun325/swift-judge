@@ -1,0 +1,1 @@
+`size` is the bytes a value occupies; `stride` is the distance between consecutive elements in an array (size rounded up to alignment). Putting the 8-byte field first lets the two `Bool`s share one trailing word — `Loose` is 17 bytes of size but 24 of stride. `String?` costs nothing extra thanks to spare bits.

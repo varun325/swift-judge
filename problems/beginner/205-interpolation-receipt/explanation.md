@@ -1,0 +1,1 @@
+Interpolation accepts any expression, including function calls and ternaries. Keeping money in integer cents avoids `0.1 + 0.2` surprises. Foundation offers `String(format: "%.2f", x)` and `x.formatted(.currency(code: "USD"))` for real apps.

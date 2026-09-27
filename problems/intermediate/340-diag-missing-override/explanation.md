@@ -1,0 +1,1 @@
+*overriding declaration requires an 'override' keyword*. The reverse mistake — `override` where the parent has no such method — gives *method does not override any method from its superclass*. Both protect you from typos and silent API drift.

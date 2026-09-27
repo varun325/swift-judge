@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Order enforced",
+  "pattern": "not initialized at super.init call|may only be initialized once"
+ }
+]

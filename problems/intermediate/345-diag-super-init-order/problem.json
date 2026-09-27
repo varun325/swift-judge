@@ -1,0 +1,19 @@
+{
+  "id": "diag-super-init-order",
+  "title": "Diagnostic: Two-Phase Initialisation",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "two-phase-init",
+    "initializers"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Initialization — Two-Phase Initialization",
+      "book": "LanguageGuide/Initialization"
+    }
+  ]
+}

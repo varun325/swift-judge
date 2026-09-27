@@ -1,0 +1,40 @@
+{
+  "id": "dijkstra",
+  "title": "Dijkstra's Shortest Paths",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Algorithms",
+  "concepts": [
+    "dictionary-basics",
+    "tuples",
+    "optionals"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "shortestPaths",
+    "params": [
+      {
+        "name": "n",
+        "type": "Int",
+        "label": "_"
+      },
+      {
+        "name": "edges",
+        "type": "[[Int]]",
+        "label": "_"
+      },
+      {
+        "name": "source",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

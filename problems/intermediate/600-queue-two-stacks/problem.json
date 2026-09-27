@@ -1,0 +1,20 @@
+{
+  "id": "queue-two-stacks",
+  "title": "Design: Queue from Two Stacks",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Structs",
+  "concepts": [
+    "mutating",
+    "generics",
+    "array-basics"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Generics — Generic Types",
+      "book": "LanguageGuide/Generics"
+    }
+  ]
+}

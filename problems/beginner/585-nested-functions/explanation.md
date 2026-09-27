@@ -1,0 +1,1 @@
+Functions are values with types like `(Int) -> Int`, so you can store them, pass them and choose between them. Nested functions are hidden from the outside world but can capture the enclosing function's variables.

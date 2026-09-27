@@ -1,0 +1,1 @@
+Order lines look like `"apples:3"`. The starter force-unwraps everything and **crashes** on malformed lines (run it and read the runtime error). Rewrite it so malformed lines (missing `:`, non-integer or negative quantity) are **skipped**, with no `!` anywhere.

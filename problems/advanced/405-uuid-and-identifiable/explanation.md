@@ -1,0 +1,1 @@
+`UUID()` generates a random (v4) 128-bit identifier; `uuidString` is the canonical 36-character uppercase form, and `UUID(uuidString:)` is failable and case-insensitive. `Identifiable` just requires an `id` — perfect for models that have no natural key.

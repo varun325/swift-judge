@@ -1,0 +1,6 @@
+[
+ {
+  "name": "self is immutable",
+  "pattern": "'self' is immutable"
+ }
+]

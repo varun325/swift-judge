@@ -1,0 +1,94 @@
+[
+ {
+  "input": {
+   "files": [
+    "a.txt",
+    "docs/b.md"
+   ]
+  },
+  "expected": [
+   "a.txt",
+   "docs/b.md"
+  ]
+ },
+ {
+  "input": {
+   "files": []
+  }
+ },
+ {
+  "input": {
+   "files": [
+    "z/1",
+    "z/2",
+    "y.txt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "files": [
+    "d0/f6.txt",
+    "f5.txt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "files": [
+    "d0/f0.txt",
+    "d1/f3.txt",
+    "f5.txt",
+    "f9.txt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "files": [
+    "d0/f6.txt",
+    "d2/f1.txt",
+    "d2/f5.txt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "files": [
+    "d0/f1.txt",
+    "d0/f8.txt",
+    "f2.txt",
+    "f5.txt",
+    "f7.txt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "files": [
+    "d0/f9.txt",
+    "f5.txt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "files": [
+    "f3.txt"
+   ]
+  },
+  "hidden": true
+ }
+]

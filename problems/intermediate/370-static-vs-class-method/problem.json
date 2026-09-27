@@ -1,0 +1,32 @@
+{
+  "id": "static-vs-class-method",
+  "title": "static vs class Methods",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "static-vs-class",
+    "final",
+    "functions-vs-methods",
+    "open-vs-public"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Methods — Type Methods",
+      "book": "LanguageGuide/Methods"
+    }
+  ],
+  "signature": {
+    "name": "typeNames",
+    "params": [
+      {
+        "name": "kinds",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

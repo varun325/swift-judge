@@ -1,0 +1,17 @@
+{
+  "id": "diag-main-attribute",
+  "title": "Diagnostic: @main vs Top-Level Code",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Advanced features",
+  "concepts": [
+    "main-attribute"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Attributes — main",
+      "book": "ReferenceManual/Attributes"
+    }
+  ]
+}

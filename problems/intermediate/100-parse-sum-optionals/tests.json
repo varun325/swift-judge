@@ -1,0 +1,193 @@
+[
+ {
+  "input": {
+   "tokens": [
+    "3",
+    "x",
+    "-2",
+    "4.5",
+    " 7"
+   ]
+  },
+  "expected": 1
+ },
+ {
+  "input": {
+   "tokens": []
+  }
+ },
+ {
+  "input": {
+   "tokens": [
+    "+5",
+    "-0",
+    "007"
+   ]
+  }
+ },
+ {
+  "input": {
+   "tokens": [
+    "9223372036854775806",
+    "1"
+   ]
+  }
+ },
+ {
+  "input": {
+   "tokens": [
+    "a",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "tokens": [
+    " 1",
+    " 1",
+    "-262",
+    "763"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "tokens": [
+    "450",
+    "-621",
+    "-217",
+    "+8",
+    "+0",
+    "+5",
+    " 9"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "tokens": [
+    "km",
+    "iv",
+    " 4",
+    "-998",
+    "6.5",
+    "6.5",
+    "p",
+    "+5"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "tokens": [
+    " 4",
+    "+0",
+    " 2"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "tokens": [
+    " 6"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "tokens": [
+    "uo"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "tokens": [
+    "7.5",
+    "yeb",
+    "5.5"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "tokens": [
+    "4.5",
+    "9.5",
+    " 2",
+    "+3",
+    " 6"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "tokens": [
+    "jb",
+    "+5",
+    "269",
+    "978",
+    "0.5",
+    " 9",
+    "+4"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "tokens": [
+    "+6",
+    "+5",
+    "2.5",
+    "-431",
+    "+6",
+    " 0",
+    " 1",
+    " 4",
+    "596"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "tokens": [
+    "836"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "tokens": [
+    "ea",
+    "+8",
+    "+1"
+   ]
+  },
+  "hidden": true
+ }
+]

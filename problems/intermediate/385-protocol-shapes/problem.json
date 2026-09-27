@@ -1,0 +1,32 @@
+{
+  "id": "protocol-shapes",
+  "title": "Protocols: Area & Perimeter",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Protocols",
+  "concepts": [
+    "protocols",
+    "existential-any",
+    "protocol-vs-class"
+  ],
+  "mode": "function",
+  "notesRef": "23",
+  "docs": [
+    {
+      "title": "Protocols — Protocol Syntax",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "describeShapes",
+    "params": [
+      {
+        "name": "specs",
+        "type": "[[Double]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "compare": "exact"
+}

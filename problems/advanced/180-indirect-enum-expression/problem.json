@@ -1,0 +1,30 @@
+{
+  "id": "indirect-enum-expression",
+  "title": "indirect enum: Expression Trees",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Enums deep dive",
+  "concepts": [
+    "indirect-enums",
+    "associated-values",
+    "pattern-matching"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations — Recursive Enumerations",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "evaluateRPN",
+    "params": [
+      {
+        "name": "tokens",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int?"
+  }
+}

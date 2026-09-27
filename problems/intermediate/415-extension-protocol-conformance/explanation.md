@@ -1,0 +1,1 @@
+You can add a protocol conformance to **any** type, even standard library ones, in an extension. `extension Array: Summarizable where Element: Summarizable` is a **conditional conformance** — `[Int]` gets it, `[Bool]` doesn't (hence the map).

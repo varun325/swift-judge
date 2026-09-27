@@ -1,0 +1,29 @@
+{
+  "id": "equatable-hashable-custom",
+  "title": "Custom Equatable & Hashable",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Protocols",
+  "concepts": [
+    "equatable-hashable",
+    "set-vs-array"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Protocols — Adopting a Protocol Using a Synthesized Implementation",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "uniqueEmails",
+    "params": [
+      {
+        "name": "raw",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

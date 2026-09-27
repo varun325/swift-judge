@@ -1,0 +1,66 @@
+[
+ {
+  "input": {
+   "steps": 4
+  },
+  "expected": [
+   "green",
+   "yellow",
+   "red",
+   "green"
+  ]
+ },
+ {
+  "input": {
+   "steps": 0
+  }
+ },
+ {
+  "input": {
+   "steps": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "steps": 12
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "steps": 8
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "steps": 9
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "steps": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "steps": 11
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "steps": 6
+  },
+  "hidden": true
+ }
+]

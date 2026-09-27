@@ -1,0 +1,32 @@
+{
+  "id": "actor-bank",
+  "title": "Actors Protect Mutable State",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "actors",
+    "sendable",
+    "async-await",
+    "dispatch-sync-async"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — Actors",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "concurrentDeposits",
+    "params": [
+      {
+        "name": "amounts",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int",
+    "async": true
+  }
+}

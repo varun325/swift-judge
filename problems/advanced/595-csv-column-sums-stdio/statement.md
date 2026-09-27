@@ -1,0 +1,1 @@
+The first input line is a CSV header; the rest are rows. For each column, print `"<header>: <sum>"` summing values that parse as `Double` (skip blanks/non-numeric). Print sums with no decimals if whole (`12`), else as Swift prints a `Double` (`3.5`). Columns keep header order.

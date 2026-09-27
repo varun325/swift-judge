@@ -1,0 +1,19 @@
+{
+  "id": "custom-collection-ring",
+  "title": "Custom Collection: Ring Buffer",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Collections deep dive",
+  "concepts": [
+    "custom-collection",
+    "subscripts",
+    "mutating"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics",
+      "book": "LanguageGuide/Generics"
+    }
+  ]
+}

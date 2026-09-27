@@ -1,0 +1,1 @@
+Requirements are dispatched **dynamically** via the witness table, so `animal.describe()` finds Cat's version. Methods that exist only in a protocol extension are dispatched **statically** by the variable's type — `animal.nickname()` calls the extension's `"critter"` even though Cat has its own.

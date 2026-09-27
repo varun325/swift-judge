@@ -1,0 +1,199 @@
+[
+ {
+  "input": {
+   "words": [
+    "hi",
+    "yo",
+    "hey"
+   ]
+  },
+  "expected": {
+   "2": [
+    "hi",
+    "yo"
+   ],
+   "3": [
+    "hey"
+   ]
+  }
+ },
+ {
+  "input": {
+   "words": []
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "a",
+    "bb",
+    "c",
+    "dd",
+    "eee"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "words": [
+    "ceexm",
+    "sm",
+    "gvuos",
+    "ir",
+    "chamv"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "words": [
+    "jkq",
+    "hobmn",
+    "rtds",
+    "ux"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "words": [
+    "umv",
+    "ib",
+    "xra",
+    "zucva",
+    "jrq",
+    "vj",
+    "g",
+    "kmf",
+    "tz"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "words": [
+    "hob",
+    "hu",
+    "cgfx",
+    "cl",
+    "ckbh",
+    "kwx",
+    "byio",
+    "zv"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "words": [
+    "hz",
+    "h",
+    "dp"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "words": [
+    "u",
+    "zl",
+    "nshy",
+    "jmltb",
+    "r",
+    "j",
+    "exc",
+    "csoq"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "words": [
+    "ywei",
+    "j",
+    "rj",
+    "icuf",
+    "gxqe",
+    "ovekh"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "words": [
+    "nf",
+    "j",
+    "gzwdo",
+    "jev"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "words": [
+    "f",
+    "lhyr",
+    "drv",
+    "z",
+    "s",
+    "um"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "words": [
+    "ooyue",
+    "erhwi",
+    "pqzts",
+    "cdf"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "words": [
+    "tlyn",
+    "vxf",
+    "c",
+    "nut",
+    "ah",
+    "gbwqx",
+    "tgvsy"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "words": [
+    "frpg",
+    "xh"
+   ]
+  },
+  "hidden": true
+ }
+]

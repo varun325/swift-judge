@@ -1,0 +1,241 @@
+[
+ {
+  "input": {
+   "items": [
+    "a",
+    "b"
+   ],
+   "indices": [
+    0,
+    5,
+    -1,
+    1
+   ]
+  },
+  "expected": [
+   "a",
+   null,
+   null,
+   "b"
+  ]
+ },
+ {
+  "input": {
+   "items": [],
+   "indices": [
+    0
+   ]
+  }
+ },
+ {
+  "input": {
+   "items": [
+    "x",
+    "y",
+    "z"
+   ],
+   "indices": [
+    2,
+    2,
+    3
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "items": [],
+   "indices": [
+    -1,
+    0,
+    -2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "items": [],
+   "indices": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "items": [
+    "joc"
+   ],
+   "indices": [
+    0,
+    0,
+    4,
+    1,
+    2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "items": [
+    "rqia",
+    "zrv",
+    "o"
+   ],
+   "indices": [
+    -1,
+    6
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "items": [
+    "mze",
+    "zznv"
+   ],
+   "indices": [
+    -3,
+    4,
+    -1,
+    -2,
+    5,
+    -3,
+    0,
+    3
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "items": [
+    "dsu",
+    "yst",
+    "gnx",
+    "szpg",
+    "b"
+   ],
+   "indices": [
+    4,
+    7,
+    5,
+    4,
+    2,
+    7,
+    8,
+    0
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "items": [
+    "lheh",
+    "kq"
+   ],
+   "indices": [
+    -1,
+    5,
+    -1,
+    -1,
+    2,
+    2,
+    4,
+    5
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "items": [
+    "aek",
+    "afc",
+    "uwl",
+    "jo"
+   ],
+   "indices": [
+    6,
+    5,
+    0,
+    6,
+    7,
+    1,
+    -2,
+    -2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "items": [
+    "ufjm",
+    "x",
+    "lg",
+    "w"
+   ],
+   "indices": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "items": [
+    "xaz",
+    "m"
+   ],
+   "indices": [
+    3,
+    2,
+    4,
+    1,
+    -2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "items": [
+    "np",
+    "kcfc",
+    "irk",
+    "b",
+    "xkh"
+   ],
+   "indices": [
+    3,
+    5
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "items": [
+    "aaqf",
+    "jj"
+   ],
+   "indices": [
+    -2
+   ]
+  },
+  "hidden": true
+ }
+]

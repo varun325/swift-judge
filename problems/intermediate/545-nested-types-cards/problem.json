@@ -1,0 +1,32 @@
+{
+  "id": "nested-types-cards",
+  "title": "Nested Types: A Deck of Cards",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Enums",
+  "concepts": [
+    "enums",
+    "case-iterable",
+    "comparable",
+    "enums"
+  ],
+  "mode": "function",
+  "notesRef": "9",
+  "docs": [
+    {
+      "title": "Nested Types",
+      "book": "LanguageGuide/NestedTypes"
+    }
+  ],
+  "signature": {
+    "name": "deckSummary",
+    "params": [
+      {
+        "name": "draws",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

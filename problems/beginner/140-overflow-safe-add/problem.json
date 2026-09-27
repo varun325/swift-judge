@@ -1,0 +1,35 @@
+{
+  "id": "overflow-safe-add",
+  "title": "Detect Integer Overflow",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Numbers",
+  "concepts": [
+    "integer-overflow",
+    "swift-advantages"
+  ],
+  "mode": "function",
+  "notesRef": "3",
+  "docs": [
+    {
+      "title": "Advanced Operators — Overflow Operators",
+      "book": "LanguageGuide/AdvancedOperators"
+    }
+  ],
+  "signature": {
+    "name": "safeAdd",
+    "params": [
+      {
+        "name": "a",
+        "type": "Int",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Int?"
+  }
+}

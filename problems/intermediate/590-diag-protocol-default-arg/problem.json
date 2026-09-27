@@ -1,0 +1,19 @@
+{
+  "id": "diag-protocol-default-arg",
+  "title": "Diagnostic: No Default Args in Protocols",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Protocols",
+  "concepts": [
+    "protocols",
+    "default-params"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "23",
+  "docs": [
+    {
+      "title": "Protocols — Method Requirements",
+      "book": "LanguageGuide/Protocols"
+    }
+  ]
+}

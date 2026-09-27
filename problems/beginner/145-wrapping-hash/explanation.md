@@ -1,0 +1,1 @@
+`&*` and `&+` wrap on overflow (two's complement), which is exactly what hash functions want. Without the `&`, the long test cases trap with *Arithmetic overflow*. `text.utf8` is a zero-copy view of the bytes.

@@ -1,0 +1,35 @@
+{
+  "id": "heap-kth-largest",
+  "title": "Generic Heap: Kth Largest",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Algorithms",
+  "concepts": [
+    "generics",
+    "generic-constraints",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "kthLargest",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "k",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

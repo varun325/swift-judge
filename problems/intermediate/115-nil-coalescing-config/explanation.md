@@ -1,0 +1,1 @@
+`??` chains right-to-left and the right side is only evaluated if needed (it's an autoclosure). `Optional.flatMap` runs a transform returning an optional without producing `Int??` — `args["port"].map { Int($0) }` would be doubly optional.

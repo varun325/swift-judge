@@ -1,0 +1,1 @@
+From your notes: `protocol Vehicle { func travel() }` and `struct Car: Vehicle` with an extra `openSunroof()`. Write `func commute(_ vehicle: any Vehicle)` that calls `vehicle.openSunroof()`. You pass when the compiler says the protocol type has no such member.

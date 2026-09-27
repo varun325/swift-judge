@@ -1,0 +1,31 @@
+{
+  "id": "fix-infinite-while",
+  "title": "Fix the Bug: The Loop That Never Ends",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Loops",
+  "concepts": [
+    "break-continue",
+    "for-in"
+  ],
+  "mode": "function",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Control Flow — Continue",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "nonJpegsReversed",
+    "params": [
+      {
+        "name": "files",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  },
+  "timeLimitMs": 1000
+}

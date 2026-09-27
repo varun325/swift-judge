@@ -1,0 +1,30 @@
+{
+  "id": "binary-tree-level-order",
+  "title": "Binary Tree from Level Order",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Algorithms",
+  "concepts": [
+    "indirect-enums",
+    "optionals",
+    "pattern-matching"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Enumerations — Recursive Enumerations",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "treeStats",
+    "params": [
+      {
+        "name": "levelOrder",
+        "type": "[Int?]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[Int]]"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gradebook-stdio",
+  "title": "Grade Book Report (stdin)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Standard I/O",
+  "concepts": [
+    "dictionary-basics",
+    "sort-custom",
+    "optional-binding"
+  ],
+  "mode": "stdio",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "bool-toggle-xor",
+  "title": "Boolean Logic: Exactly One",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Booleans",
+  "concepts": [
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "notesRef": "4",
+  "docs": [
+    {
+      "title": "Basic Operators — Logical Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "exactlyOne",
+    "params": [
+      {
+        "name": "a",
+        "type": "Bool",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "Bool",
+        "label": "_"
+      },
+      {
+        "name": "c",
+        "type": "Bool",
+        "label": "_"
+      }
+    ],
+    "returns": "Bool"
+  }
+}

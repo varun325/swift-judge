@@ -1,0 +1,137 @@
+[
+ {
+  "input": {
+   "backward": false,
+   "start": 0,
+   "steps": 3
+  },
+  "expected": [
+   1,
+   2,
+   3
+  ]
+ },
+ {
+  "input": {
+   "backward": true,
+   "start": 3,
+   "steps": 4
+  }
+ },
+ {
+  "input": {
+   "backward": true,
+   "start": 0,
+   "steps": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "backward": false,
+   "start": 16,
+   "steps": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "backward": false,
+   "start": 1,
+   "steps": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "backward": false,
+   "start": 16,
+   "steps": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "backward": true,
+   "start": 20,
+   "steps": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "backward": true,
+   "start": 6,
+   "steps": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "backward": false,
+   "start": 13,
+   "steps": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "backward": true,
+   "start": 12,
+   "steps": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "backward": true,
+   "start": 16,
+   "steps": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "backward": false,
+   "start": 19,
+   "steps": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "backward": true,
+   "start": -5,
+   "steps": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "backward": false,
+   "start": 15,
+   "steps": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "backward": false,
+   "start": 9,
+   "steps": 7
+  },
+  "hidden": true
+ }
+]

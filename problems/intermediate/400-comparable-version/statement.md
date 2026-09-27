@@ -1,0 +1,1 @@
+Make `struct Version: Comparable, CustomStringConvertible` from strings like `"1.10.2"` (missing parts default to 0, so `"2"` == `"2.0.0"`) via a failable init. Sort ascending (skip invalid strings), deduplicate equal versions keeping the first spelling, and return their `description`s as originally written.

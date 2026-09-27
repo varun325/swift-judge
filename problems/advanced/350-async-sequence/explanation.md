@@ -1,0 +1,1 @@
+`AsyncSequence` is `Sequence`'s async twin: `for await` suspends between elements. `AsyncStream` adapts callback-style producers — call `yield` for each value and `finish()` at the end. `where` and `break` work just like in a regular loop.

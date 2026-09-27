@@ -1,0 +1,18 @@
+{
+  "id": "diag-sendable-race",
+  "title": "Diagnostic: Swift 6 Catches a Data Race",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Concurrency",
+  "concepts": [
+    "sendable",
+    "actors"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Concurrency — Sendable Types",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ]
+}

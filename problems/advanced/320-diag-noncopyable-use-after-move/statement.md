@@ -1,0 +1,1 @@
+Declare `struct Token: ~Copyable { let id: Int }`. Create `let a = Token(id: 1)`, then `let b = a` (a **move**), then try to `print(a.id)`. You pass when the compiler reports that `a` is used after being consumed.

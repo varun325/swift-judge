@@ -1,0 +1,116 @@
+[
+ {
+  "input": {
+   "words": [
+    "a",
+    "b"
+   ]
+  },
+  "expected": [
+   "A",
+   "B",
+   "parsed"
+  ]
+ },
+ {
+  "input": {
+   "words": []
+  }
+ },
+ {
+  "input": {
+   "words": [
+    "r2d2",
+    "c3po"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "words": [
+    "w",
+    "nk",
+    "yk"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "words": [
+    "b",
+    "dwd",
+    "wspaz"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "words": [
+    "0zxol",
+    "py"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "words": [
+    "cheih",
+    "pnuqv",
+    "uveyi"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "words": [
+    "yph0",
+    "si",
+    "qw"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "words": [
+    "iranb",
+    "bef0",
+    "nb",
+    "nfk0a",
+    "b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "words": [
+    "soqw",
+    "dunum",
+    "d"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "words": [
+    "aomkj"
+   ]
+  },
+  "hidden": true
+ }
+]

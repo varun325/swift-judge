@@ -1,0 +1,28 @@
+[
+ {
+  "input": {
+   "threads": 4,
+   "incrementsEach": 1000
+  },
+  "expected": 4000
+ },
+ {
+  "input": {
+   "threads": 1,
+   "incrementsEach": 0
+  }
+ },
+ {
+  "input": {
+   "threads": 8,
+   "incrementsEach": 250
+  }
+ },
+ {
+  "input": {
+   "threads": 16,
+   "incrementsEach": 100
+  },
+  "hidden": true
+ }
+]

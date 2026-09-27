@@ -1,0 +1,1 @@
+A result builder rewrites the statements in a closure into calls: each expression → `buildExpression`, the sequence → `buildBlock`, `if` without else → `buildOptional`, `if/else` → `buildEither`, `for` → `buildArray`. SwiftUI's `@ViewBuilder` and `RegexBuilder` are exactly this.

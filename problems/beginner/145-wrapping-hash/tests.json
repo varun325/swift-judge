@@ -1,0 +1,119 @@
+[
+ {
+  "input": {
+   "text": ""
+  },
+  "expected": 5381
+ },
+ {
+  "input": {
+   "text": "a"
+  }
+ },
+ {
+  "input": {
+   "text": "hello"
+  }
+ },
+ {
+  "input": {
+   "text": "The quick brown fox jumps over the lazy dog"
+  }
+ },
+ {
+  "input": {
+   "text": "swiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswiftswift"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "text": "🦅✨"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "0cczrQZFSzTQCNV9EQkjy1Hr Kg?BéYoUweMcpB9"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "éVDykT!ti 1jbtbuL? éT.Aj0P1VNPIyLY1iysHHZS.ELOrrM9oUYe"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "mGpAAax WkQzdL!?G0UE"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "!Nq?kQrCjxFXmqjRHB !cAt1gxbR"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "cJ!"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "YaéndR?BakBnsJIq.umij?Mm,F"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "LTDc?bQ1"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "nUnyYBPNYXpjt,p Pq🦅JgSH wWw uDyRrV bLrr9kk?nC,  DXxd9ZW!pS"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "r1k Wlc,B99DsNl9FA!CBHexVFdWC9Rgljcvpo"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": ",uiz1mce0ZGkUleKi!DQjo.VSd!EIIey0JPpKNzzRjIbxEZYL"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "r qZD1TVWjKXoJZnYf🦅kHWFkPz HptX.NuAxcwq"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "vOjs0Fljo j0?iUEDTWF"
+  },
+  "hidden": true
+ }
+]

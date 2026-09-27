@@ -1,0 +1,159 @@
+[
+ {
+  "input": {
+   "volumes": [
+    20,
+    150,
+    -5
+   ],
+   "names": [
+    "  Varun "
+   ]
+  },
+  "expected": [
+   "v=20",
+   "v=100",
+   "v=0",
+   "u=varun",
+   "clamps=2"
+  ]
+ },
+ {
+  "input": {
+   "volumes": [],
+   "names": []
+  }
+ },
+ {
+  "input": {
+   "volumes": [
+    100,
+    0
+   ],
+   "names": [
+    "A B",
+    "\\tx\\n"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "volumes": [],
+   "names": [
+    "Ih ",
+    " Ejyv"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "volumes": [
+    157,
+    36,
+    68,
+    94,
+    20
+   ],
+   "names": [
+    "Jgfjy "
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "volumes": [
+    51,
+    -38,
+    78,
+    -12,
+    -31
+   ],
+   "names": [
+    " Egnkbx "
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "volumes": [
+    -15,
+    -7,
+    169,
+    93,
+    150,
+    -4
+   ],
+   "names": [
+    "  Bi  ",
+    " Ywrc",
+    "  Peqp "
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "volumes": [
+    152,
+    157,
+    129
+   ],
+   "names": [
+    "Ep ",
+    "Uik",
+    "Qgb "
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "volumes": [],
+   "names": [
+    "  Nfio  ",
+    " Qv  ",
+    "Q "
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "volumes": [
+    -12,
+    37,
+    -6
+   ],
+   "names": [
+    " Tkdm",
+    "  Mx "
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "volumes": [
+    -41
+   ],
+   "names": [
+    "  Sy  ",
+    " Liwdv",
+    " Hqu  "
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+Declare `enum TrafficLight: String { case red, green, yellow }` with a **`mutating func next()`** that cycles red → green → yellow → red. Starting from red, return the raw value after each of `steps` calls.

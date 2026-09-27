@@ -1,0 +1,1 @@
+For noncopyable types, assignment moves ownership; the old binding is dead. The ownership checker (a SIL pass — which is why the judge runs past type-checking) reports *'a' consumed more than once* / *used after consume*.

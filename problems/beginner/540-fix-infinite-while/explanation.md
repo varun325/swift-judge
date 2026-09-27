@@ -1,0 +1,1 @@
+`continue` jumps straight back to the condition, skipping `i -= 1` — so once `i` points at a `.jpeg`, it stays there forever. A `for`-`in` can't forget to advance. Even shorter: `files.reversed().filter { !$0.hasSuffix(".jpeg") }`.

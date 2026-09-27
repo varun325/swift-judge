@@ -1,0 +1,45 @@
+[
+ {
+  "input": "hello\nSwift 🚀\n"
+ },
+ {
+  "input": ""
+ },
+ {
+  "input": "a\n\nb\n"
+ },
+ {
+  "input": "ümlaut\n",
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": "Oogdnv\n?K1aZG\n",
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": "lEnWQrOxU rdF\n",
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": "🦅 OedmtU\n",
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": "nIbSLwF\n🦅DuYAz aaZphvlR\n",
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": "YhT.phzS,R!tjor\nb.dw\nxI🦅nlvNmXmIym\n!PbNA,Fz F🦅j\n",
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": "9jZ \nRZumhgmjGQho\nH?KpQGf!gj\n 1gbEi\n",
+  "hidden": true
+ }
+]

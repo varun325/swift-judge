@@ -1,0 +1,126 @@
+[
+ {
+  "input": {
+   "temp": 26
+  },
+  "expected": true
+ },
+ {
+  "input": {
+   "temp": 50
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "temp": -10
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "temp": 20
+  }
+ },
+ {
+  "input": {
+   "temp": 21
+  }
+ },
+ {
+  "input": {
+   "temp": 38
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "temp": 39
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "temp": 30
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "temp": 25
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "temp": -19
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "temp": -8
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "temp": -14
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "temp": 49
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "temp": -5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "temp": 8
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "temp": 34
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "temp": 18
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "temp": 53
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "temp": 19
+  },
+  "hidden": true
+ }
+]

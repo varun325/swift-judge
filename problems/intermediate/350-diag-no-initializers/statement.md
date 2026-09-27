@@ -1,0 +1,1 @@
+From your notes' demonstration table: subclass `Vehicle` as `class Truck: Vehicle { var axles: Int }` — a new stored property with **no default and no init**. You pass when the compiler reports the class has no initialisers.

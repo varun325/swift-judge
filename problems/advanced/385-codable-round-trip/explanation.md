@@ -1,0 +1,1 @@
+Synthesised enum coding (Swift 5.5+) uses the case name as the key and the associated values' labels as nested keys — a case without values encodes as an empty object. `Equatable` synthesis makes the round-trip check a one-liner.

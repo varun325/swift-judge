@@ -1,0 +1,1 @@
+A class suits tree nodes: children are shared references that we mutate in place. `var node = root` walks the tree by reassigning a **reference**. Optional chaining plus `??` (`find(word)?.isEnd ?? false`) collapses the not-found case.

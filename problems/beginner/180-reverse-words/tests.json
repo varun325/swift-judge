@@ -1,0 +1,120 @@
+[
+ {
+  "input": {
+   "sentence": "the sky is blue"
+  },
+  "expected": "blue is sky the"
+ },
+ {
+  "input": {
+   "sentence": "  hello   world "
+  },
+  "expected": "world hello"
+ },
+ {
+  "input": {
+   "sentence": ""
+  }
+ },
+ {
+  "input": {
+   "sentence": "one"
+  }
+ },
+ {
+  "input": {
+   "sentence": "a b  c   d"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "sentence": "Swift 🚀 is fun"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "sentence": "a stack enum actor closure actor "
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "sentence": "  heap  filter  tan"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "sentence": "  trie  tea  noon  ate  bat  queue"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "sentence": "  ios   enum   a   tan"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "sentence": " map  reduce  tan  bat  stack  protocol  map"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "sentence": " reduce  map  protocol  ugsgy  tea  reduce "
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "sentence": " struct   reduce   code  "
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "sentence": "stack  closure  map  actor  reduce  async  bb  "
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "sentence": "  closure   apple  "
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "sentence": "  tea apple  "
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "sentence": " code  struct"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "sentence": " await  enum  await  await  heap  eat "
+  },
+  "hidden": true
+ }
+]

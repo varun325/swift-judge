@@ -1,0 +1,121 @@
+[
+ {
+  "input": {
+   "title": "Hi",
+   "items": [
+    "a",
+    "b"
+   ],
+   "showFooter": true
+  },
+  "expected": "<h1>Hi</h1><ul><li>a</li><li>b</li></ul><footer/>"
+ },
+ {
+  "input": {
+   "title": "Empty",
+   "items": [],
+   "showFooter": false
+  }
+ },
+ {
+  "input": {
+   "title": "",
+   "items": [
+    "x"
+   ],
+   "showFooter": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "title": "qj",
+   "items": [
+    "buq",
+    "a",
+    "s",
+    "nkb"
+   ],
+   "showFooter": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "title": "pug",
+   "items": [
+    "fh",
+    "j",
+    "t",
+    "yyvr"
+   ],
+   "showFooter": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "title": "faoale",
+   "items": [],
+   "showFooter": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "title": "emlapwc",
+   "items": [],
+   "showFooter": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "title": "",
+   "items": [],
+   "showFooter": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "title": "byrkhdta",
+   "items": [
+    "qwu",
+    "xm",
+    "tr",
+    "j"
+   ],
+   "showFooter": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "title": "yegq",
+   "items": [
+    "vnet",
+    "ihhx",
+    "f"
+   ],
+   "showFooter": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "title": "vgk",
+   "items": [],
+   "showFooter": true
+  },
+  "hidden": true
+ }
+]

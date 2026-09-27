@@ -1,0 +1,1 @@
+An assignment through an optional chain evaluates to `Void?` — `nil` if the chain broke, telling you whether it happened. `dict[key]?.append(x)` mutates **in place** only if the key exists; it never inserts.

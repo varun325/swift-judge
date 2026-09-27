@@ -1,0 +1,362 @@
+[
+ {
+  "input": {
+   "entries": [
+    [
+     "ann",
+     "10",
+     "2"
+    ],
+    [
+     "bob",
+     "12",
+     "1"
+    ],
+    [
+     "cat",
+     "10",
+     "3"
+    ],
+    [
+     "dan",
+     "10",
+     "3"
+    ]
+   ]
+  },
+  "expected": [
+   "bob",
+   "cat",
+   "dan",
+   "ann"
+  ]
+ },
+ {
+  "input": {
+   "entries": []
+  }
+ },
+ {
+  "input": {
+   "entries": [
+    [
+     "z",
+     "0",
+     "0"
+    ],
+    [
+     "a",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "entries": [
+    [
+     "tk",
+     "5",
+     "3"
+    ],
+    [
+     "ij",
+     "0",
+     "3"
+    ],
+    [
+     "mx",
+     "3",
+     "3"
+    ],
+    [
+     "eopv",
+     "0",
+     "0"
+    ],
+    [
+     "ljys",
+     "5",
+     "3"
+    ],
+    [
+     "ng",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "entries": [
+    [
+     "rev",
+     "5",
+     "3"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "entries": [
+    [
+     "mbwg",
+     "5",
+     "1"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "entries": [
+    [
+     "lp",
+     "4",
+     "2"
+    ],
+    [
+     "am",
+     "2",
+     "0"
+    ],
+    [
+     "mo",
+     "5",
+     "2"
+    ],
+    [
+     "lp",
+     "0",
+     "2"
+    ],
+    [
+     "eay",
+     "1",
+     "1"
+    ],
+    [
+     "sacl",
+     "4",
+     "2"
+    ],
+    [
+     "nynx",
+     "1",
+     "0"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "entries": [
+    [
+     "rslr",
+     "3",
+     "1"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "entries": [
+    [
+     "ds",
+     "3",
+     "1"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "entries": [
+    [
+     "etpq",
+     "3",
+     "2"
+    ],
+    [
+     "se",
+     "5",
+     "3"
+    ],
+    [
+     "dwz",
+     "3",
+     "2"
+    ],
+    [
+     "vvhd",
+     "4",
+     "2"
+    ],
+    [
+     "inx",
+     "2",
+     "3"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "entries": [
+    [
+     "kjy",
+     "1",
+     "2"
+    ],
+    [
+     "mq",
+     "3",
+     "0"
+    ],
+    [
+     "ui",
+     "5",
+     "2"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "entries": [
+    [
+     "pe",
+     "4",
+     "1"
+    ],
+    [
+     "jyu",
+     "2",
+     "1"
+    ],
+    [
+     "gyoi",
+     "1",
+     "1"
+    ],
+    [
+     "wq",
+     "1",
+     "1"
+    ],
+    [
+     "cd",
+     "2",
+     "0"
+    ],
+    [
+     "ap",
+     "3",
+     "1"
+    ],
+    [
+     "pq",
+     "2",
+     "1"
+    ],
+    [
+     "vzt",
+     "1",
+     "2"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "entries": [
+    [
+     "vlfy",
+     "0",
+     "2"
+    ],
+    [
+     "tlf",
+     "3",
+     "0"
+    ],
+    [
+     "oxbb",
+     "3",
+     "3"
+    ],
+    [
+     "obvh",
+     "1",
+     "0"
+    ],
+    [
+     "gnmr",
+     "0",
+     "3"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "entries": [
+    [
+     "jww",
+     "4",
+     "0"
+    ],
+    [
+     "tyd",
+     "2",
+     "2"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "entries": [
+    [
+     "jhe",
+     "3",
+     "3"
+    ],
+    [
+     "af",
+     "3",
+     "3"
+    ]
+   ]
+  },
+  "hidden": true
+ }
+]

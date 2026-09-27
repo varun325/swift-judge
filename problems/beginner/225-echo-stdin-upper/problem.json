@@ -1,0 +1,18 @@
+{
+  "id": "echo-stdin-upper",
+  "title": "Shout Back (stdin)",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections"
+  ],
+  "mode": "stdio",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ]
+}

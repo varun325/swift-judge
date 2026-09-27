@@ -1,0 +1,130 @@
+[
+ {
+  "input": {
+   "weightKg": 70,
+   "heightM": 1.75
+  },
+  "expected": "normal"
+ },
+ {
+  "input": {
+   "weightKg": 50,
+   "heightM": 1.8
+  }
+ },
+ {
+  "input": {
+   "weightKg": 85,
+   "heightM": 1.75
+  }
+ },
+ {
+  "input": {
+   "weightKg": 120,
+   "heightM": 1.7
+  }
+ },
+ {
+  "input": {
+   "weightKg": 56.7,
+   "heightM": 1.75
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "weightKg": 40.3,
+   "heightM": 1.98
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "weightKg": 81.4,
+   "heightM": 1.46
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "weightKg": 65.8,
+   "heightM": 2.08
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "weightKg": 58.8,
+   "heightM": 1.48
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "weightKg": 92.8,
+   "heightM": 1.46
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "weightKg": 40.2,
+   "heightM": 1.99
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "weightKg": 107.6,
+   "heightM": 1.62
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "weightKg": 128.4,
+   "heightM": 1.74
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "weightKg": 128.8,
+   "heightM": 2.08
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "weightKg": 127.0,
+   "heightM": 2.06
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "weightKg": 102.1,
+   "heightM": 1.55
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "weightKg": 46.2,
+   "heightM": 1.74
+  },
+  "hidden": true
+ }
+]

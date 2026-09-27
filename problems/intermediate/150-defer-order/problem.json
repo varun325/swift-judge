@@ -1,0 +1,29 @@
+{
+  "id": "defer-order",
+  "title": "defer Runs in Reverse",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Error handling",
+  "concepts": [
+    "defer"
+  ],
+  "mode": "function",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling — Specifying Cleanup Actions",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ],
+  "signature": {
+    "name": "runSteps",
+    "params": [
+      {
+        "name": "steps",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

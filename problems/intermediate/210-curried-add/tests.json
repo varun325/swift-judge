@@ -1,0 +1,141 @@
+[
+ {
+  "input": {
+   "base": 10,
+   "xs": [
+    1,
+    2
+   ]
+  },
+  "expected": [
+   11,
+   12,
+   6
+  ]
+ },
+ {
+  "input": {
+   "base": 0,
+   "xs": []
+  }
+ },
+ {
+  "input": {
+   "base": -5,
+   "xs": [
+    5,
+    10
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "base": 49,
+   "xs": [
+    -50,
+    81,
+    -13,
+    -60,
+    -66
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "base": 70,
+   "xs": [
+    -68,
+    50
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "base": -40,
+   "xs": [
+    79,
+    10,
+    -17,
+    39,
+    69,
+    -17,
+    15,
+    53
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "base": -15,
+   "xs": [
+    -3,
+    61,
+    20
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "base": 42,
+   "xs": [
+    50,
+    -50,
+    -23,
+    17
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "base": 19,
+   "xs": [
+    -89,
+    -44
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "base": 78,
+   "xs": [
+    -71,
+    -46,
+    -94,
+    -65,
+    -63,
+    -53
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "base": 61,
+   "xs": [
+    65,
+    -28,
+    -30,
+    -93,
+    89,
+    -48,
+    -85
+   ]
+  },
+  "hidden": true
+ }
+]

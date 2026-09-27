@@ -1,0 +1,1 @@
+Implementing `<` (and `==` when the synthesised one would compare the wrong fields — here `description` must not count) gives `sorted()`, `max()`, `>`, `<=` and friends. String comparison would wrongly put `"1.10"` before `"1.9"`. `sorted()` is stable, so the first spelling of equal versions survives.

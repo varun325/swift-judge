@@ -1,0 +1,1 @@
+Cancellation in Swift is **cooperative**: `cancelAll()` just sets a flag; tasks must check `Task.isCancelled` (or call `try Task.checkCancellation()`) and stop. The group always waits for every child before returning — structured concurrency means no task outlives its scope.

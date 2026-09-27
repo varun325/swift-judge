@@ -1,0 +1,29 @@
+{
+  "id": "regex-builder-log",
+  "title": "RegexBuilder: Parse Log Lines",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Strings deep dive",
+  "concepts": [
+    "regex",
+    "result-builders"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Regex",
+      "url": "https://developer.apple.com/documentation/swift/regex"
+    }
+  ],
+  "signature": {
+    "name": "parseLogs",
+    "params": [
+      {
+        "name": "lines",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

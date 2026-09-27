@@ -1,0 +1,1 @@
+Empty extensions with `where` clauses are enough: the compiler synthesises `==` and `hash(into:)` when the constraints hold. `Pair<Int, () -> Void>` still exists — it just isn't Equatable. The standard library uses this for `Array`, `Optional` and `Dictionary`.

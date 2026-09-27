@@ -1,0 +1,1 @@
+A program has exactly one entry point. The judge compiles your code as `main.swift`, which **already** has top-level code as its entry point. Add a type marked `@main` with a `static func main()`. You pass when the compiler rejects having both.

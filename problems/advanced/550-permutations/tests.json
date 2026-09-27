@@ -1,0 +1,101 @@
+[
+ {
+  "input": {
+   "nums": [
+    1,
+    2,
+    3
+   ]
+  }
+ },
+ {
+  "input": {
+   "nums": [
+    0,
+    1
+   ]
+  }
+ },
+ {
+  "input": {
+   "nums": [
+    1
+   ]
+  }
+ },
+ {
+  "input": {
+   "nums": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "nums": [
+    8,
+    2,
+    5
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "nums": [
+    9,
+    -4,
+    4
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "nums": [
+    3,
+    -7,
+    0,
+    9,
+    -3
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "nums": [
+    3,
+    6,
+    0
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "nums": [
+    2,
+    9
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "nums": [
+    9,
+    7,
+    2,
+    -3,
+    0
+   ]
+  },
+  "hidden": true
+ }
+]

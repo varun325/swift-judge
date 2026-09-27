@@ -1,0 +1,29 @@
+{
+  "id": "fix-can-vote",
+  "title": "Fix the Bug: Voting Age Boundary",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Ternary operator",
+  "concepts": [
+    "ternary",
+    "control-flow"
+  ],
+  "mode": "function",
+  "notesRef": "13",
+  "docs": [
+    {
+      "title": "Basic Operators — Ternary Conditional Operator",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "canVote",
+    "params": [
+      {
+        "name": "age",
+        "type": "Int"
+      }
+    ],
+    "returns": "Bool"
+  }
+}

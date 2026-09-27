@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Race rejected",
+  "pattern": "data race|Sendable|sending"
+ }
+]

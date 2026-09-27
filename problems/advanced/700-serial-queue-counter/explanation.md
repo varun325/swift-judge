@@ -1,0 +1,1 @@
+A serial queue runs one block at a time, so `sync` blocks make access mutually exclusive. `sync` waits for the block to finish (never call it on the queue you're already on — deadlock); `async` returns immediately. `@unchecked Sendable` tells Swift 6 "I've synchronised this myself" — you take responsibility. Actors do this for you, checked by the compiler.

@@ -1,0 +1,113 @@
+[
+ {
+  "input": {
+   "text": "Hello World"
+  },
+  "expected": 3
+ },
+ {
+  "input": {
+   "text": ""
+  }
+ },
+ {
+  "input": {
+   "text": "AEIOU aeiou"
+  }
+ },
+ {
+  "input": {
+   "text": "rhythm"
+  }
+ },
+ {
+  "input": {
+   "text": "Programming in Swift"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "uQSfgqgLRm0gVRAfKsxJJvC"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "w"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "zTaU TdpvJaF0🦅N,elS1QBxVzRcW"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "gFOZ"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "lqPs.M,d1pZB"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "TycjU H"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "Wa"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "b?9y🦅pVvqcoxCRaEWpfp,kAP0"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "N E HmkQGotcDSyCUa"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": " AléVEHfxxAqiGu "
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "9é? suT9Gi,0SDk"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "doSQ?a?"
+  },
+  "hidden": true
+ }
+]

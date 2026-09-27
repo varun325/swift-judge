@@ -1,0 +1,1 @@
+Observers **don't** fire when a type sets its own property during `init` — so nothing is printed before `init done`. After that, every assignment triggers them, including through `mutating` methods and even when assigning the **same** value. (Writing `t.target = t.target` directly is a compile *error* — "assigning a property to itself" — hence the `let same`.)

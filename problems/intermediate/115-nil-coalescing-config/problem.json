@@ -1,0 +1,33 @@
+{
+  "id": "nil-coalescing-config",
+  "title": "Config with ?? Fallbacks",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "nil-coalescing",
+    "dictionary-basics"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "Basic Operators — Nil-Coalescing Operator",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "resolvePort",
+    "params": [
+      {
+        "name": "env",
+        "type": "[String: String]"
+      },
+      {
+        "name": "args",
+        "type": "[String: String]"
+      }
+    ],
+    "returns": "Int"
+  }
+}

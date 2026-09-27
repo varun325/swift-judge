@@ -1,0 +1,102 @@
+[
+ {
+  "input": {
+   "names": [
+    "a",
+    "b"
+   ]
+  },
+  "expected": [
+   "init a",
+   "init b",
+   "deinit a",
+   "removed",
+   "deinit b",
+   "after scope"
+  ]
+ },
+ {
+  "input": {
+   "names": []
+  }
+ },
+ {
+  "input": {
+   "names": [
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "names": [
+    "qf",
+    "rbq",
+    "np",
+    "kpu",
+    "u"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "names": [
+    "m"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "names": [
+    "i",
+    "zc",
+    "av",
+    "jk",
+    "qw"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "names": [
+    "ivn",
+    "by"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "names": [
+    "ne",
+    "ku",
+    "nsa",
+    "gry",
+    "viy"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "names": [
+    "yl",
+    "kki",
+    "jsf"
+   ]
+  },
+  "hidden": true
+ }
+]

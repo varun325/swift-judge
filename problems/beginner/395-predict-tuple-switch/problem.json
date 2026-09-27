@@ -1,0 +1,19 @@
+{
+  "id": "predict-tuple-switch",
+  "title": "Predict: Switching on Tuples",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Tuples",
+  "concepts": [
+    "tuples",
+    "switch-statement"
+  ],
+  "mode": "predict",
+  "notesRef": "16",
+  "docs": [
+    {
+      "title": "Control Flow — Tuples",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+`names[i]` finished in `times[i]` seconds (arrays may differ in length — extras are ignored). Return the top three as `"<place>. <name> (<time>s)"`, fastest first. Use `zip` to pair, `sorted`, `prefix(3)` and `enumerated()` for the place.

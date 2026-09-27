@@ -1,0 +1,33 @@
+{
+  "id": "capture-list-snapshot",
+  "title": "Capture Lists Snapshot Values",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Closures",
+  "concepts": [
+    "capture-list",
+    "capturing-values"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Closures — Capturing Values",
+      "book": "LanguageGuide/Closures"
+    },
+    {
+      "title": "Automatic Reference Counting — Defining a Capture List",
+      "book": "LanguageGuide/AutomaticReferenceCounting"
+    }
+  ],
+  "signature": {
+    "name": "captureDemo",
+    "params": [
+      {
+        "name": "start",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

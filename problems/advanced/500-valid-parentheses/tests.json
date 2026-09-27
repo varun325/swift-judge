@@ -1,0 +1,158 @@
+[
+ {
+  "input": {
+   "s": "()[]{}"
+  },
+  "expected": true
+ },
+ {
+  "input": {
+   "s": "(]"
+  },
+  "expected": false
+ },
+ {
+  "input": {
+   "s": ""
+  }
+ },
+ {
+  "input": {
+   "s": "([{}])"
+  }
+ },
+ {
+  "input": {
+   "s": "(("
+  }
+ },
+ {
+  "input": {
+   "s": "))"
+  }
+ },
+ {
+  "input": {
+   "s": "{[()()]}"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "s": "([)]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "s": "}[)}}(]][{}("
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "s": "]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "s": "[[](){)(]{)"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "s": "}({]}{)"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "s": "{})}{])"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "s": "[})[{"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "s": "]{}]]]}]}]}"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "s": "[{"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "s": "}[)[}]]}]{{"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "s": "("
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "s": "}[{})){{{"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "s": "]{{}]{()]]["
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 13",
+  "input": {
+   "s": "]}{)"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 14",
+  "input": {
+   "s": ")"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 15",
+  "input": {
+   "s": "}}{){{{]]["
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 16",
+  "input": {
+   "s": ")(){{[}]{"
+  },
+  "hidden": true
+ }
+]

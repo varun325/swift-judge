@@ -1,0 +1,1 @@
+`Dictionary(uniqueKeysWithValues:)` traps on duplicates (*Fatal error: Duplicate values for key*). The `uniquingKeysWith:` initialiser asks you how to merge — and `merge(_:uniquingKeysWith:)` does the same for existing dictionaries.

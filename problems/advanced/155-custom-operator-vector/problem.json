@@ -1,0 +1,36 @@
+{
+  "id": "custom-operator-vector",
+  "title": "Operator Overloading: 2-D Vectors",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Advanced features",
+  "concepts": [
+    "operator-overloading",
+    "custom-operators",
+    "equatable-hashable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Advanced Operators — Operator Methods",
+      "book": "LanguageGuide/AdvancedOperators"
+    }
+  ],
+  "signature": {
+    "name": "vectorDemo",
+    "params": [
+      {
+        "name": "a",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9"
+}

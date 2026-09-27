@@ -1,0 +1,30 @@
+{
+  "id": "custom-init-keeps-memberwise",
+  "title": "Custom init in an Extension",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "initializers",
+    "extensions"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Initialization — Memberwise Initializers for Structure Types",
+      "book": "LanguageGuide/Initialization"
+    }
+  ],
+  "signature": {
+    "name": "players",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

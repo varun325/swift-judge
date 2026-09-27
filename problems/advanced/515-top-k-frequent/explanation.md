@@ -1,0 +1,1 @@
+Sorting dictionary entries gives `[(key, value)]`. Swapping which side each element appears on in the tuple comparison makes count **descending** and key **ascending** in one expression. `prefix(k)` is safe even if `k > count`.

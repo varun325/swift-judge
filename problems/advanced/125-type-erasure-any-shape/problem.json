@@ -1,0 +1,30 @@
+{
+  "id": "type-erasure-any-shape",
+  "title": "Type Erasure by Hand",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Opaque & existential types",
+  "concepts": [
+    "type-erasure",
+    "associated-types",
+    "closures"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Opaque and Boxed Protocol Types",
+      "book": "LanguageGuide/OpaqueTypes"
+    }
+  ],
+  "signature": {
+    "name": "pipelineDemo",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

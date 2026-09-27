@@ -1,0 +1,1 @@
+`a = nil` doesn't free "A" because `b` still holds it; reassigning `b` drops the last reference, and "A" is deinitialised **immediately** — before `b reassigned` prints. "C" dies at the end of its `do` scope. ARC is deterministic: no collector, no delay.

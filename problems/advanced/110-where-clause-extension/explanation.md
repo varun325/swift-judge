@@ -1,0 +1,1 @@
+`extension Collection where Element: BinaryInteger` adds API only where it makes sense — `["a"].average` doesn't compile. Two constrained extensions can define the same name; overload resolution picks by element type.

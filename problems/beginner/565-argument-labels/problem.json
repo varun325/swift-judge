@@ -1,0 +1,40 @@
+{
+  "id": "argument-labels",
+  "title": "Argument Labels That Read Like English",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Functions",
+  "concepts": [
+    "argument-labels",
+    "functions-basics"
+  ],
+  "mode": "function",
+  "notesRef": "17",
+  "docs": [
+    {
+      "title": "Functions — Function Argument Labels and Parameter Names",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "move",
+    "params": [
+      {
+        "name": "start",
+        "type": "Int",
+        "label": "from"
+      },
+      {
+        "name": "end",
+        "type": "Int",
+        "label": "to"
+      },
+      {
+        "name": "step",
+        "type": "Int",
+        "label": "by"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

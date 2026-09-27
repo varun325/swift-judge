@@ -1,0 +1,1 @@
+Delegates are `weak` so the worker doesn't keep its owner alive (owner → worker → owner would be a cycle). `weak` requires a class-constrained protocol (`: AnyObject`). When the last strong reference goes, the weak `delegate` becomes `nil` automatically. `withExtendedLifetime` keeps `screen` alive until after the downloads when we *do* keep it.

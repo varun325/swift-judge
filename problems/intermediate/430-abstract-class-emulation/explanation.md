@@ -1,0 +1,1 @@
+Protocol requirements are the "abstract" parts; the extension is the shared concrete algorithm. Unlike an abstract base class, forgetting a requirement is a **compile-time** error, and structs can participate.

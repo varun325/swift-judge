@@ -1,0 +1,20 @@
+{
+  "id": "predict-switch-where-fallthrough",
+  "title": "Predict: switch Subtleties",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Switch",
+  "concepts": [
+    "switch-statement",
+    "fallthrough",
+    "where-clause"
+  ],
+  "mode": "predict",
+  "notesRef": "12",
+  "docs": [
+    {
+      "title": "Control Flow — Switch",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+`struct Greeter` produces `"Good morning"` (<12), `"Good afternoon"` (<18) or `"Good evening"` based on the hour from a **clock**. Instead of reading the real time inside `Greeter`, inject a `protocol Clock { var hour: Int { get } }` through the initialiser.
+
+ Provide `struct FixedClock: Clock` for tests and `final class SystemClock: Clock` as a **singleton** (Swift 6 will insist it's `Sendable`) (`static let shared`, `private init`) that reads the real hour with `Calendar`. With `useLive == false`, greet at each fixed hour. With `useLive == true`, return just `["live ok"]` if the system clock's greeting is one of the three valid greetings.

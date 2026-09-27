@@ -1,0 +1,38 @@
+{
+  "id": "noncopyable-file-handle",
+  "title": "~Copyable: Unique Ownership",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Memory management",
+  "concepts": [
+    "ownership",
+    "memory-safety",
+    "deinit"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Declarations — Noncopyable types",
+      "book": "ReferenceManual/Declarations"
+    },
+    {
+      "title": "Swift Evolution SE-0390",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md"
+    }
+  ],
+  "signature": {
+    "name": "ownershipDemo",
+    "params": [
+      {
+        "name": "writes",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "closeEarly",
+        "type": "Bool"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "predict-observers-init",
+  "title": "Predict: Observers During init",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "property-observers",
+    "initializers"
+  ],
+  "mode": "predict",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Properties — Property Observers",
+      "book": "LanguageGuide/Properties"
+    }
+  ]
+}

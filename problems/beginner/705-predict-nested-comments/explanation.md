@@ -1,0 +1,1 @@
+The outer `/* … */` contains an inner complete comment, so the first `*/` only closes the inner one — "four" stays commented out. In C, "four" would print (and the final `*/` would be a syntax error). Nesting lets you comment out code that already contains block comments.

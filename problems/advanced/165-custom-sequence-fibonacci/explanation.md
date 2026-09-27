@@ -1,0 +1,1 @@
+`Sequence` only needs `makeIterator()`; the iterator's `next()` returns `nil` to finish (never, here). You then get `prefix`, `map`, `filter`, `contains`… for free. On an infinite sequence, eager `filter` would never return — `.lazy` evaluates on demand. `defer` returns the old `a` before advancing.

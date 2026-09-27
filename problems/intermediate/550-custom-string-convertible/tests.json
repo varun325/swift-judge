@@ -1,0 +1,121 @@
+[
+ {
+  "input": {
+   "cents": [
+    1205,
+    -50
+   ]
+  },
+  "expected": [
+   "$12.05",
+   "Money(cents: 1205)",
+   "-$0.50",
+   "Money(cents: -50)"
+  ]
+ },
+ {
+  "input": {
+   "cents": []
+  }
+ },
+ {
+  "input": {
+   "cents": [
+    0,
+    7,
+    100
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "cents": [
+    23647,
+    56981,
+    96956
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "cents": [
+    6667
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "cents": [
+    -29459,
+    90893,
+    -52757,
+    13546
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "cents": [
+    6436,
+    58475
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "cents": [
+    37060,
+    58172,
+    48884,
+    -75148
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "cents": [
+    -58022,
+    -42224,
+    10069
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "cents": [
+    52719,
+    6752,
+    37675,
+    -97415,
+    84554
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "cents": [
+    67609,
+    20277,
+    23234,
+    74679
+   ]
+  },
+  "hidden": true
+ }
+]

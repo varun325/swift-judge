@@ -1,0 +1,1 @@
+On an `Optional`, `map` transforms the wrapped value if present; `flatMap` does the same for transforms that themselves return optionals (avoiding `T??`). This is the same shape as `Array.map`/`flatMap` — Optional is a container of zero or one element.

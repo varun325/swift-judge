@@ -1,0 +1,1 @@
+Each string is a row of `"1"` (land) and `"0"` (water). Count 4-directionally connected islands. Convert the rows to `[[Character]]`, and write a BFS helper that takes the grid `inout` and sinks visited land.

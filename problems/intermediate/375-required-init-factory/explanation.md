@@ -1,0 +1,1 @@
+`Self(level:)` constructs whatever subclass the metatype refers to — only legal because `required` guarantees every subclass has that init (Goblin inherits it; Dragon re-declares it and doubles the level). `Self` in a class means the **dynamic** type.

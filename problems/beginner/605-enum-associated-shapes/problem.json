@@ -1,0 +1,32 @@
+{
+  "id": "enum-associated-shapes",
+  "title": "Associated Values: Shapes",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Enums",
+  "concepts": [
+    "associated-values",
+    "enums",
+    "pattern-matching"
+  ],
+  "mode": "function",
+  "notesRef": "9",
+  "docs": [
+    {
+      "title": "Enumerations — Associated Values",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "totalArea",
+    "params": [
+      {
+        "name": "specs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "Double"
+  },
+  "compare": "float:1e-9"
+}

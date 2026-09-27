@@ -1,0 +1,29 @@
+{
+  "id": "word-frequency",
+  "title": "Word Frequency",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics"
+  ],
+  "mode": "function",
+  "notesRef": "7",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "wordFrequency",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "[String: Int]"
+  }
+}

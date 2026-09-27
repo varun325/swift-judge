@@ -1,0 +1,124 @@
+[
+ {
+  "input": {
+   "text": "abc"
+  },
+  "expected": [
+   3,
+   3,
+   3,
+   3
+  ]
+ },
+ {
+  "input": {
+   "text": ""
+  }
+ },
+ {
+  "input": {
+   "text": "é"
+  }
+ },
+ {
+  "input": {
+   "text": "👨‍👩‍👧"
+  }
+ },
+ {
+  "input": {
+   "text": "🇮🇳"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "text": "naïve café"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "text": "bAYzxo!"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "text": "s stIbxjé dXEbL"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "text": "rA"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "text": "é👨‍👩‍👧"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "text": "Hf9BPmP9XIP9yi"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "text": "I0O9yj,U?AP"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "text": "vBaC.nUxehRaojé"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "text": "W 9UTG👨‍👩‍👧"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "text": "mcJUSer0🇯🇵"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "text": "V"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "text": "y?Dol?wé"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "text": "Ipv é"
+  },
+  "hidden": true
+ }
+]

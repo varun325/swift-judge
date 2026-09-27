@@ -1,0 +1,18 @@
+{
+  "id": "diag-struct-needs-mutating",
+  "title": "Diagnostic: Forgetting mutating",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "mutating"
+  ],
+  "mode": "diagnostic",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Methods — Modifying Value Types",
+      "book": "LanguageGuide/Methods"
+    }
+  ]
+}

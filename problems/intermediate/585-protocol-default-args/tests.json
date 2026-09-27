@@ -1,0 +1,72 @@
+[
+ {
+  "input": {
+   "channels": [
+    "email",
+    "sms"
+   ],
+   "message": "hi"
+  },
+  "expected": [
+   "email: hi",
+   "email: hi!",
+   "sms: hi",
+   "sms: HI"
+  ]
+ },
+ {
+  "input": {
+   "channels": [],
+   "message": "x"
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "channels": [],
+   "message": "tcno"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "channels": [
+    "sms",
+    "sms"
+   ],
+   "message": "bbzspww"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "channels": [
+    "email",
+    "email"
+   ],
+   "message": "zi"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "channels": [],
+   "message": "aypcf"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "channels": [
+    "sms",
+    "email"
+   ],
+   "message": "kiwbll"
+  },
+  "hidden": true
+ }
+]

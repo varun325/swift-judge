@@ -1,0 +1,1 @@
+Regex literals `/…/` are checked **at compile time**, and their captures are typed: `match.output` is `(Substring, Substring, Substring, Substring)`. `matches(of:)`, `firstMatch(of:)` and `wholeMatch(of:)` cover most needs; `RegexBuilder` offers a DSL for complex patterns.

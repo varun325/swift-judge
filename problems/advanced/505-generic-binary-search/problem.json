@@ -1,0 +1,43 @@
+{
+  "id": "generic-binary-search",
+  "title": "Generic Binary Search",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "generics",
+    "generic-constraints",
+    "extensions"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Extensions with a Generic Where Clause",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "searchDemo",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "target",
+        "type": "Int"
+      },
+      {
+        "name": "word",
+        "type": "String"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

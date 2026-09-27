@@ -1,0 +1,103 @@
+[
+ {
+  "input": {
+   "limit": 100,
+   "take": 8
+  },
+  "expected": [
+   [
+    0,
+    1,
+    1,
+    2,
+    3,
+    5,
+    8,
+    13
+   ],
+   [
+    0,
+    2,
+    8,
+    34
+   ]
+  ]
+ },
+ {
+  "input": {
+   "limit": 0,
+   "take": 0
+  }
+ },
+ {
+  "input": {
+   "limit": 4000000,
+   "take": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "limit": 302753078,
+   "take": 15
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "limit": 131559054,
+   "take": 22
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "limit": 170629009,
+   "take": 11
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "limit": 736202372,
+   "take": 24
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "limit": 752148612,
+   "take": 27
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "limit": 291809711,
+   "take": 12
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "limit": 35642049,
+   "take": 8
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "limit": 288350566,
+   "take": 31
+  },
+  "hidden": true
+ }
+]

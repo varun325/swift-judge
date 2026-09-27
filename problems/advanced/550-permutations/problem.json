@@ -1,0 +1,30 @@
+{
+  "id": "permutations",
+  "title": "Permutations (Backtracking)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "inout",
+    "functions-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Functions — In-Out Parameters",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "permute",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[Int]]"
+  },
+  "compare": "json-unordered"
+}

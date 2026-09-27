@@ -1,0 +1,106 @@
+[
+ {
+  "input": {
+   "values": [
+    1,
+    2,
+    3
+   ]
+  },
+  "expected": [
+   "#3",
+   "#5",
+   "#7"
+  ]
+ },
+ {
+  "input": {
+   "values": []
+  }
+ },
+ {
+  "input": {
+   "values": [
+    -1,
+    0
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "values": [
+    -748,
+    -355,
+    -796,
+    -176
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "values": [
+    880,
+    508,
+    283,
+    381,
+    -536,
+    -37
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "values": [
+    992,
+    864,
+    920
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "values": [
+    308,
+    -740,
+    620,
+    -226,
+    832,
+    45
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "values": [
+    -571,
+    -330,
+    -495,
+    723,
+    -979,
+    -255
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "values": [
+    -676,
+    -634,
+    612
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,31 @@
+{
+  "id": "file-manager-listing",
+  "title": "FileManager: List a Directory",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Foundation essentials",
+  "concepts": [
+    "file-manager",
+    "error-handling",
+    "defer"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "FileManager",
+      "url": "https://developer.apple.com/documentation/foundation/filemanager"
+    }
+  ],
+  "signature": {
+    "name": "listing",
+    "params": [
+      {
+        "name": "files",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]",
+    "throws": true
+  }
+}

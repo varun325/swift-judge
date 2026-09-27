@@ -1,0 +1,42 @@
+[
+ {
+  "input": "ana 90\nbo 70\nana 81\nbo 101\nbad line\n"
+ },
+ {
+  "input": ""
+ },
+ {
+  "input": "zed 50\nzed 51\n",
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": "cy 61\nana 62\ncy 73\nana 100\ndi 2\ncy 66\nbo -2\ndi 83\n",
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": "di 93\nbo 59\ndi 92\nbo 67\n",
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": "junk\nana 101\ncy 99\ncy 28\n",
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": "junk\ncy 9\n",
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": "di 96\nbo 16\ndi 65\ncy 22\ncy 23\n",
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": "ana 26\ncy 43\njunk\njunk\nbo 56\ndi 98\nbo 105\ndi 61\ndi 96\n",
+  "hidden": true
+ }
+]

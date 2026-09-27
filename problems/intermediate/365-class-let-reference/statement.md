@@ -1,0 +1,1 @@
+`final class Singer { var name = "Taylor" }`. Create `let original = Singer()` and `let alias = original`. Apply each rename to **`alias.name`** (legal even though `alias` is a `let`!). Return `[original.name, "\(original === alias)"]`, then create `let clone = Singer(); clone.name = original.name` and append `"\(clone === original)"`.

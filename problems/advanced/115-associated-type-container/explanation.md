@@ -1,0 +1,1 @@
+`associatedtype Item` is a placeholder each conformer fills in — `IntBag` infers `Item == Int` from its methods. `where C1.Item == C2.Item` relates two generic parameters' associated types. This is exactly how `Sequence.Element` works.

@@ -1,0 +1,31 @@
+{
+  "id": "fahrenheit",
+  "title": "Temperature Conversion",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Numbers",
+  "concepts": [
+    "float-vs-double",
+    "type-inference"
+  ],
+  "mode": "function",
+  "notesRef": "3",
+  "docs": [
+    {
+      "title": "The Basics — Numeric Type Conversion",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "celsiusToFahrenheit",
+    "params": [
+      {
+        "name": "celsius",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "Double"
+  },
+  "compare": "float:1e-9"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "assert-precondition",
+  "title": "assert vs precondition vs fatalError",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "assert",
+    "never-type"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "The Basics — Assertions and Preconditions",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "checkedAges",
+    "params": [
+      {
+        "name": "ages",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

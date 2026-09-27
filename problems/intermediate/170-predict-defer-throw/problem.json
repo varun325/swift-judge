@@ -1,0 +1,20 @@
+{
+  "id": "predict-defer-throw",
+  "title": "Predict: defer and Errors",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Error handling",
+  "concepts": [
+    "defer",
+    "error-handling",
+    "try-variants"
+  ],
+  "mode": "predict",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ]
+}

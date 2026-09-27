@@ -1,0 +1,105 @@
+[
+ {
+  "input": {
+   "writes": [
+    "a"
+   ],
+   "closeEarly": true
+  },
+  "expected": [
+   "inspect data.txt",
+   "write a",
+   "close data.txt",
+   "done"
+  ]
+ },
+ {
+  "input": {
+   "writes": [
+    "a",
+    "b"
+   ],
+   "closeEarly": false
+  },
+  "expected": [
+   "inspect data.txt",
+   "write a",
+   "write b",
+   "auto-close data.txt",
+   "done"
+  ]
+ },
+ {
+  "input": {
+   "writes": [],
+   "closeEarly": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "writes": [
+    "u",
+    "f"
+   ],
+   "closeEarly": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "writes": [],
+   "closeEarly": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "writes": [
+    "klq",
+    "ju"
+   ],
+   "closeEarly": true
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "writes": [
+    "jvch",
+    "jo",
+    "br"
+   ],
+   "closeEarly": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "writes": [
+    "jb",
+    "htrt",
+    "fer"
+   ],
+   "closeEarly": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "writes": [
+    "xwc",
+    "opk",
+    "qx"
+   ],
+   "closeEarly": true
+  },
+  "hidden": true
+ }
+]

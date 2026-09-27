@@ -1,0 +1,115 @@
+[
+ {
+  "input": {
+   "hours": [
+    9,
+    13,
+    20
+   ],
+   "useLive": false
+  },
+  "expected": [
+   "Good morning",
+   "Good afternoon",
+   "Good evening"
+  ]
+ },
+ {
+  "input": {
+   "hours": [],
+   "useLive": true
+  }
+ },
+ {
+  "input": {
+   "hours": [
+    0,
+    11,
+    12,
+    17,
+    18,
+    23
+   ],
+   "useLive": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "hours": [
+    3,
+    17
+   ],
+   "useLive": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "hours": [
+    17,
+    9
+   ],
+   "useLive": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "hours": [
+    12,
+    17,
+    3,
+    20
+   ],
+   "useLive": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "hours": [
+    21,
+    0,
+    16,
+    3,
+    5
+   ],
+   "useLive": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "hours": [
+    5,
+    23,
+    12,
+    2,
+    5
+   ],
+   "useLive": false
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "hours": [
+    19,
+    17,
+    3,
+    16,
+    12,
+    23
+   ],
+   "useLive": false
+  },
+  "hidden": true
+ }
+]

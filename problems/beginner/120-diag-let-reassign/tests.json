@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Reassignment rejected",
+  "pattern": "cannot assign to value: 'maxLoginAttempts' is a 'let' constant"
+ }
+]

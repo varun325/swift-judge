@@ -1,0 +1,1 @@
+ARC frees an object the moment its **last strong reference** disappears, running `deinit` right then — deterministic, unlike garbage collection. Removing from the array drops one reference immediately; the rest go when `items` goes out of scope.

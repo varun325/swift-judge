@@ -1,0 +1,32 @@
+{
+  "id": "for-case-optional",
+  "title": "for case let x? — Iterate Non-nil Values",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "pattern-matching",
+    "optionals",
+    "compactmap-flatmap",
+    "nil-vs-null"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "Patterns — Optional Pattern",
+      "book": "ReferenceManual/Patterns"
+    }
+  ],
+  "signature": {
+    "name": "sumPresent",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int?]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

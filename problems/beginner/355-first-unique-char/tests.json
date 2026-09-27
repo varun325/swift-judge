@@ -1,0 +1,121 @@
+[
+ {
+  "input": {
+   "s": "leetcode"
+  },
+  "expected": 0
+ },
+ {
+  "input": {
+   "s": "loveleetcode"
+  },
+  "expected": 2
+ },
+ {
+  "input": {
+   "s": "aabb"
+  },
+  "expected": -1
+ },
+ {
+  "input": {
+   "s": ""
+  }
+ },
+ {
+  "input": {
+   "s": "z"
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "s": "ééa"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "s": "cebb"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "s": "baaabccedc"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "s": "ebecbced"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "s": "bbcbaa"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "s": "dbb"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "s": "edceceea"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "s": "ebeeabaddbc"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "s": "ed"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "s": "acaaab"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "s": "ad"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "s": "aedddeecbaee"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "s": "dc"
+  },
+  "hidden": true
+ }
+]

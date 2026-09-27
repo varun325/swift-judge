@@ -1,0 +1,179 @@
+[
+ {
+  "input": {
+   "env": {
+    "PORT": "3000"
+   },
+   "args": {
+    "port": "4000"
+   }
+  },
+  "expected": 4000
+ },
+ {
+  "input": {
+   "env": {
+    "PORT": "3000"
+   },
+   "args": {}
+  },
+  "expected": 3000
+ },
+ {
+  "input": {
+   "env": {},
+   "args": {}
+  }
+ },
+ {
+  "input": {
+   "env": {
+    "PORT": "x"
+   },
+   "args": {
+    "port": "y"
+   }
+  }
+ },
+ {
+  "input": {
+   "env": {
+    "PORT": "1"
+   },
+   "args": {
+    "port": "nope"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "env": {
+    "PORT": "8109"
+   },
+   "args": {}
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "env": {},
+   "args": {
+    "port": "3641"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "env": {
+    "PORT": "x"
+   },
+   "args": {}
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "env": {
+    "PORT": "3848"
+   },
+   "args": {
+    "port": "6547"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "env": {
+    "PORT": "5351"
+   },
+   "args": {}
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "env": {
+    "PORT": "6910"
+   },
+   "args": {
+    "port": "bad"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "env": {},
+   "args": {
+    "port": "4046"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "env": {
+    "PORT": "7789"
+   },
+   "args": {}
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "env": {
+    "PORT": "x"
+   },
+   "args": {
+    "port": "bad"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "env": {
+    "PORT": "6079"
+   },
+   "args": {
+    "port": "bad"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "env": {
+    "PORT": "9879"
+   },
+   "args": {
+    "port": "bad"
+   }
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "env": {
+    "PORT": "3854"
+   },
+   "args": {}
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+`%` and `/` peel digits off the end. `magnitude` (a `UInt`) handles `Int.min`, whose absolute value doesn't fit in `Int` — `abs(Int.min)` would trap. A string approach works too: `String(n).compactMap(\.wholeNumberValue).reduce(0, +)`.

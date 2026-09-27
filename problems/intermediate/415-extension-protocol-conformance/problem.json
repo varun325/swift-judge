@@ -1,0 +1,40 @@
+{
+  "id": "extension-protocol-conformance",
+  "title": "Retroactive Conformance via Extension",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Extensions",
+  "concepts": [
+    "extensions",
+    "protocols",
+    "protocol-extension",
+    "extension-vs-protocol-extension",
+    "multiple-inheritance"
+  ],
+  "mode": "function",
+  "notesRef": "24",
+  "docs": [
+    {
+      "title": "Extensions — Adding Protocol Conformance with an Extension",
+      "book": "LanguageGuide/Extensions"
+    }
+  ],
+  "signature": {
+    "name": "summaries",
+    "params": [
+      {
+        "name": "ints",
+        "type": "[Int]"
+      },
+      {
+        "name": "words",
+        "type": "[String]"
+      },
+      {
+        "name": "flags",
+        "type": "[Bool]"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

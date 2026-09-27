@@ -1,0 +1,1 @@
+Building a `Set` drops duplicates, so a size mismatch means there was one. For early exit on huge inputs, loop and use `insert(_:)`, whose result tuple's `inserted` flag tells you if the value was new.

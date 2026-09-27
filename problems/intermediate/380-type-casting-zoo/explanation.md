@@ -1,0 +1,1 @@
+`Any` erases static type information, so you need casts to get it back: `is` tests, `as?` conditionally casts, and `case let x as T` does both inside a `switch`. Prefer real types or enums over `[Any]` in real code.

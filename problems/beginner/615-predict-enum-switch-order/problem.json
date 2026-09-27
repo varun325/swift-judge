@@ -1,0 +1,19 @@
+{
+  "id": "predict-enum-switch-order",
+  "title": "Predict: Enum Payloads & if case",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Enums",
+  "concepts": [
+    "associated-values",
+    "pattern-matching"
+  ],
+  "mode": "predict",
+  "notesRef": "9",
+  "docs": [
+    {
+      "title": "Enumerations — Associated Values",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ]
+}

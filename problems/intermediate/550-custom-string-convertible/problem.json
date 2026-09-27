@@ -1,0 +1,31 @@
+{
+  "id": "custom-string-convertible",
+  "title": "CustomStringConvertible & debugDescription",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Protocols",
+  "concepts": [
+    "protocols",
+    "print-vs-debugprint",
+    "string-interpolation"
+  ],
+  "mode": "function",
+  "notesRef": "23",
+  "docs": [
+    {
+      "title": "Protocols",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "describeMoney",
+    "params": [
+      {
+        "name": "cents",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

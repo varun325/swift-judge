@@ -1,0 +1,1 @@
+`#if` removes code **before** type checking — the other branches needn't even compile for this platform. `DEBUG` is just a flag Xcode passes (`-D DEBUG`) in debug configurations; plain `swiftc` doesn't define it. `#available` is a **runtime** OS check that also unlocks newer APIs inside the branch.

@@ -1,0 +1,30 @@
+{
+  "id": "tuple-compare-sort",
+  "title": "Sort by Several Keys with Tuples",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Tuples",
+  "concepts": [
+    "tuple-comparison",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "notesRef": "16",
+  "docs": [
+    {
+      "title": "Basic Operators — Comparison Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "leaderboard",
+    "params": [
+      {
+        "name": "entries",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

@@ -1,0 +1,246 @@
+[
+ {
+  "input": {
+   "names": [
+    "ana",
+    "bo",
+    "cy",
+    "di"
+   ],
+   "times": [
+    10.5,
+    9.8,
+    11.0,
+    9.9
+   ]
+  },
+  "expected": [
+   "1. bo (9.8s)",
+   "2. di (9.9s)",
+   "3. ana (10.5s)"
+  ]
+ },
+ {
+  "input": {
+   "names": [],
+   "times": []
+  }
+ },
+ {
+  "input": {
+   "names": [
+    "solo",
+    "extra"
+   ],
+   "times": [
+    3.0
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "names": [
+    "wgal",
+    "mbjt",
+    "nsb",
+    "fcfwf",
+    "ag",
+    "lbj"
+   ],
+   "times": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "names": [
+    "dilpj",
+    "vmy",
+    "zzj",
+    "ulkq",
+    "jvs",
+    "onq"
+   ],
+   "times": [
+    14.41,
+    14.88
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "names": [
+    "ctjb",
+    "xogh"
+   ],
+   "times": [
+    11.92,
+    9.75,
+    10.41,
+    14.57,
+    9.58,
+    11.02
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "names": [
+    "ey",
+    "kgakm"
+   ],
+   "times": [
+    9.25,
+    12.79,
+    12.66,
+    12.23
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "names": [
+    "kfh",
+    "mnrz",
+    "jv",
+    "ycvn",
+    "kt"
+   ],
+   "times": [
+    13.63,
+    10.13
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "names": [],
+   "times": [
+    9.36,
+    11.9,
+    10.82
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "names": [
+    "qsfqc",
+    "ml",
+    "od",
+    "ymzxm",
+    "neyrw"
+   ],
+   "times": [
+    14.81,
+    13.54
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "names": [
+    "zezxz",
+    "xlzy",
+    "bhz",
+    "ehjv",
+    "xa",
+    "oqbz"
+   ],
+   "times": [
+    12.98,
+    10.49
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "names": [
+    "mhxxy",
+    "nwyce",
+    "dwt",
+    "aux"
+   ],
+   "times": [
+    13.27,
+    14.75,
+    13.54,
+    13.95,
+    14.53,
+    11.95
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "names": [
+    "dr",
+    "hh",
+    "vf",
+    "wdei",
+    "ieuzu",
+    "ovny"
+   ],
+   "times": [
+    10.12,
+    12.17,
+    13.28,
+    9.32
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "names": [
+    "anb",
+    "ipb",
+    "jm"
+   ],
+   "times": [
+    10.13,
+    11.32,
+    13.09,
+    9.33
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "names": [
+    "iuu",
+    "wiwkh",
+    "nl",
+    "fuup",
+    "wk",
+    "kd"
+   ],
+   "times": [
+    13.47
+   ]
+  },
+  "hidden": true
+ }
+]

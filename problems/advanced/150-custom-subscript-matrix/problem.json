@@ -1,0 +1,37 @@
+{
+  "id": "custom-subscript-matrix",
+  "title": "Custom Subscripts: Matrix",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Advanced features",
+  "concepts": [
+    "subscripts",
+    "assert",
+    "operator-overloading"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Subscripts",
+      "book": "LanguageGuide/Subscripts"
+    }
+  ],
+  "signature": {
+    "name": "matrixDemo",
+    "params": [
+      {
+        "name": "rows",
+        "type": "Int"
+      },
+      {
+        "name": "cols",
+        "type": "Int"
+      },
+      {
+        "name": "sets",
+        "type": "[[Int]]"
+      }
+    ],
+    "returns": "[[Int]]"
+  }
+}

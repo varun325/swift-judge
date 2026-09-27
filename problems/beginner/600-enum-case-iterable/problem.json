@@ -1,0 +1,29 @@
+{
+  "id": "enum-case-iterable",
+  "title": "CaseIterable Menu",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Enums",
+  "concepts": [
+    "case-iterable",
+    "enums"
+  ],
+  "mode": "function",
+  "notesRef": "9",
+  "docs": [
+    {
+      "title": "Enumerations — Iterating over Enumeration Cases",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "menu",
+    "params": [
+      {
+        "name": "maxPrice",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

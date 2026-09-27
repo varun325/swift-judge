@@ -1,0 +1,17 @@
+{
+  "id": "diag-error-directive",
+  "title": "Diagnostic: #error",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Advanced features",
+  "concepts": [
+    "compiler-directives"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Statements — Compile-Time Diagnostic Statement",
+      "book": "ReferenceManual/Statements"
+    }
+  ]
+}

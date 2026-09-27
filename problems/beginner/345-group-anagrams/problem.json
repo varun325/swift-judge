@@ -1,0 +1,31 @@
+{
+  "id": "group-anagrams",
+  "title": "Group Anagrams",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "notesRef": "7",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "groupAnagrams",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[String]]"
+  },
+  "compare": "json-unordered-deep"
+}

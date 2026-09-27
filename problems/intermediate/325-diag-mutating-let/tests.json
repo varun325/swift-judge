@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Mutating call on let rejected",
+  "pattern": "cannot use mutating member on immutable value"
+ }
+]

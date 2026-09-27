@@ -1,0 +1,1 @@
+From your notes: the setter has its arithmetic backwards, so `e.vacationRemaining = 5; e.vacationRemaining` doesn't read back 5. Fix the struct. `vacationRoundTrip` sets `vacationTaken`, then `vacationRemaining`, and returns `[vacationAllowed, vacationRemaining]`.

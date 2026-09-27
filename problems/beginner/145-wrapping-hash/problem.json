@@ -1,0 +1,30 @@
+{
+  "id": "wrapping-hash",
+  "title": "Wrapping Arithmetic Hash",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Numbers",
+  "concepts": [
+    "integer-overflow",
+    "operator-overloading"
+  ],
+  "mode": "function",
+  "notesRef": "3",
+  "docs": [
+    {
+      "title": "Advanced Operators — Overflow Operators",
+      "book": "LanguageGuide/AdvancedOperators"
+    }
+  ],
+  "signature": {
+    "name": "djb2",
+    "params": [
+      {
+        "name": "text",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

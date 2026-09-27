@@ -1,0 +1,217 @@
+[
+ {
+  "input": {
+   "ops": [
+    "d 100",
+    "w 100",
+    "w 1"
+   ]
+  },
+  "expected": [
+   "ok 100",
+   "ok 0",
+   "refused 0"
+  ]
+ },
+ {
+  "input": {
+   "ops": []
+  }
+ },
+ {
+  "input": {
+   "ops": [
+    "w 5",
+    "d 5",
+    "w 3",
+    "w 3"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "ops": [
+    "w 51",
+    "d 18",
+    "d 65",
+    "d 89",
+    "w 60"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "ops": [
+    "d 48",
+    "d 1",
+    "d 40",
+    "d 55",
+    "w 19",
+    "d 28",
+    "d 12",
+    "d 54",
+    "d 32"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "ops": [
+    "d 76",
+    "d 40",
+    "w 21",
+    "d 52"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "ops": [
+    "d 41",
+    "d 54",
+    "d 45",
+    "w 68",
+    "d 40",
+    "w 37",
+    "d 50",
+    "d 30",
+    "w 41",
+    "d 9"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "ops": [
+    "w 67",
+    "d 77",
+    "w 20",
+    "w 21",
+    "d 35",
+    "d 50",
+    "d 34",
+    "d 35",
+    "d 42",
+    "d 17"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "ops": [
+    "d 1",
+    "w 12",
+    "d 11",
+    "d 26",
+    "d 65",
+    "d 35",
+    "w 23",
+    "d 7",
+    "w 9",
+    "d 76"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "ops": [
+    "d 43",
+    "d 70",
+    "d 68",
+    "d 52",
+    "w 15",
+    "d 33"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "ops": [
+    "w 65",
+    "w 68",
+    "w 35",
+    "d 4",
+    "d 78",
+    "d 35",
+    "w 82",
+    "d 66",
+    "w 100",
+    "d 92"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "ops": [
+    "d 87",
+    "w 69"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "ops": [
+    "w 74",
+    "w 21",
+    "w 27",
+    "d 49",
+    "w 47",
+    "w 4",
+    "d 10",
+    "w 46",
+    "d 66"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "ops": [
+    "d 98",
+    "w 33",
+    "d 46",
+    "d 7"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "ops": [
+    "d 91",
+    "w 96",
+    "d 42",
+    "w 65",
+    "w 89",
+    "w 16",
+    "w 7",
+    "w 57",
+    "d 30",
+    "d 46"
+   ]
+  },
+  "hidden": true
+ }
+]

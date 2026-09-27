@@ -1,0 +1,12 @@
+{
+  "swift-book": {
+    "repo": "https://github.com/swiftlang/swift-book",
+    "commit": "1c0598430507e6c2b9a0f068b6dd7c618392fea6",
+    "license": "Apache-2.0"
+  },
+  "interview": {
+    "repo": "https://github.com/Devinterview-io/swift-interview-questions",
+    "commit": "91ae76822d3f5d1c2949883ad914c07820585a81"
+  },
+  "vendoredAt": "2026-09-27T11:09:06.457Z"
+}

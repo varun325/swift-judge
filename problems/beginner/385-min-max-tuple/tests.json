@@ -1,0 +1,211 @@
+[
+ {
+  "input": {
+   "nums": [
+    3,
+    1,
+    4,
+    1,
+    5
+   ]
+  },
+  "expected": [
+   1,
+   5
+  ]
+ },
+ {
+  "input": {
+   "nums": []
+  },
+  "expected": []
+ },
+ {
+  "input": {
+   "nums": [
+    7
+   ]
+  }
+ },
+ {
+  "input": {
+   "nums": [
+    -2,
+    -9,
+    0
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "nums": [
+    -24,
+    -343,
+    34,
+    -483,
+    -472,
+    73
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "nums": [
+    -779,
+    -248,
+    -609,
+    742,
+    -699,
+    90,
+    -404,
+    456
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "nums": [
+    -433,
+    -701,
+    803,
+    83,
+    435,
+    -716,
+    -989,
+    -361
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "nums": [
+    510,
+    -314,
+    348
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "nums": [
+    -358,
+    -692,
+    945,
+    -346,
+    445,
+    327,
+    57,
+    -279,
+    -472,
+    519
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "nums": [
+    -710,
+    -387,
+    928,
+    740,
+    716,
+    229
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "nums": [
+    472,
+    -741,
+    671,
+    -61,
+    519,
+    291
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "nums": [
+    -437,
+    -295,
+    -210,
+    492,
+    59,
+    650,
+    -452,
+    -383,
+    222
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "nums": [
+    39,
+    -932,
+    825,
+    673,
+    258,
+    -190
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "nums": [
+    -404,
+    -475,
+    -152,
+    272,
+    767,
+    -230,
+    -344,
+    331,
+    903
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "nums": [
+    570
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "nums": [
+    -966,
+    990,
+    201
+   ]
+  },
+  "hidden": true
+ }
+]

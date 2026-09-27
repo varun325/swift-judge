@@ -1,0 +1,17 @@
+{
+  "id": "diag-noncopyable-use-after-move",
+  "title": "Diagnostic: Use After consume",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Memory management",
+  "concepts": [
+    "ownership"
+  ],
+  "mode": "diagnostic",
+  "docs": [
+    {
+      "title": "Swift Evolution SE-0390",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md"
+    }
+  ]
+}

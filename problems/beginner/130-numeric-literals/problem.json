@@ -1,0 +1,23 @@
+{
+  "id": "numeric-literals",
+  "title": "Binary, Octal and Hex Literals",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Numbers",
+  "concepts": [
+    "numeric-literals"
+  ],
+  "mode": "function",
+  "notesRef": "3",
+  "docs": [
+    {
+      "title": "The Basics — Numeric Literals",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "literalValues",
+    "params": [],
+    "returns": "[Int]"
+  }
+}

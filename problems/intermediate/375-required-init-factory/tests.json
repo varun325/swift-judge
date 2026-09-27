@@ -1,0 +1,89 @@
+[
+ {
+  "input": {
+   "kinds": [
+    "goblin 3",
+    "dragon 10",
+    "enemy 1"
+   ]
+  },
+  "expected": [
+   "goblin L3",
+   "dragon L20",
+   "enemy L1"
+  ]
+ },
+ {
+  "input": {
+   "kinds": []
+  }
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "kinds": [
+    "goblin 5"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "kinds": [
+    "goblin 33",
+    "goblin 28",
+    "dragon 8",
+    "enemy 11"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "kinds": [
+    "enemy 26",
+    "enemy 9"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "kinds": [
+    "enemy 39",
+    "enemy 10",
+    "enemy 22",
+    "goblin 28"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "kinds": [
+    "dragon 29",
+    "goblin 19",
+    "goblin 31",
+    "enemy 40",
+    "dragon 8"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "kinds": [
+    "goblin 30",
+    "enemy 38",
+    "dragon 37",
+    "goblin 35"
+   ]
+  },
+  "hidden": true
+ }
+]

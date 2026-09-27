@@ -1,0 +1,206 @@
+[
+ {
+  "input": {
+   "username": "varun",
+   "age": "25",
+   "email": "v@x.io"
+  },
+  "expected": "welcome varun"
+ },
+ {
+  "input": {
+   "username": "vi",
+   "age": "25",
+   "email": "v@x.io"
+  },
+  "expected": "bad username"
+ },
+ {
+  "input": {
+   "username": "varun",
+   "age": null,
+   "email": "v@x.io"
+  }
+ },
+ {
+  "input": {
+   "username": "varun",
+   "age": "12",
+   "email": "v@x.io"
+  }
+ },
+ {
+  "input": {
+   "username": "varun",
+   "age": "20",
+   "email": "a@b@c"
+  }
+ },
+ {
+  "input": {
+   "username": "varun",
+   "age": "20",
+   "email": "@x"
+  }
+ },
+ {
+  "input": {
+   "username": null,
+   "age": null,
+   "email": null
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "username": "varun",
+   "age": "2x",
+   "email": "a@b"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "username": "tf",
+   "age": "31",
+   "email": "hjzy@ytvtdl"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "username": "zhixbtcnymhd",
+   "age": "27",
+   "email": "tcjndnw@"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "username": "ybynzdmqsdrnqtdz",
+   "age": "abc",
+   "email": "@dbs"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "username": "wphyrsoshnss",
+   "age": "abc",
+   "email": null
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "username": null,
+   "age": "abc",
+   "email": "a@b@c"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "username": "tamganaimef",
+   "age": "34",
+   "email": "trr@v"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "username": "ljmoigf",
+   "age": "abc",
+   "email": "@dprhxtl"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "username": "gguxgkwcrvum",
+   "age": "abc",
+   "email": "s@"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "username": null,
+   "age": null,
+   "email": "ssxww"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "username": "dvalcvijawn",
+   "age": "65",
+   "email": "fjaioojs@uh"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "username": "zyfyaisuvtkoawdhv",
+   "age": null,
+   "email": "rfza@"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "username": null,
+   "age": "10",
+   "email": "qf"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 13",
+  "input": {
+   "username": null,
+   "age": "39",
+   "email": "ggjfq@"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 14",
+  "input": {
+   "username": "wjijdeiqksoalrb",
+   "age": "abc",
+   "email": "kdixz@"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 15",
+  "input": {
+   "username": "e",
+   "age": null,
+   "email": "@me"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 16",
+  "input": {
+   "username": "dkqjailqbiory",
+   "age": "abc",
+   "email": "@g"
+  },
+  "hidden": true
+ }
+]

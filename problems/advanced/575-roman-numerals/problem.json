@@ -1,0 +1,29 @@
+{
+  "id": "roman-numerals",
+  "title": "Integer to Roman",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Algorithms",
+  "concepts": [
+    "tuples",
+    "for-in"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Control Flow",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "toRoman",
+    "params": [
+      {
+        "name": "num",
+        "type": "Int",
+        "label": "_"
+      }
+    ],
+    "returns": "String"
+  }
+}

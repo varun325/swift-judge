@@ -1,0 +1,1 @@
+Printing an optional shows `Optional(5)` — a hint you forgot to unwrap. `Int!` is force-unwrapped only where a non-optional is **required** (`c + 1`); when the type can be inferred as an optional (`let d = c`), it stays `Optional<Int>`.

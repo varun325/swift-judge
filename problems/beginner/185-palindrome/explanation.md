@@ -1,0 +1,1 @@
+`Character` has handy properties — `isLetter`, `isNumber`, `isWhitespace`, `isUppercase`. Filtering a `String` gives a `String`. `reversed()` is a lazy `ReversedCollection`, so wrap it in `String(...)` (or compare with `elementsEqual`).

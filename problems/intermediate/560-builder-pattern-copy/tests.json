@@ -1,0 +1,115 @@
+[
+ {
+  "input": {
+   "steps": [
+    "method POST",
+    "path /users",
+    "header Accept json"
+   ]
+  },
+  "expected": [
+   "GET / ",
+   "POST /users Accept=json"
+  ]
+ },
+ {
+  "input": {
+   "steps": []
+  }
+ },
+ {
+  "input": {
+   "steps": [
+    "header b 2",
+    "header a 1",
+    "nonsense"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "steps": [
+    "junk",
+    "junk",
+    "method POST",
+    "header gib und"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "steps": [
+    "header j yf",
+    "method POST"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "steps": [
+    "header xms og",
+    "method PUT",
+    "method PUT",
+    "method POST"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "steps": [
+    "path /muipj",
+    "path /us"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "steps": [
+    "header s hy"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "steps": [
+    "junk",
+    "method PUT",
+    "method POST",
+    "junk",
+    "method PUT"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "steps": [
+    "header ha s",
+    "method PUT"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "steps": [
+    "method PUT"
+   ]
+  },
+  "hidden": true
+ }
+]

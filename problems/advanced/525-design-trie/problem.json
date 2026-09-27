@@ -1,0 +1,18 @@
+{
+  "id": "design-trie",
+  "title": "Design: Trie (Prefix Tree)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "class-definition",
+    "dictionary-basics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ]
+}

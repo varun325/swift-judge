@@ -1,0 +1,120 @@
+[
+ {
+  "input": {
+   "celsius": 100
+  },
+  "expected": 212.0
+ },
+ {
+  "input": {
+   "celsius": 37
+  },
+  "expected": 98.6
+ },
+ {
+  "input": {
+   "celsius": -40
+  }
+ },
+ {
+  "input": {
+   "celsius": 0
+  }
+ },
+ {
+  "input": {
+   "celsius": 1
+  },
+  "hidden": true
+ },
+ {
+  "input": {
+   "celsius": -273
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "celsius": -217
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "celsius": 53
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "celsius": 863
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "celsius": -188
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "celsius": 977
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "celsius": 764
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "celsius": 108
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "celsius": -106
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "celsius": 518
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "celsius": 375
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "celsius": 975
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "celsius": 446
+  },
+  "hidden": true
+ }
+]

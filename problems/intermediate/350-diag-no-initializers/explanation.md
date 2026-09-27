@@ -1,0 +1,1 @@
+A subclass inherits its parent's designated initialisers **only** if it adds no stored properties without defaults. `axles` has no value, so nothing can initialise it: *class 'Truck' has no initializers*. Fix with a default or an `init(wheels:axles:)`.

@@ -1,0 +1,31 @@
+{
+  "id": "type-casting-zoo",
+  "title": "Type Casting with is / as?",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "type-casting",
+    "upcast-downcast",
+    "any-anyobject"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Type Casting",
+      "book": "LanguageGuide/TypeCasting"
+    }
+  ],
+  "signature": {
+    "name": "castReport",
+    "params": [
+      {
+        "name": "items",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

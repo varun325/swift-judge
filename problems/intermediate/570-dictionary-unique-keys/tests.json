@@ -1,0 +1,348 @@
+[
+ {
+  "input": {
+   "rows": [
+    [
+     "1",
+     "ann"
+    ],
+    [
+     "2",
+     "bo"
+    ],
+    [
+     "1",
+     "anna"
+    ]
+   ]
+  },
+  "expected": {
+   "1": "ann|anna",
+   "2": "bo"
+  }
+ },
+ {
+  "input": {
+   "rows": []
+  }
+ },
+ {
+  "input": {
+   "rows": [
+    [
+     "x",
+     "a"
+    ],
+    [
+     "x",
+     "a"
+    ],
+    [
+     "x",
+     "b"
+    ],
+    [
+     "x",
+     "a"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "rows": [
+    [
+     "4",
+     "cy"
+    ],
+    [
+     "3",
+     "anna"
+    ],
+    [
+     "2",
+     "ann"
+    ],
+    [
+     "3",
+     "bo"
+    ],
+    [
+     "1",
+     "anna"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "rows": [
+    [
+     "4",
+     "bo"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "rows": [
+    [
+     "4",
+     "anna"
+    ],
+    [
+     "3",
+     "cy"
+    ],
+    [
+     "4",
+     "bo"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "rows": [
+    [
+     "4",
+     "ann"
+    ],
+    [
+     "2",
+     "anna"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "rows": [
+    [
+     "2",
+     "anna"
+    ],
+    [
+     "4",
+     "ann"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "rows": [
+    [
+     "4",
+     "cy"
+    ],
+    [
+     "2",
+     "ann"
+    ],
+    [
+     "2",
+     "bo"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "rows": [
+    [
+     "3",
+     "ann"
+    ],
+    [
+     "4",
+     "cy"
+    ],
+    [
+     "1",
+     "ann"
+    ],
+    [
+     "4",
+     "cy"
+    ],
+    [
+     "1",
+     "cy"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "rows": [
+    [
+     "1",
+     "anna"
+    ],
+    [
+     "1",
+     "cy"
+    ],
+    [
+     "4",
+     "cy"
+    ],
+    [
+     "1",
+     "anna"
+    ],
+    [
+     "3",
+     "ann"
+    ],
+    [
+     "3",
+     "anna"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "rows": [
+    [
+     "3",
+     "bo"
+    ],
+    [
+     "3",
+     "cy"
+    ],
+    [
+     "2",
+     "ann"
+    ],
+    [
+     "3",
+     "ann"
+    ],
+    [
+     "1",
+     "anna"
+    ],
+    [
+     "1",
+     "anna"
+    ],
+    [
+     "1",
+     "ann"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "rows": [
+    [
+     "1",
+     "anna"
+    ],
+    [
+     "3",
+     "ann"
+    ],
+    [
+     "2",
+     "bo"
+    ],
+    [
+     "2",
+     "anna"
+    ],
+    [
+     "1",
+     "bo"
+    ],
+    [
+     "4",
+     "bo"
+    ],
+    [
+     "4",
+     "ann"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "rows": [
+    [
+     "2",
+     "bo"
+    ],
+    [
+     "1",
+     "anna"
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "rows": [
+    [
+     "4",
+     "cy"
+    ],
+    [
+     "2",
+     "cy"
+    ],
+    [
+     "2",
+     "anna"
+    ],
+    [
+     "4",
+     "anna"
+    ],
+    [
+     "1",
+     "cy"
+    ],
+    [
+     "1",
+     "bo"
+    ],
+    [
+     "1",
+     "bo"
+    ]
+   ]
+  },
+  "hidden": true
+ }
+]

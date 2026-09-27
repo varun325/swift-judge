@@ -1,0 +1,29 @@
+{
+  "id": "max-subarray",
+  "title": "Maximum Subarray (Kadane)",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Algorithms",
+  "concepts": [
+    "map-filter-reduce",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Closures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "maxSubArray",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

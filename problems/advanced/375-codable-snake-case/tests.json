@@ -1,0 +1,87 @@
+[
+ {
+  "input": {
+   "json": "[{\"user_id\": 1, \"first_name\": \"Ana\", \"is_admin\": true, \"e-mail\": \"a@x.io\"}]"
+  },
+  "expected": [
+   "1:Ana:admin:a@x.io"
+  ]
+ },
+ {
+  "input": {
+   "json": "[{\"user_id\": 2, \"first_name\": \"Bo\", \"is_admin\": false}]"
+  }
+ },
+ {
+  "input": {
+   "json": "[]"
+  }
+ },
+ {
+  "input": {
+   "json": "[{\"user_id\": \"x\"}]"
+  }
+ },
+ {
+  "input": {
+   "json": "not json"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "json": "[{\"user_id\": 231, \"first_name\": \"Cx\", \"is_admin\": true, \"e-mail\": \"jvmfhwp@x.io\"}, {\"user_id\": 940, \"first_name\": \"Mnjl\", \"is_admin\": false}, {\"user_id\": 632, \"first_name\": \"Mee\", \"is_admin\": false}, {\"user_id\": 178, \"first_name\": \"Tiqrgi\", \"is_admin\": false}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "json": "[{\"user_id\": 140, \"first_name\": \"Mrdfx\", \"is_admin\": false, \"e-mail\": \"mt@x.io\"}, {\"user_id\": 22, \"first_name\": \"Ny\", \"is_admin\": false, \"e-mail\": \"muluxfa@x.io\"}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "json": "[{\"user_id\": 143, \"first_name\": \"Rlwj\", \"is_admin\": false, \"e-mail\": \"ifcth@x.io\"}, {\"user_id\": 336, \"first_name\": \"Pzj\", \"is_admin\": false}, {\"user_id\": 599, \"first_name\": \"Rvd\", \"is_admin\": false, \"e-mail\": \"reiunf@x.io\"}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "json": "[{\"user_id\": 55, \"first_name\": \"Kdttes\", \"is_admin\": false, \"e-mail\": \"crmr@x.io\"}, {\"user_id\": 208, \"first_name\": \"Oewdi\", \"is_admin\": false}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "json": "[{\"user_id\": 905, \"first_name\": \"Bnv\", \"is_admin\": false, \"e-mail\": \"zhdvl@x.io\"}, {\"user_id\": 448, \"first_name\": \"Ab\", \"is_admin\": true}, {\"user_id\": 122, \"first_name\": \"Lzhoe\", \"is_admin\": false, \"e-mail\": \"uygprtv@x.io\"}, {\"user_id\": 595, \"first_name\": \"Oyldr\", \"is_admin\": false, \"e-mail\": \"syea@x.io\"}"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "json": "["
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "json": "[{\"user_id\": 742, \"first_name\": \"Dp\", \"is_admin\": false, \"e-mail\": \"ecwooci@x.io\"}, {\"user_id\": 945, \"first_name\": \"Jdujh\", \"is_admin\": true}, {\"user_id\": 917, \"first_name\": \"Azrcd\", \"is_admin\": false}]"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "json": "[{\"user_id\": 782, \"first_name\": \"Krflw\", \"is_admin\": true}, {\"user_id\": 696, \"first_name\": \"Cjvab\", \"is_admin\": false, \"e-mail\": \"wjok@x.io\"}]"
+  },
+  "hidden": true
+ }
+]

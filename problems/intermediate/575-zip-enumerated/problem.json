@@ -1,0 +1,36 @@
+{
+  "id": "zip-enumerated",
+  "title": "zip, enumerated & Parallel Arrays",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Arrays",
+  "concepts": [
+    "for-in",
+    "tuples",
+    "array-basics"
+  ],
+  "mode": "function",
+  "notesRef": "6",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "podium",
+    "params": [
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "times",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

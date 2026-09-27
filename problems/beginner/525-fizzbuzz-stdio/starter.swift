@@ -1,0 +1,1 @@
+let n = Int(readLine() ?? "") ?? 0

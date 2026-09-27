@@ -1,0 +1,1 @@
+`RandomAccessCollection` guarantees O(1) `index(_:offsetBy:)`, keeping the search O(log n). An `ArraySlice` keeps the **original** indices (`nums[2...]` starts at 2), which is why generic code must use `startIndex`/`endIndex`.

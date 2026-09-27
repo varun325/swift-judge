@@ -1,0 +1,31 @@
+{
+  "id": "swap-values",
+  "title": "Swap Two Values with inout",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Value types",
+  "concepts": [
+    "inout",
+    "value-vs-reference"
+  ],
+  "mode": "function",
+  "notesRef": "1",
+  "docs": [
+    {
+      "title": "Functions — In-Out Parameters",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "swapPair",
+    "params": [
+      {
+        "name": "pair",
+        "type": "[Int]",
+        "inout": true,
+        "label": "_"
+      }
+    ],
+    "returns": "Void"
+  }
+}

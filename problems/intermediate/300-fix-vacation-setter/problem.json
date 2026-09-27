@@ -1,0 +1,33 @@
+{
+  "id": "fix-vacation-setter",
+  "title": "Fix the Bug: Computed Property Setter",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "computed-properties",
+    "struct-vs-class"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Properties — Computed Properties",
+      "book": "LanguageGuide/Properties"
+    }
+  ],
+  "signature": {
+    "name": "vacationRoundTrip",
+    "params": [
+      {
+        "name": "taken",
+        "type": "Int"
+      },
+      {
+        "name": "remaining",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "associated-type-container",
+  "title": "Protocol with an Associated Type",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Generics",
+  "concepts": [
+    "associated-types",
+    "protocols",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Associated Types",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "containerDemo",
+    "params": [
+      {
+        "name": "ints",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

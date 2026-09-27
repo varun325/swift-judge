@@ -1,0 +1,29 @@
+{
+  "id": "sha256-hash",
+  "title": "SHA-256 with CryptoKit",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Foundation essentials",
+  "concepts": [
+    "hashing",
+    "equatable-hashable"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "CryptoKit — SHA256",
+      "url": "https://developer.apple.com/documentation/cryptokit/sha256"
+    }
+  ],
+  "signature": {
+    "name": "digests",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

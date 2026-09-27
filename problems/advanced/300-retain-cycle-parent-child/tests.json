@@ -1,0 +1,93 @@
+[
+ {
+  "input": {
+   "childNames": [
+    "kid"
+   ]
+  },
+  "expected": [
+   "deinit mom",
+   "deinit kid",
+   "end"
+  ]
+ },
+ {
+  "input": {
+   "childNames": []
+  }
+ },
+ {
+  "input": {
+   "childNames": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "childNames": [
+    "c",
+    "bzy",
+    "n",
+    "m"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "childNames": [
+    "nd",
+    "f",
+    "sr",
+    "wh"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "childNames": [
+    "tld",
+    "ft"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "childNames": [
+    "ofn"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "childNames": [
+    "hv",
+    "uh",
+    "u"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "childNames": [
+    "jp",
+    "sd"
+   ]
+  },
+  "hidden": true
+ }
+]

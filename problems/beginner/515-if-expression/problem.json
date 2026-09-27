@@ -1,0 +1,33 @@
+{
+  "id": "if-expression",
+  "title": "if as an Expression",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Conditionals",
+  "concepts": [
+    "ternary",
+    "control-flow"
+  ],
+  "mode": "function",
+  "notesRef": "11",
+  "docs": [
+    {
+      "title": "Control Flow — Conditional Statements",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "bmiCategory",
+    "params": [
+      {
+        "name": "weightKg",
+        "type": "Double"
+      },
+      {
+        "name": "heightM",
+        "type": "Double"
+      }
+    ],
+    "returns": "String"
+  }
+}

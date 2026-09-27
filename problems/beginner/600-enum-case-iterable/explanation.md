@@ -1,0 +1,1 @@
+`CaseIterable` synthesises `allCases` in declaration order. `String` raw values default to the case name. Enums can't have stored properties, but computed properties switching on `self` are idiomatic.

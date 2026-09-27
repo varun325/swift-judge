@@ -1,0 +1,30 @@
+{
+  "id": "dictionary-default-lookup",
+  "title": "Look Up with a Default",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics",
+    "nil-coalescing"
+  ],
+  "mode": "function",
+  "notesRef": "7",
+  "docs": [
+    {
+      "title": "Collection Types — Accessing a Dictionary",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "describeCodes",
+    "params": [
+      {
+        "name": "codes",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

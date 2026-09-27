@@ -1,0 +1,164 @@
+[
+ {
+  "input": {
+   "values": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+   ],
+   "limit": 2
+  },
+  "expected": [
+   2,
+   4
+  ]
+ },
+ {
+  "input": {
+   "values": [],
+   "limit": 3
+  }
+ },
+ {
+  "input": {
+   "values": [
+    2,
+    4
+   ],
+   "limit": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "values": [
+    7,
+    9
+   ],
+   "limit": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "values": [
+    -16,
+    1,
+    -2,
+    -3,
+    10,
+    -8,
+    -4,
+    -11,
+    6,
+    -20,
+    1,
+    -20,
+    -8,
+    -20
+   ],
+   "limit": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "values": [
+    -15,
+    -14,
+    -4
+   ],
+   "limit": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "values": [
+    16,
+    -3,
+    -2,
+    -7,
+    15
+   ],
+   "limit": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "values": [
+    -9,
+    -11,
+    19,
+    18,
+    9,
+    8,
+    17,
+    6,
+    18,
+    3,
+    -10,
+    -2,
+    -15
+   ],
+   "limit": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "values": [
+    -13,
+    -3,
+    -15,
+    -5,
+    -4,
+    -15,
+    -13,
+    2
+   ],
+   "limit": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "values": [
+    9,
+    8,
+    4,
+    -16,
+    5,
+    6,
+    6,
+    14,
+    -15
+   ],
+   "limit": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "values": [
+    -18,
+    -8,
+    -9
+   ],
+   "limit": 4
+  },
+  "hidden": true
+ }
+]

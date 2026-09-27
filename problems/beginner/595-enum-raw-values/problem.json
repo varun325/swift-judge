@@ -1,0 +1,31 @@
+{
+  "id": "enum-raw-values",
+  "title": "Raw Values: Planet Order",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Enums",
+  "concepts": [
+    "enums",
+    "associated-values",
+    "failable-init"
+  ],
+  "mode": "function",
+  "notesRef": "9",
+  "docs": [
+    {
+      "title": "Enumerations — Raw Values",
+      "book": "LanguageGuide/Enumerations"
+    }
+  ],
+  "signature": {
+    "name": "planetNames",
+    "params": [
+      {
+        "name": "positions",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

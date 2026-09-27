@@ -1,0 +1,33 @@
+{
+  "id": "typed-throws",
+  "title": "Typed throws (Swift 6)",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "error-handling",
+    "generic-constraints"
+  ],
+  "mode": "function",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling — Specifying the Error Type",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ],
+  "signature": {
+    "name": "withdrawals",
+    "params": [
+      {
+        "name": "balance",
+        "type": "Int"
+      },
+      {
+        "name": "amounts",
+        "type": "[Int]"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

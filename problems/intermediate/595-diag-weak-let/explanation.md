@@ -1,0 +1,1 @@
+ARC sets weak references to `nil` when the object dies — so they must be **optional** (*'weak' variable should have optional type*). Since Swift 5.x, `weak let` of an optional type is allowed; a non-optional weak is never allowed.

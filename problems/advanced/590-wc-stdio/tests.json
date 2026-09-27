@@ -1,0 +1,45 @@
+[
+ {
+  "input": "hello world\nswift is fun\n"
+ },
+ {
+  "input": ""
+ },
+ {
+  "input": "one\n\n  spaced   out  \n"
+ },
+ {
+  "input": "🦅 flies\n",
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": "tea  qzzjip  struct\n\nclass\tios\ttan\n\nawait a noon queue\n",
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": "noon  level  await  map  cp\n",
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": "bb noon level enum tea noon\nclosure  ztm  actor  async  level\nbat a a\nclosure await enum async\ntea\tbb\ta\n",
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": "level nat await\n\nclosure reduce mac\n",
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": "async  closure  closure  await\neat protocol code stack\nenum\n",
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": "tan\tios\teat\n\nheap\tate\n",
+  "hidden": true
+ }
+]

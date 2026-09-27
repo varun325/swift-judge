@@ -1,0 +1,164 @@
+[
+ {
+  "input": {
+   "raw": [
+    "J.Doe+news@Mail.com",
+    "jdoe@mail.com",
+    "jane@mail.com"
+   ]
+  },
+  "expected": 2
+ },
+ {
+  "input": {
+   "raw": []
+  }
+ },
+ {
+  "input": {
+   "raw": [
+    "a@b.c",
+    "a.@b.c",
+    "A+x@B.C",
+    "a@bc"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "raw": [
+    "a.b@mail.com",
+    "ab+y@x.io",
+    "c@x.io",
+    "a.b@MAIL.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "raw": [
+    "ab+y@x.io",
+    "A.B+x@MAIL.com",
+    "ab+y@x.io",
+    "ab@MAIL.com",
+    "a.b@MAIL.com",
+    "ab@MAIL.com",
+    "a.b@mail.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "raw": [
+    "a.b@x.io",
+    "ab@mail.com",
+    "a.b@x.io"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "raw": [
+    "ab@MAIL.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "raw": [
+    "a.b@x.io",
+    "c@mail.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "raw": [
+    "ab+y@MAIL.com",
+    "ab+y@x.io"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "raw": [
+    "a.b@mail.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "raw": [
+    "a.b@MAIL.com",
+    "a.b@MAIL.com",
+    "c@x.io",
+    "ab@mail.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "raw": [
+    "ab@MAIL.com",
+    "c@mail.com",
+    "ab@x.io",
+    "ab+y@MAIL.com",
+    "ab@x.io",
+    "a.b@x.io",
+    "c@mail.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "raw": [
+    "ab@mail.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "raw": [
+    "ab+y@MAIL.com",
+    "a.b@x.io",
+    "A.B+x@mail.com",
+    "A.B+x@MAIL.com"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "raw": [
+    "a.b@x.io",
+    "ab@mail.com",
+    "A.B+x@MAIL.com",
+    "c@mail.com"
+   ]
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+`FileManager` APIs throw, so the function is `throws`. `defer` guarantees cleanup even if a write fails. The enumerator yields `Any`, hence `for case let url as URL`. On macOS the temp dir is behind a symlink (`/var` → `/private/var`), so resolve both sides before computing relative paths.

@@ -1,0 +1,1 @@
+`switch must be exhaustive` walks you to every place that needs updating when you add a case. Reserve `default` for open types (`Int`, `String`) and use `@unknown default` for other modules' non-frozen enums.

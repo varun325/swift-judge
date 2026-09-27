@@ -1,0 +1,1 @@
+A curried function takes one argument and returns a function waiting for the next. `add(base)` is **partial application** — a reusable adder you can pass to `map`. Instance methods are curried too: `String.uppercased` has type `(String) -> () -> String`.

@@ -1,0 +1,222 @@
+[
+ {
+  "input": {
+   "capacity": 3,
+   "values": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "expected": [
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    12
+   ],
+   [
+    4,
+    5
+   ]
+  ]
+ },
+ {
+  "input": {
+   "capacity": 3,
+   "values": []
+  }
+ },
+ {
+  "input": {
+   "capacity": 0,
+   "values": [
+    1
+   ]
+  }
+ },
+ {
+  "input": {
+   "capacity": 5,
+   "values": [
+    9,
+    8
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "capacity": 1,
+   "values": []
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "capacity": 5,
+   "values": [
+    -6,
+    4,
+    -17,
+    2,
+    -12,
+    -1,
+    -11
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "capacity": 1,
+   "values": [
+    -4,
+    19,
+    2,
+    1,
+    -3
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "capacity": 4,
+   "values": [
+    -2,
+    -9,
+    -6,
+    18,
+    18
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "capacity": 1,
+   "values": [
+    17
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "capacity": 3,
+   "values": [
+    0,
+    18,
+    10,
+    4,
+    1,
+    1,
+    16
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "capacity": 0,
+   "values": [
+    -9,
+    16,
+    -10,
+    3
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "capacity": 1,
+   "values": [
+    1,
+    14,
+    -8,
+    6,
+    -10
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "capacity": 1,
+   "values": [
+    6,
+    -18,
+    10,
+    -14,
+    14,
+    -4,
+    5,
+    -5,
+    13,
+    10,
+    -19
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "capacity": 0,
+   "values": [
+    -13,
+    2,
+    2,
+    6,
+    -5,
+    -6,
+    7,
+    -6
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "capacity": 1,
+   "values": [
+    7,
+    -2,
+    -16,
+    -13,
+    0
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "capacity": 2,
+   "values": []
+  },
+  "hidden": true
+ }
+]

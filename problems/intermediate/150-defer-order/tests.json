@@ -1,0 +1,171 @@
+[
+ {
+  "input": {
+   "steps": [
+    "db",
+    "file"
+   ]
+  },
+  "expected": [
+   "open db",
+   "open file",
+   "close file",
+   "close db"
+  ]
+ },
+ {
+  "input": {
+   "steps": []
+  }
+ },
+ {
+  "input": {
+   "steps": [
+    "a",
+    "fail",
+    "b"
+   ]
+  }
+ },
+ {
+  "input": {
+   "steps": [
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "steps": [
+    "e"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "steps": [
+    "fail",
+    "r"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "steps": [
+    "bp",
+    "ymy",
+    "yv",
+    "vxq"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "steps": [
+    "pr",
+    "cde",
+    "l",
+    "nj"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "steps": [
+    "fail",
+    "k",
+    "iu"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "steps": [
+    "yxt"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "steps": [
+    "aaa"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "steps": [
+    "fail",
+    "fail"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "steps": [
+    "zjq",
+    "g",
+    "xi",
+    "sx"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "steps": [
+    "o",
+    "j",
+    "krk",
+    "cai",
+    "ty"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "steps": [
+    "fail",
+    "qta"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "steps": [
+    "fo",
+    "op",
+    "i",
+    "ien",
+    "jl",
+    "sdn"
+   ]
+  },
+  "hidden": true
+ }
+]

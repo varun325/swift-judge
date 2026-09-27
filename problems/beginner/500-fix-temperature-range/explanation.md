@@ -1,0 +1,1 @@
+Every `Int` is either `> 20` **or** `< 39`, so `||` can never be false — a silent bug. "Between" means `&&`. `(21...38).contains(temp)` says it directly, and `if cond { return true } return false` is just `return cond`.

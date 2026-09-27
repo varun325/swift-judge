@@ -1,0 +1,24 @@
+{
+  "id": "compiler-directives",
+  "title": "Conditional Compilation",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Advanced features",
+  "concepts": [
+    "compiler-directives",
+    "availability",
+    "assert"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Statements — Compiler Control Statements",
+      "book": "ReferenceManual/Statements"
+    }
+  ],
+  "signature": {
+    "name": "buildInfo",
+    "params": [],
+    "returns": "[String]"
+  }
+}

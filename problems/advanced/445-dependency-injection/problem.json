@@ -1,0 +1,34 @@
+{
+  "id": "dependency-injection",
+  "title": "Dependency Injection with Protocols",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Design patterns",
+  "concepts": [
+    "dependency-injection",
+    "protocols",
+    "singleton"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Protocols",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "greetingsAt",
+    "params": [
+      {
+        "name": "hours",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "useLive",
+        "type": "Bool"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

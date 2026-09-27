@@ -1,0 +1,1 @@
+Read one integer `n` with `readLine()`. For every `i` in `1...n` print `Fizz` (divisible by 3), `Buzz` (by 5), `FizzBuzz` (both) or `i`. Print nothing if `n < 1`. Try switching on the tuple `(i % 3, i % 5)`.

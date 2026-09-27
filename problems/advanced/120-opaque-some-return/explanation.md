@@ -1,0 +1,1 @@
+`some Drawable` as a **return** type means "one specific type, chosen by me, hidden from you" — the compiler still knows it's `Flipped<Triangle>`, so there's no boxing. That's why all return paths must yield the **same** type (returning `Triangle` or `Square` would need `any Drawable`). `some` in **parameter** position is sugar for a generic parameter.

@@ -1,0 +1,133 @@
+[
+ {
+  "input": {
+   "customers": [
+    "ann",
+    "bo"
+   ],
+   "withCard": [
+    true,
+    false
+   ]
+  },
+  "expected": [
+   "1000 belongs to ann",
+   "deinit ann",
+   "deinit 1000",
+   "deinit bo"
+  ]
+ },
+ {
+  "input": {
+   "customers": [],
+   "withCard": []
+  }
+ },
+ {
+  "input": {
+   "customers": [
+    "a",
+    "b"
+   ],
+   "withCard": [
+    true,
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "customers": [
+    "cx"
+   ],
+   "withCard": [
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "customers": [
+    "ffhb",
+    "rjd",
+    "so",
+    "szu"
+   ],
+   "withCard": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "customers": [
+    "zbzy",
+    "hkx",
+    "gax",
+    "rbg"
+   ],
+   "withCard": [
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "customers": [
+    "ek",
+    "kg"
+   ],
+   "withCard": [
+    true,
+    false
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "customers": [
+    "dv",
+    "vm",
+    "rr",
+    "ttgu"
+   ],
+   "withCard": [
+    false,
+    true,
+    false,
+    false
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "customers": [
+    "wf",
+    "ua"
+   ],
+   "withCard": [
+    true,
+    false
+   ]
+  },
+  "hidden": true
+ }
+]

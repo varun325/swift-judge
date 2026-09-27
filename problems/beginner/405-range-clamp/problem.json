@@ -1,0 +1,39 @@
+{
+  "id": "range-clamp",
+  "title": "Clamp to a Range",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Ranges",
+  "concepts": [
+    "half-open-range",
+    "extensions",
+    "generic-constraints"
+  ],
+  "mode": "function",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Basic Operators — Range Operators",
+      "book": "LanguageGuide/BasicOperators"
+    }
+  ],
+  "signature": {
+    "name": "clampAll",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "low",
+        "type": "Int"
+      },
+      {
+        "name": "high",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

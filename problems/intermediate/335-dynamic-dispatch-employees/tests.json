@@ -1,0 +1,124 @@
+[
+ {
+  "input": {
+   "roles": [
+    "dev",
+    "mgr",
+    "x"
+   ],
+   "hours": 8
+  },
+  "expected": [
+   "I spend 8 hours a day fighting over tabs vs spaces",
+   "I schedule meetings for 8 hours, then I work 8 hours a day.",
+   "I work 8 hours a day."
+  ]
+ },
+ {
+  "input": {
+   "roles": [],
+   "hours": 1
+  }
+ },
+ {
+  "input": {
+   "roles": [
+    "mgr"
+   ],
+   "hours": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "roles": [
+    "mgr",
+    "dev",
+    "x"
+   ],
+   "hours": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "roles": [
+    "mgr",
+    "x",
+    "dev"
+   ],
+   "hours": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "roles": [
+    "mgr",
+    "x",
+    "x",
+    "mgr",
+    "dev"
+   ],
+   "hours": 9
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "roles": [
+    "mgr",
+    "x",
+    "dev"
+   ],
+   "hours": 8
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "roles": [
+    "x"
+   ],
+   "hours": 2
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "roles": [],
+   "hours": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "roles": [
+    "dev"
+   ],
+   "hours": 10
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "roles": [
+    "mgr",
+    "x",
+    "mgr",
+    "mgr",
+    "mgr"
+   ],
+   "hours": 3
+  },
+  "hidden": true
+ }
+]

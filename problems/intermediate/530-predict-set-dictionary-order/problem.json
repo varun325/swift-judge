@@ -1,0 +1,19 @@
+{
+  "id": "predict-set-dictionary-order",
+  "title": "Predict: Only What Is Deterministic",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Collections",
+  "concepts": [
+    "set-vs-array",
+    "dictionary-basics"
+  ],
+  "mode": "predict",
+  "notesRef": "8",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ]
+}

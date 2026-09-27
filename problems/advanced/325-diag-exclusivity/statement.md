@@ -1,0 +1,1 @@
+Write `func balance(_ x: inout Int, _ y: inout Int)` and call it as `balance(&score, &score)` on a single variable. You pass when the compiler rejects the aliasing `inout` arguments (the law of exclusivity).

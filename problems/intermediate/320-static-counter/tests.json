@@ -1,0 +1,99 @@
+[
+ {
+  "input": {
+   "names": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  "expected": [
+   "enrolled a (1/3)",
+   "enrolled b (2/3)",
+   "enrolled c (3/3)",
+   "full"
+  ]
+ },
+ {
+  "input": {
+   "names": []
+  }
+ },
+ {
+  "input": {
+   "names": [
+    "solo"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "names": [
+    "rj"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "names": [
+    "dpuuv",
+    "cmuu",
+    "gn",
+    "pqslu"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "names": [
+    "uejnn",
+    "zncna"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "names": [
+    "cg",
+    "fodfv",
+    "xbye"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "names": [
+    "inskk",
+    "als",
+    "hulwy",
+    "ix",
+    "xi",
+    "iztb"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "names": [
+    "yf",
+    "rb",
+    "hrt",
+    "tfaqh"
+   ]
+  },
+  "hidden": true
+ }
+]

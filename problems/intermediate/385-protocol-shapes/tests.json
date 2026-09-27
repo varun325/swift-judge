@@ -1,0 +1,187 @@
+[
+ {
+  "input": {
+   "specs": [
+    [
+     2
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     -1
+    ]
+   ]
+  },
+  "expected": [
+   "square a=4.00 p=8.00",
+   "rect a=12.00 p=14.00",
+   "circle a=3.14 p=6.28"
+  ]
+ },
+ {
+  "input": {
+   "specs": []
+  }
+ },
+ {
+  "input": {
+   "specs": [
+    [
+     0.5
+    ],
+    [
+     -2.5
+    ],
+    [
+     1,
+     1
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "specs": [
+    [
+     -5.16
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "specs": [
+    [
+     4.33
+    ],
+    [
+     -0.82
+    ],
+    [
+     3.61,
+     3.99
+    ],
+    [
+     -6.05
+    ],
+    [
+     3.33
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "specs": [
+    [
+     -6.44
+    ],
+    [
+     3.16,
+     0.49
+    ],
+    [
+     0.78
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "specs": [
+    [
+     0.22,
+     5.8
+    ],
+    [
+     6.59,
+     8.03
+    ],
+    [
+     -6.55
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "specs": [
+    [
+     5.31,
+     8.6
+    ],
+    [
+     5.27
+    ],
+    [
+     -2.82
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "specs": [
+    [
+     -5.81
+    ],
+    [
+     1.61,
+     6.31
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "specs": [
+    [
+     8.65
+    ],
+    [
+     4.43
+    ],
+    [
+     0.33,
+     7.49
+    ],
+    [
+     3.77,
+     8.04
+    ]
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "specs": [
+    [
+     6.75,
+     3.71
+    ],
+    [
+     -7.78
+    ]
+   ]
+  },
+  "hidden": true
+ }
+]

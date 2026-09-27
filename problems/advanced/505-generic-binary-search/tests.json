@@ -1,0 +1,337 @@
+[
+ {
+  "input": {
+   "nums": [
+    1,
+    3,
+    5,
+    7,
+    9
+   ],
+   "words": [
+    "a",
+    "c",
+    "e"
+   ],
+   "target": 7,
+   "word": "c"
+  },
+  "expected": [
+   3,
+   1,
+   3
+  ]
+ },
+ {
+  "input": {
+   "nums": [],
+   "words": [],
+   "target": 1,
+   "word": "x"
+  }
+ },
+ {
+  "input": {
+   "nums": [
+    1,
+    2
+   ],
+   "words": [
+    "z"
+   ],
+   "target": 1,
+   "word": "z"
+  }
+ },
+ {
+  "input": {
+   "nums": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "words": [
+    "ant",
+    "bee",
+    "cat",
+    "dog"
+   ],
+   "target": 4,
+   "word": "dog"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "nums": [
+    12,
+    55,
+    59
+   ],
+   "words": [
+    "ojv"
+   ],
+   "target": 59,
+   "word": "ojv"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "nums": [
+    -5,
+    24,
+    25,
+    31
+   ],
+   "words": [
+    "go"
+   ],
+   "target": 31,
+   "word": "zz"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "nums": [
+    4,
+    13,
+    16,
+    28,
+    41,
+    49,
+    50,
+    51,
+    52
+   ],
+   "words": [],
+   "target": 39,
+   "word": "x"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "nums": [
+    5,
+    16,
+    17,
+    24,
+    28,
+    33,
+    34,
+    45,
+    47,
+    53
+   ],
+   "words": [
+    "ls",
+    "q"
+   ],
+   "target": 17,
+   "word": "q"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "nums": [
+    -4,
+    8,
+    9,
+    31,
+    33,
+    35,
+    40,
+    41,
+    50,
+    52,
+    55
+   ],
+   "words": [],
+   "target": 40,
+   "word": "x"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "nums": [],
+   "words": [
+    "cgn",
+    "i",
+    "pgj",
+    "vvr",
+    "vys"
+   ],
+   "target": 1,
+   "word": "vys"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "nums": [
+    -3,
+    -1,
+    0,
+    6,
+    13,
+    17,
+    26,
+    34,
+    35,
+    40,
+    47,
+    56
+   ],
+   "words": [
+    "c",
+    "d",
+    "h",
+    "jy",
+    "jza",
+    "k"
+   ],
+   "target": 40,
+   "word": "c"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "nums": [
+    -2,
+    14,
+    27,
+    33,
+    42,
+    44,
+    47,
+    49,
+    56
+   ],
+   "words": [
+    "aaz",
+    "ae",
+    "loy",
+    "w"
+   ],
+   "target": 49,
+   "word": "aaz"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "nums": [
+    -5,
+    40
+   ],
+   "words": [
+    "ci",
+    "d",
+    "o",
+    "ob"
+   ],
+   "target": -5,
+   "word": "ci"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "nums": [
+    7,
+    9,
+    11,
+    14,
+    18,
+    23,
+    43,
+    44,
+    46,
+    52,
+    54,
+    56
+   ],
+   "words": [
+    "g",
+    "ic",
+    "ki",
+    "o",
+    "v",
+    "wc"
+   ],
+   "target": 46,
+   "word": "wc"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "nums": [
+    -5,
+    -4,
+    8,
+    30,
+    31,
+    48,
+    54,
+    55,
+    59
+   ],
+   "words": [
+    "a",
+    "b",
+    "fs",
+    "mu",
+    "yz"
+   ],
+   "target": 23,
+   "word": "yz"
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "nums": [
+    -5,
+    -3,
+    -1,
+    0,
+    4,
+    12,
+    15,
+    23,
+    28,
+    46,
+    52
+   ],
+   "words": [
+    "gvz",
+    "orj",
+    "ua"
+   ],
+   "target": 46,
+   "word": "zz"
+  },
+  "hidden": true
+ }
+]

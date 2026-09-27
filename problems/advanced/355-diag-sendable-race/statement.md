@@ -1,0 +1,1 @@
+In Swift 6 language mode, write a **non-final class** `Counter { var value = 0 }`, then in an `async` function capture one instance in a `Task { counter.value += 1 }` while also mutating it from the enclosing function. You pass when the compiler reports a data-race / sending / Sendable error.

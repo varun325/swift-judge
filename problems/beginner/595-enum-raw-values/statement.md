@@ -1,0 +1,1 @@
+Declare `enum Planet: Int { case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune }`. For each position return the planet's name (use `"\(planet)"`) or `"unknown"` if `Planet(rawValue:)` fails.

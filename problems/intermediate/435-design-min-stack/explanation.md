@@ -1,0 +1,1 @@
+Store the running minimum **alongside** each element, so popping restores the previous minimum for free. `popLast()` returns an optional (unlike `removeLast()`, which traps on empty). Inside the type, `Swift.min` refers to the global function rather than the `min()` method.

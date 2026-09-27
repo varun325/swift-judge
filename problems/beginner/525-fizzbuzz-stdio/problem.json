@@ -1,0 +1,20 @@
+{
+  "id": "fizzbuzz-stdio",
+  "title": "FizzBuzz from Standard Input",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Switch",
+  "concepts": [
+    "switch-statement",
+    "tuples",
+    "for-in"
+  ],
+  "mode": "stdio",
+  "notesRef": "12",
+  "docs": [
+    {
+      "title": "Control Flow — Switch",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+`KeyPath` reads, `WritableKeyPath` reads and writes (on `var` properties), and `PartialKeyPath<Root>` erases the value type so different properties fit in one array (reads come back as `Any`). Key paths are values — you can store and pass them.

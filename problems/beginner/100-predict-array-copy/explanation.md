@@ -1,0 +1,1 @@
+`Array` is a **value type**: `var arr2 = arr1` gives an independent copy (copy-on-write makes it cheap until one side mutates), so appending to `arr2` leaves `arr1` alone. `print` of an array uses `debugDescription` for elements — hence the quotes.

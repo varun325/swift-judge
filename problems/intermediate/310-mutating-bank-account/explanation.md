@@ -1,0 +1,1 @@
+Struct methods that change stored properties must be `mutating`, and can only be called on a `var`. `private(set)` lets anyone **read** `funds` but only the type **write** it — so every change goes through `deposit`/`withdraw`.

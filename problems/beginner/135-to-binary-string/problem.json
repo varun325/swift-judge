@@ -1,0 +1,34 @@
+{
+  "id": "to-binary-string",
+  "title": "Format an Int in Any Base",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Numbers",
+  "concepts": [
+    "numeric-literals",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "notesRef": "3",
+  "docs": [
+    {
+      "title": "The Basics — Integers",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "format",
+    "params": [
+      {
+        "name": "value",
+        "type": "Int",
+        "label": "_"
+      },
+      {
+        "name": "radix",
+        "type": "Int"
+      }
+    ],
+    "returns": "String"
+  }
+}

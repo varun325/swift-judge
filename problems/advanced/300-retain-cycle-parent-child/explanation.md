@@ -1,0 +1,1 @@
+Parent → child (strong) and child → parent (strong) keep each other's reference counts above zero forever. Making the **back-reference** `weak` breaks the cycle: when `mom` goes out of scope she's freed, which releases her children. `deinit` logging is the simplest leak detector.

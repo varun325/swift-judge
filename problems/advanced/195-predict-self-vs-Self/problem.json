@@ -1,0 +1,19 @@
+{
+  "id": "predict-self-vs-Self",
+  "title": "Predict: self, Self and type(of:)",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Protocols",
+  "concepts": [
+    "self-vs-Self",
+    "type-casting",
+    "self-usage"
+  ],
+  "mode": "predict",
+  "docs": [
+    {
+      "title": "Types — Self Type",
+      "book": "ReferenceManual/Types"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rethrows-map",
+  "title": "rethrows: Your Own map",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "rethrows",
+    "generics",
+    "closures"
+  ],
+  "mode": "function",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Declarations — Rethrowing Functions and Methods",
+      "book": "ReferenceManual/Declarations"
+    }
+  ],
+  "signature": {
+    "name": "demo",
+    "params": [
+      {
+        "name": "words",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

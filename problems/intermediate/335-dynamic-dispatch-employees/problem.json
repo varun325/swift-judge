@@ -1,0 +1,35 @@
+{
+  "id": "dynamic-dispatch-employees",
+  "title": "Overriding & Dynamic Dispatch",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Classes & inheritance",
+  "concepts": [
+    "inheritance",
+    "overloading-overriding",
+    "method-dispatch"
+  ],
+  "mode": "function",
+  "notesRef": "22",
+  "docs": [
+    {
+      "title": "Inheritance — Overriding",
+      "book": "LanguageGuide/Inheritance"
+    }
+  ],
+  "signature": {
+    "name": "summaries",
+    "params": [
+      {
+        "name": "roles",
+        "type": "[String]",
+        "label": "_"
+      },
+      {
+        "name": "hours",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

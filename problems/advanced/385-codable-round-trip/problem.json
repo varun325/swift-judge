@@ -1,0 +1,30 @@
+{
+  "id": "codable-round-trip",
+  "title": "Encode → Decode Round Trip",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Codable",
+  "concepts": [
+    "codable",
+    "enums",
+    "associated-values"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    }
+  ],
+  "signature": {
+    "name": "roundTrip",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

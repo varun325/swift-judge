@@ -1,0 +1,1 @@
+Operators are `static func`s on the type. Compound assignment takes `inout` left side. Prefix/postfix need the modifier. New operators must be declared once with a precedence group — `MultiplicationPrecedence` makes `a + b • c` parse as `a + (b • c)`.

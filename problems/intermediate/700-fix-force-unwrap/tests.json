@@ -1,0 +1,38 @@
+[
+ {
+  "input": {
+   "lines": [
+    "apples:3",
+    "pears:4"
+   ]
+  },
+  "expected": 7
+ },
+ {
+  "input": {
+   "lines": [
+    "apples:3",
+    "broken",
+    "kiwis:x",
+    "figs:-2",
+    "nuts:5"
+   ]
+  },
+  "expected": 8
+ },
+ {
+  "input": {
+   "lines": []
+  }
+ },
+ {
+  "input": {
+   "lines": [
+    ":1",
+    "a::2",
+    "b:+3"
+   ]
+  },
+  "hidden": true
+ }
+]

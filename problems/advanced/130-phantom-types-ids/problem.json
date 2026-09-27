@@ -1,0 +1,36 @@
+{
+  "id": "phantom-types-ids",
+  "title": "Phantom Types for Safe IDs & Units",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Generics",
+  "concepts": [
+    "phantom-types",
+    "generics",
+    "operator-overloading"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics",
+      "book": "LanguageGuide/Generics"
+    }
+  ],
+  "signature": {
+    "name": "distances",
+    "params": [
+      {
+        "name": "meters",
+        "type": "[Double]",
+        "label": "_"
+      },
+      {
+        "name": "feet",
+        "type": "[Double]",
+        "label": "_"
+      }
+    ],
+    "returns": "[Double]"
+  },
+  "compare": "float:1e-9"
+}

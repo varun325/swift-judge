@@ -1,0 +1,1 @@
+`rethrows` means "I only throw if the closure you gave me throws". That's why the standard `map` needs `try` only with throwing closures. Inside, `try transform(element)` is allowed because the function rethrows.

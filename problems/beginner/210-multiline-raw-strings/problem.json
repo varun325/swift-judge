@@ -1,0 +1,29 @@
+{
+  "id": "multiline-raw-strings",
+  "title": "Raw & Multiline Strings",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "String interpolation",
+  "concepts": [
+    "raw-strings",
+    "string-interpolation"
+  ],
+  "mode": "function",
+  "notesRef": "5",
+  "docs": [
+    {
+      "title": "Strings and Characters — String Literals",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "windowsPath",
+    "params": [
+      {
+        "name": "user",
+        "type": "String"
+      }
+    ],
+    "returns": "String"
+  }
+}

@@ -1,0 +1,1 @@
+Custom operators are declared once (`infix operator`), given a precedence group, then implemented as functions. The closures escape (they're captured by the returned closure), hence `@escaping`. `AdditionPrecedence` is left-associative, so it composes left to right.

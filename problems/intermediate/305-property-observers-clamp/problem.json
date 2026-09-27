@@ -1,0 +1,29 @@
+{
+  "id": "property-observers-clamp",
+  "title": "Property Observers: Clamp & Log",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "property-observers"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Properties — Property Observers",
+      "book": "LanguageGuide/Properties"
+    }
+  ],
+  "signature": {
+    "name": "volumeLog",
+    "params": [
+      {
+        "name": "changes",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

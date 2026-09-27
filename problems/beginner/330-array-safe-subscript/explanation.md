@@ -1,0 +1,1 @@
+A **labelled subscript** (`subscript(safe index:)`) is called as `items[safe: i]`. Writing it on `Collection` gives it to arrays, strings, slices and your own collections at once. For arrays `indices.contains` is O(1) because `indices` is a `Range`.

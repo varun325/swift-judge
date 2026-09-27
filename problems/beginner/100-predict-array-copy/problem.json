@@ -1,0 +1,19 @@
+{
+  "id": "predict-array-copy",
+  "title": "Predict: Copying an Array",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Value types",
+  "concepts": [
+    "value-vs-reference",
+    "collection-types"
+  ],
+  "mode": "predict",
+  "notesRef": "1",
+  "docs": [
+    {
+      "title": "Structures and Classes — value types",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ]
+}

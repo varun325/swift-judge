@@ -1,0 +1,1 @@
+Named tuples (`(to: Int, w: Int)`) make adjacency lists readable without a struct. `Int?` distances model "infinity" without sentinel overflow. `dist[v].map { candidate < $0 } ?? true` reads: *if there's a distance, is the candidate shorter; if not, take it.*

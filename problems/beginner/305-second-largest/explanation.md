@@ -1,0 +1,1 @@
+A single pass with two optional slots is O(n). The short version, `Array(Set(nums)).sorted(by: >).dropFirst().first`, is O(n log n) — fine for small inputs, and very readable. Optional comparison with `==`/`!=` works directly.

@@ -1,0 +1,35 @@
+{
+  "id": "rotate-array",
+  "title": "Rotate Right by k",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Arrays",
+  "concepts": [
+    "array-basics",
+    "half-open-range"
+  ],
+  "mode": "function",
+  "notesRef": "6",
+  "docs": [
+    {
+      "title": "Collection Types — Arrays",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "rotate",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "k",
+        "type": "Int",
+        "label": "by"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

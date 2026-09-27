@@ -1,0 +1,1 @@
+`Array(string)` gives O(1) character access for DP tables. `Array(repeating: Array(repeating: 0, count: m), count: n)` builds a grid — each row is an independent copy (value semantics), unlike some languages' shared-row gotcha.

@@ -1,0 +1,1 @@
+Build an `[Any]` from the tokens: integers become `Int`, decimals `Double`, `"true"/"false"` `Bool`, anything else `String`. Then describe each element with a `switch` using **type-casting patterns**: `"int <n>"`, `"double <d>"`, `"bool <b>"`, `"string <s>"`. Finally append `"<count of strings>"` computed with `is`.

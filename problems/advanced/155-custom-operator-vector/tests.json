@@ -1,0 +1,161 @@
+[
+ {
+  "input": {
+   "a": [
+    1,
+    2
+   ],
+   "b": [
+    3,
+    4
+   ]
+  },
+  "expected": [
+   4,
+   6,
+   -1,
+   4,
+   9,
+   11,
+   0,
+   4
+  ]
+ },
+ {
+  "input": {
+   "a": [
+    0,
+    0
+   ],
+   "b": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "input": {
+   "a": [
+    1.5,
+    -2
+   ],
+   "b": [
+    1.5,
+    -2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "a": [
+    -4,
+    5
+   ],
+   "b": [
+    7,
+    6
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "a": [
+    4,
+    7
+   ],
+   "b": [
+    -4,
+    -6
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "a": [
+    -1,
+    -4
+   ],
+   "b": [
+    2,
+    2
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "a": [
+    -9,
+    -5
+   ],
+   "b": [
+    -9,
+    -1
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "a": [
+    0,
+    7
+   ],
+   "b": [
+    2,
+    -4
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "a": [
+    -1,
+    7
+   ],
+   "b": [
+    -7,
+    -6
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "a": [
+    0,
+    -9
+   ],
+   "b": [
+    1,
+    -1
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "a": [
+    0,
+    -1
+   ],
+   "b": [
+    8,
+    0
+   ]
+  },
+  "hidden": true
+ }
+]

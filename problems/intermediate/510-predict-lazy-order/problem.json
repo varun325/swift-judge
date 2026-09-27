@@ -1,0 +1,20 @@
+{
+  "id": "predict-lazy-order",
+  "title": "Predict: lazy Initialisation Order",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Structs",
+  "concepts": [
+    "lazy-properties",
+    "lazy-vs-computed",
+    "computed-vs-closure-property"
+  ],
+  "mode": "predict",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Properties — Lazy Stored Properties",
+      "book": "LanguageGuide/Properties"
+    }
+  ]
+}

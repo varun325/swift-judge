@@ -1,0 +1,1 @@
+`zip` stops at the shorter sequence, so mismatched lengths are safe. `enumerated()` offsets start at **0** — add 1 for human places. (Note `enumerated()` on a slice gives offsets, not the slice's indices.)

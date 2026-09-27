@@ -1,0 +1,1 @@
+Write a helper `func sign(_ n: Int) -> String` returning `"negative"`, `"zero"` or `"positive"` whose body is a **single `switch` expression** with no `return` keyword. `signs` maps it over the input.

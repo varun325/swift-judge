@@ -1,0 +1,30 @@
+{
+  "id": "implicit-return-sign",
+  "title": "Implicit Returns",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Functions",
+  "concepts": [
+    "implicit-return",
+    "switch-statement"
+  ],
+  "mode": "function",
+  "notesRef": "15",
+  "docs": [
+    {
+      "title": "Functions — Functions With an Implicit Return",
+      "book": "LanguageGuide/Functions"
+    }
+  ],
+  "signature": {
+    "name": "signs",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

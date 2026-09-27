@@ -1,0 +1,238 @@
+[
+ {
+  "input": {
+   "items": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "size": 2
+  },
+  "expected": [
+   [
+    "a",
+    "b"
+   ],
+   [
+    "c",
+    "d"
+   ],
+   [
+    "e"
+   ]
+  ]
+ },
+ {
+  "input": {
+   "items": [],
+   "size": 3
+  }
+ },
+ {
+  "input": {
+   "items": [
+    "x"
+   ],
+   "size": 5
+  }
+ },
+ {
+  "input": {
+   "items": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "size": 3
+  }
+ },
+ {
+  "input": {
+   "items": [
+    "a",
+    "b",
+    "c"
+   ],
+   "size": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "items": [
+    "v"
+   ],
+   "size": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "items": [
+    "s",
+    "hn",
+    "a"
+   ],
+   "size": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "items": [
+    "c",
+    "ie",
+    "fw",
+    "df",
+    "jmp",
+    "b",
+    "y",
+    "ml"
+   ],
+   "size": 5
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "items": [
+    "fs",
+    "t",
+    "d",
+    "y",
+    "w",
+    "cg",
+    "g",
+    "ad",
+    "r",
+    "hx",
+    "pz",
+    "u",
+    "f",
+    "cr"
+   ],
+   "size": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "items": [
+    "w",
+    "t"
+   ],
+   "size": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "items": [
+    "ifk",
+    "f",
+    "z",
+    "pu",
+    "bm",
+    "bra",
+    "y",
+    "v",
+    "ib",
+    "b"
+   ],
+   "size": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "items": [
+    "uae",
+    "jho",
+    "j",
+    "n",
+    "x",
+    "ubr",
+    "y",
+    "md",
+    "afy",
+    "z",
+    "tsh",
+    "zbx"
+   ],
+   "size": 3
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "items": [
+    "qys",
+    "b",
+    "dp",
+    "lkd",
+    "ppj",
+    "lkh",
+    "d",
+    "zzy"
+   ],
+   "size": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 9",
+  "input": {
+   "items": [
+    "tq",
+    "on",
+    "u"
+   ],
+   "size": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 10",
+  "input": {
+   "items": [],
+   "size": 4
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 11",
+  "input": {
+   "items": [
+    "zt",
+    "sc"
+   ],
+   "size": 6
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 12",
+  "input": {
+   "items": [
+    "em",
+    "up",
+    "xuf"
+   ],
+   "size": 6
+  },
+  "hidden": true
+ }
+]

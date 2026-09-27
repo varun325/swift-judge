@@ -1,0 +1,1 @@
+The dictionary finds nodes in O(1); the linked list orders them by recency with O(1) moves. Sentinel `head`/`tail` nodes remove edge cases. A doubly linked list of strong `prev`/`next` references **is** a set of retain cycles — make `prev` weak, or break the links in `deinit` as here.

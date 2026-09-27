@@ -1,0 +1,1 @@
+`@dynamicMemberLookup` routes `x.anything` to `subscript(dynamicMember:)`. With `String` members you get dynamic, stringly-typed access (great for JSON/Python interop); with `KeyPath` members you get type-safe forwarding. `config.db.port.value` compiles even though `Config` has no `db` property.

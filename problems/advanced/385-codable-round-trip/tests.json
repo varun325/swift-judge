@@ -1,0 +1,117 @@
+[
+ {
+  "input": {
+   "events": [
+    "login ana",
+    "logout"
+   ]
+  },
+  "expected": [
+   "[{\"login\":{\"user\":\"ana\"}},{\"logout\":{}}]",
+   "equal"
+  ]
+ },
+ {
+  "input": {
+   "events": []
+  }
+ },
+ {
+  "input": {
+   "events": [
+    "purchase pen 150",
+    "bad",
+    "purchase x y"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "events": [
+    "login ggpxi",
+    "logout",
+    "purchase ykmfxz 9367"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "events": [
+    "login lffzkvr"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "events": [
+    "login cpta",
+    "junk",
+    "junk",
+    "junk"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "events": [
+    "logout",
+    "login cvyjgdxs",
+    "junk",
+    "purchase klxp 5108"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "events": [
+    "login ydacgd",
+    "junk",
+    "junk",
+    "login gkkpdzru"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "events": [
+    "logout",
+    "purchase grw 6846",
+    "purchase vi 2078",
+    "purchase zqgtt 7296"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "events": [
+    "logout",
+    "logout"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "events": [
+    "junk",
+    "logout"
+   ]
+  },
+  "hidden": true
+ }
+]

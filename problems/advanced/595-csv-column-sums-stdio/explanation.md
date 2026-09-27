@@ -1,0 +1,1 @@
+`zip` pairs headers with sums and stops at the shorter one. `omittingEmptySubsequences: false` keeps empty cells so columns stay aligned. (`trimmingCharacters` is from Foundation — in `main.swift`, add `import Foundation`.)

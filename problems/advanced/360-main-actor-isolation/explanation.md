@@ -1,0 +1,1 @@
+`@MainActor` isolates all of a type's state to the main actor — reaching in from elsewhere requires `await` (even the initialiser here). `nonisolated` opts a member out, so it can run on the global concurrent executor. This is the model SwiftUI view models use.

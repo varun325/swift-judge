@@ -1,0 +1,30 @@
+{
+  "id": "invert-dictionary",
+  "title": "Invert a Dictionary",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics",
+    "sort-custom"
+  ],
+  "mode": "function",
+  "notesRef": "7",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "invert",
+    "params": [
+      {
+        "name": "grades",
+        "type": "[String: String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String: [String]]"
+  }
+}

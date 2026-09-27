@@ -1,0 +1,6 @@
+[
+ {
+  "name": "No initializers",
+  "pattern": "class 'Truck' has no initializers"
+ }
+]

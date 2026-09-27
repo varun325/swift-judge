@@ -1,0 +1,1 @@
+`indirect` on the whole enum boxes every recursive case. `AnyIterator { … }` builds an iterator from a closure that captures mutable state. Prepending is O(1) and old versions are untouched — **persistent** data structures share their tails.

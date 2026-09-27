@@ -1,0 +1,1 @@
+Modelling "unreachable" as `nil` instead of a magic `Int.max` avoids overflow bugs. `Optional.map` adds 1 only when reachable, `compactMap` drops the rest, and `min()` on an empty array is `nil` — exactly right.

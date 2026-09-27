@@ -1,0 +1,1 @@
+Normally closures capture the **variable**, so they see later changes. A capture list `[x]` copies the **value** at the moment the closure is created. The same syntax (`[weak self]`) controls reference strength.

@@ -1,0 +1,24 @@
+{
+  "id": "type-inference-describe",
+  "title": "Name That Inferred Type",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Type inference",
+  "concepts": [
+    "type-inference",
+    "fundamental-types"
+  ],
+  "mode": "function",
+  "notesRef": "10",
+  "docs": [
+    {
+      "title": "The Basics — Type Safety and Type Inference",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "inferredTypes",
+    "params": [],
+    "returns": "[String]"
+  }
+}

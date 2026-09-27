@@ -1,0 +1,1 @@
+`reserveCapacity` avoids repeated reallocations when you know the final size. A functional one-liner exists — `nums.reduce(into: []) { $0.append(($0.last ?? 0) + $1) }` — but the loop is clearer and just as fast.

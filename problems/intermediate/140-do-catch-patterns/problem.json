@@ -1,0 +1,31 @@
+{
+  "id": "do-catch-patterns",
+  "title": "do/catch with Multi-Pattern Catches",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Error handling",
+  "concepts": [
+    "multi-pattern-catch",
+    "error-handling",
+    "associated-values"
+  ],
+  "mode": "function",
+  "notesRef": "19",
+  "docs": [
+    {
+      "title": "Error Handling — Handling Errors Using Do-Catch",
+      "book": "LanguageGuide/ErrorHandling"
+    }
+  ],
+  "signature": {
+    "name": "vend",
+    "params": [
+      {
+        "name": "requests",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

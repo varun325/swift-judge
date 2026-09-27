@@ -1,0 +1,30 @@
+{
+  "id": "dictionary-unique-keys",
+  "title": "Building Dictionaries Safely",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Dictionaries",
+  "concepts": [
+    "dictionary-basics",
+    "tuples"
+  ],
+  "mode": "function",
+  "notesRef": "7",
+  "docs": [
+    {
+      "title": "Collection Types — Dictionaries",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "indexUsers",
+    "params": [
+      {
+        "name": "rows",
+        "type": "[[String]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String: String]"
+  }
+}

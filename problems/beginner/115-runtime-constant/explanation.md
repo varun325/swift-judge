@@ -1,0 +1,1 @@
+A `let` only needs to be assigned **exactly once before use** — the compiler's definite-initialisation analysis checks every path. In Swift 5.9+ you can also write `let rate = express ? 5.0 : 2.5` or `let rate = if express { 5.0 } else { 2.5 }`.

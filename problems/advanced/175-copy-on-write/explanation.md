@@ -1,0 +1,1 @@
+Assigning a struct copies only the **reference** to its class storage. Before mutating, `isKnownUniquelyReferenced` asks ARC whether anyone else shares it; if so, clone first. That's exactly how `Array`, `String` and `Dictionary` achieve cheap copies with value semantics. Expected copies: exactly 1.

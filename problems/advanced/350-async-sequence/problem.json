@@ -1,0 +1,34 @@
+{
+  "id": "async-sequence",
+  "title": "AsyncSequence & AsyncStream",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Concurrency",
+  "concepts": [
+    "async-await",
+    "custom-collection"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Concurrency — Asynchronous Sequences",
+      "book": "LanguageGuide/Concurrency"
+    }
+  ],
+  "signature": {
+    "name": "streamDemo",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "limit",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]",
+    "async": true
+  }
+}

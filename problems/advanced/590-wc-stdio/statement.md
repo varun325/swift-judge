@@ -1,0 +1,1 @@
+Implement a tiny `wc`: read **all** of standard input and print `lines words characters` separated by spaces, where lines = number of `readLine()` results, words = whitespace-separated tokens, characters = total `Character`s **excluding** newlines.

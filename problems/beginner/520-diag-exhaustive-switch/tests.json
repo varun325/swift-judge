@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Non-exhaustive switch rejected",
+  "pattern": "switch must be exhaustive"
+ }
+]

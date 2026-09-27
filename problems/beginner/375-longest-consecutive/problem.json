@@ -1,0 +1,29 @@
+{
+  "id": "longest-consecutive",
+  "title": "Longest Consecutive Run",
+  "track": "beginner",
+  "difficulty": "medium",
+  "topic": "Sets",
+  "concepts": [
+    "set-vs-array"
+  ],
+  "mode": "function",
+  "notesRef": "8",
+  "docs": [
+    {
+      "title": "Collection Types — Sets",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "longestConsecutive",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

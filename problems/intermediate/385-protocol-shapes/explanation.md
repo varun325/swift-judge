@@ -1,0 +1,1 @@
+A protocol lists requirements; `{ get }` means "readable" — satisfiable by a `let`, a `var` or a computed property. `[any Shape]` is an array of **existentials**: boxes that can hold different concrete conforming types.

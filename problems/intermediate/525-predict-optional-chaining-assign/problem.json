@@ -1,0 +1,19 @@
+{
+  "id": "predict-optional-chaining-assign",
+  "title": "Predict: Assigning Through Optional Chains",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "optional-chaining",
+    "dictionary-basics"
+  ],
+  "mode": "predict",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "Optional Chaining",
+      "book": "LanguageGuide/OptionalChaining"
+    }
+  ]
+}

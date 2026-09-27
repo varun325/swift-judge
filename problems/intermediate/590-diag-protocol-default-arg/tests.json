@@ -1,0 +1,6 @@
+[
+ {
+  "name": "Default arg rejected",
+  "pattern": "default argument not permitted"
+ }
+]

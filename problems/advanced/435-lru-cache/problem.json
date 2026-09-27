@@ -1,0 +1,19 @@
+{
+  "id": "lru-cache",
+  "title": "Design: LRU Cache (O(1))",
+  "track": "advanced",
+  "difficulty": "hard",
+  "topic": "Design patterns",
+  "concepts": [
+    "caching",
+    "dictionary-basics",
+    "class-definition"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Structures and Classes",
+      "book": "LanguageGuide/ClassesAndStructures"
+    }
+  ]
+}

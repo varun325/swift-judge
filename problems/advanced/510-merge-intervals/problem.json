@@ -1,0 +1,29 @@
+{
+  "id": "merge-intervals",
+  "title": "Merge Intervals",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Algorithms",
+  "concepts": [
+    "sort-custom",
+    "tuples"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Collection Types",
+      "book": "LanguageGuide/CollectionTypes"
+    }
+  ],
+  "signature": {
+    "name": "merge",
+    "params": [
+      {
+        "name": "intervals",
+        "type": "[[Int]]",
+        "label": "_"
+      }
+    ],
+    "returns": "[[Int]]"
+  }
+}

@@ -1,0 +1,1 @@
+`@autoclosure` wraps the argument expression in a closure, so it's evaluated **only if called**. That's how `assert`, `&&` and `??` avoid evaluating their right-hand side. At level 1 the log never contains `computed A`.

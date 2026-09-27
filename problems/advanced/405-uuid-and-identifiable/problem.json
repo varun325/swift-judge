@@ -1,0 +1,29 @@
+{
+  "id": "uuid-and-identifiable",
+  "title": "UUID & Identifiable",
+  "track": "advanced",
+  "difficulty": "easy",
+  "topic": "Foundation essentials",
+  "concepts": [
+    "uuid",
+    "protocols"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "UUID",
+      "url": "https://developer.apple.com/documentation/foundation/uuid"
+    }
+  ],
+  "signature": {
+    "name": "uuidChecks",
+    "params": [
+      {
+        "name": "strings",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

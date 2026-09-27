@@ -1,0 +1,30 @@
+{
+  "id": "closure-shortening",
+  "title": "The Shortening Ladder",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Closures",
+  "concepts": [
+    "closures",
+    "trailing-closure"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Closures — Closure Expressions",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "tNames",
+    "params": [
+      {
+        "name": "team",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

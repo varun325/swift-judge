@@ -1,0 +1,1 @@
+Build an `AsyncStream<Int>` that yields each value (with `continuation.yield`) and then finishes. Consume it with `for await`, keeping only even values, stopping once you've collected `limit` of them.

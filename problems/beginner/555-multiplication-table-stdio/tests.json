@@ -1,0 +1,45 @@
+[
+ {
+  "input": "5 3\n"
+ },
+ {
+  "input": "7 0\n"
+ },
+ {
+  "input": "12 12\n"
+ },
+ {
+  "input": "-2 4\n",
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": "-12 2\n",
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": "-8 10\n",
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": "11 2\n",
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": "12 0\n",
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": "-1 9\n",
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": "7 -1\n",
+  "hidden": true
+ }
+]

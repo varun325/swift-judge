@@ -1,0 +1,81 @@
+[
+ {
+  "input": {
+   "n": 5
+  },
+  "expected": "The number 5 is a prime number, and also an integer."
+ },
+ {
+  "input": {
+   "n": 4
+  },
+  "expected": "The number 4 is an integer."
+ },
+ {
+  "input": {
+   "n": 19
+  }
+ },
+ {
+  "input": {
+   "n": 0
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "n": 24
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "n": 13
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "n": -1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "n": 23
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "n": 10
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "n": 1
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "n": 7
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "n": -2
+  },
+  "hidden": true
+ }
+]

@@ -1,0 +1,1 @@
+var scores: [String: [Int]] = [:]

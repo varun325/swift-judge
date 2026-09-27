@@ -1,0 +1,1 @@
+Sorting by start means each interval can only overlap the **last** merged one. `if let last = result.last, condition` combines unwrapping and a test. Nested-array mutation `result[i][1] = …` works in place because arrays are value types with in-place mutation through subscripts.

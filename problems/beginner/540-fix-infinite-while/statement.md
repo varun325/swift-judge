@@ -1,0 +1,1 @@
+From your notes: this should return the non-`.jpeg` file names, last to first. Run it — you'll get **Time Limit Exceeded**. Find out why (`continue` skips something) and fix it. Best fix: let a `for`-`in` own the counter.

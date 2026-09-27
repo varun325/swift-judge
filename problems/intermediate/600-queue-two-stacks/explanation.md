@@ -1,0 +1,1 @@
+Elements move from `inbox` to `outbox` only when `outbox` is empty, so each element is moved at most once — amortised O(1). `peek` can stay non-mutating by looking at `inbox.first` when `outbox` is empty.

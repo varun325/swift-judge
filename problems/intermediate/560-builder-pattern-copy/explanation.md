@@ -1,0 +1,1 @@
+With value types, a fluent API can return **modified copies** (`var copy = self`), so `base` is never changed — like SwiftUI modifiers. `Self` as a return type means "the type I'm declared in" and reads nicely in chains.

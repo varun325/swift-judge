@@ -1,0 +1,34 @@
+{
+  "id": "property-wrapper-clamped",
+  "title": "Property Wrapper: @Clamped",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Advanced features",
+  "concepts": [
+    "property-wrappers",
+    "generic-constraints"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Properties — Property Wrappers",
+      "book": "LanguageGuide/Properties"
+    }
+  ],
+  "signature": {
+    "name": "wrapperDemo",
+    "params": [
+      {
+        "name": "volumes",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "names",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

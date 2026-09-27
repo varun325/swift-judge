@@ -1,0 +1,38 @@
+{
+  "id": "typealias-grid",
+  "title": "typealias for Readable Types",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Type inference",
+  "concepts": [
+    "typealias",
+    "tuples"
+  ],
+  "mode": "function",
+  "notesRef": "10",
+  "docs": [
+    {
+      "title": "The Basics — Type Aliases",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "neighbours",
+    "params": [
+      {
+        "name": "grid",
+        "type": "[[Int]]",
+        "label": "_"
+      },
+      {
+        "name": "row",
+        "type": "Int"
+      },
+      {
+        "name": "col",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

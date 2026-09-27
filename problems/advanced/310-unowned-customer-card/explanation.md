@@ -1,0 +1,1 @@
+Use `unowned` when the other object has the **same or longer** lifetime — it's non-optional, so no unwrapping, but accessing it after deallocation traps. Use `weak` when the referent may disappear first. Here the customer owns the card, so the card can safely be unowned.

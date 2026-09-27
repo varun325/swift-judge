@@ -1,0 +1,30 @@
+{
+  "id": "escaping-handlers",
+  "title": "@escaping: Store Callbacks",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Closures",
+  "concepts": [
+    "escaping",
+    "closures"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Closures — Escaping Closures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "eventBus",
+    "params": [
+      {
+        "name": "events",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

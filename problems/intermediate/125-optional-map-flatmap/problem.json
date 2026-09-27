@@ -1,0 +1,30 @@
+{
+  "id": "optional-map-flatmap",
+  "title": "Optional map vs flatMap",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Optionals",
+  "concepts": [
+    "optionals",
+    "compactmap-flatmap"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "The Basics — Optionals",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "squaredFirstNumber",
+    "params": [
+      {
+        "name": "csv",
+        "type": "String?",
+        "label": "_"
+      }
+    ],
+    "returns": "Int?"
+  }
+}

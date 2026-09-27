@@ -1,0 +1,19 @@
+{
+  "id": "predict-string-indices",
+  "title": "Predict: Strings Are Not Arrays",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "strings-are-collections",
+    "string-equality"
+  ],
+  "mode": "predict",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "opaque-some-return",
+  "title": "Opaque Types with some",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Opaque & existential types",
+  "concepts": [
+    "opaque-types",
+    "opaque-vs-generics",
+    "existential-any"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Opaque and Boxed Protocol Types",
+      "book": "LanguageGuide/OpaqueTypes"
+    }
+  ],
+  "signature": {
+    "name": "drawAll",
+    "params": [
+      {
+        "name": "sizes",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

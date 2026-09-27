@@ -1,0 +1,31 @@
+{
+  "id": "compose-functions",
+  "title": "Function Composition",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Closures",
+  "concepts": [
+    "higher-order-functions",
+    "custom-operators",
+    "generics"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Advanced Operators — Custom Operators",
+      "book": "LanguageGuide/AdvancedOperators"
+    }
+  ],
+  "signature": {
+    "name": "pipeline",
+    "params": [
+      {
+        "name": "values",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

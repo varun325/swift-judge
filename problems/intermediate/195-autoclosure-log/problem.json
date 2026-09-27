@@ -1,0 +1,29 @@
+{
+  "id": "autoclosure-log",
+  "title": "@autoclosure: Lazy Logging",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Closures",
+  "concepts": [
+    "autoclosure",
+    "nil-coalescing"
+  ],
+  "mode": "function",
+  "notesRef": "20",
+  "docs": [
+    {
+      "title": "Closures — Autoclosures",
+      "book": "LanguageGuide/Closures"
+    }
+  ],
+  "signature": {
+    "name": "loggingDemo",
+    "params": [
+      {
+        "name": "level",
+        "type": "Int"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

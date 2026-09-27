@@ -1,0 +1,23 @@
+{
+  "id": "memory-layout",
+  "title": "MemoryLayout & Padding",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Memory management",
+  "concepts": [
+    "memory-layout",
+    "value-semantics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "MemoryLayout",
+      "url": "https://developer.apple.com/documentation/swift/memorylayout"
+    }
+  ],
+  "signature": {
+    "name": "layouts",
+    "params": [],
+    "returns": "[[Int]]"
+  }
+}

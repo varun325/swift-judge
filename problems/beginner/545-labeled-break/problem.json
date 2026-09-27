@@ -1,0 +1,33 @@
+{
+  "id": "labeled-break",
+  "title": "Labelled break: Find a Pair",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Loops",
+  "concepts": [
+    "break-continue"
+  ],
+  "mode": "function",
+  "notesRef": "14",
+  "docs": [
+    {
+      "title": "Control Flow — Labeled Statements",
+      "book": "LanguageGuide/ControlFlow"
+    }
+  ],
+  "signature": {
+    "name": "firstPair",
+    "params": [
+      {
+        "name": "grid",
+        "type": "[[Int]]",
+        "label": "_"
+      },
+      {
+        "name": "target",
+        "type": "Int"
+      }
+    ],
+    "returns": "[Int]"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "conditional-conformance-pair",
+  "title": "Conditional Conformance",
+  "track": "advanced",
+  "difficulty": "medium",
+  "topic": "Generics",
+  "concepts": [
+    "conditional-conformance",
+    "equatable-hashable",
+    "generics"
+  ],
+  "mode": "function",
+  "docs": [
+    {
+      "title": "Generics — Conditional Conformance",
+      "book": "LanguageGuide/Protocols"
+    }
+  ],
+  "signature": {
+    "name": "pairDemo",
+    "params": [
+      {
+        "name": "a",
+        "type": "[Int]",
+        "label": "_"
+      },
+      {
+        "name": "b",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

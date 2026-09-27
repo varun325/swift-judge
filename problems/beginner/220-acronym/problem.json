@@ -1,0 +1,30 @@
+{
+  "id": "acronym",
+  "title": "Make an Acronym",
+  "track": "beginner",
+  "difficulty": "easy",
+  "topic": "Strings",
+  "concepts": [
+    "compactmap-flatmap",
+    "strings-are-collections"
+  ],
+  "mode": "function",
+  "notesRef": "2",
+  "docs": [
+    {
+      "title": "Strings and Characters",
+      "book": "LanguageGuide/StringsAndCharacters"
+    }
+  ],
+  "signature": {
+    "name": "acronym",
+    "params": [
+      {
+        "name": "phrase",
+        "type": "String",
+        "label": "_"
+      }
+    ],
+    "returns": "String"
+  }
+}

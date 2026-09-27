@@ -1,0 +1,115 @@
+[
+ {
+  "input": {
+   "updates": [
+    "name=Ana",
+    "age=31",
+    "city=Porto"
+   ]
+  },
+  "expected": [
+   "Ana",
+   "31",
+   "Porto"
+  ]
+ },
+ {
+  "input": {
+   "updates": []
+  }
+ },
+ {
+  "input": {
+   "updates": [
+    "age=x",
+    "zip=1",
+    "name=a=b"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "updates": [
+    "city=jokk"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "updates": [
+    "city=yx",
+    "city=nbqc",
+    "age=x"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "updates": [
+    "age=x",
+    "age=82",
+    "zip=9"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "updates": [
+    "city=chz",
+    "age=x",
+    "city=dfyeup",
+    "zip=9",
+    "name=xui",
+    "name=bx"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "updates": [
+    "name=uilmtt",
+    "name=itoav"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "updates": [
+    "name=uhqydulk",
+    "age=62"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 7",
+  "input": {
+   "updates": [
+    "city=vvutvu"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 8",
+  "input": {
+   "updates": [
+    "city=fsosl",
+    "age=x"
+   ]
+  },
+  "hidden": true
+ }
+]

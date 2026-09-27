@@ -1,0 +1,91 @@
+[
+ {
+  "input": {
+   "inputs": [
+    "hi",
+    "Swift"
+   ]
+  },
+  "expected": [
+   "HI",
+   "**",
+   "SWIFT",
+   "*****"
+  ]
+ },
+ {
+  "input": {
+   "inputs": []
+  }
+ },
+ {
+  "input": {
+   "inputs": [
+    ""
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 1",
+  "input": {
+   "inputs": [
+    "gll",
+    "",
+    "hn"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 2",
+  "input": {
+   "inputs": [
+    "pcczz",
+    "dvyo"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 3",
+  "input": {
+   "inputs": [
+    "iha",
+    "dnsofzr",
+    "ojxsrzb"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 4",
+  "input": {
+   "inputs": [
+    "hig"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 5",
+  "input": {
+   "inputs": [
+    "n",
+    "vcm",
+    "lsdz",
+    "si"
+   ]
+  },
+  "hidden": true
+ },
+ {
+  "name": "random 6",
+  "input": {
+   "inputs": [
+    "lao"
+   ]
+  },
+  "hidden": true
+ }
+]

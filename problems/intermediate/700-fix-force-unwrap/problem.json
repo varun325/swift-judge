@@ -1,0 +1,31 @@
+{
+  "id": "fix-force-unwrap",
+  "title": "Fix the Crash: Force Unwrapping",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Optionals",
+  "concepts": [
+    "forced-unwrapping",
+    "optional-binding",
+    "nil-vs-null"
+  ],
+  "mode": "function",
+  "notesRef": "25",
+  "docs": [
+    {
+      "title": "The Basics — Forced Unwrapping",
+      "book": "LanguageGuide/TheBasics"
+    }
+  ],
+  "signature": {
+    "name": "totalQuantity",
+    "params": [
+      {
+        "name": "lines",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "Int"
+  }
+}

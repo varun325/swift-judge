@@ -1,0 +1,30 @@
+{
+  "id": "extension-int-helpers",
+  "title": "Extending Int",
+  "track": "intermediate",
+  "difficulty": "easy",
+  "topic": "Extensions",
+  "concepts": [
+    "extensions",
+    "computed-properties"
+  ],
+  "mode": "function",
+  "notesRef": "24",
+  "docs": [
+    {
+      "title": "Extensions — Computed Properties",
+      "book": "LanguageGuide/Extensions"
+    }
+  ],
+  "signature": {
+    "name": "intFacts",
+    "params": [
+      {
+        "name": "nums",
+        "type": "[Int]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

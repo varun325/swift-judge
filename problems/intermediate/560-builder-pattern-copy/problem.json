@@ -1,0 +1,32 @@
+{
+  "id": "builder-pattern-copy",
+  "title": "Fluent Builders with Value Types",
+  "track": "intermediate",
+  "difficulty": "medium",
+  "topic": "Structs",
+  "concepts": [
+    "value-semantics",
+    "self-vs-Self",
+    "mutating",
+    "immutability"
+  ],
+  "mode": "function",
+  "notesRef": "21",
+  "docs": [
+    {
+      "title": "Methods",
+      "book": "LanguageGuide/Methods"
+    }
+  ],
+  "signature": {
+    "name": "requestDemo",
+    "params": [
+      {
+        "name": "steps",
+        "type": "[String]",
+        "label": "_"
+      }
+    ],
+    "returns": "[String]"
+  }
+}

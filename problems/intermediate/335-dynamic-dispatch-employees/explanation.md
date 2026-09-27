@@ -1,0 +1,1 @@
+The variable's static type is `Employee`, but the **object's** dynamic type picks the implementation — dynamic dispatch through the class vtable. `super.summary()` calls the parent's version. Marking leaf classes `final` lets the compiler dispatch statically.
