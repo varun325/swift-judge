@@ -31,5 +31,46 @@
     "`Collection<Int>` constrains the element type without naming a concrete collection.",
     "Return `values.lazy.map { $0 * $0 }` as `some Sequence<Int>`.",
     "`[any Sequence<Int>]` can hold an array, a reversed view and your lazy sequence together."
+  ],
+  "impact": "edge",
+  "jsBridge": "`some Collection<Int>` constrains an opaque type's element, like TS `Iterable<number>`. Primary associated types (Swift 5.7) make protocol generics feel like TS generic interfaces.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Iterable<number>` in TS vs `some Collection<Int>` in Swift: what does the Swift version add (opaque identity, performance)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`some Collection<Int>` vs `any Collection<Int>` vs `[Int]`: which to use for a function parameter?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you declare your own protocol with a primary associated type? What does the syntax look like?"
+    },
+    {
+      "kind": "practice",
+      "q": "APIs accepting `some Sequence<String>` let callers pass arrays, sets or lazy views. Worth it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "(OLD) Why does SwiftUI use “some View” for its view type? –Views and Modifiers SwiftUI Tutorial 4/10",
+      "url": "https://www.youtube.com/watch?v=SzgxLMUumic&t=55s",
+      "channel": "Paul Hudson",
+      "start": 55,
+      "moment": "previously I showed you this code that creates a simple button then makes it print its exact Swift type and give some"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Opaque and Boxed Protocol Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0335: Introduce existential any",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0335-existential-any.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

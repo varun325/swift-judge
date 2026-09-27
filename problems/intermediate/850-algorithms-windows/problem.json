@@ -35,5 +35,46 @@
     "A window is a slice `self[start..<end]`; slide both indices forward together.",
     "Use `index(_:offsetBy:)` for the first end, then `formIndex(after:)` on both each step.",
     "`adjacentPairs` is `Array(zip(self, dropFirst()))`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`windows(ofCount:)` gives sliding windows as slices without copying, and `adjacentPairs()` gives neighbours. JS would loop with indices and `slice`, which copies every window.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `slice` for each window copies k elements. What does returning `SubSequence` avoid?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Sliding-window sum recomputed per window vs incrementally: O(nk) vs O(n)."
+    },
+    {
+      "kind": "edge",
+      "q": "What does `windows(ofCount: 0)` or a count larger than the collection return?"
+    },
+    {
+      "kind": "practice",
+      "q": "Moving averages for charts (heart rate, stock price) use windows. Where would you compute them?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g&t=1708s",
+      "channel": "Paul Hudson",
+      "start": 1708,
+      "moment": "that's not a bad result for only a handful of lines of swift algorithms code"
+    },
+    {
+      "title": "Swift Algorithms - Faster, Cleaner Code. (Chunked Example)",
+      "url": "https://www.youtube.com/watch?v=x-5UgNl7GFU",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Algorithms (GitHub)",
+      "url": "https://github.com/apple/swift-algorithms",
+      "source": "Apple open source"
+    }
   ]
 }

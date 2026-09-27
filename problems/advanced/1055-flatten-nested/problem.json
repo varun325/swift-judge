@@ -31,5 +31,44 @@
     "Model \"a number or a list of these\" as an `indirect enum`.",
     "In `init(from:)`, try decoding an `Int`, else decode `[Nested]`.",
     "Flatten recursively with `flatMap`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Decoding heterogeneous JSON (`[1, [2, 3]]`) into `indirect enum Nested` with a custom `init(from:)` that tries `Int` first, then `[Nested]`. JS's `JSON.parse` + `flat(Infinity)` does it untyped in one line.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`arr.flat(Infinity)` is one line in JS. What does the typed Swift version protect you from?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Try-decode-then-fallback vs a discriminator field: which is more robust to API changes?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `singleValueContainer().decode(Int.self)` throw on `2.5`? On `\"2\"`?"
+    },
+    {
+      "kind": "practice",
+      "q": "APIs returning \"either a string or an array of strings\": how do you model that in `Codable`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "What's the best way to prepare for a Swift interview – Sean Allen on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=ys9M_iNqD6s",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -13,6 +13,14 @@
     {
       "title": "Binding",
       "url": "https://developer.apple.com/documentation/swiftui/binding"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -34,5 +42,47 @@
     "`Binding` supports `@dynamicMemberLookup` with writable key paths.",
     "`let nameBinding: Binding<String> = root.name` derives a child binding.",
     "Writing to a child binding calls the **root** setter with the updated struct."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`$profile.name` derives a `Binding<String>` from a `Binding<Profile>` through key-path dynamic member lookup. There's no React equivalent (you'd write `onChange={v => setProfile({...profile, name: v})}`). Swift generates that plumbing.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Write the React code for editing `profile.name` in a nested state object. How much does `$profile.name` save?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the type of `$profile.address.city`? How deep can projections go?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`$profile.name` on `@State var profile: Profile` vs `@Bindable var model` with `$model.name`: same mechanism?"
+    },
+    {
+      "kind": "practice",
+      "q": "Form editing a struct with 10 fields: one `@State` struct with projections vs 10 `@State` vars?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use @Binding property wrapper in SwiftUI | Bootcamp #22",
+      "url": "https://www.youtube.com/watch?v=btDMzB5x2Gs",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "[Music] what's up everyone i'm nick welcome back in this video we're going"
+    },
+    {
+      "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12",
+      "url": "https://www.youtube.com/watch?v=Ea3dl2gy3QY",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "SwiftUI - @Binding Property Wrapper Explained - Passing Data",
+      "url": "https://www.youtube.com/watch?v=lgtB3WLEOYg",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today i'm going to show you how to pass data between two views using binding and swift ui"
+    }
+  ],
+  "articles": []
 }

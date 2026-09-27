@@ -17,6 +17,14 @@
     {
       "title": "Timeline",
       "url": "https://developer.apple.com/documentation/widgetkit/timeline"
+    },
+    {
+      "title": "StoreKit",
+      "url": "https://developer.apple.com/documentation/storekit"
+    },
+    {
+      "title": "User Notifications",
+      "url": "https://developer.apple.com/documentation/usernotifications"
     }
   ],
   "signature": {
@@ -44,5 +52,35 @@
     "Generate the moments: now, then each whole hour.",
     "For each moment, the entry shows the first event still in the future.",
     "Drop consecutive duplicates; the reload time is one hour after the last moment."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "WidgetKit widgets don't run code on demand. You give the system a **timeline** of pre-rendered entries up front. It's closer to generating static pages with a revalidate schedule (ISR) than to a live React component.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Next.js ISR regenerates pages on a schedule. How is a widget timeline with a `.after(date)` reload policy similar?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't a widget show a live seconds counter by re-rendering? What does `Text(date, style: .timer)` do instead?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.atEnd` vs `.after(date)` vs `.never` reload policies: which for a calendar widget?"
+    },
+    {
+      "kind": "practice",
+      "q": "Updating the widget when the app's data changes: which API (`WidgetCenter.shared.reloadAllTimelines()`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to Build a Widget in Swift with WidgetKit",
+      "url": "https://www.youtube.com/watch?v=jucm6e9M6LA&t=277s",
+      "channel": "Sean Allen",
+      "start": 277,
+      "moment": "right? It relies on my user inputting something. Well, the concept of the timeline still exists. There would just"
+    }
+  ],
+  "articles": []
 }

@@ -14,6 +14,10 @@
     {
       "title": "Sendable",
       "url": "https://developer.apple.com/documentation/swift/sendable"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -32,5 +36,46 @@
     "What kind of type can be safely copied into many concurrent tasks?",
     "A `struct` with only `let` Sendable properties is `Sendable`; spawn one child task per snapshot.",
     "Collect `(id, text)` pairs from the group, then sort by id."
+  ],
+  "impact": "core",
+  "jsBridge": "Passing **value snapshots** (`struct: Sendable`) between tasks instead of shared objects is how Swift 6 avoids data races. It's like `postMessage` structured-cloning data to a Web Worker, except Swift's copy is free (CoW).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`postMessage` clones data between workers. What makes Swift's struct copies cheaper?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Sending a `struct` snapshot vs sending an `actor` reference: which one needs `await` to read?"
+    },
+    {
+      "kind": "edge",
+      "q": "A `struct` containing a non-Sendable class: is it `Sendable`? What does the compiler say?"
+    },
+    {
+      "kind": "practice",
+      "q": "Model types that cross into background tasks: should they all be `Sendable` structs?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is the Sendable protocol in Swift? | Swift Concurrency #11",
+      "url": "https://www.youtube.com/watch?v=wSmTbtOwgbE&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "Welcome back everyone. I'm Nick. This is Swiftful Thinking and today we're going to look at the sendable protocol."
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

@@ -14,11 +14,67 @@
     {
       "title": "Generics",
       "book": "LanguageGuide/Generics"
+    },
+    {
+      "title": "Collection",
+      "url": "https://developer.apple.com/documentation/swift/collection"
+    },
+    {
+      "title": "Sequence",
+      "url": "https://developer.apple.com/documentation/swift/sequence"
     }
   ],
   "hints": [
     "`Collection` needs `startIndex`, `endIndex`, `index(after:)` and a subscript.",
     "Store up to `capacity` elements plus a `head` index; once full, overwrite at `head` and advance it.",
     "`subscript(position: Int) -> Element { storage[(head + position) % storage.count] }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Conforming to `Collection` (`startIndex`, `endIndex`, `index(after:)`, `subscript`) gives you `map`, `filter`, `first`, `contains` and slicing for free, the power of protocol extensions. JS iterables only get `for…of` and spread.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS iterable gets `for…of`. What does a Swift `Collection` get for implementing four requirements?"
+    },
+    {
+      "kind": "edge",
+      "q": "Must `Collection` indices be integers? Why is `String.Index` not an `Int`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Collection` vs `Sequence` vs `RandomAccessCollection`: what does each promise?"
+    },
+    {
+      "kind": "practice",
+      "q": "A ring buffer for the last N log lines or sensor samples: where would you use one in an app?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Working with Sub-Collections in Firebase Firestore for iOS Apps | Firebase Bootcamp #15",
+      "url": "https://www.youtube.com/watch?v=oTmnbj5UFkA",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "what is up world my name is Nick this is swiftful thinking and we've done a lot of work with collections but we have not"
+    },
+    {
+      "title": "Creating empty collections – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=yBJXkieX2R4",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "arrays sets and dictionaries are called collections because they collect values together in one place if you want to"
+    },
+    {
+      "title": "Xcode: IBOutlet Collections",
+      "url": "https://www.youtube.com/watch?v=llwqcyubnAc",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

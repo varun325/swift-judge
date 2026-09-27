@@ -31,5 +31,46 @@
     "In a sorted array, duplicates are adjacent.",
     "Keep a write index; copy an element forward only when it differs from the last written one.",
     "Trim the tail with `removeLast(nums.count - write)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A read/write two-pointer pass over an `inout` array, then `removeLast(k)` to truncate. JS mutates arrays in place freely, while Swift requires `inout` and `&` to make that visible.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `arr.length = k` truncates in place. What's the Swift equivalent, and is it O(1)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "In-place two pointers vs `Array(Set(nums)).sorted()`: which preserves stability and memory?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `removeSubrange(k...)` do to capacity? Does the buffer shrink?"
+    },
+    {
+      "kind": "practice",
+      "q": "Does in-place mutation ever matter in app code, or only in interviews?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Most Common Element in Array - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=0eWv1mAewx4&t=158s",
+      "channel": "Sean Allen",
+      "start": 158,
+      "moment": "array so that we can return a list of the most common you know there's a strong chance it's only going to be one"
+    },
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

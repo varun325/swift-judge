@@ -31,5 +31,48 @@
     "You need a set of *keys* you've already seen.",
     "Keep an element only if inserting its key into the set succeeds.",
     "`for element in self where seen.insert(try key(element)).inserted { result.append(element) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`uniqued(on:)` keeps the first element per key, in order. It's lodash's `uniqBy`. Swift needs the key to be `Hashable`, which JS's `Set` doesn't check.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "lodash `uniqBy(arr, 'id')` vs `uniqued(on: \\.id)`: what does the key path add?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`uniqued` vs `Set` vs `OrderedSet`: which preserves order and which lets you choose the key?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `uniqued(on:)` stable? Which duplicate wins?"
+    },
+    {
+      "kind": "practice",
+      "q": "Deduplicating paginated API results where pages overlap: this is exactly it."
+    }
+  ],
+  "videos": [
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g&t=28s",
+      "channel": "Paul Hudson",
+      "start": 28,
+      "moment": "look at ways algorithms can help make you write better code faster code and safer code this thing"
+    },
+    {
+      "title": "Swift Algorithms - Faster, Cleaner Code. (Chunked Example)",
+      "url": "https://www.youtube.com/watch?v=x-5UgNl7GFU",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "the Swift algorithms package has a ton of useful algorithms that were optimized for performance by Apple today we're doing a deep dive into one of these algorit"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Algorithms (GitHub)",
+      "url": "https://github.com/apple/swift-algorithms",
+      "source": "Apple open source"
+    }
   ]
 }

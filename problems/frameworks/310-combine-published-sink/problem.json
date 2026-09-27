@@ -13,6 +13,10 @@
     {
       "title": "Published",
       "url": "https://developer.apple.com/documentation/combine/published"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -33,5 +37,42 @@
     "`$query` is a publisher of every value `query` takes.",
     "Normalise, `removeDuplicates()`, `dropFirst()`, map to results.",
     "Finish with `.assign(to: &$results)` — it manages its own lifetime."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`@Published` + `$query.debounce(...).removeDuplicates().sink { }` is the classic search pipeline, like RxJS `fromEvent(input).pipe(debounceTime, distinctUntilChanged)`, with `$` giving you the publisher.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The RxJS search pipeline vs the Combine one: line-for-line, what's the same?"
+    },
+    {
+      "kind": "edge",
+      "q": "`@Published` emits in `willSet`, before the value changes. What bug does that cause when reading the property in `sink`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Combine debounce vs `.task(id:)` + `Task.sleep`: which is simpler in SwiftUI now?"
+    },
+    {
+      "kind": "practice",
+      "q": "Storing `AnyCancellable`s in a `Set`: what happens if you forget to store it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+      "url": "https://www.youtube.com/watch?v=ePPm2ftSVqw&t=16s",
+      "channel": "Swiftful Thinking",
+      "start": 16,
+      "moment": "super simple the reason i'm covering this is because if you've followed my channel and probably just generally"
+    },
+    {
+      "title": "Observable objects, environment objects, and @Published - SwiftUI Starter Project 6/14",
+      "url": "https://www.youtube.com/watch?v=lxaEAHNmhY4&t=227s",
+      "channel": "Paul Hudson",
+      "start": 227,
+      "moment": "conform to the observable object protocol just like that nothing else and when this property changes send a"
+    }
+  ],
+  "articles": []
 }

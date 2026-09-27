@@ -17,6 +17,10 @@
     {
       "title": "Processing Published Elements with Subscribers",
       "url": "https://developer.apple.com/documentation/combine/processing-published-elements-with-subscribers"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -37,5 +41,40 @@
     "Any sequence has a `.publisher`.",
     "Chain `filter`, `removeDuplicates()`, `scan(0, +)`, then `sink`.",
     "Keep the returned `AnyCancellable` alive until you're done."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Combine publishers with `map`, `filter`, `scan` and `removeDuplicates` are RxJS observables. `scan` is RxJS `scan`, `removeDuplicates` is `distinctUntilChanged`. Apple's own reactive framework predates async sequences.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Map each Combine operator here to its RxJS name. Which one is named differently?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Combine vs `AsyncSequence` + swift-async-algorithms: which does Apple push for new code?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does a publisher do anything before a subscriber attaches (cold vs hot)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where is Combine still the right tool in 2026 (`@Published` streams, UIKit bindings)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Advanced Combine Publishers and Subscribers in SwiftUI | Advanced Learning #19",
+      "url": "https://www.youtube.com/watch?v=RUZcs0SWqnI&t=15s",
+      "channel": "Swiftful Thinking",
+      "start": 15,
+      "moment": "combined so far, we've just fetched some data and came back with an array and published that array into our app. But,"
+    },
+    {
+      "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=bvm3ZLmwOdU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

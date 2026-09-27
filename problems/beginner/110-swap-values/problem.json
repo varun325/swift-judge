@@ -32,5 +32,39 @@
     "An `inout` parameter lets you change the caller's array directly.",
     "Save one element in a temporary `let`, overwrite it with the other, then write the saved value back.",
     "`let temp = pair[0]; pair[0] = pair[1]; pair[1] = temp` — or simply `pair.swapAt(0, 1)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS can't pass a variable by reference at all — you'd return a new pair or mutate an object's property. Swift's `inout` looks like pass-by-reference but is actually **copy-in copy-out**: the value is copied in, modified, then written back when the function returns. That's why `&` is required at the call site and why overlapping `inout` access is a compile error.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The JS idiom `[a, b] = [b, a]` also works in Swift as `(a, b) = (b, a)`. So why does `swap(_:_:)` exist, and why does `swapAt` exist on arrays?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if you call `swap(&arr[0], &arr[1])`? Why does the compiler reject it, and how does `swapAt` get around the rule?"
+    },
+    {
+      "kind": "java",
+      "q": "Java is always pass-by-value (object references are values). Is Swift's `inout` pass-by-reference? What can you observe that distinguishes copy-in copy-out from true references?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do you see `inout` in real iOS code? Hint: `mutating` methods and `reduce(into:)` are built on the same idea."
+    }
+  ],
+  "videos": [
+    {
+      "title": "inout parameters – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=deSLFZvC9vw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

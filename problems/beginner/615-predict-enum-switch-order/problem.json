@@ -14,11 +14,54 @@
     {
       "title": "Enumerations — Associated Values",
       "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "hints": [
     "`if case` and `for case` match a single pattern without a full `switch`.",
     "Only purchases add to `total`; the `for case` loop only visits purchases over 1000 cents.",
     "`spent 1449`, then `big: book`, then `ANA`, then the event count."
+  ],
+  "impact": "edge",
+  "jsBridge": "`if case .loaded(let value) = state` is pattern matching outside a `switch`. The nearest JS equivalent is `if (state.kind === 'loaded') { const value = state.value }`, but Swift combines the check and the binding in one step.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would you write `if case .loaded(let x) = s, x > 3` in TS? How many lines?"
+    },
+    {
+      "kind": "edge",
+      "q": "`for case .some(let x) in optionals`: what does it iterate over?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`if case` vs `switch` with a `default`: when does each communicate intent better?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where would `guard case` show up in a view model?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Enum Raw Values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ssLIP4gFrYc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

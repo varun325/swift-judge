@@ -48,8 +48,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L8: Animation Demonstration",
-      "url": "https://www.youtube.com/watch?v=OZK7_p1G8Pw",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=OZK7_p1G8Pw&t=1952s",
+      "channel": "Stanford Online",
+      "start": 1952,
+      "moment": "of the word guess, but that's a different problem. We're going to fix that in a second. Now, once again, this is kind of like a constant. It's essentially our a"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "L8 warns that animation can **reveal hidden state**, like the master code flashing during a transition. The fix is to make the model decide what's visible, a lesson that also applies to React (don't render secrets and hide them with CSS).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Hiding a secret with `opacity: 0` in React still ships it in the DOM. What's the SwiftUI equivalent mistake?"
+    },
+    {
+      "kind": "edge",
+      "q": "A restart animation interpolates from the old code to the new one. How can that leak the answer?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`if isHidden { … } else { … }` vs `.opacity(isHidden ? 0 : 1)`: which leaks during animation?"
+    },
+    {
+      "kind": "practice",
+      "q": "Spoilers in a quiz app, prices before purchase: where else can transitions leak state?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

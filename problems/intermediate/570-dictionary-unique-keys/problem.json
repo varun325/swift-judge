@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -31,5 +35,41 @@
     "`Dictionary(uniqueKeysWithValues:)` crashes on duplicate keys.",
     "Use `Dictionary(_:uniquingKeysWith:)` and merge old and new names in the closure.",
     "`{ old, new in old.split(separator: \"|\").contains(Substring(new)) ? old : old + \"|\" + new }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`Dictionary(uniqueKeysWithValues:)` **traps** on duplicate keys, while `Object.fromEntries` in JS just lets the last one win. The `uniquingKeysWith:` variant makes you decide the merge rule.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Object.fromEntries` silently keeps the last duplicate. Is trapping better for data you believe is unique?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why is trapping here a design choice rather than throwing?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Dictionary(grouping:)` vs `uniquingKeysWith:`: when do you want all values vs one merged value?"
+    },
+    {
+      "kind": "practice",
+      "q": "Server data with duplicate IDs happens. What should the app do, and should it log?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+      "url": "https://www.youtube.com/watch?v=Le32Tbkv2v0&t=7s",
+      "channel": "Paul Hudson",
+      "start": 7,
+      "moment": "results then discard anything that's nil with the map values method from dictionaries leave my keys intact but"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

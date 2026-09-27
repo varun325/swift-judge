@@ -17,6 +17,14 @@
     {
       "title": "Observable()",
       "url": "https://developer.apple.com/documentation/observation/observable()"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -38,5 +46,49 @@
     "Only properties read inside the tracking closure are observed.",
     "Read just `model.items.count`; keep an `armed` flag and re-install only after `onChange` fires.",
     "Changing `coupon` or an `@ObservationIgnored` property doesn't fire."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`@Observable` tracks **which properties `body` actually reads** and only re-renders for those, like MobX or Vue reactivity, and finer-grained than React's `useState`, which re-renders the component on any update.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "MobX/Vue track property access during render. How does `@Observable` do the same (the macro plus `withObservationTracking`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@Observable` vs `ObservableObject` + `@Published`: which invalidates views that didn't read the changed property?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `@ObservationIgnored` do, and when should analytics or caches be ignored?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why can switching from `ObservableObject` to `@Observable` improve performance in large screens?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58&t=2s",
+      "channel": "Swiftful Thinking",
+      "start": 2,
+      "moment": "the Swift concurrency playlist I'm adding a video to the end of the Swift concurrency playlist that is going to be"
+    },
+    {
+      "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12",
+      "url": "https://www.youtube.com/watch?v=myLtDcYuE3k",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Swift's observable macro combined with at State makes it straightforward to"
+    },
+    {
+      "title": "SwiftUI Data Flow in iOS 17 - Observation & @Observable",
+      "url": "https://www.youtube.com/watch?v=EK7SthdWV2w&t=352s",
+      "channel": "Sean Allen",
+      "start": 352,
+      "moment": "thing about this observable macro or just macros in general it does seem like magic right I talked about all the stuff that's going on under the hood well with "
+    }
+  ],
+  "articles": []
 }

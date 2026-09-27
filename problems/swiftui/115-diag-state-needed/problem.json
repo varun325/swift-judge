@@ -14,6 +14,10 @@
     {
       "title": "State",
       "url": "https://developer.apple.com/documentation/swiftui/state"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
     }
   ],
   "platforms": [
@@ -23,5 +27,49 @@
     "`body` can't mutate the view struct's own stored properties.",
     "Declare `var count = 0` without a property wrapper and increment it in a button action.",
     "`Button(\"+\") { count += 1 }` with a plain `var count`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "A SwiftUI view is a struct, and `body` isn't `mutating`, so `count += 1` can't compile. `@State` moves the storage outside the struct, which is SwiftUI's `useState`. Like React, the view is recreated often and state must live elsewhere.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why can't a React component keep state in a local variable either? How is `@State` like `useState`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@State` vs `@Binding` vs `@Observable` model: who owns the data in each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must `@State` be `private` by convention? What happens if a parent passes an initial value?"
+    },
+    {
+      "kind": "practice",
+      "q": "Initialising `@State` from a parameter only takes effect once. Why, and what's the fix (`.onChange`, `id`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+      "url": "https://www.youtube.com/watch?v=BKxbHnka4-Q&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "welcome back everyone i'm nick this is swiffle thinking and we're going to jump right in to mvvm in this app so in this"
+    },
+    {
+      "title": "iOS 15: Why @State only works with structs – iExpense SwiftUI Tutorial 1/11",
+      "url": "https://www.youtube.com/watch?v=FXSq_4xWtrc&t=36s",
+      "channel": "Paul Hudson",
+      "start": 36,
+      "moment": "we can now use that inside a swift ui view using an at state property like this at state private var user is"
+    },
+    {
+      "title": "Simple, Clean Empty States in SwiftUI - ContentUnavailableView - iOS 17",
+      "url": "https://www.youtube.com/watch?v=bEB7ATENue0",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "iOS 17 introduced content unavailable view that allows us to easily create simple minimal empty States just like apple uses in this video I'm going to show you "
+    }
+  ],
+  "articles": []
 }

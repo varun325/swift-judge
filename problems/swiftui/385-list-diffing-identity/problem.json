@@ -18,6 +18,14 @@
     {
       "title": "Demystify SwiftUI (WWDC21)",
       "url": "https://developer.apple.com/videos/play/wwdc2021/10022/"
+    },
+    {
+      "title": "List",
+      "url": "https://developer.apple.com/documentation/swiftui/list"
+    },
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
     }
   ],
   "signature": {
@@ -41,5 +49,33 @@
     "Diff the id arrays, not the rows themselves.",
     "`difference(from:).inferringMoves()` pairs removals and insertions of the same id into moves.",
     "Updates are ids present in both whose title changed."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "SwiftUI diffs lists by **identity** (`id`), the same as React's `key`. With stable IDs a row is updated in place (keeping its state and animating), and with unstable IDs it's removed and re-inserted.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Using array index as a React key causes what bugs on reorder? What's the SwiftUI equivalent mistake (`id: \\.self` on mutable values)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two rows with the same `id`: undefined behaviour and console warnings. How would you detect it in tests?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Identity (`id`) vs equality (`==`): which decides insert/delete, and which decides update?"
+    },
+    {
+      "kind": "practice",
+      "q": "Server returns new IDs after an edit. What happens to row animations and scroll position?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Locking our UI behind Face ID – Bucket List SwiftUI Tutorial 12/12",
+      "url": "https://www.youtube.com/watch?v=k1A0YTkMCxc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

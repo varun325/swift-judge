@@ -36,5 +36,61 @@
     "Struct methods that change stored properties must be `mutating`.",
     "`private(set)` lets anyone read `funds` but only the struct write it. Refuse withdrawals larger than the balance.",
     "`guard amount <= funds else { return false }; funds -= amount; return true`."
+  ],
+  "impact": "core",
+  "jsBridge": "`private(set) var funds` is a public getter with a private setter. JS would use `#funds` plus a getter. Struct methods that change properties must be `mutating`, because they replace the whole value.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: `#funds` + `get funds()`. Swift: `private(set)`. Which is less code, and which is enforced at compile time vs runtime?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Struct `BankAccount` vs `class`/`actor`: if two screens share an account, which model is right?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a `mutating` method be called on a `let` constant? On an rvalue like `makeAccount().deposit(5)`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Money in real apps: `Decimal`, cents, or a `Money` type with currency? Where does validation belong?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Structs in Swift | Swift Basics #9",
+      "url": "https://www.youtube.com/watch?v=gRKlprUj-I8&t=171s",
+      "channel": "Swiftful Thinking",
+      "start": 171,
+      "moment": "to them basically that's an easy layman's term way of thinking about it but really what we're doing when we were"
+    },
+    {
+      "title": "Mutating methods – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=8T5vQnMspko",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift - Class vs. Struct Explained",
+      "url": "https://www.youtube.com/watch?v=LtlbB4-6k_U",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

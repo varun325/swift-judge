@@ -31,5 +31,44 @@
     "A recursive enum needs `indirect` so its cases can contain the enum.",
     "Parse RPN with a stack of `Expr`: numbers push, operators pop two (or one for `neg`) and push the combined node.",
     "`guard let b = stack.popLast(), let a = stack.popLast() else { return nil }; stack.append(.add(a, b))`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`indirect enum Expr` is a recursive discriminated union (an AST), like TS `type Expr = {k:'num',v:number} | {k:'add',l:Expr,r:Expr}`. `indirect` boxes the recursive cases so the enum has a finite size.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS recursive union types need no `indirect`. Why does Swift need it (value types have a fixed size)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Indirect enum AST vs class hierarchy AST: which makes adding a new *operation* (pretty-print) easier?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you mark only some cases `indirect`? What's the memory difference?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do trees appear in apps: JSON, Markdown, view hierarchies, rich-text documents?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

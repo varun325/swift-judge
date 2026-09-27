@@ -13,6 +13,14 @@
     {
       "title": "Strings and Characters — Counting Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -30,5 +38,44 @@
     "A `String` offers several views: characters, Unicode scalars, UTF-16 and UTF-8.",
     "Each view has its own `count`.",
     "`[text.count, text.unicodeScalars.count, text.utf16.count, text.utf8.count]`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS strings are UTF-16: `\"é\".length` can be 1 or 2, and emoji are 2+. Swift's `count` counts **grapheme clusters**, what a human sees as one character, so `\"👨‍👩‍👧\".count == 1`. The `utf8`, `utf16` and `unicodeScalars` views give you the JS-style counts when an API needs them.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "An `NSString`/`UITextField` limit of 140 characters: does it use Swift `count` or `utf16.count`? What does JS's `maxlength` count?"
+    },
+    {
+      "kind": "practice",
+      "q": "A backend validates length in bytes (UTF-8) and the app in characters. Which user input breaks the contract?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why is `String.count` O(n) in Swift but `.length` O(1) in JS? What's the consequence of calling `count` in a loop?"
+    },
+    {
+      "kind": "java",
+      "q": "Java strings are UTF-16 like JS. How does Java's `codePointCount` compare with Swift's grapheme count for flags and family emoji?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12",
+      "url": "https://www.youtube.com/watch?v=Ea3dl2gy3QY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -14,6 +14,10 @@
     {
       "title": "The Basics — Type Safety and Type Inference",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Swift Standard Library",
+      "url": "https://developer.apple.com/documentation/swift/swift-standard-library"
     }
   ],
   "signature": {
@@ -25,5 +29,44 @@
     "`type(of:)` returns the dynamic type of any value; `String(describing:)` turns it into text.",
     "Build an array literal of eight `String(describing: type(of: …))` expressions, one for each literal, in order.",
     "The first two: `String(describing: type(of: 42))`, `String(describing: type(of: 3.0))` — repeat for `\"hi\"`, `true`, `[1, 2]`, `[\"a\": 1]`, `(1, \"x\")`, `1...3`."
+  ],
+  "impact": "core",
+  "jsBridge": "Like TypeScript, Swift infers types from literals, but the defaults differ. `42` is `Int`, `3.0` is `Double` (JS has only `number`), and `1...3` is a `ClosedRange<Int>`. Inference is also **bidirectional**: `let x: Double = 42` makes the literal a Double, which TS can't do.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TypeScript infers `const x = 42` as the literal type `42`. What does Swift infer, and why doesn't Swift have literal types at all?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can type-checking `let x = 1 + 2.0 + 3 + 4.5 + ...` with many literals be slow or fail with \"expression too complex\"? What does that reveal about how literals are inferred?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[1, 2]` is `[Int]` but `[1, \"a\"]` is an error without annotation. How is that different from TS inferring `(number | string)[]`?"
+    },
+    {
+      "kind": "practice",
+      "q": "In a large app, when is an explicit type annotation worth it despite inference: compile times, public APIs, or readability?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Navigating to different data types using NavigationPath – Navigation SwiftUI Tutorial 4/9",
+      "url": "https://www.youtube.com/watch?v=PU8q5UPHTS0",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

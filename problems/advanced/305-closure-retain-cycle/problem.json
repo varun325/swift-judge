@@ -32,5 +32,48 @@
     "A stored closure that captures `self` strongly creates a cycle.",
     "Add a capture list with `weak self` and unwrap it at the start of the closure.",
     "`onTick = { [weak self] in guard let self else { return }; count += 1; log.lines.append(\"tick \\(count)\") }`."
+  ],
+  "impact": "core",
+  "jsBridge": "A class storing a closure that captures `self` strongly is the #1 Swift leak. `[weak self]` breaks the cycle. JS never needs this because GC handles it, but in Swift you must think about capture ownership.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`this.onTick = () => this.count++` never leaks in JS. Why does the Swift equivalent leak?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[weak self]` + `guard let self` vs `[unowned self]`: when is `unowned` acceptable?"
+    },
+    {
+      "kind": "edge",
+      "q": "Do non-escaping closures (like `map`) need `[weak self]`? Does `Task { }` retain self? Until when?"
+    },
+    {
+      "kind": "practice",
+      "q": "Combine `sink { self.x = $0 }` stored in `cancellables` is the same cycle. How do you fix it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use weak self in Swift | Continued Learning #18",
+      "url": "https://www.youtube.com/watch?v=TPHp9kR0Go8&t=8s",
+      "channel": "Swiftful Thinking",
+      "start": 8,
+      "moment": "swiftly thinking where we cover all things swift and swift ui related and in this"
+    },
+    {
+      "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=401s",
+      "channel": "Sean Allen",
+      "start": 401,
+      "moment": "leaks retain Cycles if you watch the overview video you notice I'll mentioned that the follow-up question to this is"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

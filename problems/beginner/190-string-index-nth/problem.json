@@ -14,6 +14,14 @@
     {
       "title": "Strings and Characters — String Indices",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -36,5 +44,44 @@
     "You can't subscript a `String` with an `Int` — you need a `String.Index`.",
     "`index(_:offsetBy:limitedBy:)` returns `nil` instead of crashing when you'd walk past the limit. Also reject negative offsets and `endIndex`.",
     "`guard offset >= 0, let i = text.index(text.startIndex, offsetBy: offset, limitedBy: text.endIndex), i < text.endIndex else { return nil }; return String(text[i])`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS gives `str[5]` in O(1) over UTF-16 units, which can split an emoji. Swift **refuses integer subscripts** on `String` because characters have variable width. You walk with `index(_:offsetBy:limitedBy:)`, which makes the O(n) cost visible.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `str[i]` is O(1) but can return half an emoji. Swift makes it O(n) and correct. Which trade-off would you choose for a text editor?"
+    },
+    {
+      "kind": "practice",
+      "q": "If you need random access, like highlighting search matches, what's the idiomatic Swift approach: `Array(string)`, storing `String.Index` values, or `NSRange`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you use an index from one string on another string, or on a mutated copy? What happens?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's `charAt(i)` returns a UTF-16 unit like JS. Why did Swift decide the ergonomic loss was worth it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12",
+      "url": "https://www.youtube.com/watch?v=Ea3dl2gy3QY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

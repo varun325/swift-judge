@@ -14,6 +14,10 @@
     {
       "title": "Comparable",
       "url": "https://developer.apple.com/documentation/swift/comparable"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -31,5 +35,48 @@
     "Enum cases can be compared by declaration order.",
     "With a `String` raw value you need a custom `<` — `allCases.firstIndex(of:)` gives each case's order.",
     "Sort tuples with `($1.0, $0.1) < ($0.0, $1.1)` for priority desc, title asc."
+  ],
+  "impact": "edge",
+  "jsBridge": "Enums without raw values get `Comparable` synthesised from **declaration order** (Swift 5.3). TS enums compare by their numeric values, and string enums alphabetically, which is rarely what you want.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS numeric enums compare by value. Swift compares by declaration order. What happens if someone reorders the cases?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can an enum with associated values be `Comparable` automatically? What's compared?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Declaration-order `Comparable` vs an explicit `rank: Int`: which is more robust to refactoring?"
+    },
+    {
+      "kind": "practice",
+      "q": "Priority sorting in a task app: where should priority order be defined, client or server?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "moving through this playlist in the last video we learned about struck structs are incredibly important possibly my"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=194s",
+      "channel": "Paul Hudson",
+      "start": 194,
+      "moment": "You might have said for example uh switch loading state like that. And then for our loading view here, success view"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

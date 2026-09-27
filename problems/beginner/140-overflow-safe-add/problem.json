@@ -14,6 +14,14 @@
     {
       "title": "Advanced Operators — Overflow Operators",
       "book": "LanguageGuide/AdvancedOperators"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "signature": {
@@ -36,5 +44,46 @@
     "Plain `+` traps on overflow. Integers have methods that report overflow instead.",
     "`addingReportingOverflow(_:)` returns a tuple of the (wrapped) result and a `Bool` telling you whether it overflowed.",
     "`let (sum, overflow) = a.addingReportingOverflow(b); return overflow ? nil : sum`."
+  ],
+  "impact": "core",
+  "jsBridge": "In JS, `Number.MAX_SAFE_INTEGER + 2` silently loses precision, and there's no integer overflow at all, just floats. Swift's `Int` is a real 64-bit integer, and `+` **traps** (crashes) on overflow instead of wrapping silently. `addingReportingOverflow` lets you detect it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Is Swift crashing on overflow better or worse than JS silently becoming imprecise? Think about a bank balance, then a game score."
+    },
+    {
+      "kind": "java",
+      "q": "Java's `int` silently wraps on overflow (`Integer.MAX_VALUE + 1` is negative). Which of Java, JS and Swift would you trust for a money calculation, and why?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where could overflow realistically happen in an iOS app: timestamps in ms, file sizes, counters? When would you use `Int64` or `Decimal` instead?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is overflow checked in `-Ounchecked` builds? What does that say about relying on a crash as a safety net?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Integer multiples in Swift with isMultiple(of:)",
+      "url": "https://www.youtube.com/watch?v=iCRwqxON8Os",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "I see two to five ads on is multiple of method to integers allowing us to check whether one number is a multiple of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

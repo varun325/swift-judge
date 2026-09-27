@@ -31,5 +31,49 @@
     "Every unvisited land cell starts a new island.",
     "Convert rows to `[[Character]]`; when you find land, count it and flood-fill (BFS/DFS) its neighbours to water.",
     "`guard grid.indices.contains(ny), grid[ny].indices.contains(nx), grid[ny][nx] == \"1\" else { continue }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "BFS over a grid, passing the grid `inout` so the helper can sink visited land in place. In JS the grid would be mutated through a shared reference; in Swift the `inout` makes that explicit.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Your JS BFS mutates the grid argument freely. Why must Swift mark it `inout` and pass `&grid`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "BFS with an array-as-queue (`removeFirst` is O(n)) vs an index pointer: which is really O(n)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Recursive DFS on a 1000×1000 island: what happens to the stack?"
+    },
+    {
+      "kind": "practice",
+      "q": "Flood fill in a drawing app is this algorithm. Where else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

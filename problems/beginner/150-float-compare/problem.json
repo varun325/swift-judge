@@ -13,6 +13,14 @@
     {
       "title": "The Basics — Floating-Point Numbers",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "signature": {
@@ -35,5 +43,46 @@
     "Floating-point numbers rarely compare exactly equal — compare within a tolerance.",
     "Compute the absolute difference and compare it to `1e-9` scaled by the larger magnitude (at least 1).",
     "`abs(a - b) <= 1e-9 * max(1, abs(a), abs(b))`."
+  ],
+  "impact": "core",
+  "jsBridge": "It's identical to JS: `0.1 + 0.2 !== 0.3` because both use IEEE-754 doubles. What's new in Swift is that `Float` (32-bit) and `Double` (64-bit) are separate types, and `Decimal` exists for money.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs reach for `Number.EPSILON`. Why is a fixed epsilon wrong for large values, and why does this problem scale by magnitude?"
+    },
+    {
+      "kind": "practice",
+      "q": "How should an app store money: `Double`, `Decimal`, or integer cents? What does Apple's `formatted(.currency(code:))` expect?"
+    },
+    {
+      "kind": "edge",
+      "q": "`Double.nan == Double.nan` is false. What does that do to a `Set<Double>` or to sorting an array containing NaN?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Float` vs `Double` vs `CGFloat`: why does UI code use `CGFloat`, and when did it become interchangeable with `Double`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Doubles and booleans – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ZpGDwOAWiXA",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "two other basic types of data in Swift are doubles and boolean z' and you'll be using them a lot double is short for"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

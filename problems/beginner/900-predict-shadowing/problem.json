@@ -13,11 +13,63 @@
     {
       "title": "The Basics — Optional Binding",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "hints": [
     "Inside `if let name { }` there is a second, unwrapped `name`.",
     "`type(of:)` shows `String` inside the `if let` and `Optional<String>` outside.",
     "The `do` block prints 6; after it, `count` is 3 again."
+  ],
+  "impact": "core",
+  "jsBridge": "`if let name { }` (Swift 5.7) is shorthand for `if let name = name`. It **shadows** the optional with a non-optional of the same name inside the braces. JS has no equivalent; TS narrowing does something similar without making a new variable.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS narrows `name` inside `if (name)`. Swift creates a new constant. What's observably different? (Hint: assign to it.)"
+    },
+    {
+      "kind": "edge",
+      "q": "After `guard let name else { return }`, what type is `name` for the rest of the function?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`if let` vs `guard let`: which keeps the happy path unindented?"
+    },
+    {
+      "kind": "practice",
+      "q": "Shadowing `self` with `guard let self` in closures is idiomatic. Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=105s",
+      "channel": "Swiftful Thinking",
+      "start": 105,
+      "moment": "let's create a new file for this video right click the navigator new file"
+    },
+    {
+      "title": "How to unwrap optionals with guard – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=sQrRf99diz0&t=58s",
+      "channel": "Paul Hudson",
+      "start": 58,
+      "moment": "so like if let guard let checks whether an optional has a value inside and if it does it retrieves the value and place it"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

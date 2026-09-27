@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Arrays",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "signature": {
@@ -36,5 +40,41 @@
     "Rotating by `k` is the same as rotating by `k % count` — and guard against an empty array (`% 0` traps).",
     "The result is the last `shift` elements followed by the rest; one-sided range slices make that easy.",
     "`let s = k % nums.count; return Array(nums[(nums.count - s)...] + nums[..<(nums.count - s)])`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS: `[...a.slice(-k), ...a.slice(0, -k)]`. Swift uses `ArraySlice` ranges: `a[(n-k)...] + a[..<(n-k)]`. Slices share storage with the original array and keep its indices, a classic gotcha.",
+  "compass": [
+    {
+      "kind": "edge",
+      "q": "`let s = a[2...]`: what is `s.startIndex`? Why does `s[0]` crash?"
+    },
+    {
+      "kind": "js",
+      "q": "JS `slice` always copies. Swift's `ArraySlice` doesn't. What are the memory implications of storing a tiny slice of a huge array?"
+    },
+    {
+      "kind": "contrast",
+      "q": "The three-reversal trick (O(1) extra space) vs slicing (O(n) extra): when would you pick each?"
+    },
+    {
+      "kind": "practice",
+      "q": "Carousels and circular buffers rotate indices. Would you rotate data or just map indices with `%`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Slice to win – Swifty Ninja, part 6",
+      "url": "https://www.youtube.com/watch?v=kzGSiGXbxWo",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] we need some modify the touches move method to detect when uses sliced"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -13,6 +13,10 @@
     {
       "title": "Concurrency — Asynchronous Sequences",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -35,5 +39,44 @@
     "`AsyncStream` turns pushed values into something you can `for await` over.",
     "Yield every value, then `finish()`. In the loop, keep even values and `break` at the limit.",
     "`for await v in stream where v.isMultiple(of: 2) { evens.append(v); if evens.count == limit { break } }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`AsyncStream` + `for await` is JS's async iterators (`for await…of` over an async generator). Swift adds typed continuations for bridging callback APIs, plus buffering policies.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`async function*` in JS vs `AsyncStream { continuation in … }`: which is more natural for bridging event emitters?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`AsyncStream` vs Combine `PassthroughSubject`: which does Apple push in 2026?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if nobody iterates the stream but you keep yielding (buffering policy)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Bridging `CLLocationManager` delegate callbacks into an `AsyncStream`: sketch it."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncStream in Swift | Swift Concurrency #18",
+      "url": "https://www.youtube.com/watch?v=gi38bouUI2Q",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

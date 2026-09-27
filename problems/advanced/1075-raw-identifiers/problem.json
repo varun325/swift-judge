@@ -19,5 +19,44 @@
     "Backticked names are ordinary identifiers once declared.",
     "Interpolating an enum case prints its (backticked) name without backticks.",
     "The first line prints the raw value of `` `2` `` and the case name of `` `1.1` ``."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift 6.2 raw identifiers allow almost any text in backticks as a name, like `` func `test adding two items`() ``. JS allows only computed property names (`obj['any text']`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS test names are strings (`it('adds two items')`). How does Swift Testing use raw identifiers to get the same readability?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you name an enum case `` `1st` ``? Why was that previously impossible?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Raw identifiers vs the `@Test(\"display name\")` argument: which would you use?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you allow raw identifiers outside tests? Where could they hurt?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What's new in SwiftUI for iOS 27?",
+      "url": "https://www.youtube.com/watch?v=tNxEqyUVGck",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "What's New in Swift 5.3",
+      "url": "https://www.youtube.com/watch?v=RhuYDAEdGHE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Evolution proposals",
+      "url": "https://www.swift.org/swift-evolution/",
+      "source": "swift.org"
+    }
   ]
 }

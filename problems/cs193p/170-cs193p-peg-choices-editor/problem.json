@@ -42,8 +42,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L12: Even More Complex UIs",
-      "url": "https://www.youtube.com/watch?v=gNok5P7HLCw",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=gNok5P7HLCw&t=916s",
+      "channel": "Stanford Online",
+      "start": 916,
+      "moment": "So how do I do that? Super simple. Just going to say GameEditor() and remember GameEditor takes a game: to edit as its argument. You want to go back and look at"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "One editor sheet for both create and edit: pass an `@Bindable` model (edit) or a fresh one (create), and commit or discard on Save/Cancel. It's the React pattern of a form with `initialValues` and an `onSubmit` callback.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React form: `initialValues` + `onSubmit`. SwiftUI: `@Bindable` edits the model live. How do you support Cancel if edits are live?"
+    },
+    {
+      "kind": "edge",
+      "q": "Editing a SwiftData object directly: Cancel must roll back. How (a child context, a copy, `undo`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Editing a copy then committing vs editing live with undo: which is simpler with SwiftData?"
+    },
+    {
+      "kind": "practice",
+      "q": "Validation before Save (empty name, too few pegs): where does it live?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

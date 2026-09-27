@@ -35,5 +35,48 @@
     "Pass a dependency in through the initialiser, typed as a protocol.",
     "Define `Clock`, a `FixedClock` for tests, and a `Sendable` `SystemClock` singleton as the default argument.",
     "`init(clock: any Clock = SystemClock.shared)` and `switch clock.hour { case ..<12: … }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Injecting a `Clock` protocol instead of reading `Date()` makes time testable, just like injecting a clock in JS tests (or using `jest.useFakeTimers`). Swift does it with protocols or closures, and there's no module mocking to reach for.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS tests can monkey-patch `Date.now` or mock modules. Swift can't. Is that a weakness or a design pressure toward DI?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Protocol injection vs closure injection vs `swift-dependencies`: which scales in a big app?"
+    },
+    {
+      "kind": "edge",
+      "q": "Default parameter `clock: Clock = SystemClock()`: convenient, or a hidden global?"
+    },
+    {
+      "kind": "practice",
+      "q": "Apple's `Clock` protocol (Swift 5.7) and `ContinuousClock`: how would you inject one for `Task.sleep` in tests?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Dependency Injection in SwiftUI | Advanced Learning #16",
+      "url": "https://www.youtube.com/watch?v=E3x07blYvdE&t=142s",
+      "channel": "Swiftful Thinking",
+      "start": 142,
+      "moment": "with some very simple dependency injection all right welcome back everyone so i'm"
+    },
+    {
+      "title": "Swift Dependency Injection - What is it? What are the benefits?",
+      "url": "https://www.youtube.com/watch?v=l0QehVWz2i0",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "dependency injection is when you give an object what it needs rather than that object creating or finding it itself and it can be intimidating because the name "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

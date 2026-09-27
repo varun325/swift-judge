@@ -35,5 +35,55 @@
     "A generic type has a placeholder, like `Stack<Element>`.",
     "Back the stack with a private `[Element]`; `pop` can use `popLast()`, which returns an optional.",
     "Drain with `while let x = a.pop() { out.append(String(x)) }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`struct Stack<Element>` is TS's `class Stack<T>`, but Swift generics are **reified and specialised**: `Stack<Int>` and `Stack<String>` can compile to specialised code, with no type erasure at runtime (unlike TS, whose generics vanish).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS generics are erased at compile time. Swift's exist at runtime (`Stack<Int>.self`). What can you do with that?"
+    },
+    {
+      "kind": "java",
+      "q": "Java generics are erased too, so `List<int>` is impossible. Why can Swift put `Int` in a generic without boxing?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Generic `Stack<Element>` vs `Stack` of `Any`: what do you lose with `Any`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Generic code across module boundaries may not be specialised. What does `@inlinable` do?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Generics in Swift | Advanced Learning #8",
+      "url": "https://www.youtube.com/watch?v=rx3uRICZr5I&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "all right welcome back everyone i'm nick this is swiffle thinking where we cover all things swift and swift ui related"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=211s",
+      "channel": "Paul Hudson",
+      "start": 211,
+      "moment": "easily copy and paste that then just tweak it to a account loads missions R an astronauts however there's a better"
+    },
+    {
+      "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+      "url": "https://www.youtube.com/watch?v=a3AH0ItFTKU&t=298s",
+      "channel": "Sean Allen",
+      "start": 298,
+      "moment": "say let number array and I'm going to declare it like this so I can dive into the documentation say array repeating let's say I want to repeat the number 3 10 t"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

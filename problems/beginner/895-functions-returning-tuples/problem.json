@@ -31,5 +31,53 @@
     "A tuple return lets one function produce several values; make it optional for the empty case.",
     "Sort once; the median is the middle element (or the average of the two middle ones).",
     "`guard let (mean, median, range) = summary(values) else { return [] }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Returning a named tuple `(mean:, median:, range:)` is like returning `{mean, median, range}` in JS, and `let (mean, median, range) = …` is destructuring. Optional tuples express \"no result\" for empty input.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS destructuring works with defaults and renaming. What can Swift tuple destructuring do, and not do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "At what point should this tuple become a `Summary` struct?"
+    },
+    {
+      "kind": "edge",
+      "q": "Median of an even count: which average do you use? Integer or floating-point?"
+    },
+    {
+      "kind": "practice",
+      "q": "Charts in Swift Charts need summary statistics. Would you compute them in SQL, Core Data, or Swift?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Tuples in Swift | Swift Basics #7",
+      "url": "https://www.youtube.com/watch?v=zsjCrtENsZA&t=93s",
+      "channel": "Swiftful Thinking",
+      "start": 93,
+      "moment": "so far in this course anytime we returned out of a function we returned one single value but we can also return"
+    },
+    {
+      "title": "Arrays vs Sets vs Tuples – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=yZZ6UTipwkM",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "arrays sets and tuples can seem similar at first but they have distinct uses to help you know which to use here are some"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

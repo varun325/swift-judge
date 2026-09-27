@@ -18,5 +18,46 @@
     "`#error(\"…\")` stops the build with your own message.",
     "Put it in the `#else` branch, which is compiled because `HAS_KEY` isn't defined.",
     "`#error(\"Set API_KEY before building\")`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`#error(\"…\")` fails the build with your message, for missing configuration and similar. JS would fail at runtime or use a build-script check. Swift can enforce it in the compiler.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How do JS projects enforce \"API_KEY must be set\" (build-time env check)? Is compile-time better?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`#error` vs `#warning` vs a runtime `fatalError`: which fits which situation?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can `#error` appear inside a function body? In an `#else` branch?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should API keys be compiled into apps at all? Where do secrets belong?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift Tip - #warning & #error",
+      "url": "https://www.youtube.com/watch?v=lvzcJ62JJmU&t=149s",
+      "channel": "Sean Allen",
+      "start": 149,
+      "moment": "like about it like hey you fix this so back to the view we were looking at let's talk about hashtag"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Attributes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

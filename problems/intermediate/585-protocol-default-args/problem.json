@@ -36,5 +36,60 @@
     "Protocol requirements can't have default argument values.",
     "Add a one-parameter `send(_:)` in a protocol extension that forwards `urgent: false`.",
     "`extension Notifier { func send(_ message: String) -> String { send(message, urgent: false) } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Protocol requirements can't declare default argument values, so you add an overload in a protocol extension that forwards with the default. TS interfaces can mark parameters optional (`urgent?: boolean`), which Swift can't express in a protocol.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `send(msg: string, urgent?: boolean)` in an interface. Why can't Swift protocols have defaults?"
+    },
+    {
+      "kind": "edge",
+      "q": "If a conforming type also defines `send(_:)` with one argument, which one runs through an `any Notifier`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Extension overload vs a `SendOptions` struct parameter with defaults: which evolves better?"
+    },
+    {
+      "kind": "practice",
+      "q": "This pattern shows up in logging and analytics protocols. Where have you seen it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17",
+      "url": "https://www.youtube.com/watch?v=nJmrkRlRu88&t=178s",
+      "channel": "Swiftful Thinking",
+      "start": 178,
+      "moment": "will have a name of type string all right really quickly I just want to show you guys right now this struct does"
+    },
+    {
+      "title": "Protocol-oriented programming – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=-IU_TvFKqjo",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "protocol extensions can provide default implementations for our own protocol methods this makes it easy for types to"
+    },
+    {
+      "title": "Swift Protocols - An Introduction",
+      "url": "https://www.youtube.com/watch?v=vmQnTMWaDiY",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "I'm going to teach you about protocols in Swift I'll explain what they are the benefits and how to implement them and I'll show you some examples of protocols b"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

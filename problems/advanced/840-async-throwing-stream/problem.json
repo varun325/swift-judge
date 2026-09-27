@@ -13,6 +13,10 @@
     {
       "title": "AsyncThrowingStream",
       "url": "https://developer.apple.com/documentation/swift/asyncthrowingstream"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -34,5 +38,49 @@
     "A stream's continuation can `yield` values, `finish()`, or `finish(throwing:)`.",
     "Loop over the chunks, yielding percentages; on the failing chunk, finish with the error and return.",
     "Consume with `for try await percent in download(…)` inside `do`/`catch`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`AsyncThrowingStream` yields values over time and can end with an error, like an async generator that throws, or an RxJS observable with an error channel. `for try await` consumes it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`async function*` that throws midway vs `AsyncThrowingStream`: same consumer experience?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Progress as a stream vs a `Progress` object vs a callback: which fits SwiftUI best?"
+    },
+    {
+      "kind": "edge",
+      "q": "Values yielded before `finish(throwing:)`: does the consumer see them all?"
+    },
+    {
+      "kind": "practice",
+      "q": "Upload progress in an app: where do you get real progress from `URLSession` (delegates, `bytes`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+      "url": "https://www.youtube.com/watch?v=1RD8-5_Zsws",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

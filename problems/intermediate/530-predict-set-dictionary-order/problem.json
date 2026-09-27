@@ -14,11 +14,49 @@
     {
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "hints": [
     "Duplicates disappear in a set; only sorted output is deterministic.",
     "Count the unique values in each set, sort the intersection, then count letters in \"mississippi\".",
     "`7 4` (the repeated 2 and 8 in `b` collapse), then `[1, 2]`, then `true true`, then `i4m1p2s4`."
+  ],
+  "impact": "core",
+  "jsBridge": "Swift randomises hashing **per process** (hash-flooding protection), so `Set` and `Dictionary` iteration order changes between runs. JS `Set` and `Map` keep insertion order. Never print or test raw iteration order in Swift.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS guarantees insertion order for `Map`/`Set`. What design goal made Swift give that up?"
+    },
+    {
+      "kind": "practice",
+      "q": "A snapshot test of `\"\\(dictionary)\"` passes locally and fails on CI. Why? How do you fix the test?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you disable per-process seeding for debugging? (`SWIFT_DETERMINISTIC_HASHING`)"
+    },
+    {
+      "kind": "contrast",
+      "q": "When do you need `OrderedDictionary` (swift-collections) vs sorting keys at display time?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+      "url": "https://www.youtube.com/watch?v=Le32Tbkv2v0",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

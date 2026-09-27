@@ -14,11 +14,55 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "hints": [
     "A `Character` is what a person sees as one character — even if it's several scalars.",
     "A flag is 1 character, 2 scalars, 8 UTF-8 bytes. `e` + combining accent equals `é`.",
     "`1 2 8`, then `café 4 true`, then `Hello Swift`…"
+  ],
+  "impact": "core",
+  "jsBridge": "`String` isn't an array. `s.count` walks graphemes, `s.first` is a `Character?`, and slices are `Substring`s sharing storage. Coming from JS's `s[0]` and `s.length`, every one of these needs rewiring.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "List three JS string operations that are O(1) in JS but O(n) in Swift. Why does Swift accept that?"
+    },
+    {
+      "kind": "edge",
+      "q": "`\"e\\u{301}\" == \"é\"`: true or false in Swift? In JS?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`String` vs `[Character]` vs `Data`: when would you convert to each?"
+    },
+    {
+      "kind": "practice",
+      "q": "Text truncation for a UI label: should you truncate by `Character` count or let the UI do it? Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Strings are not arrays – Swift Strings, part 2",
+      "url": "https://www.youtube.com/watch?v=oeKUmAgyOdw&t=117s",
+      "channel": "Paul Hudson",
+      "start": 117,
+      "moment": "rather complex extension for Strings like this they could say extension on string with a subscript method a special"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

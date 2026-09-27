@@ -45,5 +45,38 @@
     "Derive a `SymmetricKey` with `HKDF<SHA256>.deriveKey`.",
     "Sign with `HMAC<SHA256>.authenticationCode`; verify with `isValidAuthenticationCode`.",
     "Seal with `AES.GCM.seal`, tamper with `combined`, then `AES.GCM.open` fails."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "CryptoKit gives HMAC signatures, AES-GCM encryption and HKDF key derivation with safe defaults, the Swift counterpart of Node's `crypto` or WebCrypto, with a typed API (`SymmetricKey`, `SealedBox`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "WebCrypto's `subtle.encrypt({name: 'AES-GCM', iv})` vs `AES.GCM.seal(data, using: key)`: who manages the nonce?"
+    },
+    {
+      "kind": "edge",
+      "q": "Reusing a nonce with the same key in AES-GCM: why is it catastrophic?"
+    },
+    {
+      "kind": "contrast",
+      "q": "HMAC (integrity, shared key) vs a digital signature (P256, public key): which for verifying a server response?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do keys live on iOS: Keychain, Secure Enclave? Why is deriving keys from a password risky?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Keychain-Swift in SwiftUI | Swift Packages #3",
+      "url": "https://www.youtube.com/watch?v=NCREPNvFpjk",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Writing somewhere safe: the iOS keychain – Secret Swift, part 3",
+      "url": "https://www.youtube.com/watch?v=h9RVeeUVhf8",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

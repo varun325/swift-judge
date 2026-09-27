@@ -17,6 +17,10 @@
     {
       "title": "NSDeleteRule",
       "url": "https://developer.apple.com/documentation/coredata/nsdeleterule"
+    },
+    {
+      "title": "Core Data",
+      "url": "https://developer.apple.com/documentation/coredata"
     }
   ],
   "signature": {
@@ -38,5 +42,42 @@
     "Set the to-one side (`note.folder`); the inverse to-many updates itself.",
     "Deleting a folder cascades to its notes; deleting a note nullifies its folder link.",
     "Report with `notes` set counts and `context.count(for:)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Relationships with inverses and delete rules (cascade/nullify) are foreign keys with `ON DELETE CASCADE` / `SET NULL`. Core Data keeps both sides of the object graph in sync in memory, where SQL only enforces them on the database.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "An ORM relation with `onDelete: 'cascade'` vs Core Data's cascade rule: where does each run (DB vs object graph)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does Core Data warn when a relationship has no inverse? What goes wrong?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Cascade vs nullify vs deny: which fits folder → notes, and which fits note → tags?"
+    },
+    {
+      "kind": "practice",
+      "q": "A to-many relationship is an unordered `NSSet` by default. How do you keep notes in a user-defined order?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16",
+      "url": "https://www.youtube.com/watch?v=huRKU-TAD3g&t=4254s",
+      "channel": "Swiftful Thinking",
+      "start": 4254,
+      "moment": "call save as we always do and it should delete now what we need to think about is what we want to do with"
+    },
+    {
+      "title": "iOS 15: One-to-many relationships with @FetchRequest and SwiftUI – Core Data SwiftUI Tutorial 7/7",
+      "url": "https://www.youtube.com/watch?v=0QGt0THnlwU",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] core data allows us to link entities together using relationships and we"
+    }
+  ],
+  "articles": []
 }

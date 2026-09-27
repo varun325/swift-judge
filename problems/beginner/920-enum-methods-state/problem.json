@@ -14,6 +14,10 @@
     {
       "title": "Enumerations",
       "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -31,5 +35,55 @@
     "A state machine is an enum plus a method that decides the next state.",
     "Switch on the tuple `(self, event)` and assign `self = .next` for valid transitions.",
     "`case (.placed, \"cancel\"), (.paid, \"cancel\"): self = .cancelled`."
+  ],
+  "impact": "core",
+  "jsBridge": "An order state machine as an enum plus a `mutating func handle(_:)` is like a Redux reducer that owns its own state. Invalid transitions return `false` instead of silently corrupting state. JS would need a library like xstate for this rigour.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would xstate express this? What does Swift's exhaustive switch give you that a JS object of transitions doesn't?"
+    },
+    {
+      "kind": "practice",
+      "q": "Order status comes from the server. Should the client enforce transitions, or only display them?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Enum state machine vs typestate pattern (different types per state, e.g. `PaidOrder`): which catches invalid transitions at compile time?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should `cancel` be valid after `shipped`? How do you encode business rules that change often?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8&t=688s",
+      "channel": "Swiftful Thinking",
+      "start": 688,
+      "moment": "and then else we'll just say maybe a return a default value now this works but this is one of the"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=194s",
+      "channel": "Paul Hudson",
+      "start": 194,
+      "moment": "You might have said for example uh switch loading state like that. And then for our loading view here, success view"
+    },
+    {
+      "title": "Simple, Clean Empty States in SwiftUI - ContentUnavailableView - iOS 17",
+      "url": "https://www.youtube.com/watch?v=bEB7ATENue0",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "iOS 17 introduced content unavailable view that allows us to easily create simple minimal empty States just like apple uses in this video I'm going to show you "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

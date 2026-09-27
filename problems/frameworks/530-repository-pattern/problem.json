@@ -35,5 +35,35 @@
     "The repository depends on a protocol, not a concrete network client.",
     "Return the cached value unless `forceRefresh`; cache only successes.",
     "An actor keeps the cache dictionary safe under concurrency."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "A repository hides where data comes from (network, cache, DB) behind a protocol. It's the same pattern as a JS data-access layer or React Query's cache in front of fetchers, with Swift protocols making the seams testable.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React Query caches by key in front of fetchers. How is a Swift repository with a cache similar, and what does it not do (invalidation UI, retries)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Stale-while-revalidate: return the cache immediately and refresh in the background. How do you notify the UI of the fresh value?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Repository protocol vs calling `URLSession` in the view model: when is the extra layer worth it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does offline support fit: in the repository or a separate sync engine?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to Push and Pull from a Remote Repository  | Git & Source Control #5",
+      "url": "https://www.youtube.com/watch?v=q6oA2nc44Es&t=114s",
+      "channel": "Swiftful Thinking",
+      "start": 114,
+      "moment": "Source control and if you're just joining you should probably watch the earlier videos in this playlist so far"
+    }
+  ],
+  "articles": []
 }

@@ -15,6 +15,10 @@
     {
       "title": "The Basics — Forced Unwrapping",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -32,5 +36,53 @@
     "`!` crashes when the value is `nil` — and bad input makes `nil` likely.",
     "Replace each `!` with a binding in a `guard`, and skip the line when a binding fails or the quantity is negative.",
     "`guard let colon = line.firstIndex(of: \":\"), let qty = Int(line[line.index(after: colon)...]), qty >= 0 else { continue }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`!` force-unwraps an optional and **crashes** on `nil`. It's the equivalent of JS code that assumes a value exists and throws `TypeError: cannot read property of undefined`, except Swift makes every such spot visible with `!`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Every property access in JS is an implicit `!`. What does it mean that Swift makes you *write* the `!`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Is `!` ever acceptable in production code: `IBOutlet`s, `URL(string: \"https://apple.com\")!`? What's your rule?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`guard let` + skip vs `compactMap` vs throwing a parse error: which is right for malformed input lines?"
+    },
+    {
+      "kind": "edge",
+      "q": "Crash logs for force-unwrap show \"Unexpectedly found nil\". How do you find which line in a release build (symbolication)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Force unwrapping – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=j6kcxcih4S8&t=45s",
+      "channel": "Paul Hudson",
+      "start": 45,
+      "moment": "you're wrong if ster was something that couldn't be converted to an integer your code will"
+    },
+    {
+      "title": "Swift Optionals - Is Force Unwrapping THAT Bad?",
+      "url": "https://www.youtube.com/watch?v=RkkFI5yAkU0&t=64s",
+      "channel": "Sean Allen",
+      "start": 64,
+      "moment": "unnecessary force unwrapping in those that certain situations where in my opinion it's fine to force unwrap if you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

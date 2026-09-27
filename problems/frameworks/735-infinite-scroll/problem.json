@@ -17,6 +17,10 @@
     {
       "title": "LazyVStack",
       "url": "https://developer.apple.com/documentation/swiftui/lazyvstack"
+    },
+    {
+      "title": "Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines"
     }
   ],
   "signature": {
@@ -44,5 +48,38 @@
     "Trigger when the appearing index is within the last 3 loaded rows.",
     "Guard on `hasMore` and `!isLoading`.",
     "Each load adds up to `pageSize` rows, capped at the total."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Prefetching the next page when a row near the end appears, with `isLoading` and `hasMore` guards, is the same as an IntersectionObserver sentinel in JS infinite scroll.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "IntersectionObserver on a sentinel vs `.onAppear` on the nth-from-last row: which is more robust to fast scrolling?"
+    },
+    {
+      "kind": "edge",
+      "q": "The user scrolls up and down around the threshold: how does `isLoading` prevent duplicate page requests?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Offset paging vs cursor paging for infinite scroll: which avoids duplicates when new items arrive?"
+    },
+    {
+      "kind": "practice",
+      "q": "Showing a loading row and a retry button on failure: where does that state live?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53",
+      "url": "https://www.youtube.com/watch?v=gm7Xct50CFo",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to ask the user to leave an App Store review – Instafilter SwiftUI Tutorial 8/13",
+      "url": "https://www.youtube.com/watch?v=RUWGjeDCkN8",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

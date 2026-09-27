@@ -27,8 +27,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L5: Layout & Data Flow",
-      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE&t=2102s",
+      "channel": "Stanford Online",
+      "start": 2102,
+      "moment": "from the indices in the pegs to the Match. The Match is either going to be exact or nomatch because this is only the first pass. The function I pass to map will"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "CS193p L5 refactors `for` loops into `map` and shows closures capturing local values, the same move JS devs make from `for` to `.map()`, plus Swift's rule that captured locals are references to the variable.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Your `for` → `.map()` refactors in JS: do they change when captured values are read?"
+    },
+    {
+      "kind": "edge",
+      "q": "A closure capturing a local `var` that changes later: which value does it see when it finally runs?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Loops vs `map`/`reduce`: which is more readable for building a view list?"
+    },
+    {
+      "kind": "practice",
+      "q": "In SwiftUI, `ForEach` takes a closure. Does that closure capture the item or an index?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

@@ -14,6 +14,10 @@
     {
       "title": "Control Flow — Early Exit",
       "book": "LanguageGuide/ControlFlow"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -38,5 +42,53 @@
     "`guard` states what must be true and exits early otherwise; its bindings stay in scope afterwards.",
     "Write one `guard` per rule, in order, each returning its own error message.",
     "`guard let username, (3...16).contains(username.count) else { return \"bad username\" }` — and split the email with `omittingEmptySubsequences: false`."
+  ],
+  "impact": "core",
+  "jsBridge": "`guard let … else { return }` is the **early return** pattern JS devs use (`if (!x) return`), promoted to syntax. The compiler checks that `else` exits, and bound values stay in scope afterwards.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`if (!user) return` in JS doesn't narrow in plain JS. How does `guard let` make the unwrapped value available below?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if the `guard`'s `else` block doesn't `return`, `throw` or `break`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`guard` vs `if let` pyramids: why do Swift style guides prefer `guard` for preconditions?"
+    },
+    {
+      "kind": "practice",
+      "q": "Validation that returns the *first* error vs *all* errors: which is better UX on a sign-up form?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=744s",
+      "channel": "Swiftful Thinking",
+      "start": 744,
+      "moment": "want to do is check if there is a user id so this time we'll put guard"
+    },
+    {
+      "title": "How to unwrap optionals with guard – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=sQrRf99diz0&t=30s",
+      "channel": "Paul Hudson",
+      "start": 30,
+      "moment": "a billion it might not nil"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

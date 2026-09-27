@@ -30,5 +30,41 @@
     "For each day, the best sale today is `price − cheapest price so far`.",
     "Keep two running values: minimum price and best profit.",
     "A `reduce` over a `(minPrice, best)` tuple does it in one line."
+  ],
+  "impact": "edge",
+  "jsBridge": "One pass tracking the minimum price so far and the best profit, which reads nicely as a `reduce` over a `(minPrice, best)` tuple. JS would use two `let`s or an object accumulator.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Two `let` variables vs a tuple `reduce`: which do you find clearer?"
+    },
+    {
+      "kind": "contrast",
+      "q": "O(n) one pass vs checking all pairs O(n²): how big must n be before O(n²) is noticeable on-device?"
+    },
+    {
+      "kind": "edge",
+      "q": "Empty or single-price arrays: what should the profit be?"
+    },
+    {
+      "kind": "practice",
+      "q": "Stocks and crypto apps compute ranges like this for charts. Where else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "My Trouble With Free Trials - Build, Ship, Profit #3",
+      "url": "https://www.youtube.com/watch?v=dV8uopv3aFE&t=26s",
+      "channel": "Sean Allen",
+      "start": 26,
+      "moment": "saying this is a huge down this is maybe more of a tiny dip but anyway in this episode we're going to talk about what that dip is and how I plan to get out of i"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

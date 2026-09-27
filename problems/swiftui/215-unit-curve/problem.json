@@ -12,6 +12,10 @@
     {
       "title": "UnitCurve",
       "url": "https://developer.apple.com/documentation/swiftui/unitcurve"
+    },
+    {
+      "title": "Animation",
+      "url": "https://developer.apple.com/documentation/swiftui/animation"
     }
   ],
   "signature": {
@@ -34,5 +38,40 @@
     "`UnitCurve` has static curves like `.linear`, `.easeIn`, `.easeOut`, `.easeInOut`.",
     "Call `curve.value(at: t)` for each time.",
     "Round with `(x * 1000).rounded() / 1000`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`UnitCurve` exposes the timing functions behind SwiftUI animations (`easeIn`, `easeOut`, custom bezier). They're CSS `cubic-bezier()` timing functions, sampled as values you can inspect.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS `ease-in-out` is `cubic-bezier(0.42, 0, 0.58, 1)`. Is SwiftUI's `easeInOut` the same curve?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Timing curves vs spring animations: why does Apple default to springs (`.smooth`, `.snappy`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a curve's value go below 0 or above 1 (overshoot)? What would that look like?"
+    },
+    {
+      "kind": "practice",
+      "q": "When would you pick a custom curve over a spring in product UI?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Animation Curves and Animation Timing in SwiftUI | Bootcamp #26",
+      "url": "https://www.youtube.com/watch?v=0H4G3lGnJE0&t=223s",
+      "channel": "Swiftful Thinking",
+      "start": 223,
+      "moment": "look at the different animation curves we can look at so let's press the period again we can see that there's a"
+    },
+    {
+      "title": "Building custom transitions using ViewModifier – Animation SwiftUI Tutorial 8/8",
+      "url": "https://www.youtube.com/watch?v=EbbQ5kd6TiY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

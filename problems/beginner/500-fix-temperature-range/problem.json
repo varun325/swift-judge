@@ -14,6 +14,14 @@
     {
       "title": "Basic Operators — Logical Operators",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "ClosedRange",
+      "url": "https://developer.apple.com/documentation/swift/closedrange"
+    },
+    {
+      "title": "Range",
+      "url": "https://developer.apple.com/documentation/swift/range"
     }
   ],
   "signature": {
@@ -31,5 +39,41 @@
     "Every integer is either greater than 20 **or** less than 39 — so `||` is always true.",
     "\"Between\" means both conditions must hold. Or ask a range whether it contains the value.",
     "`(21...38).contains(temp)` — and return the condition directly instead of `if … return true`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The classic `x > 20 || x < 39` bug is language-agnostic. Swift gives you `(21...38).contains(x)` or `21...38 ~= x`, which states the intent. Pattern matching on ranges (`case 21...38:`) is the same operator.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`range.contains(x)` vs `range ~= x` vs `case range:`: are they the same operation?"
+    },
+    {
+      "kind": "js",
+      "q": "JS has no range literals. How would you make this bug impossible there? Is a helper function as good?"
+    },
+    {
+      "kind": "edge",
+      "q": "\"Strictly between\" vs \"between inclusive\": how do `20<..<39` style ranges not exist in Swift, and what do you write instead?"
+    },
+    {
+      "kind": "practice",
+      "q": "Validation rules (age, password length) often hide boundary bugs. How would you table-test them in XCTest or Swift Testing?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Range operators – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=FGxEffJ5XUM&t=5s",
+      "channel": "Paul Hudson",
+      "start": 5,
+      "moment": "than creates ranges up to but excluding the final value and the closed range operator dot dot crates ranges up to and"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    }
   ]
 }

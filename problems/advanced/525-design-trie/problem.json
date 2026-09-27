@@ -19,5 +19,51 @@
     "Each node stores its children in a `[Character: Node]` dictionary.",
     "`insert` walks and creates nodes; a shared `find(prefix)` powers both `search` (check `isEnd`) and `startsWith`.",
     "`func search(_ w: String) -> Bool { find(w)?.isEnd ?? false }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A trie with `final class Node { var children: [Character: Node] }`. Classes are needed because nodes are shared and mutated through references. `Character` keys handle emoji and accents correctly.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS trie with `{}` children vs Swift's `[Character: Node]`: what does grapheme-aware keying fix?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Class nodes vs an indirect enum for a trie: why are classes simpler here?"
+    },
+    {
+      "kind": "edge",
+      "q": "Memory: a trie of 100k words has many small dictionaries. What would a compact representation look like?"
+    },
+    {
+      "kind": "practice",
+      "q": "Search-as-you-type suggestions: trie on device, or a server endpoint?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g&t=1852s",
+      "channel": "Paul Hudson",
+      "start": 1852,
+      "moment": "allows me to look through a huge string of letters to find all the repeating substrings very very easily"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -14,11 +14,70 @@
     {
       "title": "Concurrency — Actors",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "hints": [
     "Two of these three are reference types.",
     "`a2.bump()` changes the same actor that `a1` refers to.",
     "Last line: `1 2 true`."
+  ],
+  "impact": "core",
+  "jsBridge": "Three kinds of type: **struct** (copied, like JS primitives), **class** (shared reference, like JS objects) and **actor** (a shared reference with serialised access, which JS doesn't have). Knowing which to choose is a core senior-level Swift skill.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS only has the class-like option. For each of struct, class and actor, what's one bug it prevents or allows?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Your default choice for models, view models and caches: struct, `@MainActor class`, or actor? Why?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can an actor be subclassed? Can it conform to protocols with sync requirements?"
+    },
+    {
+      "kind": "practice",
+      "q": "When would making something an actor be *worse* than a `@MainActor` class (UI state, needless `await`s)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=17s",
+      "channel": "Swiftful Thinking",
+      "start": 17,
+      "moment": "we're going to dive in as deep as we possibly can into the Swift language right now. We are going to learn"
+    },
+    {
+      "title": "How to break up structs and classes – Daniel Steinberg on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=_ZAuILBDduQ&t=151s",
+      "channel": "Paul Hudson",
+      "start": 151,
+      "moment": "the reason no but the reason I do it is because people would think especially once you get to listen things that these"
+    },
+    {
+      "title": "Swift - Class vs. Struct Explained",
+      "url": "https://www.youtube.com/watch?v=LtlbB4-6k_U",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "a very common iOS Developer interview question is to explain the difference between classes and structs I'm going to teach you the answer to that question by ex"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

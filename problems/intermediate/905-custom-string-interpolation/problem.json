@@ -13,6 +13,14 @@
     {
       "title": "DefaultStringInterpolation",
       "url": "https://developer.apple.com/documentation/swift/defaultstringinterpolation"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -30,5 +38,48 @@
     "Each `\\(…)` segment calls an `appendInterpolation` method you can overload.",
     "Extend `String.StringInterpolation` with a `mutating func appendInterpolation(cents value: Int)`.",
     "Inside, format the text and call `appendLiteral(…)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Extending `String.StringInterpolation` with `appendInterpolation(cents:)` enables `\"\\(cents: 1234)\"`. It's like a JS tagged template, but per-argument and type-checked, and it's how SwiftUI's `Text` and `os.Logger` interpolation work.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS tagged templates receive all parts at once. How does Swift's per-segment `appendInterpolation` differ?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Logger` uses custom interpolation for `privacy: .private`. How does that redact values in logs?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you add an interpolation that throws? That takes a closure?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom interpolation vs a helper function `money(cents)`: which reads better?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=19s",
+      "channel": "Swiftful Thinking",
+      "start": 19,
+      "moment": "data that data always has a type it's a type of data and so in this video we're going to look at some of those basic"
+    },
+    {
+      "title": "Super-powered string interpolation in Swift 5.0",
+      "url": "https://www.youtube.com/watch?v=T0_BWu4aIRQ",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] swift v is changing away string interpolation works so in this video I"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

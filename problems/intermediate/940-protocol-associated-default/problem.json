@@ -36,5 +36,55 @@
     "Each conforming type decides what `Item` is by how it writes `score`.",
     "Write `total` once in an extension, generic over any sequence whose elements are `Item`.",
     "`func total<S: Sequence>(_ items: S) -> Int where S.Element == Item { items.reduce(0) { $0 + score($1) } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`associatedtype` makes a protocol generic over a type chosen by the conformer, which TS interfaces do with generic parameters (`Scorer<Item>`). The Swift difference is that the conformer picks it, and callers can constrain it with `where`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `interface Scorer<T>` vs Swift `protocol Scorer { associatedtype Item }`: who decides `T` in each?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Associated types vs generic protocols: why doesn't Swift have `protocol Scorer<Item>` like TS? (Primary associated types in 5.7 do something related.)"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't you write `[any Scorer]` and call `score` on each without knowing `Item`?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Collection.Element` and `Identifiable.ID` are associated types you use daily. Spot them."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Generics in Swift | Advanced Learning #8",
+      "url": "https://www.youtube.com/watch?v=rx3uRICZr5I&t=874s",
+      "channel": "Swiftful Thinking",
+      "start": 874,
+      "moment": "i can say let me be content of type view well"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=383s",
+      "channel": "Paul Hudson",
+      "start": 383,
+      "moment": "astronauts it could be a dictionary of something else entirely the problem is Swift can't be sure the type we're"
+    },
+    {
+      "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+      "url": "https://www.youtube.com/watch?v=a3AH0ItFTKU",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "generics can be intimidating and confusing angle brackets single letter types protocol conformance what's going on here this video teaches you what generics are"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

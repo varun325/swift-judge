@@ -18,8 +18,9 @@
     "package": "electron-vite build && node scripts/package.mjs",
     "install-app": "npm run package && node scripts/package.mjs --install",
     "package:win": "electron-vite build && node scripts/package.mjs --win",
-    "package:dmg": "electron-vite build && node scripts/package.mjs && node scripts/package.mjs --dmg",
-    "check-links": "node scripts/check-links.mjs"
+    "package:dmg": "electron-vite build && node scripts/package.mjs --portable && node scripts/package.mjs --dmg",
+    "check-links": "node scripts/check-links.mjs",
+    "stress": "tsx scripts/stress.ts"
   },
   "dependencies": {
     "zod": "^4.6.5"

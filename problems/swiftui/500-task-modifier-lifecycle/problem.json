@@ -12,7 +12,15 @@
   "docs": [
     {
       "title": "task(id:priority:_:)",
-      "url": "https://developer.apple.com/documentation/swiftui/view/task(id:priority:_:)"
+      "url": "https://developer.apple.com/documentation/swiftui/view"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -34,5 +42,35 @@
     "Keep a reference to the current `Task` so you can cancel it.",
     "Restart only when the id actually changes; `disappear` cancels.",
     "The task checks `Task.isCancelled` after its sleep."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`.task(id:)` starts async work when the view appears, cancels on disappear, and restarts when `id` changes. That's React's `useEffect` with a dependency array and an `AbortController` cleanup, built in.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`useEffect(() => { const c = new AbortController(); load(q, c.signal); return () => c.abort() }, [q])` vs `.task(id: q)`: what do you no longer write?"
+    },
+    {
+      "kind": "edge",
+      "q": "If your loader ignores cancellation, what happens when `id` changes quickly (stale results)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.task` vs `.onAppear { Task { } }`: which cancels automatically?"
+    },
+    {
+      "kind": "practice",
+      "q": "Search-as-you-type with `.task(id: query)` plus a short `Task.sleep` gives debouncing. Why does that work?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6",
+      "url": "https://www.youtube.com/watch?v=epBbbysk5cU&t=14s",
+      "channel": "Swiftful Thinking",
+      "start": 14,
+      "moment": "if we have a whole bunch of asynchronous functions that we need to run like maybe 10 or 20. uh"
+    }
+  ],
+  "articles": []
 }

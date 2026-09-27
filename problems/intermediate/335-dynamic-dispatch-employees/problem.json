@@ -36,5 +36,56 @@
     "A subclass replaces a parent method with `override`; the object's real type decides which runs.",
     "Each subclass overrides `summary()`; the manager's version calls `super.summary()`.",
     "`override func summary() -> String { \"I schedule meetings for \\(hours) hours, then \" + super.summary() }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Overriding works like JS classes (`class Developer extends Employee`), and the call goes to the runtime type (dynamic dispatch). Swift requires the `override` keyword, and `final` turns dispatch static. JS has neither.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS prototypes dispatch dynamically always. What does Swift's `final` buy (performance, intent), and why do Swift style guides mark classes `final` by default?"
+    },
+    {
+      "kind": "java",
+      "q": "Java methods are virtual by default and `@Override` is optional. Why did Swift make `override` mandatory?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Class inheritance vs protocol with default implementations: which does Swift prefer for sharing behaviour?"
+    },
+    {
+      "kind": "practice",
+      "q": "UIKit subclassing (`UIViewController`) is everywhere. Why does SwiftUI avoid inheritance entirely?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Class inheritance – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=zv8Lia5Ertk",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift For Beginners - Class & Inheritance Explained",
+      "url": "https://www.youtube.com/watch?v=EhDML-fAqTM&t=568s",
+      "channel": "Sean Allen",
+      "start": 568,
+      "moment": "what we're gonna talk about now is inheritance because this is a big reason why you would use a class so inheritance"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -30,5 +30,51 @@
     "`willSet` sees `newValue`; `didSet` runs after the store.",
     "Log in `willSet`; in `didSet`, clamp the property into `0...100` (this doesn't re-trigger the observers), then log the final value.",
     "`didSet { volume = min(max(volume, 0), 100); log.append(\"did \\(volume)\") }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`willSet`/`didSet` run around a stored property's change, like a JS setter wrapping a private field, or MobX reactions. They don't fire during `init`, and setting the property inside `didSet` doesn't recurse.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS you'd implement this with a private `_volume` and a setter. What boilerplate do observers remove?"
+    },
+    {
+      "kind": "edge",
+      "q": "Do observers fire during `init`? When you pass the property as `inout`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`didSet` vs a SwiftUI `.onChange(of:)`: where should clamping logic live?"
+    },
+    {
+      "kind": "practice",
+      "q": "`@Published var x { didSet { … } }`: does the observer run before or after subscribers see the new value?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Property observers: didSet – 7 Swifty Words, part 5",
+      "url": "https://www.youtube.com/watch?v=_0nER-JW9tU",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] there's one last thing to do this project before it's done and it's both"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

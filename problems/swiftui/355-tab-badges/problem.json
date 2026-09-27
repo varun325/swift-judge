@@ -18,6 +18,10 @@
     {
       "title": "badge(_:)",
       "url": "https://developer.apple.com/documentation/swiftui/view/badge(_:)-84e43"
+    },
+    {
+      "title": "NavigationStack",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationstack"
     }
   ],
   "signature": {
@@ -38,5 +42,47 @@
     "Use an enum for tab selection and a `[Tab: Int]` for badges.",
     "Selecting inbox clears its badge; `logout` resets everything.",
     "Print tabs in `allCases` order, marking the selected one."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "A `TabView` with `selection` bound to an enum, plus `.badge(count)`, is like a React tab bar with an active-tab state and notification counts, but native tab bars handle accessibility and overflow for you.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A web tab bar is a custom component. What do you get free with a native `TabView` (accessibility, iPad sidebar adaptation)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Badge value 0: does it show? What about 1,000 (\"999+\")?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Selection as an enum vs `Int` tags: which survives reordering tabs?"
+    },
+    {
+      "kind": "practice",
+      "q": "Tapping the current tab should scroll to top and pop to root. How would you detect a re-tap?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to add Badges to SwiftUI TabView and List in iOS 15 | Bootcamp #59",
+      "url": "https://www.youtube.com/watch?v=Nt1loGvkQkM&t=2s",
+      "channel": "Swiftful Thinking",
+      "start": 2,
+      "moment": "What's up, everyone? Another quick video coming at you guys today. We're going to look at how we can add badges into our"
+    },
+    {
+      "title": "Creating tabs with TabView and tabItem() – Hot Prospects 2/16",
+      "url": "https://www.youtube.com/watch?v=0tzHBIS59Ko&t=160s",
+      "channel": "Paul Hudson",
+      "start": 160,
+      "moment": "could say this is a button called show tab two and when it's pressed we'll say select the tab is equal to two as a"
+    },
+    {
+      "title": "SwiftUI - TabView Tutorial",
+      "url": "https://www.youtube.com/watch?v=tnNFoZ7CkP8",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

@@ -13,6 +13,10 @@
     {
       "title": "Collection Types — Sets",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Set",
+      "url": "https://developer.apple.com/documentation/swift/set"
     }
   ],
   "signature": {
@@ -30,5 +34,55 @@
     "Which collection type refuses to store duplicates?",
     "Build a `Set` from the array; its `count` is the unique count.",
     "`[items.count, Set(items).count]`"
+  ],
+  "impact": "edge",
+  "jsBridge": "`new Set(arr).size` in JS is `Set(arr).count` in Swift. The difference is that Swift requires the element type to be `Hashable`, where JS silently uses identity.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new Set([[1],[1]]).size` is 2 in JS. What would `Set([[1],[1]]).count` be in Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Counting unique items via `Set` vs `Dictionary(grouping:)`: when do you need the counts too?"
+    },
+    {
+      "kind": "edge",
+      "q": "Are `\"café\"` (precomposed) and `\"café\"` (decomposed) one element or two in a Swift `Set<String>`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Unique counts show up in analytics, like \"distinct screens visited\". Where should those be computed?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+      "url": "https://www.youtube.com/watch?v=WxHsQDbIdl8&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "and source control. And before we actually can go ahead and use it, we need to do some setup. So this video is"
+    },
+    {
+      "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=9GjGRqK8LSw&t=347s",
+      "channel": "Paul Hudson",
+      "start": 347,
+      "moment": "time at all now i mentioned contains alongside that"
+    },
+    {
+      "title": "Swift Basics: Array vs. Set",
+      "url": "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=87s",
+      "channel": "Sean Allen",
+      "start": 87,
+      "moment": "be in the same order those are really desirable attributes of an array but again remember the trade-off that makes arrays less performant or as a set when it's "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

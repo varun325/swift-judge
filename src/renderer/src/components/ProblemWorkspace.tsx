@@ -4,10 +4,19 @@ import type { LearnBundle, ProblemView } from '../../../shared/api'
 import type { JudgeResult, ReviewState } from '../../../shared/types'
 import { monaco } from '../monaco'
 import { RUN_KEY, SUBMIT_KEY } from '../platform'
+import { Compass, compassNotes } from './Compass'
 import { Hints } from './Hints'
 import { Markdown } from './Markdown'
 import { Results } from './Results'
 import { dayKey, FIB_DAYS, intervalLabel } from '../../../shared/review'
+
+/** Seconds → "m:ss" or "h:mm:ss" for video timestamps. */
+function clock(seconds: number): string {
+  const h = Math.floor(seconds / 3600)
+  const m = Math.floor((seconds % 3600) / 60)
+  const s = String(seconds % 60).padStart(2, '0')
+  return h ? `${h}:${String(m).padStart(2, '0')}:${s}` : `${m}:${s}`
+}
 
 type LeftTab = 'description' | 'learn' | 'solution'
 
@@ -19,12 +28,13 @@ interface Props {
   review?: ReviewState
   onProgress: () => void
   onOpenBook: (path: string) => void
+  onOpenPlayground: (pageId: string) => void
   onNext: () => void
 }
 
 const USER_FILE = { function: 'user.swift', stdio: 'main.swift', diagnostic: 'main.swift', predict: 'main.swift' }
 
-export function ProblemWorkspace({ id, solved, draft, hintsRevealed, review, onProgress, onOpenBook, onNext }: Props): React.JSX.Element {
+export function ProblemWorkspace({ id, solved, draft, hintsRevealed, review, onProgress, onOpenBook, onOpenPlayground, onNext }: Props): React.JSX.Element {
   const [problem, setProblem] = useState<ProblemView>()
   const [learn, setLearn] = useState<LearnBundle>()
   const [left, setLeft] = useState<LeftTab>('description')
@@ -173,11 +183,18 @@ export function ProblemWorkspace({ id, solved, draft, hintsRevealed, review, onP
               )}
               <Markdown source={problem.statement} />
               {meta.jsBridge && (
-                <details className="js-bridge" open>
+                <details className="js-bridge">
                   <summary>Coming from JavaScript</summary>
                   <Markdown source={meta.jsBridge} />
                 </details>
               )}
+              <Compass
+                meta={meta}
+                onAnswer={() => {
+                  const page = compassNotes(meta)
+                  void window.judge.playground.ensure(page.title, page.code, page.notes).then(onOpenPlayground)
+                }}
+              />
               {problem.snippet && <Markdown source={'```swift\n' + problem.snippet + '\n```'} />}
               {meta.signature && (
                 <div className="signature">
@@ -290,7 +307,12 @@ function LearnPanel({ learn, onOpenBook }: { learn: LearnBundle; onOpenBook: (p:
           <div className="label">Videos</div>
           {learn.videos.map((v) => (
             <a key={v.url} className="doc-link video-link" href={v.url} target="_blank" rel="noreferrer">
-              ▶ {v.title}<span className="channel">{v.channel}</span>
+              ▶ {v.title}
+              <span className="channel">
+                {v.channel}
+                {v.start !== undefined && <span className="timestamp"> · jumps to {clock(v.start)}</span>}
+              </span>
+              {v.moment && <span className="moment">“…{v.moment}…”</span>}
             </a>
           ))}
         </div>

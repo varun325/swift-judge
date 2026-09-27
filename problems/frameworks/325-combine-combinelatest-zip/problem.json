@@ -17,6 +17,10 @@
     {
       "title": "Publisher.zip(_:)",
       "url": "https://developer.apple.com/documentation/combine/publisher/zip(_:)"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -41,5 +45,40 @@
     "Each operator combines two streams differently: latest values, strict pairs, or interleaving.",
     "`a.combineLatest(b)`, `a.zip(b)`, and `a.map(…).merge(with: b.map(…))`.",
     "`combineLatest` only starts emitting once both have a value."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`combineLatest` emits whenever either side changes (the latest pair), `zip` pairs values one-to-one, and `merge` interleaves same-typed streams. These are identical to RxJS's operators of the same names.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "RxJS `combineLatest`/`zip`/`merge`: any behavioural differences in Combine?"
+    },
+    {
+      "kind": "edge",
+      "q": "`combineLatest` before both sides have emitted once: does it emit?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Form validation from three fields: `combineLatest` or `zip`? Why is `zip` wrong here?"
+    },
+    {
+      "kind": "practice",
+      "q": "Replacing these with `@Observable` computed properties: when does that remove the need for Combine?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+      "url": "https://www.youtube.com/watch?v=ePPm2ftSVqw&t=1053s",
+      "channel": "Swiftful Thinking",
+      "start": 1053,
+      "moment": "combine so on my channel i have a advanced combine video and in that we covered a"
+    },
+    {
+      "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=bvm3ZLmwOdU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

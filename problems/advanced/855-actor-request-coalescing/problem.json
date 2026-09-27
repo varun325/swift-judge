@@ -14,6 +14,10 @@
     {
       "title": "Concurrency — Actors",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -32,5 +36,46 @@
     "Two concurrent callers can both see an empty cache if you `await` before recording anything.",
     "Store the in-flight `Task` in a dictionary *before* awaiting it; later callers await the same task.",
     "`if let existing = tasks[key] { return await existing.value }` then create, store and await a new `Task`."
+  ],
+  "impact": "core",
+  "jsBridge": "Actor **reentrancy**: while one call is `await`ing a download, another call can enter the actor. Store the in-flight `Task` in a dictionary so duplicate requests await the same task. It's the JS pattern of caching the *promise*, not the result.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The JS trick: `cache[key] ??= fetch(key)` caches the promise. What's the Swift equivalent with `Task`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why doesn't \"check cache, then download, then store\" work inside an actor? Walk through the interleaving."
+    },
+    {
+      "kind": "contrast",
+      "q": "Caching `Task<Image, Error>` vs caching `Image`: what about failures? Should a failed task stay cached?"
+    },
+    {
+      "kind": "practice",
+      "q": "Image lists requesting the same avatar 20 times: which libraries (Kingfisher, Nuke) do this for you?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Global Actors in Swift (@globalActor) | Swift Concurrency #10",
+      "url": "https://www.youtube.com/watch?v=BRBhMrJj5f4&t=12s",
+      "channel": "Swiftful Thinking",
+      "start": 12,
+      "moment": "uh we did most of the hard stuff already so uh hopefully smooth sailing for the rest of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

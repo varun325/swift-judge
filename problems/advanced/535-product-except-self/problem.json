@@ -30,5 +30,46 @@
     "The answer for `i` is (product of everything left) × (product of everything right).",
     "One pass left-to-right stores prefix products; a second pass right-to-left multiplies in suffix products.",
     "`for i in nums.indices.reversed() { answer[i] *= suffix; suffix *= nums[i] }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Prefix and suffix products in two passes, the same as JS. The Swift wrinkle: products overflow `Int` and **trap**, where JS silently loses precision. Test inputs must stay in range, or use `&*` deliberately.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS a large product silently becomes imprecise. In Swift it crashes. Which failure would you rather see in production?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Division-based O(n) vs prefix/suffix: why is division banned (zeros)?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `multipliedReportingOverflow` return? How would you surface overflow to the caller?"
+    },
+    {
+      "kind": "practice",
+      "q": "Is overflow realistic in app metrics (likes × shares)? Where would you use `Int64` or `Decimal`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Most Common Element in Array - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=0eWv1mAewx4",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "another video in my iOS interview question series and today we're going to be doing a coding challenge specifically"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

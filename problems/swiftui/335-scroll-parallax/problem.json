@@ -16,6 +16,10 @@
     {
       "title": "ScrollView",
       "url": "https://developer.apple.com/documentation/swiftui/scrollview"
+    },
+    {
+      "title": "Layout fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/layout-fundamentals"
     }
   ],
   "signature": {
@@ -41,5 +45,35 @@
     "Each effect is a small formula of the scroll offset.",
     "Pulling down (negative y) stretches; scrolling up (positive y) moves and fades.",
     "`opacity = 1 − min(max(y, 0) / h, 1)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Parallax and fade driven by scroll offset, as with `visualEffect` or `scrollTransition`. The web does this with scroll listeners or scroll-driven CSS animations, and SwiftUI gives you the geometry per frame declaratively.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS scroll-driven animations (`animation-timeline: scroll()`) vs SwiftUI `.scrollTransition`: same idea?"
+    },
+    {
+      "kind": "edge",
+      "q": "Overscroll (pulling down past the top): what should a stretchy header do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`visualEffect` vs `GeometryReader` + `onChange`: which avoids re-running `body`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Reduce Motion is on. What should parallax do (`accessibilityReduceMotion`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "ScrollView effects using visualEffect() and scrollTargetBehavior() – Layout and Geometry SwiftUI 8/8",
+      "url": "https://www.youtube.com/watch?v=c7QE4XOQ_nA&t=15s",
+      "channel": "Paul Hudson",
+      "start": 15,
+      "moment": "Alternatives that can be much easier first let's look again this current code we had from the end of the previous"
+    }
+  ],
+  "articles": []
 }

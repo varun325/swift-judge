@@ -14,6 +14,14 @@
     {
       "title": "Collection Types — Hash Values for Set Types",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Hashable",
+      "url": "https://developer.apple.com/documentation/swift/hashable"
+    },
+    {
+      "title": "Equatable",
+      "url": "https://developer.apple.com/documentation/swift/equatable"
     }
   ],
   "signature": {
@@ -31,5 +39,41 @@
     "Tuples can't go into a `Set`, but a struct can if it's `Hashable`.",
     "Declaring `: Hashable` is enough — Swift synthesises `==` and hashing because both properties are `Int`.",
     "`struct Point: Hashable { let x: Int; let y: Int }` and `Set(coords.map { Point(x: $0[0], y: $0[1]) }).count`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS `Set`s compare objects by **identity**, so two `{x:1,y:2}` objects are different. Swift compares by **value** through `Hashable`, and structs get `==` and `hash(into:)` synthesised automatically. Tuples can't conform to protocols yet, so they can't go in a `Set`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs stringify keys (`${x},${y}`) to dedupe points. What does synthesised `Hashable` give you instead, and why is it safer?"
+    },
+    {
+      "kind": "java",
+      "q": "Java requires overriding both `equals` and `hashCode` consistently. How does Swift synthesis prevent the classic \"equal but different hash\" bug?"
+    },
+    {
+      "kind": "edge",
+      "q": "If you hand-write `==` to compare only `x`, but keep the synthesised hash, what breaks?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI `ForEach` and diffable data sources need `Hashable`/`Identifiable`. What happens when two items hash equal but aren't the same row?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is Hashable protocol in SwiftUI? | Continued Learning #12",
+      "url": "https://www.youtube.com/watch?v=Oxc4dCtHPkk&t=41s",
+      "channel": "Swiftful Thinking",
+      "start": 41,
+      "moment": "hashable protocol and by conforming to hashable we are basically just giving our model"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

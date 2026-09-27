@@ -30,5 +30,41 @@
     "It's `map`, but the closure returns an optional.",
     "Loop, call the transform, and append only when `if let value = try transform(element)` succeeds.",
     "`tokens.myCompactMap { Int($0) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`compactMap` is `map` + `filter(x => x != null)` in one pass, typed so the result is non-optional. JS has no equivalent. `flatMap` with an empty array return is the usual hack.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: `arr.flatMap(x => { const n = parse(x); return n == null ? [] : [n] })`. Why is Swift's version cleaner?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the result type of `compactMap` on `[Int??]`? Does it unwrap one level or two?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`compactMap` vs `flatMap` history: why was `flatMap` for optionals renamed in Swift 4.1?"
+    },
+    {
+      "kind": "practice",
+      "q": "Parsing API arrays leniently (skip bad elements) vs strictly: where do you want each?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Inside the Standard Library: Sequence.compactMap",
+      "url": "https://www.youtube.com/watch?v=_eBNeiBaByM&t=6s",
+      "channel": "Paul Hudson",
+      "start": 6,
+      "moment": "welcome back to inside the standard library this time we're looking at the compact map method it is similar to the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

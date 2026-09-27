@@ -1,0 +1,5757 @@
+{
+ "https://cs193p.stanford.edu": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://cs193p.stanford.edu/",
+  "checkedAt": 1790528607377
+ },
+ "https://developer.apple.com/design/human-interface-guidelines": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615770
+ },
+ "https://developer.apple.com/design/human-interface-guidelines/accessibility#Color-and-effects": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+  "checkedAt": 1790528624435
+ },
+ "https://developer.apple.com/documentation/accessibility": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622281
+ },
+ "https://developer.apple.com/documentation/charts": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614844
+ },
+ "https://developer.apple.com/documentation/combine": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611045
+ },
+ "https://developer.apple.com/documentation/combine/anycancellable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611264
+ },
+ "https://developer.apple.com/documentation/combine/asyncpublisher": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611948
+ },
+ "https://developer.apple.com/documentation/combine/currentvaluesubject": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610759
+ },
+ "https://developer.apple.com/documentation/combine/future": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610928
+ },
+ "https://developer.apple.com/documentation/combine/observableobject": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623385
+ },
+ "https://developer.apple.com/documentation/combine/passthroughsubject": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610729
+ },
+ "https://developer.apple.com/documentation/combine/processing-published-elements-with-subscribers": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610524
+ },
+ "https://developer.apple.com/documentation/combine/published": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611423
+ },
+ "https://developer.apple.com/documentation/combine/publisher": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610523
+ },
+ "https://developer.apple.com/documentation/combine/publisher/catch(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611113
+ },
+ "https://developer.apple.com/documentation/combine/publisher/combinelatest(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612095
+ },
+ "https://developer.apple.com/documentation/combine/publisher/debounce(for:scheduler:options:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528595894
+ },
+ "https://developer.apple.com/documentation/combine/publisher/throttle(for:scheduler:latest:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528595922
+ },
+ "https://developer.apple.com/documentation/combine/publisher/trymap(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611073
+ },
+ "https://developer.apple.com/documentation/combine/publisher/values-1dm9r": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611965
+ },
+ "https://developer.apple.com/documentation/combine/publisher/zip(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611208
+ },
+ "https://developer.apple.com/documentation/coredata": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611572
+ },
+ "https://developer.apple.com/documentation/coredata/nsdeleterule": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611953
+ },
+ "https://developer.apple.com/documentation/coredata/nsfetchrequest": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611571
+ },
+ "https://developer.apple.com/documentation/coredata/nsfetchrequest/fetchlimit": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612677
+ },
+ "https://developer.apple.com/documentation/coredata/nsfetchrequest/fetchoffset": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612096
+ },
+ "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/perform(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612284
+ },
+ "https://developer.apple.com/documentation/coredata/nspersistentcontainer": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611570
+ },
+ "https://developer.apple.com/documentation/coredata/nsrelationshipdescription": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611887
+ },
+ "https://developer.apple.com/documentation/coredata/using-core-data-in-the-background": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612882
+ },
+ "https://developer.apple.com/documentation/corefoundation/cgfloat": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct",
+  "checkedAt": 1790528608426
+ },
+ "https://developer.apple.com/documentation/corelocation": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612761
+ },
+ "https://developer.apple.com/documentation/corelocation/cllocation": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612748
+ },
+ "https://developer.apple.com/documentation/cryptokit": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613295
+ },
+ "https://developer.apple.com/documentation/cryptokit/aes/gcm": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613347
+ },
+ "https://developer.apple.com/documentation/cryptokit/hmac": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613330
+ },
+ "https://developer.apple.com/documentation/cryptokit/sha256": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601226
+ },
+ "https://developer.apple.com/documentation/dispatch": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528602660
+ },
+ "https://developer.apple.com/documentation/dispatch/dispatchgroup": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615239
+ },
+ "https://developer.apple.com/documentation/dispatch/dispatchqueue": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615820
+ },
+ "https://developer.apple.com/documentation/foundation": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601419
+ },
+ "https://developer.apple.com/documentation/foundation/attributedstring": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613460
+ },
+ "https://developer.apple.com/documentation/foundation/bytecountformatstyle": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608947
+ },
+ "https://developer.apple.com/documentation/foundation/calendar": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609080
+ },
+ "https://developer.apple.com/documentation/foundation/calendar/nextdate(after:matching:matchingpolicy:repeatedtimepolicy:direction:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614357
+ },
+ "https://developer.apple.com/documentation/foundation/data-formatting": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608613
+ },
+ "https://developer.apple.com/documentation/foundation/data/write(to:options:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613222
+ },
+ "https://developer.apple.com/documentation/foundation/date": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607189
+ },
+ "https://developer.apple.com/documentation/foundation/date/iso8601formatstyle": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609297
+ },
+ "https://developer.apple.com/documentation/foundation/datecomponents": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608790
+ },
+ "https://developer.apple.com/documentation/foundation/dateinterval": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609998
+ },
+ "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528600763
+ },
+ "https://developer.apple.com/documentation/foundation/fetching-website-data-into-memory": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609997
+ },
+ "https://developer.apple.com/documentation/foundation/filemanager": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528602232
+ },
+ "https://developer.apple.com/documentation/foundation/formatstyle": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609151
+ },
+ "https://developer.apple.com/documentation/foundation/jsondecoder": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528600881
+ },
+ "https://developer.apple.com/documentation/foundation/jsondecoder/datedecodingstrategy": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://developer.apple.com/documentation/foundation/jsondecoder/datedecodingstrategy-swift.enum",
+  "checkedAt": 1790528610407
+ },
+ "https://developer.apple.com/documentation/foundation/jsonencoder": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608431
+ },
+ "https://developer.apple.com/documentation/foundation/keypathcomparator": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615563
+ },
+ "https://developer.apple.com/documentation/foundation/listformatstyle": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609474
+ },
+ "https://developer.apple.com/documentation/foundation/localizederror": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619200
+ },
+ "https://developer.apple.com/documentation/foundation/measurement": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608760
+ },
+ "https://developer.apple.com/documentation/foundation/notificationcenter": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613145
+ },
+ "https://developer.apple.com/documentation/foundation/notificationcenter/notifications(named:object:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613146
+ },
+ "https://developer.apple.com/documentation/foundation/nscache": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528602034
+ },
+ "https://developer.apple.com/documentation/foundation/nspredicate": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612308
+ },
+ "https://developer.apple.com/documentation/foundation/parsestrategy": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609506
+ },
+ "https://developer.apple.com/documentation/foundation/personnamecomponents": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608948
+ },
+ "https://developer.apple.com/documentation/foundation/predicate": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608035
+ },
+ "https://developer.apple.com/documentation/foundation/sortdescriptor": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615455
+ },
+ "https://developer.apple.com/documentation/foundation/timer": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623359
+ },
+ "https://developer.apple.com/documentation/foundation/timezone": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609338
+ },
+ "https://developer.apple.com/documentation/foundation/unitlength": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608755
+ },
+ "https://developer.apple.com/documentation/foundation/urlcomponents": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610361
+ },
+ "https://developer.apple.com/documentation/foundation/urlqueryitem": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610370
+ },
+ "https://developer.apple.com/documentation/foundation/urlrequest": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610943
+ },
+ "https://developer.apple.com/documentation/foundation/urlsession": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609824
+ },
+ "https://developer.apple.com/documentation/foundation/userdefaults": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610885
+ },
+ "https://developer.apple.com/documentation/foundation/uuid": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601609
+ },
+ "https://developer.apple.com/documentation/healthkit": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614753
+ },
+ "https://developer.apple.com/documentation/healthkit/hkstatisticscollectionquery": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614777
+ },
+ "https://developer.apple.com/documentation/imageio": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616660
+ },
+ "https://developer.apple.com/documentation/imageio/cgimagesourcecreatethumbnailatindex(_:_:_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616584
+ },
+ "https://developer.apple.com/documentation/mapkit": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612950
+ },
+ "https://developer.apple.com/documentation/mapkit/mkcoordinateregion": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613668
+ },
+ "https://developer.apple.com/documentation/network/nwpathmonitor": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616522
+ },
+ "https://developer.apple.com/documentation/observation": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620245
+ },
+ "https://developer.apple.com/documentation/observation/observable()": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620483
+ },
+ "https://developer.apple.com/documentation/sign_in_with_apple": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://developer.apple.com/documentation/signinwithapple",
+  "checkedAt": 1790528615027
+ },
+ "https://developer.apple.com/documentation/storekit": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614448
+ },
+ "https://developer.apple.com/documentation/storekit/requestreviewaction": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615889
+ },
+ "https://developer.apple.com/documentation/storekit/transaction": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614716
+ },
+ "https://developer.apple.com/documentation/swift/array": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528595480
+ },
+ "https://developer.apple.com/documentation/swift/asyncsequence": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528604101
+ },
+ "https://developer.apple.com/documentation/swift/asyncthrowingstream": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603182
+ },
+ "https://developer.apple.com/documentation/swift/bool": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528605041
+ },
+ "https://developer.apple.com/documentation/swift/caseiterable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528605966
+ },
+ "https://developer.apple.com/documentation/swift/character": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528604639
+ },
+ "https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603901
+ },
+ "https://developer.apple.com/documentation/swift/closedrange": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528605612
+ },
+ "https://developer.apple.com/documentation/swift/collection": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528598258
+ },
+ "https://developer.apple.com/documentation/swift/collectiondifference": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528624153
+ },
+ "https://developer.apple.com/documentation/swift/comparable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528618911
+ },
+ "https://developer.apple.com/documentation/swift/concurrency": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528600200
+ },
+ "https://developer.apple.com/documentation/swift/copyable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528600037
+ },
+ "https://developer.apple.com/documentation/swift/decodable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609538
+ },
+ "https://developer.apple.com/documentation/swift/defaultstringinterpolation": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528618912
+ },
+ "https://developer.apple.com/documentation/swift/dictionary": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528595120
+ },
+ "https://developer.apple.com/documentation/swift/double": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528604364
+ },
+ "https://developer.apple.com/documentation/swift/duration": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603559
+ },
+ "https://developer.apple.com/documentation/swift/equatable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528598667
+ },
+ "https://developer.apple.com/documentation/swift/error": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601806
+ },
+ "https://developer.apple.com/documentation/swift/hashable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528598643
+ },
+ "https://developer.apple.com/documentation/swift/hasher": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615644
+ },
+ "https://developer.apple.com/documentation/swift/identifiable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607375
+ },
+ "https://developer.apple.com/documentation/swift/inlinearray": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528596771
+ },
+ "https://developer.apple.com/documentation/swift/int": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528604919
+ },
+ "https://developer.apple.com/documentation/swift/int128": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528597694
+ },
+ "https://developer.apple.com/documentation/swift/keypath": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528597575
+ },
+ "https://developer.apple.com/documentation/swift/mainactor": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603045
+ },
+ "https://developer.apple.com/documentation/swift/memorylayout": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528599870
+ },
+ "https://developer.apple.com/documentation/swift/objectidentifier": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614191
+ },
+ "https://developer.apple.com/documentation/swift/optional": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528596379
+ },
+ "https://developer.apple.com/documentation/swift/range": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528605598
+ },
+ "https://developer.apple.com/documentation/swift/readline(strippingnewline:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528602450
+ },
+ "https://developer.apple.com/documentation/swift/regex": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601118
+ },
+ "https://developer.apple.com/documentation/swift/result": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528602658
+ },
+ "https://developer.apple.com/documentation/swift/sendable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603387
+ },
+ "https://developer.apple.com/documentation/swift/sequence": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528598278
+ },
+ "https://developer.apple.com/documentation/swift/sequence/compactmap(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528618203
+ },
+ "https://developer.apple.com/documentation/swift/sequence/contains(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528618387
+ },
+ "https://developer.apple.com/documentation/swift/sequence/flatmap(_:)-jo2y": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528618454
+ },
+ "https://developer.apple.com/documentation/swift/sequence/map(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528618193
+ },
+ "https://developer.apple.com/documentation/swift/sequence/reduce(_:_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528595456
+ },
+ "https://developer.apple.com/documentation/swift/set": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528605281
+ },
+ "https://developer.apple.com/documentation/swift/span": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528596703
+ },
+ "https://developer.apple.com/documentation/swift/string": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528595555
+ },
+ "https://developer.apple.com/documentation/swift/swift-standard-library": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528604304
+ },
+ "https://developer.apple.com/documentation/swift/task": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528604076
+ },
+ "https://developer.apple.com/documentation/swift/task/sleep(for:tolerance:clock:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528610139
+ },
+ "https://developer.apple.com/documentation/swift/tasklocal": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603377
+ },
+ "https://developer.apple.com/documentation/swift/unkeyeddecodingcontainer": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528609790
+ },
+ "https://developer.apple.com/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603233
+ },
+ "https://developer.apple.com/documentation/swift/withthrowingtaskgroup(of:returning:isolation:body:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603826
+ },
+ "https://developer.apple.com/documentation/swiftdata": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613004
+ },
+ "https://developer.apple.com/documentation/swiftdata/": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612410
+ },
+ "https://developer.apple.com/documentation/swiftdata/attribute(_:originalname:hashmodifier:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612630
+ },
+ "https://developer.apple.com/documentation/swiftdata/fetchdescriptor": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608059
+ },
+ "https://developer.apple.com/documentation/swiftdata/model()": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607904
+ },
+ "https://developer.apple.com/documentation/swiftdata/modelcontext": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612979
+ },
+ "https://developer.apple.com/documentation/swiftdata/relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528612618
+ },
+ "https://developer.apple.com/documentation/swiftdata/transient()": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608599
+ },
+ "https://developer.apple.com/documentation/swiftui/accessibility-fundamentals": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615131
+ },
+ "https://developer.apple.com/documentation/swiftui/angle": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622802
+ },
+ "https://developer.apple.com/documentation/swiftui/animatable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619586
+ },
+ "https://developer.apple.com/documentation/swiftui/animatablepair": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620293
+ },
+ "https://developer.apple.com/documentation/swiftui/animation": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620081
+ },
+ "https://developer.apple.com/documentation/swiftui/anyview": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619696
+ },
+ "https://developer.apple.com/documentation/swiftui/appstorage": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623630
+ },
+ "https://developer.apple.com/documentation/swiftui/bindable": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607727
+ },
+ "https://developer.apple.com/documentation/swiftui/binding": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620481
+ },
+ "https://developer.apple.com/documentation/swiftui/color": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528606852
+ },
+ "https://developer.apple.com/documentation/swiftui/color/resolved": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620348
+ },
+ "https://developer.apple.com/documentation/swiftui/draggesture": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621814
+ },
+ "https://developer.apple.com/documentation/swiftui/draggesture/value": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622351
+ },
+ "https://developer.apple.com/documentation/swiftui/dynamictypesize": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622177
+ },
+ "https://developer.apple.com/documentation/swiftui/dynamicviewcontent/onmove(perform:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621015
+ },
+ "https://developer.apple.com/documentation/swiftui/entry()": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621007
+ },
+ "https://developer.apple.com/documentation/swiftui/environment": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528672668
+ },
+ "https://developer.apple.com/documentation/swiftui/environmentvalues": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621416
+ },
+ "https://developer.apple.com/documentation/swiftui/focusstate": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621945
+ },
+ "https://developer.apple.com/documentation/swiftui/foreach": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607902
+ },
+ "https://developer.apple.com/documentation/swiftui/form": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621943
+ },
+ "https://developer.apple.com/documentation/swiftui/geometryreader": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608236
+ },
+ "https://developer.apple.com/documentation/swiftui/gestures": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622612
+ },
+ "https://developer.apple.com/documentation/swiftui/gesturestate": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608427
+ },
+ "https://developer.apple.com/documentation/swiftui/griditem": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621277
+ },
+ "https://developer.apple.com/documentation/swiftui/layout": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528606708
+ },
+ "https://developer.apple.com/documentation/swiftui/layout-fundamentals": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621046
+ },
+ "https://developer.apple.com/documentation/swiftui/lazyvgrid": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621759
+ },
+ "https://developer.apple.com/documentation/swiftui/lazyvstack": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616086
+ },
+ "https://developer.apple.com/documentation/swiftui/list": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607514
+ },
+ "https://developer.apple.com/documentation/swiftui/longpressgesture": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622447
+ },
+ "https://developer.apple.com/documentation/swiftui/magnifygesture": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622165
+ },
+ "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619249
+ },
+ "https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623430
+ },
+ "https://developer.apple.com/documentation/swiftui/navigationpath": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620758
+ },
+ "https://developer.apple.com/documentation/swiftui/navigationsplitview": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607695
+ },
+ "https://developer.apple.com/documentation/swiftui/navigationstack": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613536
+ },
+ "https://developer.apple.com/documentation/swiftui/path": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619434
+ },
+ "https://developer.apple.com/documentation/swiftui/phaseanimator": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528624467
+ },
+ "https://developer.apple.com/documentation/swiftui/preferencekey": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621378
+ },
+ "https://developer.apple.com/documentation/swiftui/rotategesture": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622323
+ },
+ "https://developer.apple.com/documentation/swiftui/scenephase": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528624798
+ },
+ "https://developer.apple.com/documentation/swiftui/scrollview": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622995
+ },
+ "https://developer.apple.com/documentation/swiftui/scrollviewproxy/scrollto(_:anchor:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528624165
+ },
+ "https://developer.apple.com/documentation/swiftui/scrollviewreader": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528624275
+ },
+ "https://developer.apple.com/documentation/swiftui/section": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621128
+ },
+ "https://developer.apple.com/documentation/swiftui/shape": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608231
+ },
+ "https://developer.apple.com/documentation/swiftui/shape/trim(from:to:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620284
+ },
+ "https://developer.apple.com/documentation/swiftui/simultaneousgesture": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608976
+ },
+ "https://developer.apple.com/documentation/swiftui/slider": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623270
+ },
+ "https://developer.apple.com/documentation/swiftui/state": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619655
+ },
+ "https://developer.apple.com/documentation/swiftui/stepper": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623275
+ },
+ "https://developer.apple.com/documentation/swiftui/tabview": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622948
+ },
+ "https://developer.apple.com/documentation/swiftui/text": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622148
+ },
+ "https://developer.apple.com/documentation/swiftui/text/init(_:style:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607190
+ },
+ "https://developer.apple.com/documentation/swiftui/transaction": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607628
+ },
+ "https://developer.apple.com/documentation/swiftui/unitcurve": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621356
+ },
+ "https://developer.apple.com/documentation/swiftui/userinterfacesizeclass": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607706
+ },
+ "https://developer.apple.com/documentation/swiftui/vectorarithmetic": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620336
+ },
+ "https://developer.apple.com/documentation/swiftui/view": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528606527
+ },
+ "https://developer.apple.com/documentation/swiftui/view-accessibility": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615091
+ },
+ "https://developer.apple.com/documentation/swiftui/view/accessibilitylabel(_:)-1d7jv": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615128
+ },
+ "https://developer.apple.com/documentation/swiftui/view/badge(_:)-84e43": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622978
+ },
+ "https://developer.apple.com/documentation/swiftui/view/layoutpriority(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528606718
+ },
+ "https://developer.apple.com/documentation/swiftui/view/onappear(perform:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616090
+ },
+ "https://developer.apple.com/documentation/swiftui/view/onopenurl(perform:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528621324
+ },
+ "https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623631
+ },
+ "https://developer.apple.com/documentation/swiftui/view/ontapgesture(count:perform:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528607001
+ },
+ "https://developer.apple.com/documentation/swiftui/view/phaseanimator(_:trigger:content:animation:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623972
+ },
+ "https://developer.apple.com/documentation/swiftui/view/scrolltargetbehavior(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622600
+ },
+ "https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528620608
+ },
+ "https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528608428
+ },
+ "https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623491
+ },
+ "https://developer.apple.com/documentation/swiftui/view/visualeffect(_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528622929
+ },
+ "https://developer.apple.com/documentation/swiftui/viewbuilder": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528600675
+ },
+ "https://developer.apple.com/documentation/swiftui/viewmodifier": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619574
+ },
+ "https://developer.apple.com/documentation/swiftui/viewthatfits": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528623188
+ },
+ "https://developer.apple.com/documentation/swiftui/withanimation(_:_:)": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528606979
+ },
+ "https://developer.apple.com/documentation/testing": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613669
+ },
+ "https://developer.apple.com/documentation/uikit": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616024
+ },
+ "https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://developer.apple.com/documentation/uikit/nsdiffabledatasourcesnapshot-swift.struct",
+  "checkedAt": 1790528615771
+ },
+ "https://developer.apple.com/documentation/uikit/updating-collection-views-using-diffable-data-sources": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615404
+ },
+ "https://developer.apple.com/documentation/usernotifications": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614001
+ },
+ "https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614347
+ },
+ "https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614375
+ },
+ "https://developer.apple.com/documentation/widgetkit": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613793
+ },
+ "https://developer.apple.com/documentation/widgetkit/timeline": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614373
+ },
+ "https://developer.apple.com/documentation/xcode/localization": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528624483
+ },
+ "https://developer.apple.com/documentation/xcode/supporting-associated-domains": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616541
+ },
+ "https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528616094
+ },
+ "https://developer.apple.com/documentation/xctest": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528613678
+ },
+ "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528611752
+ },
+ "https://developer.apple.com/videos/play/wwdc2015/408/": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528619276
+ },
+ "https://developer.apple.com/videos/play/wwdc2021/10022/": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528628127
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/accesscontrol/",
+  "checkedAt": 1790528618640
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/advancedoperators/",
+  "checkedAt": 1790528598714
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/attributes/",
+  "checkedAt": 1790528598705
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/",
+  "checkedAt": 1790528600316
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/basicoperators/",
+  "checkedAt": 1790528605280
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures#Identity-Operators": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/classesandstructures/",
+  "checkedAt": 1790528597134
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/classesandstructures/",
+  "checkedAt": 1790528597124
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/classesandstructures/",
+  "checkedAt": 1790528599548
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/closures/",
+  "checkedAt": 1790528607398
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/collectiontypes/",
+  "checkedAt": 1790528596121
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/",
+  "checkedAt": 1790528601611
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/controlflow/",
+  "checkedAt": 1790528602928
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations#Recursive-Enumerations": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/enumerations/",
+  "checkedAt": 1790528598147
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/enumerations/",
+  "checkedAt": 1790528599070
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/errorhandling/",
+  "checkedAt": 1790528603183
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/expressions/",
+  "checkedAt": 1790528599024
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/extensions/",
+  "checkedAt": 1790528605844
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions#In-Out-Parameters": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/functions/",
+  "checkedAt": 1790528597145
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/functions/",
+  "checkedAt": 1790528604533
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/generics/",
+  "checkedAt": 1790528596175
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/inheritance/",
+  "checkedAt": 1790528600241
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/initialization/",
+  "checkedAt": 1790528600256
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/memorysafety/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/memorysafety/",
+  "checkedAt": 1790528600561
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/methods/",
+  "checkedAt": 1790528617918
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/opaquetypes/",
+  "checkedAt": 1790528598672
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/optionalchaining/",
+  "checkedAt": 1790528606381
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/properties/",
+  "checkedAt": 1790528601822
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/protocols/",
+  "checkedAt": 1790528600035
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/stringsandcharacters/",
+  "checkedAt": 1790528601869
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/thebasics/",
+  "checkedAt": 1790528603706
+ },
+ "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/typecasting/": {
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://docs.swift.org/latest/documentation/the-swift-programming-language/typecasting/",
+  "checkedAt": 1790528618503
+ },
+ "https://firebase.google.com/docs/auth/ios/start": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614931
+ },
+ "https://firebase.google.com/docs/firestore/query-data/query-cursors": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614898
+ },
+ "https://firebase.google.com/docs/ios/setup": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528614849
+ },
+ "https://github.com/apple/swift-algorithms": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528618638
+ },
+ "https://github.com/pointfreeco/swift-composable-architecture": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528615769
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0258-property-wrappers.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601085
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0289-result-builders.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601332
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528638918
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0335-existential-any.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528597799
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0352-implicit-open-existentials.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528638929
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0354-regex-literals.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528601699
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0366-move-function.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528604038
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528600634
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0427-noncopyable-generics.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528603981
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0447-span-access-shared-contiguous-storage.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528597007
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0451-escaped-identifiers.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528638883
+ },
+ "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0453-vector.md": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528660983
+ },
+ "https://www.swift.org/swift-evolution/": {
+  "ok": true,
+  "status": 200,
+  "checkedAt": 1790528597166
+ },
+ "https://www.youtube.com/watch?v=-DQaONx5WG0": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Manually publishing ObservableObject changes – Hot Prospects SwiftUI Tutorial 3/18",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528623328
+ },
+ "https://www.youtube.com/watch?v=-ErGf0_iqrw": {
+  "ok": true,
+  "status": 200,
+  "title": "Changing a view’s layout in response to size classes – SnowSeeker SwiftUI Tutorial 10/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617340
+ },
+ "https://www.youtube.com/watch?v=-IU_TvFKqjo&t=5s": {
+  "ok": true,
+  "status": 200,
+  "title": "Protocol-oriented programming – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617176
+ },
+ "https://www.youtube.com/watch?v=-IU_TvFKqjo": {
+  "ok": true,
+  "status": 200,
+  "title": "Protocol-oriented programming – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617185
+ },
+ "https://www.youtube.com/watch?v=-JLenSTKEcA&t=17s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602662
+ },
+ "https://www.youtube.com/watch?v=-JLenSTKEcA&t=1977s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617340
+ },
+ "https://www.youtube.com/watch?v=-JLenSTKEcA&t=23s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528603771
+ },
+ "https://www.youtube.com/watch?v=-JLenSTKEcA&t=26s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528601909
+ },
+ "https://www.youtube.com/watch?v=-JLenSTKEcA&t=4461s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617588
+ },
+ "https://www.youtube.com/watch?v=-SHLN2ZLqpA&t=266s": {
+  "ok": true,
+  "status": 200,
+  "title": "MortyUI, CoreData, SwiftUI Views and Snake in SwiftUI",
+  "author": "Sean Allen",
+  "checkedAt": 1790528611473
+ },
+ "https://www.youtube.com/watch?v=-a7q-q7zKCg&t=27s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Using coordinators to manage SwiftUI view controllers – Instafilter SwiftUI Tutorial 6/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528613301
+ },
+ "https://www.youtube.com/watch?v=-sw7gvNUboc&t=100s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Toggle - Button & Switch Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605415
+ },
+ "https://www.youtube.com/watch?v=-sw7gvNUboc&t=136s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Toggle - Button & Switch Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605492
+ },
+ "https://www.youtube.com/watch?v=-sw7gvNUboc&t=21s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Toggle - Button & Switch Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605283
+ },
+ "https://www.youtube.com/watch?v=-sw7gvNUboc&t=240s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Toggle - Button & Switch Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528606134
+ },
+ "https://www.youtube.com/watch?v=-sw7gvNUboc&t=73s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Toggle - Button & Switch Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605464
+ },
+ "https://www.youtube.com/watch?v=-sw7gvNUboc": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Toggle - Button & Switch Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605474
+ },
+ "https://www.youtube.com/watch?v=-yjKAb0Pj60&t=2027s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use @ObservableObject and @StateObject in SwiftUI | Bootcamp #50",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528623252
+ },
+ "https://www.youtube.com/watch?v=07_jJzw0bms": {
+  "ok": true,
+  "status": 200,
+  "title": "Adding custom row swipe actions to a List – Hot Prospects 6/16",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528620556
+ },
+ "https://www.youtube.com/watch?v=0H4G3lGnJE0&t=223s": {
+  "ok": true,
+  "status": 200,
+  "title": "Animation Curves and Animation Timing in SwiftUI | Bootcamp #26",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528621174
+ },
+ "https://www.youtube.com/watch?v=0QGt0THnlwU": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: One-to-many relationships with @FetchRequest and SwiftUI – Core Data SwiftUI Tutorial 7/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528611750
+ },
+ "https://www.youtube.com/watch?v=0eWv1mAewx4&t=158s": {
+  "ok": true,
+  "status": 200,
+  "title": "Most Common Element in Array - Swift Tutorial - iOS Interview Coding Challenge",
+  "author": "Sean Allen",
+  "checkedAt": 1790528594859
+ },
+ "https://www.youtube.com/watch?v=0eWv1mAewx4": {
+  "ok": true,
+  "status": 200,
+  "title": "Most Common Element in Array - Swift Tutorial - iOS Interview Coding Challenge",
+  "author": "Sean Allen",
+  "checkedAt": 1790528594796
+ },
+ "https://www.youtube.com/watch?v=0gM1wmW1Xvc&t=116s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Protocols in Swift | Advanced Learning #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617649
+ },
+ "https://www.youtube.com/watch?v=0gM1wmW1Xvc&t=137s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Protocols in Swift | Advanced Learning #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618755
+ },
+ "https://www.youtube.com/watch?v=0gM1wmW1Xvc&t=1454s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Protocols in Swift | Advanced Learning #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617048
+ },
+ "https://www.youtube.com/watch?v=0tzHBIS59Ko&t=160s": {
+  "ok": true,
+  "status": 200,
+  "title": "Creating tabs with TabView and tabItem() – Hot Prospects 2/16",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528622839
+ },
+ "https://www.youtube.com/watch?v=13tTI3OPzWs": {
+  "ok": true,
+  "status": 200,
+  "title": "Using closures as parameters when they return values – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616678
+ },
+ "https://www.youtube.com/watch?v=1FCw2ZXQ2bA": {
+  "ok": true,
+  "status": 200,
+  "title": "Where should new iOS developers start their career – Sean Allen on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597028
+ },
+ "https://www.youtube.com/watch?v=1HOcrAnlpgE&t=297s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Date Components & Calculations Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528608950
+ },
+ "https://www.youtube.com/watch?v=1Ho_GhA70zw": {
+  "ok": true,
+  "status": 200,
+  "title": "How to accept functions as parameters – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605619
+ },
+ "https://www.youtube.com/watch?v=1OmJJwVF7uQ&t=978s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Async Let to perform concurrent methods in Swift | Swift Concurrency #5",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600111
+ },
+ "https://www.youtube.com/watch?v=1PDZl0LPryw&t=1353s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660555
+ },
+ "https://www.youtube.com/watch?v=1QOLiELlpGk&t=342s": {
+  "ok": true,
+  "status": 200,
+  "title": "Save and persist data with UserDefaults | Todo List #4",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528610078
+ },
+ "https://www.youtube.com/watch?v=1RD8-5_Zsws&t=12s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528615020
+ },
+ "https://www.youtube.com/watch?v=1RD8-5_Zsws": {
+  "ok": true,
+  "status": 200,
+  "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528600284
+ },
+ "https://www.youtube.com/watch?v=1Y-x6Ou4v3M&t=96s": {
+  "ok": true,
+  "status": 200,
+  "title": "How the Best Subscription Apps Print Money in 2025",
+  "author": "Sean Allen",
+  "checkedAt": 1790528604549
+ },
+ "https://www.youtube.com/watch?v=1Y-x6Ou4v3M": {
+  "ok": true,
+  "status": 200,
+  "title": "How the Best Subscription Apps Print Money in 2025",
+  "author": "Sean Allen",
+  "checkedAt": 1790528597774
+ },
+ "https://www.youtube.com/watch?v=21MOQfXH2Fc": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode in 20 Seconds: Authors view",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528614444
+ },
+ "https://www.youtube.com/watch?v=27ZvPQMYS6E&t=372s": {
+  "ok": true,
+  "status": 200,
+  "title": "Animating simple shapes with animatableData – Drawing SwiftUI Tutorial 8/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619523
+ },
+ "https://www.youtube.com/watch?v=2M84O4sDe0o&t=257s": {
+  "ok": true,
+  "status": 200,
+  "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528624211
+ },
+ "https://www.youtube.com/watch?v=2M84O4sDe0o&t=308s": {
+  "ok": true,
+  "status": 200,
+  "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619697
+ },
+ "https://www.youtube.com/watch?v=2M84O4sDe0o&t=682s": {
+  "ok": true,
+  "status": 200,
+  "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528614903
+ },
+ "https://www.youtube.com/watch?v=2M84O4sDe0o": {
+  "ok": true,
+  "status": 200,
+  "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528621595
+ },
+ "https://www.youtube.com/watch?v=2c1IQ0BT0PE": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Alerts - Buttons, TextFields, & Passing Errors",
+  "author": "Sean Allen",
+  "checkedAt": 1790528618507
+ },
+ "https://www.youtube.com/watch?v=2cazK9Cg2Nw&t=150s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics - Variables and Constants",
+  "author": "Sean Allen",
+  "checkedAt": 1790528604024
+ },
+ "https://www.youtube.com/watch?v=2cazK9Cg2Nw&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics - Variables and Constants",
+  "author": "Sean Allen",
+  "checkedAt": 1790528603976
+ },
+ "https://www.youtube.com/watch?v=31sTDonbI5k": {
+  "ok": true,
+  "status": 200,
+  "title": "Posting notifications to the lock screen – Hot Prospects SwiftUI Tutorial 16/16",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528614006
+ },
+ "https://www.youtube.com/watch?v=3COmagWT6lU&t=25s": {
+  "ok": true,
+  "status": 200,
+  "title": "Integrating MapKit with SwiftUI – Bucket List SwiftUI Tutorial 4/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612821
+ },
+ "https://www.youtube.com/watch?v=3OMz0LgapFM": {
+  "ok": true,
+  "status": 200,
+  "title": "The Most Misused Design Pattern in Swift",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617244
+ },
+ "https://www.youtube.com/watch?v=3XLq6f1tbEM&t=134s": {
+  "ok": true,
+  "status": 200,
+  "title": "Why modifier order matters – Views and Modifiers SwiftUI Tutorial 3/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528621533
+ },
+ "https://www.youtube.com/watch?v=3XLq6f1tbEM&t=191s": {
+  "ok": true,
+  "status": 200,
+  "title": "Why modifier order matters – Views and Modifiers SwiftUI Tutorial 3/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618970
+ },
+ "https://www.youtube.com/watch?v=3ox38NBBiNM&t=113s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Structs - Value Type vs. Reference Type",
+  "author": "Sean Allen",
+  "checkedAt": 1790528603768
+ },
+ "https://www.youtube.com/watch?v=48JYBb5yJ0s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI - @State Property Wrapper Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528600434
+ },
+ "https://www.youtube.com/watch?v=4WzqzwJztkg": {
+  "ok": true,
+  "status": 200,
+  "title": "How to trim whitespace in a string – Swift 5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619437
+ },
+ "https://www.youtube.com/watch?v=4dQOnNYjO58&t=2s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620137
+ },
+ "https://www.youtube.com/watch?v=4dQOnNYjO58&t=562s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600326
+ },
+ "https://www.youtube.com/watch?v=4dQOnNYjO58": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528597266
+ },
+ "https://www.youtube.com/watch?v=4eOTk5y-uZI&t=134s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create custom Operators in Swift | Advanced Learning #33",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605867
+ },
+ "https://www.youtube.com/watch?v=4eOTk5y-uZI&t=17s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create custom Operators in Swift | Advanced Learning #33",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528597815
+ },
+ "https://www.youtube.com/watch?v=4eOTk5y-uZI&t=486s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create custom Operators in Swift | Advanced Learning #33",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616716
+ },
+ "https://www.youtube.com/watch?v=4eOTk5y-uZI": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create custom Operators in Swift | Advanced Learning #33",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604360
+ },
+ "https://www.youtube.com/watch?v=4iTb8ruXsjg&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "Firebase Firestore Pagination, Limits and Aggregations for iOS | Firebase Bootcamp #14",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528614262
+ },
+ "https://www.youtube.com/watch?v=4rt_Ern-DZU&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "Reviews for SwiftUI Advanced Architecture by Swiftful Thinking",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528615774
+ },
+ "https://www.youtube.com/watch?v=4xRm8MqMtG4": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Custom Path Drawing - Map Balloon Shape",
+  "author": "Sean Allen",
+  "checkedAt": 1790528619289
+ },
+ "https://www.youtube.com/watch?v=575cMa-XTX8&t=341s": {
+  "ok": true,
+  "status": 200,
+  "title": "Introduction to Swift: Polymorphism and typecasting",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617013
+ },
+ "https://www.youtube.com/watch?v=5I1ghMpU4rs&t=173s": {
+  "ok": true,
+  "status": 200,
+  "title": "New Way to Format Dates in Swift (5.5)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528609014
+ },
+ "https://www.youtube.com/watch?v=5I1ghMpU4rs&t=37s": {
+  "ok": true,
+  "status": 200,
+  "title": "New Way to Format Dates in Swift (5.5)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528608497
+ },
+ "https://www.youtube.com/watch?v=5I1ghMpU4rs": {
+  "ok": true,
+  "status": 200,
+  "title": "New Way to Format Dates in Swift (5.5)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528608551
+ },
+ "https://www.youtube.com/watch?v=5PJL4xxEXJE": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI - Swipe Actions on List | iOS 15 & Xcode 13",
+  "author": "Sean Allen",
+  "checkedAt": 1790528620349
+ },
+ "https://www.youtube.com/watch?v=5y2wcttlE5s": {
+  "ok": true,
+  "status": 200,
+  "title": "Compound assignment operators – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605995
+ },
+ "https://www.youtube.com/watch?v=63UHypFKRRM&t=137s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660391
+ },
+ "https://www.youtube.com/watch?v=63UHypFKRRM&t=3547s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660389
+ },
+ "https://www.youtube.com/watch?v=79U1lkkap-g": {
+  "ok": true,
+  "status": 200,
+  "title": "Improved synthesized memberwise initializers in Swift 5.1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616819
+ },
+ "https://www.youtube.com/watch?v=7AY3v2woKio&t=53s": {
+  "ok": true,
+  "status": 200,
+  "title": "Two-way bindings in SwiftUI - SwiftUI Starter Project 10/14",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619844
+ },
+ "https://www.youtube.com/watch?v=7HgbcTqxoN4": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use the Coordinator pattern in iOS",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597939
+ },
+ "https://www.youtube.com/watch?v=7S6iEmHICkQ&t=23s": {
+  "ok": true,
+  "status": 200,
+  "title": "Introducing MVVM into your SwiftUI project – Bucket List SwiftUI Tutorial 11/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602801
+ },
+ "https://www.youtube.com/watch?v=7cqag8Acr2s&t=891s": {
+  "ok": true,
+  "status": 200,
+  "title": "Save current user's portfolio to Core Data with MVVM | SwiftUI Crypto App #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528611333
+ },
+ "https://www.youtube.com/watch?v=7cqag8Acr2s": {
+  "ok": true,
+  "status": 200,
+  "title": "Save current user's portfolio to Core Data with MVVM | SwiftUI Crypto App #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528612097
+ },
+ "https://www.youtube.com/watch?v=7hAmXRwBQxc&t=848s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use For Loops in Swift | Swift Basics #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605575
+ },
+ "https://www.youtube.com/watch?v=7hAmXRwBQxc&t=851s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use For Loops in Swift | Swift Basics #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605523
+ },
+ "https://www.youtube.com/watch?v=7hAmXRwBQxc": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use For Loops in Swift | Swift Basics #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605283
+ },
+ "https://www.youtube.com/watch?v=7wti4FqEmBw": {
+  "ok": true,
+  "status": 200,
+  "title": "Moving views with DragGesture and offset() – Flashzilla SwiftUI Tutorial 8/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528622056
+ },
+ "https://www.youtube.com/watch?v=8M3N4HWUc0U": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Pie & Donut Charts - New in iOS 17",
+  "author": "Sean Allen",
+  "checkedAt": 1790528614794
+ },
+ "https://www.youtube.com/watch?v=8O8HmKn2OFk&t=46s": {
+  "ok": true,
+  "status": 200,
+  "title": "Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528608500
+ },
+ "https://www.youtube.com/watch?v=8O8HmKn2OFk": {
+  "ok": true,
+  "status": 200,
+  "title": "Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528608558
+ },
+ "https://www.youtube.com/watch?v=8T5vQnMspko": {
+  "ok": true,
+  "status": 200,
+  "title": "Mutating methods – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616817
+ },
+ "https://www.youtube.com/watch?v=8VNqScyEI34&t=168s": {
+  "ok": true,
+  "status": 200,
+  "title": "Static and class subscripts in Swift 5.1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597734
+ },
+ "https://www.youtube.com/watch?v=8VNqScyEI34": {
+  "ok": true,
+  "status": 200,
+  "title": "Static and class subscripts in Swift 5.1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617000
+ },
+ "https://www.youtube.com/watch?v=8aPjqLqUEKA&t=24s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Result Type - Cleaner Network Calls",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616600
+ },
+ "https://www.youtube.com/watch?v=8aPjqLqUEKA": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Result Type - Cleaner Network Calls",
+  "author": "Sean Allen",
+  "checkedAt": 1790528618606
+ },
+ "https://www.youtube.com/watch?v=8hfgErg7ybQ": {
+  "ok": true,
+  "status": 200,
+  "title": "How to format dates inside text views – SwiftUI",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528609018
+ },
+ "https://www.youtube.com/watch?v=8rXHIlT_zQQ&t=53s": {
+  "ok": true,
+  "status": 200,
+  "title": "Inside the Standard Library: Sequence.flatMap",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618037
+ },
+ "https://www.youtube.com/watch?v=9E2T3HmHnTU&t=7s": {
+  "ok": true,
+  "status": 200,
+  "title": "Returning closures from functions – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618914
+ },
+ "https://www.youtube.com/watch?v=9E2T3HmHnTU": {
+  "ok": true,
+  "status": 200,
+  "title": "Returning closures from functions – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605806
+ },
+ "https://www.youtube.com/watch?v=9GjGRqK8LSw&t=347s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605868
+ },
+ "https://www.youtube.com/watch?v=9GjGRqK8LSw&t=8s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605046
+ },
+ "https://www.youtube.com/watch?v=9GjGRqK8LSw": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605083
+ },
+ "https://www.youtube.com/watch?v=9OC8e0OULBg&t=753s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use @FocusState in SwiftUI | Bootcamp #60",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528621428
+ },
+ "https://www.youtube.com/watch?v=9Snw7polcBU&t=642s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift For Beginners - Loops (For, While, Repeat)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605532
+ },
+ "https://www.youtube.com/watch?v=9Snw7polcBU&t=887s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift For Beginners - Loops (For, While, Repeat)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528606131
+ },
+ "https://www.youtube.com/watch?v=9Snw7polcBU&t=927s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift For Beginners - Loops (For, While, Repeat)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605603
+ },
+ "https://www.youtube.com/watch?v=9Snw7polcBU": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift For Beginners - Loops (For, While, Repeat)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605283
+ },
+ "https://www.youtube.com/watch?v=9UhzqjZO_tw&t=76s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to provide default values for parameters – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605626
+ },
+ "https://www.youtube.com/watch?v=9Vs4YDSpzHA": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use phantom types in Swift",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597205
+ },
+ "https://www.youtube.com/watch?v=9X-TH5TrU2U&t=408s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Reading custom values from the environment with @EnvironmentObject – Hot Prospects 1/18",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528611181
+ },
+ "https://www.youtube.com/watch?v=Aav96a2Ir78": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode in 20 Seconds: Multiple cursors",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528614317
+ },
+ "https://www.youtube.com/watch?v=B42CuI0RO7Y&t=3367s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660399
+ },
+ "https://www.youtube.com/watch?v=BKxbHnka4-Q&t=10s": {
+  "ok": true,
+  "status": 200,
+  "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620731
+ },
+ "https://www.youtube.com/watch?v=BKxbHnka4-Q&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619036
+ },
+ "https://www.youtube.com/watch?v=BKxbHnka4-Q": {
+  "ok": true,
+  "status": 200,
+  "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528624154
+ },
+ "https://www.youtube.com/watch?v=BRBhMrJj5f4&t=12s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Global Actors in Swift (@globalActor) | Swift Concurrency #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602514
+ },
+ "https://www.youtube.com/watch?v=Bc_pd9gqXUM&t=197s": {
+  "ok": true,
+  "status": 200,
+  "title": "Scheduling local notifications – Hot Prospects 7/16",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528613752
+ },
+ "https://www.youtube.com/watch?v=C18O5ylFA50&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "Closures as parameters – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618389
+ },
+ "https://www.youtube.com/watch?v=CGnOe4bl8_A": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Timer - Xcode 11, Swift 5.1",
+  "author": "Sean Allen",
+  "checkedAt": 1790528623105
+ },
+ "https://www.youtube.com/watch?v=CK9OwMyJQDY&t=177s": {
+  "ok": true,
+  "status": 200,
+  "title": "Basics quick start: SKShapeNode – Swifty Ninja, part 2",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619334
+ },
+ "https://www.youtube.com/watch?v=CYqLHqDfBOQ&t=10s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to append one array to another array – Swift 5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606041
+ },
+ "https://www.youtube.com/watch?v=CkYDljd_7M8&t=12s": {
+  "ok": true,
+  "status": 200,
+  "title": "Binary Search - Swift Tutorial - iOS Interview Coding Challenge",
+  "author": "Sean Allen",
+  "checkedAt": 1790528601962
+ },
+ "https://www.youtube.com/watch?v=CkYDljd_7M8&t=20s": {
+  "ok": true,
+  "status": 200,
+  "title": "Binary Search - Swift Tutorial - iOS Interview Coding Challenge",
+  "author": "Sean Allen",
+  "checkedAt": 1790528602197
+ },
+ "https://www.youtube.com/watch?v=CvVkR5z65XU": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode in 20 Seconds: Regex searching",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528600899
+ },
+ "https://www.youtube.com/watch?v=DWQA6bEILes": {
+  "ok": true,
+  "status": 200,
+  "title": "Stop Rebuilding UI with Play to Xcode",
+  "author": "Sean Allen",
+  "checkedAt": 1790528601612
+ },
+ "https://www.youtube.com/watch?v=DfO089qWEE8&t=198s": {
+  "ok": true,
+  "status": 200,
+  "title": "Merge Sort - Swift Tutorial - iOS Interview Coding Challenge",
+  "author": "Sean Allen",
+  "checkedAt": 1790528604834
+ },
+ "https://www.youtube.com/watch?v=DfO089qWEE8": {
+  "ok": true,
+  "status": 200,
+  "title": "Merge Sort - Swift Tutorial - iOS Interview Coding Challenge",
+  "author": "Sean Allen",
+  "checkedAt": 1790528601986
+ },
+ "https://www.youtube.com/watch?v=DtAYJfe_9o0": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - What are Variadic Parameters?",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605668
+ },
+ "https://www.youtube.com/watch?v=E3x07blYvdE&t=142s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Dependency Injection in SwiftUI | Advanced Learning #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528601870
+ },
+ "https://www.youtube.com/watch?v=E3x07blYvdE&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Dependency Injection in SwiftUI | Advanced Learning #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528613349
+ },
+ "https://www.youtube.com/watch?v=E8MuO6ShfKw": {
+  "ok": true,
+  "status": 200,
+  "title": "Enum associated values – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605882
+ },
+ "https://www.youtube.com/watch?v=EDd6Hr_F99o&t=28s": {
+  "ok": true,
+  "status": 200,
+  "title": "A SwiftUI tip everyone needs to know: Automatic Grammar Agreement",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528624330
+ },
+ "https://www.youtube.com/watch?v=EK7SthdWV2w&t=21s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Data Flow in iOS 17 - Observation & @Observable",
+  "author": "Sean Allen",
+  "checkedAt": 1790528623326
+ },
+ "https://www.youtube.com/watch?v=EK7SthdWV2w&t=352s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Data Flow in iOS 17 - Observation & @Observable",
+  "author": "Sean Allen",
+  "checkedAt": 1790528620287
+ },
+ "https://www.youtube.com/watch?v=EK7SthdWV2w": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Data Flow in iOS 17 - Observation & @Observable",
+  "author": "Sean Allen",
+  "checkedAt": 1790528623443
+ },
+ "https://www.youtube.com/watch?v=ERr0GXqILgc&t=1212s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+  "author": "Sean Allen",
+  "checkedAt": 1790528600261
+ },
+ "https://www.youtube.com/watch?v=ERr0GXqILgc&t=373s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+  "author": "Sean Allen",
+  "checkedAt": 1790528600796
+ },
+ "https://www.youtube.com/watch?v=ERr0GXqILgc&t=378s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+  "author": "Sean Allen",
+  "checkedAt": 1790528609476
+ },
+ "https://www.youtube.com/watch?v=ERr0GXqILgc&t=388s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+  "author": "Sean Allen",
+  "checkedAt": 1790528609539
+ },
+ "https://www.youtube.com/watch?v=ERr0GXqILgc": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+  "author": "Sean Allen",
+  "checkedAt": 1790528600099
+ },
+ "https://www.youtube.com/watch?v=Ea3dl2gy3QY": {
+  "ok": true,
+  "status": 200,
+  "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604386
+ },
+ "https://www.youtube.com/watch?v=EbbQ5kd6TiY": {
+  "ok": true,
+  "status": 200,
+  "title": "Building custom transitions using ViewModifier – Animation SwiftUI Tutorial 8/8",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528621185
+ },
+ "https://www.youtube.com/watch?v=EhDML-fAqTM&t=114s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift For Beginners - Class & Inheritance Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616946
+ },
+ "https://www.youtube.com/watch?v=EhDML-fAqTM&t=568s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift For Beginners - Class & Inheritance Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616883
+ },
+ "https://www.youtube.com/watch?v=EhDML-fAqTM": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift For Beginners - Class & Inheritance Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616937
+ },
+ "https://www.youtube.com/watch?v=EkvxlrYFUkc&t=1s": {
+  "ok": true,
+  "status": 200,
+  "title": "Implicit returns from single-expression functions in Swift 5.1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605676
+ },
+ "https://www.youtube.com/watch?v=EkvxlrYFUkc&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "Implicit returns from single-expression functions in Swift 5.1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528603709
+ },
+ "https://www.youtube.com/watch?v=EnNAQ-b1yPU": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use DatePicker to select dates in SwiftUI | Bootcamp #40",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528609085
+ },
+ "https://www.youtube.com/watch?v=F0nefFT2Uik&t=3101s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660571
+ },
+ "https://www.youtube.com/watch?v=F0nefFT2Uik&t=4062s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660556
+ },
+ "https://www.youtube.com/watch?v=FGxEffJ5XUM&t=5s": {
+  "ok": true,
+  "status": 200,
+  "title": "Range operators – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605352
+ },
+ "https://www.youtube.com/watch?v=FGxEffJ5XUM": {
+  "ok": true,
+  "status": 200,
+  "title": "Range operators – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605346
+ },
+ "https://www.youtube.com/watch?v=FToxl_63Unw": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use the ternary conditional operator for quick tests – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605358
+ },
+ "https://www.youtube.com/watch?v=FXSq_4xWtrc&t=36s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Why @State only works with structs – iExpense SwiftUI Tutorial 1/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619067
+ },
+ "https://www.youtube.com/watch?v=FmjG6mG-GIA&t=1037s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use KeyPaths in Swift | Advanced Learning #29",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616709
+ },
+ "https://www.youtube.com/watch?v=FmjG6mG-GIA&t=7s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use KeyPaths in Swift | Advanced Learning #29",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528597416
+ },
+ "https://www.youtube.com/watch?v=FwGMU_Grnf8&t=26s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI - Intro to MVVM | Example Refactor | Model View ViewModel",
+  "author": "Sean Allen",
+  "checkedAt": 1790528602861
+ },
+ "https://www.youtube.com/watch?v=FwGMU_Grnf8": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI - Intro to MVVM | Example Refactor | Model View ViewModel",
+  "author": "Sean Allen",
+  "checkedAt": 1790528613397
+ },
+ "https://www.youtube.com/watch?v=Fyhm8RxwpKs&t=508s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use opaque return types – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597188
+ },
+ "https://www.youtube.com/watch?v=GAI8JWIpMKY": {
+  "ok": true,
+  "status": 200,
+  "title": "Selecting dates and times with DatePicker – BetterRest SwiftUI Tutorial 2/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528609137
+ },
+ "https://www.youtube.com/watch?v=GFjOuH2Utt4": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI - Glowing Button Animation",
+  "author": "Sean Allen",
+  "checkedAt": 1790528619567
+ },
+ "https://www.youtube.com/watch?v=GN_eeOnUYPE&t=2s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to Rebase Branches and When to Rebase vs Merge  | Git & Source Control #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604818
+ },
+ "https://www.youtube.com/watch?v=GZ-hQWMjT0s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use NavigationStack in SwiftUI | Bootcamp #62",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620550
+ },
+ "https://www.youtube.com/watch?v=GwsoV8DqDkc": {
+  "ok": true,
+  "status": 200,
+  "title": "Removing items from an array with removeAll(where:)",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604764
+ },
+ "https://www.youtube.com/watch?v=H9mt8WjpZgM&t=1230s": {
+  "ok": true,
+  "status": 200,
+  "title": "Codable, Decodable, and Encodable in Swift | Continued Learning #21",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600791
+ },
+ "https://www.youtube.com/watch?v=HRHtOdTJH70&t=537s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617705
+ },
+ "https://www.youtube.com/watch?v=HRHtOdTJH70&t=58s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528598987
+ },
+ "https://www.youtube.com/watch?v=HRHtOdTJH70": {
+  "ok": true,
+  "status": 200,
+  "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528598811
+ },
+ "https://www.youtube.com/watch?v=Hhnx3i0o1_c": {
+  "ok": true,
+  "status": 200,
+  "title": "Operators and conditions: Summary – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604311
+ },
+ "https://www.youtube.com/watch?v=HnIID4W3a_o&t=103s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618443
+ },
+ "https://www.youtube.com/watch?v=HnIID4W3a_o&t=154s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616650
+ },
+ "https://www.youtube.com/watch?v=HnIID4W3a_o": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616658
+ },
+ "https://www.youtube.com/watch?v=HzG0u91xr1M&t=2s": {
+  "ok": true,
+  "status": 200,
+  "title": "Failable initializers – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616163
+ },
+ "https://www.youtube.com/watch?v=HzG0u91xr1M&t=5s": {
+  "ok": true,
+  "status": 200,
+  "title": "Failable initializers – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618763
+ },
+ "https://www.youtube.com/watch?v=IPrYRyd2qQU&t=38s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Convenience Initializers",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616991
+ },
+ "https://www.youtube.com/watch?v=IPrYRyd2qQU": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Convenience Initializers",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616885
+ },
+ "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=178s": {
+  "ok": true,
+  "status": 200,
+  "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605178
+ },
+ "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=194s": {
+  "ok": true,
+  "status": 200,
+  "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606236
+ },
+ "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=196s": {
+  "ok": true,
+  "status": 200,
+  "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605414
+ },
+ "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=211s": {
+  "ok": true,
+  "status": 200,
+  "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617513
+ },
+ "https://www.youtube.com/watch?v=IWcmNBoT0-s": {
+  "ok": true,
+  "status": 200,
+  "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528598363
+ },
+ "https://www.youtube.com/watch?v=IvOF3Bmk-94&t=1479s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660503
+ },
+ "https://www.youtube.com/watch?v=IvOF3Bmk-94&t=3053s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660399
+ },
+ "https://www.youtube.com/watch?v=IvOF3Bmk-94&t=3232s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660402
+ },
+ "https://www.youtube.com/watch?v=IwUp2iP0jnI&t=223s": {
+  "ok": true,
+  "status": 200,
+  "title": "Super Power Scroll Views - SwiftUI - iOS 17",
+  "author": "Sean Allen",
+  "checkedAt": 1790528622580
+ },
+ "https://www.youtube.com/watch?v=JIT8sL_VtNA&t=148s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605475
+ },
+ "https://www.youtube.com/watch?v=JIT8sL_VtNA": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605174
+ },
+ "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=19s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606002
+ },
+ "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=530s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606112
+ },
+ "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=70s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604231
+ },
+ "https://www.youtube.com/watch?v=JeoaCW9fO0w": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604042
+ },
+ "https://www.youtube.com/watch?v=JideUGciPiE": {
+  "ok": true,
+  "status": 200,
+  "title": "UICollectionView data sources – Names to Faces, part 3",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528615242
+ },
+ "https://www.youtube.com/watch?v=Jjd-m6fFu08": {
+  "ok": true,
+  "status": 200,
+  "title": "Introduction to Swift: Switch case",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605402
+ },
+ "https://www.youtube.com/watch?v=JvynRYZEU-8&t=51s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - How to use typealias | Swift 5.2, Xcode 11",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605879
+ },
+ "https://www.youtube.com/watch?v=JzngncpZLuw&t=18s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS Dev Interview Prep - Take Home Project - UIKit - Programmatic UI - FULL COURSE",
+  "author": "Sean Allen",
+  "checkedAt": 1790528602194
+ },
+ "https://www.youtube.com/watch?v=K1jEskrHcyY": {
+  "ok": true,
+  "status": 200,
+  "title": "How to store ordered data in arrays – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604832
+ },
+ "https://www.youtube.com/watch?v=K91rKH_O8BY&t=114s": {
+  "ok": true,
+  "status": 200,
+  "title": "Create custom Bindings in SwiftUI | Advanced Learning #27",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619826
+ },
+ "https://www.youtube.com/watch?v=KAaYU-5xZ-8&t=105s": {
+  "ok": true,
+  "status": 200,
+  "title": "The Future is Declarative - SwiftUI & Jetpack Compose",
+  "author": "Sean Allen",
+  "checkedAt": 1790528610812
+ },
+ "https://www.youtube.com/watch?v=KL1c5Mx3kek": {
+  "ok": true,
+  "status": 200,
+  "title": "Building a stack of cards – Flashzilla SwiftUI Tutorial 7/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528601949
+ },
+ "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=318s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Optionals - How to Unwrap (real examples)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528606233
+ },
+ "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=379s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Optionals - How to Unwrap (real examples)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617921
+ },
+ "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=41s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Optionals - How to Unwrap (real examples)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616295
+ },
+ "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=421s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Optionals - How to Unwrap (real examples)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528604761
+ },
+ "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=536s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Optionals - How to Unwrap (real examples)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616348
+ },
+ "https://www.youtube.com/watch?v=L3FuDHIv5Ws": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Optionals - How to Unwrap (real examples)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616400
+ },
+ "https://www.youtube.com/watch?v=LAhctdU5Mq4&t=246s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create a deinitializer for a class – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616993
+ },
+ "https://www.youtube.com/watch?v=LAhctdU5Mq4": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create a deinitializer for a class – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616965
+ },
+ "https://www.youtube.com/watch?v=Le32Tbkv2v0&t=7s": {
+  "ok": true,
+  "status": 200,
+  "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604909
+ },
+ "https://www.youtube.com/watch?v=Le32Tbkv2v0": {
+  "ok": true,
+  "status": 200,
+  "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606174
+ },
+ "https://www.youtube.com/watch?v=LgJ9r_VWdSI": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use @State property wrapper in SwiftUI | Bootcamp #19",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600359
+ },
+ "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=142s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616489
+ },
+ "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=216s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605939
+ },
+ "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=218s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616655
+ },
+ "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=377s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616579
+ },
+ "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=490s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616457
+ },
+ "https://www.youtube.com/watch?v=Lrc-MX8WgNc": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+  "author": "Sean Allen",
+  "checkedAt": 1790528601679
+ },
+ "https://www.youtube.com/watch?v=LsyufibEVog&t=32s": {
+  "ok": true,
+  "status": 200,
+  "title": "Why are function builders fundamental in SwiftUI – Daniel Steinberg on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617592
+ },
+ "https://www.youtube.com/watch?v=LtlbB4-6k_U&t=138s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Class vs. Struct Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617388
+ },
+ "https://www.youtube.com/watch?v=LtlbB4-6k_U": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Class vs. Struct Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528602729
+ },
+ "https://www.youtube.com/watch?v=LuyWO86Myz0": {
+  "ok": true,
+  "status": 200,
+  "title": "Final review of MVVM Architecture and other features | SwiftUI Map App #9",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528613372
+ },
+ "https://www.youtube.com/watch?v=M-1jRwzUIuI&t=332s": {
+  "ok": true,
+  "status": 200,
+  "title": "How property wrappers become structs – Instafilter SwiftUI Tutorial 1/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616887
+ },
+ "https://www.youtube.com/watch?v=M-1jRwzUIuI&t=338s": {
+  "ok": true,
+  "status": 200,
+  "title": "How property wrappers become structs – Instafilter SwiftUI Tutorial 1/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617864
+ },
+ "https://www.youtube.com/watch?v=MKJsFcUIJ2w": {
+  "ok": true,
+  "status": 200,
+  "title": "Making a SwiftUI view searchable – SnowSeeker SwiftUI Tutorial 4/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528620487
+ },
+ "https://www.youtube.com/watch?v=MxaYr2VGVTo&t=11s": {
+  "ok": true,
+  "status": 200,
+  "title": "Writing throwing functions – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616432
+ },
+ "https://www.youtube.com/watch?v=MxaYr2VGVTo": {
+  "ok": true,
+  "status": 200,
+  "title": "Writing throwing functions – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616594
+ },
+ "https://www.youtube.com/watch?v=NCREPNvFpjk": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Keychain-Swift in SwiftUI | Swift Packages #3",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528613148
+ },
+ "https://www.youtube.com/watch?v=NZIlmRSB8l8&t=21s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Ensuring Core Data objects are unique using constraints – Core Data SwiftUI Tutorial 4/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612436
+ },
+ "https://www.youtube.com/watch?v=NduMuU0xeqk": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use a while loop to repeat work – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605548
+ },
+ "https://www.youtube.com/watch?v=Nfzy1qgxSAg": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Bounds vs. Frame - iOS Interview Question",
+  "author": "Sean Allen",
+  "checkedAt": 1790528595578
+ },
+ "https://www.youtube.com/watch?v=NkOU60vwUEY&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to Filter, Sort, and Map in Swift | Swift Basics #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602305
+ },
+ "https://www.youtube.com/watch?v=NkOU60vwUEY&t=19s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to Filter, Sort, and Map in Swift | Swift Basics #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605944
+ },
+ "https://www.youtube.com/watch?v=NnJ91M9PRYo&t=3550s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660521
+ },
+ "https://www.youtube.com/watch?v=NnJ91M9PRYo&t=689s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660512
+ },
+ "https://www.youtube.com/watch?v=Nt1loGvkQkM&t=2s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to add Badges to SwiftUI TabView and List in iOS 15 | Bootcamp #59",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528622770
+ },
+ "https://www.youtube.com/watch?v=O0ocR5kRzSA": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle missing data with optionals – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528594636
+ },
+ "https://www.youtube.com/watch?v=O3QAI8Mxh8M&t=43s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use DragGesture to move, drag, swipe in SwiftUI | Continued Learning #4",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528621882
+ },
+ "https://www.youtube.com/watch?v=O3QAI8Mxh8M": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use DragGesture to move, drag, swipe in SwiftUI | Continued Learning #4",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528622056
+ },
+ "https://www.youtube.com/watch?v=O4043RVjCGU&t=47s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Dynamically filtering @FetchRequest with SwiftUI – Core Data SwiftUI Tutorial 6/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528611399
+ },
+ "https://www.youtube.com/watch?v=O4043RVjCGU": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Dynamically filtering @FetchRequest with SwiftUI – Core Data SwiftUI Tutorial 6/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612098
+ },
+ "https://www.youtube.com/watch?v=OLjkmJNNeHc&t=5690s": {
+  "ok": true,
+  "status": 200,
+  "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606177
+ },
+ "https://www.youtube.com/watch?v=OLjkmJNNeHc&t=5697s": {
+  "ok": true,
+  "status": 200,
+  "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602262
+ },
+ "https://www.youtube.com/watch?v=OLjkmJNNeHc": {
+  "ok": true,
+  "status": 200,
+  "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602263
+ },
+ "https://www.youtube.com/watch?v=OZK7_p1G8Pw&t=1952s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660480
+ },
+ "https://www.youtube.com/watch?v=ObIxxHy8yY8&t=40s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Classes and Structures Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528618750
+ },
+ "https://www.youtube.com/watch?v=OnbBc00lqWU&t=160s": {
+  "ok": true,
+  "status": 200,
+  "title": "Use PreferenceKey to extract values from child views in SwiftUI | Advanced Learning #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620674
+ },
+ "https://www.youtube.com/watch?v=OpJcInSZpc8&t=76s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use MVVM with Async Await | Swift Concurrency #14",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602802
+ },
+ "https://www.youtube.com/watch?v=OpRcPOVNjXE": {
+  "ok": true,
+  "status": 200,
+  "title": "Variadic functions – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605669
+ },
+ "https://www.youtube.com/watch?v=OujkoTKEVj8": {
+  "ok": true,
+  "status": 200,
+  "title": "Filter, Map, Reduce - Swift - iOS Interview Questions",
+  "author": "Sean Allen",
+  "checkedAt": 1790528602135
+ },
+ "https://www.youtube.com/watch?v=Oxc4dCtHPkk&t=278s": {
+  "ok": true,
+  "status": 200,
+  "title": "What is Hashable protocol in SwiftUI? | Continued Learning #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528598463
+ },
+ "https://www.youtube.com/watch?v=Oxc4dCtHPkk&t=41s": {
+  "ok": true,
+  "status": 200,
+  "title": "What is Hashable protocol in SwiftUI? | Continued Learning #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605103
+ },
+ "https://www.youtube.com/watch?v=PDWNf4pBI64&t=786s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Optionals in Swift | Swift Basics #6",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604624
+ },
+ "https://www.youtube.com/watch?v=PU8q5UPHTS0": {
+  "ok": true,
+  "status": 200,
+  "title": "Navigating to different data types using NavigationPath – Navigation SwiftUI Tutorial 4/9",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604056
+ },
+ "https://www.youtube.com/watch?v=PXcl5cjVNT0&t=994s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660515
+ },
+ "https://www.youtube.com/watch?v=Ppl-8E1YgRU": {
+  "ok": true,
+  "status": 200,
+  "title": "Multi-line strings – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606007
+ },
+ "https://www.youtube.com/watch?v=Ps8t8Xdgvy0&t=343s": {
+  "ok": true,
+  "status": 200,
+  "title": "Understanding Swift’s Result type – Hot Prospects 3/16",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616554
+ },
+ "https://www.youtube.com/watch?v=Ps8t8Xdgvy0": {
+  "ok": true,
+  "status": 200,
+  "title": "Understanding Swift’s Result type – Hot Prospects 3/16",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618562
+ },
+ "https://www.youtube.com/watch?v=QEVjbvb34Gg&t=101s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle multiple optionals using optional chaining – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617467
+ },
+ "https://www.youtube.com/watch?v=QEVjbvb34Gg&t=234s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle multiple optionals using optional chaining – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616152
+ },
+ "https://www.youtube.com/watch?v=QEVjbvb34Gg&t=36s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle multiple optionals using optional chaining – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616345
+ },
+ "https://www.youtube.com/watch?v=QKUBGEMcbAY&t=4s": {
+  "ok": true,
+  "status": 200,
+  "title": "Using alert() and sheet() with optionals – SnowSeeker SwiftUI Tutorial 2/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528622669
+ },
+ "https://www.youtube.com/watch?v=QKUBGEMcbAY": {
+  "ok": true,
+  "status": 200,
+  "title": "Using alert() and sheet() with optionals – SnowSeeker SwiftUI Tutorial 2/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528620645
+ },
+ "https://www.youtube.com/watch?v=QZz9azaSYQ8": {
+  "ok": true,
+  "status": 200,
+  "title": "How to save NavigationStack paths using Codable – Navigation SwiftUI Tutorial 6/9",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528613026
+ },
+ "https://www.youtube.com/watch?v=Qr_Ls6Tyviw&t=69s": {
+  "ok": true,
+  "status": 200,
+  "title": "Summary: Structs – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617401
+ },
+ "https://www.youtube.com/watch?v=R7kTiC86MKg&t=15s": {
+  "ok": true,
+  "status": 200,
+  "title": "Display downloaded data in grid format with reusable components | SwiftUI Crypto App #20",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528621358
+ },
+ "https://www.youtube.com/watch?v=RFGEzkBa834": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Access Control Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617132
+ },
+ "https://www.youtube.com/watch?v=RNVCBYjzOI0": {
+  "ok": true,
+  "status": 200,
+  "title": "Maxed-out 16-inch MacBook Pro: is the upgrade worth it for developers?",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602343
+ },
+ "https://www.youtube.com/watch?v=RUWGjeDCkN8": {
+  "ok": true,
+  "status": 200,
+  "title": "How to ask the user to leave an App Store review – Instafilter SwiftUI Tutorial 8/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528615600
+ },
+ "https://www.youtube.com/watch?v=RUZcs0SWqnI&t=15s": {
+  "ok": true,
+  "status": 200,
+  "title": "Advanced Combine Publishers and Subscribers in SwiftUI | Advanced Learning #19",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528610424
+ },
+ "https://www.youtube.com/watch?v=RYemrq0e7KM&t=1589s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660461
+ },
+ "https://www.youtube.com/watch?v=RhuYDAEdGHE": {
+  "ok": true,
+  "status": 200,
+  "title": "What's New in Swift 5.3",
+  "author": "Sean Allen",
+  "checkedAt": 1790528596369
+ },
+ "https://www.youtube.com/watch?v=RkkFI5yAkU0&t=64s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Optionals - Is Force Unwrapping THAT Bad?",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617865
+ },
+ "https://www.youtube.com/watch?v=RoDUYFuNeJU": {
+  "ok": true,
+  "status": 200,
+  "title": "UI Testing a SwiftUI application in Xcode | Advanced Learning #18",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528613454
+ },
+ "https://www.youtube.com/watch?v=S3DVAGQX0kI": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Environment Values - What are they? Code Examples | Xcode 13",
+  "author": "Sean Allen",
+  "checkedAt": 1790528611202
+ },
+ "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=211s": {
+  "ok": true,
+  "status": 200,
+  "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528594608
+ },
+ "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=383s": {
+  "ok": true,
+  "status": 200,
+  "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597146
+ },
+ "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=554s": {
+  "ok": true,
+  "status": 200,
+  "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597248
+ },
+ "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=580s": {
+  "ok": true,
+  "status": 200,
+  "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528600851
+ },
+ "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=75s": {
+  "ok": true,
+  "status": 200,
+  "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528600739
+ },
+ "https://www.youtube.com/watch?v=S6GLrIDMKiA": {
+  "ok": true,
+  "status": 200,
+  "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528603516
+ },
+ "https://www.youtube.com/watch?v=SENZiZ_IFgU": {
+  "ok": true,
+  "status": 200,
+  "title": "Resizing images to fit the screen using GeometryReader – Layout and Geometry SwiftUI Tutorial 5/8",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528622650
+ },
+ "https://www.youtube.com/watch?v=SrWWLx5wOEU&t=182s": {
+  "ok": true,
+  "status": 200,
+  "title": "GCD 101: async() – Grand Central Dispatch, part 3",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602404
+ },
+ "https://www.youtube.com/watch?v=SuUf9buBzA0&t=146s": {
+  "ok": true,
+  "status": 200,
+  "title": "Inside the Standard Library: Sequence.contains",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618088
+ },
+ "https://www.youtube.com/watch?v=SuUf9buBzA0&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "Inside the Standard Library: Sequence.contains",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528598093
+ },
+ "https://www.youtube.com/watch?v=SzgxLMUumic&t=55s": {
+  "ok": true,
+  "status": 200,
+  "title": "(OLD) Why does SwiftUI use “some View” for its view type? –Views and Modifiers SwiftUI Tutorial 4/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528603455
+ },
+ "https://www.youtube.com/watch?v=SzgxLMUumic": {
+  "ok": true,
+  "status": 200,
+  "title": "(OLD) Why does SwiftUI use “some View” for its view type? –Views and Modifiers SwiftUI Tutorial 4/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619129
+ },
+ "https://www.youtube.com/watch?v=T-UTLMKx2wc&t=183s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle errors in functions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616654
+ },
+ "https://www.youtube.com/watch?v=T-UTLMKx2wc&t=310s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle errors in functions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616469
+ },
+ "https://www.youtube.com/watch?v=T-UTLMKx2wc&t=41s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle errors in functions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605943
+ },
+ "https://www.youtube.com/watch?v=T-UTLMKx2wc": {
+  "ok": true,
+  "status": 200,
+  "title": "How to handle errors in functions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616536
+ },
+ "https://www.youtube.com/watch?v=T0_BWu4aIRQ&t=171s": {
+  "ok": true,
+  "status": 200,
+  "title": "Super-powered string interpolation in Swift 5.0",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604491
+ },
+ "https://www.youtube.com/watch?v=T0_BWu4aIRQ": {
+  "ok": true,
+  "status": 200,
+  "title": "Super-powered string interpolation in Swift 5.0",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618672
+ },
+ "https://www.youtube.com/watch?v=T7inPesyOY8&t=14s": {
+  "ok": true,
+  "status": 200,
+  "title": "Create a Stepper in SwiftUI | Bootcamp #41",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528623106
+ },
+ "https://www.youtube.com/watch?v=TPHp9kR0Go8&t=1142s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use weak self in Swift | Continued Learning #18",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602716
+ },
+ "https://www.youtube.com/watch?v=TPHp9kR0Go8&t=8s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use weak self in Swift | Continued Learning #18",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528598707
+ },
+ "https://www.youtube.com/watch?v=Tkqd7cCrMf0": {
+  "ok": true,
+  "status": 200,
+  "title": "What is the @AppStorage property wrapper? – SwiftUI",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528623393
+ },
+ "https://www.youtube.com/watch?v=Tw_WLMIfEPQ&t=857s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Continuations in Swift (withCheckedThrowingContinuation) | Swift Concurrency #7",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602473
+ },
+ "https://www.youtube.com/watch?v=U0IgKPgyAgw&t=27s": {
+  "ok": true,
+  "status": 200,
+  "title": "Summary: Protocols and extensions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617050
+ },
+ "https://www.youtube.com/watch?v=U0IgKPgyAgw": {
+  "ok": true,
+  "status": 200,
+  "title": "Summary: Protocols and extensions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617652
+ },
+ "https://www.youtube.com/watch?v=U_yWXH141DY&t=382s": {
+  "ok": true,
+  "status": 200,
+  "title": "Sending and receiving Codable data with URLSession and SwiftUI – Cupcake Corner SwiftUI Tutorial 1/9",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528609730
+ },
+ "https://www.youtube.com/watch?v=U_yWXH141DY": {
+  "ok": true,
+  "status": 200,
+  "title": "Sending and receiving Codable data with URLSession and SwiftUI – Cupcake Corner SwiftUI Tutorial 1/9",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528609605
+ },
+ "https://www.youtube.com/watch?v=Ua37Oof6H1Q": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use NavigationSplitView in SwiftUI | Bootcamp #72",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620629
+ },
+ "https://www.youtube.com/watch?v=UaPAis0vtK0&t=897s": {
+  "ok": true,
+  "status": 200,
+  "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528609350
+ },
+ "https://www.youtube.com/watch?v=UaPAis0vtK0": {
+  "ok": true,
+  "status": 200,
+  "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528609477
+ },
+ "https://www.youtube.com/watch?v=UbX2UtgZTJI&t=44s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Access Control (Private vs Public) | Swift Basics #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617121
+ },
+ "https://www.youtube.com/watch?v=UbX2UtgZTJI&t=949s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Access Control (Private vs Public) | Swift Basics #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618819
+ },
+ "https://www.youtube.com/watch?v=V9cWsGJ4aLc": {
+  "ok": true,
+  "status": 200,
+  "title": "Setting up – Swift Strings, part 1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604430
+ },
+ "https://www.youtube.com/watch?v=VLUhZbz4arg&t=83s": {
+  "ok": true,
+  "status": 200,
+  "title": "What is the @StateObject property wrapper? – SwiftUI",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528600379
+ },
+ "https://www.youtube.com/watch?v=VUztqFol_FY&t=55s": {
+  "ok": true,
+  "status": 200,
+  "title": "Intro to Apple Search Ads - Setup Your First Campaign (Tutorial)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528604467
+ },
+ "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=18s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+  "author": "Sean Allen",
+  "checkedAt": 1790528599049
+ },
+ "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=35s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617456
+ },
+ "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=401s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+  "author": "Sean Allen",
+  "checkedAt": 1790528598876
+ },
+ "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=5s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+  "author": "Sean Allen",
+  "checkedAt": 1790528595515
+ },
+ "https://www.youtube.com/watch?v=VcoZJ88d-vM": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616143
+ },
+ "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=131s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617924
+ },
+ "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=246s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617573
+ },
+ "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=7s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604995
+ },
+ "https://www.youtube.com/watch?v=Vtx5W8YVkqs": {
+  "ok": true,
+  "status": 200,
+  "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616358
+ },
+ "https://www.youtube.com/watch?v=WORJw3VsFEc": {
+  "ok": true,
+  "status": 200,
+  "title": "Optional chaining – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604623
+ },
+ "https://www.youtube.com/watch?v=WxHsQDbIdl8&t=144s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606067
+ },
+ "https://www.youtube.com/watch?v=WxHsQDbIdl8&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604421
+ },
+ "https://www.youtube.com/watch?v=WxHsQDbIdl8": {
+  "ok": true,
+  "status": 200,
+  "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605028
+ },
+ "https://www.youtube.com/watch?v=X2RZlmjLYhk": {
+  "ok": true,
+  "status": 200,
+  "title": "Building a motivational app with sharing and notifications – Swift on Sundays February 3rd 2019",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528614511
+ },
+ "https://www.youtube.com/watch?v=XGXWC68Yb_o&t=476s": {
+  "ok": true,
+  "status": 200,
+  "title": "Add a custom Navigation Link for lazy loading | SwiftUI Crypto App #18",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617398
+ },
+ "https://www.youtube.com/watch?v=XGXWC68Yb_o": {
+  "ok": true,
+  "status": 200,
+  "title": "Add a custom Navigation Link for lazy loading | SwiftUI Crypto App #18",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528598010
+ },
+ "https://www.youtube.com/watch?v=XkrRNQ2a-iY&t=66s": {
+  "ok": true,
+  "status": 200,
+  "title": "Apple Reduces App Store Commission to 15%",
+  "author": "Sean Allen",
+  "checkedAt": 1790528604598
+ },
+ "https://www.youtube.com/watch?v=XkrRNQ2a-iY&t=7s": {
+  "ok": true,
+  "status": 200,
+  "title": "Apple Reduces App Store Commission to 15%",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616712
+ },
+ "https://www.youtube.com/watch?v=XqFSZUM04fg&t=17s": {
+  "ok": true,
+  "status": 200,
+  "title": "Listing images with FileManager – Storm Viewer, part 2",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528601465
+ },
+ "https://www.youtube.com/watch?v=YISIACDKLZY": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create resizable sheets in SwiftUI | Bootcamp #64",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528622697
+ },
+ "https://www.youtube.com/watch?v=YPUCML__Md8&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Enums in Swift | Swift Basics #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605808
+ },
+ "https://www.youtube.com/watch?v=YPUCML__Md8&t=235s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Enums in Swift | Swift Basics #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606109
+ },
+ "https://www.youtube.com/watch?v=YPUCML__Md8&t=258s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Enums in Swift | Swift Basics #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605807
+ },
+ "https://www.youtube.com/watch?v=YPUCML__Md8&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Enums in Swift | Swift Basics #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618626
+ },
+ "https://www.youtube.com/watch?v=YPUCML__Md8&t=612s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Enums in Swift | Swift Basics #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618797
+ },
+ "https://www.youtube.com/watch?v=YPUCML__Md8&t=688s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Enums in Swift | Swift Basics #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606230
+ },
+ "https://www.youtube.com/watch?v=YPUCML__Md8": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Enums in Swift | Swift Basics #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528598336
+ },
+ "https://www.youtube.com/watch?v=YQPOLBZiGWA&t=4s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to store truth with Booleans – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604302
+ },
+ "https://www.youtube.com/watch?v=YSBXJvANWSo": {
+  "ok": true,
+  "status": 200,
+  "title": "Animating complex shapes with AnimatablePair – Drawing SwiftUI Tutorial 9/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619641
+ },
+ "https://www.youtube.com/watch?v=Yiq-hdhLzVM&t=1010s": {
+  "ok": true,
+  "status": 200,
+  "title": "Save data and images to FileManager in Xcode | Continued Learning #26",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528601394
+ },
+ "https://www.youtube.com/watch?v=Yiq-hdhLzVM": {
+  "ok": true,
+  "status": 200,
+  "title": "Save data and images to FileManager in Xcode | Continued Learning #26",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528601176
+ },
+ "https://www.youtube.com/watch?v=YlRuQP3EO8E&t=90s": {
+  "ok": true,
+  "status": 200,
+  "title": "Universal Self in Swift 5.1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618745
+ },
+ "https://www.youtube.com/watch?v=YlRuQP3EO8E": {
+  "ok": true,
+  "status": 200,
+  "title": "Universal Self in Swift 5.1",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528598736
+ },
+ "https://www.youtube.com/watch?v=YrVwyL_mcts&t=13s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617064
+ },
+ "https://www.youtube.com/watch?v=YrVwyL_mcts&t=236s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617052
+ },
+ "https://www.youtube.com/watch?v=YrVwyL_mcts&t=282s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617104
+ },
+ "https://www.youtube.com/watch?v=YrVwyL_mcts": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604889
+ },
+ "https://www.youtube.com/watch?v=ZU3JDkjvn3w": {
+  "ok": true,
+  "status": 200,
+  "title": "Strings and integers – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604125
+ },
+ "https://www.youtube.com/watch?v=ZkOvD3okAJo&t=351s": {
+  "ok": true,
+  "status": 200,
+  "title": "ScrollViewReader to auto scroll in SwiftUI | Continued Learning #5",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528623705
+ },
+ "https://www.youtube.com/watch?v=ZpGDwOAWiXA": {
+  "ok": true,
+  "status": 200,
+  "title": "Doubles and booleans – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604232
+ },
+ "https://www.youtube.com/watch?v=_0nER-JW9tU": {
+  "ok": true,
+  "status": 200,
+  "title": "Property observers: didSet – 7 Swifty Words, part 5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616816
+ },
+ "https://www.youtube.com/watch?v=_FX8xCBmbeA&t=590s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use type annotations – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606117
+ },
+ "https://www.youtube.com/watch?v=_SRaZjPuYOQ&t=698s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Arrays and Sets in Swift | Swift Basics #13",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606049
+ },
+ "https://www.youtube.com/watch?v=_SRaZjPuYOQ&t=737s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Arrays and Sets in Swift | Swift Basics #13",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604662
+ },
+ "https://www.youtube.com/watch?v=_SRaZjPuYOQ": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Arrays and Sets in Swift | Swift Basics #13",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604805
+ },
+ "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=13s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics: Array vs. Set",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605054
+ },
+ "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=298s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics: Array vs. Set",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605116
+ },
+ "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=50s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics: Array vs. Set",
+  "author": "Sean Allen",
+  "checkedAt": 1790528606074
+ },
+ "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=87s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics: Array vs. Set",
+  "author": "Sean Allen",
+  "checkedAt": 1790528605908
+ },
+ "https://www.youtube.com/watch?v=_TvQPMZdwPI": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics: Array vs. Set",
+  "author": "Sean Allen",
+  "checkedAt": 1790528604762
+ },
+ "https://www.youtube.com/watch?v=_ZAuILBDduQ&t=151s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to break up structs and classes – Daniel Steinberg on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602728
+ },
+ "https://www.youtube.com/watch?v=_ZAuILBDduQ": {
+  "ok": true,
+  "status": 200,
+  "title": "How to break up structs and classes – Daniel Steinberg on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618695
+ },
+ "https://www.youtube.com/watch?v=_eBNeiBaByM&t=6s": {
+  "ok": true,
+  "status": 200,
+  "title": "Inside the Standard Library: Sequence.compactMap",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617974
+ },
+ "https://www.youtube.com/watch?v=_eBNeiBaByM": {
+  "ok": true,
+  "status": 200,
+  "title": "Inside the Standard Library: Sequence.compactMap",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604588
+ },
+ "https://www.youtube.com/watch?v=_mAmixE3TkU&t=212s": {
+  "ok": true,
+  "status": 200,
+  "title": "Formatting our mission view – Moonshot SwiftUI Tutorial 8/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528621392
+ },
+ "https://www.youtube.com/watch?v=_o2ggCPh7qE": {
+  "ok": true,
+  "status": 200,
+  "title": "This surprising tactic got my app's first paying users - Build, Ship, Profit #2",
+  "author": "Sean Allen",
+  "checkedAt": 1790528618706
+ },
+ "https://www.youtube.com/watch?v=_oTPT3gFUms": {
+  "ok": true,
+  "status": 200,
+  "title": "Request App Ratings & Review - SwiftUI | iOS 16 | Xcode 14",
+  "author": "Sean Allen",
+  "checkedAt": 1790528615773
+ },
+ "https://www.youtube.com/watch?v=_rxFq_6iw_s": {
+  "ok": true,
+  "status": 200,
+  "title": "Pro tips on push notifications – Kaya Thomas on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528614074
+ },
+ "https://www.youtube.com/watch?v=a3AH0ItFTKU&t=127s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+  "author": "Sean Allen",
+  "checkedAt": 1790528595639
+ },
+ "https://www.youtube.com/watch?v=a3AH0ItFTKU&t=298s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+  "author": "Sean Allen",
+  "checkedAt": 1790528594604
+ },
+ "https://www.youtube.com/watch?v=a3AH0ItFTKU&t=33s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617976
+ },
+ "https://www.youtube.com/watch?v=a3AH0ItFTKU": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+  "author": "Sean Allen",
+  "checkedAt": 1790528618812
+ },
+ "https://www.youtube.com/watch?v=a4UiKuzCu8A": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS Firebase Authentication: Deleting Users | Firebase Bootcamp #7",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528614441
+ },
+ "https://www.youtube.com/watch?v=a87MFlvfWvA&t=147s": {
+  "ok": true,
+  "status": 200,
+  "title": "Real-time data updates in iOS app with Firebase Firestore listeners | Firebase Bootcamp #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528615092
+ },
+ "https://www.youtube.com/watch?v=bEB7ATENue0&t=115s": {
+  "ok": true,
+  "status": 200,
+  "title": "Simple, Clean Empty States in SwiftUI - ContentUnavailableView - iOS 17",
+  "author": "Sean Allen",
+  "checkedAt": 1790528606062
+ },
+ "https://www.youtube.com/watch?v=bEB7ATENue0": {
+  "ok": true,
+  "status": 200,
+  "title": "Simple, Clean Empty States in SwiftUI - ContentUnavailableView - iOS 17",
+  "author": "Sean Allen",
+  "checkedAt": 1790528606331
+ },
+ "https://www.youtube.com/watch?v=bV5KnqMHXe0": {
+  "ok": true,
+  "status": 200,
+  "title": "Filtering @Query using #Predicate – SwiftData SwiftUI Tutorial 2/5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612292
+ },
+ "https://www.youtube.com/watch?v=bW7N8ACCc6A&t=139s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Popover modifier in SwiftUI | Bootcamp #69",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528621534
+ },
+ "https://www.youtube.com/watch?v=bW7N8ACCc6A&t=37s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Popover modifier in SwiftUI | Bootcamp #69",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618979
+ },
+ "https://www.youtube.com/watch?v=btDMzB5x2Gs": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use @Binding property wrapper in SwiftUI | Bootcamp #22",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619961
+ },
+ "https://www.youtube.com/watch?v=bvm3ZLmwOdU&t=328s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528610785
+ },
+ "https://www.youtube.com/watch?v=bvm3ZLmwOdU&t=721s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528610867
+ },
+ "https://www.youtube.com/watch?v=bvm3ZLmwOdU": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528610526
+ },
+ "https://www.youtube.com/watch?v=byrRbWGN1Nk": {
+  "ok": true,
+  "status": 200,
+  "title": "How to add initializers for classes – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616979
+ },
+ "https://www.youtube.com/watch?v=c5XaOrVYRGI&t=131s": {
+  "ok": true,
+  "status": 200,
+  "title": "Advanced SwiftUI Animations - PhaseAnimator - iOS 17+",
+  "author": "Sean Allen",
+  "checkedAt": 1790528624044
+ },
+ "https://www.youtube.com/watch?v=c7QE4XOQ_nA&t=15s": {
+  "ok": true,
+  "status": 200,
+  "title": "ScrollView effects using visualEffect() and scrollTargetBehavior() – Layout and Geometry SwiftUI 8/8",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528622357
+ },
+ "https://www.youtube.com/watch?v=c7QE4XOQ_nA&t=220s": {
+  "ok": true,
+  "status": 200,
+  "title": "ScrollView effects using visualEffect() and scrollTargetBehavior() – Layout and Geometry SwiftUI 8/8",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528622408
+ },
+ "https://www.youtube.com/watch?v=cOWMtprqpgM": {
+  "ok": true,
+  "status": 200,
+  "title": "The most common interview questions for Swift jobs – Sean Allen on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602205
+ },
+ "https://www.youtube.com/watch?v=cUmGngurKXo&t=5s": {
+  "ok": true,
+  "status": 200,
+  "title": "Two-Sum Problem - Swift Tutorial - iOS Interview Coding Challenge",
+  "author": "Sean Allen",
+  "checkedAt": 1790528594637
+ },
+ "https://www.youtube.com/watch?v=cpT02OtOasE": {
+  "ok": true,
+  "status": 200,
+  "title": "Fix This Problem with SwiftUI Lists",
+  "author": "Sean Allen",
+  "checkedAt": 1790528620558
+ },
+ "https://www.youtube.com/watch?v=crjzwQ5yCAE&t=122s": {
+  "ok": true,
+  "status": 200,
+  "title": "Fixing the keyboard: NotificationCenter – JavaScript Injection, part 7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612884
+ },
+ "https://www.youtube.com/watch?v=ctBEqA0wh3M&t=324s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Dictionaries in Swift | Swift Basics #14",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604963
+ },
+ "https://www.youtube.com/watch?v=cwrIiRJuWiw": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode in 20 Seconds: Focused navigation",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528621417
+ },
+ "https://www.youtube.com/watch?v=czjD-YIvLGU&t=589s": {
+  "ok": true,
+  "status": 200,
+  "title": "Add a dynamic List to display downloaded coins | SwiftUI Crypto App #5",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602137
+ },
+ "https://www.youtube.com/watch?v=dC-oPnuP-Ns": {
+  "ok": true,
+  "status": 200,
+  "title": "Merging Codable structs – Moonshot SwiftUI Tutorial 10/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606078
+ },
+ "https://www.youtube.com/watch?v=dQJUoNIbDsg&t=694s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift WTF – Surprising behaviors while learning Swift",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618701
+ },
+ "https://www.youtube.com/watch?v=dV8uopv3aFE&t=26s": {
+  "ok": true,
+  "status": 200,
+  "title": "My Trouble With Free Trials - Build, Ship, Profit #3",
+  "author": "Sean Allen",
+  "checkedAt": 1790528594795
+ },
+ "https://www.youtube.com/watch?v=deSLFZvC9vw": {
+  "ok": true,
+  "status": 200,
+  "title": "inout parameters – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528603840
+ },
+ "https://www.youtube.com/watch?v=e2lQtUdK1uI": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Sharing data across tabs using @EnvironmentObject – Hot Prospects SwiftUI Tutorial 11/18",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528601246
+ },
+ "https://www.youtube.com/watch?v=e6tuUzmxyOU": {
+  "ok": true,
+  "status": 200,
+  "title": "Raw strings in Swift",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604503
+ },
+ "https://www.youtube.com/watch?v=ePPm2ftSVqw&t=1053s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528611047
+ },
+ "https://www.youtube.com/watch?v=ePPm2ftSVqw&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528610600
+ },
+ "https://www.youtube.com/watch?v=ePPm2ftSVqw&t=536s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528611125
+ },
+ "https://www.youtube.com/watch?v=ePPm2ftSVqw": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528610599
+ },
+ "https://www.youtube.com/watch?v=eRpLujwUUBA": {
+  "ok": true,
+  "status": 200,
+  "title": "Sorting Wikipedia results – Bucket List SwiftUI Tutorial 10/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602331
+ },
+ "https://www.youtube.com/watch?v=elGMTQGRZGo&t=183s": {
+  "ok": true,
+  "status": 200,
+  "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600825
+ },
+ "https://www.youtube.com/watch?v=elGMTQGRZGo&t=32s": {
+  "ok": true,
+  "status": 200,
+  "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600716
+ },
+ "https://www.youtube.com/watch?v=elGMTQGRZGo": {
+  "ok": true,
+  "status": 200,
+  "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528609210
+ },
+ "https://www.youtube.com/watch?v=epBbbysk5cU&t=14s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528623633
+ },
+ "https://www.youtube.com/watch?v=epBbbysk5cU&t=637s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528602993
+ },
+ "https://www.youtube.com/watch?v=epBbbysk5cU": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528614961
+ },
+ "https://www.youtube.com/watch?v=erhaJdQeQ9g": {
+  "ok": true,
+  "status": 200,
+  "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528594670
+ },
+ "https://www.youtube.com/watch?v=f2nxenwKCVM&t=1551s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Searchable, Search Suggestions, Search Scopes in SwiftUI | Swift Concurrency #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620485
+ },
+ "https://www.youtube.com/watch?v=fB4HnpS8qkw&t=13s": {
+  "ok": true,
+  "status": 200,
+  "title": "Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528623156
+ },
+ "https://www.youtube.com/watch?v=fB4HnpS8qkw": {
+  "ok": true,
+  "status": 200,
+  "title": "Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604120
+ },
+ "https://www.youtube.com/watch?v=fau8QgH0pIA&t=36s": {
+  "ok": true,
+  "status": 200,
+  "title": "Lazy properties – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617411
+ },
+ "https://www.youtube.com/watch?v=fdxFp5vU6MQ": {
+  "ok": true,
+  "status": 200,
+  "title": "Download JSON from API in Swift with Combine | Continued Learning #23",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528609843
+ },
+ "https://www.youtube.com/watch?v=fmVuOu8XOvQ&t=28s": {
+  "ok": true,
+  "status": 200,
+  "title": "Download and save images using FileManager and NSCache | Continued Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528610064
+ },
+ "https://www.youtube.com/watch?v=fmVuOu8XOvQ&t=3962s": {
+  "ok": true,
+  "status": 200,
+  "title": "Download and save images using FileManager and NSCache | Continued Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528612947
+ },
+ "https://www.youtube.com/watch?v=fmVuOu8XOvQ&t=3968s": {
+  "ok": true,
+  "status": 200,
+  "title": "Download and save images using FileManager and NSCache | Continued Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528614815
+ },
+ "https://www.youtube.com/watch?v=gNok5P7HLCw&t=916s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660578
+ },
+ "https://www.youtube.com/watch?v=gRKlprUj-I8&t=1633s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Structs in Swift | Swift Basics #9",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616819
+ },
+ "https://www.youtube.com/watch?v=gRKlprUj-I8&t=171s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Structs in Swift | Swift Basics #9",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616818
+ },
+ "https://www.youtube.com/watch?v=gU1C3tI7MFk&t=157s": {
+  "ok": true,
+  "status": 200,
+  "title": "Dynamically sorting and filtering @Query with SwiftUI – SwiftData SwiftUI Tutorial 3/5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618513
+ },
+ "https://www.youtube.com/watch?v=gZa_wZ1GJ8I&t=225s": {
+  "ok": true,
+  "status": 200,
+  "title": "Clean Swift Code with Where Clause",
+  "author": "Sean Allen",
+  "checkedAt": 1790528597087
+ },
+ "https://www.youtube.com/watch?v=gbJQucAmp8Q": {
+  "ok": true,
+  "status": 200,
+  "title": "Tips for memory debugging – Carola Nitz on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616089
+ },
+ "https://www.youtube.com/watch?v=gi38bouUI2Q&t=1172s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use AsyncStream in Swift | Swift Concurrency #18",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528614990
+ },
+ "https://www.youtube.com/watch?v=gi38bouUI2Q": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use AsyncStream in Swift | Swift Concurrency #18",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600307
+ },
+ "https://www.youtube.com/watch?v=gm7Xct50CFo&t=31s": {
+  "ok": true,
+  "status": 200,
+  "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528623383
+ },
+ "https://www.youtube.com/watch?v=gm7Xct50CFo": {
+  "ok": true,
+  "status": 200,
+  "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528615527
+ },
+ "https://www.youtube.com/watch?v=gw2k-sXTEyI&t=414s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Bottom Sheet - Resizable",
+  "author": "Sean Allen",
+  "checkedAt": 1790528622708
+ },
+ "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=1309s": {
+  "ok": true,
+  "status": 200,
+  "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618444
+ },
+ "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=1337s": {
+  "ok": true,
+  "status": 200,
+  "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616711
+ },
+ "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=23s": {
+  "ok": true,
+  "status": 200,
+  "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616613
+ },
+ "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=751s": {
+  "ok": true,
+  "status": 200,
+  "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528609669
+ },
+ "https://www.youtube.com/watch?v=h42OHc5CRBQ": {
+  "ok": true,
+  "status": 200,
+  "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528609616
+ },
+ "https://www.youtube.com/watch?v=h9RVeeUVhf8": {
+  "ok": true,
+  "status": 200,
+  "title": "Writing somewhere safe: the iOS keychain – Secret Swift, part 3",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528613205
+ },
+ "https://www.youtube.com/watch?v=hCpM95KHb_Q&t=209s": {
+  "ok": true,
+  "status": 200,
+  "title": "Paging ScrollView in SwiftUI for iOS 17 | Continued Learning #34",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606121
+ },
+ "https://www.youtube.com/watch?v=hCpM95KHb_Q&t=440s": {
+  "ok": true,
+  "status": 200,
+  "title": "Paging ScrollView in SwiftUI for iOS 17 | Continued Learning #34",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528622406
+ },
+ "https://www.youtube.com/watch?v=hIQMQmzitfU": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode 10 - Interface Builder / Code Hybrid Approach for User Interface",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617597
+ },
+ "https://www.youtube.com/watch?v=hQLBDnMR8f8": {
+  "ok": true,
+  "status": 200,
+  "title": "Operator Overloading – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597940
+ },
+ "https://www.youtube.com/watch?v=hiOjTJgl6GU&t=318s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Subscripts in Swift | Advanced Learning #32",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528604867
+ },
+ "https://www.youtube.com/watch?v=hiOjTJgl6GU": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Subscripts in Swift | Advanced Learning #32",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528597656
+ },
+ "https://www.youtube.com/watch?v=huRKU-TAD3g&t=3868s": {
+  "ok": true,
+  "status": 200,
+  "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528612227
+ },
+ "https://www.youtube.com/watch?v=huRKU-TAD3g&t=3884s": {
+  "ok": true,
+  "status": 200,
+  "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528611641
+ },
+ "https://www.youtube.com/watch?v=huRKU-TAD3g&t=4254s": {
+  "ok": true,
+  "status": 200,
+  "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528611697
+ },
+ "https://www.youtube.com/watch?v=iCRwqxON8Os": {
+  "ok": true,
+  "status": 200,
+  "title": "Integer multiples in Swift with isMultiple(of:)",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604233
+ },
+ "https://www.youtube.com/watch?v=iM2lMBAckKg": {
+  "ok": true,
+  "status": 200,
+  "title": "How to store and find data in dictionaries – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604968
+ },
+ "https://www.youtube.com/watch?v=iTqwa0DCIMA&t=291s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Search Bar - Searchable",
+  "author": "Sean Allen",
+  "checkedAt": 1790528620486
+ },
+ "https://www.youtube.com/watch?v=j6kcxcih4S8&t=45s": {
+  "ok": true,
+  "status": 200,
+  "title": "Force unwrapping – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617749
+ },
+ "https://www.youtube.com/watch?v=jEpg2SYvVV8": {
+  "ok": true,
+  "status": 200,
+  "title": "Multi-threading with background threads and queues in Xcode | Continued Learning #17",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617730
+ },
+ "https://www.youtube.com/watch?v=jRNa6hYTJLo&t=190s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Variables and Constants | Swift Basics #3",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528603968
+ },
+ "https://www.youtube.com/watch?v=jRNa6hYTJLo&t=82s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Variables and Constants | Swift Basics #3",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528603904
+ },
+ "https://www.youtube.com/watch?v=javFZbCYGfc": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Map Annotation Pins for SwiftUI MapKit Map | SwiftUI Map App #6",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528612703
+ },
+ "https://www.youtube.com/watch?v=jlkcxTyM8m4&t=201s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create constants and variables – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528603971
+ },
+ "https://www.youtube.com/watch?v=jlkcxTyM8m4&t=403s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to create constants and variables – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528603903
+ },
+ "https://www.youtube.com/watch?v=jnW5m1qUINA": {
+  "ok": true,
+  "status": 200,
+  "title": "Editing SwiftData model objects – SwiftData SwiftUI Tutorial 1/5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612171
+ },
+ "https://www.youtube.com/watch?v=jucm6e9M6LA&t=277s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to Build a Widget in Swift with WidgetKit",
+  "author": "Sean Allen",
+  "checkedAt": 1790528613873
+ },
+ "https://www.youtube.com/watch?v=k1A0YTkMCxc": {
+  "ok": true,
+  "status": 200,
+  "title": "Locking our UI behind Face ID – Bucket List SwiftUI Tutorial 12/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528623509
+ },
+ "https://www.youtube.com/watch?v=k9wjAdgUY0A&t=68s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660540
+ },
+ "https://www.youtube.com/watch?v=kCjDulwChRQ&t=2895s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660409
+ },
+ "https://www.youtube.com/watch?v=kr3SSplrJlw&t=300s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Functions in Swift | Swift Basics #5",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605666
+ },
+ "https://www.youtube.com/watch?v=kzGSiGXbxWo": {
+  "ok": true,
+  "status": 200,
+  "title": "Slice to win – Swifty Ninja, part 6",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604822
+ },
+ "https://www.youtube.com/watch?v=kzrtiPbR3LQ&t=900s": {
+  "ok": true,
+  "status": 200,
+  "title": "Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619313
+ },
+ "https://www.youtube.com/watch?v=kzrtiPbR3LQ": {
+  "ok": true,
+  "status": 200,
+  "title": "Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619204
+ },
+ "https://www.youtube.com/watch?v=l0QehVWz2i0": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Dependency Injection - What is it? What are the benefits?",
+  "author": "Sean Allen",
+  "checkedAt": 1790528601895
+ },
+ "https://www.youtube.com/watch?v=ldGno_JrHEA&t=23s": {
+  "ok": true,
+  "status": 200,
+  "title": "Properties and methods of strings – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606020
+ },
+ "https://www.youtube.com/watch?v=ldGno_JrHEA&t=4s": {
+  "ok": true,
+  "status": 200,
+  "title": "Properties and methods of strings – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606169
+ },
+ "https://www.youtube.com/watch?v=lgtB3WLEOYg": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI - @Binding Property Wrapper Explained - Passing Data",
+  "author": "Sean Allen",
+  "checkedAt": 1790528619960
+ },
+ "https://www.youtube.com/watch?v=llwqcyubnAc": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode: IBOutlet Collections",
+  "author": "Sean Allen",
+  "checkedAt": 1790528598299
+ },
+ "https://www.youtube.com/watch?v=lncOFL3Qsns&t=1002s": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605925
+ },
+ "https://www.youtube.com/watch?v=lncOFL3Qsns&t=360s": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616517
+ },
+ "https://www.youtube.com/watch?v=lncOFL3Qsns&t=55s": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617627
+ },
+ "https://www.youtube.com/watch?v=lncOFL3Qsns&t=655s": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616528
+ },
+ "https://www.youtube.com/watch?v=lncOFL3Qsns&t=82s": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616468
+ },
+ "https://www.youtube.com/watch?v=lncOFL3Qsns&t=863s": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616406
+ },
+ "https://www.youtube.com/watch?v=lncOFL3Qsns": {
+  "ok": true,
+  "status": 200,
+  "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528601716
+ },
+ "https://www.youtube.com/watch?v=lvzcJ62JJmU&t=149s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Tip - #warning & #error",
+  "author": "Sean Allen",
+  "checkedAt": 1790528601485
+ },
+ "https://www.youtube.com/watch?v=lxaEAHNmhY4&t=227s": {
+  "ok": true,
+  "status": 200,
+  "title": "Observable objects, environment objects, and @Published - SwiftUI Starter Project 6/14",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528610669
+ },
+ "https://www.youtube.com/watch?v=mG9BVAs8AIo&t=71s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to schedule local Push Notifications in SwiftUI | Continued Learning #11",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528613728
+ },
+ "https://www.youtube.com/watch?v=mWKYpRxjhJs&t=364s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Basics - Array | Sort, Reverse, Shuffle",
+  "author": "Sean Allen",
+  "checkedAt": 1790528596005
+ },
+ "https://www.youtube.com/watch?v=m_0_XQEfrGQ": {
+  "ok": true,
+  "status": 200,
+  "title": "Beginner Auto Layout & Constraints - Swift 4.2 - Xcode 10",
+  "author": "Sean Allen",
+  "checkedAt": 1790528621009
+ },
+ "https://www.youtube.com/watch?v=myLtDcYuE3k&t=11s": {
+  "ok": true,
+  "status": 200,
+  "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528620793
+ },
+ "https://www.youtube.com/watch?v=myLtDcYuE3k&t=160s": {
+  "ok": true,
+  "status": 200,
+  "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528623442
+ },
+ "https://www.youtube.com/watch?v=myLtDcYuE3k": {
+  "ok": true,
+  "status": 200,
+  "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528620213
+ },
+ "https://www.youtube.com/watch?v=n0HlwonH9v0&t=557s": {
+  "ok": true,
+  "status": 200,
+  "title": "Relationships with SwiftData, SwiftUI, and @Query – SwiftData SwiftUI Tutorial 4/5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612359
+ },
+ "https://www.youtube.com/watch?v=n0ycUw4SSNM&t=255s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to limit access to internal data using access control – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617136
+ },
+ "https://www.youtube.com/watch?v=nJmrkRlRu88&t=14s": {
+  "ok": true,
+  "status": 200,
+  "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528597107
+ },
+ "https://www.youtube.com/watch?v=nJmrkRlRu88&t=178s": {
+  "ok": true,
+  "status": 200,
+  "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617648
+ },
+ "https://www.youtube.com/watch?v=nJmrkRlRu88&t=263s": {
+  "ok": true,
+  "status": 200,
+  "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617187
+ },
+ "https://www.youtube.com/watch?v=nJuRNY8nhuA&t=34s": {
+  "ok": true,
+  "status": 200,
+  "title": "Add a Settings screen using a List with Sections | SwiftUI Crypto App #23",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620560
+ },
+ "https://www.youtube.com/watch?v=naK7cXsVxD0&t=365s": {
+  "ok": true,
+  "status": 200,
+  "title": "Working with Identifiable items in SwiftUI – iExpense SwiftUI Tutorial 8/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618582
+ },
+ "https://www.youtube.com/watch?v=nalfX8yP0wc&t=1258s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Core Data with @FetchRequest in SwiftUI | Continued Learning #14",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528611966
+ },
+ "https://www.youtube.com/watch?v=nxqtJ4-FMjs&t=246s": {
+  "ok": true,
+  "status": 200,
+  "title": "(OLD) Using size classes with AnyView type erasure – Bookworm SwiftUI Tutorial 2/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528597226
+ },
+ "https://www.youtube.com/watch?v=nxqtJ4-FMjs": {
+  "ok": true,
+  "status": 200,
+  "title": "(OLD) Using size classes with AnyView type erasure – Bookworm SwiftUI Tutorial 2/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618969
+ },
+ "https://www.youtube.com/watch?v=o3D3rqh-IVA&t=3s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660499
+ },
+ "https://www.youtube.com/watch?v=o6D7mUXjSmI": {
+  "ok": true,
+  "status": 200,
+  "title": "How to lazy load views using LazyVStack and LazyHStack – SwiftUI",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528598314
+ },
+ "https://www.youtube.com/watch?v=oGPLjXgWqj8&t=219s": {
+  "ok": true,
+  "status": 200,
+  "title": "Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528614903
+ },
+ "https://www.youtube.com/watch?v=oGPLjXgWqj8&t=50s": {
+  "ok": true,
+  "status": 200,
+  "title": "Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604932
+ },
+ "https://www.youtube.com/watch?v=oJDu0dKa0PU&t=74s": {
+  "ok": true,
+  "status": 200,
+  "title": "Stop Creating Custom Colors in SwiftUI",
+  "author": "Sean Allen",
+  "checkedAt": 1790528619754
+ },
+ "https://www.youtube.com/watch?v=oLhjqLgLr4s&t=383s": {
+  "ok": true,
+  "status": 200,
+  "title": "Adding conformance to Comparable for custom types – Bucket List SwiftUI Tutorial 1/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617117
+ },
+ "https://www.youtube.com/watch?v=oN3Rqo6V6Uc&t=22s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use ViewThatFits in SwiftUI | Bootcamp #71",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528622581
+ },
+ "https://www.youtube.com/watch?v=oTmnbj5UFkA": {
+  "ok": true,
+  "status": 200,
+  "title": "Working with Sub-Collections in Firebase Firestore for iOS Apps | Firebase Bootcamp #15",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528598240
+ },
+ "https://www.youtube.com/watch?v=o_qBp32KpOI": {
+  "ok": true,
+  "status": 200,
+  "title": "Fixing \"Class ViewController has no initializers\" – Swift 5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616957
+ },
+ "https://www.youtube.com/watch?v=oeKUmAgyOdw&t=117s": {
+  "ok": true,
+  "status": 200,
+  "title": "Strings are not arrays – Swift Strings, part 2",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617530
+ },
+ "https://www.youtube.com/watch?v=oxp8Qqwr4AY&t=867s": {
+  "ok": true,
+  "status": 200,
+  "title": "NavigationStack - SwiftUI Programmatic Navigation - iOS 16",
+  "author": "Sean Allen",
+  "checkedAt": 1790528620609
+ },
+ "https://www.youtube.com/watch?v=p6q1RmYUsNU&t=93s": {
+  "ok": true,
+  "status": 200,
+  "title": "Learn Swift Concurrency (Async, Await, Actors) online for FREE | Swift Concurrency #0",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600215
+ },
+ "https://www.youtube.com/watch?v=pIAH3RVVXZE": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Creating NSManagedObject subclasses – Core Data SwiftUI Tutorial 2/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616883
+ },
+ "https://www.youtube.com/watch?v=pUYw9D0aq6g&t=1708s": {
+  "ok": true,
+  "status": 200,
+  "title": "Write Better Code with Swift Algorithms",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602136
+ },
+ "https://www.youtube.com/watch?v=pUYw9D0aq6g&t=1852s": {
+  "ok": true,
+  "status": 200,
+  "title": "Write Better Code with Swift Algorithms",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602026
+ },
+ "https://www.youtube.com/watch?v=pUYw9D0aq6g&t=28s": {
+  "ok": true,
+  "status": 200,
+  "title": "Write Better Code with Swift Algorithms",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618388
+ },
+ "https://www.youtube.com/watch?v=pUYw9D0aq6g&t=481s": {
+  "ok": true,
+  "status": 200,
+  "title": "Write Better Code with Swift Algorithms",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618248
+ },
+ "https://www.youtube.com/watch?v=pUYw9D0aq6g": {
+  "ok": true,
+  "status": 200,
+  "title": "Write Better Code with Swift Algorithms",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528602017
+ },
+ "https://www.youtube.com/watch?v=pXmBRK1BjLw&t=1249s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use @ViewBuilder in SwiftUI | Advanced Learning #9",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619090
+ },
+ "https://www.youtube.com/watch?v=pXmBRK1BjLw": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use @ViewBuilder in SwiftUI | Advanced Learning #9",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600436
+ },
+ "https://www.youtube.com/watch?v=po4lRojJXdA&t=10s": {
+  "ok": true,
+  "status": 200,
+  "title": "Build an expandable / collapsable description section | SwiftUI Crypto App #22",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617528
+ },
+ "https://www.youtube.com/watch?v=q6oA2nc44Es&t=114s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to Push and Pull from a Remote Repository  | Git & Source Control #5",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528613234
+ },
+ "https://www.youtube.com/watch?v=qSLOBpiJ2p4": {
+  "ok": true,
+  "status": 200,
+  "title": "Add custom List Swipe Actions in SwiftUI | Bootcamp #58",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528620363
+ },
+ "https://www.youtube.com/watch?v=qSdCw7YxQhA": {
+  "ok": true,
+  "status": 200,
+  "title": "Cleaner, Safer Code with Swift KeyPaths",
+  "author": "Sean Allen",
+  "checkedAt": 1790528597482
+ },
+ "https://www.youtube.com/watch?v=qhZPTZ52kpo": {
+  "ok": true,
+  "status": 200,
+  "title": "Pushing new views onto the stack using NavigationLink – Moonshot SwiftUI Tutorial 3/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617247
+ },
+ "https://www.youtube.com/watch?v=qiOKO8ta1n4": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Delegate Protocol Pattern Tutorial 2023 | iOS Communication Patterns",
+  "author": "Sean Allen",
+  "checkedAt": 1790528597939
+ },
+ "https://www.youtube.com/watch?v=qin6oM6PtGg&t=332s": {
+  "ok": true,
+  "status": 200,
+  "title": "Static properties and methods – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616897
+ },
+ "https://www.youtube.com/watch?v=qin6oM6PtGg&t=52s": {
+  "ok": true,
+  "status": 200,
+  "title": "Static properties and methods – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617453
+ },
+ "https://www.youtube.com/watch?v=qr1XJMIziBg": {
+  "ok": true,
+  "status": 200,
+  "title": "How to make tappable links in NSAttributedString – Swift 5",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528601319
+ },
+ "https://www.youtube.com/watch?v=rAKxcNe2nxo&t=90s": {
+  "ok": true,
+  "status": 200,
+  "title": "Counting down with a Timer – Flashzilla SwiftUI Tutorial 10/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528623008
+ },
+ "https://www.youtube.com/watch?v=rChSFRIaAYo": {
+  "ok": true,
+  "status": 200,
+  "title": "How to make a scroll view move to a location using ScrollViewReader – SwiftUI",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528623701
+ },
+ "https://www.youtube.com/watch?v=rGq_CKHhAyQ": {
+  "ok": true,
+  "status": 200,
+  "title": "Conditional modifiers – Views and Modifiers SwiftUI Tutorial 5/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528618913
+ },
+ "https://www.youtube.com/watch?v=rcs_0xLZ8yI": {
+  "ok": true,
+  "status": 200,
+  "title": "Deleting items using onDelete() – iExpense SwiftUI Tutorial 4/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528620362
+ },
+ "https://www.youtube.com/watch?v=rx3uRICZr5I&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Generics in Swift | Advanced Learning #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528594593
+ },
+ "https://www.youtube.com/watch?v=rx3uRICZr5I&t=874s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Generics in Swift | Advanced Learning #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618807
+ },
+ "https://www.youtube.com/watch?v=rx3uRICZr5I&t=877s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Generics in Swift | Advanced Learning #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528595623
+ },
+ "https://www.youtube.com/watch?v=rx3uRICZr5I": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Generics in Swift | Advanced Learning #8",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528597229
+ },
+ "https://www.youtube.com/watch?v=s2E5hVxQAZQ": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift - Static Properties & Methods Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616888
+ },
+ "https://www.youtube.com/watch?v=s8JPQ8jLD00": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode Simulator: Environment Override",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616937
+ },
+ "https://www.youtube.com/watch?v=sHfNxIGG1mE": {
+  "ok": true,
+  "status": 200,
+  "title": "App Store Screenshots are a HUGE deal - 2025 Algorithm Change",
+  "author": "Sean Allen",
+  "checkedAt": 1790528602134
+ },
+ "https://www.youtube.com/watch?v=sQrRf99diz0&t=30s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to unwrap optionals with guard – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616295
+ },
+ "https://www.youtube.com/watch?v=sQrRf99diz0&t=58s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to unwrap optionals with guard – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528606203
+ },
+ "https://www.youtube.com/watch?v=sUhq1vIrRbo&t=263s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to Save Data with UserDefaults - Swift",
+  "author": "Sean Allen",
+  "checkedAt": 1790528610134
+ },
+ "https://www.youtube.com/watch?v=sUhq1vIrRbo&t=99s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to Save Data with UserDefaults - Swift",
+  "author": "Sean Allen",
+  "checkedAt": 1790528613013
+ },
+ "https://www.youtube.com/watch?v=sh1lzhgsc64&t=220s": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Filtering @FetchRequest using NSPredicate – Core Data SwiftUI Tutorial 5/7",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528611637
+ },
+ "https://www.youtube.com/watch?v=skECWIKpBVY&t=1110s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660576
+ },
+ "https://www.youtube.com/watch?v=skECWIKpBVY&t=1368s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660578
+ },
+ "https://www.youtube.com/watch?v=skECWIKpBVY&t=4275s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660596
+ },
+ "https://www.youtube.com/watch?v=srqiDnLEocA&t=1s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Observer & Notification Pattern Tutorial - iOS Communication Patterns Part 2",
+  "author": "Sean Allen",
+  "checkedAt": 1790528613802
+ },
+ "https://www.youtube.com/watch?v=ssLIP4gFrYc&t=26s": {
+  "ok": true,
+  "status": 200,
+  "title": "Enum Raw Values – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605807
+ },
+ "https://www.youtube.com/watch?v=ssLIP4gFrYc": {
+  "ok": true,
+  "status": 200,
+  "title": "Enum Raw Values – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605809
+ },
+ "https://www.youtube.com/watch?v=su0KLQq0JM0&t=20s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use inits and enums in SwiftUI | Bootcamp #13",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616817
+ },
+ "https://www.youtube.com/watch?v=t95HGRLPwj0": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use animation with value in SwiftUI (iOS 16+) | Bootcamp #67",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528619507
+ },
+ "https://www.youtube.com/watch?v=tNxEqyUVGck&t=1468s": {
+  "ok": true,
+  "status": 200,
+  "title": "What's new in SwiftUI for iOS 27?",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528596951
+ },
+ "https://www.youtube.com/watch?v=tNxEqyUVGck": {
+  "ok": true,
+  "status": 200,
+  "title": "What's new in SwiftUI for iOS 27?",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528596241
+ },
+ "https://www.youtube.com/watch?v=tbFO8DsJ6aw&t=29s": {
+  "ok": true,
+  "status": 200,
+  "title": "Basic Swift debugging using print() – Debugging, part 2",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605608
+ },
+ "https://www.youtube.com/watch?v=tbFO8DsJ6aw&t=81s": {
+  "ok": true,
+  "status": 200,
+  "title": "Basic Swift debugging using print() – Debugging, part 2",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604550
+ },
+ "https://www.youtube.com/watch?v=tg7Iqtk0eWM&t=363s": {
+  "ok": true,
+  "status": 200,
+  "title": "Using stacks to arrange views – Guess the Flag SwiftUI Tutorial 1/9",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617731
+ },
+ "https://www.youtube.com/watch?v=tnNFoZ7CkP8": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI - TabView Tutorial",
+  "author": "Sean Allen",
+  "checkedAt": 1790528622873
+ },
+ "https://www.youtube.com/watch?v=tvVj6MSBhBA&t=1782s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660460
+ },
+ "https://www.youtube.com/watch?v=u6cgk1W6EXE&t=1878s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660403
+ },
+ "https://www.youtube.com/watch?v=u6cgk1W6EXE&t=2102s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660454
+ },
+ "https://www.youtube.com/watch?v=u6cgk1W6EXE&t=40s": {
+  "ok": true,
+  "status": 401,
+  "embeddable": false,
+  "checkedAt": 1790528660456
+ },
+ "https://www.youtube.com/watch?v=uVr0NqS2QrI&t=46s": {
+  "ok": true,
+  "status": 200,
+  "title": "Penguin, show thyself: SKAction moveBy(x:y:duration:) – Whack-a-Penguin, part 3",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528603304
+ },
+ "https://www.youtube.com/watch?v=vDbFH9D6BSA&t=74s": {
+  "ok": true,
+  "status": 200,
+  "title": "Storing user settings with UserDefaults – iExpense SwiftUI Tutorial 5/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528610137
+ },
+ "https://www.youtube.com/watch?v=vHvb7LH8VuE&t=702s": {
+  "ok": true,
+  "status": 200,
+  "title": "LazyVGrid, LazyHGrid, and GridItems in SwiftUI | Bootcamp #16",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528621074
+ },
+ "https://www.youtube.com/watch?v=vSvhdwy_8Lk&t=164s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use RotationGesture in SwiftUI | Continued Learning #3",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528622219
+ },
+ "https://www.youtube.com/watch?v=vUvf_dlr6IU": {
+  "ok": true,
+  "status": 200,
+  "title": "MapKit Tutorial - Get Directions & Show on Map - Swift 4.2",
+  "author": "Sean Allen",
+  "checkedAt": 1790528612827
+ },
+ "https://www.youtube.com/watch?v=vWKOXetgr4g&t=17s": {
+  "ok": true,
+  "status": 200,
+  "title": "Dynamically filtering our SwiftData query – Hot Prospects 11/16",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605949
+ },
+ "https://www.youtube.com/watch?v=vfUalXtwth0&t=76s": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Grids - LazyVGrid, LazyHGrid, Static Grid",
+  "author": "Sean Allen",
+  "checkedAt": 1790528621100
+ },
+ "https://www.youtube.com/watch?v=vfUalXtwth0": {
+  "ok": true,
+  "status": 200,
+  "title": "SwiftUI Grids - LazyVGrid, LazyHGrid, Static Grid",
+  "author": "Sean Allen",
+  "checkedAt": 1790528598155
+ },
+ "https://www.youtube.com/watch?v=vmQnTMWaDiY&t=78s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Protocols - An Introduction",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617683
+ },
+ "https://www.youtube.com/watch?v=vmQnTMWaDiY&t=790s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Protocols - An Introduction",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617062
+ },
+ "https://www.youtube.com/watch?v=vmQnTMWaDiY&t=95s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Protocols - An Introduction",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617863
+ },
+ "https://www.youtube.com/watch?v=vmQnTMWaDiY": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Protocols - An Introduction",
+  "author": "Sean Allen",
+  "checkedAt": 1790528617188
+ },
+ "https://www.youtube.com/watch?v=vr5CBfaK14A": {
+  "ok": true,
+  "status": 200,
+  "title": "Send Push Notifications using CloudKit in SwiftUI | Advanced Learning #24",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528613940
+ },
+ "https://www.youtube.com/watch?v=wBd3s4ZW8Ps&t=4s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Typealias in Swift | Continued Learning #19",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605883
+ },
+ "https://www.youtube.com/watch?v=wGk9sF1BQK0": {
+  "ok": true,
+  "status": 200,
+  "title": "Dictionary default values – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528604916
+ },
+ "https://www.youtube.com/watch?v=wMIHdsFYGC0&t=134s": {
+  "ok": true,
+  "status": 200,
+  "title": "Binding state to user interface controls – WeSplit SwiftUI Tutorial  5/11",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528621534
+ },
+ "https://www.youtube.com/watch?v=wSmTbtOwgbE&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "What is the Sendable protocol in Swift? | Swift Concurrency #11",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528600320
+ },
+ "https://www.youtube.com/watch?v=wlxQPfFEP90&t=3s": {
+  "ok": true,
+  "status": 200,
+  "title": "Inside the Standard Library: Sequence.map",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617936
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=105s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606208
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=13s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617523
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=17s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617459
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=329s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616293
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=744s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616295
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=8s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616348
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=9s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616406
+ },
+ "https://www.youtube.com/watch?v=wmQIl0O9HBY": {
+  "ok": true,
+  "status": 200,
+  "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605428
+ },
+ "https://www.youtube.com/watch?v=wpeCIAdlCpM": {
+  "ok": true,
+  "status": 200,
+  "title": "Xcode Tip - Multi-line Cursor Editing #iosdeveloper #swift #xcode",
+  "author": "Sean Allen",
+  "checkedAt": 1790528606005
+ },
+ "https://www.youtube.com/watch?v=x-5UgNl7GFU": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Algorithms - Faster, Cleaner Code. (Chunked Example)",
+  "author": "Sean Allen",
+  "checkedAt": 1790528618272
+ },
+ "https://www.youtube.com/watch?v=x9HEeFnFlqs": {
+  "ok": true,
+  "status": 200,
+  "title": "iOS 15: Sorting fetch requests with SortDescriptor – Bookworm SwiftUI Tutorial 8/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528609907
+ },
+ "https://www.youtube.com/watch?v=xJgtknc-7CA&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Classes in Swift | Swift Basics #11",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528618506
+ },
+ "https://www.youtube.com/watch?v=xJgtknc-7CA&t=390s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Classes in Swift | Swift Basics #11",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528616956
+ },
+ "https://www.youtube.com/watch?v=xJgtknc-7CA": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Classes in Swift | Swift Basics #11",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528617241
+ },
+ "https://www.youtube.com/watch?v=xSw_ftbtSgM": {
+  "ok": true,
+  "status": 200,
+  "title": "Sorting SwiftData queries using SortDescriptor – Bookworm SwiftUI Tutorial 8/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528615316
+ },
+ "https://www.youtube.com/watch?v=xTRhYKjp5nk&t=69s": {
+  "ok": true,
+  "status": 200,
+  "title": "Paths vs shapes in SwiftUI – Drawing SwiftUI Tutorial 2/10",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619265
+ },
+ "https://www.youtube.com/watch?v=xiS5gJOIQxI&t=180s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Closures: @escaping Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528618446
+ },
+ "https://www.youtube.com/watch?v=xiS5gJOIQxI&t=207s": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Closures: @escaping Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616681
+ },
+ "https://www.youtube.com/watch?v=xiS5gJOIQxI": {
+  "ok": true,
+  "status": 200,
+  "title": "Swift Closures: @escaping Explained",
+  "author": "Sean Allen",
+  "checkedAt": 1790528616700
+ },
+ "https://www.youtube.com/watch?v=xzFSOdpxy-o&t=31s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Ternary Operators in SwiftUI | Bootcamp #24",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605358
+ },
+ "https://www.youtube.com/watch?v=yBJXkieX2R4": {
+  "ok": true,
+  "status": 200,
+  "title": "Creating empty collections – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528598236
+ },
+ "https://www.youtube.com/watch?v=yCGbhbFK8sY&t=1029s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Futures and Promises in Combine with SwiftUI | Advanced Learning #20",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528610739
+ },
+ "https://www.youtube.com/watch?v=yXSC6jTkLP4&t=743s": {
+  "ok": true,
+  "status": 200,
+  "title": "Save and cache images in a SwiftUI app | Continued Learning #27",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528601790
+ },
+ "https://www.youtube.com/watch?v=yXSC6jTkLP4&t=981s": {
+  "ok": true,
+  "status": 200,
+  "title": "Save and cache images in a SwiftUI app | Continued Learning #27",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528601849
+ },
+ "https://www.youtube.com/watch?v=yZZ6UTipwkM": {
+  "ok": true,
+  "status": 200,
+  "title": "Arrays vs Sets vs Tuples – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605153
+ },
+ "https://www.youtube.com/watch?v=yac52lmf_yc&t=49s": {
+  "ok": true,
+  "status": 200,
+  "title": "From Homeless to $130k+ iOS Dev | Self-Taught",
+  "author": "Sean Allen",
+  "checkedAt": 1790528598743
+ },
+ "https://www.youtube.com/watch?v=yd6u9pz4re0": {
+  "ok": true,
+  "status": 200,
+  "title": "Ending the app with allowsHitTesting() – Flashzilla SwiftUI Tutorial 11/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528613458
+ },
+ "https://www.youtube.com/watch?v=ymXRX6ZB-J0&t=4s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Timer and onReceive in SwiftUI | Continued Learning #24",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528622999
+ },
+ "https://www.youtube.com/watch?v=ys9M_iNqD6s": {
+  "ok": true,
+  "status": 200,
+  "title": "What's the best way to prepare for a Swift interview – Sean Allen on Swiftly Speaking",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528594682
+ },
+ "https://www.youtube.com/watch?v=z7EvsqDwcT4&t=2s": {
+  "ok": true,
+  "status": 200,
+  "title": "Wrap up – Auto Layout, part 6",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528620870
+ },
+ "https://www.youtube.com/watch?v=zFgZciqhI08&t=16s": {
+  "ok": true,
+  "status": 200,
+  "title": "Coloring views as we swipe – Flashzilla SwiftUI Tutorial 9/13",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528619775
+ },
+ "https://www.youtube.com/watch?v=zFvsOI2eYBU": {
+  "ok": true,
+  "status": 200,
+  "title": "Selecting and editing map annotations – Bucket List SwiftUI Tutorial 8/12",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528612751
+ },
+ "https://www.youtube.com/watch?v=z_kR4cP23c4&t=2s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to skip loop items with break and continue – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605551
+ },
+ "https://www.youtube.com/watch?v=z_kR4cP23c4": {
+  "ok": true,
+  "status": 200,
+  "title": "How to skip loop items with break and continue – Swift for Complete Beginners",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528605282
+ },
+ "https://www.youtube.com/watch?v=zsjCrtENsZA&t=17s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Tuples in Swift | Swift Basics #7",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605119
+ },
+ "https://www.youtube.com/watch?v=zsjCrtENsZA&t=82s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Tuples in Swift | Swift Basics #7",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528605169
+ },
+ "https://www.youtube.com/watch?v=zsjCrtENsZA&t=93s": {
+  "ok": true,
+  "status": 200,
+  "title": "How to use Tuples in Swift | Swift Basics #7",
+  "author": "Swiftful Thinking",
+  "checkedAt": 1790528606178
+ },
+ "https://www.youtube.com/watch?v=zv8Lia5Ertk&t=1s": {
+  "ok": true,
+  "status": 200,
+  "title": "Class inheritance – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528617863
+ },
+ "https://www.youtube.com/watch?v=zv8Lia5Ertk": {
+  "ok": true,
+  "status": 200,
+  "title": "Class inheritance – Swift in Sixty Seconds",
+  "author": "Paul Hudson",
+  "checkedAt": 1790528616871
+ }
+}

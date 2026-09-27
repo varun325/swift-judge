@@ -13,6 +13,10 @@
     {
       "title": "ViewBuilder",
       "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
+    },
+    {
+      "title": "View",
+      "url": "https://developer.apple.com/documentation/swiftui/view"
     }
   ],
   "platforms": [
@@ -22,5 +26,42 @@
     "An opaque return type must be the same concrete type on every path.",
     "Return `Text` on one path and `Image` on the other with explicit `return`s.",
     "Remove `@ViewBuilder` and use `return Text(...)` / `return Image(...)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`some View` must be **one** concrete type, so returning `Text` in one branch and `Image` in another fails. `@ViewBuilder` wraps branches into `_ConditionalContent`. JSX never has this issue because elements share one runtime type.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A React function can return `<Text/>` or `<Image/>` freely. Why can't a Swift `some View` function?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Fixes: `@ViewBuilder`, `Group { if … }`, or `AnyView`. Which is cheapest?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `body` not need `@ViewBuilder` written explicitly? (The `View` protocol declares it.)"
+    },
+    {
+      "kind": "practice",
+      "q": "Helper functions returning views: do you mark them `@ViewBuilder` by habit?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use @ViewBuilder in SwiftUI | Advanced Learning #9",
+      "url": "https://www.youtube.com/watch?v=pXmBRK1BjLw&t=1249s",
+      "channel": "Swiftful Thinking",
+      "start": 1249,
+      "moment": "let's click resume on the canvas and we're going to get this error here that this function does not have an"
+    },
+    {
+      "title": "(OLD) Why does SwiftUI use “some View” for its view type? –Views and Modifiers SwiftUI Tutorial 4/10",
+      "url": "https://www.youtube.com/watch?v=SzgxLMUumic",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Swift ey relies very heavily on a swift power feature called opaque return type"
+    }
+  ],
+  "articles": []
 }

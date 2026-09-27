@@ -13,6 +13,10 @@
     {
       "title": "ParseStrategy",
       "url": "https://developer.apple.com/documentation/foundation/parsestrategy"
+    },
+    {
+      "title": "FormatStyle",
+      "url": "https://developer.apple.com/documentation/foundation/formatstyle"
     }
   ],
   "signature": {
@@ -33,5 +37,38 @@
     "A currency format style has a `parseStrategy` that reads `$1,234.50`.",
     "Fall back to `Decimal(string:locale:)` for plain numbers.",
     "Multiply by 100 and round a `Decimal` with `NSDecimalRound`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Format styles also **parse** user input (`parseStrategy`), turning \"$1,234.50\" into a `Decimal`. JS has no built-in locale-aware parsing (`Intl` only formats), so apps hand-roll regexes.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How do you parse \"1.234,50 €\" in JS? Why is that a notorious gap?"
+    },
+    {
+      "kind": "edge",
+      "q": "What should happen with \"1,2,3\" or \"$-5\"? Where does parsing fail?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Decimal` vs `Double` for parsed money: which preserves exact cents?"
+    },
+    {
+      "kind": "practice",
+      "q": "`TextField(value:format:)` parses for you. When does that behaviour surprise users?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14",
+      "url": "https://www.youtube.com/watch?v=8O8HmKn2OFk",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "New Way to Format Dates in Swift (5.5)",
+      "url": "https://www.youtube.com/watch?v=5I1ghMpU4rs",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

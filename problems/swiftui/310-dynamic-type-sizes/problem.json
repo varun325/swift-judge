@@ -18,6 +18,10 @@
     {
       "title": "Accessibility",
       "url": "https://developer.apple.com/documentation/accessibility"
+    },
+    {
+      "title": "Accessibility fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/accessibility-fundamentals"
     }
   ],
   "signature": {
@@ -39,5 +43,42 @@
     "`DynamicTypeSize` is `CaseIterable` and `Comparable`.",
     "Build a name → size dictionary from `allCases`, then compare with `>= .accessibility1`.",
     "Count `allCases.filter(\\.isAccessibilitySize)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`DynamicTypeSize` is the user's text-size setting (`xSmall` … `accessibility5`). It's `Comparable`, so layouts can switch at a threshold. It's like responding to browser zoom or rem scaling, but it's a first-class OS setting users actually change.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The web scales with `rem` and browser zoom. What does iOS scale, and why must layouts reflow (not just scale)?"
+    },
+    {
+      "kind": "edge",
+      "q": "At `accessibility3`, a horizontal row no longer fits. How do you switch to a vertical stack?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Fixed font sizes vs `.font(.body)` vs `@ScaledMetric`: which respect Dynamic Type?"
+    },
+    {
+      "kind": "practice",
+      "q": "How do you preview all sizes at once in Xcode (Variants, Dynamic Type preview)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+      "url": "https://www.youtube.com/watch?v=2M84O4sDe0o",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "this is Swiffer thinking and this is the second video in this playlist on accessibility in the last video we"
+    },
+    {
+      "title": "Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/7",
+      "url": "https://www.youtube.com/watch?v=oGPLjXgWqj8&t=50s",
+      "channel": "Paul Hudson",
+      "start": 50,
+      "moment": "there are three in particular I want to focus on here first marking images as being unimportant for voiceover second"
+    }
+  ],
+  "articles": []
 }

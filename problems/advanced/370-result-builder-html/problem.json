@@ -13,6 +13,10 @@
     {
       "title": "Attributes — resultBuilder",
       "book": "ReferenceManual/Attributes"
+    },
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
     }
   ],
   "signature": {
@@ -37,5 +41,44 @@
     "A `@resultBuilder` turns the statements in a closure into calls to `build…` methods.",
     "Implement `buildExpression`, `buildBlock`, `buildOptional`, `buildEither(first:)`/`(second:)` and `buildArray`, all producing `[String]`.",
     "`static func buildBlock(_ parts: [String]...) -> [String] { parts.flatMap { $0 } }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Result builders turn a block of expressions into a value, which is how SwiftUI's `VStack { Text(); Text() }` works. They're Swift's JSX: a compile-time transform with no runtime parser.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JSX compiles to `createElement` calls. What do result builders compile to (`buildBlock`, `buildEither`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why do `if` statements in a builder need `buildEither`/`buildOptional`? What does `for` need?"
+    },
+    {
+      "kind": "contrast",
+      "q": "SwiftUI's `ViewBuilder` vs JSX: which one supports `switch` natively?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why did SwiftUI's 10-child limit exist, and how did parameter packs remove it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use @ViewBuilder in SwiftUI | Advanced Learning #9",
+      "url": "https://www.youtube.com/watch?v=pXmBRK1BjLw",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0289: Result builders",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0289-result-builders.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

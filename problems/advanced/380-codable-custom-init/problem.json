@@ -14,6 +14,10 @@
     {
       "title": "Encoding and Decoding Custom Types",
       "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -31,5 +35,48 @@
     "Write `init(from decoder:)` when JSON doesn't match your model.",
     "Use a nested container for `info`, try the price as `Double` then as `String`, and `decodeIfPresent` for tags.",
     "`let info = try c.nestedContainer(keyedBy: InfoKeys.self, forKey: .info)` and `tags = try c.decodeIfPresent([String].self, forKey: .tags) ?? []`."
+  ],
+  "impact": "core",
+  "jsBridge": "A custom `init(from:)` handles messy JSON, like numbers-or-strings, defaults and nested keys. It's the equivalent of a hand-written zod `preprocess` or `transform`, and it's how real apps survive real APIs.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "zod `z.union([z.number(), z.string().transform(Number)])` vs a Swift `singleValueContainer` attempt: which is clearer?"
+    },
+    {
+      "kind": "edge",
+      "q": "`decodeIfPresent` vs `try?` decode: which hides a *type* mismatch you'd want to know about?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom `init(from:)` vs an intermediate DTO struct that you map into your model: which scales?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where should API-quirk handling live: the model, a DTO layer, or the backend team?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Codable, Decodable, and Encodable in Swift | Continued Learning #21",
+      "url": "https://www.youtube.com/watch?v=H9mt8WjpZgM&t=1230s",
+      "channel": "Swiftful Thinking",
+      "start": 1230,
+      "moment": "us and here we are initializing with all of these parameters but what we can do"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc&t=373s",
+      "channel": "Sean Allen",
+      "start": 373,
+      "moment": "bio so that's what I want to work with now back in the day a swift developers used to have to parse the Json manually and it was a major pain I'm not even going"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

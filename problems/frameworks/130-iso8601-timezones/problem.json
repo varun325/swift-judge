@@ -17,6 +17,14 @@
     {
       "title": "TimeZone",
       "url": "https://developer.apple.com/documentation/foundation/timezone"
+    },
+    {
+      "title": "Calendar",
+      "url": "https://developer.apple.com/documentation/foundation/calendar"
+    },
+    {
+      "title": "Date",
+      "url": "https://developer.apple.com/documentation/foundation/date"
     }
   ],
   "signature": {
@@ -41,5 +49,43 @@
     "`Date(ts, strategy: .iso8601)` parses timestamps with offsets.",
     "A `Date` has no zone; set `DateFormatter.timeZone` to render it in one.",
     "Format with `HH:mm zzz` for each `TimeZone(identifier:)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`Date` is an absolute instant (like JS `Date`'s ms since epoch), and time zones only matter when formatting or doing calendar maths. `Date.ISO8601FormatStyle` parses offsets correctly.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `Date` is also an instant, but parsing \"2024-03-10\" is treated as UTC while \"2024-03-10T00:00\" is local. Does Foundation have such traps?"
+    },
+    {
+      "kind": "edge",
+      "q": "\"01:30 on the DST-change day\" may not exist or may happen twice. What does formatting show?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Storing dates as ISO strings vs Unix timestamps vs `Date` in SwiftData: which avoids ambiguity?"
+    },
+    {
+      "kind": "practice",
+      "q": "Show an event's time in the event's zone or the user's zone? Who decides in your product?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use DatePicker to select dates in SwiftUI | Bootcamp #40",
+      "url": "https://www.youtube.com/watch?v=EnNAQ-b1yPU",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Selecting dates and times with DatePicker – BetterRest SwiftUI Tutorial 2/7",
+      "url": "https://www.youtube.com/watch?v=GAI8JWIpMKY",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "New Way to Format Dates in Swift (5.5)",
+      "url": "https://www.youtube.com/watch?v=5I1ghMpU4rs",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

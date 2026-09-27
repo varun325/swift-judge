@@ -21,5 +21,55 @@
     "`fallthrough` jumps into the next case's body without checking its pattern.",
     "-5 matches the `where n < 0` case and falls into `case 0`; 20 matches the round case and falls into `default`.",
     "`-5 -> negative small `, `0 -> small `, `7 -> digit `, `20 -> round other`, `99 -> other`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift `switch` subtleties: the first matching case wins, `where` guards a case, `fallthrough` skips the next case's pattern check, and there's no implicit fall-through. They map loosely to JS's `switch(true)` idioms, but are checked by the compiler.",
+  "compass": [
+    {
+      "kind": "edge",
+      "q": "`fallthrough` runs the next case's body without checking its pattern. What surprise does that create with `where` clauses?"
+    },
+    {
+      "kind": "js",
+      "q": "Which JS `switch` behaviours are gone in Swift, and which are new?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Overlapping ranges in cases: does the compiler warn? What does \"first match wins\" mean for ordering?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you allow `fallthrough` in your team's style guide?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+      "url": "https://www.youtube.com/watch?v=JIT8sL_VtNA&t=148s",
+      "channel": "Swiftful Thinking",
+      "start": 148,
+      "moment": "we can actually toggle the switch by clicking it on and off so this is very simple but also very"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=211s",
+      "channel": "Paul Hudson",
+      "start": 211,
+      "moment": "a future case in the future, I know case unknown for example, you'd have to add a match for it here inside the enum uh"
+    },
+    {
+      "title": "SwiftUI Toggle - Button & Switch Tutorial",
+      "url": "https://www.youtube.com/watch?v=-sw7gvNUboc&t=136s",
+      "channel": "Sean Allen",
+      "start": 136,
+      "moment": "microphone on and that would line up accordingly but you can see different color switches in the form this is how you typically see it and that's my advice if y"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

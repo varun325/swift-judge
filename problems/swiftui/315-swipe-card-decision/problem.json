@@ -18,6 +18,10 @@
     {
       "title": "DragGesture.Value",
       "url": "https://developer.apple.com/documentation/swiftui/draggesture/value"
+    },
+    {
+      "title": "Gestures",
+      "url": "https://developer.apple.com/documentation/swiftui/gestures"
     }
   ],
   "signature": {
@@ -38,5 +42,35 @@
     "Use both the actual translation and the predicted end translation (momentum).",
     "Check the super-like rule first, then like/nope thresholds, else return.",
     "Rotation: `min(max(x / 20, -15), 15)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Deciding a swipe from `translation` and `predictedEndTranslation` is the Tinder-card logic. On the web you'd compute velocity from pointer events yourself; SwiftUI's `DragGesture` predicts the end for you.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "With pointer events you'd track timestamps to get velocity. What does `predictedEndTranslation` give you?"
+    },
+    {
+      "kind": "edge",
+      "q": "A slow drag to 60% of the threshold vs a fast flick to 20%: which should count as a swipe?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Deciding in `.onEnded` vs updating live in `.onChanged`: which state belongs where (`@GestureState`)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Accessibility: how does a VoiceOver user \"swipe\" a card? What actions should you add?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use DragGesture to move, drag, swipe in SwiftUI | Continued Learning #4",
+      "url": "https://www.youtube.com/watch?v=O3QAI8Mxh8M&t=43s",
+      "channel": "Swiftful Thinking",
+      "start": 43,
+      "moment": "importantly in swift ui we can use the drag gesture for really cool features such as swiping on"
+    }
+  ],
+  "articles": []
 }

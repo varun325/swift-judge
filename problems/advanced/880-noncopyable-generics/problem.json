@@ -14,6 +14,10 @@
     {
       "title": "Swift Evolution SE-0427",
       "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0427-noncopyable-generics.md"
+    },
+    {
+      "title": "Copyable",
+      "url": "https://developer.apple.com/documentation/swift/copyable"
     }
   ],
   "signature": {
@@ -31,5 +35,38 @@
     "`~Copyable` in a generic constraint removes the implicit `Copyable` requirement.",
     "A vault containing a noncopyable item must itself be `~Copyable`; store with a `consuming` parameter.",
     "Extract with `item.take()`, which moves the value out and leaves `nil`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Generics that accept `~Copyable` types can hold unique resources in containers without copying. There's no JS parallel. It's Rust-style ownership reaching generic code.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "No JS equivalent exists. What problem (unique ownership of resources) is this solving?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must a generic opt in with `~Copyable`? What would break if all generics accepted noncopyable types?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Optional<T: ~Copyable>`: how does the standard library support noncopyable optionals?"
+    },
+    {
+      "kind": "practice",
+      "q": "Library authors, not app authors, benefit most. Agree or disagree?"
+    }
+  ],
+  "videos": [],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Memory Safety",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/memorysafety/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0390: Noncopyable structs and enums",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

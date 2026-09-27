@@ -14,6 +14,10 @@
     {
       "title": "Control Flow — While Loops",
       "book": "LanguageGuide/ControlFlow"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "signature": {
@@ -36,5 +40,48 @@
     "Two pointers, one per array — both arrays are already sorted.",
     "Repeatedly append the smaller front element and advance that pointer; append the leftovers at the end.",
     "`while i < a.count && j < b.count { … }` then `result += a[i...]; result += b[j...]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The same algorithm as in JS. The Swift twist is that you can't index past the end silently: JS returns `undefined` and your comparison quietly goes false, while Swift traps. So bounds-checking in the loop condition is mandatory.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`a[i] < b[j]` when `i` is out of range is `undefined < 5`, which is false in JS. What does Swift do, and which bugs does that catch early?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Two-pointer merge O(n+m) vs `(a + b).sorted()` O((n+m)log(n+m)): Swift's sort is Timsort-like and fast on nearly sorted input. Does that change your answer?"
+    },
+    {
+      "kind": "practice",
+      "q": "Merging two sorted feeds (local cache and server page) is a real app task. How do you handle duplicates by ID?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you write this generically for any `Comparable` sequence, not just arrays? What does that buy you?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to Rebase Branches and When to Rebase vs Merge  | Git & Source Control #8",
+      "url": "https://www.youtube.com/watch?v=GN_eeOnUYPE&t=2s",
+      "channel": "Swiftful Thinking",
+      "start": 2,
+      "moment": "we are learning how to use git and Source control so if you're following along two videos back we learned how to"
+    },
+    {
+      "title": "Merge Sort - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=DfO089qWEE8&t=198s",
+      "channel": "Sean Allen",
+      "start": 198,
+      "moment": "array we can just bring down uh seven and8 and just to pen the whole contents of the left right to the end and now you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -14,6 +14,14 @@
     {
       "title": "searchable(text:placement:prompt:)",
       "url": "https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt:)"
+    },
+    {
+      "title": "List",
+      "url": "https://developer.apple.com/documentation/swiftui/list"
+    },
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
     }
   ],
   "signature": {
@@ -42,5 +50,49 @@
     "Filter by scope first, then by the query.",
     "Use `localizedStandardContains` so case and accents don't matter.",
     "An empty (trimmed) query matches everything in the scope."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`.searchable(text:)` plus search scopes filter a list by text and category. It's the React pattern of controlled search input plus derived filtered array, with SwiftUI supplying the search bar UI and scope picker.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React: `const visible = useMemo(() => items.filter(...), [query])`. Where should the filtering live in SwiftUI: `body`, a computed property, or the model?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Filtering in memory vs a SwiftData `#Predicate` query: at what size do you move filtering into the store?"
+    },
+    {
+      "kind": "edge",
+      "q": "Case- and diacritic-insensitive search: `localizedStandardContains` vs `lowercased().contains`. Try \"José\"."
+    },
+    {
+      "kind": "practice",
+      "q": "Debouncing search input: needed for local filtering? For network search?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Searchable, Search Suggestions, Search Scopes in SwiftUI | Swift Concurrency #16",
+      "url": "https://www.youtube.com/watch?v=f2nxenwKCVM&t=1551s",
+      "channel": "Swiftful Thinking",
+      "start": 1551,
+      "moment": "more fancy modifiers that we've gotten in iOS 16 for searching so another pretty cool modifier let's put it below"
+    },
+    {
+      "title": "Making a SwiftUI view searchable – SnowSeeker SwiftUI Tutorial 4/12",
+      "url": "https://www.youtube.com/watch?v=MKJsFcUIJ2w",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] iOS can add a search bar to our views using the searchable modifier and we can"
+    },
+    {
+      "title": "SwiftUI Search Bar - Searchable",
+      "url": "https://www.youtube.com/watch?v=iTqwa0DCIMA&t=291s",
+      "channel": "Sean Allen",
+      "start": 291,
+      "moment": "based on that search term if the search term is empty return our normal list of follow followers it has everything and as you can see our followers are now show"
+    }
+  ],
+  "articles": []
 }

@@ -31,5 +31,60 @@
     "Two small protocols, combined into one requirement with `&`.",
     "`typealias ButtonDataSourceProtocol = ButtonTextProtocol & ButtonPressedProtocol`, then inject it into `ScreenModel`.",
     "`ScreenModel(dataSource: source).render()` for each name."
+  ],
+  "impact": "core",
+  "jsBridge": "Injecting a protocol-typed dependency into a view model is TS \"program to an interface\", constructor-injecting `ButtonTextProvider`. Swift's nominal protocols make the seams explicit, and mocks become tiny structs.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In TS you might just pass an object literal matching the interface. In Swift you need a type that declares conformance. Is that friction worth it?"
+    },
+    {
+      "kind": "practice",
+      "q": "How would you swap a real data service for a mock in SwiftUI previews using this pattern?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Protocol injection vs closure injection (`let fetch: () async -> [Item]`): which is lighter for small dependencies?"
+    },
+    {
+      "kind": "edge",
+      "q": "`any ButtonTextProtocol` vs a generic `ViewModel<T: ButtonTextProtocol>`: what changes for performance and flexibility?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Protocols in Swift | Advanced Learning #15",
+      "url": "https://www.youtube.com/watch?v=0gM1wmW1Xvc&t=137s",
+      "channel": "Swiftful Thinking",
+      "start": 137,
+      "moment": "we're going to look at a couple examples. And then in the next couple videos, we're going to actually use"
+    },
+    {
+      "title": "Summary: Protocols and extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=U0IgKPgyAgw",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] in these videos about protocols and extensions we've covered some complex"
+    },
+    {
+      "title": "Swift Protocols - An Introduction",
+      "url": "https://www.youtube.com/watch?v=vmQnTMWaDiY",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "I'm going to teach you about protocols in Swift I'll explain what they are the benefits and how to implement them and I'll show you some examples of protocols b"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

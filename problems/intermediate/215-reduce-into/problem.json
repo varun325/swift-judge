@@ -31,5 +31,41 @@
     "`reduce(into:)` mutates one accumulator instead of copying it every step.",
     "Start with an empty dictionary and append each word under its length.",
     "`words.reduce(into: [:]) { groups, word in groups[String(word.count), default: []].append(word) }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`reduce(into: [:]) { acc, x in acc[k, default: []].append(x) }` mutates the accumulator in place. JS `reduce` with `{...acc}` spread copies every step (O(n²)). Swift's plain `reduce` has the same copying risk, so reach for `into:`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The JS pattern `reduce((acc, x) => ({...acc, [k]: …}), {})` is O(n²). How does `reduce(into:)` avoid that?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`reduce(into:)` vs `Dictionary(grouping:by:)`: which keeps first-seen order within groups?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't plain `reduce` mutate its accumulator? What's `inout` doing in `into:`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Bucketing items by day for a calendar list: which API would you use, and how do you get the day key?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Apple Reduces App Store Commission to 15%",
+      "url": "https://www.youtube.com/watch?v=XkrRNQ2a-iY&t=7s",
+      "channel": "Sean Allen",
+      "start": 7,
+      "moment": "and i have some questions that's what we're going to dive into so as you can see in the headline apple announces the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

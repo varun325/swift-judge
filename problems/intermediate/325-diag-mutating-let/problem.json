@@ -20,5 +20,49 @@
     "A `let` struct value can't change at all — not even through methods.",
     "Change `var c` to `let c` and keep the `increment()` call.",
     "`let c = Counter()` followed by `c.increment()`."
+  ],
+  "impact": "core",
+  "jsBridge": "A `let` struct is fully frozen, so calling a `mutating` method on it is a compile error. JS `const` only freezes the binding, and `obj.increment()` works fine. This is value semantics enforced by the compiler.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`const c = new Counter(); c.increment()` works in JS. Why must Swift reject the struct version? What would break if it didn't?"
+    },
+    {
+      "kind": "contrast",
+      "q": "The same code with `class Counter`: does it compile? Why?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you call a `mutating` method on a struct stored in a `let` array element? A `let` dictionary value?"
+    },
+    {
+      "kind": "practice",
+      "q": "In SwiftUI, `body` sees `self` as immutable. Is that the same rule, and why does `@State` get around it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Mutating methods – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=8T5vQnMspko",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

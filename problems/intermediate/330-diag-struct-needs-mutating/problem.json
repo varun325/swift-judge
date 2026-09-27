@@ -19,5 +19,49 @@
     "Inside a non-`mutating` struct method, `self` is immutable.",
     "Remove the `mutating` keyword from the method that changes `score`.",
     "`func addPoint() { score += 1 }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Struct methods can't modify `self` unless marked `mutating`, because `self` is an immutable copy inside ordinary methods. JS methods can always mutate `this`. The keyword makes mutation visible in the API.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, any method can change `this`. What does Swift's `mutating` annotation tell a caller that JS never does?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `mutating` do under the hood: is `self` passed `inout`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Classes don't need `mutating`. Why not, and what does that say about reference types?"
+    },
+    {
+      "kind": "practice",
+      "q": "Protocol requirements can be `mutating`. Why must a protocol for both structs and classes declare it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Mutating methods – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=8T5vQnMspko",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

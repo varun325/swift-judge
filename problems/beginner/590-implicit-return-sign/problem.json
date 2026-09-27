@@ -31,5 +31,41 @@
     "A function whose body is a single expression doesn't need `return` — and `switch` can be that expression.",
     "Switch on `n` with a one-sided range `..<0`, the value `0`, and `default`.",
     "`switch n { case ..<0: \"negative\"; case 0: \"zero\"; default: \"positive\" }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Like JS arrow functions `x => x * 2`, Swift single-expression bodies return implicitly. Since Swift 5.9 that includes `switch` and `if` **expressions**, which JS arrows can't contain without braces.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "An arrow function with braces needs `return`. What's the Swift rule: when exactly may `return` be omitted?"
+    },
+    {
+      "kind": "edge",
+      "q": "Add a `print` inside one `switch` branch. Does implicit return still work?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI `body` relies on implicit return plus result builders. Why does adding a `let` inside `body` sometimes still work?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`switch` expression vs a dictionary lookup `[-1: \"negative\", …]`: which is exhaustive?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Implicit returns from single-expression functions in Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=EkvxlrYFUkc&t=1s",
+      "channel": "Paul Hudson",
+      "start": 1,
+      "moment": "important inconsistency in the language single expression functions that return a value can now remove the return"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

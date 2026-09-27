@@ -41,5 +41,53 @@
     "Tuple assignment evaluates the right side fully before assigning.",
     "Keep two variables and update them together each step.",
     "`(x, y) = (y, x + y)` for Fibonacci and `(p, q) = (q, p % q)` for GCD."
+  ],
+  "impact": "edge",
+  "jsBridge": "`(a, b) = (b, a + b)` updates both at once with no temporary variable. JS array destructuring `[a, b] = [b, a + b]` does the same, but allocates an array, while Swift tuples are free.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `[a, b] = [b, a + b]` allocates an array. Does the Swift tuple version allocate anything?"
+    },
+    {
+      "kind": "edge",
+      "q": "`fib(93)` overflows `Int`. What's the right return type for bigger n?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Iterative with tuple assignment vs recursive with memoisation: which is idiomatic Swift?"
+    },
+    {
+      "kind": "practice",
+      "q": "Euclid's GCD appears in aspect-ratio simplification (16:9). Where else in UI code?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Tuples in Swift | Swift Basics #7",
+      "url": "https://www.youtube.com/watch?v=zsjCrtENsZA&t=17s",
+      "channel": "Swiftful Thinking",
+      "start": 17,
+      "moment": "might want to return more than one piece of data maybe you want a function that returns two or three or ten pieces of"
+    },
+    {
+      "title": "Arrays vs Sets vs Tuples – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=yZZ6UTipwkM",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "arrays sets and tuples can seem similar at first but they have distinct uses to help you know which to use here are some"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

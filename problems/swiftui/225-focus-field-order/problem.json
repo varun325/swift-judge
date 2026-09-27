@@ -14,6 +14,10 @@
     {
       "title": "FocusState",
       "url": "https://developer.apple.com/documentation/swiftui/focusstate"
+    },
+    {
+      "title": "Form",
+      "url": "https://developer.apple.com/documentation/swiftui/form"
     }
   ],
   "signature": {
@@ -34,5 +38,40 @@
     "Focus is an optional enum: `nil` means nothing focused.",
     "Use `allCases` order to find the next/previous case; past the end becomes `nil`.",
     "Extend `Optional where Wrapped == Field` so you can call `focused.next()`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`@FocusState` with an enum drives which field has keyboard focus, and `.onSubmit` moves to the next. It's `ref.focus()` in React, but declarative: you set state, and SwiftUI moves focus.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React: `nextInputRef.current.focus()`. SwiftUI: `focused = .email`. What does declarative focus make easier (tests, restoration)?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does setting focus to `nil` do? How do you dismiss the keyboard?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@FocusState var focused: Field?` vs one `Bool` per field: why does the enum scale better?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which `submitLabel` (`.next`, `.done`, `.go`) would you use for each field in a sign-up form?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use @FocusState in SwiftUI | Bootcamp #60",
+      "url": "https://www.youtube.com/watch?v=9OC8e0OULBg&t=753s",
+      "channel": "Swiftful Thinking",
+      "start": 753,
+      "moment": "video quickly uh with a little bit of logic because this is great that we have these two focus states but it could get"
+    },
+    {
+      "title": "Xcode in 20 Seconds: Focused navigation",
+      "url": "https://www.youtube.com/watch?v=cwrIiRJuWiw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

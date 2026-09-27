@@ -21,6 +21,10 @@
     {
       "title": "ModelContext",
       "url": "https://developer.apple.com/documentation/swiftdata/modelcontext"
+    },
+    {
+      "title": "SwiftData",
+      "url": "https://developer.apple.com/documentation/swiftdata"
     }
   ],
   "signature": {
@@ -42,5 +46,35 @@
     "Mark the class `@Model`; create a `ModelContainer` with `isStoredInMemoryOnly: true`.",
     "Insert with `context.insert`, delete with `context.delete`, mutate properties directly.",
     "Fetch with `FetchDescriptor<Book>(sortBy: [SortDescriptor(\\.rating, order: .reverse), SortDescriptor(\\.title)])`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "SwiftData's `@Model` turns a class into a persisted entity, and `ModelContext` inserts, fetches and saves. It's Prisma/TypeORM-level ergonomics on top of Core Data, with Swift macros instead of a schema file.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Prisma schema file + generated client vs SwiftData `@Model` macro: where does the schema live in each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must `@Model` types be classes, not structs?"
+    },
+    {
+      "kind": "contrast",
+      "q": "SwiftData autosave vs calling `try context.save()`: when does unsaved data get lost?"
+    },
+    {
+      "kind": "practice",
+      "q": "`@Query` in a view vs fetching in a view model: which does Apple's sample code prefer, and why do architecture purists object?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Editing SwiftData model objects – SwiftData SwiftUI Tutorial 1/5",
+      "url": "https://www.youtube.com/watch?v=jnW5m1qUINA",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Swift data's model objects are powered by the same observation system that make"
+    }
+  ],
+  "articles": []
 }

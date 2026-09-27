@@ -14,6 +14,10 @@
     {
       "title": "Attributes — dynamicMemberLookup",
       "book": "ReferenceManual/Attributes"
+    },
+    {
+      "title": "KeyPath",
+      "url": "https://developer.apple.com/documentation/swift/keypath"
     }
   ],
   "signature": {
@@ -31,5 +35,48 @@
     "A `@dynamicMemberLookup` subscript can take a `WritableKeyPath<Value, T>` instead of a `String`.",
     "Getter reads `value[keyPath: keyPath]`; setter logs then writes it.",
     "Key paths are `Hashable`, so `[PartialKeyPath<Value>: String]` can map them to names."
+  ],
+  "impact": "edge",
+  "jsBridge": "Key-path `@dynamicMemberLookup` forwards `audited.name` to `subscript(dynamicMember: KeyPath<Value, T>)`, a **typed** proxy. It's like a JS `Proxy`, but typos are compile errors and autocomplete works.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `Proxy` loses types. How does the key-path version keep full type checking and autocomplete?"
+    },
+    {
+      "kind": "contrast",
+      "q": "String-based vs key-path-based dynamic member lookup: when would you ever want strings?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can the subscript be writable (`WritableKeyPath`) so `audited.name = x` records writes?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Binding<Model>` → `$model.name` uses exactly this. Explain how the projection works."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use KeyPaths in Swift | Advanced Learning #29",
+      "url": "https://www.youtube.com/watch?v=FmjG6mG-GIA&t=7s",
+      "channel": "Swiftful Thinking",
+      "start": 7,
+      "moment": "are one before we get into the really cool property wrappers which I promise are coming they're in the next video"
+    },
+    {
+      "title": "Cleaner, Safer Code with Swift KeyPaths",
+      "url": "https://www.youtube.com/watch?v=qSdCw7YxQhA",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "if you've worked with swift UI then you've almost certainly seen this syntax this slash. ID or sl. you know another property name but you may not know what that"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Expressions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions/",
+      "source": "swift.org"
+    }
   ]
 }

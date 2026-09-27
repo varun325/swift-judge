@@ -16,6 +16,10 @@
     {
       "title": "Patterns — Optional Pattern",
       "book": "ReferenceManual/Patterns"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -33,5 +37,58 @@
     "The pattern `x?` matches only non-nil values.",
     "Use `for case let x? in values`; count nils with `if case .none = v`.",
     "`for case let x? in values where x > 10 { big += x }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`for case let x? in values` iterates only the non-nil values: pattern matching in a loop. JS would use `.filter(x => x != null)`. Swift can pattern-match in `for`, `if`, `guard` and `while`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`for (const x of arr.filter(v => v != null))` vs `for case let x? in arr`: which allocates an intermediate array?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`for case let x?` vs `compactMap { $0 }`: when is each clearer?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `for case .some(let x) in values` mean? Is it the same thing?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where would a `where` clause on a `for case` loop help in real code?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=13s",
+      "channel": "Swiftful Thinking",
+      "start": 13,
+      "moment": "and what that means is that if we have optionals in our code we're going to safely unwrap them so we"
+    },
+    {
+      "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=246s",
+      "channel": "Paul Hudson",
+      "start": 246,
+      "moment": "and we'll get back zero this is an invalid integer so this thing will send back an optional integer with a value of"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

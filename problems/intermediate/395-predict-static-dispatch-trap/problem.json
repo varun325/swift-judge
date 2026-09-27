@@ -20,5 +20,46 @@
     "Protocol **requirements** dispatch dynamically; methods that exist only in an extension dispatch statically.",
     "Through `any Animal`, `describe()` finds Cat's version, but `nickname()` uses the extension's version.",
     "Line 1: `a cat | kitty`. Line 2: `a cat | critter`."
+  ],
+  "impact": "core",
+  "jsBridge": "Methods declared **only** in a protocol extension are dispatched **statically**: `(x as any P).nickname()` calls the extension version even if the type has its own. JS has no equivalent trap, since every call is dynamic.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, which `nickname` runs is always decided by the object. What makes Swift decide by the *static type* here?"
+    },
+    {
+      "kind": "java",
+      "q": "Java default methods are always virtual. Why did Swift make extension-only methods static?"
+    },
+    {
+      "kind": "practice",
+      "q": "How would this bug show up in a real app, with a type that \"overrides\" a helper that never gets called?"
+    },
+    {
+      "kind": "edge",
+      "q": "Fix it by adding `nickname()` to the protocol's requirements. Why does that change dispatch?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YrVwyL_mcts&t=13s",
+      "channel": "Paul Hudson",
+      "start": 13,
+      "moment": "what if we could extend protocols themselves we'll wonder no more because swift"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

@@ -14,6 +14,10 @@
     {
       "title": "Future",
       "url": "https://developer.apple.com/documentation/combine/future"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -34,5 +38,49 @@
     "A `Future` is created with a closure that receives a `promise` callback.",
     "Call `promise(.success(…))` or `promise(.failure(…))` exactly once.",
     "`sink(receiveCompletion:receiveValue:)` sees both the value and the completion."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`Future` runs its closure **immediately** and caches one result, exactly like a JS `Promise` (eager). Most Combine publishers are lazy, which makes `Future` the odd one out.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS Promise starts running when created. Does a Combine `Future`? What about `Deferred { Future { } }`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Subscribing twice to one `Future`: does the work run twice?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Future` vs an `async` function: which should new code use?"
+    },
+    {
+      "kind": "practice",
+      "q": "Bridging a callback API: `Future` or `withCheckedContinuation`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Futures and Promises in Combine with SwiftUI | Advanced Learning #20",
+      "url": "https://www.youtube.com/watch?v=yCGbhbFK8sY&t=1029s",
+      "channel": "Swiftful Thinking",
+      "start": 1029,
+      "moment": "is wrap that function inside a future and then we can fulfill the promise of"
+    },
+    {
+      "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=bvm3ZLmwOdU&t=328s",
+      "channel": "Paul Hudson",
+      "start": 328,
+      "moment": "or so and merchant to apple and became the foundation quite literally"
+    },
+    {
+      "title": "The Future is Declarative - SwiftUI & Jetpack Compose",
+      "url": "https://www.youtube.com/watch?v=KAaYU-5xZ-8&t=105s",
+      "channel": "Sean Allen",
+      "start": 105,
+      "moment": "bridge that iOS Android divide and then I'll go down to his conclusion to sum up uh what I really agree with here right"
+    }
+  ],
+  "articles": []
 }

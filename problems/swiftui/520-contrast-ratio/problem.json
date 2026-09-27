@@ -17,6 +17,10 @@
     {
       "title": "Accessibility — Color and effects",
       "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility#Color-and-effects"
+    },
+    {
+      "title": "Accessibility fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/accessibility-fundamentals"
     }
   ],
   "signature": {
@@ -37,5 +41,42 @@
     "Linearise each sRGB channel before weighting.",
     "Luminance = 0.2126 R + 0.7152 G + 0.0722 B.",
     "Ratio = (lighter + 0.05) / (darker + 0.05); compare with 4.5 and 3."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "WCAG contrast is the same formula on the web and iOS. The iOS twist is **dynamic colours**: each colour has light, dark and increased-contrast variants, and every pair must pass in every mode.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "On the web you check contrast in DevTools. What's the iOS equivalent (Accessibility Inspector)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Text on images or gradients: how do you guarantee contrast?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Semantic colours (`.primary`, `.secondary`) vs custom hex colours: which adapts automatically?"
+    },
+    {
+      "kind": "practice",
+      "q": "When should an app honour \"Increase Contrast\" with different colours?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+      "url": "https://www.youtube.com/watch?v=2M84O4sDe0o&t=257s",
+      "channel": "Swiftful Thinking",
+      "start": 257,
+      "moment": "contrast color contrast calculator is putting text on a background and it's going to give us a ratio on whether or"
+    },
+    {
+      "title": "Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/7",
+      "url": "https://www.youtube.com/watch?v=oGPLjXgWqj8&t=50s",
+      "channel": "Paul Hudson",
+      "start": 50,
+      "moment": "there are three in particular I want to focus on here first marking images as being unimportant for voiceover second"
+    }
+  ],
+  "articles": []
 }

@@ -42,5 +42,42 @@
     "`try await session.data(from: url)` returns `(Data, URLResponse)`.",
     "Cast to `HTTPURLResponse` and check `200..<300` — a 404 is not a thrown error.",
     "Decode `[User]` with `JSONDecoder` after the status check."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`let (data, response) = try await URLSession.shared.data(from: url)` then `JSONDecoder().decode(...)` is `await fetch(url)` then `await res.json()`, except Swift makes you check the status code (fetch doesn't throw on 404, and neither does URLSession).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`fetch` resolves on 404. Does `URLSession.data(from:)` throw on 404? What must you check?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if the response isn't JSON (an HTML error page)? Where does it fail?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`URLSession.shared` vs a configured session (timeouts, caching): when do you need your own?"
+    },
+    {
+      "kind": "practice",
+      "q": "How do you mock `URLSession` in tests (`URLProtocol` subclass)? Why not a protocol wrapper?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=751s",
+      "channel": "Swiftful Thinking",
+      "start": 751,
+      "moment": "and this is why i'm doing these videos in order because in the last video we focused on"
+    },
+    {
+      "title": "Sending and receiving Codable data with URLSession and SwiftUI – Cupcake Corner SwiftUI Tutorial 1/9",
+      "url": "https://www.youtube.com/watch?v=U_yWXH141DY&t=382s",
+      "channel": "Paul Hudson",
+      "start": 382,
+      "moment": "we have three steps we want to complete. First want to create the URL we want to read from Apple servers. Second want to"
+    }
+  ],
+  "articles": []
 }

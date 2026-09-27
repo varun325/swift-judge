@@ -17,6 +17,10 @@
     {
       "title": "Path",
       "url": "https://developer.apple.com/documentation/swiftui/path"
+    },
+    {
+      "title": "Color",
+      "url": "https://developer.apple.com/documentation/swiftui/color"
     }
   ],
   "signature": {
@@ -41,5 +45,47 @@
     "Place 2×corners points around the center, alternating outer and inner radius.",
     "Angle for point i: `Double(i) * .pi / Double(corners) - .pi / 2`.",
     "Count elements with `path.forEach { if case .move = $0 … }` or a switch."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Alternating outer and inner points with trigonometry. It's the same maths as a Canvas star in JS. `stride(from:to:by:)` over angles and `CGPoint` arithmetic keep it concise.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS Canvas: `Math.cos`/`Math.sin` over angles. Is anything different in Swift besides `CGFloat`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why start at −π/2? What changes if you start at 0?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Computing points each `path(in:)` call vs caching: does SwiftUI call `path(in:)` often?"
+    },
+    {
+      "kind": "practice",
+      "q": "Rating stars in an app: custom `Shape`, SF Symbol `star.fill`, or an image?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7",
+      "url": "https://www.youtube.com/watch?v=kzrtiPbR3LQ&t=900s",
+      "channel": "Swiftful Thinking",
+      "start": 900,
+      "moment": "there's obviously much more you guys can do with animatable data and customizing ink and creating your own custom shapes"
+    },
+    {
+      "title": "Basics quick start: SKShapeNode – Swifty Ninja, part 2",
+      "url": "https://www.youtube.com/watch?v=CK9OwMyJQDY&t=177s",
+      "channel": "Paul Hudson",
+      "start": 177,
+      "moment": "sprite node I might a fault the player has three lives like that boom it should all be old news at this point everything"
+    },
+    {
+      "title": "SwiftUI Custom Path Drawing - Map Balloon Shape",
+      "url": "https://www.youtube.com/watch?v=4xRm8MqMtG4",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

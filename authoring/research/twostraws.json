@@ -1,0 +1,5571 @@
+{
+ "videos": [
+  {
+   "id": "tNxEqyUVGck",
+   "title": "What's new in SwiftUI for iOS 27?"
+  },
+  {
+   "id": "nJmzliRXg2M",
+   "title": "How to make more money on the App Store"
+  },
+  {
+   "id": "nKVZBKoB6P4",
+   "title": "Agent Skills in Xcode - Build better SwiftUI apps with AI agents"
+  },
+  {
+   "id": "ODF08EdIcsA",
+   "title": "Please stop making this Swift mistake"
+  },
+  {
+   "id": "jyE9DP4VB4Q",
+   "title": "My new app is out now – Hacktivate: Capture the Flag!"
+  },
+  {
+   "id": "Z9FXnpT2FaQ",
+   "title": "Hacktivate: Capture the Flag – iPhone and Preorder"
+  },
+  {
+   "id": "FCAagJjdfDM",
+   "title": "Hacktivate: Capture the Flag – Early preview"
+  },
+  {
+   "id": "-1z4MYsCIIk",
+   "title": "10 Years of Swift – A Decade in Review"
+  },
+  {
+   "id": "dQJUoNIbDsg",
+   "title": "Swift WTF – Surprising behaviors while learning Swift"
+  },
+  {
+   "id": "NkLdOwIoeaI",
+   "title": "Special Effects with SwiftUI Text"
+  },
+  {
+   "id": "JJGLoo3A2uk",
+   "title": "Build your next website in Swift"
+  },
+  {
+   "id": "SneL19Jp1iE",
+   "title": "What it's like attending WWDC in Cupertino"
+  },
+  {
+   "id": "oGPLjXgWqj8",
+   "title": "Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/7"
+  },
+  {
+   "id": "S6GLrIDMKiA",
+   "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "ezAEgfiHeJg",
+   "title": "Loading a specific kind of Codable data – Moonshot SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "FKUBspZLZb8",
+   "title": "Letting the user mark favorites – SnowSeeker SwiftUI Tutorial 12/12"
+  },
+  {
+   "id": "Ea3dl2gy3QY",
+   "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12"
+  },
+  {
+   "id": "-ErGf0_iqrw",
+   "title": "Changing a view’s layout in response to size classes – SnowSeeker SwiftUI Tutorial 10/12"
+  },
+  {
+   "id": "oucWBTMOaz0",
+   "title": "Searching for data in a List – SnowSeeker SwiftUI Tutorial 9/12"
+  },
+  {
+   "id": "TOsqZ5GxeiU",
+   "title": "Using groups as transparent layout containers – SnowSeeker SwiftUI Tutorial 3/12"
+  },
+  {
+   "id": "1m_Ho4ggfMc",
+   "title": "Creating a detail view for resorts – SnowSeeker SwiftUI Tutorial 8/12"
+  },
+  {
+   "id": "r5P1sNUWbJk",
+   "title": "Building a primary list of items – SnowSeeker SwiftUI Tutorial 6/12"
+  },
+  {
+   "id": "myLtDcYuE3k",
+   "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12"
+  },
+  {
+   "id": "QKUBGEMcbAY",
+   "title": "Using alert() and sheet() with optionals – SnowSeeker SwiftUI Tutorial 2/12"
+  },
+  {
+   "id": "MKJsFcUIJ2w",
+   "title": "Making a SwiftUI view searchable – SnowSeeker SwiftUI Tutorial 4/12"
+  },
+  {
+   "id": "2rZh-9uPZnI",
+   "title": "Presenting a default detail view on iPad – SnowSeeker SwiftUI Tutorial 7/12"
+  },
+  {
+   "id": "vdI0ZpJXcHk",
+   "title": "Working with two side by side views in SwiftUI – SnowSeeker SwiftUI Tutorial 1/12"
+  },
+  {
+   "id": "c7QE4XOQ_nA",
+   "title": "ScrollView effects using visualEffect() and scrollTargetBehavior() – Layout and Geometry SwiftUI 8/8"
+  },
+  {
+   "id": "bh-fRo7WZNY",
+   "title": "ScrollView effects using GeometryReader – Layout and Geometry SwiftUI Tutorial 7/8"
+  },
+  {
+   "id": "cE5d9uxQ-10",
+   "title": "Understanding frames and coordinates in GeometryReader – Layout and Geometry SwiftUI Tutorial 6/8"
+  },
+  {
+   "id": "SENZiZ_IFgU",
+   "title": "Resizing images to fit the screen using GeometryReader – Layout and Geometry SwiftUI Tutorial 5/8"
+  },
+  {
+   "id": "Q4CnkZWjDUc",
+   "title": "Absolute positioning for SwiftUI views – Layout and Geometry SwiftUI Tutorial 4/8"
+  },
+  {
+   "id": "W0dsEJJ-Eh4",
+   "title": "How to create a custom alignment guide – Layout and Geometry SwiftUI Tutorial 3/8"
+  },
+  {
+   "id": "04fzFk367Dg",
+   "title": "How layout works in SwiftUI – Layout and Geometry SwiftUI Tutorial 1/8"
+  },
+  {
+   "id": "4z99a_dQ0lc",
+   "title": "Alignment and alignment guides – Layout and Geometry SwiftUI Tutorial 2/8"
+  },
+  {
+   "id": "Zy6FGjCfMhc",
+   "title": "Adding and deleting cards – Flashzilla SwiftUI Tutorial 13/13"
+  },
+  {
+   "id": "wbDpYEyCMZE",
+   "title": "Fixing the bugs – Flashzilla SwiftUI Tutorial 12/13"
+  },
+  {
+   "id": "KL1c5Mx3kek",
+   "title": "Building a stack of cards – Flashzilla SwiftUI Tutorial 7/13"
+  },
+  {
+   "id": "7wti4FqEmBw",
+   "title": "Moving views with DragGesture and offset() – Flashzilla SwiftUI Tutorial 8/13"
+  },
+  {
+   "id": "zFgZciqhI08",
+   "title": "Coloring views as we swipe – Flashzilla SwiftUI Tutorial 9/13"
+  },
+  {
+   "id": "rAKxcNe2nxo",
+   "title": "Counting down with a Timer – Flashzilla SwiftUI Tutorial 10/13"
+  },
+  {
+   "id": "yd6u9pz4re0",
+   "title": "Ending the app with allowsHitTesting() – Flashzilla SwiftUI Tutorial 11/13"
+  },
+  {
+   "id": "I6g6wGg_6LM",
+   "title": "Designing a single card view – Flashzilla SwiftUI Tutorial 6/13"
+  },
+  {
+   "id": "Vlp9ezQTcAQ",
+   "title": "Supporting specific accessibility needs with SwiftUI – Flashzilla SwiftUI Tutorial 5/13"
+  },
+  {
+   "id": "YRdAMtVA1aY",
+   "title": "How to be notified when your SwiftUI app moves to the background – Flashzilla SwiftUI Tutorial 4/13"
+  },
+  {
+   "id": "MkfaywHkXJo",
+   "title": "Triggering events repeatedly using a time – Flashzilla SwiftUI Tutorial 3/13"
+  },
+  {
+   "id": "rNDOxsCK2Ck",
+   "title": "Disabling user interactivity with allowsHitTesting(): – Flashzilla SwiftUI Tutorial 2/13"
+  },
+  {
+   "id": "Kl_3xrZBEFY",
+   "title": "How to use gestures in SwiftUI – Flashzilla SwiftUI Tutorial 1/13"
+  },
+  {
+   "id": "H-kWbiPqjuM",
+   "title": "Making it Rain – Advanced Special Effects with SwiftUI"
+  },
+  {
+   "id": "9TkzkAMq6-o",
+   "title": "Adding options with swipe actions – Hot Prospects SwiftUI Tutorial 14/16"
+  },
+  {
+   "id": "kSt3jCwpLmo",
+   "title": "Adding a context menu to an image – Hot Prospects SwiftUI Tutorial 15/16"
+  },
+  {
+   "id": "31sTDonbI5k",
+   "title": "Posting notifications to the lock screen – Hot Prospects SwiftUI Tutorial 16/16"
+  },
+  {
+   "id": "g06t8LP7zrQ",
+   "title": "Scanning QR codes with SwiftUI – Hot Prospects SwiftUI Tutorial 13/16"
+  },
+  {
+   "id": "07_jJzw0bms",
+   "title": "Adding custom row swipe actions to a List – Hot Prospects 6/16"
+  },
+  {
+   "id": "OTjSpxqbeBI",
+   "title": "Generating and scaling up a QR code – Hot Prospects 12/16"
+  },
+  {
+   "id": "Bc_pd9gqXUM",
+   "title": "Scheduling local notifications – Hot Prospects 7/16"
+  },
+  {
+   "id": "1ThJ0S-c2Dk",
+   "title": "Building our tab bar – Hot Prospects 9/16"
+  },
+  {
+   "id": "zK00FbZOxsk",
+   "title": "Adding Swift package dependencies in Xcode  – Hot Prospects 8/16"
+  },
+  {
+   "id": "AYymiXF8G40",
+   "title": "Storing our data with SwiftData – Hot Prospects 10/16"
+  },
+  {
+   "id": "vWKOXetgr4g",
+   "title": "Dynamically filtering our SwiftData query – Hot Prospects 11/16"
+  },
+  {
+   "id": "hu1uqOQAWDk",
+   "title": "Creating context menus – Hot Prospects 5/16"
+  },
+  {
+   "id": "NJEBwDfp9PA",
+   "title": "Controlling image interpolation in SwiftUI  – Hot Prospects 4/16"
+  },
+  {
+   "id": "Ps8t8Xdgvy0",
+   "title": "Understanding Swift’s Result type – Hot Prospects 3/16"
+  },
+  {
+   "id": "0tzHBIS59Ko",
+   "title": "Creating tabs with TabView and tabItem() – Hot Prospects 2/16"
+  },
+  {
+   "id": "tpyj4N-fvMs",
+   "title": "Letting users select items in a List – Hot Prospects 1/16"
+  },
+  {
+   "id": "B-juQNel_IM",
+   "title": "Introducing Vortex: High-performance particle effects for SwiftUI"
+  },
+  {
+   "id": "L52LFKjgqi0",
+   "title": "Fixing Bookworm – Accessibility SwiftUI Tutorial 7/7"
+  },
+  {
+   "id": "PCPyOEAGrIw",
+   "title": "Fixing Word Scramble – Accessibility SwiftUI Tutorial 6/7"
+  },
+  {
+   "id": "d-KsimIx9U0",
+   "title": "Fixing Guess the Flag – Accessibility SwiftUI Tutorial 5/7"
+  },
+  {
+   "id": "TOUoyVSRsMo",
+   "title": "Handling voice input in SwiftUI – Accessibility SwiftUI Tutorial 4/7"
+  },
+  {
+   "id": "SlCBMdPfWNc",
+   "title": "Reading the value of controls – Accessibility SwiftUI Tutorial 3/7"
+  },
+  {
+   "id": "bAM_ybHPcRs",
+   "title": "Identifying views with useful labels – Accessibility SwiftUI Tutorial 1/7"
+  },
+  {
+   "id": "k1A0YTkMCxc",
+   "title": "Locking our UI behind Face ID – Bucket List SwiftUI Tutorial 12/12"
+  },
+  {
+   "id": "7S6iEmHICkQ",
+   "title": "Introducing MVVM into your SwiftUI project – Bucket List SwiftUI Tutorial 11/12"
+  },
+  {
+   "id": "TeOwQY1KlHo",
+   "title": "Downloading data from Wikipedia – Bucket List SwiftUI Tutorial  9/12"
+  },
+  {
+   "id": "eRpLujwUUBA",
+   "title": "Sorting Wikipedia results – Bucket List SwiftUI Tutorial 10/12"
+  },
+  {
+   "id": "zFvsOI2eYBU",
+   "title": "Selecting and editing map annotations – Bucket List SwiftUI Tutorial 8/12"
+  },
+  {
+   "id": "Ad0h-MG2EGU",
+   "title": "Improving our map annotations – Bucket List SwiftUI Tutorial 7/12"
+  },
+  {
+   "id": "9T-xoR7XmUc",
+   "title": "Adding user locations to a map – Bucket List SwiftUI Tutorial 6/12"
+  },
+  {
+   "id": "0Bcui9hyXhY",
+   "title": "Using Touch ID and Face ID with SwiftUI – Bucket List SwiftUI Tutorial 5/12"
+  },
+  {
+   "id": "3COmagWT6lU",
+   "title": "Integrating MapKit with SwiftUI – Bucket List SwiftUI Tutorial 4/12"
+  },
+  {
+   "id": "IWcmNBoT0-s",
+   "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12"
+  },
+  {
+   "id": "Ivzd2TtSh6s",
+   "title": "Writing data to the documents directory – Bucket List SwiftUI Tutorial 2/12"
+  },
+  {
+   "id": "oLhjqLgLr4s",
+   "title": "Adding conformance to Comparable for custom types – Bucket List SwiftUI Tutorial 1/12"
+  },
+  {
+   "id": "-18npGGy-2A",
+   "title": "Sharing an image using ShareLink  – Instafilter SwiftUI Tutorial 13/13"
+  },
+  {
+   "id": "9crUbKKk7cY",
+   "title": "Customizing our filter using confirmationDialog()  – Instafilter SwiftUI Tutorial 12/13"
+  },
+  {
+   "id": "qr7Iaq7_fko",
+   "title": "Basic image filtering using Core Image – Instafilter SwiftUI Tutorial 11/13"
+  },
+  {
+   "id": "kwNbOIfJzRM",
+   "title": "Importing an image into SwiftUI using PhotosPicker – Instafilter SwiftUI Tutorial 10/13"
+  },
+  {
+   "id": "VTZQ4SQmVmg",
+   "title": "Building our basic UI – Instafilter SwiftUI Tutorial 9/13"
+  },
+  {
+   "id": "RUWGjeDCkN8",
+   "title": "How to ask the user to leave an App Store review – Instafilter SwiftUI Tutorial 8/13"
+  },
+  {
+   "id": "xuDEVxghNDQ",
+   "title": "How to let the user share content with ShareLink – Instafilter SwiftUI Tutorial 7/13"
+  },
+  {
+   "id": "mEdXRmIIvVc",
+   "title": "Loading photos from the user's photo library – Instafilter SwiftUI Tutorial 6/13"
+  },
+  {
+   "id": "BkHWkf4CfKc",
+   "title": "Showing empty states with ContentUnavailableView – Instafilter SwiftUI Tutorial 5/13"
+  },
+  {
+   "id": "16YBGhRmyTE",
+   "title": "Integrating Core Image with SwiftUI – Instafilter SwiftUI Tutorial 4/13"
+  },
+  {
+   "id": "D8lUhQ08s3s",
+   "title": "Showing multiple options with confirmationDialog() – Instafilter SwiftUI Tutorial 3/13"
+  },
+  {
+   "id": "JAXoF-tcpcE",
+   "title": "Responding to state changes using onChange() – Instafilter SwiftUI Tutorial 2/13"
+  },
+  {
+   "id": "M-1jRwzUIuI",
+   "title": "How property wrappers become structs – Instafilter SwiftUI Tutorial 1/13"
+  },
+  {
+   "id": "i1X8B0tmyys",
+   "title": "Syncing SwiftData with CloudKit – SwiftData SwiftUI Tutorial 5/5"
+  },
+  {
+   "id": "n0HlwonH9v0",
+   "title": "Relationships with SwiftData, SwiftUI, and @Query – SwiftData SwiftUI Tutorial 4/5"
+  },
+  {
+   "id": "gU1C3tI7MFk",
+   "title": "Dynamically sorting and filtering @Query with SwiftUI – SwiftData SwiftUI Tutorial 3/5"
+  },
+  {
+   "id": "bV5KnqMHXe0",
+   "title": "Filtering @Query using #Predicate – SwiftData SwiftUI Tutorial 2/5"
+  },
+  {
+   "id": "jnW5m1qUINA",
+   "title": "Editing SwiftData model objects – SwiftData SwiftUI Tutorial 1/5"
+  },
+  {
+   "id": "K0TyIJpZHv8",
+   "title": "Deleting from a SwiftData query  – Bookworm SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "xSw_ftbtSgM",
+   "title": "Sorting SwiftData queries using SortDescriptor – Bookworm SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "xI7El05optA",
+   "title": "Showing book details – Bookworm SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "rMS8UBcQxeI",
+   "title": "Using an alert to pop a NavigationLink programmatically – Bookworm SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "VW8s7jhrJMk",
+   "title": "Building a list with @Query – Bookworm SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "iI7prZsHaTQ",
+   "title": "Adding a custom star rating component – Bookworm SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "nY6DzyLCVeg",
+   "title": "Creating books with SwiftData – Bookworm SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "buppHtpXs9Q",
+   "title": "Accepting multi-line text input with TextEditor – Bookworm SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "qn_Fw8t0GMU",
+   "title": "Introduction to SwiftData and SwiftUI – Bookworm SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "naX5RGCNsxI",
+   "title": "Creating a custom component with @Binding – Bookworm SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "jriUylwcnmU",
+   "title": "Introducing Inferno: Metal shaders for SwiftUI"
+  },
+  {
+   "id": "EgzWwgRpUuw",
+   "title": "SwiftUI + Metal – Create special effects by building your own shaders"
+  },
+  {
+   "id": "o_srROOXXgQ",
+   "title": "Sending and receiving orders over the internet – Cupcake Corner SwiftUI Tutorial 9/9"
+  },
+  {
+   "id": "lky5aes3m3w",
+   "title": "Preparing for checkout – Cupcake Corner SwiftUI Tutorial 8/9"
+  },
+  {
+   "id": "LIK2_axhwaY",
+   "title": "Checking for a valid address – Cupcake Corner SwiftUI Tutorial 7/9"
+  },
+  {
+   "id": "LnCRLmvozTc",
+   "title": "Taking basic order details – Cupcake Corner SwiftUI Tutorial 6/9"
+  },
+  {
+   "id": "bS1KfZeUvsM",
+   "title": "Adding Codable conformance to an @Observable class – Cupcake Corner SwiftUI Tutorial 4/9"
+  },
+  {
+   "id": "jb-tFgZYA0U",
+   "title": "Adding haptic effects – Cupcake Corner SwiftUI Tutorial 5/9"
+  },
+  {
+   "id": "9PWtn1kj9Yo",
+   "title": "Loading an image from a remote server – Cupcake Corner SwiftUI Tutorial 2/9"
+  },
+  {
+   "id": "5_zu0NxQZjE",
+   "title": "Validating and disabling forms – Cupcake Corner SwiftUI Tutorial 3/9"
+  },
+  {
+   "id": "U_yWXH141DY",
+   "title": "Sending and receiving Codable data with URLSession and SwiftUI – Cupcake Corner SwiftUI Tutorial 1/9"
+  },
+  {
+   "id": "yYuqQ_YAZrs",
+   "title": "Making your navigation title editable – Navigation SwiftUI Tutorial 9/9"
+  },
+  {
+   "id": "QZz9azaSYQ8",
+   "title": "How to save NavigationStack paths using Codable – Navigation SwiftUI Tutorial 6/9"
+  },
+  {
+   "id": "veb7XRHKoBQ",
+   "title": "Placing toolbar buttons in exact locations – Navigation SwiftUI Tutorial 8/9"
+  },
+  {
+   "id": "Tf3xqyf6tBQ",
+   "title": "Customizing the navigation bar appearance – Navigation SwiftUI Tutorial 7/9"
+  },
+  {
+   "id": "z1lynUA0ObE",
+   "title": "How to make a NavigationStack return to its root view – Navigation SwiftUI Tutorial 5/9"
+  },
+  {
+   "id": "q9Mm5Yxf2bc",
+   "title": "Programmatic navigation with NavigationStack – Navigation SwiftUI Tutorial 3/9"
+  },
+  {
+   "id": "PU8q5UPHTS0",
+   "title": "Navigating to different data types using NavigationPath – Navigation SwiftUI Tutorial 4/9"
+  },
+  {
+   "id": "_d_9GLnNmxc",
+   "title": "Handling navigation the smart way with navigationDestination() – Navigation SwiftUI Tutorial 2/9"
+  },
+  {
+   "id": "o8YHHQJzGz4",
+   "title": "The problem with a simple NavigationLink – Navigation SwiftUI Tutorial 1/9"
+  },
+  {
+   "id": "zhc0aZF4Cmo",
+   "title": "Finishing up with one last view – Moonshot SwiftUI Tutorial 11/11"
+  },
+  {
+   "id": "dC-oPnuP-Ns",
+   "title": "Merging Codable structs – Moonshot SwiftUI Tutorial 10/11"
+  },
+  {
+   "id": "pvil4wnEuNY",
+   "title": "Showing mission details with ScrollView and containerRelativeFrame() – Moonshot SwiftUI 9/11"
+  },
+  {
+   "id": "1V1uMYB-Rzg",
+   "title": "Working with hierarchical Codable data – Moonshot SwiftUI Tutorial 4/11"
+  },
+  {
+   "id": "G1Fu_275DwQ",
+   "title": "How to lay out views in a scrolling grid – Moonshot SwiftUI Tutorial 5/11"
+  },
+  {
+   "id": "qhZPTZ52kpo",
+   "title": "Pushing new views onto the stack using NavigationLink – Moonshot SwiftUI Tutorial 3/11"
+  },
+  {
+   "id": "GWivGqus6hE",
+   "title": "How ScrollView lets us work with scrolling data – Moonshot SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "_mAmixE3TkU",
+   "title": "Formatting our mission view – Moonshot SwiftUI Tutorial 8/11"
+  },
+  {
+   "id": "Zzx9JgMNzkM",
+   "title": "Resizing images to fit the available space – Moonshot SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "9VZeJdgQGwM",
+   "title": "Sharing an observed object with a new view – iExpense SwiftUI Tutorial 9/11"
+  },
+  {
+   "id": "55wLT-Ah9P0",
+   "title": "Showing and hiding views – iExpense SwiftUI Tutorial 3/11"
+  },
+  {
+   "id": "KMxQqwP2Vk0",
+   "title": "Making changes permanent with UserDefaults – iExpense SwiftUI Tutorial 10/11"
+  },
+  {
+   "id": "9ZqsytI1gIE",
+   "title": "Building a list we can delete from – iExpense SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "naK7cXsVxD0",
+   "title": "Working with Identifiable items in SwiftUI – iExpense SwiftUI Tutorial 8/11"
+  },
+  {
+   "id": "vDbFH9D6BSA",
+   "title": "Storing user settings with UserDefaults – iExpense SwiftUI Tutorial 5/11"
+  },
+  {
+   "id": "8NxzhrGT21I",
+   "title": "Final polish – iExpense SwiftUI Tutorial 11/11"
+  },
+  {
+   "id": "rcs_0xLZ8yI",
+   "title": "Deleting items using onDelete() – iExpense SwiftUI Tutorial 4/11"
+  },
+  {
+   "id": "g1yZ8no6PxE",
+   "title": "Sharing SwiftUI state with @Observable – iExpense SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "8XiWJtorJPs",
+   "title": "Archiving Swift objects with Codable – iExpense SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "JsMJ5gdu8fg",
+   "title": "Using @State with classes – iExpense SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "6r3bHIkI4BY",
+   "title": "Adding to a list of words – Word Scramble SwiftUI Tutorial 4/6"
+  },
+  {
+   "id": "TRYNrvlzHnY",
+   "title": "Validating words with UITextChecker – Word Scramble SwiftUI Tutorial 6/6"
+  },
+  {
+   "id": "OuwtiYwXIuc",
+   "title": "Running code when our app launches – Word Scramble SwiftUI Tutorial 5/6"
+  },
+  {
+   "id": "D3N-GA_J73g",
+   "title": "Creating implicit animations – Animation SwiftUI Tutorial 1/8"
+  },
+  {
+   "id": "EbbQ5kd6TiY",
+   "title": "Building custom transitions using ViewModifier – Animation SwiftUI Tutorial 8/8"
+  },
+  {
+   "id": "Sk24dfBUnmg",
+   "title": "Creating explicit animations – Animation SwiftUI Tutorial 4/8"
+  },
+  {
+   "id": "-hAZCfoByPE",
+   "title": "Animating gestures – Animation SwiftUI Tutorial 6/8"
+  },
+  {
+   "id": "gugS8DddnPg",
+   "title": "Showing and hiding views with transitions – Animation SwiftUI Tutorial 7/8"
+  },
+  {
+   "id": "8TG_dMF0s7g",
+   "title": "Customizing animations in SwiftUI – Animation SwiftUI Tutorial 2/8"
+  },
+  {
+   "id": "qNzSP1I33Vg",
+   "title": "Animating bindings – Animation SwiftUI Tutorial 3/8"
+  },
+  {
+   "id": "68bEeqv3RqU",
+   "title": "Controlling the animation stack – Animation SwiftUI Tutorial 5/8"
+  },
+  {
+   "id": "-f6VQopb0WU",
+   "title": "Loading resources from your app bundle – Word Scramble SwiftUI Tutorial 2/6"
+  },
+  {
+   "id": "YPZg6KUVXPk",
+   "title": "Working with strings – Word Scramble SwiftUI Tutorial 3/6"
+  },
+  {
+   "id": "sXpZh9UbMQc",
+   "title": "Introducing List, your best friend – Word Scramble SwiftUI Tutorial 1/6"
+  },
+  {
+   "id": "7-89daTz498",
+   "title": "Working with dates – BetterRest SwiftUI Tutorial 3/7"
+  },
+  {
+   "id": "GAI8JWIpMKY",
+   "title": "Selecting dates and times with DatePicker – BetterRest SwiftUI Tutorial 2/7"
+  },
+  {
+   "id": "fB4HnpS8qkw",
+   "title": "Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7"
+  },
+  {
+   "id": "rUikf6LYiCs",
+   "title": "Connecting SwiftUI to Core ML – BetterRest SwiftUI Tutorial 6/7"
+  },
+  {
+   "id": "gqlmd8p0Inc",
+   "title": "Training a model with Create ML – BetterRest SwiftUI Tutorial 4/7"
+  },
+  {
+   "id": "K2lpVjepJfo",
+   "title": "Cleaning up the user interface – BetterRest SwiftUI Tutorial 7/7"
+  },
+  {
+   "id": "Cq0a6q2WXZ0",
+   "title": "Building a basic layout – BetterRest SwiftUI Tutorial 5/7"
+  },
+  {
+   "id": "jHhOPFmcy48",
+   "title": "Why does SwiftUI use structs for views? – Views and Modifiers SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "rWcmYKlfwgs",
+   "title": "What is behind the main SwiftUI view? – Views and Modifiers SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "3XLq6f1tbEM",
+   "title": "Why modifier order matters – Views and Modifiers SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "dmeQ8iBkofs",
+   "title": "Why does SwiftUI use “some View” for its view type? – Views and Modifiers SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "rGq_CKHhAyQ",
+   "title": "Conditional modifiers – Views and Modifiers SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "-jyjeerjvHA",
+   "title": "Environment modifiers – Views and Modifiers SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "gc8BuZdCX40",
+   "title": "Views as properties – Views and Modifiers SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "Ty-yZyALIVc",
+   "title": "View composition – Views and Modifiers SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "vPeCMvD2RuE",
+   "title": "Custom containers – Views and Modifiers SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "z_Fk7LUXKkk",
+   "title": "Custom modifiers – Views and Modifiers SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "V17ySb6eF9U",
+   "title": "Upgrading our design  – Guess the Flag SwiftUI Tutorial 9/9"
+  },
+  {
+   "id": "sqIDM9FBrjA",
+   "title": "Styling our flags – Guess the Flag SwiftUI Tutorial 8/9"
+  },
+  {
+   "id": "LtGPAQccXj8",
+   "title": "Showing the player’s score with an alert – Guess the Flag SwiftUI Tutorial 7/9"
+  },
+  {
+   "id": "yuWjxZKmK14",
+   "title": "Stacking up buttons – Guess the Flag SwiftUI Tutorial 6/9"
+  },
+  {
+   "id": "3cBi30ufsC4",
+   "title": "Showing alert messages – Guess the Flag SwiftUI Tutorial 5/9"
+  },
+  {
+   "id": "X15OcBObO_Y",
+   "title": "Buttons and images – Guess the Flag SwiftUI Tutorial 4/9"
+  },
+  {
+   "id": "-PLvTfpbi0Y",
+   "title": "Gradients – Guess the Flag SwiftUI Tutorial 3/9"
+  },
+  {
+   "id": "62aW7VDW60w",
+   "title": "Colors and frames – Guess the Flag SwiftUI Tutorial 2/9"
+  },
+  {
+   "id": "tg7Iqtk0eWM",
+   "title": "Using stacks to arrange views – Guess the Flag SwiftUI Tutorial 1/9"
+  },
+  {
+   "id": "z5ZseKp0CiI",
+   "title": "Adding a segmented control for tip percentages – WeSplit SwiftUI Tutorial 9/11"
+  },
+  {
+   "id": "CgH845mlYyw",
+   "title": "Calculating the total per person – WeSplit SwiftUI Tutorial  10/11"
+  },
+  {
+   "id": "eh3Ywxl59JM",
+   "title": "Hiding the keyboard – WeSplit SwiftUI Tutorial  11/11"
+  },
+  {
+   "id": "eVKcM8pZ-hg",
+   "title": "Creating pickers in a form – WeSplit SwiftUI Tutorial  8/11"
+  },
+  {
+   "id": "aH3eJuqkfYU",
+   "title": "Reading text from the user with TextField – WeSplit SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "MYMcMWQeoEA",
+   "title": "Creating views in a loop – WeSplit SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "wMIHdsFYGC0",
+   "title": "Binding state to user interface controls – WeSplit SwiftUI Tutorial  5/11"
+  },
+  {
+   "id": "4Ui09XbYf1A",
+   "title": "Creating a form  –  WeSplit SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "X0Rw3uc3kj8",
+   "title": "Modifying program state – WeSplit SwiftUI Tutorial  4/11"
+  },
+  {
+   "id": "htfa2sxqDuw",
+   "title": "Adding a navigation bar  – WeSplit SwiftUI Tutorial  3/11"
+  },
+  {
+   "id": "sZSlTDlo0Ag",
+   "title": "Understanding the basic structure of a SwiftUI app –  WeSplit SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "bx3U10UHCnU",
+   "title": "Wrap up: our SwiftData project is complete – SwiftData Starter Project 8/8"
+  },
+  {
+   "id": "m1H7Q7EM_6Y",
+   "title": "Working with relationships – SwiftData Starter Project 7/8"
+  },
+  {
+   "id": "VyCLfLbA-s0",
+   "title": "Filtering the results from a SwiftData query – SwiftData Starter Project 6/8"
+  },
+  {
+   "id": "mqLDroFreFE",
+   "title": "Sorting query results – SwiftData Starter Project 5/8"
+  },
+  {
+   "id": "w4BQnVn7H6M",
+   "title": "Creating, editing, and deleting model objects – SwiftData Starter Project 4/8"
+  },
+  {
+   "id": "Saw_sZWa4aQ",
+   "title": "Querying SwiftData objects in SwiftUI – SwiftData Starter Project 3/8"
+  },
+  {
+   "id": "kiFQevfpuKQ",
+   "title": "Defining a data model with SwiftData – SwiftData Starter Project 2/8"
+  },
+  {
+   "id": "FEKCAzPAtpg",
+   "title": "Introduction – SwiftData Starter Project 1/8"
+  },
+  {
+   "id": "l7eut-nYIUc",
+   "title": "Level up your SwiftUI – Easy improvements you can apply to any SwiftUI app"
+  },
+  {
+   "id": "n8-wTpiuZwE",
+   "title": "Vision Pro from a Developer's Perspective"
+  },
+  {
+   "id": "3ltOt19ddFc",
+   "title": "Dear SwiftUI Team…"
+  },
+  {
+   "id": "U1gP4EcT_wQ",
+   "title": "What Star Wars Can Teach Us About Swift"
+  },
+  {
+   "id": "dxxCPdcMcFw",
+   "title": "Can ChatGPT write better SwiftUI code than you?"
+  },
+  {
+   "id": "ki-vvd5ulDw",
+   "title": "Wrap up - SwiftUI Starter Project 14/14"
+  },
+  {
+   "id": "FPLQXCmvA7o",
+   "title": "Adding swipe to delete and EditButton - SwiftUI Starter Project 13/14"
+  },
+  {
+   "id": "ClZES_lQ214",
+   "title": "Presenting an alert - SwiftUI Starter Project 12/14"
+  },
+  {
+   "id": "8O8HmKn2OFk",
+   "title": "Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14"
+  },
+  {
+   "id": "7AY3v2woKio",
+   "title": "Two-way bindings in SwiftUI - SwiftUI Starter Project 10/14"
+  },
+  {
+   "id": "KxfUnedCxyI",
+   "title": "Bindings and forms - SwiftUI Starter Project 9/14"
+  },
+  {
+   "id": "UOZg8H3Ecf4",
+   "title": "Adding TabView and tabItem() - SwiftUI Starter Project 8/14"
+  },
+  {
+   "id": "bFwyDUhWXQ8",
+   "title": "Adding items to an order with @EnvironmentObject - SwiftUI Starter Project 7/14"
+  },
+  {
+   "id": "lxaEAHNmhY4",
+   "title": "Observable objects, environment objects, and @Published - SwiftUI Starter Project 6/14"
+  },
+  {
+   "id": "yGqmf8hnC8U",
+   "title": "Displaying a detail screen with NavigationLink - SwiftUI Starter Project 5/14"
+  },
+  {
+   "id": "VlpqnHOur9o",
+   "title": "Polishing designs with fonts and colors - SwiftUI Starter Project 4/14"
+  },
+  {
+   "id": "tf4YQzQc6ek",
+   "title": "Composing views to create a list row - SwiftUI Starter Project 3/14"
+  },
+  {
+   "id": "62agNUDHh3U",
+   "title": "Building a menu using List - SwiftUI Starter Project 2/14"
+  },
+  {
+   "id": "M6v6y-KyJs0",
+   "title": "Setting up - SwiftUI Starter Project 1/14"
+  },
+  {
+   "id": "ZIs3Gco-lrw",
+   "title": "SwiftUI Inner Shadows + Core Motion = Beautiful and Easy Depth Effect!"
+  },
+  {
+   "id": "LZyDLtXb1-Q",
+   "title": "8 Things I Wish I Knew When I Started Programming"
+  },
+  {
+   "id": "V2TDGeevDWo",
+   "title": "What's New in Xcode 14?"
+  },
+  {
+   "id": "4obxmYn2AoI",
+   "title": "What's new in SwiftUI for iOS 16?"
+  },
+  {
+   "id": "5bhvVm3QKME",
+   "title": "Introducing Barking with Swift"
+  },
+  {
+   "id": "u8UOmfYmpoE",
+   "title": "iOS 15: Understanding the basic structure of a SwiftUI app –  WeSplit SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "61ziFquSpaA",
+   "title": "iOS 15: Using Touch ID and Face ID with SwiftUI – Bucket List SwiftUI Tutorial 5/12"
+  },
+  {
+   "id": "raR-hDgzoFg",
+   "title": "SwiftUI Special Effects – TimelineView, Canvas, particles, and… AirPods?!"
+  },
+  {
+   "id": "oTqLiLkLnsw",
+   "title": "iOS 15: Letting the user mark favorites – SnowSeeker SwiftUI Tutorial 11/11"
+  },
+  {
+   "id": "4RK67wN46XE",
+   "title": "iOS 15: Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 10/11"
+  },
+  {
+   "id": "kBGtBaNxzIM",
+   "title": "iOS 15: Changing a view’s layout in response to size classes – SnowSeeker SwiftUI Tutorial 9/11"
+  },
+  {
+   "id": "7-3_BbLTsUM",
+   "title": "iOS 15: Searching for data in a List – SnowSeeker SwiftUI Tutorial 8/11"
+  },
+  {
+   "id": "wYphGI4k8AQ",
+   "title": "iOS 15: Creating a secondary view for NavigationView – SnowSeeker SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "KWAv1IHZRuo",
+   "title": "iOS 15: Making NavigationView work in landscape – SnowSeeker SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "MUnWSHL51nA",
+   "title": "iOS 15: Building a primary list of items – SnowSeeker SwiftUI Tutorial 5/11"
+  },
+  {
+   "id": "yOp1_d1QzLg",
+   "title": "iOS 15: Making a SwiftUI view searchable – SnowSeeker SwiftUI Tutorial 4/11"
+  },
+  {
+   "id": "IxjnKNpBl4s",
+   "title": "iOS 15: Using groups as transparent layout containers – SnowSeeker SwiftUI Tutorial 3/11"
+  },
+  {
+   "id": "6RS8hbgptJQ",
+   "title": "iOS 15: Using alert() and sheet() with optionals – SnowSeeker SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "jmT9XaJyEqM",
+   "title": "iOS 15: Working with two side by side views in SwiftUI – SnowSeeker SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "Fu8TTTIPlMA",
+   "title": "iOS 15: ScrollView effects using GeometryReader – Layout and Geometry SwiftUI Tutorial 6/6"
+  },
+  {
+   "id": "WNO1b58k7zg",
+   "title": "iOS 15: Understanding frames and coordinates – Layout and Geometry SwiftUI Tutorial 5/6"
+  },
+  {
+   "id": "hDuTeWVf6M8",
+   "title": "iOS 15: Absolute positioning for SwiftUI views – Layout and Geometry SwiftUI Tutorial 4/6"
+  },
+  {
+   "id": "Ina5JBqK4Yw",
+   "title": "iOS 15: How to create a custom alignment guide – Layout and Geometry SwiftUI Tutorial 3/6"
+  },
+  {
+   "id": "N5Nh3ce8xbE",
+   "title": "iOS 15: Alignment and alignment guides – Layout and Geometry SwiftUI Tutorial 2/6"
+  },
+  {
+   "id": "GyC5-loVAIk",
+   "title": "iOS 15: How layout works in SwiftUI – Layout and Geometry SwiftUI Tutorial 1/6"
+  },
+  {
+   "id": "GV4loEzQOCQ",
+   "title": "iOS 15: Adding and deleting cards – Flashzilla SwiftUI Tutorial 15/15"
+  },
+  {
+   "id": "XcX69hhJqE8",
+   "title": "iOS 15: Fixing the bugs – Flashzilla SwiftUI Tutorial 14/15"
+  },
+  {
+   "id": "ZacdZVX1ggk",
+   "title": "iOS 15: Making iPhones vibrate with UINotificationFeedbackGenerator – Flashzilla Tutorial 13/15"
+  },
+  {
+   "id": "mR8xNjCbQ4g",
+   "title": "iOS 15: Ending the app with allowsHitTesting() – Flashzilla SwiftUI Tutorial 12/15"
+  },
+  {
+   "id": "WyRIq5lU150",
+   "title": "iOS 15: Counting down with a Timer – Flashzilla SwiftUI Tutorial 11/15"
+  },
+  {
+   "id": "XIxjmLhPWRc",
+   "title": "iOS 15: Coloring views as we swipe – Flashzilla SwiftUI Tutorial 10/15"
+  },
+  {
+   "id": "AaVC-tnC4pA",
+   "title": "iOS 15: Moving views with DragGesture and offset() – Flashzilla SwiftUI Tutorial 9/15"
+  },
+  {
+   "id": "6POjJn75CtE",
+   "title": "iOS 15: Building a stack of cards – Flashzilla SwiftUI Tutorial 8/15"
+  },
+  {
+   "id": "lkmS0STi9Y8",
+   "title": "iOS 15: Designing a single card view – Flashzilla SwiftUI Tutorial 7/15"
+  },
+  {
+   "id": "smcVKcd44V4",
+   "title": "iOS 15: How to be notified when your SwiftUI app moves to the background – Flashzilla Tutorial 5/15"
+  },
+  {
+   "id": "6O1E2VFNyhU",
+   "title": "iOS 15: Supporting specific accessibility needs with SwiftUI – Flashzilla SwiftUI Tutorial 6/15"
+  },
+  {
+   "id": "kiZ61PXOaGU",
+   "title": "iOS 15: Triggering events repeatedly using a timer – Flashzilla SwiftUI Tutorial 4/15"
+  },
+  {
+   "id": "RCjm52g1m94",
+   "title": "iOS 15: Disabling user interactivity with allowsHitTesting() – Flashzilla SwiftUI Tutorial 3/15"
+  },
+  {
+   "id": "W5dSLx7EOjs",
+   "title": "iOS 15: Making vibrations with Core Haptics – Flashzilla SwiftUI Tutorial 2/15"
+  },
+  {
+   "id": "kQhBS2qUKXc",
+   "title": "iOS 15: How to use gestures in SwiftUI – Flashzilla SwiftUI Tutorial 1/15"
+  },
+  {
+   "id": "DaP_MNSfJWY",
+   "title": "iOS 15: Posting notifications to the lock screen – Hot Prospects SwiftUI Tutorial 18/18"
+  },
+  {
+   "id": "YlxJPUD_lF8",
+   "title": "iOS15: Adding a context menu to an image – Hot Prospects SwiftUI Tutorial 17/18"
+  },
+  {
+   "id": "DECUCFiCJ-M",
+   "title": "iOS 15: Saving and loading data with UserDefaults – Hot Prospects SwiftUI Tutorial 16/18"
+  },
+  {
+   "id": "oZzmHrFfWhg",
+   "title": "iOS 15: Adding options with swipe actions – Hot Prospects SwiftUI Tutorial 15/18"
+  },
+  {
+   "id": "j3MODOPZINs",
+   "title": "iOS 15: Scanning QR codes with SwiftUI – Hot Prospects SwiftUI Tutorial 14/18"
+  },
+  {
+   "id": "sOizbrkAwbs",
+   "title": "iOS 15: Generating and scaling up a QR code – Hot Prospects SwiftUI Tutorial 13/18"
+  },
+  {
+   "id": "AIkTinDPWXE",
+   "title": "iOS 15: Dynamically filtering a SwiftUI List – Hot Prospects SwiftUI Tutorial 12/18"
+  },
+  {
+   "id": "e2lQtUdK1uI",
+   "title": "iOS 15: Sharing data across tabs using @EnvironmentObject – Hot Prospects SwiftUI Tutorial 11/18"
+  },
+  {
+   "id": "poEo5Wxp7WA",
+   "title": "iOS 15: Building our tab bar – Hot Prospects SwiftUI Tutorial 10/18"
+  },
+  {
+   "id": "4YyGgiagvB4",
+   "title": "iOS 15: Adding Swift package dependencies in Xcode – Hot Prospects SwiftUI Tutorial 9/18"
+  },
+  {
+   "id": "3H8GxZuExN4",
+   "title": "iOS 15: Understanding Swift’s Result type – Hot Prospects SwiftUI Tutorial 4/18"
+  },
+  {
+   "id": "XnnDHDlPwLw",
+   "title": "iOS 15: Scheduling local notifications – Hot Prospects SwiftUI Tutorial 8/18"
+  },
+  {
+   "id": "EE_7y4xuGa4",
+   "title": "iOS 15: Controlling image interpolation in SwiftUI – Hot Prospects SwiftUI Tutorial 5/18"
+  },
+  {
+   "id": "2zYopgwzglw",
+   "title": "iOS 15: Creating context menus – Hot Prospects SwiftUI Tutorial 6/18"
+  },
+  {
+   "id": "XEaoFCOll94",
+   "title": "iOS 15: Adding custom row swipe actions to a List – Hot Prospects SwiftUI Tutorial 7/18"
+  },
+  {
+   "id": "-DQaONx5WG0",
+   "title": "iOS 15: Manually publishing ObservableObject changes – Hot Prospects SwiftUI Tutorial 3/18"
+  },
+  {
+   "id": "1G37RRiXwF0",
+   "title": "iOS 15: Creating tabs with TabView and tabItem() – Hot Prospects SwiftUI Tutorial 2/18"
+  },
+  {
+   "id": "9X-TH5TrU2U",
+   "title": "iOS 15: Reading custom values from the environment with @EnvironmentObject – Hot Prospects 1/18"
+  },
+  {
+   "id": "EbBjeRqQpl0",
+   "title": "Build your first SwiftUI app with Swift Playgrounds 4 for iPad"
+  },
+  {
+   "id": "17GjvQf2bzs",
+   "title": "iOS 15: Fixing Bookworm – Accessibility SwiftUI Tutorial 6/6"
+  },
+  {
+   "id": "GgqQU0VxQvU",
+   "title": "iOS 15: Fixing Word Scramble – Accessibility SwiftUI Tutorial 5/6"
+  },
+  {
+   "id": "fqM0lsq-Wpk",
+   "title": "iOS 15: Fixing Guess the Flag – Accessibility SwiftUI Tutorial 4/6"
+  },
+  {
+   "id": "JLsv4VVN6mY",
+   "title": "iOS 15: Reading the value of controls – Accessibility SwiftUI Tutorial 3/6"
+  },
+  {
+   "id": "OiD1ZpMZUZ4",
+   "title": "iOS 15: Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/6"
+  },
+  {
+   "id": "v7q4Y46Z3-A",
+   "title": "iOS 15: Identifying views with useful labels – Accessibility SwiftUI Tutorial 1/6"
+  },
+  {
+   "id": "6zsnh4tFmNs",
+   "title": "iOS 15: Sorting Wikipedia results – Bucket List SwiftUI Tutorial 10/12"
+  },
+  {
+   "id": "2bGlnNy5q_g",
+   "title": "iOS 15: Locking our UI behind Face ID – Bucket List SwiftUI Tutorial 12/12"
+  },
+  {
+   "id": "XFGpFh1FJWA",
+   "title": "iOS 15: Downloading data from Wikipedia – Bucket List SwiftUI Tutorial  9/12"
+  },
+  {
+   "id": "kfsA87qRC3Y",
+   "title": "iOS 15: Introducing MVVM into your SwiftUI project – Bucket List SwiftUI Tutorial 11/12"
+  },
+  {
+   "id": "3TjE80xOLHg",
+   "title": "iOS15: Selecting and editing map annotations – Bucket List SwiftUI Tutorial 8/12"
+  },
+  {
+   "id": "IMwI1SeJEhw",
+   "title": "iOS 15: Improving our map annotations – Bucket List SwiftUI Tutorial 7/12"
+  },
+  {
+   "id": "JJxnv_Q0sWs",
+   "title": "iOS 15: Adding user locations to a map – Bucket List SwiftUI Tutorial 6/12"
+  },
+  {
+   "id": "CHFlWHPvY_M",
+   "title": "iOS 15: Integrating MapKit with SwiftUI – Bucket List SwiftUI Tutorial 4/12"
+  },
+  {
+   "id": "AQm7pbkVWB8",
+   "title": "iOS 15: Switching view states with enums – Bucket List SwiftUI Tutorial 3/12"
+  },
+  {
+   "id": "DCeW2TPtzTE",
+   "title": "iOS 15: Writing data to the documents directory – Bucket List SwiftUI Tutorial 2/12"
+  },
+  {
+   "id": "SPML9uatLf8",
+   "title": "iOS 15: Adding conformance to Comparable for custom types – Bucket List SwiftUI Tutorial 1/12"
+  },
+  {
+   "id": "2coonh1mAvU",
+   "title": "iOS 15: Customizing our filter using confirmationDialog() – Instafilter SwiftUI Tutorial 11/12"
+  },
+  {
+   "id": "JpvWzrgbP9U",
+   "title": "iOS 15: Saving the filtered image with UIImageWriteToSavedPhotosAlbum() – Instafilter SwiftUI 12/12"
+  },
+  {
+   "id": "8XCTU9MoE9M",
+   "title": "iOS 15: Basic image filtering using Core Image – Instafilter SwiftUI Tutorial 10/12"
+  },
+  {
+   "id": "-4wBQSr-3yo",
+   "title": "iOS 15: Importing an image into SwiftUI using PHPickerViewController – Instafilter SwiftUI  9/12"
+  },
+  {
+   "id": "AiioJ6xv9Io",
+   "title": "iOS15: Building our basic UI – Instafilter SwiftUI Tutorial 8/12"
+  },
+  {
+   "id": "pUYw9D0aq6g",
+   "title": "Write Better Code with Swift Algorithms"
+  },
+  {
+   "id": "q-eQWNsutjY",
+   "title": "iOS 15: How to save images to the user’s photo library – Instafilter SwiftUI Tutorial 7/12"
+  },
+  {
+   "id": "-a7q-q7zKCg",
+   "title": "iOS 15: Using coordinators to manage SwiftUI view controllers – Instafilter SwiftUI Tutorial 6/12"
+  },
+  {
+   "id": "qKAlsts4qFA",
+   "title": "iOS 15: Wrapping a UIViewController in a SwiftUI view – Instafilter SwiftUI Tutorial 5/12"
+  },
+  {
+   "id": "BkCWG2Gdw60",
+   "title": "iOS 15: Integrating Core Image with SwiftUI – Instafilter SwiftUI Tutorial 4/12"
+  },
+  {
+   "id": "2hL0xkGDPr4",
+   "title": "iOS 15: Responding to state changes using onChange() – Instafilter SwiftUI Tutorial 2/12"
+  },
+  {
+   "id": "samcccck3ko",
+   "title": "iOS 15: Showing multiple options with confirmationDialog() – Instafilter SwiftUI Tutorial 3/12"
+  },
+  {
+   "id": "2OqMhm3Afi8",
+   "title": "iOS 15: How property wrappers become structs – Instafilter SwiftUI Tutorial 1/12"
+  },
+  {
+   "id": "O4043RVjCGU",
+   "title": "iOS 15: Dynamically filtering @FetchRequest with SwiftUI – Core Data SwiftUI Tutorial 6/7"
+  },
+  {
+   "id": "0QGt0THnlwU",
+   "title": "iOS 15: One-to-many relationships with @FetchRequest and SwiftUI – Core Data SwiftUI Tutorial 7/7"
+  },
+  {
+   "id": "sh1lzhgsc64",
+   "title": "iOS 15: Filtering @FetchRequest using NSPredicate – Core Data SwiftUI Tutorial 5/7"
+  },
+  {
+   "id": "NZIlmRSB8l8",
+   "title": "iOS 15: Ensuring Core Data objects are unique using constraints – Core Data SwiftUI Tutorial 4/7"
+  },
+  {
+   "id": "K2BNOeA2G9k",
+   "title": "iOS 15: Conditional saving of NSManagedObjectContext – Core Data SwiftUI Tutorial 3/7"
+  },
+  {
+   "id": "pIAH3RVVXZE",
+   "title": "iOS 15: Creating NSManagedObject subclasses – Core Data SwiftUI Tutorial 2/7"
+  },
+  {
+   "id": "vSHbMhy6XH4",
+   "title": "iOS 15: Why does \\.self work for ForEach? – Core Data SwiftUI Tutorial 1/7"
+  },
+  {
+   "id": "fC3WxO6Z2T4",
+   "title": "iOS 15: Creating books with Core Data – Bookworm SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "SeFzSYcuoGM",
+   "title": "iOS 15: Using an alert to pop a NavigationLink programmatically – Bookworm SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "Xu8QjJXsaU4",
+   "title": "iOS 15: Deleting from a Core Data fetch request – Bookworm SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "x9HEeFnFlqs",
+   "title": "iOS 15: Sorting fetch requests with SortDescriptor – Bookworm SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "INMjkccxUEQ",
+   "title": "iOS 15: Showing book details – Bookworm SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "nViffcoa-Ec",
+   "title": "iOS 15: Building a list with @FetchRequest – Bookworm SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "t1E1on5F6po",
+   "title": "iOS 15: Adding a custom star rating component – Bookworm SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "bvm3ZLmwOdU",
+   "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "CJ6LaurS7-A",
+   "title": "iOS 15: Accepting multi-line text input with TextEditor – Bookworm SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "biEoxuawaXA",
+   "title": "iOS 15: Creating a custom component with @Binding – Bookworm SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "BWmrASENR5Q",
+   "title": "iOS 15: Sending and receiving orders over the internet – Cupcake Corner SwiftUI Tutorial 9/9"
+  },
+  {
+   "id": "Wfw2wHKCvSI",
+   "title": "iOS 15: Encoding an ObservableObject class – Cupcake Corner SwiftUI Tutorial 8/9"
+  },
+  {
+   "id": "vOwD9q5r2cQ",
+   "title": "iOS 15: Preparing for checkout – Cupcake Corner SwiftUI Tutorial 7/9"
+  },
+  {
+   "id": "xyhsUsTKXsA",
+   "title": "iOS 15: Checking for a valid address – Cupcake Corner SwiftUI Tutorial 6/9"
+  },
+  {
+   "id": "fXPeIir0SCA",
+   "title": "iOS 15: Taking basic order details – Cupcake Corner SwiftUI Tutorial 5/9"
+  },
+  {
+   "id": "LZr7JRZwt68",
+   "title": "iOS 15: Validating and disabling forms – Cupcake Corner SwiftUI Tutorial 4/9"
+  },
+  {
+   "id": "O4xkQK6sHVU",
+   "title": "iOS 15: Loading an image from a remote server – Cupcake Corner SwiftUI Tutorial 3/9"
+  },
+  {
+   "id": "GqQdUzrJIkI",
+   "title": "iOS 15: Adding Codable conformance for @Published properties – Cupcake Corner SwiftUI Tutorial 1/9"
+  },
+  {
+   "id": "MBCX1atOvdA",
+   "title": "iOS 15: Sending and receiving Codable data with URLSession and SwiftUI – Cupcake Corner Tutorial 2/9"
+  },
+  {
+   "id": "V2fxC92HGnQ",
+   "title": "Creating a spirograph with SwiftUI – Drawing SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "YSBXJvANWSo",
+   "title": "Animating complex shapes with AnimatablePair – Drawing SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "27ZvPQMYS6E",
+   "title": "Animating simple shapes with animatableData – Drawing SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "gWoXpULXmww",
+   "title": "Special effects in SwiftUI: blurs, blending, and more – Drawing SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "OFf5ZEd3Yzw",
+   "title": "Enabling high-performance Metal rendering with drawingGroup() – Drawing SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "23rvgRZVvLM",
+   "title": "Creative borders and fills using ImagePaint – Drawing SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "HkSoE0j8u90",
+   "title": "Adding strokeBorder() support with InsettableShape – Drawing SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "sQ89JRq0kvg",
+   "title": "Transforming shapes using CGAffineTransform and even-odd fills – Drawing SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "xTRhYKjp5nk",
+   "title": "Paths vs shapes in SwiftUI – Drawing SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "FnwI1I5-8cE",
+   "title": "Creating custom paths with SwiftUI – Drawing SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "pb1II8EaIW8",
+   "title": "iOS 15: Finishing up with one last view – Moonshot SwiftUI Tutorial 11/11"
+  },
+  {
+   "id": "4CIVfa5dRNE",
+   "title": "iOS 15: Merging Codable structs – Moonshot SwiftUI Tutorial 10/11"
+  },
+  {
+   "id": "__W9ajkzQok",
+   "title": "iOS 15: Showing mission details with ScrollView and GeometryReader – Moonshot SwiftUI Tutorial 9/11"
+  },
+  {
+   "id": "kD8nolPczTc",
+   "title": "iOS 15: Formatting our mission view – Moonshot SwiftUI Tutorial 8/11"
+  },
+  {
+   "id": "1z9WsuxjZr0",
+   "title": "iOS 15: Loading a specific kind of Codable data – Moonshot SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "EBoTlP1mnhs",
+   "title": "iOS 15: Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "KzbNpm4E3hs",
+   "title": "iOS 15: How to lay out views in a scrolling grid – Moonshot SwiftUI Tutorial 5/11"
+  },
+  {
+   "id": "oft_XpwdBf0",
+   "title": "iOS 15: Working with hierarchical Codable data – Moonshot SwiftUI Tutorial 4/11"
+  },
+  {
+   "id": "DBpgil_PivM",
+   "title": "iOS 15: Pushing new views onto the stack using NavigationLink – Moonshot SwiftUI Tutorial 3/11"
+  },
+  {
+   "id": "l6Gj_goCWAY",
+   "title": "iOS 15: How ScrollView lets us work with scrolling data – Moonshot SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "-APXKvIiK4o",
+   "title": "iOS 15: Resizing images to fit the screen using GeometryReader – Moonshot SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "QyASq6sgTmo",
+   "title": "iOS 15: Making changes permanent with UserDefaults – iExpense SwiftUI Tutorial 10/11"
+  },
+  {
+   "id": "VoMLpwmPct0",
+   "title": "iOS 15: Sharing an observed object with a new view – iExpense SwiftUI Tutorial 9/11"
+  },
+  {
+   "id": "zrJG7EyMPLI",
+   "title": "iOS 15: Working with Identifiable items in SwiftUI – iExpense SwiftUI Tutorial 8/11"
+  },
+  {
+   "id": "2g1t15bwX44",
+   "title": "iOS 15: Building a list we can delete from – iExpense SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "lZtGgb4aOdQ",
+   "title": "iOS 15: Archiving Swift objects with Codable – iExpense SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "nGmrtPNuE2Q",
+   "title": "iOS 15: Storing user settings with UserDefaults – iExpense SwiftUI Tutorial 5/11"
+  },
+  {
+   "id": "dg3B9HHTGHM",
+   "title": "iOS 15: Deleting items using onDelete() – iExpense SwiftUI Tutorial 4/11"
+  },
+  {
+   "id": "61O6IdqKZVg",
+   "title": "iOS 15: Showing and hiding views – iExpense SwiftUI Tutorial 3/11"
+  },
+  {
+   "id": "DPrAMnMKc34",
+   "title": "iOS 15: Sharing SwiftUI state with @StateObject – iExpense SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "FXSq_4xWtrc",
+   "title": "iOS 15: Why @State only works with structs – iExpense SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "_WUcdLgbt6U",
+   "title": "iOS 15: Final polish – iExpense SwiftUI Tutorial 11/11"
+  },
+  {
+   "id": "ktb5PP_Ruws",
+   "title": "iOS 15: Building custom transitions using ViewModifier – Animation SwiftUI Tutorial 8/8"
+  },
+  {
+   "id": "jySfyxQGMFg",
+   "title": "iOS 15: Showing and hiding views with transitions – Animation SwiftUI Tutorial 7/8"
+  },
+  {
+   "id": "OtOUi60oeyg",
+   "title": "iOS 15: Animating gestures – Animation SwiftUI Tutorial 6/8"
+  },
+  {
+   "id": "laVLtkWjybM",
+   "title": "iOS 15: Controlling the animation stack – Animation SwiftUI Tutorial 5/8"
+  },
+  {
+   "id": "5A4yJhb1ogg",
+   "title": "iOS 15: Creating explicit animations – Animation SwiftUI Tutorial 4/8"
+  },
+  {
+   "id": "CHInKa9xbKE",
+   "title": "iOS 15: Animating bindings – Animation SwiftUI Tutorial 3/8"
+  },
+  {
+   "id": "Rbcabi9vRcc",
+   "title": "iOS 15: Customizing animations in SwiftUI – Animation SwiftUI Tutorial 2/8"
+  },
+  {
+   "id": "j0eQQXspSQY",
+   "title": "iOS 15: Creating implicit animations – Animation SwiftUI Tutorial 1/8"
+  },
+  {
+   "id": "Z0TzefG4wdw",
+   "title": "iOS 15: Validating words with UITextChecker – Word Scramble SwiftUI Tutorial 6/6"
+  },
+  {
+   "id": "MvN4dnD41YA",
+   "title": "iOS 15: Running code when our app launches – Word Scramble SwiftUI Tutorial 5/6"
+  },
+  {
+   "id": "2lnPCkU7_Tg",
+   "title": "iOS 15: Adding to a list of words – Word Scramble SwiftUI Tutorial 4/6"
+  },
+  {
+   "id": "U1NxVE02Og8",
+   "title": "iOS 15: Introducing List, your best friend – Word Scramble SwiftUI Tutorial 1/6"
+  },
+  {
+   "id": "OHnb14dToLc",
+   "title": "iOS 15: Loading resources from your app bundle – Word Scramble SwiftUI Tutorial 2/6"
+  },
+  {
+   "id": "KhWeTfGdz0Q",
+   "title": "iOS 15: Working with strings – Word Scramble SwiftUI Tutorial 3/6"
+  },
+  {
+   "id": "pvKF78fOMQ4",
+   "title": "iOS 15: Building a basic layout – BetterRest SwiftUI Tutorial 5/7"
+  },
+  {
+   "id": "554iAZE0Qq8",
+   "title": "iOS 15: Connecting SwiftUI to Core ML – BetterRest SwiftUI Tutorial 6/7"
+  },
+  {
+   "id": "b--usZU6kM8",
+   "title": "iOS 15: Cleaning up the user interface – BetterRest SwiftUI Tutorial 7/7"
+  },
+  {
+   "id": "x4XeHr_ZGsE",
+   "title": "iOS 15: Training a model with Create ML – BetterRest SwiftUI Tutorial 4/7"
+  },
+  {
+   "id": "YOFqCk6HS28",
+   "title": "iOS 15: Working with dates – BetterRest SwiftUI Tutorial 3/7"
+  },
+  {
+   "id": "V1oL2dCwPQo",
+   "title": "iOS 15: Selecting dates and times with DatePicker – BetterRest SwiftUI Tutorial 2/7"
+  },
+  {
+   "id": "L8F6cBkOY54",
+   "title": "iOS 15: Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7"
+  },
+  {
+   "id": "B6UaRlli5rw",
+   "title": "iOS 15: Custom modifiers – Views and Modifiers SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "WTvV2fpbJuM",
+   "title": "iOS 15: Custom containers – Views and Modifiers SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "YQf4Hfr8gWA",
+   "title": "iOS 15: View composition – Views and Modifiers SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "RY4GXxPyMJw",
+   "title": "iOS 15: Views as properties – Views and Modifiers SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "qQNs-jIboLg",
+   "title": "iOS 15: Environment modifiers – Views and Modifiers SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "1nvCl76AbB4",
+   "title": "iOS 15: Conditional modifiers – Views and Modifiers SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "q_6NLFVGedY",
+   "title": "iOS 15: Why modifier order matters – Views and Modifiers SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "cfAkZ20gIHA",
+   "title": "iOS 15: What is behind the main SwiftUI view? – Views and Modifiers SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "kv5JqKQwL0c",
+   "title": "iOS 15: Why does SwiftUI use “some View” for its view type? – Views and Modifiers 4/10"
+  },
+  {
+   "id": "s22TboJomT4",
+   "title": "iOS 15: Why does SwiftUI use structs for views? – Views and Modifiers SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "z5W0DiR0IuM",
+   "title": "iOS 15: Styling our flags – Guess the Flag SwiftUI Tutorial 8/9"
+  },
+  {
+   "id": "1_klyxHKyic",
+   "title": "iOS 15: Showing the player’s score with an alert – Guess the Flag SwiftUI Tutorial 7/9"
+  },
+  {
+   "id": "nXMeUe4J1s4",
+   "title": "iOS 15: Stacking up buttons – Guess the Flag SwiftUI Tutorial 6/9"
+  },
+  {
+   "id": "qkjUZEdIcQ4",
+   "title": "iOS 15: Upgrading our design  – Guess the Flag SwiftUI Tutorial 9/9"
+  },
+  {
+   "id": "SjF-qGdr5Yc",
+   "title": "iOS 15: Showing alert messages – Guess the Flag SwiftUI Tutorial 5/9"
+  },
+  {
+   "id": "YoXMpvmxYlw",
+   "title": "iOS 15: Gradients – Guess the Flag SwiftUI Tutorial 3/9"
+  },
+  {
+   "id": "ZzB1tElJ3qE",
+   "title": "iOS 15: Colors and frames – Guess the Flag SwiftUI Tutorial 2/9"
+  },
+  {
+   "id": "XE80AxIZeuQ",
+   "title": "iOS 15: Buttons and images – Guess the Flag SwiftUI Tutorial 4/9"
+  },
+  {
+   "id": "CCohYuv9KGw",
+   "title": "iOS 15: Using stacks to arrange views – Guess the Flag SwiftUI Tutorial 1/9"
+  },
+  {
+   "id": "XCtKAHxV8bs",
+   "title": "iOS 15: Creating pickers in a form – WeSplit SwiftUI Tutorial  8/11"
+  },
+  {
+   "id": "9WVeOGX313Q",
+   "title": "iOS 15: Hiding the keyboard – WeSplit SwiftUI Tutorial  11/11"
+  },
+  {
+   "id": "pq79nxScJIQ",
+   "title": "iOS 15: Calculating the total per person – WeSplit SwiftUI Tutorial  10/11"
+  },
+  {
+   "id": "eBo4AE7TYZU",
+   "title": "iOS 15: Reading text from the user with TextField – WeSplit SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "Op1ChJRAvTk",
+   "title": "iOS 15: Adding a segmented control for tip percentages – WeSplit SwiftUI Tutorial 9/11"
+  },
+  {
+   "id": "NEy7itaiFNo",
+   "title": "iOS 15: Creating views in a loop – WeSplit SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "tKLd66yp8hA",
+   "title": "iOS 15: Binding state to user interface controls – WeSplit SwiftUI Tutorial  5/11"
+  },
+  {
+   "id": "aNYuDi8C29E",
+   "title": "iOS 15: Modifying program state – WeSplit SwiftUI Tutorial  4/11"
+  },
+  {
+   "id": "5Fzs1EbteKU",
+   "title": "iOS 15: Creating a form  –  WeSplit SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "L4nYeaOcHZU",
+   "title": "iOS 15: Adding a navigation bar  – WeSplit SwiftUI Tutorial  3/11"
+  },
+  {
+   "id": "n5X_V81OYnQ",
+   "title": "Learn the Essentials of Swift in one hour"
+  },
+  {
+   "id": "-JmAbcISEmY",
+   "title": "Checkpoint 9 – Swift for Complete Beginners"
+  },
+  {
+   "id": "ddowZcqemoI",
+   "title": "Summary: Optionals – Swift for Complete Beginners"
+  },
+  {
+   "id": "POK6Gijetek",
+   "title": "How to handle function failure with optionals – Swift for Complete Beginners"
+  },
+  {
+   "id": "QEVjbvb34Gg",
+   "title": "How to handle multiple optionals using optional chaining – Swift for Complete Beginners"
+  },
+  {
+   "id": "Vtx5W8YVkqs",
+   "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners"
+  },
+  {
+   "id": "sQrRf99diz0",
+   "title": "How to unwrap optionals with guard – Swift for Complete Beginners"
+  },
+  {
+   "id": "O0ocR5kRzSA",
+   "title": "How to handle missing data with optionals – Swift for Complete Beginners"
+  },
+  {
+   "id": "YrVwyL_mcts",
+   "title": "How to create and use protocol extensions – Swift for Complete Beginners"
+  },
+  {
+   "id": "ALsr3hANqD0",
+   "title": "How to create and use extensions – Swift for Complete Beginners"
+  },
+  {
+   "id": "Fyhm8RxwpKs",
+   "title": "How to use opaque return types – Swift for Complete Beginners"
+  },
+  {
+   "id": "Ga800-Qgft4",
+   "title": "Checkpoint 8 – Swift for Complete Beginners"
+  },
+  {
+   "id": "U0IgKPgyAgw",
+   "title": "Summary: Protocols and extensions – Swift for Complete Beginners"
+  },
+  {
+   "id": "jomEs8oZAvo",
+   "title": "How to get the most from protocol extensions – Swift for Complete Beginners"
+  },
+  {
+   "id": "1-5SXsVd1zY",
+   "title": "How to create and use protocols – Swift for Complete Beginners"
+  },
+  {
+   "id": "B84_69lsxok",
+   "title": "How to create your own classes – Swift for Complete Beginners"
+  },
+  {
+   "id": "LAhctdU5Mq4",
+   "title": "How to create a deinitializer for a class – Swift for Complete Beginners"
+  },
+  {
+   "id": "DgqY3RATP48",
+   "title": "How to copy classes – Swift for Complete Beginners"
+  },
+  {
+   "id": "gtxwHuXBWeo",
+   "title": "How to make one class inherit from another – Swift for Complete Beginners"
+  },
+  {
+   "id": "HDph1sNRJfQ",
+   "title": "Checkpoint 7 – Swift for Complete Beginners"
+  },
+  {
+   "id": "b87OBAYqpMw",
+   "title": "Summary: Classes – Swift for Complete Beginners"
+  },
+  {
+   "id": "byrRbWGN1Nk",
+   "title": "How to add initializers for classes – Swift for Complete Beginners"
+  },
+  {
+   "id": "WDQtKY805Xk",
+   "title": "How to work with variables inside classes – Swift for Complete Beginners"
+  },
+  {
+   "id": "as6DkW9pXrw",
+   "title": "Checkpoint 6 – Swift for Complete Beginners"
+  },
+  {
+   "id": "qin6oM6PtGg",
+   "title": "Static properties and methods – Swift for Complete Beginners"
+  },
+  {
+   "id": "n0ycUw4SSNM",
+   "title": "How to limit access to internal data using access control – Swift for Complete Beginners"
+  },
+  {
+   "id": "Qr_Ls6Tyviw",
+   "title": "Summary: Structs – Swift for Complete Beginners"
+  },
+  {
+   "id": "pfJL8AW8UVQ",
+   "title": "How to take action when a property changes – Swift for Complete Beginners"
+  },
+  {
+   "id": "UEvKhKviPRw",
+   "title": "How to compute property values dynamically – Swift for Complete Beginners"
+  },
+  {
+   "id": "v62IOA-eLsE",
+   "title": "How to create your own structs – Swift for Complete Beginners"
+  },
+  {
+   "id": "KEWAc0vr1LU",
+   "title": "How to create custom initializers – Swift for Complete Beginners"
+  },
+  {
+   "id": "1Ho_GhA70zw",
+   "title": "How to accept functions as parameters – Swift for Complete Beginners"
+  },
+  {
+   "id": "x9jpeZpmsbA",
+   "title": "Checkpoint 5 – Swift for Complete Beginners"
+  },
+  {
+   "id": "HnIID4W3a_o",
+   "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners"
+  },
+  {
+   "id": "F68lyXkkfCY",
+   "title": "How to create and use closures – Swift for Complete Beginners"
+  },
+  {
+   "id": "dRAuKT2Gtn0",
+   "title": "Summary: Closures – Swift for Complete Beginners"
+  },
+  {
+   "id": "HOOUzY7VE6I",
+   "title": "Checkpoint 4 – Swift for Complete Beginners"
+  },
+  {
+   "id": "T-UTLMKx2wc",
+   "title": "How to handle errors in functions – Swift for Complete Beginners"
+  },
+  {
+   "id": "hbFG6CVCe2Q",
+   "title": "Summary: Functions – Swift for Complete Beginners"
+  },
+  {
+   "id": "9UhzqjZO_tw",
+   "title": "How to provide default values for parameters – Swift for Complete Beginners"
+  },
+  {
+   "id": "eI2zT9eOAy8",
+   "title": "How to return multiple values from functions – Swift for Complete Beginners"
+  },
+  {
+   "id": "9QMLpNnSVKk",
+   "title": "How to reuse code with functions – Swift for Complete Beginners"
+  },
+  {
+   "id": "bEdiHjJuftI",
+   "title": "How to customize parameter labels – Swift for Complete Beginners"
+  },
+  {
+   "id": "9pS3-KRiqDs",
+   "title": "How to return values from functions – Swift for Complete Beginners"
+  },
+  {
+   "id": "NduMuU0xeqk",
+   "title": "How to use a while loop to repeat work – Swift for Complete Beginners"
+  },
+  {
+   "id": "PP321O-KZCs",
+   "title": "How to use a for loop to repeat work – Swift for Complete Beginners"
+  },
+  {
+   "id": "z_kR4cP23c4",
+   "title": "How to skip loop items with break and continue – Swift for Complete Beginners"
+  },
+  {
+   "id": "GSqLnVOsV70",
+   "title": "Checkpoint 3 – Swift for Complete Beginners"
+  },
+  {
+   "id": "GbGhrnjZIP8",
+   "title": "Summary: Conditions and loops – Swift for Complete Beginners"
+  },
+  {
+   "id": "FToxl_63Unw",
+   "title": "How to use the ternary conditional operator for quick tests – Swift for Complete Beginners"
+  },
+  {
+   "id": "vX4wPb0UUD0",
+   "title": "How to check multiple conditions – Swift for Complete Beginners"
+  },
+  {
+   "id": "cDpJy4Y7OYE",
+   "title": "How to use switch statements to check multiple conditions – Swift for Complete Beginners"
+  },
+  {
+   "id": "PrVO7b-BmdY",
+   "title": "How to check a condition is true or false – Swift for Complete Beginners"
+  },
+  {
+   "id": "VdqR02wVH3A",
+   "title": "Summary: Complex data – Swift for Complete Beginners"
+  },
+  {
+   "id": "TSuyx7YcDeg",
+   "title": "Checkpoint 2 – Swift for Complete Beginners"
+  },
+  {
+   "id": "_FX8xCBmbeA",
+   "title": "How to use type annotations – Swift for Complete Beginners"
+  },
+  {
+   "id": "iM2lMBAckKg",
+   "title": "How to store and find data in dictionaries – Swift for Complete Beginners"
+  },
+  {
+   "id": "K1jEskrHcyY",
+   "title": "How to store ordered data in arrays – Swift for Complete Beginners"
+  },
+  {
+   "id": "9GjGRqK8LSw",
+   "title": "How to use sets for fast data lookup – Swift for Complete Beginners"
+  },
+  {
+   "id": "bwqbf-1_7gE",
+   "title": "How to create and use enums – Swift for Complete Beginners"
+  },
+  {
+   "id": "IpgGhy1QTzw",
+   "title": "How to join strings together – Swift for Complete Beginners"
+  },
+  {
+   "id": "GUCYgvvxJI0",
+   "title": "Summary: Simple data – Swift for Complete Beginners"
+  },
+  {
+   "id": "jfBcryGKf38",
+   "title": "How to create strings – Swift for Complete Beginners"
+  },
+  {
+   "id": "JGslWiKS_CU",
+   "title": "How to store decimal numbers – Swift for Complete Beginners"
+  },
+  {
+   "id": "clcA92OLgpI",
+   "title": "Checkpoint 1 – Swift for Complete Beginners"
+  },
+  {
+   "id": "GG7bu0NRyYM",
+   "title": "About this course – Swift for Complete Beginners"
+  },
+  {
+   "id": "jlkcxTyM8m4",
+   "title": "How to create constants and variables – Swift for Complete Beginners"
+  },
+  {
+   "id": "YQPOLBZiGWA",
+   "title": "How to store truth with Booleans – Swift for Complete Beginners"
+  },
+  {
+   "id": "kVLntzY4YQg",
+   "title": "How to store whole numbers – Swift for Complete Beginners"
+  },
+  {
+   "id": "S6udZCgHiLA",
+   "title": "How to follow along – Swift for Complete Beginners"
+  },
+  {
+   "id": "ug6T-iFk5OY",
+   "title": "Why learn Swift – Swift for Complete Beginners"
+  },
+  {
+   "id": "urw-kX_I2Lo",
+   "title": "My favorite new Swift API from iOS 15"
+  },
+  {
+   "id": "uie2mlh48w4",
+   "title": "Introducing Hacking with Swift++"
+  },
+  {
+   "id": "HNXzcAwNqMc",
+   "title": "How to become an iOS developer in 2021"
+  },
+  {
+   "id": "8kiR_QsQNPc",
+   "title": "24 Xcode Tips in 15 Minutes"
+  },
+  {
+   "id": "NM3M8BBO90w",
+   "title": "(OLD) Setting up - SwiftUI Starter Project 1/14"
+  },
+  {
+   "id": "RBmQH0TceWA",
+   "title": "(OLD) Adding TabView and tabItem() - SwiftUI Starter Project 8/14"
+  },
+  {
+   "id": "Yn7W9GIFUG4",
+   "title": "(OLD) Presenting an alert - SwiftUI Starter Project 12/14"
+  },
+  {
+   "id": "ZYXTNl50Tg4",
+   "title": "(OLD) Bindings and forms - SwiftUI Starter Project 9/14"
+  },
+  {
+   "id": "CKBt_8RV_gI",
+   "title": "(OLD) Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14"
+  },
+  {
+   "id": "6ixLCymEHHY",
+   "title": "(OLD) Displaying a detail screen with NavigationLink - SwiftUI Starter Project 5/14"
+  },
+  {
+   "id": "Z7ZxzN5HBL8",
+   "title": "(OLD) Wrap up - SwiftUI Starter Project 14/14"
+  },
+  {
+   "id": "1BIs-xroRhM",
+   "title": "(OLD) Adding swipe to delete and EditButton - SwiftUI Starter Project 13/14"
+  },
+  {
+   "id": "OvLxxV7X1Is",
+   "title": "(OLD) Observable objects, environment objects, and @Published - SwiftUI Starter Project 6/14"
+  },
+  {
+   "id": "86ZHYN6nEI0",
+   "title": "(OLD) Polishing designs with fonts and colors - SwiftUI Starter Project 4/14"
+  },
+  {
+   "id": "kRZgY4p45pQ",
+   "title": "(OLD) Two-way bindings in SwiftUI - SwiftUI Starter Project 10/14"
+  },
+  {
+   "id": "AOerAYI44V0",
+   "title": "(OLD) Adding items to an order with @EnvironmentObject - SwiftUI Starter Project 7/14"
+  },
+  {
+   "id": "S_FvHm6seIA",
+   "title": "(OLD) Composing views to create a list row - SwiftUI Starter Project 3/14"
+  },
+  {
+   "id": "ksbtq01jElc",
+   "title": "(OLD) Building a menu using List - SwiftUI Starter Project 2/14"
+  },
+  {
+   "id": "uC3X4FoielU",
+   "title": "5 Steps to Better SwiftUI Views"
+  },
+  {
+   "id": "qkcKTJhDyLs",
+   "title": "8 Common SwiftUI Mistakes – and how to fix them!"
+  },
+  {
+   "id": "QZb5c42Sdq8",
+   "title": "How to create a date picker and read values from it – SwiftUI"
+  },
+  {
+   "id": "pIxr5pAFJyc",
+   "title": "How to hide and reveal content using DisclosureGroup – SwiftUI"
+  },
+  {
+   "id": "G0qor4QumfA",
+   "title": "How to create expanding lists – SwiftUI"
+  },
+  {
+   "id": "pHIsK8VzizU",
+   "title": "How to create multi-line editable text with TextEditor – SwiftUI"
+  },
+  {
+   "id": "TVe6D7RHcgs",
+   "title": "How to add a sidebar for iPadOS – SwiftUI"
+  },
+  {
+   "id": "Rt9-5Tm8vk4",
+   "title": "How to create a document-based app using FileDocument and DocumentGroup – SwiftUI"
+  },
+  {
+   "id": "x7fdvXdVd98",
+   "title": "How to synchronize animations from one view to another with matchedGeometryEffect() – SwiftUI"
+  },
+  {
+   "id": "rChSFRIaAYo",
+   "title": "How to make a scroll view move to a location using ScrollViewReader – SwiftUI"
+  },
+  {
+   "id": "SdIWZzl9h-w",
+   "title": "How to present a full screen modal view using fullScreenCover() – SwiftUI"
+  },
+  {
+   "id": "8hfgErg7ybQ",
+   "title": "How to format dates inside text views – SwiftUI"
+  },
+  {
+   "id": "ODxizhqW9aY",
+   "title": "How to recommend another app using appStoreOverlay() – SwiftUI"
+  },
+  {
+   "id": "iDseNgvdTpA",
+   "title": "How to export files using ExportFilesAction – SwiftUI"
+  },
+  {
+   "id": "Tkqd7cCrMf0",
+   "title": "What is the @AppStorage property wrapper? – SwiftUI"
+  },
+  {
+   "id": "8DlkDj7Re3M",
+   "title": "What is the @ScaledMetric property wrapper? – SwiftUI"
+  },
+  {
+   "id": "RHL_sjbf6DQ",
+   "title": "What is the @SceneStorage property wrapper? – SwiftUI"
+  },
+  {
+   "id": "VLUhZbz4arg",
+   "title": "What is the @StateObject property wrapper? – SwiftUI"
+  },
+  {
+   "id": "pdPYBBAc2N4",
+   "title": "How to add an AppDelegate to a SwiftUI app – SwiftUI"
+  },
+  {
+   "id": "LxBBDPW-R3U",
+   "title": "How to continue an NSUserActivity in SwiftUI – SwiftUI"
+  },
+  {
+   "id": "yjx8FNVRMBE",
+   "title": "How to show text and an icon side by side using Label – SwiftUI"
+  },
+  {
+   "id": "m4JwEbSSflg",
+   "title": "How to play movies with VideoPlayer – SwiftUI"
+  },
+  {
+   "id": "MuqXeiSTCRA",
+   "title": "How to show indeterminate progress using ProgressView – SwiftUI"
+  },
+  {
+   "id": "o6D7mUXjSmI",
+   "title": "How to lazy load views using LazyVStack and LazyHStack – SwiftUI"
+  },
+  {
+   "id": "1SBK657TMc0",
+   "title": "How to let users select a color with ColorPicker – SwiftUI"
+  },
+  {
+   "id": "4XKOPH6PXBY",
+   "title": "How to integrate SpriteKit using SpriteView – SwiftUI"
+  },
+  {
+   "id": "6oTRW63ZL9w",
+   "title": "How to create scrolling pages of content using tabViewStyle() – SwiftUI"
+  },
+  {
+   "id": "-B-bnQSQr90",
+   "title": "How to show a map view – SwiftUI"
+  },
+  {
+   "id": "2F76-3qBPTc",
+   "title": "How to create expanding lists – SwiftUI"
+  },
+  {
+   "id": "CKllPbroKyM",
+   "title": "When will async/await come to Swift? – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "acl2Ndm-1_4",
+   "title": "Is Swift getting too complicated? – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "hHq8p_gQ71E",
+   "title": "Is there anything you would change in Swift? – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "HxdA2TY1sSM",
+   "title": "How did you start creating Swift? – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "llQ7-3Hg95w",
+   "title": "Chris Lattner explains optionals – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "je6V0z7ro7Y",
+   "title": "How and when did Swift get its name? – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "FGAiRPRLnwE",
+   "title": "What was it like getting on stage at WWDC14? – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "bMICCC-vvLE",
+   "title": "Chris Lattner explains closures – Chris Lattner on Swiftly Speaking"
+  },
+  {
+   "id": "-h8pk2pe7Xo",
+   "title": "What's new in SwiftUI for iOS 14 – Extended Edition"
+  },
+  {
+   "id": "qNVApzV9V1Q",
+   "title": "Building Grids in SwiftUI 2.0 for iOS 14"
+  },
+  {
+   "id": "9Vs4YDSpzHA",
+   "title": "How to use phantom types in Swift"
+  },
+  {
+   "id": "cvSzh42WhR4",
+   "title": "How can you get started using Instruments – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "XXYWTenlS8g",
+   "title": "How can you maintain feature parity between iOS and Android apps – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "DWN7jMdKtS0",
+   "title": "How to add new features to iOS 13 while still supporting iOS 12 and earlier – Carola Nitz"
+  },
+  {
+   "id": "3ArmapiXxgM",
+   "title": "Tips for attending a conference if you are an introvert – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "gbJQucAmp8Q",
+   "title": "Tips for memory debugging – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "pt7smcEzvVE",
+   "title": "What are the core tools for debugging iOS apps – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "rOMW5TM5G88",
+   "title": "What are the most common problems with debugging in iOS – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "16Xt9ATUups",
+   "title": "What is the best way to approach debugging a bigger problem? – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "6gUTe2YGpdQ",
+   "title": "What separates a good event from a great event – Carola Nitz on Swiftly Speaking"
+  },
+  {
+   "id": "UUGk2HPbtMg",
+   "title": "Global Variable Oriented Programming – Reimplementing SwiftUI's environment for UIKit"
+  },
+  {
+   "id": "cz6RIA3yjwI",
+   "title": "What makes SwiftUI so attractive to learners and designers? – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "rNX6t_gP5cA",
+   "title": "What can SwiftUI do better than UIKit? – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "gbqLauFj9fw",
+   "title": "What are the most common design errors developers make? – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "zEbm8dr439A",
+   "title": "Top three tips for SwiftUI learners – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "F-dRCTDJXq4",
+   "title": "The #1 tip for developers to improve their designs – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "ymtf-PdB7KU",
+   "title": "SwiftUI vs React vs Flutter – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "ptmQeKzS0HM",
+   "title": "Should you learn SwiftUI or UIKit? – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "BpuLb8Sg5AY",
+   "title": "How to make your app stand out using SwiftUI – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "0h2fQOl3bns",
+   "title": "How does SwiftUI compare to React? – Meng To on Swiftly Speaking"
+  },
+  {
+   "id": "ULDV2B6I4Dc",
+   "title": "Who can say they have learned Swift?"
+  },
+  {
+   "id": "qKe_pnpajGA",
+   "title": "Where should enums be used more? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "24-yY1KP3lQ",
+   "title": "What makes Swift's enums so powerful? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "o7t_xB64H_8",
+   "title": "What is the best approach to code review as a senior developer? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "zIWyDXLlf94",
+   "title": "What do you think are good use cases for enum raw values? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "BWA3g9OAIio",
+   "title": "What are the responsibilities of a programming mentor? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "FJ3OCz5L4hE",
+   "title": "What are the core skills of a senior iOS developer? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "CSbEP9qKbGg",
+   "title": "Tips for starting your own Swift meetup – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "kB4N1X3eBiQ",
+   "title": "How would you explain enums with associated values? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "Pdlwod4awms",
+   "title": "How to get to senior Swift developer roles? – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "w9Qx1MAe-AM",
+   "title": "How to get involved in the Swift community – Paola Mata on Swiftly Speaking"
+  },
+  {
+   "id": "1FCw2ZXQ2bA",
+   "title": "Where should new iOS developers start their career – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "ys9M_iNqD6s",
+   "title": "What's the best way to prepare for a Swift interview – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "cOWMtprqpgM",
+   "title": "The most common interview questions for Swift jobs – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "T3Yeqirbkb4",
+   "title": "How to ace a take home test – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "hXSD833wOOc",
+   "title": "What are the most important non-code parts in take home tests – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "kdgTg2MKJR0",
+   "title": "What are the most common take home tests for iOS developers – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "AcgT8v0yopw",
+   "title": "How to keep up with Swift's evolution – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "IAeT-SDn-SA",
+   "title": "What are the most important concepts when learning Swift – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "eltFhmPQSFQ",
+   "title": "What's the best way to learn Swift – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "f29orEPCcbQ",
+   "title": "What are the three most common mistakes when learning Swift? – Sean Allen on Swiftly Speaking"
+  },
+  {
+   "id": "sq5kqMWA51k",
+   "title": "Why should developers make more iPad apps – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "ly_3XvS7pms",
+   "title": "What is CALayer and why is it so important – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "V_MPLZWTMcw",
+   "title": "How to test different layouts effectively – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "dNq15nAgCYI",
+   "title": "Is there a performance cost to using Auto Layout – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "BQz3tdv39eg",
+   "title": "Is UIKit over as SwiftUI is the new rising star – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "nGNFF-ixVZI",
+   "title": "Pro tips for UIKit performance – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "fPKcNB1rQkw",
+   "title": "Should you design for a big screen or small screen first – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "VKwGwSkKFAA",
+   "title": "What common mistakes do UIKit developers make – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "sPhWIs8g-24",
+   "title": "How to optimise table views in UIKit – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "pU8O93zUHmU",
+   "title": "How fast is UIKit on modern iPhones – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "l2NQmgEysnQ",
+   "title": "How can you identify UIKit performance issues – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "v-zP7keChNY",
+   "title": "Core Animation and UIKit performance comparisons – Janina Kutyn on Swiftly Speaking"
+  },
+  {
+   "id": "nA6Jo6YnL9g",
+   "title": "The Complete Guide to NavigationView in SwiftUI"
+  },
+  {
+   "id": "cRjQvvatIXU",
+   "title": "(OLD) Designing a single card view – Flashzilla SwiftUI Tutorial 7/15"
+  },
+  {
+   "id": "FpoKMw-F2ZU",
+   "title": "(OLD) Generating and scaling up a QR code – Hot Prospects SwiftUI Tutorial 12/16"
+  },
+  {
+   "id": "ERy8RnYUKjI",
+   "title": "(OLD) Scheduling local notifications – Hot Prospects SwiftUI Tutorial 7/16"
+  },
+  {
+   "id": "5YnlSlUg0yA",
+   "title": "(OLD) Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 8/9"
+  },
+  {
+   "id": "CKNptYFho7k",
+   "title": "(OLD) Supporting specific accessibility needs with SwiftUI – Flashzilla SwiftUI Tutorial 6/15"
+  },
+  {
+   "id": "52pFtwTDv_Q",
+   "title": "(OLD) How layout works in SwiftUI – Layout and Geometry SwiftUI Tutorial 1/6"
+  },
+  {
+   "id": "wxIuop-KObo",
+   "title": "(OLD) Fixing the bugs – Flashzilla SwiftUI Tutorial 14/15"
+  },
+  {
+   "id": "ujs9effqypQ",
+   "title": "(OLD) Alignment and alignment guides – Layout and Geometry SwiftUI Tutorial 2/6"
+  },
+  {
+   "id": "N55tS40Ae-k",
+   "title": "(OLD) Posting notifications to the lock screen – Hot Prospects SwiftUI Tutorial 16/16"
+  },
+  {
+   "id": "MKofc3GeGMQ",
+   "title": "(OLD) Counting down with a Timer – Flashzilla SwiftUI Tutorial 11/15"
+  },
+  {
+   "id": "oyx6GbIVYE8",
+   "title": "(OLD) Triggering events repeatedly using a timer – Flashzilla SwiftUI Tutorial 4/15"
+  },
+  {
+   "id": "Jr4JRg5WuMA",
+   "title": "(OLD) How to use gestures in SwiftUI – Flashzilla SwiftUI Tutorial 1/15"
+  },
+  {
+   "id": "Rq_Is8jIUko",
+   "title": "(OLD) Ending the app with allowsHitTesting() – Flashzilla SwiftUI Tutorial 12/15"
+  },
+  {
+   "id": "cvjWYqVue9E",
+   "title": "(OLD) Making iPhones vibrate with UINotificationFeedbackGenerator – Flashzilla Tutorial 13/15"
+  },
+  {
+   "id": "7OQeCEN7LHI",
+   "title": "(OLD) Understanding Swift’s Result type – Hot Prospects SwiftUI Tutorial 3/16"
+  },
+  {
+   "id": "7C-616tGUME",
+   "title": "(OLD) Building a stack of cards – Flashzilla SwiftUI Tutorial 8/15"
+  },
+  {
+   "id": "jiXlUwApR3I",
+   "title": "(OLD) Building a primary list of items – SnowSeeker SwiftUI Tutorial 4/9"
+  },
+  {
+   "id": "GlWEBQ2Tvjc",
+   "title": "(OLD) Scanning QR codes with SwiftUI – Hot Prospects SwiftUI Tutorial 13/16"
+  },
+  {
+   "id": "1f56Xe5hwK4",
+   "title": "(OLD) Manually publishing ObservableObject changes – Hot Prospects SwiftUI Tutorial 4/16"
+  },
+  {
+   "id": "kh9lnIYgW1E",
+   "title": "(OLD) ScrollView effects using GeometryReader – Layout and Geometry SwiftUI Tutorial 6/6"
+  },
+  {
+   "id": "7IB_v-sVqk8",
+   "title": "(OLD) Dynamically filtering a SwiftUI List – Hot Prospects SwiftUI Tutorial 11/16"
+  },
+  {
+   "id": "fAFKNbzGtkI",
+   "title": "(OLD) Coloring views as we swipe – Flashzilla SwiftUI Tutorial 10/15"
+  },
+  {
+   "id": "35DTPZtXTgY",
+   "title": "(OLD) Creating tabs with TabView and tabItem() – Hot Prospects SwiftUI Tutorial 2/16"
+  },
+  {
+   "id": "jf1N69Kds9k",
+   "title": "Letting the user mark favorites – SnowSeeker SwiftUI Tutorial 9/9"
+  },
+  {
+   "id": "wfurOywsY2E",
+   "title": "(OLD) Building our tab bar – Hot Prospects SwiftUI Tutorial 9/16"
+  },
+  {
+   "id": "NwuQ-kBMCwU",
+   "title": "(OLD) Disabling user interactivity with allowsHitTesting() – Flashzilla SwiftUI Tutorial 3/15"
+  },
+  {
+   "id": "QFrs8Ry_9pA",
+   "title": "(OLD) Understanding frames and coordinates – Layout and Geometry SwiftUI Tutorial 5/6"
+  },
+  {
+   "id": "7-TvP8ah_ho",
+   "title": "(OLD) Making NavigationView work in landscape – SnowSeeker SwiftUI Tutorial 5/9"
+  },
+  {
+   "id": "6K54L2uvoqc",
+   "title": "(OLD) Controlling image interpolation in SwiftUI – Hot Prospects SwiftUI Tutorial 5/16"
+  },
+  {
+   "id": "njYQZqdBLHA",
+   "title": "(OLD) Moving views with DragGesture and offset() – Flashzilla SwiftUI Tutorial 9/15"
+  },
+  {
+   "id": "KltSkAFVkMY",
+   "title": "(OLD) Making vibrations with Core Haptics – Flashzilla SwiftUI Tutorial 2/15"
+  },
+  {
+   "id": "p_-j9rKsu6Y",
+   "title": "(OLD) Reading custom values with @EnvironmentObject – Hot Prospects SwiftUI Tutorial 1/16"
+  },
+  {
+   "id": "zLc15vNal1c",
+   "title": "(OLD) Using groups as transparent layout containers – SnowSeeker SwiftUI Tutorial 3/9"
+  },
+  {
+   "id": "zH0jaHoqxi8",
+   "title": "(OLD) Adding options with a context menu – Hot Prospects SwiftUI Tutorial 14/16"
+  },
+  {
+   "id": "vsL1UemuB3U",
+   "title": "(OLD) Saving and loading data with UserDefaults – Hot Prospects SwiftUI Tutorial 15/16"
+  },
+  {
+   "id": "rxgDWaVaCw4",
+   "title": "(OLD) How to create a custom alignment guide – Layout and Geometry SwiftUI Tutorial 3/6"
+  },
+  {
+   "id": "r9V6TR10lqw",
+   "title": "(OLD) Using alert() and sheet() with optionals – SnowSeeker SwiftUI Tutorial 2/9"
+  },
+  {
+   "id": "iFrKjUjHFhs",
+   "title": "Adding Swift package dependencies in Xcode – Hot Prospects SwiftUI Tutorial 8/16"
+  },
+  {
+   "id": "hv0UcwTGq1I",
+   "title": "(OLD) Adding and deleting cards – Flashzilla SwiftUI Tutorial 15/15"
+  },
+  {
+   "id": "edxbg0mNhDU",
+   "title": "(OLD) Creating context menus – Hot Prospects SwiftUI Tutorial 6/16"
+  },
+  {
+   "id": "eNHoZj2qq94",
+   "title": "(OLD) Creating a secondary view for NavigationView – SnowSeeker SwiftUI Tutorial 6/9"
+  },
+  {
+   "id": "VbJmORXbnB8",
+   "title": "(OLD) Absolute positioning for SwiftUI views – Layout and Geometry SwiftUI Tutorial 4/6"
+  },
+  {
+   "id": "Ixy-5ynp11s",
+   "title": "(OLD) Changing a view’s layout in response to size classes – SnowSeeker SwiftUI Tutorial 7/9"
+  },
+  {
+   "id": "Ij_7is9seos",
+   "title": "(OLD) Working with two side by side views in SwiftUI – SnowSeeker SwiftUI Tutorial 1/9"
+  },
+  {
+   "id": "9Hu8Raq-qNM",
+   "title": "(OLD) How to be notified when your SwiftUI app moves to the background – Flashzilla Tutorial 5/15"
+  },
+  {
+   "id": "1QcekWFK2d8",
+   "title": "(OLD) Sharing data across tabs using @EnvironmentObject – Hot Prospects SwiftUI Tutorial 10/16"
+  },
+  {
+   "id": "_ZAuILBDduQ",
+   "title": "How to break up structs and classes – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "ycEZZLv693c",
+   "title": "How to keep up with Swift Evolution – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "eCHdH7ZqrdQ",
+   "title": "Is SwiftLint ready for SwiftUI – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "-c7f-D-peUY",
+   "title": "What are monads – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "Z7ZkbOdhxgQ",
+   "title": "What are the advantages of functional programming in Swift – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "rLi82UEvLoY",
+   "title": "What are the first steps for functional programming in Swift – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "IRW_0m00ABI",
+   "title": "What is functional programming in Swift – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "Zd5efjjTxq0",
+   "title": "What problem does Combine solve – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "LsyufibEVog",
+   "title": "Why are function builders fundamental in SwiftUI – Daniel Steinberg on Swiftly Speaking"
+  },
+  {
+   "id": "uiHzegVMgpY",
+   "title": "Tips on making a great side project – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "h4UpJOLvv3M",
+   "title": "Building SwiftUI apps for macOS and watchOS – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "_rxFq_6iw_s",
+   "title": "Pro tips on push notifications – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "WuGdzAmtRu4",
+   "title": "What is it like to interview for big companies – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "T6VgtehIyTA",
+   "title": "What's the future of UIKit – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "Oh60iHr3Uz0",
+   "title": "How to market an indie app – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "NKldW_bKS1A",
+   "title": "What are the pros and cons of learning SwiftUI – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "ATd6ymOv-bs",
+   "title": "Should you learn SwiftUI or UIKit – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "2dQeQfCs3FM",
+   "title": "Tips on identifying SwiftUI errors – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "0t3al_5HrOI",
+   "title": "Most common mistakes with push notifications – Kaya Thomas on Swiftly Speaking"
+  },
+  {
+   "id": "-6alpMYCRfc",
+   "title": "Top three tips for working from home – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "HKvBzxO8Kyw",
+   "title": "Tips for delivering a programming talk – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "PVj7M7GUvKU",
+   "title": "How can you get started writing about Swift and iOS – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "R1BMrcJfCNw",
+   "title": "Why coding for curiosity is so important – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "-qKhBNeLpgc",
+   "title": "How to start learning a new API or framework – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "lQRV_92MkjM",
+   "title": "How to keep up to date with Swift – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "qOCIMhGK8k0",
+   "title": "How to move up from being a junior developer – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "0YUBYcu-E68",
+   "title": "What's better: being a specialist or a generalist? – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "PyEo86srn-k",
+   "title": "Where to apply for jobs – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "p5N1qt_vJ7o",
+   "title": "How to do well at an interview – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "fjCkZmNG6GE",
+   "title": "Do you need a computer science degree – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "Gx-0C8Zfdvw",
+   "title": "How to build a portfolio – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "V0Zsi66OwOs",
+   "title": "How to improve your Swift skills – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "yvc8z2-RVho",
+   "title": "How to get your first iOS developer job – John Sundell on Swiftly Speaking"
+  },
+  {
+   "id": "SHvBEwskO-k",
+   "title": "Hacking with Swift Presents: Bedtime Stories for Swift Developers"
+  },
+  {
+   "id": "ghKh6F-k0Yw",
+   "title": "Should junior developers work remotely – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "gNnb5nvRCrc",
+   "title": "Tips for swaying clients away from 100% test coverage – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "0GipBUSvHFc",
+   "title": "What things must be tested – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "8tXfhEzbblA",
+   "title": "How do you write testable code – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "MjwxxlxihjU",
+   "title": "Should you write tests as you go or all at the end – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "Df_dns11aio",
+   "title": "How to add the first tests to a project – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "CNy_0m-dzZ8",
+   "title": "UI testing breadth vs execution time – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "LutZ1pTE_7k",
+   "title": "How to integrate GraphQL with your app – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "r3HIDC4LX8A",
+   "title": "A pragmatic approach to testing – Ellen Shapiro on Swiftly Speaking"
+  },
+  {
+   "id": "5jUKXmTws40",
+   "title": "The effects of being featured by Apple – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "LxV6xEgSz5Q",
+   "title": "Take care of yourselves – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "8st1QTUTD8g",
+   "title": "Solidarity with folks finding it difficult to work – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "OqlqBm5c9fA",
+   "title": "Promotional artwork requests by Apple – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "stiLI0paCE4",
+   "title": "Project management – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "lo2iWgH8Kes",
+   "title": "PCalc about screen and work philosophy – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "npgkOYgvsHQ",
+   "title": "Mental wellbeing – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "b0qyzYa-kE8",
+   "title": "Is WWDC20 Apple’s chance to create a good online conference? – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "v-NgsAxCGDQ",
+   "title": "Is SwiftUI going to be the future – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "m3Sn2o4wbZ8",
+   "title": "How to get featured on the App Store – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "eRqn0-BhDiQ",
+   "title": "How to create a good working environment – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "0dXFJDAUpuY",
+   "title": "How much should be in a release? – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "RJ3cH0z06hI",
+   "title": "How do you start with AR? – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "nmlbu9AGsJ0",
+   "title": "Does advertising on other sites help? – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "TE4BnCuKu2s",
+   "title": "Dice and mental health – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "nTkMkVZc3QY",
+   "title": "Be kind to yourself – James Thomson on Swiftly Speaking"
+  },
+  {
+   "id": "z3tJdxwlo_Y",
+   "title": "How to use neumorphism in SwiftUI"
+  },
+  {
+   "id": "h0SgafWwoh8",
+   "title": "How to fix slow List updates in SwiftUI"
+  },
+  {
+   "id": "zx3qWNU2NnY",
+   "title": "(OLD) Using an alert to pop a NavigationLink programmatically – Bookworm SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "mps_GOglXhw",
+   "title": "(OLD) Sorting fetch requests with NSSortDescriptor – Bookworm SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "K6Qu-rz-9ec",
+   "title": "(OLD) Showing book details – Bookworm SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "IoOpc21Ws54",
+   "title": "(OLD) Deleting from a Core Data fetch request – Bookworm SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "9fhGjTpHPkc",
+   "title": "(OLD) Fixing Guess the Flag – Accessibility SwiftUI Tutorial 4/6"
+  },
+  {
+   "id": "wLoJ7OYUou0",
+   "title": "(OLD) Fixing Bookworm – Accessibility SwiftUI Tutorial 6/6"
+  },
+  {
+   "id": "WsyNt9lvkMs",
+   "title": "(OLD) Fixing Word Scramble – Accessibility SwiftUI Tutorial 5/6"
+  },
+  {
+   "id": "DbOmwENef5M",
+   "title": "(OLD) Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/6"
+  },
+  {
+   "id": "7FNkx3XvwhA",
+   "title": "Reading the value of controls – Accessibility SwiftUI Tutorial 3/6"
+  },
+  {
+   "id": "D2EGiUxOIuM",
+   "title": "(OLD) Identifying views with useful labels – Accessibility SwiftUI Tutorial 1/6"
+  },
+  {
+   "id": "2oM8MkfZeJs",
+   "title": "(OLD) Locking our UI behind Face ID – Bucket List SwiftUI Tutorial 13/13"
+  },
+  {
+   "id": "glS5iS6pHVU",
+   "title": "(OLD) Making someone else’s class conform to Codable – Bucket List SwiftUI Tutorial 12/13"
+  },
+  {
+   "id": "UmJP1drGSc8",
+   "title": "Introducing the Hacking with Swift Gold Supporter membership"
+  },
+  {
+   "id": "Bib6zB8rKmE",
+   "title": "(OLD) Sorting Wikipedia results – Bucket List SwiftUI Tutorial 11/13"
+  },
+  {
+   "id": "KGhOZtjWp0E",
+   "title": "(OLD) Downloading data from Wikipedia – Bucket List SwiftUI Tutorial 10/13"
+  },
+  {
+   "id": "yMwwXDtaKlA",
+   "title": "(OLD) Extending existing types to support ObservableObject – Bucket List SwiftUI Tutorial 9/13"
+  },
+  {
+   "id": "fcGiX57a1ww",
+   "title": "Customizing MKMapView annotations – Bucket List SwiftUI Tutorial 8/13"
+  },
+  {
+   "id": "kXql7osUqtI",
+   "title": "(OLD) Advanced MKMapView with SwiftUI – Bucket List SwiftUI Tutorial 7/13"
+  },
+  {
+   "id": "-6zVZilhFow",
+   "title": "(OLD) Using Touch ID and Face ID with SwiftUI – Bucket List SwiftUI Tutorial 6/13"
+  },
+  {
+   "id": "bmc_bbmRS5w",
+   "title": "(OLD) Communicating with a MapKit coordinator – Bucket List SwiftUI Tutorial 5/13"
+  },
+  {
+   "id": "YENx5qEpKdc",
+   "title": "(OLD) Integrating MapKit with SwiftUI – Bucket List SwiftUI Tutorial 4/13"
+  },
+  {
+   "id": "sGiFR0IZCz4",
+   "title": "(OLD) Switching view states with enums – Bucket List SwiftUI Tutorial 3/13"
+  },
+  {
+   "id": "VkpWBk1_OIY",
+   "title": "(OLD) Writing data to the documents directory – Bucket List SwiftUI Tutorial 2/13"
+  },
+  {
+   "id": "vJ1ojxPY5eI",
+   "title": "(OLD) Adding conformance to Comparable for custom types – Bucket List SwiftUI Tutorial 1/13"
+  },
+  {
+   "id": "Nh2DymMiICA",
+   "title": "(OLD) Saving the filtered image with UIImageWriteToSavedPhotosAlbum() – Instafilter Tutorial 12/12"
+  },
+  {
+   "id": "e8GIelaTZZA",
+   "title": "(OLD) Customizing our filter using ActionSheet – Instafilter SwiftUI Tutorial 11/12"
+  },
+  {
+   "id": "RNVCBYjzOI0",
+   "title": "Maxed-out 16-inch MacBook Pro: is the upgrade worth it for developers?"
+  },
+  {
+   "id": "CY2nvOYqxvY",
+   "title": "(OLD) Basic image filtering using Core Image – Instafilter SwiftUI Tutorial 10/12"
+  },
+  {
+   "id": "84nByzHQXiQ",
+   "title": "(OLD) Importing an image into SwiftUI using UIImagePickerController – Instafilter SwiftUI 9/12"
+  },
+  {
+   "id": "dWTMWExYsAg",
+   "title": "(OLD) Building our basic UI – Instafilter SwiftUI Tutorial 8/12"
+  },
+  {
+   "id": "RRjG2n60hNU",
+   "title": "(OLD) How to save images to the user’s photo library – Instafilter SwiftUI Tutorial 7/12"
+  },
+  {
+   "id": "Ek_r-7aRp3A",
+   "title": "(OLD) Using coordinators to manage SwiftUI view controllers – Instafilter SwiftUI Tutorial 6/12"
+  },
+  {
+   "id": "xikdYRMDONI",
+   "title": "Hacking with Swift Black Friday 2019"
+  },
+  {
+   "id": "0N-bUVqou8E",
+   "title": "(OLD) Wrapping a UIViewController in a SwiftUI view – Instafilter SwiftUI Tutorial 5/12"
+  },
+  {
+   "id": "1kXQkfOWkSI",
+   "title": "(OLD) Integrating Core Image with SwiftUI – Instafilter SwiftUI Tutorial 4/12"
+  },
+  {
+   "id": "AYaC4P2jUnk",
+   "title": "(OLD) Showing multiple options with ActionSheet – Instafilter SwiftUI Tutorial 3/12"
+  },
+  {
+   "id": "MPpBDcSgj2Y",
+   "title": "(OLD) Creating custom bindings in SwiftUI – Instafilter SwiftUI Tutorial 2/12"
+  },
+  {
+   "id": "Npm2RjqSSFM",
+   "title": "(OLD) How property wrappers become structs – Instafilter SwiftUI Tutorial 1/12"
+  },
+  {
+   "id": "y1oWprQqLJY",
+   "title": "(OLD) One-to-many relationships with @FetchRequest and SwiftUI – Core Data SwiftUI Tutorial 7/7"
+  },
+  {
+   "id": "NkYcKI9t1S4",
+   "title": "(OLD) Dynamically filtering @FetchRequest with SwiftUI – Core Data SwiftUI Tutorial 6/7"
+  },
+  {
+   "id": "I1Cs3mHO_v4",
+   "title": "(OLD) Filtering @FetchRequest using NSPredicate – Core Data SwiftUI Tutorial 5/7"
+  },
+  {
+   "id": "TtaW6VqyUxE",
+   "title": "(OLD) Why does \\.self work for ForEach? – Core Data SwiftUI Tutorial 1/7"
+  },
+  {
+   "id": "rXni7A4OUgU",
+   "title": "(OLD) Creating NSManagedObject subclasses – Core Data SwiftUI Tutorial 2/7"
+  },
+  {
+   "id": "Qi2PXnfAZ84",
+   "title": "(OLD) Conditional saving of NSManagedObjectContext – Core Data SwiftUI Tutorial 3/7"
+  },
+  {
+   "id": "yzX5TPxoN-c",
+   "title": "(OLD) Ensuring Core Data objects are unique using constraints – Core Data SwiftUI Tutorial 4/7"
+  },
+  {
+   "id": "3tN5i452oUA",
+   "title": "(OLD) Building a list with @FetchRequest – Bookworm SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "7121Tyo8AoY",
+   "title": "(OLD) Adding a custom star rating component – Bookworm SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "cuHzVt0VXJM",
+   "title": "(OLD)  Creating books with Core Data – Bookworm SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "7_Afen3PlDE",
+   "title": "(OLD) How to combine Core Data and SwiftUI – Bookworm SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "nxqtJ4-FMjs",
+   "title": "(OLD) Using size classes with AnyView type erasure – Bookworm SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "uZCPZJM2zAc",
+   "title": "(OLD) Creating a custom component with @Binding – Bookworm SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "jen9CJ8peqo",
+   "title": "(OLD) Sending and receiving orders over the internet – Cupcake Corner SwiftUI Tutorial 8/8"
+  },
+  {
+   "id": "JuBR8RsAqyM",
+   "title": "(OLD) Encoding an ObservableObject class – Cupcake Corner SwiftUI Tutorial 7/8"
+  },
+  {
+   "id": "zjaznU-d6YI",
+   "title": "(OLD) Preparing for checkout – Cupcake Corner SwiftUI Tutorial 6/8"
+  },
+  {
+   "id": "lpCn-9Sy8nI",
+   "title": "(OLD) Checking for a valid address – Cupcake Corner SwiftUI Tutorial 5/8"
+  },
+  {
+   "id": "8eCP2mdihsg",
+   "title": "(OLD) Taking basic order details – Cupcake Corner SwiftUI Tutorial 4/8"
+  },
+  {
+   "id": "4rGMH8aQe5w",
+   "title": "(OLD) Validating and disabling forms – Cupcake Corner SwiftUI Tutorial 3/8"
+  },
+  {
+   "id": "gfOhBmU2cPM",
+   "title": "(OLD) Sending and receiving Codable data with URLSession and SwiftUI – Cupcake Corner  2/8"
+  },
+  {
+   "id": "ZMN_vIFN6Gc",
+   "title": "(OLD) Adding Codable conformance for @Published properties – Cupcake Corner SwiftUI Tutorial 1/8"
+  },
+  {
+   "id": "SUEOugpy64I",
+   "title": "(OLD) Creating a spirograph with SwiftUI – Drawing SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "Gji-7DS5LhY",
+   "title": "(OLD) Animating complex shapes with AnimatablePair – Drawing SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "Px0YzyCvNjA",
+   "title": "(OLD) Animating simple shapes with animatableData – Drawing SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "jtizhjijSYg",
+   "title": "(OLD) Special effects in SwiftUI: blurs, blending, and more – Drawing SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "2mpPzP9OQdE",
+   "title": "(OLD) Enabling high-performance Metal rendering with drawingGroup() – Drawing SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "KTmyS_wdc1s",
+   "title": "(OLD) Creative borders and fills using ImagePaint – Drawing SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "4zsfUrJRucM",
+   "title": "(OLD) Transforming shapes using CGAffineTransform and even-odd fills – Drawing SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "2nYa0RpQtE4",
+   "title": "(OLD) Creating custom paths with SwiftUI – Drawing SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "1xm8EM0LoXE",
+   "title": "(OLD) Paths vs shapes in SwiftUI – Drawing SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "nPdfSwx7f3c",
+   "title": "(OLD) Adding strokeBorder() support with InsettableShape – Drawing SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "0wlD_WGkRG8",
+   "title": "(OLD) Merging Codable structs using first(where:) – Moonshot SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "qhdsPe8tuCQ",
+   "title": "(OLD) Fixing problems with buttonStyle() and layoutPriority() – Moonshot SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "vUPI4h5tmgw",
+   "title": "(OLD) Showing mission details with ScrollView and GeometryReader – Moonshot SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "PG_OHOEPx2I",
+   "title": "(OLD) Loading a specific kind of Codable data – Moonshot SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "dX6bGPUpxEk",
+   "title": "(OLD) Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "ClpdFLMWoaw",
+   "title": "(OLD) Formatting our mission view – Moonshot SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "7gyjEiFTjzY",
+   "title": "(OLD) Working with hierarchical Codable data – Moonshot SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "K5628N_vTCs",
+   "title": "(OLD) Pushing new views onto the stack using NavigationLink – Moonshot SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "hdT1IP2Tj_s",
+   "title": "(OLD) How ScrollView lets us work with scrolling data – Moonshot SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "Ci78U4nPmrs",
+   "title": "(OLD) Resizing images to fit the screen using GeometryReader – Moonshot SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "MLcj9bkKBu4",
+   "title": "(OLD) Final polish – iExpense SwiftUI Tutorial 11/11"
+  },
+  {
+   "id": "pCwh3mU5moY",
+   "title": "(OLD) Making changes permanent with UserDefaults – iExpense SwiftUI Tutorial 10/11"
+  },
+  {
+   "id": "o0YHpwUaPwM",
+   "title": "(OLD) Sharing an observed object with a new view – iExpense SwiftUI Tutorial 9/11"
+  },
+  {
+   "id": "Dg1XJviwk4M",
+   "title": "(OLD) Working with Identifiable items in SwiftUI – iExpense SwiftUI Tutorial 8/11"
+  },
+  {
+   "id": "Si0sDBLwGXc",
+   "title": "(OLD) Building a list we can delete from – iExpense SwiftUI Tutorial 7/11"
+  },
+  {
+   "id": "mP-Fgl-lToQ",
+   "title": "(OLD) Archiving Swift objects with Codable – iExpense SwiftUI Tutorial 6/11"
+  },
+  {
+   "id": "B-FvaF8cMqQ",
+   "title": "(OLD) Storing user settings with UserDefaults – iExpense SwiftUI Tutorial 5/11"
+  },
+  {
+   "id": "rRNILW_J7Qc",
+   "title": "(OLD) Deleting items using onDelete() – iExpense SwiftUI Tutorial 4/11"
+  },
+  {
+   "id": "NzPp0RZ5xKs",
+   "title": "(OLD) Showing and hiding views – iExpense SwiftUI Tutorial 3/11"
+  },
+  {
+   "id": "2NA-GNMTXe4",
+   "title": "(OLD) Sharing SwiftUI state with @ObservedObject – iExpense SwiftUI Tutorial 2/11"
+  },
+  {
+   "id": "DyApFerAd68",
+   "title": "(OLD) Why @State only works with structs – iExpense SwiftUI Tutorial 1/11"
+  },
+  {
+   "id": "2P-fydi079k",
+   "title": "(OLD) Building custom transitions using ViewModifier – Animation SwiftUI Tutorial 8/8"
+  },
+  {
+   "id": "VXJM5qRe8XE",
+   "title": "(OLD) Showing and hiding views with transitions – Animation SwiftUI Tutorial 7/8"
+  },
+  {
+   "id": "aoK20gCmrqY",
+   "title": "(OLD) Animating gestures – Animation SwiftUI Tutorial 6/8"
+  },
+  {
+   "id": "fPms96MvCus",
+   "title": "(OLD) Controlling the animation stack – Animation SwiftUI Tutorial 5/8"
+  },
+  {
+   "id": "GDlj2frXnp8",
+   "title": "(OLD) Creating explicit animations – Animation SwiftUI Tutorial 4/8"
+  },
+  {
+   "id": "O6xa_-HqdIg",
+   "title": "(OLD) Animating bindings – Animation SwiftUI Tutorial 3/8"
+  },
+  {
+   "id": "yMts5HztpaU",
+   "title": "(OLD) Customizing animations in SwiftUI – Animation SwiftUI Tutorial 2/8"
+  },
+  {
+   "id": "PJPOl1GL9VY",
+   "title": "(OLD) Creating implicit animations – Animation SwiftUI Tutorial 1/8"
+  },
+  {
+   "id": "AI8MDesuNfU",
+   "title": "(OLD) Validating words with UITextChecker – Word Scramble SwiftUI Tutorial 6/6"
+  },
+  {
+   "id": "Gnd1HaXY9-k",
+   "title": "(OLD) Running code when our app launches – Word Scramble SwiftUI Tutorial 5/6"
+  },
+  {
+   "id": "n70M8_bmVv0",
+   "title": "(OLD) Adding to a list of words – Word Scramble SwiftUI Tutorial 4/6"
+  },
+  {
+   "id": "HivXfybBqZQ",
+   "title": "(OLD) Working with strings – Word Scramble SwiftUI Tutorial 3/6"
+  },
+  {
+   "id": "HU9XPTzj55k",
+   "title": "(OLD) Loading resources from your app bundle – Word Scramble SwiftUI Tutorial 2/6"
+  },
+  {
+   "id": "-VkFj7EUxBk",
+   "title": "(OLD) Introducing List, your best friend – Word Scramble SwiftUI Tutorial 1/6"
+  },
+  {
+   "id": "s_TG1Nfiq3U",
+   "title": "(OLD) Connecting SwiftUI to Core ML – BetterRest SwiftUI Tutorial 6/7"
+  },
+  {
+   "id": "9lORzDuxScE",
+   "title": "(OLD) Cleaning up the user interface – BetterRest SwiftUI Tutorial 7/7"
+  },
+  {
+   "id": "yv3RDFxjTC0",
+   "title": "(OLD) Building a basic layout – BetterRest SwiftUI Tutorial 5/7"
+  },
+  {
+   "id": "EDYl-aO1xAk",
+   "title": "(OLD) Training a model with Create ML – BetterRest SwiftUI Tutorial 4/7"
+  },
+  {
+   "id": "Le8VmQyZWYw",
+   "title": "(OLD) Working with dates – BetterRest SwiftUI Tutorial 3/7"
+  },
+  {
+   "id": "l0g75yHTIUU",
+   "title": "(OLD) Selecting dates and times with DatePicker – BetterRest SwiftUI Tutorial 2/7"
+  },
+  {
+   "id": "OyGPAquQXyA",
+   "title": "(OLD) Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7"
+  },
+  {
+   "id": "SR7DtcT61tA",
+   "title": "How to build a UICollectionView like the App Store"
+  },
+  {
+   "id": "LWovBuWpLAM",
+   "title": "(OLD) Custom containers – Views and Modifiers SwiftUI Tutorial 10/10"
+  },
+  {
+   "id": "m6WG46oyTyY",
+   "title": "(OLD) Custom modifiers – Views and Modifiers SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "xlRfUpP9GlA",
+   "title": "(OLD) View composition – Views and Modifiers SwiftUI Tutorial 8/10"
+  },
+  {
+   "id": "zERJoLafnGY",
+   "title": "(OLD) Views as properties – Views and Modifiers SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "TBwv4R6WPsI",
+   "title": "(OLD) Environment modifiers – Views and Modifiers SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "wjsBMUbCOuA",
+   "title": "(OLD) Conditional modifiers – Views and Modifiers SwiftUI Tutorial 5/10"
+  },
+  {
+   "id": "SzgxLMUumic",
+   "title": "(OLD) Why does SwiftUI use “some View” for its view type? –Views and Modifiers SwiftUI Tutorial 4/10"
+  },
+  {
+   "id": "z4CaeJS1UaE",
+   "title": "(OLD) Why modifier order matters – Views and Modifiers SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "X2DQoUYCtQE",
+   "title": "(OLD) What is behind the main SwiftUI view? – Views and Modifiers SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "MRXJjfRcNjo",
+   "title": "(OLD) Why does SwiftUI use structs for views? – Views and Modifiers SwiftUI Tutorial 1/10"
+  },
+  {
+   "id": "J1TvRvhxPv8",
+   "title": "(OLD) Styling our flags – Guess the Flag SwiftUI Tutorial 8/8"
+  },
+  {
+   "id": "k8YYP9dWQw4",
+   "title": "(OLD) Showing the player’s score with an alert – Guess the Flag SwiftUI Tutorial 7/8"
+  },
+  {
+   "id": "XYv7ZA_clMQ",
+   "title": "(OLD) Stacking up buttons – Guess the Flag SwiftUI Tutorial 6/8"
+  },
+  {
+   "id": "eRP6u9o4W5U",
+   "title": "(OLD) Showing alert messages – Guess the Flag SwiftUI Tutorial 5/8"
+  },
+  {
+   "id": "gVUf7Qs3Kwg",
+   "title": "(OLD) Buttons and images – Guess the Flag SwiftUI Tutorial 4/8"
+  },
+  {
+   "id": "C0_RFAdPXlc",
+   "title": "(OLD) Gradients – Guess the Flag SwiftUI Tutorial 3/8"
+  },
+  {
+   "id": "ME5jKbiTNuc",
+   "title": "(OLD) Colors and frames – Guess the Flag SwiftUI Tutorial 2/8"
+  },
+  {
+   "id": "kY4zrYzDeKE",
+   "title": "(OLD) Using stacks to arrange views – Guess the Flag SwiftUI Tutorial 1/8"
+  },
+  {
+   "id": "aBzlVELg1vA",
+   "title": "(OLD) Calculating the total per person – WeSplit SwiftUI Tutorial  10/10"
+  },
+  {
+   "id": "ERZZbfozPKE",
+   "title": "(OLD) Adding a segmented control for tip percentages – WeSplit SwiftUI Tutorial 9/10"
+  },
+  {
+   "id": "iux8rkuuf2E",
+   "title": "(OLD) Creating pickers in a form – WeSplit SwiftUI Tutorial  8/10"
+  },
+  {
+   "id": "PyYQchAbjmE",
+   "title": "(OLD) Reading text from the user with TextField – WeSplit SwiftUI Tutorial 7/10"
+  },
+  {
+   "id": "wBIv4QRawY0",
+   "title": "(OLD) Creating views in a loop – WeSplit SwiftUI Tutorial 6/10"
+  },
+  {
+   "id": "IG1os9XXNiI",
+   "title": "(OLD) Binding state to user interface controls – WeSplit SwiftUI Tutorial  5/10"
+  },
+  {
+   "id": "46vqD5OPdys",
+   "title": "(OLD) Modifying program state – WeSplit SwiftUI Tutorial  4/10"
+  },
+  {
+   "id": "qhf3N9La27c",
+   "title": "(OLD) Adding a navigation bar – WeSplit SwiftUI Tutorial 3/10"
+  },
+  {
+   "id": "BB3Gi4CGKrA",
+   "title": "(OLD) Creating a form – WeSplit SwiftUI Tutorial 2/10"
+  },
+  {
+   "id": "uUMWEu2YJew",
+   "title": "(OLD) Understanding the basic structure of a SwiftUI app –  WeSplit SwiftUI Tutorial 1/10:"
+  },
+  {
+   "id": "AWZzEGwkenQ",
+   "title": "100 Days of SwiftUI"
+  },
+  {
+   "id": "tF47KiiAU_0",
+   "title": "The Evolution of Swift: Are we there yet?"
+  },
+  {
+   "id": "n2OC_bgn71g",
+   "title": "Presenting an alert - SwiftUI Starter Project 12/14"
+  },
+  {
+   "id": "dkQKHqCKbT8",
+   "title": "Polishing designs with fonts and colors - SwiftUI Starter Project 4/14"
+  },
+  {
+   "id": "U1s4bDmpanc",
+   "title": "Two-way bindings in SwiftUI - SwiftUI Starter Project 10/14"
+  },
+  {
+   "id": "5UJCIymXmdU",
+   "title": "Bindings and forms - SwiftUI Starter Project 9/14"
+  },
+  {
+   "id": "q56YCnmnnME",
+   "title": "Observable objects, environment objects, and @Published - SwiftUI Starter Project 6/14"
+  },
+  {
+   "id": "oJR-CH7sPxs",
+   "title": "Building a menu using List - SwiftUI Starter Project 2/14"
+  },
+  {
+   "id": "nc-n5Gc8wN0",
+   "title": "Setting up - SwiftUI Starter Project 1/14"
+  },
+  {
+   "id": "nWclVBDIlSA",
+   "title": "Wrap up - SwiftUI Starter Project 14/14"
+  },
+  {
+   "id": "e7t3Dor9oxI",
+   "title": "Adding TabView and tabItem() - SwiftUI Starter Project 8/14"
+  },
+  {
+   "id": "YfNhwMhYtnI",
+   "title": "Adding items to an order with @EnvironmentObject - SwiftUI Starter Project 7/14"
+  },
+  {
+   "id": "UBjIjtP8MzM",
+   "title": "Displaying a detail screen with NavigationLink - SwiftUI Starter Project 5/14"
+  },
+  {
+   "id": "EdpM3DsL_J0",
+   "title": "Formatting interpolated strings in SwiftUI - SwiftUI Starter Project 11/14"
+  },
+  {
+   "id": "ATzBMXePITs",
+   "title": "Adding swipe to delete and EditButton - SwiftUI Starter Project 13/14"
+  },
+  {
+   "id": "0xinbTAxbK8",
+   "title": "Composing views to create a list row - SwiftUI Starter Project 3/14"
+  },
+  {
+   "id": "Xe8G0kE13jA",
+   "title": "Hacking with Swift 2019 site refresh"
+  },
+  {
+   "id": "fAaqSr-yShc",
+   "title": "An Illustrated History of Easter Eggs – James Thomson at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "WCUj581Dpec",
+   "title": "High Performance Systems in Swift – Cory Benfield at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "rNWWqtm-tTk",
+   "title": "Swift Hardware Hacking – Sally Shepard at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "CqNPk9gSAaE",
+   "title": "Thinking Outside the Box with Swift Package Manager – Ellen Shapiro at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "2eK8voQeokk",
+   "title": "The Swift Behind SwiftUI – Daniel Steinberg at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "NV1AcxVIA2k",
+   "title": "Extending UIColor to Support Custom Styling – Kelly Hutchison at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "sqGSYGHJMVM",
+   "title": "Auditing your App with the Accessibility Inspector – Kilo Loco at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "y4qFRLp_JNM",
+   "title": "Gentle Generics – John Sundell at Hacking with Swift Live 2019"
+  },
+  {
+   "id": "stSB04C4iS4",
+   "title": "SwiftUI Tutorial: What's the difference between @State, @ObjectBinding, and @EnvironmentObject?"
+  },
+  {
+   "id": "Ho88Eid9gi0",
+   "title": "SwiftUI Tutorial: Build an ordering app with Forms, Pickers, and URLSession"
+  },
+  {
+   "id": "qk2y-TiLDZo",
+   "title": "SwiftUI vs UIKit – Comparison of building the same app in each framework"
+  },
+  {
+   "id": "TfJ70vHABjs",
+   "title": "SwiftUI Tutorial: Build a word game with List, TextField, Alert, and more"
+  },
+  {
+   "id": "_AVr0tlPxHw",
+   "title": "SwiftUI Tutorial: Build a Core ML app with stacks, steppers, and date pickers"
+  },
+  {
+   "id": "lCNpEaZiKqU",
+   "title": "SwiftUI Tutorial: Build an iBeacon detector with object binding and custom modifiers"
+  },
+  {
+   "id": "iaWrJCjAEyw",
+   "title": "SwiftUI Tutorial: Build a flag guessing game with VStack, images, and alerts – Complete Apps #2"
+  },
+  {
+   "id": "VGJBLlfSN-Y",
+   "title": "SwiftUI Tutorial: Build a dynamic list app with navigation and images – SwiftUI Complete Apps #1"
+  },
+  {
+   "id": "ffyJXfZCd4c",
+   "title": "How to create a list of dynamic items - SwiftUI by Example"
+  },
+  {
+   "id": "ANKH88vCqGE",
+   "title": "How to create a date picker and read values from it"
+  },
+  {
+   "id": "XAeRrSFsvxM",
+   "title": "How to make a grouped list - SwiftUI by Example"
+  },
+  {
+   "id": "4yY6uci-yLA",
+   "title": "How to read tap and double-tap gestures"
+  },
+  {
+   "id": "-3pTfaE0bSg",
+   "title": "How to create a tappable button - SwiftUI by Example"
+  },
+  {
+   "id": "cPA45hF59Tw",
+   "title": "How to add a border to a TextField - SwiftUI by Example"
+  },
+  {
+   "id": "VmxBalRhcs0",
+   "title": "How to create a list of static items - SwiftUI by Example"
+  },
+  {
+   "id": "EFkL0Jv58wQ",
+   "title": "How to create a Slider and read values from it - SwiftUI by Example"
+  },
+  {
+   "id": "E7Y3nk1G77I",
+   "title": "How to format text inside text views - SwiftUI by Example"
+  },
+  {
+   "id": "AYkp91p3AQA",
+   "title": "How to create a toggle switch - SwiftUI by Example"
+  },
+  {
+   "id": "9cp3mT6KhwU",
+   "title": "How to read text from a TextField - SwiftUI by Example"
+  },
+  {
+   "id": "XF_euKrEB8c",
+   "title": "How to create static labels with a Text view - SwiftUI by Example"
+  },
+  {
+   "id": "Xpy0WuFHPco",
+   "title": "How to style text views with fonts, colors, line spacing, and more - SwiftUI by Example"
+  },
+  {
+   "id": "iWv3oycl-vk",
+   "title": "How to draw images using Image views - SwiftUI by Example"
+  },
+  {
+   "id": "iO7bcgjXZRI",
+   "title": "How to create stacks using VStack and HStack - SwiftUI by Example"
+  },
+  {
+   "id": "a3-mc7VxsOw",
+   "title": "How to control spacing around individual views using padding - SwiftUI by Example"
+  },
+  {
+   "id": "ps16HZU3SnA",
+   "title": "How to layer views on top of each other using ZStack - SwiftUI by Example"
+  },
+  {
+   "id": "TpdMJBSBvEg",
+   "title": "What’s in the basic template? – SwiftUI by Example"
+  },
+  {
+   "id": "ANlxGi_Bp0o",
+   "title": "How to customize stack layouts with alignment and spacing - SwiftUI by Example"
+  },
+  {
+   "id": "WQ-wppW8jt4",
+   "title": "What's new in Swift 5.1?"
+  },
+  {
+   "id": "WpQSZCpPL2g",
+   "title": "The Hacking with Swift WWDC19 sale"
+  },
+  {
+   "id": "8VNqScyEI34",
+   "title": "Static and class subscripts in Swift 5.1"
+  },
+  {
+   "id": "RPUvb4sBu94",
+   "title": "Matching optional enums against non-optionals in Swift 5.1"
+  },
+  {
+   "id": "YlRuQP3EO8E",
+   "title": "Universal Self in Swift 5.1"
+  },
+  {
+   "id": "nMipSOTkfig",
+   "title": "Creating uninitialized arrays in Swift 5.1"
+  },
+  {
+   "id": "vV-UIspMWAY",
+   "title": "Warnings for ambiguous none cases in Swift 5.1"
+  },
+  {
+   "id": "EkvxlrYFUkc",
+   "title": "Implicit returns from single-expression functions in Swift 5.1"
+  },
+  {
+   "id": "DvHkeUxiwYY",
+   "title": "Opaque return types in Swift 5.1"
+  },
+  {
+   "id": "79U1lkkap-g",
+   "title": "Improved synthesized memberwise initializers in Swift 5.1"
+  },
+  {
+   "id": "l5MaiByb0R0",
+   "title": "How to specify floating-point precision in a string – Swift 5"
+  },
+  {
+   "id": "HxVOahmfwz0",
+   "title": "How to save user settings using UserDefaults – Swift 5"
+  },
+  {
+   "id": "o_zYsGu2Z8U",
+   "title": "How to sort an array using sort() – Swift 5"
+  },
+  {
+   "id": "o_qBp32KpOI",
+   "title": "Fixing \"Class ViewController has no initializers\" – Swift 5"
+  },
+  {
+   "id": "CYqLHqDfBOQ",
+   "title": "How to append one array to another array – Swift 5"
+  },
+  {
+   "id": "8mBexDIqkI4",
+   "title": "How to load a remote image URL into UIImageView – Swift 5"
+  },
+  {
+   "id": "09QyTxzxHYE",
+   "title": "How to add a section header to a table view – Swift 5"
+  },
+  {
+   "id": "qr1XJMIziBg",
+   "title": "How to make tappable links in NSAttributedString – Swift 5"
+  },
+  {
+   "id": "pwaaU3hyPfk",
+   "title": "How to add a shadow to a UIView – Swift 5"
+  },
+  {
+   "id": "psRBotODPQc",
+   "title": "How to scale, stretch, move, and rotate UIViews using CGAffineTransform – Swift 5"
+  },
+  {
+   "id": "cyfcinVP1r0",
+   "title": "How to convert an Int to a String – Swift 5"
+  },
+  {
+   "id": "cXz5nh6DFgg",
+   "title": "How to convert Data to a String – Swift 5"
+  },
+  {
+   "id": "YwNFw_doBnw",
+   "title": "How to round the corners of a UIView – Swift 5"
+  },
+  {
+   "id": "EVNPbDGHZ6M",
+   "title": "How to open a URL in Safari – Swift 5"
+  },
+  {
+   "id": "DehLJj0JmVY",
+   "title": "How to make an action repeat using Timer – Swift 5"
+  },
+  {
+   "id": "4WzqzwJztkg",
+   "title": "How to trim whitespace in a string – Swift 5"
+  },
+  {
+   "id": "48QScxC1lBQ",
+   "title": "How to convert a String to an Int – Swift 5"
+  },
+  {
+   "id": "sEHLlCbDBh0",
+   "title": "How to add a border outline color to a UIView – Swift 5"
+  },
+  {
+   "id": "1RD8-5_Zsws",
+   "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5"
+  },
+  {
+   "id": "SuUf9buBzA0",
+   "title": "Inside the Standard Library: Sequence.contains"
+  },
+  {
+   "id": "IiBG4POluqY",
+   "title": "Wrap up – Grand Central Dispatch, part 6"
+  },
+  {
+   "id": "ak4vK2ICg9M",
+   "title": "Invitation only: MCPeerID – Selfie Share, part 4"
+  },
+  {
+   "id": "Tg_ExH0ivoE",
+   "title": "Fixing the bugs: Running out of memory – Instruments, part 6"
+  },
+  {
+   "id": "Cy8NswcPZAE",
+   "title": "Wrap up – Instruments, part 7"
+  },
+  {
+   "id": "RIiyITB0sQM",
+   "title": "Setting up – Instruments, part 1"
+  },
+  {
+   "id": "IzRopsZvywQ",
+   "title": "What are we working with? – Instruments, part 2"
+  },
+  {
+   "id": "sY0zgtKfW1E",
+   "title": "What can Instruments tell us? – Instruments, part 3"
+  },
+  {
+   "id": "q9BT3dK8sQs",
+   "title": "Fixing the bugs: wasted allocations – Instruments, part 5"
+  },
+  {
+   "id": "ggxcOnGm9tg",
+   "title": "Fixing the bugs: slow shadows – Instruments, part 4"
+  },
+  {
+   "id": "dZ8jKucIsU8",
+   "title": "Unwrap – Learn Swift on iPhone and iPad"
+  },
+  {
+   "id": "CHBgsiN7Sfs",
+   "title": "Wrap up – Exploding Monkeys, part 6"
+  },
+  {
+   "id": "SsTQVaTAHEA",
+   "title": "Destructible terrain: presentScene() – Exploding Monkeys, part 5"
+  },
+  {
+   "id": "Jsax0NRfTrc",
+   "title": "Unleash the bananas: SpriteKit texture atlases – Exploding Monkeys, part 4"
+  },
+  {
+   "id": "T6Qg0qnNtSA",
+   "title": "Building the environment: SKTexture and filling a path – Exploding Monkeys, part 2"
+  },
+  {
+   "id": "J7d0XPBYwKw",
+   "title": "Mixing UIKit and SpriteKit: UISlider and SKView – Exploding Monkeys, part 3"
+  },
+  {
+   "id": "BQbaIjBkoE0",
+   "title": "Setting up – Exploding Monkeys, part 1"
+  },
+  {
+   "id": "4-VfhcMSvSY",
+   "title": "Wrap up – Secret Swift, part 5"
+  },
+  {
+   "id": "SiN6DyuT9B8",
+   "title": "Switch statements – Swift in Sixty Seconds"
+  },
+  {
+   "id": "RMst1BtMTcE",
+   "title": "Touch to activate: Touch ID, Face ID and LocalAuthentication – Secret Swift, part 4"
+  },
+  {
+   "id": "h9RVeeUVhf8",
+   "title": "Writing somewhere safe: the iOS keychain – Secret Swift, part 3"
+  },
+  {
+   "id": "E5F5vaoeYU0",
+   "title": "Setting up – Secret Swift, part 1"
+  },
+  {
+   "id": "0lEWz4fBzoA",
+   "title": "Creating a basic text editor – Secret Swift, part 2"
+  },
+  {
+   "id": "Q2-mywgrF7I",
+   "title": "Wrap up – Core Graphics, part 7"
+  },
+  {
+   "id": "y7NZvkTig40",
+   "title": "Transforms and lines – Core Graphics, part 5"
+  },
+  {
+   "id": "i0T0uWnaKDg",
+   "title": "Ellipses and checkerboards – Core Graphics, part 4"
+  },
+  {
+   "id": "_Z-KrWJrv1c",
+   "title": "Creating the sandbox – Core Graphics, part 2"
+  },
+  {
+   "id": "I12-RAh0BxI",
+   "title": "Images and text – Core Graphics, part 6"
+  },
+  {
+   "id": "vzXl0MhVXxY",
+   "title": "Drawing into a Core Graphics context with UIGraphicsImageRenderer – Core Graphics, part 3"
+  },
+  {
+   "id": "O-4-xPOXkj0",
+   "title": "Setting up – Core Graphics, part 1"
+  },
+  {
+   "id": "Y3RBwznf1WE",
+   "title": "Wrap up – Marble Maze, part 5"
+  },
+  {
+   "id": "dbDIQt4oxxA",
+   "title": "Tilt to move: CMMotionManager – Marble Maze, part 3"
+  },
+  {
+   "id": "9T0sJKNM2Tc",
+   "title": "Contacting but not colliding – Marble Maze, part 4"
+  },
+  {
+   "id": "PPVsT4DePJw",
+   "title": "Setting up – Marble Maze, part 1"
+  },
+  {
+   "id": "MLMIdhpnd_Y",
+   "title": "Loading a level: categoryBitMask, collisionBitMask, contactTestBitMask – Marble Maze, part 2"
+  },
+  {
+   "id": "H82q9rmL9mk",
+   "title": "Wrap up – Selfie Share, part 5"
+  },
+  {
+   "id": "p_8TRJAoevA",
+   "title": "Going peer to peer: MCSession – Selfie Share, part 3"
+  },
+  {
+   "id": "Uw1C0JCEprA",
+   "title": "Importing photos again – Selfie Share, part 2"
+  },
+  {
+   "id": "1KnE6UpWvf8",
+   "title": "Setting up – Selfie Share, part 1"
+  },
+  {
+   "id": "yzq0jaNsutE",
+   "title": "Wrap up – Swift Strings, part 5"
+  },
+  {
+   "id": "xNX45MXsXWc",
+   "title": "Formatting strings with NSAttributedString – Swift Strings, part 4"
+  },
+  {
+   "id": "oeKUmAgyOdw",
+   "title": "Strings are not arrays – Swift Strings, part 2"
+  },
+  {
+   "id": "V9cWsGJ4aLc",
+   "title": "Setting up – Swift Strings, part 1"
+  },
+  {
+   "id": "AthqAjYhZLw",
+   "title": "Working with strings in Swift – Swift Strings, part 3"
+  },
+  {
+   "id": "kb1a_23dHaE",
+   "title": "Wrap up – Swifty Ninja, part 8"
+  },
+  {
+   "id": "HqrrsfA0sbA",
+   "title": "Game over, man: SKTexture – Swifty Ninja, part 7"
+  },
+  {
+   "id": "kzGSiGXbxWo",
+   "title": "Slice to win – Swifty Ninja, part 6"
+  },
+  {
+   "id": "tDfZfytNSls",
+   "title": "Follow the sequence – Swifty Ninja, part 5"
+  },
+  {
+   "id": "ztVwxIpMwiI",
+   "title": "Shaping up for action: CGPath and UIBezierPath – Swifty Ninja, part 3"
+  },
+  {
+   "id": "JNg1kLsttLY",
+   "title": "Setting up – Swifty Ninja, part 1"
+  },
+  {
+   "id": "CK9OwMyJQDY",
+   "title": "Basics quick start: SKShapeNode – Swifty Ninja, part 2"
+  },
+  {
+   "id": "4R6rbsWLRoM",
+   "title": "Enemy or bomb: AVAudioPlayer – Swifty Ninja, part 4"
+  },
+  {
+   "id": "RJXC2wv8vQQ",
+   "title": "Wrap up – Detect-a-Beacon, part 4"
+  },
+  {
+   "id": "y9GGNzc-T-4",
+   "title": "Setting up – Detect-a-Beacon, part 1"
+  },
+  {
+   "id": "Oz5vxVIKIqU",
+   "title": "Requesting location: Core Location – Detect-a-Beacon, part 2"
+  },
+  {
+   "id": "HcS4U4aOeCI",
+   "title": "Hunting the beacon: CLBeaconRegion – Detect-a-Beacon, part 3"
+  },
+  {
+   "id": "iAMuDXSi2Cc",
+   "title": "Wrap up – Local Notifications, part 4"
+  },
+  {
+   "id": "t0l0-Kx_4l0",
+   "title": "Acting on responses – Local Notifications, part 3"
+  },
+  {
+   "id": "jb0SFRc28Ak",
+   "title": "Setting up – Local Notifications, part 1"
+  },
+  {
+   "id": "QD_mVOeOaGA",
+   "title": "Scheduling notifications: UNUserNotificationCenter – Local Notifications, part 2"
+  },
+  {
+   "id": "90dlnvKUy3w",
+   "title": "Making things go bang: SKEmitterNode – Fireworks Night, part 4"
+  },
+  {
+   "id": "0CdergUF130",
+   "title": "Wrap up – Fireworks Night, part 5"
+  },
+  {
+   "id": "Af_-HBsgL5k",
+   "title": "Setting up – Fireworks Night, part 1"
+  },
+  {
+   "id": "UYBAbYSKRo4",
+   "title": "Ready... aim... fire: Timer and follow() – Fireworks Night, part 2"
+  },
+  {
+   "id": "Mshbpgs-PJE",
+   "title": "Swipe to select – Fireworks Night, part 3"
+  },
+  {
+   "id": "e64-Qj2Tu_Y",
+   "title": "Wrap up – JavaScript Injection, part 8"
+  },
+  {
+   "id": "crjzwQ5yCAE",
+   "title": "Fixing the keyboard: NotificationCenter – JavaScript Injection, part 7"
+  },
+  {
+   "id": "We4VzqqJTow",
+   "title": "Editing multiline text with UITextView – JavaScript Injection, part 6"
+  },
+  {
+   "id": "-i-0CLhHILc",
+   "title": "Establishing communication – JavaScript Injection, part 5"
+  },
+  {
+   "id": "Y-EujA71RMY",
+   "title": "Setting up – JavaScript Injection, part 1"
+  },
+  {
+   "id": "Keyo50542nk",
+   "title": "Adding an extension: NSExtensionItem – JavaScript Injection, part 3"
+  },
+  {
+   "id": "VOzPapykPm0",
+   "title": "Making a shell app – JavaScript Injection, part 2"
+  },
+  {
+   "id": "s5Q8tgU2BJU",
+   "title": "What do you want to get? – JavaScript Injection, part 4"
+  },
+  {
+   "id": "a905KIBw1hs",
+   "title": "Create ML for Everyone"
+  },
+  {
+   "id": "-aVkhSa9QWY",
+   "title": "Wrap up – Debugging, part 6"
+  },
+  {
+   "id": "aIdq-MJOtE4",
+   "title": "Setting up – Debugging, part 1"
+  },
+  {
+   "id": "2GkNf9XZN5I",
+   "title": "Debugging with assert() – Debugging, part 3"
+  },
+  {
+   "id": "tbFO8DsJ6aw",
+   "title": "Basic Swift debugging using print() – Debugging, part 2"
+  },
+  {
+   "id": "OCeKmiCJLtg",
+   "title": "Debugging with breakpoints – Debugging, part 4"
+  },
+  {
+   "id": "01K6Oy5ktaQ",
+   "title": "View debugging – Debugging, part 5"
+  },
+  {
+   "id": "d9ZOHDEc120",
+   "title": "Setting up – Space Race, part 1"
+  },
+  {
+   "id": "AFXoDvDkxYA",
+   "title": "Wrap up – Space Race, part 5"
+  },
+  {
+   "id": "wT8EGUiUGPc",
+   "title": "Space: the final frontier – Space Race, part 2"
+  },
+  {
+   "id": "NIRrPs2fpPw",
+   "title": "Bring on the enemies: Timer, linearDamping, angularDamping – Space Race, part 3"
+  },
+  {
+   "id": "KNEHC4bN2x4",
+   "title": "Making contact: didBegin() – Space Race, part 4"
+  },
+  {
+   "id": "P-2RCqOhNmc",
+   "title": "Wrap up – Capital Cities, part 4"
+  },
+  {
+   "id": "VkvEA7v5JyQ",
+   "title": "Annotations and accessory views: MKPinAnnotationView – Capital Cities, part 3"
+  },
+  {
+   "id": "p0dOywHx0VI",
+   "title": "Setting up – Capital Cities, part 1"
+  },
+  {
+   "id": "R9lb373n5JI",
+   "title": "Up and running with MapKit – Capital Cities, part 2"
+  },
+  {
+   "id": "wC7CnUqcXV4",
+   "title": "How to enable Apple internal mode in Xcode 10.2"
+  },
+  {
+   "id": "zqbWsKHkg74",
+   "title": "Wrap up – Animation, part 5"
+  },
+  {
+   "id": "nrp6SZWbRlY",
+   "title": "Switch, case, animate: animate(withDuration:) – Animation, part 3"
+  },
+  {
+   "id": "ce5YR-M0QMw",
+   "title": "Preparing for action – Animation, part 2"
+  },
+  {
+   "id": "cQYbp4IGkgQ",
+   "title": "Transform: CGAffineTransform – Animation, part 4"
+  },
+  {
+   "id": "RpKB144qWKI",
+   "title": "Setting up – Animation, part 1"
+  },
+  {
+   "id": "Krae0sF-IvQ",
+   "title": "Whack to win: SKAction sequences – Whack-a-Penguin, part 4"
+  },
+  {
+   "id": "Dxfd0O29omA",
+   "title": "Wrap up – Whack-a-Penguin, part 5"
+  },
+  {
+   "id": "uVr0NqS2QrI",
+   "title": "Penguin, show thyself: SKAction moveBy(x:y:duration:) – Whack-a-Penguin, part 3"
+  },
+  {
+   "id": "uF_7ruu6m7c",
+   "title": "Setting up – Whack-a-Penguin, part 1"
+  },
+  {
+   "id": "C2a0O7nMAoA",
+   "title": "Getting up and running: SKCropNode – Whack-a-Penguin, part 2"
+  },
+  {
+   "id": "sbTBhRaT0Js",
+   "title": "Wrap up – Instafilter, part 6"
+  },
+  {
+   "id": "9Qm6M7qlOOQ",
+   "title": "Applying filters: CIContext, CIFilter – Instafilter, part 4"
+  },
+  {
+   "id": "F0clMFqiOys",
+   "title": "Saving to the iOS photo library – Instafilter, part 5"
+  },
+  {
+   "id": "_Iw4zf8gtqs",
+   "title": "What's new in Swift 5.0?"
+  },
+  {
+   "id": "vr-lKRdKuNY",
+   "title": "Importing a picture – Instafilter, part 3"
+  },
+  {
+   "id": "tT-hyQeUDNk",
+   "title": "Designing the interface – Instafilter, part 2"
+  },
+  {
+   "id": "_h4fv_6vjYg",
+   "title": "Setting up – Instafilter, part 1"
+  },
+  {
+   "id": "7vQJ35_df9U",
+   "title": "Wrap up – UserDefaults, part 5"
+  },
+  {
+   "id": "Jr6YcWlGHvg",
+   "title": "Fixing Project 10: Codable"
+  },
+  {
+   "id": "Lf_FCb3nMWU",
+   "title": "Setting up – UserDefaults, part 1"
+  },
+  {
+   "id": "5H3J16QeNnI",
+   "title": "Fixing Project 10: NSCoding – UserDefaults, part 3"
+  },
+  {
+   "id": "WHKLXI8baJk",
+   "title": "Reading and writing basics: UserDefaults – UserDefaults, part 2"
+  },
+  {
+   "id": "njZ8SkzlDxU",
+   "title": "Wrap up – Pachinko, part 8"
+  },
+  {
+   "id": "cv-G8dzQlug",
+   "title": "Special effects: SKEmitterNode – Pachinko, part 7"
+  },
+  {
+   "id": "kSMS0h9qR7s",
+   "title": "Scores on the board: SKLabelNode – Pachinko, part 6"
+  },
+  {
+   "id": "etL7NXfpZR8",
+   "title": "Collision detection: SKPhysicsContactDelegate – Pachinko, part 5"
+  },
+  {
+   "id": "7t9Vy529unw",
+   "title": "Spinning slots: SKAction – Pachinko, part 4"
+  },
+  {
+   "id": "f1Bf1ORCLb4",
+   "title": "Falling boxes: SKSpriteNode, UITouch, SKPhysicsBody – Pachinko, part 2"
+  },
+  {
+   "id": "f-qio_g_D2Y",
+   "title": "Bouncing balls: circleOfRadius – Pachinko, part 3"
+  },
+  {
+   "id": "PPKU1_k86tQ",
+   "title": "Setting up – Pachinko, part 1"
+  },
+  {
+   "id": "kKpP62SCxo0",
+   "title": "Wrap up – Names to Faces, part 7"
+  },
+  {
+   "id": "Vy_Xn86wga4",
+   "title": "Properties and methods of arrays – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ZiIQyPWc9UA",
+   "title": "Importing photos with UIImagePickerController – Names to Faces, part 4"
+  },
+  {
+   "id": "Ab4m2Mhj4-o",
+   "title": "Connecting up the people – Names to Faces, part 6"
+  },
+  {
+   "id": "AIbPN2eXqK4",
+   "title": "Custom subclasses of NSObject – Names to Faces, part 5"
+  },
+  {
+   "id": "gtRrcnj5QCI",
+   "title": "Designing UICollectionView cells – Names to Faces, part 2"
+  },
+  {
+   "id": "Rsl8rYjFGLM",
+   "title": "Setting up – Names to Faces, part 1"
+  },
+  {
+   "id": "JideUGciPiE",
+   "title": "UICollectionView data sources – Names to Faces, part 3"
+  },
+  {
+   "id": "tMsa3b9stCY",
+   "title": "Why is locking the UI bad? – Grand Central Dispatch, part 2"
+  },
+  {
+   "id": "u7ovZkewpHc",
+   "title": "Setting up – Grand Central Dispatch, part 1"
+  },
+  {
+   "id": "T5_QS7Y7TuI",
+   "title": "Easy GCD using performSelector(inBackground:) – Grand Central Dispatch, part 5"
+  },
+  {
+   "id": "SrWWLx5wOEU",
+   "title": "GCD 101: async() – Grand Central Dispatch, part 3"
+  },
+  {
+   "id": "8Q7JNnPBvXw",
+   "title": "Back to the main thread: DispatchQueue.main – Grand Central Dispatch, part 4"
+  },
+  {
+   "id": "cODcGmJM-OQ",
+   "title": "Wrap up – 7 Swifty Words, part 6"
+  },
+  {
+   "id": "InHeXXy3NFc",
+   "title": "It's play time: firstIndex(of:) and joined() – 7 Swifty Words, part 4"
+  },
+  {
+   "id": "_0nER-JW9tU",
+   "title": "Property observers: didSet – 7 Swifty Words, part 5"
+  },
+  {
+   "id": "VudWhMzF1uQ",
+   "title": "Loading a level and adding button targets – 7 Swifty Words, part 3"
+  },
+  {
+   "id": "yhxhKpyyQzE",
+   "title": "Building a UIKit user interface programmatically – 7 Swifty Words, part 2"
+  },
+  {
+   "id": "4rRktNrZm4g",
+   "title": "Setting up – 7 Swifty Words, part 1"
+  },
+  {
+   "id": "utUpNqglZGs",
+   "title": "Wrap up – Whitehouse Petitions, part 6"
+  },
+  {
+   "id": "T6wvsQ78w0c",
+   "title": "Rendering a petition: loadHTMLString – Whitehouse Petitions, part 4"
+  },
+  {
+   "id": "9VorfMsbKQQ",
+   "title": "Finishing touches: didFinishLaunchingWithOptions – Whitehouse Petitions, part 5"
+  },
+  {
+   "id": "Qisx0mkHNTo",
+   "title": "Setting up – Whitehouse Petitions, part 1"
+  },
+  {
+   "id": "9FriGMWIbdc",
+   "title": "Parsing JSON using the Codable protocol – Whitehouse Petitions, part 3"
+  },
+  {
+   "id": "7iuRj8YNAxM",
+   "title": "Creating the basic UI: UITabBarController – Whitehouse Petitions, part 2"
+  },
+  {
+   "id": "3rky6DLcHv0",
+   "title": "Auto Layout anchors – Auto Layout, part 5"
+  },
+  {
+   "id": "z7EvsqDwcT4",
+   "title": "Wrap up – Auto Layout, part 6"
+  },
+  {
+   "id": "Gyf06HywlxM",
+   "title": "Auto Layout metrics and priorities: constraints(withVisualFormat:) – Auto Layout, part 4"
+  },
+  {
+   "id": "acqxNJ4Kbhk",
+   "title": "Setting up – Auto Layout, part 1"
+  },
+  {
+   "id": "GiGhVZ-2EQg",
+   "title": "Auto Layout in code: addConstraints with Visual Format Language – Auto Layout, part 3"
+  },
+  {
+   "id": "OxIQZciPHdY",
+   "title": "Advanced Auto Layout – Auto Layout, part 2"
+  },
+  {
+   "id": "jxvEBafyo5A",
+   "title": "Wrap up – Word Scramble, part 7"
+  },
+  {
+   "id": "mZdSnxVG9pM",
+   "title": "Checking for valid answers – Word Scramble, part 5"
+  },
+  {
+   "id": "jjOcsdYZE9c",
+   "title": "Prepare for submission: lowercased() and IndexPath – Word Scramble, part 4"
+  },
+  {
+   "id": "Dh__ZeZJbOg",
+   "title": "Or else what? – Word Scramble, part 6"
+  },
+  {
+   "id": "bOURBKBRR3A",
+   "title": "Reading from disk: contentsOf – Word Scramble, part 2"
+  },
+  {
+   "id": "U8eG_cEGO-A",
+   "title": "Setting up – Word Scramble, part 1"
+  },
+  {
+   "id": "tngJVuM6big",
+   "title": "Pick a word, any word – Word Scramble, part 3"
+  },
+  {
+   "id": "V0srN0ym4mA",
+   "title": "Wrap up – Easy Browser, part 6"
+  },
+  {
+   "id": "Nj6qvHyNMug",
+   "title": "Monitoring page loads: UIToolbar and UIProgressView – Easy Browser, part 4"
+  },
+  {
+   "id": "4GfOfx9z3Ss",
+   "title": "Refactoring for the win – Easy Browser, part 5"
+  },
+  {
+   "id": "pLiT5DdjEbM",
+   "title": "Creating a simple browser with WKWebView – Easy Browser, part 2"
+  },
+  {
+   "id": "kZnzMswPUkw",
+   "title": "Setting up – Easy Browser, part 1"
+  },
+  {
+   "id": "LkqYPTSk3aQ",
+   "title": "Choosing a website: UIAlertController action sheets – Easy Browser, part 3"
+  },
+  {
+   "id": "71Ibkm2eIgU",
+   "title": "Wrap up – Social media, part 3"
+  },
+  {
+   "id": "_bjMK-c1EV8",
+   "title": "UIActivityViewController explained – Social media, part 2"
+  },
+  {
+   "id": "71Qn9tMzCRU",
+   "title": "About technique projects – Social media, part 1"
+  },
+  {
+   "id": "T0_BWu4aIRQ",
+   "title": "Super-powered string interpolation in Swift 5.0"
+  },
+  {
+   "id": "w0ktVEpGet4",
+   "title": "Wrap up – Guess the Flag, part 6"
+  },
+  {
+   "id": "LYSIFwBeVvE",
+   "title": "Designing your layout – Guess the Flag, part 5"
+  },
+  {
+   "id": "A9SKgYhqZ_Q",
+   "title": "Setting up – Guess the Flag, part 4"
+  },
+  {
+   "id": "qHPqGWzs17E",
+   "title": "Designing your layout – Guess the Flag, part 2"
+  },
+  {
+   "id": "uwkI_EelDZM",
+   "title": "Setting up – Guess the Flag, part 1"
+  },
+  {
+   "id": "XXqrQvWpVzE",
+   "title": "Making the basic game work: UIButton and CALayer – Guess the Flag, part 3"
+  },
+  {
+   "id": "frqdi_lluvE",
+   "title": "Wrap up – Storm Viewer, part 7"
+  },
+  {
+   "id": "jBWbJ6RxgIA",
+   "title": "Final tweaks: hidesBarsOnTap and large titles – Storm Viewer, part 6"
+  },
+  {
+   "id": "FNrxEvtUl-U",
+   "title": "Loading images with UIImage – Storm Viewer, part 5"
+  },
+  {
+   "id": "paMpdmJcpRg",
+   "title": "Setting up – Storm Viewer, part 4"
+  },
+  {
+   "id": "lCHpZjERVdY",
+   "title": "Setting up – Storm Viewer, part 1"
+  },
+  {
+   "id": "XqFSZUM04fg",
+   "title": "Listing images with FileManager – Storm Viewer, part 2"
+  },
+  {
+   "id": "0hMgOfF8tyQ",
+   "title": "Designing our interface – Storm Viewer, part 3"
+  },
+  {
+   "id": "8rXHIlT_zQQ",
+   "title": "Inside the Standard Library: Sequence.flatMap"
+  },
+  {
+   "id": "XOiUNC84Sak",
+   "title": "Introduction to Swift: Static properties and methods"
+  },
+  {
+   "id": "SVXtWw63C8k",
+   "title": "Introduction to Swift: Access control"
+  },
+  {
+   "id": "AabqZodJ2xM",
+   "title": "Introduction to Swift: Properties"
+  },
+  {
+   "id": "575cMa-XTX8",
+   "title": "Introduction to Swift: Polymorphism and typecasting"
+  },
+  {
+   "id": "1P0yQ72g6Bk",
+   "title": "Introduction to Swift: Closures"
+  },
+  {
+   "id": "dWQuOj1bnN8",
+   "title": "Introduction to Swift: Functions"
+  },
+  {
+   "id": "d13uCPrmEXM",
+   "title": "Introduction to Swift: Structs"
+  },
+  {
+   "id": "S8-QO2wUbRg",
+   "title": "Introduction to Swift: Optional chaining"
+  },
+  {
+   "id": "OkzZ3T3lrlg",
+   "title": "Introduction to Swift: Optionals"
+  },
+  {
+   "id": "1Deixr4KQ3Q",
+   "title": "Introduction to Swift: Enumerations"
+  },
+  {
+   "id": "s_x49coTM4g",
+   "title": "Introduction to Swift: Classes"
+  },
+  {
+   "id": "dwrlqKaMUt4",
+   "title": "Introduction to Swift: Types of data"
+  },
+  {
+   "id": "VjMZmqUrN_0",
+   "title": "Introduction to Swift: Conditional statements"
+  },
+  {
+   "id": "Jjd-m6fFu08",
+   "title": "Introduction to Swift: Switch case"
+  },
+  {
+   "id": "3-I43GvrzsA",
+   "title": "Introduction to Swift: String interpolation"
+  },
+  {
+   "id": "lqQ_OM4uPa0",
+   "title": "Introduction to Swift: Dictionaries"
+  },
+  {
+   "id": "W0SQujtakwg",
+   "title": "Introduction to Swift: Arrays"
+  },
+  {
+   "id": "Svaq3jVy8sU",
+   "title": "Introduction to Swift: Operators"
+  },
+  {
+   "id": "SljJSnGffmc",
+   "title": "100 Days of Swift – Day 13"
+  },
+  {
+   "id": "NbthZRnz1C4",
+   "title": "Introduction to Swift: Variables and constants"
+  },
+  {
+   "id": "IJChAEFA5as",
+   "title": "Introduction to Swift: Loops"
+  },
+  {
+   "id": "rAl401njyNQ",
+   "title": "Xcode in 20 Seconds: Build settings"
+  },
+  {
+   "id": "6FyhLCVPtDU",
+   "title": "Xcode in 20 Seconds: Refactoring storyboards"
+  },
+  {
+   "id": "6Eo5AoPIg7k",
+   "title": "Xcode in 20 Seconds: Named colors"
+  },
+  {
+   "id": "ueByb0MBMQ4",
+   "title": "Advanced Coordinators in iOS"
+  },
+  {
+   "id": "52lj1Ak7kMk",
+   "title": "Xcode in 20 Seconds: Quick Look"
+  },
+  {
+   "id": "aYRdQqdSCzU",
+   "title": "Xcode in 20 Seconds: Debug sounds"
+  },
+  {
+   "id": "y2eRI8iNQ-w",
+   "title": "Xcode in 20 Seconds: Detecting tests"
+  },
+  {
+   "id": "_eBNeiBaByM",
+   "title": "Inside the Standard Library: Sequence.compactMap"
+  },
+  {
+   "id": "tnVYHEXrRoQ",
+   "title": "Xcode in 20 Seconds: Timing tests"
+  },
+  {
+   "id": "qg2hE7xFOyU",
+   "title": "Xcode in 20 Seconds: View debugging"
+  },
+  {
+   "id": "wlxQPfFEP90",
+   "title": "Inside the Standard Library: Sequence.map"
+  },
+  {
+   "id": "Aav96a2Ir78",
+   "title": "Xcode in 20 Seconds: Multiple cursors"
+  },
+  {
+   "id": "RB5nWzdl-b8",
+   "title": "100 Days of Swift"
+  },
+  {
+   "id": "3So4L95Xm4Q",
+   "title": "Xcode in 20 Seconds: Recent files"
+  },
+  {
+   "id": "EEBkYCx2xOc",
+   "title": "Xcode in 20 Seconds: Adding constraints"
+  },
+  {
+   "id": "RBZFCp3kSLM",
+   "title": "The Result type in Swift"
+  },
+  {
+   "id": "3kiLasPxqas",
+   "title": "Xcode in 20 Seconds: Code coverage"
+  },
+  {
+   "id": "Wj8fZK_DyO4",
+   "title": "Xcode in 20 Seconds: Jumping to a line"
+  },
+  {
+   "id": "Hf7f9dyFIEM",
+   "title": "Xcode in 20 Seconds: Indenting code"
+  },
+  {
+   "id": "9S9m9vmTIS4",
+   "title": "Xcode in 20 Seconds: Project sorting"
+  },
+  {
+   "id": "Ht-TpecGiS8",
+   "title": "Xcode in 20 Seconds: Customizing behaviors"
+  },
+  {
+   "id": "7HgbcTqxoN4",
+   "title": "How to use the Coordinator pattern in iOS"
+  },
+  {
+   "id": "oDXQnPBcj_0",
+   "title": "Xcode in 20 Seconds: Vector artwork"
+  },
+  {
+   "id": "8SoGRqTnZHE",
+   "title": "Xcode in 20 Seconds: Locking views"
+  },
+  {
+   "id": "7b_zF_xGnKw",
+   "title": "Xcode in 20 Seconds: Adding documentation"
+  },
+  {
+   "id": "hWIE3QGDO1o",
+   "title": "Xcode in 20 Seconds: Enhanced testing"
+  },
+  {
+   "id": "t3RlbuyliNs",
+   "title": "Xcode in 20 Seconds: Find in project"
+  },
+  {
+   "id": "qmI6lnxfYrk",
+   "title": "Toggling a Boolean using toggle()"
+  },
+  {
+   "id": "21MOQfXH2Fc",
+   "title": "Xcode in 20 Seconds: Authors view"
+  },
+  {
+   "id": "8T1hsn_xzEA",
+   "title": "Xcode in 20 Seconds: Quick Help"
+  },
+  {
+   "id": "GwsoV8DqDkc",
+   "title": "Removing items from an array with removeAll(where:)"
+  },
+  {
+   "id": "vgfBiZgAVWA",
+   "title": "Xcode in 20 Seconds: Layering views"
+  },
+  {
+   "id": "Le32Tbkv2v0",
+   "title": "Transforming and unwrapping dictionary values with compactMapValues()"
+  },
+  {
+   "id": "syPKtPb0y-Y",
+   "title": "Counting items in Swift with count(where:)"
+  },
+  {
+   "id": "YmnKu289LSE",
+   "title": "Xcode in 20 Seconds: Finding callers"
+  },
+  {
+   "id": "iCRwqxON8Os",
+   "title": "Integer multiples in Swift with isMultiple(of:)"
+  },
+  {
+   "id": "GElyS8s_NNE",
+   "title": "Xcode in 20 Seconds: Fix all issues"
+  },
+  {
+   "id": "e6tuUzmxyOU",
+   "title": "Raw strings in Swift"
+  },
+  {
+   "id": "qVT6MvhFvfA",
+   "title": "Xcode in 20 Seconds: Renaming code"
+  },
+  {
+   "id": "h6X_g7tMv1I",
+   "title": "Xcode in 20 Seconds: Project filtering"
+  },
+  {
+   "id": "H8Z8SqTwW8Y",
+   "title": "Xcode in 20 Seconds: Measuring distances"
+  },
+  {
+   "id": "cwrIiRJuWiw",
+   "title": "Xcode in 20 Seconds: Focused navigation"
+  },
+  {
+   "id": "m2DqvdrG8dI",
+   "title": "Xcode in 20 Seconds: Measuring build time"
+  },
+  {
+   "id": "y5jmVmXvodQ",
+   "title": "Xcode in 20 Seconds: Layout stress testing"
+  },
+  {
+   "id": "wTkEnSkn--Y",
+   "title": "Xcode in 20 Seconds: Filtering the jump bar"
+  },
+  {
+   "id": "qy59rzwVccU",
+   "title": "Xcode in 20 Seconds: Faster Testing"
+  },
+  {
+   "id": "UarowoOQ5-c",
+   "title": "Xcode in 20 Seconds: Clearing up space"
+  },
+  {
+   "id": "ThXyz8YnBCs",
+   "title": "Xcode in 20 Seconds: Identifying constraints"
+  },
+  {
+   "id": "Nc75e41p44Y",
+   "title": "Xcode in 20 Seconds: Opening Xcode"
+  },
+  {
+   "id": "CvVkR5z65XU",
+   "title": "Xcode in 20 Seconds: Regex searching"
+  },
+  {
+   "id": "7lPjJAwcfR4",
+   "title": "Xcode in 20 Seconds: Generated interfaces"
+  },
+  {
+   "id": "6OlaxHdJn3o",
+   "title": "Xcode in 20 Seconds: Watchpoints"
+  },
+  {
+   "id": "MJ8LnIliTRg",
+   "title": "Combining operators – Swift in Sixty Seconds"
+  },
+  {
+   "id": "wB-bi8_rSLs",
+   "title": "Understanding the Standard Library"
+  },
+  {
+   "id": "7QPlF2UNowM",
+   "title": "iOS 12 in 45 minutes, plus new APIs in Swift"
+  },
+  {
+   "id": "yBJXkieX2R4",
+   "title": "Creating empty collections – Swift in Sixty Seconds"
+  },
+  {
+   "id": "wGk9sF1BQK0",
+   "title": "Dictionary default values – Swift in Sixty Seconds"
+  },
+  {
+   "id": "R0Uto9Wc3dA",
+   "title": "Dictionaries – Swift in Sixty Seconds"
+  },
+  {
+   "id": "iVeFsZhdeCI",
+   "title": "Arrays – Swift in Sixty Seconds"
+  },
+  {
+   "id": "q8El3m2dl-Q",
+   "title": "Structs: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "kohIy64THOo",
+   "title": "Variables – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ZpGDwOAWiXA",
+   "title": "Doubles and booleans – Swift in Sixty Seconds"
+  },
+  {
+   "id": "lk5sZhpicdw",
+   "title": "String interpolation – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ZU3JDkjvn3w",
+   "title": "Strings and integers – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Ppl-8E1YgRU",
+   "title": "Multi-line strings – Swift in Sixty Seconds"
+  },
+  {
+   "id": "yZZ6UTipwkM",
+   "title": "Arrays vs Sets vs Tuples – Swift in Sixty Seconds"
+  },
+  {
+   "id": "atqX9mP-Oe4",
+   "title": "Comparison operators – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Eo-p7oVroVY",
+   "title": "Enumerations – Swift in Sixty Seconds"
+  },
+  {
+   "id": "uevi0SIeuGQ",
+   "title": "Arithmetic Operators – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ssLIP4gFrYc",
+   "title": "Enum Raw Values – Swift in Sixty Seconds"
+  },
+  {
+   "id": "mnuejTF2Ixs",
+   "title": "Constants – Swift in Sixty Seconds"
+  },
+  {
+   "id": "mMnth6cTjQc",
+   "title": "Writing functions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ln58SnVpTOg",
+   "title": "Exiting loops – Swift in Sixty Seconds"
+  },
+  {
+   "id": "krT4RYDSpgo",
+   "title": "Type annotations – Swift in Sixty Seconds"
+  },
+  {
+   "id": "iotojg2MgGQ",
+   "title": "Sets – Swift in Sixty Seconds"
+  },
+  {
+   "id": "hQLBDnMR8f8",
+   "title": "Operator Overloading – Swift in Sixty Seconds"
+  },
+  {
+   "id": "e68cZRlXAMY",
+   "title": "Conditions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "cdesW0tdKQU",
+   "title": "Exiting multiple loops – Swift in Sixty Seconds"
+  },
+  {
+   "id": "YbXjxMjJ1xY",
+   "title": "The ternary operator – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ROnXl0H45KE",
+   "title": "Repeat loops – Swift in Sixty Seconds"
+  },
+  {
+   "id": "NRonCfB4RYg",
+   "title": "Tuples – Swift in Sixty Seconds"
+  },
+  {
+   "id": "JJba9ssT4Xk",
+   "title": "While loops – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Hhnx3i0o1_c",
+   "title": "Operators and conditions: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "FGxEffJ5XUM",
+   "title": "Range operators – Swift in Sixty Seconds"
+  },
+  {
+   "id": "EQQ2Ql7-CvI",
+   "title": "Skipping items – Swift in Sixty Seconds"
+  },
+  {
+   "id": "E8MuO6ShfKw",
+   "title": "Enum associated values – Swift in Sixty Seconds"
+  },
+  {
+   "id": "5y2wcttlE5s",
+   "title": "Compound assignment operators – Swift in Sixty Seconds"
+  },
+  {
+   "id": "5-lJsWsYXSs",
+   "title": "Infinite loops – Swift in Sixty Seconds"
+  },
+  {
+   "id": "4dKDADbQtXY",
+   "title": "Complex Types: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "3bJYE8WRTZ8",
+   "title": "For loops – Swift in Sixty Seconds"
+  },
+  {
+   "id": "3-6cyNw1Ync",
+   "title": "Simple Types: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "iUZTn11QMG8",
+   "title": "Looping: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "y5TjjwOMQwY",
+   "title": "Methods – Swift in Sixty Seconds"
+  },
+  {
+   "id": "tJO7CFI7W9o",
+   "title": "Shorthand parameter names – Swift in Sixty Seconds"
+  },
+  {
+   "id": "qdXf12Q0qDo",
+   "title": "Property observers – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ldGno_JrHEA",
+   "title": "Properties and methods of strings – Swift in Sixty Seconds"
+  },
+  {
+   "id": "k6NvWnmjIf4",
+   "title": "Initializers – Swift in Sixty Seconds"
+  },
+  {
+   "id": "iWDIZgTvHOg",
+   "title": "Returning values – Swift in Sixty Seconds"
+  },
+  {
+   "id": "h-AFqtadVy0",
+   "title": "Closures: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "deSLFZvC9vw",
+   "title": "inout parameters – Swift in Sixty Seconds"
+  },
+  {
+   "id": "aS-k5mRWrr4",
+   "title": "Returning values – Swift in Sixty Seconds"
+  },
+  {
+   "id": "aOf23RcQdr8",
+   "title": "Trailing closure syntax – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ZFz3KORr8Bw",
+   "title": "Referring to the current instance – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Yj_cUovQfHI",
+   "title": "Capturing values – Swift in Sixty Seconds"
+  },
+  {
+   "id": "XKZrEDzo9Lw",
+   "title": "Accepting parameters – Swift in Sixty Seconds"
+  },
+  {
+   "id": "OpRcPOVNjXE",
+   "title": "Variadic functions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "MxaYr2VGVTo",
+   "title": "Writing throwing functions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "InmF1VfeY80",
+   "title": "Running throwing functions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "IQzpZ0HiWsY",
+   "title": "Omitting parameter labels – Swift in Sixty Seconds"
+  },
+  {
+   "id": "IQ-81kahQts",
+   "title": "Computed properties – Swift in Sixty Seconds"
+  },
+  {
+   "id": "FPFIxiinMn4",
+   "title": "Parameter labels – Swift in Sixty Seconds"
+  },
+  {
+   "id": "DcwbxGaV1rc",
+   "title": "Creating basic closures – Swift in Sixty Seconds"
+  },
+  {
+   "id": "C18O5ylFA50",
+   "title": "Closures as parameters – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Ae5riqHKK_g",
+   "title": "Using closures as parameters when they accept parameters – Swift in Sixty Seconds"
+  },
+  {
+   "id": "9E2T3HmHnTU",
+   "title": "Returning closures from functions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "8T5vQnMspko",
+   "title": "Mutating methods – Swift in Sixty Seconds"
+  },
+  {
+   "id": "7_0zA5hcpI8",
+   "title": "Accepting parameters – Swift in Sixty Seconds"
+  },
+  {
+   "id": "6Acs8xFLED0",
+   "title": "Creating your own structs – Swift in Sixty Seconds"
+  },
+  {
+   "id": "5PcYq4M6Qaw",
+   "title": "Functions: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "4OpunDA6LxA",
+   "title": "Closures with multiple parameters – Swift in Sixty Seconds"
+  },
+  {
+   "id": "13tTI3OPzWs",
+   "title": "Using closures as parameters when they return values – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Sv03YVPNb0E",
+   "title": "Default parameters – Swift in Sixty Seconds"
+  },
+  {
+   "id": "zXtCdd4JSlU",
+   "title": "Nil coalescing – Swift in Sixty Seconds"
+  },
+  {
+   "id": "og-rHqYYM9A",
+   "title": "Copying objects – Swift in Sixty Seconds"
+  },
+  {
+   "id": "j6kcxcih4S8",
+   "title": "Force unwrapping – Swift in Sixty Seconds"
+  },
+  {
+   "id": "fau8QgH0pIA",
+   "title": "Lazy properties – Swift in Sixty Seconds"
+  },
+  {
+   "id": "dqPTykJaHys",
+   "title": "Creating your own classes – Swift in Sixty Seconds"
+  },
+  {
+   "id": "WORJw3VsFEc",
+   "title": "Optional chaining – Swift in Sixty Seconds"
+  },
+  {
+   "id": "OH1J1DXzbl4",
+   "title": "Deinitializers – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Jb7rHM44yxU",
+   "title": "Implicitly unwrapped optionals – Swift in Sixty Seconds"
+  },
+  {
+   "id": "HzG0u91xr1M",
+   "title": "Failable initializers – Swift in Sixty Seconds"
+  },
+  {
+   "id": "E2aASwCTqZY",
+   "title": "Introduction – Swift in Sixty Seconds"
+  },
+  {
+   "id": "4Y1zZwJOBNk",
+   "title": "Static properties and methods – Swift in Sixty Seconds"
+  },
+  {
+   "id": "-IU_TvFKqjo",
+   "title": "Protocol-oriented programming – Swift in Sixty Seconds"
+  },
+  {
+   "id": "zv8Lia5Ertk",
+   "title": "Class inheritance – Swift in Sixty Seconds"
+  },
+  {
+   "id": "x1Nt7Act_Tg",
+   "title": "Typecasting – Swift in Sixty Seconds"
+  },
+  {
+   "id": "wF1ovHy2KO8",
+   "title": "Classes: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "r4U48jaTyVw",
+   "title": "Optional try – Swift in Sixty Seconds"
+  },
+  {
+   "id": "qi8a9MartqQ",
+   "title": "Protocols – Swift in Sixty Seconds"
+  },
+  {
+   "id": "q1UkvM2V07E",
+   "title": "Protocols and extensions: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "nj5N4aMjtUw",
+   "title": "Protocol extensions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "hq3xX_nlgB8",
+   "title": "Extensions – Swift in Sixty Seconds"
+  },
+  {
+   "id": "dRHYETohV8o",
+   "title": "Unwrapping with guard – Swift in Sixty Seconds"
+  },
+  {
+   "id": "cfQshjRXhhw",
+   "title": "Final classes – Swift in Sixty Seconds"
+  },
+  {
+   "id": "ZVXB-uGDRU4",
+   "title": "Unwrapping optionals – Swift in Sixty Seconds"
+  },
+  {
+   "id": "T8FrBuSzEJA",
+   "title": "Overriding methods – Swift in Sixty Seconds"
+  },
+  {
+   "id": "LVojlmMn4AQ",
+   "title": "Handling missing data – Swift in Sixty Seconds"
+  },
+  {
+   "id": "Gw3mGIybT68",
+   "title": "Mutability – Swift in Sixty Seconds"
+  },
+  {
+   "id": "FrXYhufwSZc",
+   "title": "Access control – Swift in Sixty Seconds"
+  },
+  {
+   "id": "9UzJwD8kTP0",
+   "title": "Protocol inheritance – Swift in Sixty Seconds"
+  },
+  {
+   "id": "8yP1Y9Fh8FY",
+   "title": "Optionals: Summary – Swift in Sixty Seconds"
+  },
+  {
+   "id": "SaXltxu3C-w",
+   "title": "How to install Swift 3 today"
+  },
+  {
+   "id": "Swgf39f_Q5E",
+   "title": "What's new in Swift 2.2?"
+  },
+  {
+   "id": "UhbdIvD14HE",
+   "title": "Get started with UIStackView in iOS 9"
+  },
+  {
+   "id": "pHsvYPMqsOc",
+   "title": "What's new in Swift 2?"
+  },
+  {
+   "id": "qXsT2KtYZOM",
+   "title": "Hacking with Swift Project 5 – Word Scramble"
+  },
+  {
+   "id": "eo_bk__D-lI",
+   "title": "Hacking with Swift Project 28 – Secret Swift"
+  },
+  {
+   "id": "bCIZjDXCz-o",
+   "title": "Hacking with Swift Project 7 – Whitehouse Petitions"
+  },
+  {
+   "id": "OpUEx5AevNo",
+   "title": "Hacking with Swift Project 11 – Pachinko"
+  },
+  {
+   "id": "I1KAewrVsEM",
+   "title": "Hacking with Swift Project 23 – Space Race"
+  },
+  {
+   "id": "ndv9_ID-d7A",
+   "title": "Hacking with Swift Project 29 – Exploding Monkeys"
+  },
+  {
+   "id": "Yn5HdIGggO8",
+   "title": "Hacking with Swift Project 16 – JavaScript Injection"
+  },
+  {
+   "id": "SsHA754mJYU",
+   "title": "Hacking with Swift Project 26 – Marble Maze"
+  },
+  {
+   "id": "RhIqqQM_1bg",
+   "title": "Hacking with Swift Project 20 – Fireworks Night"
+  },
+  {
+   "id": "QfziOOpGlmA",
+   "title": "Hacking with Swift Project 3 – Social Media"
+  },
+  {
+   "id": "Q2ghUcHi9PY",
+   "title": "Hacking with Swift Project 25 – Selfie Share"
+  },
+  {
+   "id": "F-TP6Cpn5UA",
+   "title": "Hacking with Swift Project 8 – 7 Swifty Words"
+  },
+  {
+   "id": "9LRyNC-n98k",
+   "title": "Hacking with Swift Project 6 – Auto Layout"
+  },
+  {
+   "id": "w9FtRN5zpUw",
+   "title": "Hacking with Swift Project 17 – Swifty Ninja"
+  },
+  {
+   "id": "tHSynfXcRAc",
+   "title": "Hacking with Swift Project 2 – Guess the Flag"
+  },
+  {
+   "id": "qABw9o564Ew",
+   "title": "Hacking with Swift Project 19 – Capital Cities"
+  },
+  {
+   "id": "hhKvsmxBsL8",
+   "title": "Hacking with Swift Project 24 – Swift Extensions"
+  },
+  {
+   "id": "cYgNSa5WF8g",
+   "title": "Hacking with Swift Project 13 – Instafilter"
+  },
+  {
+   "id": "SJtEJOoNvtI",
+   "title": "Hacking with Swift Project 27 – Core Graphics"
+  },
+  {
+   "id": "PTkN4m9kQDo",
+   "title": "Hacking with Swift Project 10 – Names to Faces"
+  },
+  {
+   "id": "xwjsEbRiVpw",
+   "title": "Hacking with Swift Project 21 – Local Notifications"
+  },
+  {
+   "id": "pmvQ9mrajQg",
+   "title": "Hacking with Swift Project 4 – Easy Browser"
+  },
+  {
+   "id": "RGONfIgcVzk",
+   "title": "Hacking with Swift Project 15 – Animation"
+  },
+  {
+   "id": "I9RZ9OlDfBA",
+   "title": "Hacking with Swift Project 18 – iAd and Debugging"
+  },
+  {
+   "id": "EGUpFGwP1hM",
+   "title": "Hacking with Swift Project 9 – Grand Central Dispatch"
+  },
+  {
+   "id": "9YfujLQahoE",
+   "title": "Hacking with Swift Project 12 – NSUserDefaults"
+  },
+  {
+   "id": "73Wfkdzx01Q",
+   "title": "Hacking with Swift Project 14 – Whack-a-Penguin"
+  },
+  {
+   "id": "cR4Wc4JGOMg",
+   "title": "Hacking with Swift Project 30 – Instruments"
+  },
+  {
+   "id": "N3MyRUZlKGg",
+   "title": "Hacking with Swift Project 22 – Detect-a-Beacon"
+  },
+  {
+   "id": "08JnjnY5Lo0",
+   "title": "Hacking with Swift Project 1 – Storm Viewer"
+  },
+  {
+   "id": "x1LtV3cFxug",
+   "title": "EasyOC: Follow-on suggestions"
+  },
+  {
+   "id": "B4sNd8kEMLk",
+   "title": "Make a Sprite Kit game with iOS 7 and EasyOC"
+  }
+ ],
+ "shorts": [
+  {
+   "id": "xaoGGBUn5Ls",
+   "title": "A free tool that's helpful for every Apple developer! #shorts",
+   "short": true
+  },
+  {
+   "id": "1j7Eu1Ige4w",
+   "title": "The fast, free way to make your App Store screenshots look better #shorts",
+   "short": true
+  },
+  {
+   "id": "nE5ve-R51a4",
+   "title": "Research your app idea before you build it! #shorts",
+   "short": true
+  },
+  {
+   "id": "EWdARtNULU8",
+   "title": "Three Quick Swift Tips",
+   "short": true
+  },
+  {
+   "id": "hR8jx33POSw",
+   "title": "My favorite new SwiftUI feature in iOS 17: Symbol effects!",
+   "short": true
+  },
+  {
+   "id": "EDd6Hr_F99o",
+   "title": "A SwiftUI tip everyone needs to know: Automatic Grammar Agreement",
+   "short": true
+  },
+  {
+   "id": "_7unnaPcf4k",
+   "title": "iPhone 6s: Man vs Touch ID",
+   "short": true
+  }
+ ],
+ "streams": [
+  {
+   "id": "sc6pvW6vQzA",
+   "title": "How to build apps with AI: Xcode, Claude, Codex, and more!"
+  },
+  {
+   "id": "up6LpJOz5bQ",
+   "title": "SwiftUI Live 2024: Building a complete project"
+  },
+  {
+   "id": "n4SCMC25BxY",
+   "title": "Create your first app with SwiftUI and SwiftData"
+  },
+  {
+   "id": "TcGnO5VSJlI",
+   "title": "SwiftUI Live: Building a complete project"
+  },
+  {
+   "id": "tSwDfV6D_70",
+   "title": "Build your second iOS app with SwiftUI"
+  },
+  {
+   "id": "7sDFCAh_yT8",
+   "title": "What's new in SwiftUI for iOS 15 – part two!"
+  },
+  {
+   "id": "tKB4jS5yT3A",
+   "title": "How to document your project with DocC and Xcode 13"
+  },
+  {
+   "id": "j1LbQwIoRlg",
+   "title": "What's new in Xcode 13"
+  },
+  {
+   "id": "6C0SFPEy_0Y",
+   "title": "What's new in Swift 5.5"
+  },
+  {
+   "id": "SQE5DZDqASA",
+   "title": "What's new in SwiftUI for iOS 15?"
+  },
+  {
+   "id": "aXPfKsPezdc",
+   "title": "Swiftly Speaking 16: Cate Huston"
+  },
+  {
+   "id": "01PTEpgrV_Q",
+   "title": "Swiftly Speaking 15: Christian Selig"
+  },
+  {
+   "id": "cU-J7w7dTNs",
+   "title": "Swiftly Speaking 14: Jordanna Kwok"
+  },
+  {
+   "id": "TscJRkc6yFw",
+   "title": "Swiftly Speaking 13: Ish Shabazz"
+  },
+  {
+   "id": "uB-uMiCsbjE",
+   "title": "Swiftly Speaking 12: Mayuko Inoue"
+  },
+  {
+   "id": "aP-SQXTtWhY",
+   "title": "Build your first iOS app with SwiftUI"
+  },
+  {
+   "id": "uitE6bmeFxM",
+   "title": "What's new in SwiftUI for iOS 14?"
+  },
+  {
+   "id": "OAaQhW4ifu0",
+   "title": "Swiftly Speaking 11: Chris Lattner"
+  },
+  {
+   "id": "7Qr3zzkKwBE",
+   "title": "Swift over Coffee Live"
+  },
+  {
+   "id": "MJm76zPE358",
+   "title": "Swiftly Speaking 10: Carola Nitz"
+  },
+  {
+   "id": "WDc-puIUHPk",
+   "title": "Swiftly Speaking 9: Meng To"
+  },
+  {
+   "id": "ZIw15M07x4s",
+   "title": "Swiftly Speaking 8: Paola Mata"
+  },
+  {
+   "id": "3FCp1cMsqMk",
+   "title": "Big Swift Quiz #3"
+  },
+  {
+   "id": "AVwfBphv5AA",
+   "title": "Swiftly Speaking 7: Sean Allen"
+  },
+  {
+   "id": "b0X5ty0yjD0",
+   "title": "Big Swift Quiz #2"
+  },
+  {
+   "id": "T-LKvFBhY2Q",
+   "title": "Swiftly Speaking 6: Janina Kutyn"
+  },
+  {
+   "id": "H7HMRWdL384",
+   "title": "Big Swift Quiz #1"
+  },
+  {
+   "id": "SroTB1buuD0",
+   "title": "SwiftUI Live: Building an app from scratch"
+  },
+  {
+   "id": "FxUK_RnTpvA",
+   "title": "Swiftly Speaking 5: Daniel Steinberg"
+  },
+  {
+   "id": "DVotrM8L_2Q",
+   "title": "Swiftly Speaking 4: Kaya Thomas"
+  },
+  {
+   "id": "uAEftsoENOI",
+   "title": "Swiftly Speaking 3: John Sundell"
+  },
+  {
+   "id": "EHnw9Cru4U8",
+   "title": "Swiftly Speaking 2: Ellen Shapiro"
+  },
+  {
+   "id": "-wZGaDajQk4",
+   "title": "Swiftly Speaking 1: James Thomson"
+  },
+  {
+   "id": "FE4ys3tW1VI",
+   "title": "SwiftUI Live: Building an app from scratch"
+  },
+  {
+   "id": "ffV_fYcFoX0",
+   "title": "SwiftUI Live: Building a drag and drop word game"
+  },
+  {
+   "id": "YaMKOTWdT6U",
+   "title": "Building a SwiftUI app for iOS and macOS – Swift on Sundays Tutorial, September 22nd 2019"
+  },
+  {
+   "id": "78xmHtEOy0E",
+   "title": "A Tour of SwiftUI"
+  },
+  {
+   "id": "OLjkmJNNeHc",
+   "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019"
+  },
+  {
+   "id": "yS_QNftsenQ",
+   "title": "Building a line game with UIKit and Core Graphics – Swift on Sundays May 19th 2019"
+  },
+  {
+   "id": "BTAfbVfn96Y",
+   "title": "Building a iCloud text editor with syntax highlighting – Swift on Sundays May 12th 2019"
+  },
+  {
+   "id": "Y8A_Wkcx83Q",
+   "title": "Building a watchOS soundboard app – Swift on Sundays May 5th 2019"
+  },
+  {
+   "id": "XqRVfB521Fo",
+   "title": "Building an ARKit app with SceneKit and Codable – Swift on Sundays April 28th 2019"
+  },
+  {
+   "id": "ii89L7LVAs4",
+   "title": "Building a macOS menu bar app with string transforms – Swift on Sundays April 14th 2019"
+  },
+  {
+   "id": "UYviLiI2rlY",
+   "title": "Building a multi-screen Markdown renderer – Swift on Sundays April 7th 2019"
+  },
+  {
+   "id": "0-lM51yI-PA",
+   "title": "Building a space shooter with SpriteKit and Codable – Swift on Sundays March 31st 2019"
+  },
+  {
+   "id": "x9_BG2q7XYw",
+   "title": "Building a sleep app with Core ML and Create ML – Swift on Sundays March 17th 2019"
+  },
+  {
+   "id": "pSgWwyj1gX4",
+   "title": "Building a Vapor API with a matching iOS app – Swift on Sundays March 10th 2019"
+  },
+  {
+   "id": "Fmu6DlKfRhc",
+   "title": "Building a declarative user interface app using JSON and Codable – Swift on Sundays March 3rd 2019"
+  },
+  {
+   "id": "TJfh8wXbfEw",
+   "title": "Building a SpriteKit game with physics, particles, and shaders – Swift on Sundays February 24th 2019"
+  },
+  {
+   "id": "xNFenmV0qjM",
+   "title": "Building a word search generator with PDF rendering – Swift on Sundays February 17th 2019"
+  },
+  {
+   "id": "TSbzwqGzYC0",
+   "title": "Building a mathematics game with unit testing – Swift on Sundays February 10th 2019"
+  },
+  {
+   "id": "X2RZlmjLYhk",
+   "title": "Building a motivational app with sharing and notifications – Swift on Sundays February 3rd 2019"
+  },
+  {
+   "id": "IkcNxzulGhk",
+   "title": "Building a social media app with Codable and networking – Swift on Sundays January 27th 2019"
+  },
+  {
+   "id": "p9fSsoHcLTg",
+   "title": "Building an iOS app with coordinators – Swift on Sundays January 13th 2019"
+  },
+  {
+   "id": "CpvC7bojHTE",
+   "title": "Building an iOS memory app – Swift on Sundays January 6th 2019"
+  }
+ ]
+}

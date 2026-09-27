@@ -42,8 +42,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L10: Building Complex UIs",
-      "url": "https://www.youtube.com/watch?v=NnJ91M9PRYo",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=NnJ91M9PRYo&t=689s",
+      "channel": "Stanford Online",
+      "start": 689,
+      "moment": "What a beautiful line of code that is \"ForEach of my games attempts, attempt in, go do something\" really looks nice. I agree. However, I would not do this. Not "
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "CS193p's three rules for `ForEach` identity (unique, stable, and not the array index when items move) are React's rules for `key`, stated precisely.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React docs say keys must be unique and stable. Which of CS193p's three rules is the classic React index-as-key bug?"
+    },
+    {
+      "kind": "edge",
+      "q": "Using `id: \\.self` on colours: what happens with two identical colours in one row?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Identifiable` model vs `ForEach(indices, id: \\.self)`: when is iterating indices acceptable?"
+    },
+    {
+      "kind": "practice",
+      "q": "How does a wrong identity show up visually: wrong animations, lost text field state, flicker?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

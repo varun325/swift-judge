@@ -34,5 +34,56 @@
     "Protocol requirements act like abstract methods; the extension holds the shared algorithm.",
     "`render()` in the extension builds the header, the rows from `rows()`, and a count footer.",
     "`let body = rows(); return [\"== \\(title) ==\"] + body + [\"(\\(body.count) rows)\"]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift has no `abstract` keyword (TS does). The idiomatic replacement is a protocol with required members plus an extension with the template method. The compiler then enforces the \"abstract\" parts.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `abstract class Report { abstract rows(): string[] }`: what does the Swift protocol + extension approach do better or worse?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's abstract classes can hold state; protocols can't. How do you share state in Swift then?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Class with `fatalError(\"subclass must override\")` vs protocol: which fails at compile time?"
+    },
+    {
+      "kind": "practice",
+      "q": "`UIViewController` subclasses with required overrides are a UIKit pattern. How does SwiftUI replace it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17",
+      "url": "https://www.youtube.com/watch?v=nJmrkRlRu88&t=263s",
+      "channel": "Swiftful Thinking",
+      "start": 263,
+      "moment": "employee model does not actually conform to the protocol employee has a name so this is just a set of rules and then"
+    },
+    {
+      "title": "Protocol-oriented programming – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=-IU_TvFKqjo",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift Protocols - An Introduction",
+      "url": "https://www.youtube.com/watch?v=vmQnTMWaDiY",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

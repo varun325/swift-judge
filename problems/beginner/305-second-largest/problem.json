@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Arrays",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "signature": {
@@ -31,5 +35,55 @@
     "Track the two largest **distinct** values seen so far in optionals.",
     "When a bigger value arrives, the old largest becomes second; skip values equal to the largest.",
     "Short version: `Array(Set(nums)).sorted(by: >).dropFirst().first`."
+  ],
+  "impact": "edge",
+  "jsBridge": "In JS you'd return `undefined` or `-Infinity`. Swift returns `Int?`, so the caller is forced to handle \"no answer\". `Set(nums).sorted().dropLast().last` is the short version, but a one-pass scan is O(n).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Returning `-Infinity` or `null` in JS lets callers forget the empty case. How does `Int?` make forgetting impossible?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Set(nums).sorted()` (O(n log n)) vs one pass tracking two values (O(n)): at what size does it matter on an iPhone?"
+    },
+    {
+      "kind": "edge",
+      "q": "What is `[].max()` in Swift? `Math.max()` in JS returns `-Infinity`. Which is safer?"
+    },
+    {
+      "kind": "practice",
+      "q": "\"Second best\" logic shows up in leaderboards and runner-up badges. Where do ties make product decisions tricky?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Optionals in Swift | Swift Basics #6",
+      "url": "https://www.youtube.com/watch?v=PDWNf4pBI64&t=786s",
+      "channel": "Swiftful Thinking",
+      "start": 786,
+      "moment": "equal to the result of check if user is premium but now I still have an optional pool in my app that I need to handle"
+    },
+    {
+      "title": "Optional chaining – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=WORJw3VsFEc",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Swift provides us with a shortcut when using optionals if you want to access something like a dot B dot C and B is"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=421s",
+      "channel": "Sean Allen",
+      "start": 421,
+      "moment": "showing not given when it's nil is a good default value to have versus maybe passing in zero for a default age might not work out so well so again no coalescing"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

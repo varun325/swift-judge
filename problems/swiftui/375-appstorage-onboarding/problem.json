@@ -17,6 +17,14 @@
     {
       "title": "UserDefaults",
       "url": "https://developer.apple.com/documentation/foundation/userdefaults"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -38,5 +46,40 @@
     "`@AppStorage` is backed by `UserDefaults`; pass a suite store to isolate it.",
     "Create fresh `AppStorage` wrappers per launch — they read what the previous launch saved.",
     "Write through `wrappedValue`; clear the suite with `removePersistentDomain(forName:)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`@AppStorage` is a view-aware `UserDefaults` value that re-renders on change, like a `useLocalStorage` hook in React, but synced across every view reading the same key.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A `useLocalStorage` hook in React doesn't sync between components unless you add events. Does `@AppStorage`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which types can `@AppStorage` store directly? How do you store a `Codable` struct (`RawRepresentable`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@AppStorage` vs `@SceneStorage` vs SwiftData: what belongs in each?"
+    },
+    {
+      "kind": "practice",
+      "q": "Never store tokens in `UserDefaults`. Where do they go instead (Keychain)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53",
+      "url": "https://www.youtube.com/watch?v=gm7Xct50CFo&t=31s",
+      "channel": "Swiftful Thinking",
+      "start": 31,
+      "moment": "so we're going to use things like transitions and animations we're going to use"
+    },
+    {
+      "title": "What is the @AppStorage property wrapper? – SwiftUI",
+      "url": "https://www.youtube.com/watch?v=Tkqd7cCrMf0",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

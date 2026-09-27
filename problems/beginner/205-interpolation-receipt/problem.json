@@ -13,6 +13,14 @@
     {
       "title": "Strings and Characters — String Interpolation",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -37,5 +45,46 @@
     "Keep money in integer cents; `/ 100` gives dollars and `% 100` gives cents.",
     "Write a small helper that formats cents as `$D.CC`, padding the cents to two digits.",
     "Pad with `\\(remainder < 10 ? \"0\" : \"\")\\(remainder)`, then interpolate everything: `\"\\(quantity) x \\(item) @ \\(dollars(unitCents)) = \\(dollars(quantity * unitCents))\"`."
+  ],
+  "impact": "core",
+  "jsBridge": "Like JS template literals, `\"\\(x)\"` works like `` `${x}` ``, but Swift interpolation is type-checked and extensible (`DefaultStringInterpolation`). Money should be integer cents or `Decimal`, never `Double`, which is the same advice as in JS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS template tags (`` sql`...` ``) customise interpolation. What is Swift's equivalent, and what can a custom `appendInterpolation` do?"
+    },
+    {
+      "kind": "practice",
+      "q": "In production, would you build `\"$\\(dollars).\\(cents)\"` by hand or use `formatted(.currency(code: \"USD\"))`? What breaks for a user in Germany?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `String(format: \"%02d\", cents)` do if you pass an `Int64` on some platforms? Why is `String(format:)` less safe than interpolation?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Integer cents vs `Decimal` vs `Double`: which one does StoreKit's `Product.price` use?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Super-powered string interpolation in Swift 5.0",
+      "url": "https://www.youtube.com/watch?v=T0_BWu4aIRQ&t=171s",
+      "channel": "Paul Hudson",
+      "start": 171,
+      "moment": "say print hi I'm H and this string interpolation here of course will just work"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

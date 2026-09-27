@@ -17,6 +17,14 @@
     {
       "title": "Migrating to the Observable macro",
       "url": "https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -37,5 +45,49 @@
     "`objectWillChange` fires for *every* `@Published` property.",
     "Count legacy fires with `objectWillChange.sink`; for the modern model, track only `model.name` and re-arm after each fire.",
     "Apply every change to both models, then return both counts."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`ObservableObject` + `@Published` invalidates **every** observing view when any published property changes, while `@Observable` tracks only the properties each view reads. The difference is Redux's `connect` without selectors vs MobX's fine-grained tracking.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Redux without selectors re-renders on any state change; MobX tracks reads. Which one is `ObservableObject`, and which `@Observable`?"
+    },
+    {
+      "kind": "edge",
+      "q": "With `@Observable`, does reading a property inside a closure (a button action) subscribe the view?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@StateObject`/`@ObservedObject` vs `@State` holding an `@Observable`: which ownership rules changed?"
+    },
+    {
+      "kind": "practice",
+      "q": "Migrating a big app to `@Observable`: what's the minimum OS version, and what breaks in tests?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use @ObservableObject and @StateObject in SwiftUI | Bootcamp #50",
+      "url": "https://www.youtube.com/watch?v=-yjKAb0Pj60&t=2027s",
+      "channel": "Swiftful Thinking",
+      "start": 2027,
+      "moment": "so inside the class you have to create a published variable which tells the class that something"
+    },
+    {
+      "title": "iOS 15: Manually publishing ObservableObject changes – Hot Prospects SwiftUI Tutorial 3/18",
+      "url": "https://www.youtube.com/watch?v=-DQaONx5WG0",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] classes that conform to the observable object protocol can use the at published"
+    },
+    {
+      "title": "SwiftUI Data Flow in iOS 17 - Observation & @Observable",
+      "url": "https://www.youtube.com/watch?v=EK7SthdWV2w&t=21s",
+      "channel": "Sean Allen",
+      "start": 21,
+      "moment": "way to update your UI when your data model changes let's run through this real quick to set the foundation for this new change so here we have a data model righ"
+    }
+  ],
+  "articles": []
 }

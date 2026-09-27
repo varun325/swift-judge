@@ -15,6 +15,14 @@
     {
       "title": "Declarations — Rethrowing Functions and Methods",
       "book": "ReferenceManual/Declarations"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -32,5 +40,44 @@
     "A `rethrows` function only throws when the closure you pass it throws.",
     "Loop over `self`, call `try transform(element)`, and collect the results.",
     "`for element in self { out.append(try transform(element)) }` — then `(try? words.myMap(parse)) != nil`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`rethrows` says \"I only throw if the closure you gave me throws\", so `map` with a non-throwing closure needs no `try`. JS doesn't track this; every call may throw.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, `arr.map(f)` might throw if `f` throws, and nothing tells you. How does `rethrows` encode that in the type?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a `rethrows` function throw its *own* errors, unrelated to the closure?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`rethrows` vs typed throws `throws(E)` with generic `E`: is `rethrows` still needed in Swift 6?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which standard library functions are `rethrows`? Check `map`, `filter`, `first(where:)`."
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+      "url": "https://www.youtube.com/watch?v=Lrc-MX8WgNc",
+      "channel": "Sean Allen"
+    },
+    {
+      "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+      "url": "https://www.youtube.com/watch?v=lncOFL3Qsns",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -13,6 +13,10 @@
     {
       "title": "Image I/O: CGImageSourceCreateThumbnailAtIndex",
       "url": "https://developer.apple.com/documentation/imageio/cgimagesourcecreatethumbnailatindex(_:_:_:)"
+    },
+    {
+      "title": "Image I/O",
+      "url": "https://developer.apple.com/documentation/imageio"
     }
   ],
   "signature": {
@@ -33,5 +37,38 @@
     "Memory = pixels × 4 bytes, regardless of the JPEG's file size.",
     "Aspect-fill: the scale factor is the larger of the two ratios, capped at 1.",
     "Round the thumbnail dimensions up to whole pixels."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Decoded image memory is width × height × 4 bytes, whatever the JPEG's file size. Downsampling to display size with ImageIO before decoding is the iOS version of serving `srcset`-sized images on the web, except the device must do it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "On the web, `srcset` asks the server for the right size. What's the iOS equivalent when you only have the full-size photo?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why multiply display points by screen scale (@2x/@3x) before downsampling?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Downsampling with `CGImageSourceCreateThumbnailAtIndex` vs `UIImage.preparingThumbnail(of:)`: which is simpler?"
+    },
+    {
+      "kind": "practice",
+      "q": "A photo grid crashes with memory warnings. How would Instruments' Allocations show this problem?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Tips for memory debugging – Carola Nitz on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=gbJQucAmp8Q",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=VcoZJ88d-vM",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

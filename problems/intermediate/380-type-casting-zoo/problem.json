@@ -32,5 +32,41 @@
     "`[Any]` loses static types; `case let x as T` recovers them in a `switch`.",
     "Parse each token (Int, then Double, then Bool, else String), then switch with type-casting patterns.",
     "`case let i as Int: \"int \\(i)\"` … and count strings with `values.filter { $0 is String }.count`."
+  ],
+  "impact": "core",
+  "jsBridge": "`as?` is a checked downcast returning an optional, `is` tests the type, and `as!` forces the cast. It's like `instanceof` plus a cast in TS. `switch` with `case let n as Int` pattern-matches on types, which TS can only approximate with type guards.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS: `if (typeof x === 'number')` narrows. Swift: `if let n = x as? Int`. Which one works for user-defined types (not just primitives)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can `[Any]` containing `1` be cast `as? Double`? Why was bridging via `NSNumber` confusing?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[Any]` + casting vs an enum with associated values: which should model heterogeneous data?"
+    },
+    {
+      "kind": "practice",
+      "q": "JSON as `[String: Any]` from `JSONSerialization` needs casting everywhere. Why is `Codable` better?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Introduction to Swift: Polymorphism and typecasting",
+      "url": "https://www.youtube.com/watch?v=575cMa-XTX8&t=341s",
+      "channel": "Paul Hudson",
+      "start": 341,
+      "moment": "know what you know it won't build your code so there's a solution and it's called typecasting converting object of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Type Casting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/typecasting/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "title": "Expressions — Key-Path Expression",
       "book": "ReferenceManual/Expressions"
+    },
+    {
+      "title": "KeyPath",
+      "url": "https://developer.apple.com/documentation/swift/keypath"
     }
   ],
   "signature": {
@@ -37,5 +41,48 @@
     "A key path like `\\Person.age` can read a property from any value.",
     "In an extension on `Sequence`, sort using `$0[keyPath: keyPath] < $1[keyPath: keyPath]`, generic over a `Comparable` value type.",
     "`func sorted<V: Comparable>(by keyPath: KeyPath<Element, V>) -> [Element] { sorted { $0[keyPath: keyPath] < $1[keyPath: keyPath] } }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Key paths like `\\Person.age` are typed property references, a type-safe version of passing `'age'` strings to lodash's `sortBy(people, 'age')`. The compiler knows `\\.age` is `KeyPath<Person, Int>`, so a typo is a compile error.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`_.sortBy(arr, 'agee')` fails silently at runtime. What does `sorted(by: \\.agee)` do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Key paths vs closures `{ $0.age }`: where can a key path go that a closure can't (Hashable, SwiftData `#Predicate`, `@dynamicMemberLookup`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the difference between `KeyPath`, `WritableKeyPath` and `ReferenceWritableKeyPath`?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI `ForEach(items, id: \\.id)` and `Table` columns use key paths. Why a key path rather than a closure there?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use KeyPaths in Swift | Advanced Learning #29",
+      "url": "https://www.youtube.com/watch?v=FmjG6mG-GIA&t=1037s",
+      "channel": "Swiftful Thinking",
+      "start": 1037,
+      "moment": "an integer so let's put in an in here and then we'll come and take the key path and add it in here as well as in"
+    },
+    {
+      "title": "Cleaner, Safer Code with Swift KeyPaths",
+      "url": "https://www.youtube.com/watch?v=qSdCw7YxQhA",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "if you've worked with swift UI then you've almost certainly seen this syntax this slash. ID or sl. you know another property name but you may not know what that"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Expressions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions/",
+      "source": "swift.org"
+    }
   ]
 }

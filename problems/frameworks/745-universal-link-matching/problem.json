@@ -18,6 +18,10 @@
     {
       "title": "Supporting associated domains",
       "url": "https://developer.apple.com/documentation/xcode/supporting-associated-domains"
+    },
+    {
+      "title": "Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines"
     }
   ],
   "signature": {
@@ -41,5 +45,38 @@
     "Decode the AASA; the path key is literally `\"/\"` — map it with `CodingKeys`.",
     "Glob-match `*` and `?` against the URL path (memoised recursion or DP).",
     "First matching component decides; `exclude: true` means web."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Universal links open your app for `https://` URLs listed in your server's `apple-app-site-association`. It's like a PWA's scope and URL handling, but verified by Apple with ordered path patterns.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A PWA's manifest `scope` captures URLs. How is the AASA file's `components` list more fine-grained?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must `exclude` rules come before broad patterns? What happens in the other order?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Universal links vs custom URL schemes: which can another app hijack?"
+    },
+    {
+      "kind": "practice",
+      "q": "Links opened inside some in-app browsers don't open your app. Why, and what's the fallback?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53",
+      "url": "https://www.youtube.com/watch?v=gm7Xct50CFo",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to ask the user to leave an App Store review – Instafilter SwiftUI Tutorial 8/13",
+      "url": "https://www.youtube.com/watch?v=RUWGjeDCkN8",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

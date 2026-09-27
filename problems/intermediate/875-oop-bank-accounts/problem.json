@@ -31,5 +31,65 @@
     "Classes are reference types — the dictionary stores references you can mutate through.",
     "`SavingsAccount` overrides `withdraw` and calls `super.withdraw` after its own check.",
     "`guard balance - amount >= 100 else { return false }; return super.withdraw(amount)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Classic OOP in Swift: a base class with `private(set)` state, a `final` subclass overriding `withdraw`. It's familiar from JS classes. The Swift-specific parts are `override`, `final` and compile-time access control.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would JS `#balance` interact with a subclass that needs to read it? What does Swift's `private(set)` allow instead?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Inheritance vs composition (`Account` holding a `WithdrawalPolicy`): which is easier to extend with new account types?"
+    },
+    {
+      "kind": "edge",
+      "q": "`override func withdraw` calling `super.withdraw`: what if the base changes its rules?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should money-handling types be classes at all, or actors, given concurrent access?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Classes in Swift | Swift Basics #11",
+      "url": "https://www.youtube.com/watch?v=xJgtknc-7CA&t=16s",
+      "channel": "Swiftful Thinking",
+      "start": 16,
+      "moment": "going to shift over to learning about classes so while those were value types classes are reference types and as I"
+    },
+    {
+      "title": "Class inheritance – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=zv8Lia5Ertk&t=1s",
+      "channel": "Paul Hudson",
+      "start": 1,
+      "moment": "class based on an existing class it inherits all the properties and methods of the original class and can add its"
+    },
+    {
+      "title": "Swift For Beginners - Class & Inheritance Explained",
+      "url": "https://www.youtube.com/watch?v=EhDML-fAqTM",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "question what is a class in at a high level a class is an object it can have properties I can have functions attached"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

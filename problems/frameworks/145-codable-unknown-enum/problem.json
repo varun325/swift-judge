@@ -13,6 +13,14 @@
     {
       "title": "Decodable",
       "url": "https://developer.apple.com/documentation/swift/decodable"
+    },
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -33,5 +41,48 @@
     "One unexpected string shouldn't fail the whole decode.",
     "Write `init(from:)` using a `singleValueContainer()`.",
     "`self = Status(rawValue: raw) ?? .unknown`."
+  ],
+  "impact": "core",
+  "jsBridge": "Decoding unknown enum values into an `unknown` case keeps apps working when the server adds values. In TS a union type silently accepts any string at runtime; in Swift an unknown value fails the whole decode unless you handle it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A TS `type Status = 'pending' | 'shipped'` accepts \"refunded\" at runtime silently. What does Swift do by default?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should `unknown` keep the raw string for logging? How would you model that (`case unknown(String)`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom `init(from:)` with a fallback vs making the property `String` and mapping later: which is cleaner?"
+    },
+    {
+      "kind": "practice",
+      "q": "Old app versions stay in the wild for years. How does this pattern keep them from breaking?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3",
+      "url": "https://www.youtube.com/watch?v=UaPAis0vtK0&t=897s",
+      "channel": "Swiftful Thinking",
+      "start": 897,
+      "moment": "we actually need to decode to this current price string here because of that we need to add our"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc&t=378s",
+      "channel": "Sean Allen",
+      "start": 378,
+      "moment": "the Json manually and it was a major pain I'm not even going to get into that nowadays we have a nice protocol called codable so I'm going to make GitHub user c"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

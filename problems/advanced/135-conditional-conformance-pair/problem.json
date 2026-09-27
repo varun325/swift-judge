@@ -36,5 +36,46 @@
     "A generic type can conform to a protocol only when its parameters do.",
     "Add empty extensions with `where` clauses — Swift synthesises `==` and hashing.",
     "`extension Pair: Hashable where A: Hashable, B: Hashable {}`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`extension Pair: Equatable where A: Equatable, B: Equatable` makes a generic type conform only when its parameters do. It's how `[Int]` is `Equatable` but `[() -> Void]` isn't. TS gets this structurally, while Swift states it explicitly.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In TS, is `Pair<A,B>` \"equatable\"? What does Swift's conditional conformance give you that TS can't express?"
+    },
+    {
+      "kind": "edge",
+      "q": "Swift 4.1+ synthesises `==` in conditional conformances. What do you still write by hand?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Conditional conformance vs a separate `EquatablePair` type: which scales?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why can you compare `[String: [Int]]` with `==` out of the box?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Generics in Swift | Advanced Learning #8",
+      "url": "https://www.youtube.com/watch?v=rx3uRICZr5I",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=554s",
+      "channel": "Paul Hudson",
+      "start": 554,
+      "moment": "just take out the codable conformance there like that there's an error and you might have"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -36,5 +36,48 @@
     "`associatedtype Item` lets each conforming type choose its element type.",
     "Conform both types, then write a generic function whose `where` clause says the two item types match and are `Equatable`.",
     "`where C1.Item == C2.Item, C1.Item: Equatable` and compare `a[i] == b[i]` for every index."
+  ],
+  "impact": "edge",
+  "jsBridge": "The Swift book's `Container` protocol: an associated `Item`, plus generic functions constrained on it. It's the foundation of how `Collection` works. TS would write `interface Container<Item>`, and Swift infers `Item` from the conformer's methods.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In TS, `IntBag implements Container<number>` states the type. How does Swift infer `Item` from `append(_:)`?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if inference is ambiguous? How do you state `typealias Item = Int` explicitly?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`func allMatch<C1: Container, C2: Container>(…) where C1.Item == C2.Item`: why do you need the `where`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you design your own container protocol in app code, or just use `Collection`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17",
+      "url": "https://www.youtube.com/watch?v=nJmrkRlRu88&t=14s",
+      "channel": "Swiftful Thinking",
+      "start": 14,
+      "moment": "would say the next playlist after this should be at the Swift UI boot camp and in Swift UI anytime you create any"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=383s",
+      "channel": "Paul Hudson",
+      "start": 383,
+      "moment": "astronauts it could be a dictionary of something else entirely the problem is Swift can't be sure the type we're"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

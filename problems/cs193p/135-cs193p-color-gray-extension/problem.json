@@ -43,8 +43,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L6: Demonstrating Data Flow",
-      "url": "https://www.youtube.com/watch?v=tvVj6MSBhBA",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=tvVj6MSBhBA&t=1782s",
+      "channel": "Stanford Online",
+      "start": 1782,
+      "moment": "So that's no good to me. I really need to be able to specify a gray and then like give it an argument which is the brightness of it. You know, like a bright gra"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "Extending `Color` with `static func gray(_:)` adds a convenience constructor to a framework type, like adding a helper to a theme object, but on the type itself. `CGFloat` vs `Double` shows the bridging between graphics and Swift numbers.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS you'd export `gray(b)` from a theme module. Why is `Color.gray(0.5)` nicer at call sites (`.foregroundStyle(.gray(0.5))`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can `Color.gray` conflict with the built-in `.gray` property? How does Swift resolve `.gray` vs `.gray(0.5)`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`CGFloat` vs `Double`: are they interchangeable now? When does the difference still show up?"
+    },
+    {
+      "kind": "practice",
+      "q": "Design-system colours: extension on `Color`, asset catalog, or a `Theme` type in the environment?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

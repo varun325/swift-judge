@@ -15,6 +15,10 @@
     {
       "title": "Enumerations — Raw Values",
       "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -32,5 +36,48 @@
     "An enum with `Int` raw values gets a failable `init?(rawValue:)`.",
     "Give `mercury` the raw value 1; the rest auto-increment. Map each position through the initialiser.",
     "`Planet(rawValue: $0).map { \"\\($0)\" } ?? \"unknown\"`."
+  ],
+  "impact": "core",
+  "jsBridge": "TS numeric enums (`enum Planet { Mercury = 1, … }`) auto-increment the same way. But a TS enum lookup by number gives `undefined`, while Swift's `Planet(rawValue:)` is a **failable initialiser** that returns `Planet?`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS enums create a reverse-mapping object at runtime. What does a Swift enum compile to, and can you iterate it without `CaseIterable`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Decoding API values with `String` raw values: what happens when the server adds a new value your enum doesn't know?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can raw values be computed or duplicated? Why must they be literals?"
+    },
+    {
+      "kind": "java",
+      "q": "Java enums have `ordinal()` and `valueOf()`. What's the Swift equivalent of each, and why is relying on ordinal fragile?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8&t=258s",
+      "channel": "Swiftful Thinking",
+      "start": 258,
+      "moment": "if maybe the data gets corrupt or some other developer is using this wrong and so in this situation we might want"
+    },
+    {
+      "title": "Enum Raw Values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ssLIP4gFrYc&t=26s",
+      "channel": "Paul Hudson",
+      "start": 26,
+      "moment": "can use that number to create an instance of the appropriate enum case for example Earth will be given the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -20,5 +20,51 @@
     "Property observers don't fire when a type sets its own property during `init`.",
     "After `init done`, every assignment fires both observers — including via `bump()` and assigning the same value.",
     "First lines: `init done`, then `will 20 -> 22`, `did 20 -> 22`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Property observers **don't fire** when the property is set in the type's own `init`, but they do fire for later assignments. JS setters fire during the constructor too. It's a common \"why didn't my didSet run?\" surprise.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS setter runs even in the constructor. Why did Swift choose not to fire observers in init?"
+    },
+    {
+      "kind": "edge",
+      "q": "Do observers fire when a *subclass* init sets an inherited property? (Yes, after `super.init`.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`didSet` vs setting a value in `init` and calling a `configure()` method: which is clearer?"
+    },
+    {
+      "kind": "practice",
+      "q": "A view model with `didSet { save() }`: does it save the initial value? Should it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Property observers: didSet – 7 Swifty Words, part 5",
+      "url": "https://www.youtube.com/watch?v=_0nER-JW9tU",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] there's one last thing to do this project before it's done and it's both"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

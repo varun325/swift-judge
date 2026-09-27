@@ -31,5 +31,46 @@
     "`some Drawable` returns one specific hidden type.",
     "`makeTriangle` returns a `Triangle`; `flipped` wraps its argument in a generic `Flipped<D: Drawable>` that reverses the lines.",
     "`base.draw().split(separator: \"/\").reversed().joined(separator: \"/\")`."
+  ],
+  "impact": "core",
+  "jsBridge": "`some Drawable` means \"one specific type I'm not telling you\". The compiler knows it, callers don't. It's how SwiftUI's `some View` works. TS has no equivalent: returning an interface type loses the concrete type entirely, which is `any` in Swift terms.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS returning `Drawable` = Swift's `any Drawable`. What does `some Drawable` keep that `any` loses (static type, performance)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`some View` vs `AnyView`: why does Apple warn against `AnyView`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't a `some Drawable` function return a `Triangle` on one branch and a `Square` on another?"
+    },
+    {
+      "kind": "practice",
+      "q": "Every SwiftUI `body` is `some View`. What is its real type for a `VStack` with two `Text`s?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use opaque return types – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Fyhm8RxwpKs&t=508s",
+      "channel": "Paul Hudson",
+      "start": 508,
+      "moment": "returning an opaque return type like this means we still get to focus on the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Opaque and Boxed Protocol Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0335: Introduce existential any",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0335-existential-any.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

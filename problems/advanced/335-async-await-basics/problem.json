@@ -12,6 +12,10 @@
     {
       "title": "Concurrency — Calling Asynchronous Functions in Parallel",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -31,5 +35,53 @@
     "`await` in a loop runs one fetch at a time.",
     "Use `withTaskGroup` to start all fetches at once; carry each index so you can restore input order.",
     "`group.addTask { (i, await fetchUser(id)) }` then `for await (i, user) in group { result[i] = user }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Swift `async`/`await` looks like JS's, but the concurrency is real: `async let` runs child tasks **in parallel** on multiple threads. `Promise.all` interleaves on one thread; Swift's version can use every core.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`await Promise.all(ids.map(fetchUser))` vs `async let` / task groups: what's different about *where* the work runs?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Sequential `await`s vs `async let` vs `withTaskGroup`: when is each right?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens to an `async let` you never await? (Implicitly cancelled and awaited at scope end.)"
+    },
+    {
+      "kind": "practice",
+      "q": "Loading a profile screen needs user + posts + followers. Sketch it with `async let`."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Async Let to perform concurrent methods in Swift | Swift Concurrency #5",
+      "url": "https://www.youtube.com/watch?v=1OmJJwVF7uQ&t=978s",
+      "channel": "Swiftful Thinking",
+      "start": 978,
+      "moment": "and we're going to look at that actually in the next video so async let is great"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "the vast majority of iOS apps have some sort of networking component to them data lives on a server and the IOS app needs to go to that server download the data"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

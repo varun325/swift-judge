@@ -14,6 +14,10 @@
     {
       "title": "Basic Operators — Ternary Conditional Operator",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Bool",
+      "url": "https://developer.apple.com/documentation/swift/bool"
     }
   ],
   "signature": {
@@ -30,5 +34,53 @@
     "Check the boundary: can an 18-year-old vote?",
     "`x ? true : false` is just `x`.",
     "`age >= 18`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The same lesson in every language: `cond ? true : false` is just `cond`. The Swift angle: `Bool` is its own type, so there's no `!!value` coercion trick and no truthiness to fall back on.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS uses `!!x` to coerce to boolean. Why does Swift not need, or allow, that?"
+    },
+    {
+      "kind": "practice",
+      "q": "Age thresholds differ by country. Where should that rule live so it isn't hard-coded in a view?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should age be `Int` or `UInt`? What would `UInt` change, and why does Swift style prefer `Int` anyway?"
+    },
+    {
+      "kind": "contrast",
+      "q": "A computed property `var canVote: Bool` vs a function `canVote(age:)`: when is each the better API?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Ternary Operators in SwiftUI | Bootcamp #24",
+      "url": "https://www.youtube.com/watch?v=xzFSOdpxy-o&t=31s",
+      "channel": "Swiftful Thinking",
+      "start": 31,
+      "moment": "you should have a basic understanding on how if else statements work before moving into these ternary operators"
+    },
+    {
+      "title": "How to use the ternary conditional operator for quick tests – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=FToxl_63Unw",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] there's one last way to check conditions inside swift it's called the ternary"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

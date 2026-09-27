@@ -13,6 +13,14 @@
     {
       "title": "LocalizedError",
       "url": "https://developer.apple.com/documentation/foundation/localizederror"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -30,5 +38,48 @@
     "`LocalizedError` adds `errorDescription` and `recoverySuggestion` to an error type.",
     "Switch on `self` in computed properties to provide text per case (including associated values).",
     "`catch let error as LocalizedError { \"\\(error.localizedDescription) — \\(error.recoverySuggestion ?? \"\")\" }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`LocalizedError` adds `errorDescription` and `recoverySuggestion` for user-facing messages, like giving JS `Error` a friendly `message` plus a hint. SwiftUI's `.alert(isPresented:error:)` reads these directly.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS errors have one `message` for devs and users alike. Why separate developer description from user-facing text?"
+    },
+    {
+      "kind": "practice",
+      "q": "How does SwiftUI's `alert(isPresented:error:actions:)` use `LocalizedError`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`LocalizedError` vs `CustomNSError` vs plain `Error`: which does `error.localizedDescription` use?"
+    },
+    {
+      "kind": "edge",
+      "q": "Errors thrown from `URLSession` are `URLError`. How do you map them to your own user-facing errors?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+      "url": "https://www.youtube.com/watch?v=lncOFL3Qsns&t=55s",
+      "channel": "Swiftful Thinking",
+      "start": 55,
+      "moment": "video we did a very simple string binding and in this video we're going to take that to the next level and we're"
+    },
+    {
+      "title": "SwiftUI Alerts - Buttons, TextFields, & Passing Errors",
+      "url": "https://www.youtube.com/watch?v=2c1IQ0BT0PE",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "in this video I'm going to show you how to use a few different kinds of alerts in Swift UI we'll do just a basic alert we'll do alerts with multiple buttons ale"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -43,8 +43,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L13: SwiftData",
-      "url": "https://www.youtube.com/watch?v=k9wjAdgUY0A",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=k9wjAdgUY0A&t=68s",
+      "channel": "Stanford Online",
+      "start": 68,
+      "moment": "SQL sorting, SQL searching, all that stuff. So that's the way this will play out. All right, what do we need to do to take our Model (we) have this nice CodeBre"
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "Converting CodeBreaker's structs to `@Model` classes shows the trade-off: persistence needs **reference** types with identity, so value-semantics habits (copying a game) now mean copying a database row.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Moving from plain JS objects to ORM entities changes what `===` and copying mean. What changes when structs become `@Model` classes?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't `@Model` store arbitrary enums with payloads or computed properties directly? How does the course work around it (Codable, raw storage)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Keeping the struct model and mapping to `@Model` DTOs vs making the model itself `@Model`: which is cleaner?"
+    },
+    {
+      "kind": "practice",
+      "q": "Schema changes after release: what's a `VersionedSchema` and migration plan?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

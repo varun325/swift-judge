@@ -14,6 +14,10 @@
     {
       "title": "Encoding and Decoding Custom Types",
       "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -34,5 +38,44 @@
     "Decode the `type` key first, then decide which other keys to read.",
     "Use one `CodingKeys` enum containing every key any variant uses.",
     "Map unknown types to `.unsupported(type)` rather than throwing."
+  ],
+  "impact": "core",
+  "jsBridge": "A `type` discriminator in JSON decoded into an enum with associated values is the TS discriminated union parsed with zod's `discriminatedUnion`, written by hand in a custom `init(from:)`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "zod `z.discriminatedUnion('type', [...])` vs a Swift custom decoder: which is less code, and which is faster?"
+    },
+    {
+      "kind": "edge",
+      "q": "Unknown `type` values: fail the whole feed, skip the item, or decode as `.unsupported`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Enum with payloads vs a protocol with concrete types (`[any FeedItem]`): which is easier to render in SwiftUI?"
+    },
+    {
+      "kind": "practice",
+      "q": "Server-driven UI feeds are exactly this. How do you version them?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3",
+      "url": "https://www.youtube.com/watch?v=UaPAis0vtK0",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

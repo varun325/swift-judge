@@ -20,5 +20,65 @@
     "A subclass inherits its parent's initialisers only if its new stored properties have defaults.",
     "Remove the default value from `axles`.",
     "`class Truck: Vehicle { var axles: Int }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A class with a stored property that has no default and no initialiser doesn't compile. Swift insists every property is set before use. JS leaves it `undefined`, and TS's `strictPropertyInitialization` is an opt-in version of the same check.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `strictPropertyInitialization` catches this, and `!` silences it. What's Swift's equivalent escape hatch (`!` IUOs), and why is it discouraged?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Structs get a memberwise init for free. Why don't classes?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which initialisers does a subclass inherit automatically? (Rules 1 and 2 of initialiser inheritance.)"
+    },
+    {
+      "kind": "practice",
+      "q": "Is this why Swift developers default to structs for models?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Classes in Swift | Swift Basics #11",
+      "url": "https://www.youtube.com/watch?v=xJgtknc-7CA&t=390s",
+      "channel": "Swiftful Thinking",
+      "start": 390,
+      "moment": "what the default init would look like because we are now working in classes there is no implicit init and so that's"
+    },
+    {
+      "title": "Fixing \"Class ViewController has no initializers\" – Swift 5",
+      "url": "https://www.youtube.com/watch?v=o_qBp32KpOI",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] classes having no initializers is a common error and one who can fix in just"
+    },
+    {
+      "title": "Swift For Beginners - Class & Inheritance Explained",
+      "url": "https://www.youtube.com/watch?v=EhDML-fAqTM&t=114s",
+      "channel": "Sean Allen",
+      "start": 114,
+      "moment": "experience and instead of a string this is going to be an int like how many years of experience do you have so maybe"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

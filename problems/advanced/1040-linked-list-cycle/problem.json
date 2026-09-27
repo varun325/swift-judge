@@ -35,5 +35,41 @@
     "Move one pointer by one step and another by two; if they ever meet (by `===`), there's a cycle.",
     "To find the start, reset one pointer to the head and advance both one step at a time.",
     "Break the cycle before returning so ARC can deallocate the nodes."
+  ],
+  "impact": "edge",
+  "jsBridge": "Floyd's tortoise and hare, comparing nodes with `===` (identity). A cyclic list is also a **retain cycle** under ARC, so without breaking it the nodes leak, which JS's GC would clean up.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS's GC frees an unreachable cyclic list. What happens under ARC?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Floyd's O(1) space vs a `Set<ObjectIdentifier>` of visited nodes: which is easier to explain?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why `===` and not `==` for comparing nodes?"
+    },
+    {
+      "kind": "practice",
+      "q": "How would you make a cyclic data structure that doesn't leak (weak/unowned back-links)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=5s",
+      "channel": "Sean Allen",
+      "start": 5,
+      "moment": "and check that out I run through all the questions I'm going to go over with some brief answers but this video is going to"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

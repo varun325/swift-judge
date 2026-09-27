@@ -17,6 +17,10 @@
     {
       "title": "accessibilityLabel(_:)",
       "url": "https://developer.apple.com/documentation/swiftui/view/accessibilitylabel(_:)-1d7jv"
+    },
+    {
+      "title": "Accessibility fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/accessibility-fundamentals"
     }
   ],
   "signature": {
@@ -37,5 +41,42 @@
     "Describe meaning, not symbols: stars → \"rated 4.2 out of 5\".",
     "Split cents into dollars and cents, handling singular and zero cents.",
     "Append \", bestseller\" only when flagged."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "VoiceOver reads `accessibilityLabel`s, so a row showing `★★★★☆ 4.2 $19.99 🔥` needs a spoken label like \"Rated 4.2 out of 5, 19 dollars 99, popular\". It's ARIA `aria-label` for native views.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`aria-label` on a web element vs `.accessibilityLabel` in SwiftUI: what's `.accessibilityElement(children: .combine)` in ARIA terms?"
+    },
+    {
+      "kind": "edge",
+      "q": "Emoji and symbols read aloud: what does VoiceOver say for \"🔥\" or \"★\"? Why override it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Label vs value vs hint vs traits: which carries \"4.2 stars\", and which carries \"double-tap to buy\"?"
+    },
+    {
+      "kind": "practice",
+      "q": "How do you test VoiceOver output without a device (Accessibility Inspector, XCUITest)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+      "url": "https://www.youtube.com/watch?v=2M84O4sDe0o&t=682s",
+      "channel": "Swiftful Thinking",
+      "start": 682,
+      "moment": "want to do a little customization so you could do something like you could pull the value from the environment so we'll"
+    },
+    {
+      "title": "Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/7",
+      "url": "https://www.youtube.com/watch?v=oGPLjXgWqj8&t=219s",
+      "channel": "Paul Hudson",
+      "start": 219,
+      "moment": "these two texts entirely so they're invisible to voice over and then provide a custom label to the parent like this"
+    }
+  ],
+  "articles": []
 }

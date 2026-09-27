@@ -13,11 +13,59 @@
     {
       "title": "Sendable",
       "url": "https://developer.apple.com/documentation/swift/sendable"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "hints": [
     "Task closures run concurrently with the code that created them.",
     "Mutate the same captured `var` inside a `Task` and outside it.",
     "`Task { count += 1 }` followed by `count += 1`."
+  ],
+  "impact": "core",
+  "jsBridge": "Swift 6 rejects a `Task` mutating a captured `var` that the enclosing function also mutates, a data race caught at compile time. JS closures mutate captured variables freely, because there's no parallelism.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The same code in JS is fine. Why? (One thread, run-to-completion.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "Fixes: an actor, a `Mutex`, or awaiting the task's result instead of sharing state. Which is simplest?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is capturing a `let` in a `Task` fine? What about a `var` that's never mutated after the capture?"
+    },
+    {
+      "kind": "practice",
+      "q": "How many Swift 6 migration errors come from exactly this pattern in older code?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+      "url": "https://www.youtube.com/watch?v=1RD8-5_Zsws",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

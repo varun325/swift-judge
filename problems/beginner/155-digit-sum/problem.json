@@ -14,6 +14,14 @@
     {
       "title": "Basic Operators — Remainder Operator",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "signature": {
@@ -31,5 +39,44 @@
     "`% 10` gives the last digit; `/ 10` removes it.",
     "Loop while the number is non-zero. Watch out: `abs(Int.min)` overflows — work with the unsigned `magnitude` instead.",
     "`var x = n.magnitude` then `while x > 0 { total += x % 10; x /= 10 }` (with `total` as `UInt`)."
+  ],
+  "impact": "edge",
+  "jsBridge": "In JS you'd use `String(Math.abs(n)).split('').reduce(...)`. Swift can do the same with `String(n).compactMap(\\.wholeNumberValue).reduce(0, +)`, or with plain arithmetic. Watch for `abs(Int.min)`, which traps in Swift; in JS it's just a float.",
+  "compass": [
+    {
+      "kind": "edge",
+      "q": "What does `abs(Int.min)` do? How does `n.magnitude` (a `UInt`) avoid the problem?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Arithmetic `n % 10` loop vs converting to a string: which is faster, and which is clearer? Does it matter at this scale?"
+    },
+    {
+      "kind": "js",
+      "q": "`Array.from(String(n))` vs Swift's `String` being a collection directly: what does Swift let you skip?"
+    },
+    {
+      "kind": "practice",
+      "q": "Checksum-style digit sums show up in credit-card (Luhn) validation. Where would that validation live in an iOS app?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7",
+      "url": "https://www.youtube.com/watch?v=fB4HnpS8qkw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

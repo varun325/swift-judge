@@ -31,5 +31,53 @@
     "A function can return a tuple with labels — and an optional tuple for the empty case.",
     "Start from the first element (guard it exists), then update min and max in one loop over the rest.",
     "`guard var lo = nums.first else { return nil }; var hi = lo; for n in nums.dropFirst() { lo = Swift.min(lo, n); hi = Swift.max(hi, n) }; return (lo, hi)`."
+  ],
+  "impact": "core",
+  "jsBridge": "Named tuples like `(min: Int, max: Int)` are Swift's lightweight multiple return values. In JS you'd return `{min, max}` or an array. Tuples are anonymous types, so they can't conform to protocols (no `Codable`), which is why the judge needs an array.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS returns `{ min, max }` objects and destructures them. How does `let (lo, hi) = minMax(...)` compare, and what can't a tuple do that a struct can?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Tuple vs struct for a return value: when does a tuple become a design smell?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why are `(Int, Int)?` and `(Int?, Int?)` different? What does each say about the empty array?"
+    },
+    {
+      "kind": "practice",
+      "q": "Swift's `minmax` isn't in the standard library, but `min()` and `max()` are. What does swift-algorithms add?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Tuples in Swift | Swift Basics #7",
+      "url": "https://www.youtube.com/watch?v=zsjCrtENsZA&t=17s",
+      "channel": "Swiftful Thinking",
+      "start": 17,
+      "moment": "might want to return more than one piece of data maybe you want a function that returns two or three or ten pieces of"
+    },
+    {
+      "title": "Arrays vs Sets vs Tuples – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=yZZ6UTipwkM",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "arrays sets and tuples can seem similar at first but they have distinct uses to help you know which to use here are some"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

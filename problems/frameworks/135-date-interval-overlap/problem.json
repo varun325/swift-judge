@@ -13,6 +13,14 @@
     {
       "title": "DateInterval",
       "url": "https://developer.apple.com/documentation/foundation/dateinterval"
+    },
+    {
+      "title": "Calendar",
+      "url": "https://developer.apple.com/documentation/foundation/calendar"
+    },
+    {
+      "title": "Date",
+      "url": "https://developer.apple.com/documentation/foundation/date"
     }
   ],
   "signature": {
@@ -33,5 +41,38 @@
     "Build a `DateInterval` per meeting from a fixed reference date.",
     "Compare each pair with `intersection(with:)`.",
     "Only count overlaps with `duration > 0`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`DateInterval` has `intersects` and `intersection`, typed interval maths. In JS you'd compare timestamps manually (`a.start < b.end && b.start < a.end`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Write the JS overlap check. Is the Swift `intersects` inclusive of touching endpoints?"
+    },
+    {
+      "kind": "edge",
+      "q": "A meeting ending at 10:00 and another starting at 10:00: overlap or not? What does `DateInterval` say?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Pairwise O(n²) checks vs sorting by start then sweeping: which scales to a year of meetings?"
+    },
+    {
+      "kind": "practice",
+      "q": "Calendar apps use EventKit's `EKEvent`. Where would you still compute overlaps yourself?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to format dates inside text views – SwiftUI",
+      "url": "https://www.youtube.com/watch?v=8hfgErg7ybQ",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "New Way to Format Dates in Swift (5.5)",
+      "url": "https://www.youtube.com/watch?v=5I1ghMpU4rs",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

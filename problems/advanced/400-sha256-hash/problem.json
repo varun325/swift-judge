@@ -13,6 +13,10 @@
     {
       "title": "CryptoKit — SHA256",
       "url": "https://developer.apple.com/documentation/cryptokit/sha256"
+    },
+    {
+      "title": "Foundation",
+      "url": "https://developer.apple.com/documentation/foundation"
     }
   ],
   "signature": {
@@ -30,5 +34,38 @@
     "CryptoKit's `SHA256.hash(data:)` computes a digest.",
     "Hash the UTF-8 bytes, then hex-encode each byte with two lowercase digits.",
     "`SHA256.hash(data: Data(input.utf8)).map { String(format: \"%02x\", $0) }.joined()`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`SHA256.hash(data:)` from CryptoKit is Node's `crypto.createHash('sha256')`. Unlike `hashValue`, a cryptographic hash is stable across launches and machines, so use it for checksums and cache keys.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Node `crypto` vs Web Crypto (`subtle.digest`, async) vs CryptoKit (sync). Why is CryptoKit's sync API fine here?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`hashValue` vs SHA-256: list three differences (stability, collision resistance, speed)."
+    },
+    {
+      "kind": "edge",
+      "q": "Hashing a `String`: which encoding do you hash? What goes wrong if client and server differ?"
+    },
+    {
+      "kind": "practice",
+      "q": "Never store passwords as plain SHA-256. What should you use instead, and should the client hash at all?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save data and images to FileManager in Xcode | Continued Learning #26",
+      "url": "https://www.youtube.com/watch?v=Yiq-hdhLzVM",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "iOS 15: Sharing data across tabs using @EnvironmentObject – Hot Prospects SwiftUI Tutorial 11/18",
+      "url": "https://www.youtube.com/watch?v=e2lQtUdK1uI",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

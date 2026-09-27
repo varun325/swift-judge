@@ -17,6 +17,10 @@
     {
       "title": "DateComponents",
       "url": "https://developer.apple.com/documentation/foundation/datecomponents"
+    },
+    {
+      "title": "Date",
+      "url": "https://developer.apple.com/documentation/foundation/date"
     }
   ],
   "signature": {
@@ -41,5 +45,35 @@
     "Let `Calendar` do date math — never add seconds for months.",
     "Configure a Gregorian calendar and `DateFormatter` with UTC and `en_US_POSIX`.",
     "`calendar.date(byAdding: .month, value: months, to: date)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Adding \"one month\" with `Calendar.date(byAdding: .month, …)` clamps Jan 31 → Feb 28/29. JS `Date` arithmetic overflows into March. Calendars are a Foundation strength, and JS only now gets `Temporal`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`d.setMonth(d.getMonth() + 1)` on Jan 31 gives March 3 in JS. What does `Calendar` give, and why?"
+    },
+    {
+      "kind": "edge",
+      "q": "DST transitions: is adding 1 day the same as adding 24 hours? When does it differ?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Calendar` arithmetic vs `TimeInterval` arithmetic: which for \"same time tomorrow\"?"
+    },
+    {
+      "kind": "practice",
+      "q": "Subscription renewal dates: whose calendar and time zone decides?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift Date Components & Calculations Tutorial",
+      "url": "https://www.youtube.com/watch?v=1HOcrAnlpgE&t=297s",
+      "channel": "Sean Allen",
+      "start": 297,
+      "moment": "is a Friday so you can see it returns an INT and that's how weekdays are represented and it starts with Sunday and Sunday is a one so you can do the calculation"
+    }
+  ],
+  "articles": []
 }

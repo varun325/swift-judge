@@ -14,6 +14,14 @@
     {
       "title": "PreferenceKey",
       "url": "https://developer.apple.com/documentation/swiftui/preferencekey"
+    },
+    {
+      "title": "View",
+      "url": "https://developer.apple.com/documentation/swiftui/view"
+    },
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
     }
   ],
   "signature": {
@@ -38,5 +46,35 @@
     "A `PreferenceKey` has a `defaultValue` and a `reduce(value:nextValue:)`.",
     "Max: `value = max(value, nextValue())`; titles: `value.append(contentsOf: nextValue())`.",
     "Fold generically: start from `K.defaultValue` and call `K.reduce(value: &result) { v }`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`PreferenceKey` sends values **up** the view tree (children → ancestor), combined by `reduce`. React has no direct equivalent; you'd lift state with callbacks or context. It's the upward twin of `Environment`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In React, a child reporting its size up needs a callback prop or context. How does `PreferenceKey` avoid plumbing?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must `reduce` handle many children? What's `defaultValue` used for?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`PreferenceKey` vs `onGeometryChange` (iOS 18) for reading sizes: which is simpler now?"
+    },
+    {
+      "kind": "practice",
+      "q": "Syncing a header's height to a scroll offset, or collecting child anchors for overlays: where have you needed this?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Use PreferenceKey to extract values from child views in SwiftUI | Advanced Learning #10",
+      "url": "https://www.youtube.com/watch?v=OnbBc00lqWU&t=160s",
+      "channel": "Swiftful Thinking",
+      "start": 160,
+      "moment": "view here but the key here is that this text where it's coming from is actually the parent"
+    }
+  ],
+  "articles": []
 }

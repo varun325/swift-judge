@@ -14,11 +14,58 @@
     {
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
+    },
+    {
+      "title": "Collection",
+      "url": "https://developer.apple.com/documentation/swift/collection"
+    },
+    {
+      "title": "Sequence",
+      "url": "https://developer.apple.com/documentation/swift/sequence"
     }
   ],
   "hints": [
     "`isKnownUniquelyReferenced(&storage)` tells you whether anyone else shares your buffer.",
     "Keep items in a private class; before mutating, copy the storage if it's shared (and count the copy).",
     "`if !isKnownUniquelyReferenced(&storage) { storage = Storage(storage.items); counter.copies += 1 }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Copy-on-write is how Swift arrays can be value types without copying on every assignment: shared storage plus `isKnownUniquelyReferenced` before mutating. Immutable.js and Immer do structural sharing to get a similar effect in JS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Immer gives you \"mutate a draft, get a new object\". How is Swift CoW similar, and how is it different (no proxies, reference-count based)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must the storage be a `final class` for `isKnownUniquelyReferenced` to work?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Your own structs don't get CoW automatically. When should a big struct implement it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Passing a 10k-element array to a function and mutating it inside: how many copies happen?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Add a custom Navigation Link for lazy loading | SwiftUI Crypto App #18",
+      "url": "https://www.youtube.com/watch?v=XGXWC68Yb_o",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to lazy load views using LazyVStack and LazyHStack – SwiftUI",
+      "url": "https://www.youtube.com/watch?v=o6D7mUXjSmI",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

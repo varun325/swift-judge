@@ -31,5 +31,49 @@
     "`Self(...)` constructs the dynamic type — which only works if every subclass has that init.",
     "Mark the init `required`. `Dragon` re-declares it and doubles the level; `Goblin` inherits it.",
     "`class func make(level: Int) -> Self { Self(level: level) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`required init` forces every subclass to implement that initialiser, so `Self(level:)` can build the dynamic subclass type. JS gets this free with `new this.constructor(...)`. Swift needs the guarantee to type-check it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new this.constructor()` works in JS because constructors are always callable. Why does Swift need `required` to allow `Self(...)`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Self` vs `self` vs `Type.self`: which is which?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if a subclass adds a stored property but forgets the `required init`?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Decodable`'s `init(from:)` must be `required` in classes. Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create a deinitializer for a class – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=LAhctdU5Mq4",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

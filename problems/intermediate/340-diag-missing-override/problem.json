@@ -20,5 +20,56 @@
     "Swift refuses to let a subclass silently shadow a parent method.",
     "Remove the `override` keyword from the subclass's `speak()`.",
     "`class Dog: Animal { func speak() { print(\"Woof\") } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift refuses a subclass method that silently shadows a superclass method. You must write `override`. In JS, redefining a method in a subclass always overrides, with no keyword and no warning when you do it by accident.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS 4.3 added `override` with `noImplicitOverride`. Why did TS copy this from languages like Swift?"
+    },
+    {
+      "kind": "edge",
+      "q": "What if the superclass later renames the method? Which language catches the now-orphaned override?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Overriding vs overloading: what if the subclass method has a different parameter type?"
+    },
+    {
+      "kind": "practice",
+      "q": "Overriding `viewDidLoad` without calling `super.viewDidLoad()`: does Swift catch that? What's the convention?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "iOS 15: Creating NSManagedObject subclasses – Core Data SwiftUI Tutorial 2/7",
+      "url": "https://www.youtube.com/watch?v=pIAH3RVVXZE",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Xcode Simulator: Environment Override",
+      "url": "https://www.youtube.com/watch?v=s8JPQ8jLD00",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today I'm going to show you a cool new feature in Xcode 11 called environment overrides for your simulator and it's a"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

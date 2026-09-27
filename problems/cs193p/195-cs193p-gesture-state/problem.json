@@ -41,8 +41,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L16: Shapes, Gestures, Persistence",
-      "url": "https://www.youtube.com/watch?v=skECWIKpBVY",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=skECWIKpBVY&t=1368s",
+      "channel": "Stanford Online",
+      "start": 1368,
+      "moment": "but also sometimes we might want to swipe or pinch or things like that. These are called multi-touch gestures because you can have multiple fingers involved. Tw"
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "Committed state (`zoom`, `pan`) plus in-flight `@GestureState` combined in the view is the standard multi-touch pattern. It's the same split as keeping a \"drag delta\" separate from the committed position in a JS drag handler.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS drag handler keeps `start` + `delta` and commits on `pointerup`. How does `@GestureState` automate the reset?"
+    },
+    {
+      "kind": "edge",
+      "q": "A gesture cancelled by an incoming call: `@GestureState` resets. Does your committed state stay correct?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.simultaneously(with:)` vs `.sequenced(before:)` vs `.exclusively(before:)`: which for pinch + drag?"
+    },
+    {
+      "kind": "practice",
+      "q": "Zoom around the pinch centre rather than the view centre: what extra maths is needed?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

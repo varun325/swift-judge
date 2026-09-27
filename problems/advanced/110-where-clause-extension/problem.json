@@ -37,5 +37,48 @@
     "An extension can apply only when `Element` meets a constraint.",
     "Write one extension for `Element: BinaryInteger` and one for `Element: BinaryFloatingPoint`, each with its own `average`.",
     "`isEmpty ? 0 : Double(reduce(0, +)) / Double(count)` for integers."
+  ],
+  "impact": "core",
+  "jsBridge": "`extension Collection where Element: BinaryInteger` adds `average` only to collections of integers, a **constrained extension**. TS can't add methods conditionally to `Array<number>` without declaration merging hacks.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would you add `.average()` only to `number[]` in TS? Why is it awkward?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two constrained extensions both apply (a type that's both integer and floating point, hypothetically): which wins?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Constrained extension vs free generic function `average<C: Collection>(_:)`: which is more discoverable?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Array where Element == String` extensions are common. What's the risk of too many?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Where should new iOS developers start their career – Sean Allen on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=1FCw2ZXQ2bA",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "as a question here from Franklin by Ranga who asks indi contract jobs what's your view on where new iOS developer"
+    },
+    {
+      "title": "Clean Swift Code with Where Clause",
+      "url": "https://www.youtube.com/watch?v=gZa_wZ1GJ8I&t=225s",
+      "channel": "Sean Allen",
+      "start": 225,
+      "moment": "certain conditional in our case our conditional was hey is it greater than 20,000 or whatever number that is and it will return true or false so that is contain"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

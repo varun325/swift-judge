@@ -31,5 +31,53 @@
     "Use an array as a stack of opening brackets.",
     "Map each closing bracket to its opener; on a closer, the popped element must match.",
     "`if let open = pairs[ch] { guard stack.popLast() == open else { return false } } else { stack.append(ch) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The classic stack problem. In Swift, `[Character]` works as the stack (`append`/`popLast`), and a `[Character: Character]` map pairs brackets. `popLast()` returns an optional where JS `pop()` returns `undefined`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `pop()` on an empty array returns `undefined`. Swift `popLast()` returns `nil` while `removeLast()` crashes. Which do you want here?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Stack + map vs a counter per bracket type: why does the counter fail for `([)]`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Unicode brackets like `「」`: does your map handle them? Should it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does bracket matching show up in apps: code editors, Markdown parsing?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=26s",
+      "channel": "Swiftful Thinking",
+      "start": 26,
+      "moment": "structs versus classes. We're going to learn classes versus actors. We're going to learn value types versus"
+    },
+    {
+      "title": "Building a stack of cards – Flashzilla SwiftUI Tutorial 7/13",
+      "url": "https://www.youtube.com/watch?v=KL1c5Mx3kek",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] now that we designed one card and Associated card view the next step is to"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -18,6 +18,10 @@
     {
       "title": "FileManager",
       "url": "https://developer.apple.com/documentation/foundation/filemanager"
+    },
+    {
+      "title": "UserDefaults",
+      "url": "https://developer.apple.com/documentation/foundation/userdefaults"
     }
   ],
   "signature": {
@@ -39,5 +43,35 @@
     "Check memory, then disk, then the network, in that order.",
     "On a disk hit, put the value into memory; on a network hit, write to both.",
     "Purging memory simulates a relaunch: the next `get` should hit disk."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Memory cache first, then disk, then network, as an actor to coordinate concurrent requests. It's how Kingfisher/Nuke (and browser HTTP caches) work, with the actor serialising cache state.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The browser gives you memory + disk HTTP caches for free. What must an iOS app implement itself for decoded images?"
+    },
+    {
+      "kind": "edge",
+      "q": "Disk cache growth: when and how do you evict (size limit, age)? Which folder (Caches) can iOS purge?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Your own cache vs `URLCache` vs Kingfisher/Nuke: when is rolling your own justified?"
+    },
+    {
+      "kind": "practice",
+      "q": "Hash URLs for file names: why SHA-256 and not `hashValue`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download and save images using FileManager and NSCache | Continued Learning #28",
+      "url": "https://www.youtube.com/watch?v=fmVuOu8XOvQ&t=3968s",
+      "channel": "Swiftful Thinking",
+      "start": 3968,
+      "moment": "getting the saved images but this time we're saving them to the device and to the file manager and we're"
+    }
+  ],
+  "articles": []
 }

@@ -16,6 +16,10 @@
     {
       "title": "NSFetchRequest.fetchLimit",
       "url": "https://developer.apple.com/documentation/coredata/nsfetchrequest/fetchlimit"
+    },
+    {
+      "title": "Core Data",
+      "url": "https://developer.apple.com/documentation/coredata"
     }
   ],
   "signature": {
@@ -40,5 +44,40 @@
     "Let the store page for you with `fetchLimit` and `fetchOffset`.",
     "Sort by title so pages are stable; loop until a page comes back empty.",
     "`context.count(for:)` gives the total cheaply."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`fetchLimit` and `fetchOffset` are SQL `LIMIT`/`OFFSET`, and `count(for:)` is `SELECT COUNT(*)` without loading objects. `fetchBatchSize` adds faulting-based paging with no JS equivalent.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`LIMIT/OFFSET` pagination in your SQL or ORM vs `fetchLimit`/`fetchOffset`: same pitfalls with inserts between pages?"
+    },
+    {
+      "kind": "edge",
+      "q": "Without a sort descriptor, is page order stable? Why must pagination always sort?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`fetchOffset` paging vs `fetchBatchSize` faulting vs cursor-based paging: which fits an infinite list?"
+    },
+    {
+      "kind": "practice",
+      "q": "`@FetchRequest` in SwiftUI loads lazily already. When do you page manually?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Core Data with @FetchRequest in SwiftUI | Continued Learning #14",
+      "url": "https://www.youtube.com/watch?v=nalfX8yP0wc&t=1258s",
+      "channel": "Swiftful Thinking",
+      "start": 1258,
+      "moment": "but it's a little complicated for beginner developers so we're just going to do this very simply we're going to"
+    },
+    {
+      "title": "iOS 15: Dynamically filtering @FetchRequest with SwiftUI – Core Data SwiftUI Tutorial 6/7",
+      "url": "https://www.youtube.com/watch?v=O4043RVjCGU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

@@ -13,6 +13,10 @@
     {
       "title": "RequestReviewAction",
       "url": "https://developer.apple.com/documentation/storekit/requestreviewaction"
+    },
+    {
+      "title": "Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines"
     }
   ],
   "signature": {
@@ -33,5 +37,49 @@
     "Track success count, last crash day and previous prompt days.",
     "All four conditions must hold on a `success` event.",
     "Count prompts within the last 365 days with `count(where:)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Deciding *when* to call `requestReview()` is product logic: after successes, not after crashes, and rate-limited. It's like gating an NPS survey in a web app, except Apple also enforces 3 prompts per year.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "An NPS survey gate in a web app vs `requestReview()`: what does Apple control that you don't (whether it shows at all)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must the logic handle \"prompt requested but system didn't show it\"? Can you even tell?"
+    },
+    {
+      "kind": "contrast",
+      "q": "In-app review prompt vs a link to the App Store review page: when is each appropriate?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which user moments count as \"success\" in your app?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Reviews for SwiftUI Advanced Architecture by Swiftful Thinking",
+      "url": "https://www.youtube.com/watch?v=4rt_Ern-DZU&t=16s",
+      "channel": "Swiftful Thinking",
+      "start": 16,
+      "moment": "recording this video in advance and as people complete the course I've been linking them to this video to leave a"
+    },
+    {
+      "title": "How to ask the user to leave an App Store review – Instafilter SwiftUI Tutorial 8/13",
+      "url": "https://www.youtube.com/watch?v=RUWGjeDCkN8",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Swift UI provides a special environment key called request review which lets us"
+    },
+    {
+      "title": "Request App Ratings & Review - SwiftUI | iOS 16 | Xcode 14",
+      "url": "https://www.youtube.com/watch?v=_oTPT3gFUms",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "the code to get this review prompt to show up is actually quite easy how it works and when you should pop it up that's the tricky part but let's start with the "
+    }
+  ],
+  "articles": []
 }

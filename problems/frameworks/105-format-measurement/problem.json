@@ -17,6 +17,10 @@
     {
       "title": "UnitLength",
       "url": "https://developer.apple.com/documentation/foundation/unitlength"
+    },
+    {
+      "title": "FormatStyle",
+      "url": "https://developer.apple.com/documentation/foundation/formatstyle"
     }
   ],
   "signature": {
@@ -37,5 +41,38 @@
     "`Measurement(value:unit:)` and `.converted(to: .miles)`.",
     "Format with a `Measurement<UnitLength>.FormatStyle` pinned to `en_US`.",
     "Pace: `Duration.seconds(km * 330).formatted(.time(pattern: .hourMinuteSecond))`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`Measurement<UnitLength>` converts and formats units with locale awareness (km vs miles by region). JS has `Intl.NumberFormat` with `style: 'unit'` for formatting, but no conversion.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Intl.NumberFormat('en-US', {style: 'unit', unit: 'kilometer'})` formats. Where does JS do the conversion?"
+    },
+    {
+      "kind": "edge",
+      "q": "`usage: .road` vs `.asProvided`: what changes for a UK user?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Measurement` vs raw `Double`s with comments: which prevents unit mix-ups?"
+    },
+    {
+      "kind": "practice",
+      "q": "Fitness apps: store in SI units, display in the user's locale. Where does conversion happen?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14",
+      "url": "https://www.youtube.com/watch?v=8O8HmKn2OFk",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "New Way to Format Dates in Swift (5.5)",
+      "url": "https://www.youtube.com/watch?v=5I1ghMpU4rs",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

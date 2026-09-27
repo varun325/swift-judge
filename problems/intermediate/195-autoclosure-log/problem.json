@@ -30,5 +30,44 @@
     "`@autoclosure` wraps an argument in a closure, so it's only evaluated if you call it.",
     "Guard on the level first; call `message()` only when it passes.",
     "`guard level >= 2 else { return }; log.lines.append(\"LOG \\(message())\")`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`@autoclosure` wraps an argument expression in a closure automatically, so `debugLog(expensive())` doesn't evaluate `expensive()` unless needed. In JS you'd pass `() => expensive()` by hand. `assert`, `??` and `&&` all rely on it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS loggers take `() => msg` to be lazy. How does `@autoclosure` hide that at the call site, and is hiding it good?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is an `@autoclosure` argument evaluated once or every time the closure is called?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@autoclosure` vs `os.Logger`'s interpolation (which is lazy too): how does Apple's logger avoid formatting cost?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why is `@autoclosure` discouraged for public APIs where evaluation isn't obvious?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift Closures: @escaping Explained",
+      "url": "https://www.youtube.com/watch?v=xiS5gJOIQxI",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

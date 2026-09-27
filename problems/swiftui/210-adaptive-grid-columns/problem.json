@@ -16,6 +16,10 @@
     {
       "title": "LazyVGrid",
       "url": "https://developer.apple.com/documentation/swiftui/lazyvgrid"
+    },
+    {
+      "title": "Layout fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/layout-fundamentals"
     }
   ],
   "signature": {
@@ -44,5 +48,42 @@
     "Each extra column costs its minimum width plus one spacing.",
     "`count = max(1, floor((W + s) / (m + s)))`.",
     "Then share the remaining width equally: `(W − s × (count − 1)) / count`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`GridItem(.adaptive(minimum:))` fits as many columns as possible, the same as CSS Grid `repeat(auto-fill, minmax(m, 1fr))`. The column-count maths is identical.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS `grid-template-columns: repeat(auto-fill, minmax(120px, 1fr))` vs `GridItem(.adaptive(minimum: 120))`: are the results the same?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.adaptive` vs `.flexible` vs `.fixed`: which for a photo grid, which for a calendar?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens when the container is narrower than `minimum`?"
+    },
+    {
+      "kind": "practice",
+      "q": "`LazyVGrid` vs `Grid`: which is lazy, and which aligns cells across rows?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "LazyVGrid, LazyHGrid, and GridItems in SwiftUI | Bootcamp #16",
+      "url": "https://www.youtube.com/watch?v=vHvb7LH8VuE&t=702s",
+      "channel": "Swiftful Thinking",
+      "start": 702,
+      "moment": "confusing but right now we have one adaptive column and it appears"
+    },
+    {
+      "title": "SwiftUI Grids - LazyVGrid, LazyHGrid, Static Grid",
+      "url": "https://www.youtube.com/watch?v=vfUalXtwth0&t=76s",
+      "channel": "Sean Allen",
+      "start": 76,
+      "moment": "with the basics and work our way up when dealing with a lazy V grid the v stands for vertical right so we need to tell it how many columns to have and that is a"
+    }
+  ],
+  "articles": []
 }

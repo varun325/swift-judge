@@ -30,5 +30,46 @@
     "Use `Int128` as the accumulator.",
     "`multipliedReportingOverflow(by:)` returns the product and an overflow flag.",
     "Negative inputs have no factorial."
+  ],
+  "impact": "edge",
+  "jsBridge": "`Int128` (Swift 6) gives 128-bit integers with the same trap-on-overflow rules. JS `BigInt` is arbitrary-precision (never overflows) but slower. Swift gives you fixed headroom at native speed.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`BigInt` never overflows. `Int128` does, just much later. When would you prefer each?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Int128` vs `Decimal` vs a BigInt package: which for money, which for cryptography?"
+    },
+    {
+      "kind": "edge",
+      "q": "At what n does n! overflow `Int128`? How does `multipliedReportingOverflow` tell you?"
+    },
+    {
+      "kind": "practice",
+      "q": "Does 128-bit arithmetic come up in app work (UUID maths, large IDs)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What's new in SwiftUI for iOS 27?",
+      "url": "https://www.youtube.com/watch?v=tNxEqyUVGck&t=1468s",
+      "channel": "Paul Hudson",
+      "start": 1468,
+      "moment": "list. Try again. Uh in this case, I'm probably going to see five, maybe. 1 2 3 4 5. And then, the rest, 6 7 8 9, will"
+    },
+    {
+      "title": "What's New in Swift 5.3",
+      "url": "https://www.youtube.com/watch?v=RhuYDAEdGHE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Evolution proposals",
+      "url": "https://www.swift.org/swift-evolution/",
+      "source": "swift.org"
+    }
   ]
 }

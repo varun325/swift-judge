@@ -31,5 +31,55 @@
     "`map` is a generic method on `Sequence`: `Element` in, `T` out.",
     "Loop over `self`, append `try transform(element)`, and mark the method `rethrows`.",
     "`result.reserveCapacity(underestimatedCount)` before the loop."
+  ],
+  "impact": "edge",
+  "jsBridge": "Writing `map` yourself shows what JS's `Array.prototype.map` hides: `reserveCapacity(underestimatedCount)` avoids reallocations, `rethrows` propagates errors, and generics keep it type-safe for any `Sequence`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `map` exists only on arrays (plus typed arrays). What does writing it on `Sequence` give you?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why `underestimatedCount` and not `count`? What sequences can't know their count?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Eager `map` vs `lazy.map`: when does each run the closure?"
+    },
+    {
+      "kind": "practice",
+      "q": "Reading standard library source (github.com/swiftlang/swift) is a great learning move. What surprised you?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to Filter, Sort, and Map in Swift | Swift Basics #16",
+      "url": "https://www.youtube.com/watch?v=NkOU60vwUEY&t=19s",
+      "channel": "Swiftful Thinking",
+      "start": 19,
+      "moment": "have to write that manual Loop if we are doing certain things and so three of the most common things that we do when we're"
+    },
+    {
+      "title": "Inside the Standard Library: Sequence.map",
+      "url": "https://www.youtube.com/watch?v=wlxQPfFEP90&t=3s",
+      "channel": "Paul Hudson",
+      "start": 3,
+      "moment": "[Music] this is the first video in my new series inside the standard library today we'll"
+    },
+    {
+      "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+      "url": "https://www.youtube.com/watch?v=a3AH0ItFTKU&t=33s",
+      "channel": "Sean Allen",
+      "start": 33,
+      "moment": "drive you home from work this function will work no matter what the vehicle is right it doesn't care it could be a motorcycle a cyber truck a Porsche 911 GT3 as"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

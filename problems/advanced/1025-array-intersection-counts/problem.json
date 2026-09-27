@@ -35,5 +35,44 @@
     "A set loses duplicates; count occurrences instead.",
     "Build counts for `a`, then walk `b`, consuming a count each time you keep an element.",
     "`b.filter { … }` with a mutable counts dictionary captured by the closure."
+  ],
+  "impact": "edge",
+  "jsBridge": "Count one array into a `[Int: Int]`, then walk the other, decrementing. The JS `Map` version is identical. Swift's `default:` subscript makes the counting a one-liner.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`counts.set(x, (counts.get(x) ?? 0) + 1)` vs `counts[x, default: 0] += 1`: which is clearer?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Dictionary counting vs sorting both arrays + two pointers: memory vs time trade-off?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which array should you count, the bigger or the smaller? Why?"
+    },
+    {
+      "kind": "practice",
+      "q": "Shopping cart vs inventory reconciliation is multiset intersection. Where else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "What's the best way to prepare for a Swift interview – Sean Allen on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=ys9M_iNqD6s",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -36,5 +36,42 @@
     "`value.formatted(style)` with a `.currency`, `.percent` or `.number` style.",
     "Chain `.locale(Locale(identifier: …))` onto each style.",
     "Compact: `.number.notation(.compactName)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`value.formatted(.currency(code: \"EUR\"))` is `Intl.NumberFormat` in JS, the same ICU data underneath, with a Swift API that chains styles (`.precision`, `.notation(.compactName)`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'})` vs `.formatted(.currency(code: \"EUR\").locale(...))`: same output?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should currency follow the user's locale or the product's currency? What about the symbol position?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`FormatStyle` vs `NumberFormatter`: why prefer the newer API?"
+    },
+    {
+      "kind": "practice",
+      "q": "StoreKit gives you `product.displayPrice`. Why should you never format App Store prices yourself?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14",
+      "url": "https://www.youtube.com/watch?v=8O8HmKn2OFk&t=46s",
+      "channel": "Paul Hudson",
+      "start": 46,
+      "moment": "so 15 means total divided by 100 times 15. and finally I'm going to return the"
+    },
+    {
+      "title": "New Way to Format Dates in Swift (5.5)",
+      "url": "https://www.youtube.com/watch?v=5I1ghMpU4rs&t=37s",
+      "channel": "Sean Allen",
+      "start": 37,
+      "moment": "right this text hello world let's make this a date so if you don't know initializing a date will give you"
+    }
+  ],
+  "articles": []
 }

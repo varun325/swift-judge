@@ -17,6 +17,14 @@
     {
       "title": "Stepper",
       "url": "https://developer.apple.com/documentation/swiftui/stepper"
+    },
+    {
+      "title": "Form",
+      "url": "https://developer.apple.com/documentation/swiftui/form"
+    },
+    {
+      "title": "FocusState",
+      "url": "https://developer.apple.com/documentation/swiftui/focusstate"
     }
   ],
   "signature": {
@@ -52,5 +60,42 @@
     "Snap relative to the lower bound, not to zero.",
     "`lower + ((v − lower) / step).rounded() * step`, then clamp.",
     "Handle `step <= 0` by skipping the snapping."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`Slider(value:in:step:)` snaps to steps measured from the lower bound, like `<input type=range min step>`, where values snap to `min + k·step`, not to multiples of the step.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "HTML range `min=3 step=5` snaps to 3, 8, 13… Is SwiftUI the same?"
+    },
+    {
+      "kind": "edge",
+      "q": "Floating-point steps like 0.1: why can the value show 0.30000000000000004? How do you display it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Slider` vs `Stepper` vs a `TextField` with a formatter: which for precise values?"
+    },
+    {
+      "kind": "practice",
+      "q": "Accessibility: how does VoiceOver adjust a slider? Why do step values matter?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Create a Stepper in SwiftUI | Bootcamp #41",
+      "url": "https://www.youtube.com/watch?v=T7inPesyOY8&t=14s",
+      "channel": "Swiftful Thinking",
+      "start": 14,
+      "moment": "we are going to use the stepper in this video so a stepper is the perfect component for any"
+    },
+    {
+      "title": "Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7",
+      "url": "https://www.youtube.com/watch?v=fB4HnpS8qkw&t=13s",
+      "channel": "Paul Hudson",
+      "start": 13,
+      "moment": "a very precise way the other common option is called slider which we'll use that later on this also selects values"
+    }
+  ],
+  "articles": []
 }

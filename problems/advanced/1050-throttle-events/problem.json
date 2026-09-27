@@ -42,5 +42,44 @@
     "Throttle: remember the last run time and skip events inside the cooldown.",
     "Debounce: an event runs only if the next event is at least `interval` later (or there is none).",
     "Debounced runs happen at `event time + interval`."
+  ],
+  "impact": "core",
+  "jsBridge": "Throttle vs debounce are the JS interview classics (lodash). Here they're pure functions over timestamps. In an app you'd use Combine's `.debounce`/`.throttle` or an `AsyncSequence` algorithm (swift-async-algorithms).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "lodash `debounce` vs Combine `.debounce(for:scheduler:)`: what's the Swift equivalent of `leading`/`trailing` options?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Throttle vs debounce: which for search-as-you-type, which for scroll handlers?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is the last event in a burst always delivered by throttle? By debounce?"
+    },
+    {
+      "kind": "practice",
+      "q": "In SwiftUI, how would you debounce a `TextField` search: `.task(id:)` + `Task.sleep`, or Combine?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "What's the best way to prepare for a Swift interview – Sean Allen on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=ys9M_iNqD6s",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

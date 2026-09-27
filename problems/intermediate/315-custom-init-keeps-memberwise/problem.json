@@ -31,5 +31,65 @@
     "Writing an `init` inside a struct removes the free memberwise initialiser.",
     "Put your custom `init(name:)` in an **extension** so both initialisers exist.",
     "`extension Player { init(name: String) { self.name = name; self.number = name.unicodeScalars.reduce(0) { $0 + Int($1.value) } % 100 } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Structs get a free memberwise `init`, like a TS class with parameter properties. Writing a custom `init` inside the struct **removes** it, while writing it in an **extension** keeps both. There's no JS parallel.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `constructor(public name: string)` gives a free constructor. Why does Swift drop the memberwise init when you add your own?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is the memberwise init `public` for a public struct? (No, it's `internal`.) Why does that matter for packages?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom init in an extension vs a static factory (`Player.named(\"x\")`): which reads better?"
+    },
+    {
+      "kind": "practice",
+      "q": "Previews and tests often need convenience inits. Where do you put them (`#if DEBUG` extensions)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use inits and enums in SwiftUI | Bootcamp #13",
+      "url": "https://www.youtube.com/watch?v=su0KLQq0JM0&t=20s",
+      "channel": "Swiftful Thinking",
+      "start": 20,
+      "moment": "we're going to talk about units and init stands for initializer and it's basically just a function that runs to"
+    },
+    {
+      "title": "Improved synthesized memberwise initializers in Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=79U1lkkap-g",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "SEO 242 introduces major improvements to one of Swift's most commonly used features member wise initializes for"
+    },
+    {
+      "title": "Swift - Convenience Initializers",
+      "url": "https://www.youtube.com/watch?v=IPrYRyd2qQU",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "in today's video we're talking about convenience initializers on your custom subclasses we're going to talk about how"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

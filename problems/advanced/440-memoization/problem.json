@@ -15,6 +15,10 @@
     {
       "title": "Closures — Capturing Values",
       "book": "LanguageGuide/Closures"
+    },
+    {
+      "title": "NSCache",
+      "url": "https://developer.apple.com/documentation/foundation/nscache"
     }
   ],
   "signature": {
@@ -32,5 +36,35 @@
     "Cache results in a dictionary that the closure captures.",
     "Pass the memoised function into `body` so recursive calls also go through the cache.",
     "`if let hit = cache.value[input] { return hit }; let result = body(recurse.value!, input); cache.value[input] = result`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Memoising with a captured dictionary is the same closure trick as a JS `memoize`. The recursion-friendly signature (`body` receives the memoised function) is the Y-combinator pattern, with generics keeping it typed.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "lodash `memoize` keys by the first argument's identity or string. What does `Hashable` give Swift here?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is this memoiser thread-safe? What happens in Swift 6 if two tasks call it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Memoised recursion vs bottom-up DP: which is easier to reason about for stack depth?"
+    },
+    {
+      "kind": "practice",
+      "q": "Caching expensive formatting or layout calculations: where does memoisation help in UI code?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save and cache images in a SwiftUI app | Continued Learning #27",
+      "url": "https://www.youtube.com/watch?v=yXSC6jTkLP4&t=981s",
+      "channel": "Swiftful Thinking",
+      "start": 981,
+      "moment": "these catch functions up here so we're going to add func uh save to catch open close"
+    }
+  ],
+  "articles": []
 }

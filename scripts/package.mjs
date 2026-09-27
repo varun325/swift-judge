@@ -5,9 +5,12 @@
  *   node scripts/package.mjs --win      # Windows x64: NSIS installer + portable .exe in dist/
  *   node scripts/package.mjs --dmg      # wrap the already built, signed .app in dist/*.dmg
  *
- * The packaged app records this project folder in Resources/source-root.json, so it reads
- * problems, notes and docs live from here (and keeps the plug-in workflow). A copy is also
- * bundled inside the app as a fallback if the project folder moves.
+ *   node scripts/package.mjs --portable # the .app for distribution (used by the .dmg)
+ *
+ * A local build records this project folder in Resources/source-root.json, so the installed app
+ * reads problems, notes and docs live from here (keeping the plug-in workflow). Builds meant for
+ * other machines (--portable, --win) record nothing: they use only the copy bundled inside the app,
+ * so no path from this machine ships in a download.
  */
 import { execFileSync } from 'node:child_process'
 import fs from 'node:fs'
@@ -18,9 +21,9 @@ const appName = 'Swift Judge.app'
 const built = path.join(root, 'dist', 'mac-arm64', appName)
 const target = path.join('/Applications', appName)
 
-function recordSourceRoot() {
+function recordSourceRoot(local) {
   fs.mkdirSync(path.join(root, 'build'), { recursive: true })
-  fs.writeFileSync(path.join(root, 'build', 'source-root.json'), JSON.stringify({ root }, null, 2) + '\n')
+  fs.writeFileSync(path.join(root, 'build', 'source-root.json'), JSON.stringify(local ? { root } : {}, null, 2) + '\n')
 }
 
 if (process.argv.includes('--dmg')) {
@@ -31,8 +34,7 @@ if (process.argv.includes('--dmg')) {
   execFileSync('hdiutil', ['verify', path.join(root, 'dist', dmg)], { stdio: 'inherit' })
   console.log(`built dist/${dmg}`)
 } else if (process.argv.includes('--win')) {
-  // On Windows the recorded macOS path won't exist, so the app uses its bundled problems.
-  recordSourceRoot()
+  recordSourceRoot(false)
   execFileSync('npx', ['electron-builder', '--win', '--x64'], { cwd: root, stdio: 'inherit' })
   for (const f of fs.readdirSync(path.join(root, 'dist')).filter((f) => f.endsWith('.exe'))) console.log(`built dist/${f}`)
 } else if (process.argv.includes('--install')) {
@@ -49,7 +51,7 @@ if (process.argv.includes('--dmg')) {
   execFileSync('ditto', [built, target], { stdio: 'inherit' })
   console.log(`installed ${target}`)
 } else {
-  recordSourceRoot()
+  recordSourceRoot(!process.argv.includes('--portable'))
   execFileSync('npx', ['electron-builder', '--mac', 'dir', '--arm64'], { cwd: root, stdio: 'inherit' })
   // No Developer ID here: ad-hoc sign the whole bundle so Apple Silicon accepts the modified app.
   execFileSync('codesign', ['--force', '--deep', '--sign', '-', built], { stdio: 'inherit' })

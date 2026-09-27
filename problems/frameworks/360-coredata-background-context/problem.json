@@ -17,6 +17,10 @@
     {
       "title": "Using Core Data in the background",
       "url": "https://developer.apple.com/documentation/coredata/using-core-data-in-the-background"
+    },
+    {
+      "title": "Core Data",
+      "url": "https://developer.apple.com/documentation/coredata"
     }
   ],
   "signature": {
@@ -38,5 +42,38 @@
     "Do the work inside `await background.perform { … }` and return object IDs.",
     "Save the background context; the view context merges automatically when configured.",
     "On the main context, re-fetch with `existingObject(with: id)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Import on a background context, save, and let the main (view) context merge the changes. It's like doing heavy work in a Web Worker and posting results back, except Core Data merges object graphs, not messages.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Web Worker computes, posts a message, the main thread updates state. How is `automaticallyMergesChangesFromParent` like that?"
+    },
+    {
+      "kind": "edge",
+      "q": "Passing an `NSManagedObject` across contexts crashes or corrupts. What do you pass instead (`NSManagedObjectID`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`newBackgroundContext()` vs `performBackgroundTask` vs `NSBatchInsertRequest`: which for 100k rows?"
+    },
+    {
+      "kind": "practice",
+      "q": "Merge conflicts when both contexts edit the same object: what's `NSMergeByPropertyObjectTrumpMergePolicy`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save current user's portfolio to Core Data with MVVM | SwiftUI Crypto App #15",
+      "url": "https://www.youtube.com/watch?v=7cqag8Acr2s",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "iOS 15: Dynamically filtering @FetchRequest with SwiftUI – Core Data SwiftUI Tutorial 6/7",
+      "url": "https://www.youtube.com/watch?v=O4043RVjCGU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

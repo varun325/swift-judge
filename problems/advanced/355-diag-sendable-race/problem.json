@@ -13,11 +13,56 @@
     {
       "title": "Concurrency — Sendable Types",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "hints": [
     "Swift 6 rejects sharing a non-`Sendable` class between concurrent tasks.",
     "Make `Counter` a plain class and mutate one instance both inside a `Task` and in the enclosing function.",
     "`let counter = Counter(); Task { counter.value += 1 }; counter.value += 1`."
+  ],
+  "impact": "core",
+  "jsBridge": "Swift 6 **compile-time data-race safety**: sharing a non-`Sendable` mutable class across tasks is a compile error. JS never needs this (single thread), and most languages only find races at runtime (TSan).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS is race-free by being single-threaded. Swift 6 is race-free by construction with multiple threads. What's the price (annotations, `Sendable`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Fixes: make it an `actor`, make it `final class: Sendable` with immutable state, or `@MainActor`. When is each right?"
+    },
+    {
+      "kind": "edge",
+      "q": "`@unchecked Sendable`: when is it legitimate, and why is it an escape hatch?"
+    },
+    {
+      "kind": "practice",
+      "q": "Migrating an app to Swift 6 mode: which warnings dominate, and what's the strategy?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is the Sendable protocol in Swift? | Swift Concurrency #11",
+      "url": "https://www.youtube.com/watch?v=wSmTbtOwgbE&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "Welcome back everyone. I'm Nick. This is Swiftful Thinking and today we're going to look at the sendable protocol."
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

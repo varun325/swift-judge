@@ -35,5 +35,51 @@
     "Kahn's algorithm: repeatedly take a course with no remaining prerequisites.",
     "Track in-degrees; keep available courses in a set and always take its `min()`.",
     "`while let course = available.min() { … }` — return `[]` if fewer than `numCourses` were taken."
+  ],
+  "impact": "edge",
+  "jsBridge": "Kahn's algorithm: in-degree counts + a queue of ready nodes. Identical to JS. Picking the smallest ready course needs a sorted structure; with no heap in the standard library, `min()` over a set is the simple choice.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would you get the \"smallest available\" node efficiently in JS? Same problem in Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Kahn's (BFS) vs DFS-based topological sort: which detects cycles more naturally?"
+    },
+    {
+      "kind": "edge",
+      "q": "What should the function return when there's a cycle? Empty array, optional, or throw?"
+    },
+    {
+      "kind": "practice",
+      "q": "Build systems and SPM resolve dependency order this way. Where else in apps (onboarding steps, migrations)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "iOS Dev Interview Prep - Take Home Project - UIKit - Programmatic UI - FULL COURSE",
+      "url": "https://www.youtube.com/watch?v=JzngncpZLuw&t=18s",
+      "channel": "Sean Allen",
+      "start": 18,
+      "moment": "they're focusing on so to put it bluntly like UI kit doesn't really change much year to year so the concepts and code in this course is still valid even though "
+    },
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -13,6 +13,14 @@
     {
       "title": "CLLocation",
       "url": "https://developer.apple.com/documentation/corelocation/cllocation"
+    },
+    {
+      "title": "Core Location",
+      "url": "https://developer.apple.com/documentation/corelocation"
+    },
+    {
+      "title": "MapKit",
+      "url": "https://developer.apple.com/documentation/mapkit"
     }
   ],
   "signature": {
@@ -36,5 +44,38 @@
     "Wrap coordinates in `CLLocation` and ask for `distance(from:)`.",
     "Skip invalid coordinates with a range check, then sort by distance.",
     "Format kilometres to one decimal place."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`CLLocation.distance(from:)` computes great-circle distance in metres, the haversine formula JS devs copy from Stack Overflow, built in and accurate on the WGS-84 ellipsoid.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The JS haversine snippet assumes a spherical Earth. How accurate is it compared with `CLLocation.distance(from:)`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Distances across the antimeridian (±180° longitude): does your sorting still work?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Sorting places by distance on-device vs asking the server (geo index): when is each right?"
+    },
+    {
+      "kind": "practice",
+      "q": "Showing \"1.2 km\" vs \"0.7 mi\": which formatter respects the user's region?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Custom Map Annotation Pins for SwiftUI MapKit Map | SwiftUI Map App #6",
+      "url": "https://www.youtube.com/watch?v=javFZbCYGfc",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Selecting and editing map annotations – Bucket List SwiftUI Tutorial 8/12",
+      "url": "https://www.youtube.com/watch?v=zFvsOI2eYBU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

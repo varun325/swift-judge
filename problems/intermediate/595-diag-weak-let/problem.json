@@ -19,5 +19,41 @@
     "ARC sets weak references to `nil` — so they must be optional.",
     "Declare the weak property with a **non-optional** type.",
     "`weak let owner: Owner` with an `init(owner:)`."
+  ],
+  "impact": "core",
+  "jsBridge": "A `weak` reference must be an optional `var`, because ARC sets it to `nil` automatically when the object dies. JS `WeakRef` is similar (`deref()` can return `undefined`), but Swift makes the nil-ing visible in the type.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `WeakRef.deref()` may return `undefined`. How does Swift's `weak var x: T?` express the same thing in the type?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`weak` vs `unowned`: which one crashes if the object is gone? When is `unowned` justified?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a `weak` reference point to a struct? Why not?"
+    },
+    {
+      "kind": "practice",
+      "q": "`weak var delegate` is idiomatic. What goes wrong if you forget `weak`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13",
+      "url": "https://www.youtube.com/watch?v=HRHtOdTJH70&t=537s",
+      "channel": "Swiftful Thinking",
+      "start": 537,
+      "moment": "same as self and self here and so then here I can make a weak reference to self"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

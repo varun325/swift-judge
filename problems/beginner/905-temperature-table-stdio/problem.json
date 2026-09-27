@@ -19,5 +19,44 @@
     "`stride` works with negative steps too.",
     "Convert to `Double` before `* 9 / 5`, then round.",
     "`print(\"\\(c)°C = \\(Int(f))°F\")`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`stride(from:through:by:)` handles negative steps, which a JS `for` loop needs a flipped condition for. Rounding to the nearest integer uses `Int(f.rounded())`, not `Int(f)`, which truncates.",
+  "compass": [
+    {
+      "kind": "edge",
+      "q": "`Int(-0.6)` is 0, `Int((-0.6).rounded())` is -1. Which one prints \"-0\"?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`stride` handles a negative step. What does `stride(from: 0, through: 10, by: -1)` yield?"
+    },
+    {
+      "kind": "js",
+      "q": "`Math.round` vs `rounded()`: how do they differ on negatives?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should you print `°C` yourself or use `MeasurementFormatter`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to skip loop items with break and continue – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=z_kR4cP23c4",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "How to use For Loops in Swift | Swift Basics #15",
+      "url": "https://www.youtube.com/watch?v=7hAmXRwBQxc",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -17,6 +17,10 @@
     {
       "title": "NotificationCenter.notifications(named:object:)",
       "url": "https://developer.apple.com/documentation/foundation/notificationcenter/notifications(named:object:)"
+    },
+    {
+      "title": "Foundation",
+      "url": "https://developer.apple.com/documentation/foundation"
     }
   ],
   "signature": {
@@ -38,5 +42,35 @@
     "`center.notifications(named:)` is an async sequence of notifications.",
     "Start the listener, wait until it has created its sequence, then post.",
     "Read `note.userInfo?[\"text\"]` and stop at `\"bye\"`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`NotificationCenter` is an app-wide event bus, like a global `EventEmitter` or DOM `CustomEvent`s. `notifications(named:)` turns it into an `AsyncSequence` you can `for await` over.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`window.dispatchEvent(new CustomEvent('chat.message'))` vs `NotificationCenter.default.post`: which is typed? (Neither, really.)"
+    },
+    {
+      "kind": "edge",
+      "q": "Stringly-typed `userInfo` dictionaries: how do you make notification payloads type-safe?"
+    },
+    {
+      "kind": "contrast",
+      "q": "NotificationCenter vs delegates vs closures vs `@Observable`: when is a global bus justified?"
+    },
+    {
+      "kind": "practice",
+      "q": "System notifications you actually observe: keyboard frame, app lifecycle, `NSPersistentStoreRemoteChange`."
+    }
+  ],
+  "videos": [
+    {
+      "title": "Fixing the keyboard: NotificationCenter – JavaScript Injection, part 7",
+      "url": "https://www.youtube.com/watch?v=crjzwQ5yCAE&t=122s",
+      "channel": "Paul Hudson",
+      "start": 122,
+      "moment": "notifications when things happen keyboards changing apps moving to the background or foreground as well as any"
+    }
+  ],
+  "articles": []
 }

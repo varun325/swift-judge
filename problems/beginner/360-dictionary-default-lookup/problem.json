@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Accessing a Dictionary",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -31,5 +35,46 @@
     "A dictionary subscript can take a `default:` value for missing keys.",
     "Put the five known codes in a dictionary, then map each code to its phrase or to the fallback text.",
     "`codes.map { phrases[$0, default: \"Unknown (\\($0))\"] }`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS: `table[code] ?? \\`Unknown (${code})\\``. Swift's `??` is the same operator, but the left side must be an optional. Dictionary lookup returns `String?`, so the types line up perfectly.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `??` and Swift `??` look identical. What happens in Swift if the left side isn't optional?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`dict[k] ?? fallback` vs `dict[k, default: fallback]`: when does each make sense, reading vs mutating?"
+    },
+    {
+      "kind": "edge",
+      "q": "The right side of `??` is an `@autoclosure`. When is it evaluated? Does an expensive fallback run when the key exists?"
+    },
+    {
+      "kind": "practice",
+      "q": "Mapping error codes to user-facing messages: should the table live in code, a `Localizable.xcstrings` catalog, or the server?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=7s",
+      "channel": "Paul Hudson",
+      "start": 7,
+      "moment": "really useful it's called the nil coalescing operator and it will unwrap the optional"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

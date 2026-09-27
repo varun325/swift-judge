@@ -13,6 +13,10 @@
     {
       "title": "Collection Types — Sets",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Set",
+      "url": "https://developer.apple.com/documentation/swift/set"
     }
   ],
   "signature": {
@@ -30,5 +34,55 @@
     "Put everything in a `Set` for O(1) lookups.",
     "Only start counting a run at its **first** number — where `n - 1` isn't in the set — then count upwards.",
     "`for n in set where !set.contains(n - 1) { var len = 1; while set.contains(n + len) { len += 1 }; best = max(best, len) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The same O(n) set-based algorithm as in JS. Swift's `Set.contains` is an O(1) hash lookup, and the \"only start at run beginnings\" trick is what keeps it linear.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "Sorting first (O(n log n)) vs the set trick (O(n)): at what n does the difference show up on-device?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `for x in set where !set.contains(x - 1)` keep it O(n) even though there's a nested while loop?"
+    },
+    {
+      "kind": "js",
+      "q": "In JS, `Set` of numbers is keyed by SameValueZero. Is Swift's `Set<Int>` any different for negatives and zero?"
+    },
+    {
+      "kind": "practice",
+      "q": "Streaks (\"7 days in a row\") are this problem with dates. Why is `Calendar` arithmetic needed instead of plain integers?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+      "url": "https://www.youtube.com/watch?v=WxHsQDbIdl8",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "This is swivel thinking and in this series we are learning how to use git and source control. And before we"
+    },
+    {
+      "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=9GjGRqK8LSw",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] so far you've met two ways of collecting data in swift arrays and dictionaries"
+    },
+    {
+      "title": "Swift Basics: Array vs. Set",
+      "url": "https://www.youtube.com/watch?v=_TvQPMZdwPI",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "when you need a collection of something in Swift You instinctively reach for an array don't you stop it stop and think would a set work here because if it does "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

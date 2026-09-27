@@ -17,6 +17,10 @@
     {
       "title": "FetchDescriptor",
       "url": "https://developer.apple.com/documentation/swiftdata/fetchdescriptor"
+    },
+    {
+      "title": "SwiftData",
+      "url": "https://developer.apple.com/documentation/swiftdata"
     }
   ],
   "signature": {
@@ -42,5 +46,42 @@
     "`#Predicate { $0.rating >= n }` builds a type-checked query.",
     "Capture query values into local `let`s before using them in the macro.",
     "`context.fetchCount(descriptor)` counts without loading models."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`#Predicate { $0.rating >= 4 }` is a **typed** query written in Swift and translated to SQL, the way Prisma's typed `where` object replaces string queries. Typos and type errors fail at compile time.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Prisma `where: { rating: { gte: 4 } }` vs `#Predicate { $0.rating >= 4 }`: which is more natural to write?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't a `#Predicate` call your own functions or computed properties? What does the macro translate to?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Filtering with `#Predicate` in the store vs `filter` in memory: when does the difference matter?"
+    },
+    {
+      "kind": "practice",
+      "q": "Dynamic predicates (user-chosen filters) with `@Query`: how do you rebuild the query in a subview's `init`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16",
+      "url": "https://www.youtube.com/watch?v=huRKU-TAD3g&t=3868s",
+      "channel": "Swiftful Thinking",
+      "start": 3868,
+      "moment": "was that easy to sort this request uh awesome and we can also add filtering into this"
+    },
+    {
+      "title": "Filtering @Query using #Predicate – SwiftData SwiftUI Tutorial 2/5",
+      "url": "https://www.youtube.com/watch?v=bV5KnqMHXe0",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] you've already seen how query can be used to sort data according to a"
+    }
+  ],
+  "articles": []
 }

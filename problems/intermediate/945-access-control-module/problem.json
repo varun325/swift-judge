@@ -19,5 +19,41 @@
     "An extension in the same file counts as \"inside\" for `private`.",
     "Add a separate type that tries to read the private property.",
     "`struct Thief { func steal() -> Int { Safe().code } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`private` in Swift is scoped to the declaration **plus its extensions in the same file**, not the whole class like TS `private`, and not the whole file like `fileprivate`. The file boundary matters in Swift, which JS modules only approximate.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS module (file) scope is like which Swift access level?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`private` vs `fileprivate`: when did Swift 4 change `private` to include same-file extensions, and why?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a nested type access its outer type's `private` members?"
+    },
+    {
+      "kind": "practice",
+      "q": "Splitting a big type into extensions across files forces `private` → `internal`. How do you keep encapsulation?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Access Control (Private vs Public) | Swift Basics #12",
+      "url": "https://www.youtube.com/watch?v=UbX2UtgZTJI&t=949s",
+      "channel": "Swiftful Thinking",
+      "start": 949,
+      "moment": "here with just a final note that private and public are the by far the most common"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Access Control",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/",
+      "source": "swift.org"
+    }
   ]
 }

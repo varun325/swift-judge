@@ -14,11 +14,49 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "Group scores by name in a dictionary of arrays.",
     "Skip malformed lines and out-of-range scores; sort the dictionary by name before printing.",
     "`Int((Double(sum) / Double(count)).rounded())` for averages; `flatMap` all scores for the class average."
+  ],
+  "impact": "edge",
+  "jsBridge": "Aggregate per student with `[String: [Int]]`, skip malformed lines with `guard`, then sort keys for output. It's `Map` + `reduce` in JS. The Swift parts are the `guard let` validation and `default:` subscripts.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: `scores[name] ??= []; scores[name].push(s)`. Swift: `scores[name, default: []].append(s)`. Same thing?"
+    },
+    {
+      "kind": "edge",
+      "q": "Average of integer scores: integer or floating-point division? What rounding does the output need?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Store all scores vs running (count, sum): which scales, and which lets you compute a median?"
+    },
+    {
+      "kind": "practice",
+      "q": "Validation messages for malformed input: silently skip, or report line numbers?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Maxed-out 16-inch MacBook Pro: is the upgrade worth it for developers?",
+      "url": "https://www.youtube.com/watch?v=RNVCBYjzOI0",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

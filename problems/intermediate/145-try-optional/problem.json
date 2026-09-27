@@ -14,6 +14,14 @@
     {
       "title": "Error Handling — Converting Errors to Optional Values",
       "book": "LanguageGuide/ErrorHandling"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -31,5 +39,51 @@
     "`try?` turns a thrown error into `nil`.",
     "Throw when dividing by zero, and use `dividedReportingOverflow` to catch `Int.min / -1`.",
     "`pairs.map { try? divide($0[0], by: $0[1]) }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`try?` converts a thrown error into `nil`, like `await p.catch(() => null)`. `try!` crashes on error, and has no JS analogue beyond an unhandled rejection. Use `try?` when *why* it failed doesn't matter.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`.catch(() => null)` is `try?`. What's `try!` in JS terms, and when is it acceptable in Swift (never in production paths)?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the type of `try? f()` when `f` returns `Int?`: `Int??` or `Int?`? (It changed in Swift 5.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`try?` vs `Result(catching:)`: which keeps the error around?"
+    },
+    {
+      "kind": "practice",
+      "q": "`try? JSONDecoder().decode(...)` hides decoding bugs. What's the cost in debugging time?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+      "url": "https://www.youtube.com/watch?v=lncOFL3Qsns&t=360s",
+      "channel": "Swiftful Thinking",
+      "start": 360,
+      "moment": "title title key is presented in actions up here we're going to create an at State private VAR we'll call this error"
+    },
+    {
+      "title": "How to handle errors in functions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=T-UTLMKx2wc",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+      "url": "https://www.youtube.com/watch?v=Lrc-MX8WgNc",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

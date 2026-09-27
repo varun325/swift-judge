@@ -22,5 +22,46 @@
     "An object is freed when its **last** strong reference goes away — immediately.",
     "`a = nil` doesn't free A because `b` still holds it; reassigning `b` does.",
     "`init A`, `a released`, `init B`, `deinit A`, `b reassigned`…"
+  ],
+  "impact": "core",
+  "jsBridge": "ARC releases an object the moment its last strong reference disappears, so the order of `deinit` output follows your code exactly. JS GC timing is unobservable. This predictability is why retain cycles matter so much in Swift.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Could you write this program in JS and predict when objects are collected? Why not?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does setting a variable to `nil` always deinit the object immediately? What if another reference exists?"
+    },
+    {
+      "kind": "java",
+      "q": "Java GC collects cycles. Swift ARC doesn't. What's the trade-off (pause-free, deterministic vs leak-prone)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Instruments' Memory Graph debugger shows retain cycles. What would a leaking view controller look like there?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create a deinitializer for a class – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=LAhctdU5Mq4",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=35s",
+      "channel": "Sean Allen",
+      "start": 35,
+      "moment": "classes can all have a strong reference pointing back to Shawn so automatic reference counting is going to say that"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

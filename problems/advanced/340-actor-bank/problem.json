@@ -15,6 +15,10 @@
     {
       "title": "Concurrency — Actors",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -33,5 +37,53 @@
     "An `actor` protects its mutable state by running one call at a time.",
     "Deposit from separate child tasks in a task group, each calling `await account.deposit(amount)`.",
     "`actor Account { private var balance = 0; func deposit(_ a: Int) { balance += a }; var current: Int { balance } }`."
+  ],
+  "impact": "core",
+  "jsBridge": "An `actor` serialises access to its state, like a JS object that only ever runs on one event loop, but in a multithreaded world. Every outside call is `await`ed, and the compiler forbids unsynchronised access.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why don't JS objects need actors (single-threaded event loop)? What changes once Web Workers share memory (`SharedArrayBuffer`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Actor **reentrancy**: during an `await` inside an actor method, other calls can run. How can that break an invariant?"
+    },
+    {
+      "kind": "java",
+      "q": "Java `synchronized` vs Swift `actor`: what does each protect, and which can deadlock?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you make an image cache an actor? What about a view model (`@MainActor` instead)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Learn Swift Concurrency (Async, Await, Actors) online for FREE | Swift Concurrency #0",
+      "url": "https://www.youtube.com/watch?v=p6q1RmYUsNU&t=93s",
+      "channel": "Swiftful Thinking",
+      "start": 93,
+      "moment": "asynchronous code in swift if you are a swift developer you need to be writing asynchronous code using async"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc&t=1212s",
+      "channel": "Sean Allen",
+      "start": 1212,
+      "moment": "normally refactored this get user this is probably in a view model somewhere so it's not as messy but again keeping it all in one place so up to our view here s"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

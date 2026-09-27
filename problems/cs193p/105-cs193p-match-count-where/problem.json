@@ -37,8 +37,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L2: Code Breaker App",
-      "url": "https://www.youtube.com/watch?v=63UHypFKRRM",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=63UHypFKRRM&t=3547s",
+      "channel": "Stanford Online",
+      "start": 3547,
+      "moment": "But we're going to add an argument to MatchMarkers. So how do I add an argument to my own \"helicopter View\"? I got a \"helicopter View\". I want it to take an arg"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "`matches.count(where: { $0 == .exact })` counts without building an intermediate array, like `arr.filter(p).length` in JS without the allocation. CS193p uses it to turn match results into peg counts.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`matches.filter(m => m === 'exact').length` vs `count(where:)`: which allocates?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Counting with `count(where:)` vs `reduce` vs a dictionary of counts per case: which for three categories?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `count(where:)` available on every OS your app supports? (It's a compiler/stdlib feature from Swift 6.)"
+    },
+    {
+      "kind": "practice",
+      "q": "Markers laid out in a grid of 2×2: where should the counts→layout logic live, model or view?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

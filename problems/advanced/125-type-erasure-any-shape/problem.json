@@ -31,5 +31,46 @@
     "To store different transformer types together, hide them behind one wrapper type.",
     "`AnyTransformer` stores the base's `transform` method as a closure; `then` builds a new closure that runs both.",
     "`init<T: Transformer>(_ base: T) where T.Input == In, T.Output == Out { _transform = base.transform }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Type erasure (`AnyTransformer<In, Out>`) wraps a protocol with associated types in a concrete generic box, like `AnyPublisher` and `AnyView`. It's a Swift-specific pattern, needed because PATs couldn't be used as types before `any P`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS never needs type erasure. Why does Swift (associated types + no structural typing)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Hand-written `AnyTransformer` vs `any Transformer<String, Int>` (primary associated types, Swift 5.7): is manual erasure still needed?"
+    },
+    {
+      "kind": "edge",
+      "q": "How does the box store the transform: closures capturing the original, or a subclass?"
+    },
+    {
+      "kind": "practice",
+      "q": "`eraseToAnyPublisher()` in Combine is type erasure. Why do Combine APIs return `AnyPublisher`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "(OLD) Using size classes with AnyView type erasure – Bookworm SwiftUI Tutorial 2/10",
+      "url": "https://www.youtube.com/watch?v=nxqtJ4-FMjs&t=246s",
+      "channel": "Paul Hudson",
+      "start": 246,
+      "moment": "non-trivial but from our perspective are you actually using it type erasure is marvelously simple"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Opaque and Boxed Protocol Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0335: Introduce existential any",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0335-existential-any.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

@@ -13,6 +13,14 @@
     {
       "title": "ScenePhase",
       "url": "https://developer.apple.com/documentation/swiftui/scenephase"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -37,5 +45,38 @@
     "React to *transitions*, not to the phase value alone.",
     "Save pending edits on the way into `background`; refresh when coming back from it.",
     "Skip unknown or unchanged phases."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`@Environment(\\.scenePhase)` tells you when the app goes `active`/`inactive`/`background`, like the web's `visibilitychange` event. Saving on `background` is the iOS equivalent of saving on `pagehide`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`document.visibilityState` and `pagehide` on the web: which scene phase maps to each?"
+    },
+    {
+      "kind": "edge",
+      "q": "How much time does the app get after going to the background? Can a save be cut off?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Saving on every keystroke vs on `background`: trade-offs for data loss vs battery?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftData autosaves. When do you still need to save explicitly?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+      "url": "https://www.youtube.com/watch?v=BKxbHnka4-Q",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12",
+      "url": "https://www.youtube.com/watch?v=myLtDcYuE3k",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

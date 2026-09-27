@@ -34,5 +34,35 @@
     "Model screens as an enum; the router owns the stack array and the sheet.",
     "Each event mutates the stack/sheet according to one rule.",
     "Guard `checkout` on `sheet == .cart`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "A coordinator/router moves navigation decisions out of views into testable logic, like centralising route changes in a React Router action or a Redux navigation slice, instead of scattering `navigate()` calls.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`navigate('/checkout')` scattered in components vs a central router: which is easier to test and deep-link?"
+    },
+    {
+      "kind": "edge",
+      "q": "A flow that ends by dismissing a sheet *and* popping to root: who owns that sequence?"
+    },
+    {
+      "kind": "contrast",
+      "q": "UIKit coordinators vs SwiftUI `NavigationPath` owned by a router object: what carried over?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you adopt a routing library (SwiftfulRouting) or keep a small in-house router?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "iOS 15: Using coordinators to manage SwiftUI view controllers – Instafilter SwiftUI Tutorial 6/12",
+      "url": "https://www.youtube.com/watch?v=-a7q-q7zKCg&t=27s",
+      "channel": "Paul Hudson",
+      "start": 27,
+      "moment": "whatever you want to or even pressing cancel none of it works"
+    }
+  ],
+  "articles": []
 }

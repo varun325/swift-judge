@@ -30,5 +30,46 @@
     "Sort by start first.",
     "Each interval either overlaps the last merged one (extend its end) or starts a new one.",
     "`if let last = result.last, iv[0] <= last[1] { result[result.count - 1][1] = max(last[1], iv[1]) } else { result.append(iv) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Sort by start, then sweep and merge. Identical to JS. Swift's `sorted { $0[0] < $1[0] }` and `last`/`removeLast` make the sweep concise.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs write `intervals.sort((a,b) => a[0]-b[0])`. What does Swift's Bool comparator change?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should `[1,4]` and `[4,5]` merge? How do you express closed vs half-open intervals in Swift types?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Arrays `[Int]` vs `ClosedRange<Int>` for intervals: which gives `overlaps(_:)` for free?"
+    },
+    {
+      "kind": "practice",
+      "q": "Calendar busy-time merging is exactly this. Where does time-zone handling come in?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Merge Sort - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=DfO089qWEE8",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "what's up guys we're back with another Swift interview coding Challenge and today I'm going to be showing you a"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

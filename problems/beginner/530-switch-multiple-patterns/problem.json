@@ -32,5 +32,55 @@
     "One `case` can list several patterns separated by commas.",
     "Switch on the lowercased character: list the vowels together, then use `case _ where …` for digits and letters. Order matters.",
     "`case \"a\", \"e\", \"i\", \"o\", \"u\": return \"vowel\"` then `case _ where ch.isNumber: return \"digit\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift `case \"a\", \"e\", \"i\":` lists several patterns in one case, with no fall-through stacking like JS `case 'a': case 'e':`. A `where` clause adds arbitrary conditions to a pattern.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS stacks `case 'a': case 'e':` and relies on fall-through. Why does Swift ban implicit fall-through?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`case let c where c.isNumber` vs `if c.isNumber`: when does the switch version win?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `\"A\"` matched by `case \"a\"`? What's the cleanest way to make the switch case-insensitive?"
+    },
+    {
+      "kind": "practice",
+      "q": "Character classification drives input filters like a PIN pad or phone number field. When should you use `CharacterSet` instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+      "url": "https://www.youtube.com/watch?v=JIT8sL_VtNA&t=148s",
+      "channel": "Swiftful Thinking",
+      "start": 148,
+      "moment": "we can actually toggle the switch by clicking it on and off so this is very simple but also very"
+    },
+    {
+      "title": "Introduction to Swift: Switch case",
+      "url": "https://www.youtube.com/watch?v=Jjd-m6fFu08",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] you've seen if statements and now loops but Swift has another type of flow"
+    },
+    {
+      "title": "SwiftUI Toggle - Button & Switch Tutorial",
+      "url": "https://www.youtube.com/watch?v=-sw7gvNUboc&t=136s",
+      "channel": "Sean Allen",
+      "start": 136,
+      "moment": "microphone on and that would line up accordingly but you can see different color switches in the form this is how you typically see it and that's my advice if y"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

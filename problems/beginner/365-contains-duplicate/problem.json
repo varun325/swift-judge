@@ -13,6 +13,10 @@
     {
       "title": "Collection Types — Sets",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Set",
+      "url": "https://developer.apple.com/documentation/swift/set"
     }
   ],
   "signature": {
@@ -30,5 +34,55 @@
     "A `Set` can't hold duplicates.",
     "If converting to a set makes the collection smaller, something was repeated.",
     "`Set(nums).count != nums.count`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS: `new Set(a).size !== a.length`. The same trick works in Swift: `Set(nums).count != nums.count`. Swift's `Set` requires `Hashable` elements, which JS's reference-identity `Set` doesn't.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new Set([{a:1},{a:1}]).size` is 2 in JS. What would a Swift `Set` of equal structs contain? Why?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Early exit with `insert(_:).inserted` vs building the whole `Set` first: when does it matter?"
+    },
+    {
+      "kind": "edge",
+      "q": "What is the complexity of `Set.insert` in the worst case? Can adversarial input slow it down, and how does Swift defend against that?"
+    },
+    {
+      "kind": "practice",
+      "q": "Deduplicating API results by `id` is common. Would you use `Set`, a `Dictionary` by id, or `OrderedSet` from swift-collections?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+      "url": "https://www.youtube.com/watch?v=WxHsQDbIdl8",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "This is swivel thinking and in this series we are learning how to use git and source control. And before we"
+    },
+    {
+      "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=9GjGRqK8LSw&t=8s",
+      "channel": "Paul Hudson",
+      "start": 8,
+      "moment": "well there's a third way of doing this called sets they work similarly to arrays except"
+    },
+    {
+      "title": "Swift Basics: Array vs. Set",
+      "url": "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=13s",
+      "channel": "Sean Allen",
+      "start": 13,
+      "moment": "different sets today you're going to learn the differences between sets and arrays and when you should use each which is a very common interview question by the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

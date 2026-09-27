@@ -13,6 +13,10 @@
     {
       "title": "LongPressGesture",
       "url": "https://developer.apple.com/documentation/swiftui/longpressgesture"
+    },
+    {
+      "title": "Gestures",
+      "url": "https://developer.apple.com/documentation/swiftui/gestures"
     }
   ],
   "signature": {
@@ -37,5 +41,38 @@
     "Progress is held ÷ required, capped at 1.",
     "Decide the state from the progress: complete, under 30%, or in between.",
     "Truncate the percentage with `rounded(.down)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Hold-to-confirm maps elapsed hold time to progress, and completes at the threshold. The web does this with `setInterval` during `pointerdown`; SwiftUI's `LongPressGesture(minimumDuration:)` plus `onPressingChanged` manage it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS hold-to-confirm button needs timers and cleanup. What does the SwiftUI gesture handle for you?"
+    },
+    {
+      "kind": "edge",
+      "q": "Finger moves while holding: should that cancel? What's `maximumDistance`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Hold-to-confirm vs a confirmation dialog: which is more accessible?"
+    },
+    {
+      "kind": "practice",
+      "q": "Destructive actions (delete account): which confirmation pattern do Apple's HIG recommend?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use DragGesture to move, drag, swipe in SwiftUI | Continued Learning #4",
+      "url": "https://www.youtube.com/watch?v=O3QAI8Mxh8M",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Moving views with DragGesture and offset() – Flashzilla SwiftUI Tutorial 8/13",
+      "url": "https://www.youtube.com/watch?v=7wti4FqEmBw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

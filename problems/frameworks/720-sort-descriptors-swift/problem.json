@@ -17,6 +17,10 @@
     {
       "title": "KeyPathComparator",
       "url": "https://developer.apple.com/documentation/foundation/keypathcomparator"
+    },
+    {
+      "title": "Foundation",
+      "url": "https://developer.apple.com/documentation/foundation"
     }
   ],
   "signature": {
@@ -42,5 +46,33 @@
     "Create one `SortDescriptor` per key, in priority order.",
     "`order: .reverse` for descending; `comparator: .localizedStandard` for strings.",
     "Apply them all with `sorted(using: descriptors)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`SortDescriptor(\\.score, order: .reverse)` arrays describe multi-key sorting as data, like a `sortBy: [{field, dir}]` config object in JS tables. They work on plain Swift types and SwiftData queries alike.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A table's `sortBy` config in JS drives a comparator. How do `[SortDescriptor]` make that config type-safe?"
+    },
+    {
+      "kind": "edge",
+      "q": "`.localizedStandard` puts \"file2\" before \"file10\". What does plain `<` do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`SortDescriptor` vs `KeyPathComparator` vs a closure: which can SwiftUI's `Table` bind to column headers?"
+    },
+    {
+      "kind": "practice",
+      "q": "Persisting the user's chosen sort order: can `SortDescriptor` be `Codable`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Sorting SwiftData queries using SortDescriptor – Bookworm SwiftUI Tutorial 8/10",
+      "url": "https://www.youtube.com/watch?v=xSw_ftbtSgM",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

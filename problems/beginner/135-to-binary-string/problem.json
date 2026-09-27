@@ -14,6 +14,14 @@
     {
       "title": "The Basics — Integers",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "signature": {
@@ -35,5 +43,44 @@
     "`String` has an initialiser that formats any integer in a given base.",
     "You don't need a loop — the standard library handles negatives and lowercase letters for you.",
     "`String(value, radix: radix)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The same as JS `n.toString(16)` / `parseInt(s, 16)`. Swift spells them `String(n, radix: 16)` and the failable `Int(s, radix: 16)`, which returns an optional instead of JS's `NaN`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`parseInt('12abc')` returns 12 in JS. What does `Int(\"12abc\")` return in Swift, and which behaviour do you want in a payment form?"
+    },
+    {
+      "kind": "edge",
+      "q": "`String(Int.min, radix: 2)`: does a negative number come out as two's complement or with a minus sign? Why might a bit-twiddler be surprised?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where would you format numbers in a radix in an app: color hex strings, debug dumps of flags, short IDs?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`String(n, radix:)` vs `n.formatted()`: when is each right? Which respects the user's locale?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Strings and integers – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ZU3JDkjvn3w",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

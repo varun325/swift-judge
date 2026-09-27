@@ -35,5 +35,55 @@
     "A function's return type can itself be a function type: `-> (Int) -> Int`.",
     "Switch on the code and return a different closure literal from each case.",
     "Apply with `makeDiscount(code: code)(price)`."
+  ],
+  "impact": "core",
+  "jsBridge": "Returning closures from functions is JS's factory pattern: a function that returns a configured function. Captured values live on the heap, the same as in JS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`const makeDiscount = code => price => …` in JS. What does Swift's `(Int) -> Int` return type make explicit?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Returning a closure vs returning an enum `Discount` with an `apply` method: which is easier to test and serialise?"
+    },
+    {
+      "kind": "edge",
+      "q": "Returned closures escape. Why don't you write `@escaping` on a return type?"
+    },
+    {
+      "kind": "practice",
+      "q": "Discount codes come from the server. Should they map to closures, or to data the client interprets?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=1309s",
+      "channel": "Swiftful Thinking",
+      "start": 1309,
+      "moment": "so if you're new to swift you're probably thinking we can do a return with some data but if you watch my video"
+    },
+    {
+      "title": "Returning closures from functions – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=9E2T3HmHnTU",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "in the same way that you pass a closure to a function you can get closures returned from a function to the syntax"
+    },
+    {
+      "title": "Swift Closures: @escaping Explained",
+      "url": "https://www.youtube.com/watch?v=xiS5gJOIQxI",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today we're talking about escaping closures in Swift we're gonna talk about the difference between non escaping and"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

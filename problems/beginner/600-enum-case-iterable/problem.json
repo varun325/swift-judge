@@ -14,6 +14,10 @@
     {
       "title": "Enumerations — Iterating over Enumeration Cases",
       "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -30,5 +34,44 @@
     "Conforming to `CaseIterable` gives you `allCases`.",
     "Add a computed `price` that switches on `self`, then filter `allCases`.",
     "`Coffee.allCases.filter { $0.price <= maxPrice }.map(\\.rawValue)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "TS gets `Object.values(Enum)`, with numeric-enum weirdness. Swift's `CaseIterable` synthesises `allCases` in declaration order, and computed properties on the enum keep data like `price` next to each case.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Object.values` on a numeric TS enum returns names *and* numbers. What does Swift's `allCases` guarantee instead?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Picker` with `ForEach(Coffee.allCases)`: what else does the enum need (`Identifiable`, `Hashable`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can an enum with associated values be `CaseIterable` automatically? Why not?"
+    },
+    {
+      "kind": "contrast",
+      "q": "A `price` computed property with a `switch` vs a `[Coffee: Int]` dictionary: which can the compiler check for missing cases?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Enum Raw Values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ssLIP4gFrYc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

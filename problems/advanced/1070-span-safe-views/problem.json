@@ -35,5 +35,44 @@
     "`values.span` gives a `Span<Int>` view without copying.",
     "Index it like an array inside the functions; it can't be stored or returned.",
     "Track the current and best run lengths in one pass."
+  ],
+  "impact": "edge",
+  "jsBridge": "`Span<Element>` is a bounds-checked, non-escapable view over contiguous memory, a safe `UnsafeBufferPointer`. It's like JS's `TypedArray.subarray` views, but the compiler proves it never outlives the storage.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`subarray` views in JS share memory safely because of the GC. How does Swift prove a `Span` doesn't dangle without a GC?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Span` vs `ArraySlice` vs `UnsafeBufferPointer`: safety and cost of each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't you return a `Span` from a function or store it in a property?"
+    },
+    {
+      "kind": "practice",
+      "q": "Parsing binary data (images, network packets) without copies: where would `Span` help?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What's new in SwiftUI for iOS 27?",
+      "url": "https://www.youtube.com/watch?v=tNxEqyUVGck",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "What's New in Swift 5.3",
+      "url": "https://www.youtube.com/watch?v=RhuYDAEdGHE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Evolution proposals",
+      "url": "https://www.swift.org/swift-evolution/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -31,5 +31,41 @@
     "A `Task { }` captures `self` strongly unless you say otherwise.",
     "Capture `[weak self, log]` (the logger separately!), check `Task.isCancelled` after the sleep, and `guard let self` before touching state.",
     "Cancel in `onDisappear` with `task?.cancel()`."
+  ],
+  "impact": "core",
+  "jsBridge": "A `Task { }` retains `self` until it finishes. `[weak self]` plus cancellation in `onDisappear` lets a view model go away mid-download. JS never worries about this, since GC and promises don't keep objects \"alive\" in a leak-visible way.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A pending `fetch` in a React component after unmount: warning, but no leak. Why is a Swift `Task` capturing `self` different?"
+    },
+    {
+      "kind": "edge",
+      "q": "With `[weak self]`, where do you `guard let self`: at the start, or after each `await`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[weak self]` vs storing the task and cancelling it vs SwiftUI's `.task` modifier: which is simplest?"
+    },
+    {
+      "kind": "practice",
+      "q": "When is a short-lived strong capture in a `Task` perfectly fine?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use weak self in Swift | Continued Learning #18",
+      "url": "https://www.youtube.com/watch?v=TPHp9kR0Go8&t=1142s",
+      "channel": "Swiftful Thinking",
+      "start": 1142,
+      "moment": "when you have these long tasks that you're like downloading data for the user"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

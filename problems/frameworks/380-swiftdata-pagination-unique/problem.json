@@ -17,6 +17,10 @@
     {
       "title": "FetchDescriptor",
       "url": "https://developer.apple.com/documentation/swiftdata/fetchdescriptor"
+    },
+    {
+      "title": "SwiftData",
+      "url": "https://developer.apple.com/documentation/swiftdata"
     }
   ],
   "signature": {
@@ -42,5 +46,35 @@
     "A `.unique` attribute turns a second insert with the same key into an update.",
     "Read the existing `uses` first so the new insert carries the incremented count.",
     "Page with `fetchLimit` and increasing `fetchOffset` until a page is empty."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`@Attribute(.unique)` makes inserts **upsert** on a conflicting key, like SQL `INSERT … ON CONFLICT DO UPDATE`. `FetchDescriptor` with `fetchLimit`/`fetchOffset` pages results.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Postgres `ON CONFLICT (slug) DO UPDATE` vs `@Attribute(.unique)`: does SwiftData update or replace?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens to relationships of the old object when a unique insert replaces it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Unique attributes vs fetching first and updating manually: which is faster for syncing 1,000 items?"
+    },
+    {
+      "kind": "practice",
+      "q": "Server sync: which field should be unique, the server ID or the local UUID?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "iOS 15: Ensuring Core Data objects are unique using constraints – Core Data SwiftUI Tutorial 4/7",
+      "url": "https://www.youtube.com/watch?v=NZIlmRSB8l8&t=21s",
+      "channel": "Paul Hudson",
+      "start": 21,
+      "moment": "happen it should not be allowed core data helped us solve this using constraints a way of saying there's one"
+    }
+  ],
+  "articles": []
 }

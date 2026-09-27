@@ -17,6 +17,10 @@
     {
       "title": "Path",
       "url": "https://developer.apple.com/documentation/swiftui/path"
+    },
+    {
+      "title": "Color",
+      "url": "https://developer.apple.com/documentation/swiftui/color"
     }
   ],
   "signature": {
@@ -45,5 +49,47 @@
     "A `Shape` only needs `func path(in rect: CGRect) -> Path`.",
     "Use `rect.midX`, `rect.maxX`, `rect.maxY` for the corners, then `closeSubpath()`.",
     "`path.boundingRect` and `path.contains(CGPoint(x:y:))` answer the questions."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "A `Shape` is a struct with `path(in: CGRect) -> Path`: pure geometry, resolution-independent. It's like drawing on an SVG `<path>` or Canvas, but declarative and animatable.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "SVG `<path d=\"M…L…Z\">` vs Swift `Path { move(to:); addLine(to:); closeSubpath() }`: same model?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Shape` vs `Canvas` vs an SF Symbol: when would you draw your own?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why is `path(in:)` given a rect instead of fixed coordinates?"
+    },
+    {
+      "kind": "practice",
+      "q": "Custom badges, chat bubble tails, chart markers: where have you needed a custom shape?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7",
+      "url": "https://www.youtube.com/watch?v=kzrtiPbR3LQ",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "[Music] all right welcome back everyone i'm nick this is swiffle thinking and in this"
+    },
+    {
+      "title": "Paths vs shapes in SwiftUI – Drawing SwiftUI Tutorial 2/10",
+      "url": "https://www.youtube.com/watch?v=xTRhYKjp5nk&t=69s",
+      "channel": "Paul Hudson",
+      "start": 69,
+      "moment": "on fixed coordinates we know exactly the space we can use to draw for example previously we made a path to"
+    },
+    {
+      "title": "SwiftUI Custom Path Drawing - Map Balloon Shape",
+      "url": "https://www.youtube.com/watch?v=4xRm8MqMtG4",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

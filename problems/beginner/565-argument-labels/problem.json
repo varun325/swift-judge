@@ -41,5 +41,39 @@
     "Each parameter can have an external label and a different internal name.",
     "The signature is already written — use `start`, `end` and `step` inside the body.",
     "`Array(stride(from: start, through: end, by: step))`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS has no argument labels; you pass an options object `{from, to, by}` to get readable calls. Swift builds labels into the signature: `move(from:to:by:)` is the function's **name**. The external label (`from`) and internal name (`start`) can differ.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "An options object `{from, to}` vs Swift labels: which one lets you reorder arguments? Which one is checked at compile time?"
+    },
+    {
+      "kind": "practice",
+      "q": "Read Apple's API Design Guidelines on labels. Why is it `insert(_:at:)` and not `insert(element:atIndex:)`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can two functions differ only by labels, like `move(from:to:)` and `move(start:end:)`? Is that overloading?"
+    },
+    {
+      "kind": "java",
+      "q": "Java has no labels, so builder patterns became popular. Do Swift labels reduce the need for builders?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to accept functions as parameters – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=1Ho_GhA70zw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

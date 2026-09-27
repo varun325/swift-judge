@@ -17,6 +17,10 @@
     {
       "title": "URLQueryItem",
       "url": "https://developer.apple.com/documentation/foundation/urlqueryitem"
+    },
+    {
+      "title": "URLSession",
+      "url": "https://developer.apple.com/documentation/foundation/urlsession"
     }
   ],
   "signature": {
@@ -44,5 +48,38 @@
     "Never build URLs with string interpolation — use `URLComponents`.",
     "Set scheme, host, path and `queryItems` (an array, so order and repeats are kept).",
     "Only add `page` when it's greater than 1."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`URLComponents` + `URLQueryItem` builds URLs with correct escaping, like JS's `URL` + `URLSearchParams`. It never string-concatenates query strings.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new URL(base); url.searchParams.append('q', query)` vs `URLComponents.queryItems`: same escaping rules?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `+` in a query value become? Does `URLComponents` encode it? (A classic gotcha.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "String interpolation into URLs vs `URLComponents`: which bugs does the latter prevent?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do you centralise base URLs and paths: an `Endpoint` enum, a request builder?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Sending and receiving Codable data with URLSession and SwiftUI – Cupcake Corner SwiftUI Tutorial 1/9",
+      "url": "https://www.youtube.com/watch?v=U_yWXH141DY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

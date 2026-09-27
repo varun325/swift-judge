@@ -13,6 +13,10 @@
     {
       "title": "MagnifyGesture",
       "url": "https://developer.apple.com/documentation/swiftui/magnifygesture"
+    },
+    {
+      "title": "Gestures",
+      "url": "https://developer.apple.com/documentation/swiftui/gestures"
     }
   ],
   "signature": {
@@ -34,5 +38,38 @@
     "A gesture's magnification is relative to where *this* gesture started.",
     "Live value = clamp(lastScale × m); commit it on end.",
     "Clamp with `min(max(v, 1), 4)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Pinch-zoom keeps a committed scale plus a live gesture scale, clamped to limits. It's the same pattern as web pinch-zoom with pointer events, minus the maths of tracking two touch points.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "On the web you compute pinch scale from two pointers' distance. What does `MagnifyGesture` hide?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why clamp the *product* `lastScale * magnification`, not each separately?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@GestureState` (auto-resets) vs `@State` for the live scale: which is less error-prone?"
+    },
+    {
+      "kind": "practice",
+      "q": "Double-tap to reset zoom: how do you combine it with the pinch gesture?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use DragGesture to move, drag, swipe in SwiftUI | Continued Learning #4",
+      "url": "https://www.youtube.com/watch?v=O3QAI8Mxh8M",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Moving views with DragGesture and offset() – Flashzilla SwiftUI Tutorial 8/13",
+      "url": "https://www.youtube.com/watch?v=7wti4FqEmBw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

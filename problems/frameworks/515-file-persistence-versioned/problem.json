@@ -18,6 +18,10 @@
     {
       "title": "FileManager",
       "url": "https://developer.apple.com/documentation/foundation/filemanager"
+    },
+    {
+      "title": "UserDefaults",
+      "url": "https://developer.apple.com/documentation/foundation/userdefaults"
     }
   ],
   "signature": {
@@ -38,5 +42,49 @@
     "Encode to JSON `Data` and write it with `.atomic`.",
     "On load, fall back to a default `Store` if the file is missing or can't be decoded.",
     "Bump `version` only when something actually changed."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Saving `Codable` data to the app's Documents directory as JSON, with a version number for migrations, is like persisting app state to IndexedDB or `localStorage` with a schema version and a migration step on load.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Redux-persist has `version` + `migrate`. What does your Swift loader need to do when `version` is old?"
+    },
+    {
+      "kind": "edge",
+      "q": "Crash mid-write: how does `.atomic` writing prevent a corrupted file?"
+    },
+    {
+      "kind": "contrast",
+      "q": "JSON files vs SwiftData: when is a single JSON file the better choice (small data, easy export)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should app data live in Documents (visible in Files) or Application Support? Who decides?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download and save images using FileManager and NSCache | Continued Learning #28",
+      "url": "https://www.youtube.com/watch?v=fmVuOu8XOvQ&t=3962s",
+      "channel": "Swiftful Thinking",
+      "start": 3962,
+      "moment": "we are again downloading all these images and if i scroll back up we are again"
+    },
+    {
+      "title": "How to save NavigationStack paths using Codable – Navigation SwiftUI Tutorial 6/9",
+      "url": "https://www.youtube.com/watch?v=QZz9azaSYQ8",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] you can save and load the navigation stack path using codable in one of two"
+    },
+    {
+      "title": "How to Save Data with UserDefaults - Swift",
+      "url": "https://www.youtube.com/watch?v=sUhq1vIrRbo&t=99s",
+      "channel": "Sean Allen",
+      "start": 99,
+      "moment": "doubles uh integers boolean values and urls so uh like i mentioned earlier you want to save just small pieces of data"
+    }
+  ],
+  "articles": []
 }

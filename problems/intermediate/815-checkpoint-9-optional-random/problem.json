@@ -13,6 +13,10 @@
     {
       "title": "Optional Chaining",
       "book": "LanguageGuide/OptionalChaining"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -34,5 +38,60 @@
     "`??` supplies the fallback; you need one expression that's nil for both a nil and an empty array.",
     "`Optional.flatMap { … }` lets you return `nil` for the empty case too.",
     "`numbers.flatMap { $0.isEmpty ? nil : $0[abs(index) % $0.count] } ?? 100`."
+  ],
+  "impact": "edge",
+  "jsBridge": "One line: `(array?.randomElement()) ?? Int.random(in: 1...100)`, mixing optional chaining, a method that itself returns an optional, and `??`. In JS: `arr?.[Math.floor(...)] ?? ...`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Write the JS version. How many edge cases (empty array, undefined) does it handle implicitly vs explicitly?"
+    },
+    {
+      "kind": "edge",
+      "q": "`array?.randomElement()` is `Int?`, not `Int??`. Why does optional chaining flatten?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Deterministic tests need injected randomness. How would you inject a `RandomNumberGenerator`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do apps use randomness (shuffle, A/B) and why should tests control it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=8s",
+      "channel": "Swiftful Thinking",
+      "start": 8,
+      "moment": "gonna practice safe coding because safe coding is great coding"
+    },
+    {
+      "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=131s",
+      "channel": "Paul Hudson",
+      "start": 131,
+      "moment": "but it does so by returning it on optional because you might be calling random element on empty array"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=379s",
+      "channel": "Sean Allen",
+      "start": 379,
+      "moment": "I go up and change Sean's age to 41 and run it now age is 41 down there now I want to go back to what I said a easy default value and this is a case where it mi"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

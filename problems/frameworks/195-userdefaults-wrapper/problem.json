@@ -14,6 +14,10 @@
     {
       "title": "UserDefaults",
       "url": "https://developer.apple.com/documentation/foundation/userdefaults"
+    },
+    {
+      "title": "FileManager",
+      "url": "https://developer.apple.com/documentation/foundation/filemanager"
     }
   ],
   "signature": {
@@ -34,5 +38,49 @@
     "A property wrapper can read and write `UserDefaults` in its `wrappedValue`.",
     "Encode values as JSON `Data` so any `Codable` type works; return the default when missing.",
     "A fresh `Preferences()` reads what the previous one saved."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "A `@propertyWrapper` around `UserDefaults` gives typed, defaulted settings, like wrapping `localStorage` with JSON (de)serialisation and defaults. Swift makes it declarative per property.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `localStorage` stores strings only; you JSON-wrap everything. How does `Codable` make the Swift wrapper generic?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if a stored value no longer decodes after a model change? What should the wrapper return?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom wrapper vs `@AppStorage`: when do you need the custom one (non-SwiftUI code, Codable types)?"
+    },
+    {
+      "kind": "practice",
+      "q": "What must never go in `UserDefaults`? (Secrets. It's a plain plist on disk.)"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save and persist data with UserDefaults | Todo List #4",
+      "url": "https://www.youtube.com/watch?v=1QOLiELlpGk&t=342s",
+      "channel": "Swiftful Thinking",
+      "start": 342,
+      "moment": "into json data and that's what this encoded data is and we're just going to put this encoded data"
+    },
+    {
+      "title": "Storing user settings with UserDefaults – iExpense SwiftUI Tutorial 5/11",
+      "url": "https://www.youtube.com/watch?v=vDbFH9D6BSA&t=74s",
+      "channel": "Paul Hudson",
+      "start": 74,
+      "moment": "last news story they read or other passively collected information that you want to care about even better Swift"
+    },
+    {
+      "title": "How to Save Data with UserDefaults - Swift",
+      "url": "https://www.youtube.com/watch?v=sUhq1vIrRbo&t=263s",
+      "channel": "Sean Allen",
+      "start": 263,
+      "moment": "access our user defaults but first up here in our variables we need to get access to our user defaults so we're"
+    }
+  ],
+  "articles": []
 }

@@ -41,5 +41,55 @@
     "Subscripts can have argument labels, and you can add them in an extension.",
     "In `extension Collection`, return `self[index]` only if `indices.contains(index)`, else `nil`.",
     "`subscript(safe index: Index) -> Element? { indices.contains(index) ? self[index] : nil }` and `indices.map { items[safe: $0] }`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS returns `undefined` for out-of-range reads and never crashes. Swift traps, deliberately. A `subscript(safe:)` extension restores the optional behaviour where you want it, and extensions on `Collection` apply to arrays, strings and slices at once.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Is Swift's crash-on-out-of-bounds better than JS's silent `undefined`? Argue both sides for an app with millions of users."
+    },
+    {
+      "kind": "java",
+      "q": "Java throws `IndexOutOfBoundsException`, which you can catch. Swift's trap can't be caught. Why did Swift choose a non-recoverable failure?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must the check be `indices.contains(i)`, not `i < count`? Think of `ArraySlice` and `String`."
+    },
+    {
+      "kind": "practice",
+      "q": "`items[safe: indexPath.row]` in table-view code is common. Is it hiding a real bug (a data-source mismatch) that you should fix instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Subscripts in Swift | Advanced Learning #32",
+      "url": "https://www.youtube.com/watch?v=hiOjTJgl6GU&t=318s",
+      "channel": "Swiftful Thinking",
+      "start": 318,
+      "moment": "documentation I can jump to let's look for maybe index and let's do a"
+    },
+    {
+      "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YrVwyL_mcts",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] protocols let us define contracts to which any conforming type must adhere"
+    },
+    {
+      "title": "How the Best Subscription Apps Print Money in 2025",
+      "url": "https://www.youtube.com/watch?v=1Y-x6Ou4v3M",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "Revenue Cat has released their state of subscription apps for 2025, and it's jam-packed with valuable information."
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Extensions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -36,5 +36,46 @@
     "Delegates are stored `weak` to avoid retain cycles — which needs a class-only protocol.",
     "Declare `protocol DownloaderDelegate: AnyObject`, store `weak var delegate`, and log \"dropped\" when it's `nil`.",
     "`if let delegate { delegate.didFinish(file) } else { log.lines.append(\"dropped \\(file)\") }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Delegation is Apple's callback pattern: an object holds a `weak var delegate: P?` and calls methods on it. It's like passing an event-handler object in JS, but `weak` is required to avoid retain cycles, and `AnyObject` restricts the protocol to classes.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS event emitters hold strong references to listeners too. Why doesn't that leak in JS (GC handles cycles) but does in Swift (ARC doesn't)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Delegate vs closure callback vs Combine vs async sequence: which does modern Swift prefer, and when is a delegate still best?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must the protocol be `: AnyObject` to be used with `weak`?"
+    },
+    {
+      "kind": "practice",
+      "q": "`UITableViewDelegate` and `UITextFieldDelegate`: what would the SwiftUI equivalent be?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13",
+      "url": "https://www.youtube.com/watch?v=HRHtOdTJH70",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift Delegate Protocol Pattern Tutorial 2023 | iOS Communication Patterns",
+      "url": "https://www.youtube.com/watch?v=qiOKO8ta1n4",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "the delegate and protocol pattern is a one-to-one communication pattern in Swift it allows one view to communicate with another view for example The View contro"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

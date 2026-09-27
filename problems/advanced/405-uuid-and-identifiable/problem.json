@@ -13,6 +13,10 @@
     {
       "title": "UUID",
       "url": "https://developer.apple.com/documentation/foundation/uuid"
+    },
+    {
+      "title": "Foundation",
+      "url": "https://developer.apple.com/documentation/foundation"
     }
   ],
   "signature": {
@@ -30,5 +34,38 @@
     "`UUID(uuidString:)` is failable; `uuidString` is always uppercase.",
     "Map each string to `valid <UUID>` or `invalid`, then append the three facts about generated UUIDs.",
     "`UUID(uuidString: s).map { \"valid \\($0.uuidString)\" } ?? \"invalid\"`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`UUID()` is JS's `crypto.randomUUID()`. `UUID(uuidString:)` is a failable parser, and `.uuidString` is uppercase, which is a classic mismatch with lowercase UUIDs from JS backends.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`crypto.randomUUID()` gives lowercase. Swift's `uuidString` is uppercase. Where can this break equality checks?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Client-generated UUIDs vs server IDs: which enables offline creation and optimistic UI?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `UUID` `Codable`? What string does it encode to?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Identifiable` with `let id = UUID()` in a model: why does regenerating it on every decode break SwiftUI animations?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save data and images to FileManager in Xcode | Continued Learning #26",
+      "url": "https://www.youtube.com/watch?v=Yiq-hdhLzVM",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to make tappable links in NSAttributedString – Swift 5",
+      "url": "https://www.youtube.com/watch?v=qr1XJMIziBg",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

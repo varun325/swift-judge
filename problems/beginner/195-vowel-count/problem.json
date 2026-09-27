@@ -14,6 +14,14 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -31,5 +39,53 @@
     "A `Set` gives fast membership checks.",
     "Lowercase the text and count the characters contained in a set of vowels. Annotate the set's element type so the literal becomes `Set<Character>`.",
     "`let vowels: Set<Character> = [\"a\", \"e\", \"i\", \"o\", \"u\"]; return text.lowercased().filter { vowels.contains($0) }.count`."
+  ],
+  "impact": "edge",
+  "jsBridge": "In JS, `new Set('aeiou')` then `.has(c)`. Swift's `Set<Character>` is the same, and `\"aeiou\".contains(c)` also works since `String` is a collection. A set literal (`let vowels: Set<Character> = [\"a\", …]`) makes the O(1) intent explicit.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "For 5 vowels, is a `Set` really faster than a `String.contains` scan? When does the set win?"
+    },
+    {
+      "kind": "js",
+      "q": "JS `Set` keeps insertion order. Does Swift's `Set`? What does that mean for printing or tests?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is \"É\" a vowel here? How would you make the check diacritic-insensitive?"
+    },
+    {
+      "kind": "practice",
+      "q": "Filtering characters shows up in input validation, like allowed characters in a username. Where would you use `CharacterSet` instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+      "url": "https://www.youtube.com/watch?v=WxHsQDbIdl8&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "and source control. And before we actually can go ahead and use it, we need to do some setup. So this video is"
+    },
+    {
+      "title": "Setting up – Swift Strings, part 1",
+      "url": "https://www.youtube.com/watch?v=V9cWsGJ4aLc",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Intro to Apple Search Ads - Setup Your First Campaign (Tutorial)",
+      "url": "https://www.youtube.com/watch?v=VUztqFol_FY&t=55s",
+      "channel": "Sean Allen",
+      "start": 55,
+      "moment": "do get a 100 promo free for Apple for trying it so you might as well throw a hundred dollar budget at it see what"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

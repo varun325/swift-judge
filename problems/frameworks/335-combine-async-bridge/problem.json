@@ -17,6 +17,10 @@
     {
       "title": "AsyncPublisher",
       "url": "https://developer.apple.com/documentation/combine/asyncpublisher"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -42,5 +46,49 @@
     "Any publisher has a `.values` async sequence.",
     "Build the pipeline with `filter` and `map`, then `for await v in pipeline.values`.",
     "`break` once you've collected `take` values."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Every publisher has `.values`, an `AsyncSequence`, so `for await v in publisher.values` bridges Combine into async/await. It's RxJS's `for await (const v of eachValueFrom(obs))`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "rxjs-for-await's `eachValueFrom(obs)` vs Combine `.values`: what happens to backpressure in each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does a `for await` over `.values` of a `@Published` ever end? How do you stop it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Keeping Combine at the edges with `.values` vs rewriting to `AsyncStream`: migration strategy?"
+    },
+    {
+      "kind": "practice",
+      "q": "Observing `NotificationCenter` or `@Published` in a `.task` loop: which does the view cancel automatically?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+      "url": "https://www.youtube.com/watch?v=ePPm2ftSVqw&t=536s",
+      "channel": "Swiftful Thinking",
+      "start": 536,
+      "moment": "manager.mydata.values this is a convenience method that apple is actually giving us to basically"
+    },
+    {
+      "title": "iOS 15: Reading custom values from the environment with @EnvironmentObject – Hot Prospects 1/18",
+      "url": "https://www.youtube.com/watch?v=9X-TH5TrU2U&t=408s",
+      "channel": "Paul Hudson",
+      "start": 408,
+      "moment": "as the value this is a bit mind-bending at first but imagine it like this the keys are things"
+    },
+    {
+      "title": "SwiftUI Environment Values - What are they? Code Examples | Xcode 13",
+      "url": "https://www.youtube.com/watch?v=S3DVAGQX0kI",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today we're talking about the environment in swift ui i'm going to tell you how it's used what values you"
+    }
+  ],
+  "articles": []
 }

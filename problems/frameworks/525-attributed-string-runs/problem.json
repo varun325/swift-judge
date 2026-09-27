@@ -13,6 +13,10 @@
     {
       "title": "AttributedString",
       "url": "https://developer.apple.com/documentation/foundation/attributedstring"
+    },
+    {
+      "title": "Foundation",
+      "url": "https://developer.apple.com/documentation/foundation"
     }
   ],
   "signature": {
@@ -37,5 +41,38 @@
     "Create `AttributedString(text)` and find ranges with `range(of:options:)`.",
     "Set `attributed[range].inlinePresentationIntent = .stronglyEmphasized`; continue searching after the range.",
     "Map `attributed.runs` to `(text, isBold)` strings."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`AttributedString` stores text plus attribute **runs** (ranges with styles). The web does this with nested `<span>`s. `Text` renders it natively, so highlighting search matches is just setting attributes on ranges.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Highlighting search terms on the web means splitting the string into spans. How does `AttributedString` avoid rebuilding the view tree?"
+    },
+    {
+      "kind": "edge",
+      "q": "Case-insensitive ranges for \"Straße\" vs \"STRASSE\": do the ranges still line up with the original string?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`AttributedString` vs `NSAttributedString`: which is Swift-native and value-typed?"
+    },
+    {
+      "kind": "practice",
+      "q": "Markdown in `Text(\"**bold**\")` creates an `AttributedString`. When is that enough?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save data and images to FileManager in Xcode | Continued Learning #26",
+      "url": "https://www.youtube.com/watch?v=Yiq-hdhLzVM",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to make tappable links in NSAttributedString – Swift 5",
+      "url": "https://www.youtube.com/watch?v=qr1XJMIziBg",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

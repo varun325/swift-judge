@@ -14,6 +14,10 @@
     {
       "title": "withCheckedThrowingContinuation",
       "url": "https://developer.apple.com/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -32,5 +36,46 @@
     "You need to suspend until a callback fires.",
     "`withCheckedThrowingContinuation { continuation in legacyFetch(key) { … } }`.",
     "Inside the callback: `continuation.resume(with: result)`."
+  ],
+  "impact": "core",
+  "jsBridge": "`withCheckedThrowingContinuation` wraps a callback API into `async`, which is exactly `new Promise((resolve, reject) => legacy(cb))` in JS. \"Checked\" means Swift catches the classic bug of resuming twice, or never.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new Promise(res => api(res))` in JS: what happens if the callback fires twice? What does Swift's checked continuation do?"
+    },
+    {
+      "kind": "edge",
+      "q": "What if the callback never fires? (A leaked continuation warning, and the task hangs forever.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "Checked vs unsafe continuations: when is `withUnsafeContinuation` justified?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which Apple APIs still use completion handlers you'd need to wrap? (Many now have async overloads.)"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Continuations in Swift (withCheckedThrowingContinuation) | Swift Concurrency #7",
+      "url": "https://www.youtube.com/watch?v=Tw_WLMIfEPQ&t=857s",
+      "channel": "Swiftful Thinking",
+      "start": 857,
+      "moment": "we need to resume it exactly once so if we had data we would resume it once here and then we would resume it once here"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

@@ -14,11 +14,62 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "hints": [
     "`print` takes `separator:` and `terminator:`; `debugPrint` shows strings with quotes.",
     "`terminator: \" | \"` means the next print continues on the same line. Arrays always print their elements in debug form.",
     "Line 2 is `1-2-3 | same line`; `debugPrint(name)` prints `\"Swift\"` with quotes; the array prints as `[\"Swift\", \"6\"]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`print` is `console.log`. `debugPrint` is closer to `console.dir` or `JSON.stringify`: it shows quotes and escapes. `separator:` and `terminator:` control spacing and the trailing newline, which `console.log` can't.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`CustomStringConvertible` vs `CustomDebugStringConvertible`: which one does `print` use, which does `debugPrint` use, and which does the debugger's `po` use?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why shouldn't shipping app code use `print` at all? What does `Logger` from `os` give you: privacy redaction, levels, Console.app?"
+    },
+    {
+      "kind": "js",
+      "q": "`console.log(obj)` shows an interactive tree. What does `print(someStruct)` show, and how does `dump()` compare?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `print` flush immediately? When does output get lost when an app crashes?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Basic Swift debugging using print() – Debugging, part 2",
+      "url": "https://www.youtube.com/watch?v=tbFO8DsJ6aw&t=81s",
+      "channel": "Paul Hudson",
+      "start": 81,
+      "moment": "fundamentals of Swift here though it's worth adding that prints very attic nature becomes much more useful when he"
+    },
+    {
+      "title": "How the Best Subscription Apps Print Money in 2025",
+      "url": "https://www.youtube.com/watch?v=1Y-x6Ou4v3M&t=96s",
+      "channel": "Sean Allen",
+      "start": 96,
+      "moment": "to get pretty accurate data here. All right, let's go back up to the executive summary, which are, you know, some big"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

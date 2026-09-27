@@ -41,5 +41,49 @@
     "Repeatedly finalise the closest unvisited node.",
     "Build adjacency lists, keep distances as `Int?`, and relax each neighbour of the chosen node.",
     "`if dist[v].map({ candidate < $0 }) ?? true { dist[v] = candidate }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The same algorithm as in JS, but Swift's standard library has no priority queue (JS has none either). The O(V²) version with a `visited` array is fine for small graphs, and `Int?` distances make \"unreachable\" explicit instead of `Infinity`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS uses `Infinity` for unreachable distances. What does `[Int?]` force you to handle that `Infinity` hides?"
+    },
+    {
+      "kind": "contrast",
+      "q": "O(V²) array scan vs a binary heap (swift-collections `Heap`): at what graph size does the heap win?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does Dijkstra break with negative edge weights? What would you use instead?"
+    },
+    {
+      "kind": "practice",
+      "q": "Routing in MapKit is done for you (`MKDirections`). When would an app still run its own shortest path (games, indoor maps)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

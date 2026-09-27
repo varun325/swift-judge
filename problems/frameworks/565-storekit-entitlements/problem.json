@@ -18,6 +18,14 @@
     {
       "title": "Transaction",
       "url": "https://developer.apple.com/documentation/storekit/transaction"
+    },
+    {
+      "title": "WidgetKit",
+      "url": "https://developer.apple.com/documentation/widgetkit"
+    },
+    {
+      "title": "User Notifications",
+      "url": "https://developer.apple.com/documentation/usernotifications"
     }
   ],
   "signature": {
@@ -41,5 +49,38 @@
     "Filter out revoked and expired transactions first.",
     "Map product ids to tiers and take the maximum (`Comparable` enum).",
     "The renewal date is the latest expiry among active subscriptions."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "StoreKit 2 gives verified transactions; your app decides access, like a web app checking a subscription status from Stripe webhooks, except the source of truth is the signed on-device receipt (`Transaction.currentEntitlements`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Stripe webhooks tell your server about subscriptions. Where does an iOS app get the truth, and can it work offline?"
+    },
+    {
+      "kind": "edge",
+      "q": "Grace period, billing retry, refunded, upgraded mid-period: which transactions still grant access?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Checking entitlements on device vs App Store Server API on your backend: which do you trust for server-side features?"
+    },
+    {
+      "kind": "practice",
+      "q": "Family Sharing: does a family member's purchase grant access? How do you know (`ownershipType`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Send Push Notifications using CloudKit in SwiftUI | Advanced Learning #24",
+      "url": "https://www.youtube.com/watch?v=vr5CBfaK14A",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Posting notifications to the lock screen – Hot Prospects SwiftUI Tutorial 16/16",
+      "url": "https://www.youtube.com/watch?v=31sTDonbI5k",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

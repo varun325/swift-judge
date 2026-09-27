@@ -14,11 +14,55 @@
     {
       "title": "Basic Operators — Range Operators",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "ClosedRange",
+      "url": "https://developer.apple.com/documentation/swift/closedrange"
+    },
+    {
+      "title": "Range",
+      "url": "https://developer.apple.com/documentation/swift/range"
     }
   ],
   "hints": [
     "`0..<5` and `0...5` are different types: `Range` and `ClosedRange`.",
     "Keep the `Range<Int>` annotation but change the literal to the closed-range operator.",
     "`let r: Range<Int> = 0...5`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS has no range types. Swift distinguishes `Range` (`a..<b`) from `ClosedRange` (`a...b`) at the type level. The two can't hold each other's literals, which is why generic code uses `RangeExpression`.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "Why are `Range` and `ClosedRange` separate types rather than one type with a flag? What would the flag cost?"
+    },
+    {
+      "kind": "edge",
+      "q": "`5...1` compiles but crashes at runtime. Why can't the compiler catch it?"
+    },
+    {
+      "kind": "practice",
+      "q": "APIs like `array[range]` accept `RangeExpression`. Why does that let you pass `2...`, `..<5` and `1...3` to the same subscript?"
+    },
+    {
+      "kind": "js",
+      "q": "TS could model ranges with branded types. Would that catch `5...1`? What's special about what Swift checks at compile time?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Range operators – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=FGxEffJ5XUM",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Swit gives us two ways of making ranges that less than and dot-dot-dot operators the half-open range operator got less"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -35,5 +35,49 @@
     "`stride` can count down with a negative step.",
     "`through:` includes the end value if you land on it; `to:` excludes it.",
     "`Array(stride(from: start, through: 0, by: -step))`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift dropped C-style `for (i = n; i >= 0; i -= s)` loops. `stride(from:through:by:)` (inclusive) and `stride(from:to:by:)` (exclusive) replace them and work with negative steps and floating-point values.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`stride(from:to:)` vs `stride(from:through:)`: which includes the end? Which matches `..<` and which matches `...`?"
+    },
+    {
+      "kind": "js",
+      "q": "Is there any loop in JS that Swift can't express without C-style `for`? Try a loop that modifies its own counter."
+    },
+    {
+      "kind": "edge",
+      "q": "`stride(from: 0.0, through: 1.0, by: 0.1)`: does it include 1.0? Why is that shaky with floats?"
+    },
+    {
+      "kind": "practice",
+      "q": "Countdown timers in apps: is a loop right at all, or should you use `Timer`/`TimelineView`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use For Loops in Swift | Swift Basics #15",
+      "url": "https://www.youtube.com/watch?v=7hAmXRwBQxc",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to skip loop items with break and continue – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=z_kR4cP23c4",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift For Beginners - Loops (For, While, Repeat)",
+      "url": "https://www.youtube.com/watch?v=9Snw7polcBU",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

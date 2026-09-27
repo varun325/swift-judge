@@ -13,6 +13,10 @@
     {
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -30,5 +34,39 @@
     "Nest collections: a dictionary whose values are sets gives dedupe for free.",
     "`classes[name, default: []].insert(student)`, then sort keys and each set when printing.",
     "Largest with ties: compare `(count, name)` tuples with the name ascending."
+  ],
+  "impact": "edge",
+  "jsBridge": "`[String: [String]]` is JS's `Record<string, string[]>`. The difference: `dict[k]?.append(x)` silently does nothing when the key is missing, so you need `dict[k, default: []].append(x)`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, `map[k].push(x)` throws if `map[k]` is undefined. What does `dict[k]?.append(x)` do in Swift, and why is that sneakier?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `dict[k, default: []].append(x)` copy the array? (It mutates in place.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[String: [String]]` vs `[String: Set<String>]` for de-duplication: which fits better?"
+    },
+    {
+      "kind": "practice",
+      "q": "Sectioned lists in SwiftUI need an ordered list of sections. Why is a dictionary alone not enough?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+      "url": "https://www.youtube.com/watch?v=Le32Tbkv2v0",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

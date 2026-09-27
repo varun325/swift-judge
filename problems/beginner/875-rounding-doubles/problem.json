@@ -13,6 +13,10 @@
     {
       "title": "Double",
       "url": "https://developer.apple.com/documentation/swift/double"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
     }
   ],
   "signature": {
@@ -31,5 +35,46 @@
     "`Double` has a `rounded(_:)` method with different rounding rules.",
     "The rules are `.down`, `.up` and `.towardZero`; plain `rounded()` rounds halves away from zero.",
     "Two decimals: `(value * 100).rounded() / 100`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS has `Math.round` (half up), `floor`, `ceil` and `trunc`. Swift's `rounded(_:)` takes a `FloatingPointRoundingRule`, and the default is **half away from zero**: `-2.5` becomes `-3`, where JS gives `-2`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Math.round(-2.5)` is -2 in JS. What is `(-2.5).rounded()` in Swift? Which is \"right\"?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can `(x * 100).rounded() / 100` still print `1.0049999999`? What should a UI use instead?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.toNearestOrEven` (banker's rounding) vs `.toNearestOrAwayFromZero`: where does banker's rounding matter?"
+    },
+    {
+      "kind": "practice",
+      "q": "For display, use `value.formatted(.number.precision(.fractionLength(2)))`. Why is formatting better than rounding the stored number?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Doubles and booleans – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ZpGDwOAWiXA",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "two other basic types of data in Swift are doubles and boolean z' and you'll be using them a lot double is short for"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -13,6 +13,10 @@
     {
       "title": "Enumerations — Raw Values",
       "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -30,5 +34,48 @@
     "An enum can have `String` raw values different from its case names.",
     "Use `Size(rawValue:)` — it returns an optional.",
     "`\"\\(size)=\\(size.rawValue)\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`String` raw values default to the case name (`case small` means `\"small\"`), like TS string enums but without typing the name twice. `\"\\(Size.large)\"` prints the **case name**, not the raw value, a common surprise.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS string enums need `Small = 'small'`. What does Swift infer if you omit the raw value?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `print(Size.large)` print `large` and not `L`? How would you make it print `L`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Raw values often mirror API strings. Should the enum's case names follow Swift style while raw values follow the API?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Raw values vs `CodingKeys`-style mapping: where does each belong?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8&t=235s",
+      "channel": "Swiftful Thinking",
+      "start": 235,
+      "moment": "for now all right now this obviously works but you'll notice that brand is a string"
+    },
+    {
+      "title": "Enum Raw Values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ssLIP4gFrYc&t=26s",
+      "channel": "Paul Hudson",
+      "start": 26,
+      "moment": "can use that number to create an instance of the appropriate enum case for example Earth will be given the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -12,6 +12,10 @@
     {
       "title": "DispatchQueue",
       "url": "https://developer.apple.com/documentation/dispatch/dispatchqueue"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "platforms": [
@@ -21,5 +25,60 @@
     "A serial queue runs blocks one at a time in the order they were enqueued.",
     "`sync` doesn't return until its block — and everything queued before it — has run.",
     "The empty `sync {}` waits for `E`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A serial queue runs blocks one at a time in FIFO order. `async` enqueues and returns, and `sync` enqueues and waits. JS's event loop is one serial queue, so the ordering intuition carries over, but `sync` has no JS equivalent.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`setTimeout(f, 0)` is like `queue.async`. What would a blocking `queue.sync` mean on JS's single thread?"
+    },
+    {
+      "kind": "edge",
+      "q": "`queue.sync` from inside a block already running on `queue`: why does it deadlock?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Serial vs concurrent queues: which gives ordering guarantees?"
+    },
+    {
+      "kind": "practice",
+      "q": "`DispatchQueue.main.async` vs `@MainActor`: which should new code use?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncStream in Swift | Swift Concurrency #18",
+      "url": "https://www.youtube.com/watch?v=gi38bouUI2Q&t=1172s",
+      "channel": "Swiftful Thinking",
+      "start": 1172,
+      "moment": "quickly inside this dispatch queue I'm just going to add a print statement that says new data and I'll just print out"
+    },
+    {
+      "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+      "url": "https://www.youtube.com/watch?v=1RD8-5_Zsws&t=12s",
+      "channel": "Paul Hudson",
+      "start": 12,
+      "moment": "whereas before method runs only methods so using GCD we can write something that runs code after a half second delay"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "the vast majority of iOS apps have some sort of networking component to them data lives on a server and the IOS app needs to go to that server download the data"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

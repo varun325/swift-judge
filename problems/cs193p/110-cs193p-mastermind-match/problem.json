@@ -41,13 +41,44 @@
   "videos": [
     {
       "title": "CS193p 2025 · L4: CodeBreaker's Model",
-      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94&t=3053s",
+      "channel": "Stanford Online",
+      "start": 3053,
+      "moment": "is the only way to do it, but what this does is it matches against another code. That's why it's called match(against otherCode:). And it returns an Array of Ma"
     },
     {
       "title": "CS193p 2025 · L5: Layout & Data Flow",
-      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE&t=1878s",
+      "channel": "Stanford Online",
+      "start": 1878,
+      "moment": "All right, let's go do this match(against:). I posted on Ed discussion. I said, go look at this and see if you can figure out how it works. How many people did "
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "Scoring a guess (exact first, then inexact with remaining counts) is the heart of CodeBreaker's model. The course's point: keep game logic in a **model** struct, UI-free and testable, just as you'd keep React components dumb and logic in pure functions.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In React you'd put `score(guess, master)` in a pure module. Why does CS193p insist on a separate Model even in SwiftUI?"
+    },
+    {
+      "kind": "edge",
+      "q": "Duplicate colours in the guess and master: why must exact matches be removed before counting inexact ones?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Counting with a dictionary vs nested loops with a `used` array: which is easier to prove correct?"
+    },
+    {
+      "kind": "practice",
+      "q": "How would you unit-test this model with Swift Testing's parameterised `@Test(arguments:)`?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

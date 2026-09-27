@@ -17,6 +17,10 @@
     {
       "title": "Binding",
       "url": "https://developer.apple.com/documentation/swiftui/binding"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
     }
   ],
   "platforms": [
@@ -26,5 +30,49 @@
     "`wrappedValue` is the plain value; `projectedValue` is what `$` gives you.",
     "A `State<Int>`'s projected value is a `Binding<Int>`.",
     "Subscripting a `Binding<[String]>` gives a `Binding<String>`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`count` is the `wrappedValue` and `$count` is the `projectedValue`. For `@State` that's an `Int` and a `Binding<Int>`. React has `const [count, setCount]`, and Swift folds the pair into one declaration with a `$` prefix.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`const [count, setCount] = useState(0)` vs `@State var count = 0`: what's `$count` in React terms?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the type of `_count` (the underscore)? When would you touch it (`init`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@State`'s projected value is a `Binding`. What's `@Bindable`'s? What about `@Environment`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Passing `$count` to a child `Toggle`: what does the child receive, and who owns the data?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+      "url": "https://www.youtube.com/watch?v=BKxbHnka4-Q&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "welcome back everyone i'm nick this is swiffle thinking and we're going to jump right in to mvvm in this app so in this"
+    },
+    {
+      "title": "Binding state to user interface controls – WeSplit SwiftUI Tutorial  5/11",
+      "url": "https://www.youtube.com/watch?v=wMIHdsFYGC0&t=134s",
+      "channel": "Paul Hudson",
+      "start": 134,
+      "moment": "to fulfill the promise of that it's views a function of State when they change the text field it should also"
+    },
+    {
+      "title": "Simple, Clean Empty States in SwiftUI - ContentUnavailableView - iOS 17",
+      "url": "https://www.youtube.com/watch?v=bEB7ATENue0",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "iOS 17 introduced content unavailable view that allows us to easily create simple minimal empty States just like apple uses in this video I'm going to show you "
+    }
+  ],
+  "articles": []
 }

@@ -32,5 +32,55 @@
     "Trace the loop: what happens to `i` when `continue` runs?",
     "`continue` skips the `i -= 1` at the bottom, so `i` never moves. A `for`-`in` loop can't forget to advance.",
     "`for file in files.reversed() where !file.hasSuffix(\".jpeg\") { result.append(file) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A `while` loop whose `continue` skips the increment hangs in JS too. Swift nudges you towards `for … in` over collections or `stride`, where the language owns the counter and this bug can't happen.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`for x in items.reversed()` vs an index-based `while`: which bugs does each make impossible?"
+    },
+    {
+      "kind": "js",
+      "q": "In JS, `for…of` vs `for (let i…)`: do you reach for index loops more in JS than you need to in Swift?"
+    },
+    {
+      "kind": "practice",
+      "q": "An infinite loop on the main thread freezes the UI. What does iOS do to an app that hangs too long (watchdog)?"
+    },
+    {
+      "kind": "edge",
+      "q": "How did the judge detect the infinite loop? What does TLE mean in terms of process signals?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use For Loops in Swift | Swift Basics #15",
+      "url": "https://www.youtube.com/watch?v=7hAmXRwBQxc&t=851s",
+      "channel": "Swiftful Thinking",
+      "start": 851,
+      "moment": "there's while loops. So, it's while a condition happens, then we trigger this closure."
+    },
+    {
+      "title": "How to use a while loop to repeat work – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=NduMuU0xeqk",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] swift has a second kind of loop called a while loop"
+    },
+    {
+      "title": "Swift For Beginners - Loops (For, While, Repeat)",
+      "url": "https://www.youtube.com/watch?v=9Snw7polcBU&t=642s",
+      "channel": "Sean Allen",
+      "start": 642,
+      "moment": "loop if you think about the world while right a while loop will run as long as a certain condition is true so if you can"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

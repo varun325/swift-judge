@@ -31,5 +31,55 @@
     "Name the function type once with `typealias`, then store several closures in a global array — Swift 6 will want that function type to be `@Sendable`.",
     "Each validator returns `String?`; the first non-nil message wins.",
     "`validators.lazy.compactMap { $0(input) }.first ?? \"ok\"`."
+  ],
+  "impact": "core",
+  "jsBridge": "A `typealias` for closure types is TS's `type Validator = (s: string) => string | null`. In Swift 6, storing closures in globals requires `@Sendable`, because globals are shared across threads.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why doesn't JS care whether a callback is \"sendable\"? What's different about Swift's threading model?"
+    },
+    {
+      "kind": "edge",
+      "q": "Remove `@Sendable` and read the Swift 6 error. What's the fix if the closure captures non-Sendable state?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Array of validator closures vs a `Validator` protocol with structs: which is easier to log or identify in errors?"
+    },
+    {
+      "kind": "practice",
+      "q": "Form validation pipelines in real apps: where do validation rules live, and do they share code with the backend?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=23s",
+      "channel": "Swiftful Thinking",
+      "start": 23,
+      "moment": "because we are going to use a lot of what we learned in this video and that includes"
+    },
+    {
+      "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=HnIID4W3a_o&t=103s",
+      "channel": "Paul Hudson",
+      "start": 103,
+      "moment": "so why do we have to say a string comma b string returns bull in we don't"
+    },
+    {
+      "title": "Swift Closures: @escaping Explained",
+      "url": "https://www.youtube.com/watch?v=xiS5gJOIQxI&t=180s",
+      "channel": "Sean Allen",
+      "start": 180,
+      "moment": "while it's out there waiting for the network called to come back right it's got to live somewhere and it so it lives"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

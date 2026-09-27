@@ -39,5 +39,41 @@
     "One version takes a predicate; the other compares with `==`, which needs a constraint.",
     "Put the equality version in `extension Sequence where Element: Equatable` and reuse the predicate version.",
     "`for element in self where try predicate(element) { return true }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Two overloads: `contains(where:)` for any element, and `contains(_:)` only `where Element: Equatable`. This is **conditional API availability**, which JS/TS can only approximate with overloads on generic constraints.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS can't add a method that exists only when `T extends Equatable`. What does Swift's constrained extension enable?"
+    },
+    {
+      "kind": "edge",
+      "q": "If a type is `Equatable` and you pass a closure, which overload is chosen?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Constrained extension `where Element: Equatable` vs a generic function: which reads better at the call site?"
+    },
+    {
+      "kind": "practice",
+      "q": "Look at `Array.firstIndex(of:)` vs `firstIndex(where:)` in the standard library. Same pattern?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Inside the Standard Library: Sequence.contains",
+      "url": "https://www.youtube.com/watch?v=SuUf9buBzA0&t=146s",
+      "channel": "Paul Hudson",
+      "start": 146,
+      "moment": "closure the underscore in underscore custom contains equatable element tells you this is an internal method it's"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

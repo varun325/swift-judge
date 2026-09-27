@@ -16,6 +16,14 @@
     {
       "title": "Shape.trim(from:to:)",
       "url": "https://developer.apple.com/documentation/swiftui/shape/trim(from:to:)"
+    },
+    {
+      "title": "Shape",
+      "url": "https://developer.apple.com/documentation/swiftui/shape"
+    },
+    {
+      "title": "Color",
+      "url": "https://developer.apple.com/documentation/swiftui/color"
     }
   ],
   "signature": {
@@ -36,5 +44,33 @@
     "A ring is a circle path, trimmed to a fraction of its length.",
     "`Path(ellipseIn:)` then `.trimmedPath(from: 0, to: p)`.",
     "Round each bounding-box component and join with commas."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "A progress ring is a circle trimmed to a fraction with `trimmedPath(from:to:)`, or `.trim` on a `Shape`. SVG's `stroke-dasharray` trick does the same in the browser.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "SVG `stroke-dasharray`/`stroke-dashoffset` vs SwiftUI `.trim(from:to:)`: which is simpler?"
+    },
+    {
+      "kind": "edge",
+      "q": "Where does a circle's path start (3 o'clock)? How do you make progress start at 12 o'clock?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Circle().trim()` vs `Gauge` vs `ProgressView(value:)` with a circular style: when to hand-roll?"
+    },
+    {
+      "kind": "practice",
+      "q": "Activity rings: how would you animate progress changes smoothly?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to trim whitespace in a string – Swift 5",
+      "url": "https://www.youtube.com/watch?v=4WzqzwJztkg",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

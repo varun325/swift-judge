@@ -13,6 +13,10 @@
     {
       "title": "Basic Operators — Compound Assignment Operators",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Bool",
+      "url": "https://developer.apple.com/documentation/swift/bool"
     }
   ],
   "signature": {
@@ -30,5 +34,53 @@
     "`a += b` is shorthand for `a = a + b` — and it works for strings too.",
     "Take the first character as the operator and parse the rest as an `Int`.",
     "`switch op { case \"+\": score += n … case \"/\": if n != 0 { score /= n } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`+=`, `-=` and friends work as in JS, including `+=` on strings. The differences: `/` on `Int` truncates, overflow traps, and there's no `++` or `--` (removed in Swift 3).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why did Swift remove `++` and `--` (SE-0004)? Do you miss them?"
+    },
+    {
+      "kind": "edge",
+      "q": "`score /= 0` would crash. What does JS do with `/ 0`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`title += \" x\"` vs `title.append(\" x\")`: any performance difference?"
+    },
+    {
+      "kind": "practice",
+      "q": "Can you define `+=` for your own types, like a `Money` struct? Should you?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create custom Operators in Swift | Advanced Learning #33",
+      "url": "https://www.youtube.com/watch?v=4eOTk5y-uZI&t=17s",
+      "channel": "Swiftful Thinking",
+      "start": 17,
+      "moment": "not the video for you because it's knowledge that you really don't need to know although it's pretty cool to know"
+    },
+    {
+      "title": "Compound assignment operators – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=5y2wcttlE5s",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Swift has shorthand operators that combine one operator with an assignment so you can change a variable in place"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

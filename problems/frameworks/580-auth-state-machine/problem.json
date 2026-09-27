@@ -38,5 +38,48 @@
     "Switch on `(currentState, eventName)` and return the next state or nil.",
     "Pattern-match associated values: `case (.signedIn(let uid, true), \"link\")`.",
     "Log `\"ignored\"` when the transition isn't legal."
+  ],
+  "impact": "core",
+  "jsBridge": "Auth as an enum state machine (`signedOut`, `signingIn`, `signedIn(user)`, `error`) makes impossible states unrepresentable, the same idea as XState or a discriminated-union reducer in React.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React auth state as `{ user, loading, error }` allows `loading && user`. How does the Swift enum rule that out?"
+    },
+    {
+      "kind": "edge",
+      "q": "Token refresh while `signedIn`: a new state, or a side effect? What happens to in-flight requests?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Enum state machine vs Firebase's auth listener callback: where does the listener feed events in?"
+    },
+    {
+      "kind": "practice",
+      "q": "Sign in with Apple: which states and errors must the UI handle (cancelled, credential revoked)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "iOS Firebase Authentication: Deleting Users | Firebase Bootcamp #7",
+      "url": "https://www.youtube.com/watch?v=a4UiKuzCu8A",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "okay quick video here because I kind of just forgot to include it about two videos ago uh but we need the ability to"
+    },
+    {
+      "title": "Xcode in 20 Seconds: Authors view",
+      "url": "https://www.youtube.com/watch?v=21MOQfXH2Fc",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "if you want to see who last touched a piece of code use the author's view to activate this go to the three edit of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Firebase for Apple platforms",
+      "url": "https://firebase.google.com/docs/ios/setup",
+      "source": "Firebase"
+    }
   ]
 }

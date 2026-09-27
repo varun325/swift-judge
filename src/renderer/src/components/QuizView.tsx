@@ -7,6 +7,7 @@ export function QuizView(): React.JSX.Element {
   const [items, setItems] = useState<QuizItem[]>([])
   const [done, setDone] = useState<Record<string, boolean>>({})
   const [picked, setPicked] = useState<Record<string, number>>({})
+  const [topic, setTopic] = useState('all')
 
   useEffect(() => {
     void Promise.all([window.judge.listQuiz(), window.judge.getQuizProgress()]).then(([q, p]) => {
@@ -23,18 +24,28 @@ export function QuizView(): React.JSX.Element {
     void window.judge.saveQuizAnswer(item.id, correct)
   }
 
-  const right = Object.values(done).filter(Boolean).length
+  const topics = [...new Set(items.map((i) => i.topic ?? 'Other'))]
+  const shown = topic === 'all' ? items : items.filter((i) => (i.topic ?? 'Other') === topic)
+  const right = shown.filter((i) => done[i.id]).length
   return (
     <div className="full-view">
       <div className="full-header">
         <h1>Quick quiz</h1>
         <p className="muted">
-          {right}/{items.length} answered correctly (last attempt) ·{' '}
+          <select className="quiz-topic" value={topic} onChange={(e) => setTopic(e.target.value)}>
+            <option value="all">All topics ({items.length})</option>
+            {topics.map((t) => (
+              <option key={t} value={t}>
+                {t} ({items.filter((i) => (i.topic ?? 'Other') === t).length})
+              </option>
+            ))}
+          </select>{' '}
+          {right}/{shown.length} answered correctly (last attempt) ·{' '}
           <button className="link" onClick={() => setPicked({})}>retry all</button>
         </p>
       </div>
       <div className="quiz-list">
-        {items.map((item, n) => {
+        {shown.map((item, n) => {
           const p = picked[item.id]
           return (
             <div key={item.id} className="quiz-card">

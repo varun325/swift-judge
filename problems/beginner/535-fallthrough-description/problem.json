@@ -31,5 +31,51 @@
     "Swift cases don't fall through unless you write `fallthrough`.",
     "Start with `\"The number \\(n) is\"`; the prime case appends its text and falls through; `default` appends `\" an integer.\"`.",
     "`case 2, 3, 5, 7, 11, 13, 17, 19: description += \" a prime number, and also\"; fallthrough`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS `switch` falls through **by default**, a famous source of bugs. Swift does the reverse: no implicit fall-through, and an explicit `fallthrough` keyword when you really want it (rarely).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How many JS bugs come from a forgotten `break`? Why is Swift's opt-in `fallthrough` the better default?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can `fallthrough` jump into a case that binds variables with `let`? Why not?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`fallthrough` vs extracting the shared code into a function: which would a reviewer prefer?"
+    },
+    {
+      "kind": "practice",
+      "q": "Have you ever seen `fallthrough` in production Swift? What's a legitimate use?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+      "url": "https://www.youtube.com/watch?v=JIT8sL_VtNA",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "SwiftUI Toggle - Button & Switch Tutorial",
+      "url": "https://www.youtube.com/watch?v=-sw7gvNUboc&t=73s",
+      "channel": "Sean Allen",
+      "start": 73,
+      "moment": "system image so now title key again wifi system image just Wi-Fi I looked that up in SF symbols pretty easy to remember and then The Binding is Wi-Fi on we'll d"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

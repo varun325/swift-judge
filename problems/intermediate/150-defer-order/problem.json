@@ -13,6 +13,14 @@
     {
       "title": "Error Handling — Specifying Cleanup Actions",
       "book": "LanguageGuide/ErrorHandling"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -30,5 +38,46 @@
     "`defer` runs when its **scope** exits — in a `for` loop, that's the end of each iteration.",
     "Use recursion so each resource's scope is nested inside the previous one; log `close` in a `defer`.",
     "In the helper: `log.lines.append(\"open \\(name)\"); defer { log.lines.append(\"close \\(name)\") }; open(steps.dropFirst(), log)`."
+  ],
+  "impact": "core",
+  "jsBridge": "`defer` runs when the scope exits, in **reverse** order of declaration, like stacked `finally` blocks, or Go's `defer`. It fits cleanup that must happen on every exit path (`return`, `throw`), which in JS takes nested `try/finally`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Rewrite three stacked `defer`s as JS `try/finally`. How deep does the nesting get?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `defer` run if the process crashes (`fatalError`)? If an error is thrown?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`defer` vs `deinit`-based cleanup (RAII): which is deterministic in Swift?"
+    },
+    {
+      "kind": "practice",
+      "q": "Typical `defer` uses: `lock.unlock()`, `isLoading = false`, closing file handles. What's the risk of `defer { isLoading = false }` in an async function?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+      "url": "https://www.youtube.com/watch?v=Lrc-MX8WgNc",
+      "channel": "Sean Allen"
+    },
+    {
+      "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+      "url": "https://www.youtube.com/watch?v=lncOFL3Qsns&t=655s",
+      "channel": "Swiftful Thinking",
+      "start": 655,
+      "moment": "this website the other day which is awesome I didn't even know about it uh OS status.com it is a way to look up"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

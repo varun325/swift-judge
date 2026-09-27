@@ -34,5 +34,39 @@
     "Since Swift 5.9, `if` can be an expression that produces a value.",
     "Compute the BMI, then write `let category = if … { \"…\" } else if … { \"…\" } else { \"…\" }`.",
     "`let bmi = weightKg / (heightM * heightM)` and the chain `< 18.5`, `< 25`, `< 30`, else \"obese\"."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift 5.9 made `if` and `switch` **expressions**, so `let x = if … { a } else { b }` works like a multi-branch ternary. JS has nothing equivalent without an IIFE or a chain of nested ternaries.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs nest ternaries or use IIFEs for this. What makes Swift's version type-safe that the IIFE isn't?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can each branch of an `if` expression contain several statements? What happens if the branches return different types?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`if` expression vs `switch` expression vs a ternary: which is most readable for 4 categories?"
+    },
+    {
+      "kind": "practice",
+      "q": "In SwiftUI, `if` inside a `ViewBuilder` is different from an `if` expression. What does the builder turn it into (`_ConditionalContent`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -37,5 +37,39 @@
     "A function can return another function.",
     "`add(a)` returns a closure that waits for `b`.",
     "`func add(_ a: Int) -> (Int) -> Int { { b in a + b } }` — then `xs.map(add(base)) + [add(1)(add(2)(3))]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Currying works as in JS: `add(1)(2)`. Swift's function types make it explicit (`(Int) -> (Int) -> Int`). Instance methods are curried under the hood: `Type.method` is `(Type) -> (Args) -> Result`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`const add = a => b => a + b` in JS vs `func add(_ a: Int) -> (Int) -> Int`. Is there a difference in how captured `a` is stored?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the type of `String.uppercased`, unapplied? Try `let f = String.uppercased`."
+    },
+    {
+      "kind": "contrast",
+      "q": "Currying vs default parameters vs a configured struct: which does Swift code favour?"
+    },
+    {
+      "kind": "practice",
+      "q": "Partial application shows up in dependency injection: `makeFetcher(session)` returns `(URL) async throws -> Data`. Where else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Returning closures from functions – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=9E2T3HmHnTU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -32,5 +32,46 @@
     "Implement `<` (and `==` where needed) to conform to `Comparable`.",
     "Parse into three integers padded with zeros; compare them lexicographically. Exclude the original text from equality.",
     "`static func < (a: Version, b: Version) -> Bool { a.parts.lexicographicallyPrecedes(b.parts) }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Conforming to `Comparable` means implementing `<`. You get `>`, `<=`, `sorted()`, `max()` and `clamped` for free. JS needs a comparator function passed everywhere, while Swift puts ordering on the type.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "semver comparison in JS needs a library call each time. What does putting `<` on the type let every API use automatically?"
+    },
+    {
+      "kind": "edge",
+      "q": "Must `\"2\" == \"2.0.0\"`? If `==` says yes but the hash differs, what breaks in a `Set<Version>`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Comparable` conformance vs `sorted(by:)` closures: when does the type have a *natural* order?"
+    },
+    {
+      "kind": "practice",
+      "q": "App version checks (\"force update below 2.3\"): where does this logic live, and how do you get the app's version?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Adding conformance to Comparable for custom types – Bucket List SwiftUI Tutorial 1/12",
+      "url": "https://www.youtube.com/watch?v=oLhjqLgLr4s&t=383s",
+      "channel": "Paul Hudson",
+      "start": 383,
+      "moment": "sorted method with no parameters this takes two steps want to add the comparable protocol to the definition of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

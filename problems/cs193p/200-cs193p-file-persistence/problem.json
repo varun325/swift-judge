@@ -42,8 +42,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L16: Shapes, Gestures, Persistence",
-      "url": "https://www.youtube.com/watch?v=skECWIKpBVY",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=skECWIKpBVY&t=4275s",
+      "channel": "Stanford Online",
+      "start": 4275,
+      "moment": "I'm going to make it so we add these sample games by loading up sample games from JSON files in the filesystem. So that way you're going to be able to see writi"
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "Encoding the model with `Codable` and writing it to the app's Documents directory is L16's alternative to SwiftData, the same as saving JSON to disk in Node or IndexedDB on the web, with atomic writes.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`fs.writeFileSync('games.json', JSON.stringify(games))` vs `try data.write(to: url, options: .atomic)`: what does `.atomic` add?"
+    },
+    {
+      "kind": "edge",
+      "q": "Encoding fails (a non-Codable property sneaks in) or the file is from an older version: what should load do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "File persistence vs SwiftData: which is easier to export, sync, or query?"
+    },
+    {
+      "kind": "practice",
+      "q": "Autosave triggers: every change, on background, or debounced? What does the course do?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

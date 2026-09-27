@@ -13,6 +13,10 @@
     {
       "title": "MemoryLayout",
       "url": "https://developer.apple.com/documentation/swift/memorylayout"
+    },
+    {
+      "title": "Copyable",
+      "url": "https://developer.apple.com/documentation/swift/copyable"
     }
   ],
   "signature": {
@@ -24,5 +28,38 @@
     "`MemoryLayout<T>` reports `size`, `stride` and `alignment`.",
     "Write a generic helper returning the three numbers for a type, and put the 8-byte field first in `Packed`.",
     "`func info<T>(_: T.Type) -> [Int] { [MemoryLayout<T>.size, MemoryLayout<T>.stride, MemoryLayout<T>.alignment] }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`MemoryLayout<T>.size/stride/alignment` shows how structs are laid out, with padding between fields. JS objects hide all of this. It matters for performance-sensitive Swift (large arrays of structs) and C interop.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS objects have hidden classes and unknown layout. Why can Swift tell you exactly?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why is `MemoryLayout<String>.size` 16 no matter how long the string is?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`size` vs `stride`: which one determines array memory?"
+    },
+    {
+      "kind": "practice",
+      "q": "When does field ordering actually matter in an app (millions of elements, Metal buffers)?"
+    }
+  ],
+  "videos": [],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Memory Safety",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/memorysafety/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0390: Noncopyable structs and enums",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

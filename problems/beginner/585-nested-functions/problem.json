@@ -39,5 +39,48 @@
     "Functions are values with types like `(Int) -> Int`.",
     "Define both helpers inside `stepper`, pick one into a `let step: (Int) -> Int`, then call it in a loop.",
     "`let step: (Int) -> Int = backward ? stepBackward : stepForward`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Nested function declarations inside a function work like JS inner functions and close over outer variables. Functions are first-class: `let step: (Int) -> Int = stepForward` is the typed version of assigning a function to a variable.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS inner functions are hoisted. Can a Swift nested function be called before its declaration in the body?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Nested `func` vs `let` closure: which can be recursive without tricks?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does a nested function that captures nothing allocate anything?"
+    },
+    {
+      "kind": "practice",
+      "q": "When does a nested helper beat a `private` method: readability or scope?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Functions in Swift | Swift Basics #5",
+      "url": "https://www.youtube.com/watch?v=kr3SSplrJlw&t=300s",
+      "channel": "Swiftful Thinking",
+      "start": 300,
+      "moment": "first go to this file and show this on the screen and then that file is going to call a whole bunch of other functions"
+    },
+    {
+      "title": "Returning closures from functions – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=9E2T3HmHnTU",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "in the same way that you pass a closure to a function you can get closures returned from a function to the syntax"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

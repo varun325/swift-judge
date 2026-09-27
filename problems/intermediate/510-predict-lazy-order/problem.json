@@ -21,5 +21,65 @@
     "Stored defaults run during init; `lazy` runs once on first access; computed runs every time.",
     "`computing eager` prints before `created`; `computing lazy` prints once; `computing computed` prints on both reads.",
     "Start: `start`, `computing eager`, `created`, `computing lazy`, `4`, `4`…"
+  ],
+  "impact": "edge",
+  "jsBridge": "`lazy var` evaluates its initialiser on first access, like a memoised JS getter. A computed property re-runs every time, and a closure-initialised stored property (`= { … }()`) runs once at init.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would you write a lazy memoised property in JS (getter + `Object.defineProperty`)? What does Swift's `lazy` do for you?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `lazy var` thread-safe? What happens when two threads touch it first at the same time?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`lazy var` vs computed `var` vs `let x = { … }()`: when does each closure run, and how many times?"
+    },
+    {
+      "kind": "practice",
+      "q": "`lazy var dateFormatter` is a classic. Why are formatters worth caching?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Add a custom Navigation Link for lazy loading | SwiftUI Crypto App #18",
+      "url": "https://www.youtube.com/watch?v=XGXWC68Yb_o&t=476s",
+      "channel": "Swiftful Thinking",
+      "start": 476,
+      "moment": "extra api calls and we don't want that in our app so ideally in the future hopefully swift"
+    },
+    {
+      "title": "Lazy properties – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=fau8QgH0pIA&t=36s",
+      "channel": "Paul Hudson",
+      "start": 36,
+      "moment": "person edy VAR ed it was person named edy but what if we didn't always need the"
+    },
+    {
+      "title": "SwiftUI Grids - LazyVGrid, LazyHGrid, Static Grid",
+      "url": "https://www.youtube.com/watch?v=vfUalXtwth0",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today I'm going to show you how to build different types of grids in Swift UI you'll learn about lazy V grids in section headers Lazy H grids and static grids t"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -18,6 +18,10 @@
     {
       "title": "Swift Evolution SE-0390",
       "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md"
+    },
+    {
+      "title": "Copyable",
+      "url": "https://developer.apple.com/documentation/swift/copyable"
     }
   ],
   "signature": {
@@ -39,5 +43,38 @@
     "`~Copyable` values have one owner; `consuming` methods take that ownership.",
     "`close()` logs and sets `closed = true`; `deinit` logs `auto-close` only if not closed.",
     "`consuming func close() { log.lines.append(\"close \\(name)\"); closed = true }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`~Copyable` types have **unique ownership**: they can't be copied, only moved or borrowed, and `consuming` methods end their life. That's Rust-like ownership in Swift, with no JS equivalent. It suits resources like file handles and locks.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How do JS devs ensure a file handle is closed exactly once (try/finally, `using`)? What does `~Copyable` enforce at compile time instead?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`~Copyable` struct with `deinit` vs a class with `deinit`: what's different about sharing?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a `~Copyable` value go into an `Array`? (It can't yet.) Why is that hard?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you use `~Copyable` in app code today, or is it mostly for systems and library code?"
+    }
+  ],
+  "videos": [],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Memory Safety",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/memorysafety/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0390: Noncopyable structs and enums",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

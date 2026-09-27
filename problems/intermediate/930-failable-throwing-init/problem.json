@@ -31,5 +31,51 @@
     "`init?` can only say \"no\"; a throwing init can say *why*.",
     "Validate in the throwing init; the failable init can call it with `try?` and assign `self`.",
     "`guard let email = try? Email(validating: raw) else { return nil }; self = email`."
+  ],
+  "impact": "core",
+  "jsBridge": "`init?` returns `nil` on bad input, and `init() throws` explains *why*. JS constructors can only throw, so the \"return nil\" option is Swift-specific and ideal when the caller doesn't care about the reason.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS constructors can't return null. Would you rather have `Email.parse()` return null or throw? How does Swift let the caller choose?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`init?` vs `init() throws` vs a static `validate() -> Result`: which gives the best form UX?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a failable init delegate to a throwing init? With `try?`?"
+    },
+    {
+      "kind": "practice",
+      "q": "`URL(string:)` is failable, while `JSONDecoder().decode` throws. Why did Apple choose differently?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Failable initializers – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=HzG0u91xr1M&t=5s",
+      "channel": "Paul Hudson",
+      "start": 5,
+      "moment": "converts a string to an integer but because you might try to pass any string there what you actually get back is an"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

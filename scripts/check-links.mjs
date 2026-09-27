@@ -36,16 +36,27 @@ for (const track of fs.readdirSync(path.join(root, 'problems'))) {
   }
 }
 
+/** GET with redirects, backing off on 429 (GitHub and YouTube rate-limit bursts of checks). */
+async function fetchRetrying(url, attempts = 4) {
+  for (let i = 0; ; i++) {
+    const res = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow' })
+    if (res.status !== 429 || i === attempts - 1) return res
+    await new Promise((r) => setTimeout(r, 2000 * 2 ** i))
+  }
+}
+
 async function check(url) {
   const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url)
   try {
     if (yt) {
-      const res = await fetch(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(url)}`, { headers: { 'User-Agent': UA } })
+      const res = await fetchRetrying(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(url)}`)
+      // 401 = the video exists but its owner disabled embedding (e.g. Stanford's CS193p); 404 = gone or private.
+      if (res.status === 401) return { ok: true, status: 401, embeddable: false }
       if (res.status !== 200) return { ok: false, status: res.status }
       const body = await res.json()
       return { ok: true, status: 200, title: body.title, author: body.author_name }
     }
-    const res = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow' })
+    const res = await fetchRetrying(url)
     return { ok: res.status === 200, status: res.status, finalUrl: res.url !== url ? res.url : undefined }
   } catch (e) {
     return { ok: false, status: 0, error: String(e) }

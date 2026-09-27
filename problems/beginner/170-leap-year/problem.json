@@ -14,6 +14,10 @@
     {
       "title": "Basic Operators — Logical Operators",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Bool",
+      "url": "https://developer.apple.com/documentation/swift/bool"
     }
   ],
   "signature": {
@@ -31,5 +35,49 @@
     "`isMultiple(of:)` reads better than `% x == 0`.",
     "Divisible by 4 **and** (not divisible by 100 **or** divisible by 400).",
     "`year.isMultiple(of: 4) && (!year.isMultiple(of: 100) || year.isMultiple(of: 400))`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS: `y % 4 === 0 && ...`. Swift has `isMultiple(of:)`, which reads better and is safe for `Int.min` and zero. For real calendars you'd never hand-roll this, and you'd ask `Calendar` instead.",
+  "compass": [
+    {
+      "kind": "practice",
+      "q": "Why should app code use `Calendar.current.range(of: .day, in: .month, for:)` rather than a leap-year formula? Which calendars does the user's device support?"
+    },
+    {
+      "kind": "js",
+      "q": "JS's `Date` has no calendar system awareness beyond Gregorian. How does Foundation's `Calendar` differ, for example for the Japanese or Hebrew calendars?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `isMultiple(of: 0)` not crash when `x % 0` does?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Nested `if` vs one boolean expression vs a `switch` on `(y%4, y%100, y%400)`: which is easiest to audit?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Operators and conditions: Summary – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=Hhnx3i0o1_c",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "How to create custom Operators in Swift | Advanced Learning #33",
+      "url": "https://www.youtube.com/watch?v=4eOTk5y-uZI",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

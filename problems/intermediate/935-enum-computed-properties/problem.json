@@ -14,6 +14,10 @@
     {
       "title": "Enumerations",
       "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -31,5 +35,48 @@
     "Enums can have computed properties and static members, just like structs.",
     "`index` can come from `allCases.firstIndex(of: self)`.",
     "`static func named(_ name: String) -> Planet? { Planet(rawValue: name.lowercased()) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Enums can have computed properties, static members and methods, like a TS enum merged with a namespace of helpers, but type-safe and exhaustive.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS: `enum Planet {}` plus `namespace Planet { export function … }`. What's cleaner about Swift?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can an enum have stored properties? What's the workaround (associated values, computed)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Enum with computed properties vs a struct with static instances (`Planet.mercury`): which is extensible by others?"
+    },
+    {
+      "kind": "practice",
+      "q": "App tabs, themes and API environments are often enums with computed properties. Name one in your app."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8&t=612s",
+      "channel": "Swiftful Thinking",
+      "start": 612,
+      "moment": "you call the variable name I covered this in the functions video about four or five videos back"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=194s",
+      "channel": "Paul Hudson",
+      "start": 194,
+      "moment": "You might have said for example uh switch loading state like that. And then for our loading view here, success view"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

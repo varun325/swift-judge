@@ -14,6 +14,10 @@
     {
       "title": "Basic Operators — Nil-Coalescing Operator",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -34,5 +38,46 @@
     "`??` supplies a fallback when an optional is `nil`, and it chains.",
     "Use `Optional.flatMap` to turn a `String?` into an `Int?` without ending up with `Int??`.",
     "`args[\"port\"].flatMap { Int($0) } ?? env[\"PORT\"].flatMap { Int($0) } ?? 8080`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`Int(args[\"port\"] ?? \"\") ?? Int(env[\"PORT\"] ?? \"\") ?? 8080` mixes optional dictionary lookups, failable parsing and fallbacks, like `Number(args.port) || Number(env.PORT) || 8080` but without the `NaN`/`0` traps.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Number(undefined) || 8080` works by accident because NaN is falsy. What goes wrong with port `0`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`flatMap(Int.init)` vs `Int(x ?? \"\")`: which avoids parsing an empty string?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the type of `args[\"port\"].flatMap(Int.init)`? Why not `Int??`?"
+    },
+    {
+      "kind": "practice",
+      "q": "App configuration in iOS: Info.plist, xcconfig, remote config. Which has precedence in your app?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=7s",
+      "channel": "Paul Hudson",
+      "start": 7,
+      "moment": "really useful it's called the nil coalescing operator and it will unwrap the optional"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -34,5 +34,65 @@
     "Which properties should never change after creation, and which must be protected from outside writes?",
     "Use `let` for model/seats/maxGears and `private(set) var gear = 1`; validate inside a `mutating` method.",
     "`guard (1...maxGears).contains(gear + delta) else { return false }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A struct with `let` constants, `private(set)` state and a `mutating` method that validates. Encapsulation in Swift is compile-time and costs nothing at runtime, unlike JS `#private`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Write this with JS `#gear`. Which invalid states can JS code still create that Swift's compiler prevents?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Returning `Bool` from `changeGear` vs throwing vs `precondition`: what should an invalid gear change do?"
+    },
+    {
+      "kind": "edge",
+      "q": "`private(set)` on a `let`: meaningful? Why or why not?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do you see `private(set)` in view models (`@Published private(set) var`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Structs in Swift | Swift Basics #9",
+      "url": "https://www.youtube.com/watch?v=gRKlprUj-I8&t=171s",
+      "channel": "Swiftful Thinking",
+      "start": 171,
+      "moment": "to them basically that's an easy layman's term way of thinking about it but really what we're doing when we were"
+    },
+    {
+      "title": "How property wrappers become structs – Instafilter SwiftUI Tutorial 1/13",
+      "url": "https://www.youtube.com/watch?v=M-1jRwzUIuI&t=338s",
+      "channel": "Paul Hudson",
+      "start": 338,
+      "moment": "this property can be read it's got a getter and has a Setter but it is a non mutating Setter meaning that when we set"
+    },
+    {
+      "title": "Swift - Class vs. Struct Explained",
+      "url": "https://www.youtube.com/watch?v=LtlbB4-6k_U",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "a very common iOS Developer interview question is to explain the difference between classes and structs I'm going to teach you the answer to that question by ex"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

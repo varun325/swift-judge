@@ -15,11 +15,65 @@
     {
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
+    },
+    {
+      "title": "Choosing Between Structures and Classes",
+      "url": "https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes"
     }
   ],
   "hints": [
     "`for var p in array` gives you a copy of each struct.",
     "Mutating the copy doesn't change the array; mutating `players[i]` does. Class elements are shared references.",
     "Line 1: `[1, 2]`. Line 2: `[10, 20]`. Line 3: `[10, 20]`."
+  ],
+  "impact": "core",
+  "jsBridge": "`for var item in items` gives you a **copy** of each struct, so mutating it doesn't touch the array. In JS, `for (const o of arr) o.x = 1` mutates the shared objects. To mutate in place in Swift, loop over indices or use `for i in items.indices`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS mutating loop items changes the array's objects. Why doesn't Swift, and how do you write the in-place version?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`items.indices` loop vs `items = items.map { … }` vs `for i in 0..<items.count`: which is idiomatic?"
+    },
+    {
+      "kind": "edge",
+      "q": "What if the elements are class instances? Does `for item in items { item.x = 1 }` mutate?"
+    },
+    {
+      "kind": "practice",
+      "q": "`ForEach($items) { $item in … }` in SwiftUI binds each element. How does that solve this problem for UI?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=1977s",
+      "channel": "Swiftful Thinking",
+      "start": 1977,
+      "moment": "structs. Mutating is slightly different than replacing. I do not know the technicalities of it. Uh I think"
+    },
+    {
+      "title": "Summary: Structs – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Qr_Ls6Tyviw&t=69s",
+      "channel": "Paul Hudson",
+      "start": 69,
+      "moment": "code runs every time the property changes third initializers are a bit like"
+    },
+    {
+      "title": "Swift - Class vs. Struct Explained",
+      "url": "https://www.youtube.com/watch?v=LtlbB4-6k_U&t=138s",
+      "channel": "Sean Allen",
+      "start": 138,
+      "moment": "and if you create multiple variables of the same class they're all going to point to the same piece of data and if you change that piece of data on any one of t"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

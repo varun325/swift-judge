@@ -17,6 +17,10 @@
     {
       "title": "DispatchQueue",
       "url": "https://developer.apple.com/documentation/dispatch/dispatchqueue"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -37,5 +41,44 @@
     "`group.enter()` before dispatching, `group.leave()` when the work finishes.",
     "Append results through a serial queue so concurrent writes don't race.",
     "`group.wait()` then sort — completion order isn't deterministic."
+  ],
+  "impact": "edge",
+  "jsBridge": "`DispatchGroup` with `enter`/`leave`/`wait` is pre-async fan-out/fan-in, like hand-counting outstanding callbacks before `Promise.all` existed. Task groups replace it in modern Swift.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Before `Promise.all`, JS devs counted callbacks with a counter. How is `DispatchGroup` the same idea?"
+    },
+    {
+      "kind": "edge",
+      "q": "Forgetting a `leave()` or calling it twice: what happens?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`group.wait()` (blocks the thread) vs `group.notify(queue:)` vs `withTaskGroup`: which never blocks?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does `DispatchGroup` still appear: legacy code, `XCTestExpectation`-style waiting?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6",
+      "url": "https://www.youtube.com/watch?v=epBbbysk5cU",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

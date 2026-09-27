@@ -21,5 +21,55 @@
     "You can `switch` on a tuple of two values.",
     "Switch on `(i % 3, i % 5)` and use `_` for \"don't care\". Guard `n >= 1` — `1...0` traps.",
     "`case (0, 0): print(\"FizzBuzz\")`, `case (0, _): print(\"Fizz\")`, `case (_, 0): print(\"Buzz\")`, `default: print(i)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Switching on a tuple `(i % 3, i % 5)` with `case (0, 0)` is a Swift-ism with no JS equivalent. It turns nested conditions into a table.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "Tuple switch vs string concatenation (`\"Fizz\" if…`, `\"Buzz\" if…`): which extends better to a \"Bazz\" rule for 7?"
+    },
+    {
+      "kind": "js",
+      "q": "How would you write this with destructuring in JS? What's missing without pattern matching?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `readLine()` return for empty input, and how should `Int(\"\")` be handled?"
+    },
+    {
+      "kind": "practice",
+      "q": "Is FizzBuzz a useful interview question for iOS roles? What would you ask instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+      "url": "https://www.youtube.com/watch?v=JIT8sL_VtNA",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "[Music] welcome back everyone i'm nick a quick video here today we're"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=178s",
+      "channel": "Paul Hudson",
+      "start": 178,
+      "moment": "Otherwise if loading state is equal to success do success view. Otherwise if loading state is equal to"
+    },
+    {
+      "title": "SwiftUI Toggle - Button & Switch Tutorial",
+      "url": "https://www.youtube.com/watch?v=-sw7gvNUboc",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "in this video I'm going to show you two types of toggles I'm going to show you the basics of a switch then I'll show you how to use a toggle button and customiz"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

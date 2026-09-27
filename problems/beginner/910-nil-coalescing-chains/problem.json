@@ -13,6 +13,10 @@
     {
       "title": "Basic Operators — Nil-Coalescing Operator",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -37,5 +41,58 @@
     "`??` can chain several fallbacks.",
     "`tags?.count ?? 0` handles a missing array; `tags?.first?.uppercased()` handles a missing or empty one.",
     "`nickname ?? name ?? \"Anonymous\"`."
+  ],
+  "impact": "core",
+  "jsBridge": "`a ?? b ?? \"Anonymous\"` is identical to JS's `??` chains, and `tags?.count ?? 0` is `tags?.length ?? 0`. The difference is that Swift's optional chaining result is typed `Int?`, so the compiler insists on a fallback.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `a || b` treats `\"\"` as missing, `a ?? b` doesn't. Which one matches Swift's `??`? Is there a Swift `||` for strings?"
+    },
+    {
+      "kind": "edge",
+      "q": "A nickname of `\"\"` (empty but present): should it fall back to the name? How would you express that?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`tags?.first?.uppercased() ?? \"-\"` vs `if let`: which reads better at 3+ levels?"
+    },
+    {
+      "kind": "practice",
+      "q": "Display-name fallback logic appears on every profile screen. Where would you centralise it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Vtx5W8YVkqs&t=7s",
+      "channel": "Paul Hudson",
+      "start": 7,
+      "moment": "really useful it's called the nil coalescing operator and it will unwrap the optional"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=318s",
+      "channel": "Sean Allen",
+      "start": 318,
+      "moment": "go into this ages no as you can see here and then it's going to exit from the function so this code never even runs in that situation which of course for us is "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

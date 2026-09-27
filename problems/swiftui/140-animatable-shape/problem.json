@@ -13,6 +13,10 @@
     {
       "title": "Animatable",
       "url": "https://developer.apple.com/documentation/swiftui/animatable"
+    },
+    {
+      "title": "Animation",
+      "url": "https://developer.apple.com/documentation/swiftui/animation"
     }
   ],
   "signature": {
@@ -42,5 +46,45 @@
     "SwiftUI animates a shape by writing interpolated values into `animatableData`.",
     "Make `animatableData` a computed property that reads and writes `cornerRadius`.",
     "Read the first `.move` point with `path.forEach { if case .move(let p) = $0 { … } }`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "SwiftUI animates a shape by setting `animatableData` to interpolated values every frame and re-calling `path(in:)`. It's like a JS `requestAnimationFrame` tween driving an SVG path, but declarative.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS you'd tween a number with rAF and redraw. What does `animatableData` let SwiftUI do for you?"
+    },
+    {
+      "kind": "edge",
+      "q": "What if a shape has two animatable properties? (`AnimatablePair`.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`animatableData` vs the `@Animatable` macro (iOS 26): what does the macro remove?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why does a shape snap instead of animating when you forget `animatableData`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use animation with value in SwiftUI (iOS 16+) | Bootcamp #67",
+      "url": "https://www.youtube.com/watch?v=t95HGRLPwj0",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Animating simple shapes with animatableData – Drawing SwiftUI Tutorial 8/10",
+      "url": "https://www.youtube.com/watch?v=27ZvPQMYS6E&t=372s",
+      "channel": "Paul Hudson",
+      "start": 372,
+      "moment": "but behind the scenes it's also keeping track of the changing value over time as part of the animation and as the"
+    },
+    {
+      "title": "SwiftUI - Glowing Button Animation",
+      "url": "https://www.youtube.com/watch?v=GFjOuH2Utt4",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

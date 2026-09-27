@@ -19,5 +19,41 @@
     "Default arguments like `#function` are evaluated at the **call site**.",
     "`#fileID` is `Solution/main.swift` here.",
     "Inside `start()`, `#function` is `start()`; the line is where `logged` is called."
+  ],
+  "impact": "edge",
+  "jsBridge": "`#fileID`, `#function`, `#line` and `#column` are compile-time expression macros, captured at the **call site** when used as default arguments. JS has no equivalent; you'd parse `new Error().stack`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS logging libraries parse stack traces to get file and line. Why is `#line` as a default argument better?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `logged(\"x\")` report the *caller's* line, not the line inside `logged`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`#file` vs `#fileID` vs `#filePath`: which leaks your machine's directory structure into a release binary?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Logger` from `os` records this metadata for you. When would you still pass `#function` yourself?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Implicit returns from single-expression functions in Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=EkvxlrYFUkc&t=3s",
+      "channel": "Paul Hudson",
+      "start": 3,
+      "moment": "single expression functions that return a value can now remove the return keyword and swivel understand it"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Evolution proposals",
+      "url": "https://www.swift.org/swift-evolution/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -31,5 +31,55 @@
     "Decode rows into a struct before doing anything else.",
     "`filter` on two conditions, then `sorted` with a tuple comparison.",
     "`.sorted { ($1.points, $0.name) < ($0.points, $1.name) }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`filter`, `sorted(by:)` and `map` on an array of model structs is the bread and butter of view models. It's identical in spirit to JS array chains, but on value types with compile-time-checked properties.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, a typo like `u.pionts` gives `undefined` silently. What does Swift do, and how much does that matter in view models?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Filtering in the view model vs in the query (SwiftData `#Predicate`, SQL): which scales to 10k items?"
+    },
+    {
+      "kind": "edge",
+      "q": "Sorting by points desc then name asc: why is a tuple comparison the neat trick here?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where would you put this transform so SwiftUI doesn't recompute it on every render?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to Filter, Sort, and Map in Swift | Swift Basics #16",
+      "url": "https://www.youtube.com/watch?v=NkOU60vwUEY&t=19s",
+      "channel": "Swiftful Thinking",
+      "start": 19,
+      "moment": "have to write that manual Loop if we are doing certain things and so three of the most common things that we do when we're"
+    },
+    {
+      "title": "Dynamically sorting and filtering @Query with SwiftUI – SwiftData SwiftUI Tutorial 3/5",
+      "url": "https://www.youtube.com/watch?v=gU1C3tI7MFk&t=157s",
+      "channel": "Paul Hudson",
+      "start": 157,
+      "moment": "here, we need a way to customize the query that gets run this thing right now. As things stand, just saying that"
+    },
+    {
+      "title": "Swift Basics - Array | Sort, Reverse, Shuffle",
+      "url": "https://www.youtube.com/watch?v=mWKYpRxjhJs&t=364s",
+      "channel": "Sean Allen",
+      "start": 364,
+      "moment": "print ages down here and now you can see 21 is no longer at the beginning 44 is at the beginning and the last three"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

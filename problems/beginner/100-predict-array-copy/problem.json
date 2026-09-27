@@ -14,11 +14,51 @@
     {
       "title": "Structures and Classes — value types",
       "book": "LanguageGuide/ClassesAndStructures"
+    },
+    {
+      "title": "Choosing Between Structures and Classes",
+      "url": "https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes"
     }
   ],
   "hints": [
     "Is `Array` a value type or a reference type in Swift?",
     "`var arr2 = arr1` makes an independent copy, so `append` on `arr2` can't affect `arr1`.",
     "First line: `3 4`. Printing an array of strings shows each element **with quotes**: `[\"a\", \"b\", \"c\"]`."
+  ],
+  "impact": "core",
+  "jsBridge": "In JS, `const b = a` for an array copies the **reference** — `b.push(4)` changes `a` too. Swift's `Array` is a **value type**: `var b = a` gives `b` its own logical copy, and mutating `b` never touches `a`. It's cheap because storage is shared until one side writes (copy-on-write), so it behaves like `[...a]` but without paying for the copy up front.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React forces you to write `[...items, x]` so state changes are detectable. Why does SwiftUI never need that spread, and what does it do instead to notice the change?"
+    },
+    {
+      "kind": "practice",
+      "q": "A view model hands its `items` array to a background task that sorts it. Can the task corrupt the view model's array? What would change if `items` were an `NSMutableArray`?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's `ArrayList` is a reference type, like JS arrays. What bugs does Java's defensive-copy idiom (`new ArrayList<>(list)`) guard against that Swift arrays rule out by construction?"
+    },
+    {
+      "kind": "edge",
+      "q": "If copying is lazy, when exactly is the copy made — at `var b = a`, or at the first `b.append`? How could you prove it without a debugger?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift Structs - Value Type vs. Reference Type",
+      "url": "https://www.youtube.com/watch?v=3ox38NBBiNM&t=113s",
+      "channel": "Sean Allen",
+      "start": 113,
+      "moment": "demonstrate this after I explain this by the way a value type would be like at the Excel spreadsheet right where I can"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

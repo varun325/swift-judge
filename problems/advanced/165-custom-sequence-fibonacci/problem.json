@@ -13,6 +13,14 @@
     {
       "title": "Protocols — Collections",
       "book": "LanguageGuide/Protocols"
+    },
+    {
+      "title": "Collection",
+      "url": "https://developer.apple.com/documentation/swift/collection"
+    },
+    {
+      "title": "Sequence",
+      "url": "https://developer.apple.com/documentation/swift/sequence"
     }
   ],
   "signature": {
@@ -33,5 +41,51 @@
     "A `Sequence` only needs `makeIterator()`; the iterator's `next()` produces values.",
     "Keep `a` and `b` in the iterator; return `a` and advance. Use `.lazy` before filtering an infinite sequence.",
     "`defer { (a, b) = (b, a &+ b) }; return a` inside `next()`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Conforming to `Sequence` with an `IteratorProtocol` is JS's `[Symbol.iterator]()` returning `{ next() }`. Swift's iterator returns `Element?` (`nil` ends it) instead of `{done, value}`, and `lazy` gives you JS generator-style pipelines.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS generators (`function*`) make infinite sequences easy. What's the Swift equivalent (`sequence(first:next:)`, `AnyIterator`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Calling `Array(Fibonacci())` on an infinite sequence: what happens?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`lazy.filter.prefix(while:)` vs eager `filter`: why is lazy mandatory here?"
+    },
+    {
+      "kind": "practice",
+      "q": "Paging through an API is naturally an `AsyncSequence`. How does that relate to this sync version?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Add a custom Navigation Link for lazy loading | SwiftUI Crypto App #18",
+      "url": "https://www.youtube.com/watch?v=XGXWC68Yb_o",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Inside the Standard Library: Sequence.contains",
+      "url": "https://www.youtube.com/watch?v=SuUf9buBzA0&t=3s",
+      "channel": "Paul Hudson",
+      "start": 3,
+      "moment": "[Music] welcome back to inside the standard library this time looking at the"
+    },
+    {
+      "title": "SwiftUI Grids - LazyVGrid, LazyHGrid, Static Grid",
+      "url": "https://www.youtube.com/watch?v=vfUalXtwth0",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

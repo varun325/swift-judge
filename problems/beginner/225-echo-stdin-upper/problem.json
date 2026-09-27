@@ -13,11 +13,49 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "`readLine()` returns `nil` at the end of input — that fits `while let` perfectly.",
     "For each line, print the uppercased line followed by its character count.",
     "`while let line = readLine() { print(\"\\(line.uppercased()) (\\(line.count) chars)\") }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Like Node's `readline` interface, but synchronous: `readLine()` blocks and returns `String?`, where `nil` means EOF. iOS apps never read stdin. This is how command-line Swift tools work (Swift Argument Parser).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Node's readline is event-based and async. Why can a Swift CLI get away with a blocking `while let line = readLine()`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where would you write Swift CLIs as an iOS engineer: build scripts, code generators, SPM plugins?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `readLine()` strip `\\r\\n` from Windows-style input? What does `strippingNewline:` do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`readLine()` vs `FileHandle.standardInput.bytes.lines` (async): when would you need the async version?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+      "url": "https://www.youtube.com/watch?v=OLjkmJNNeHc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

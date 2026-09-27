@@ -18,6 +18,14 @@
     {
       "title": "Entry()",
       "url": "https://developer.apple.com/documentation/swiftui/entry()"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -39,5 +47,49 @@
     "`@Entry` inside `extension EnvironmentValues` declares a key and its default in one line.",
     "Read and write the new properties on an `EnvironmentValues()` value.",
     "`env.accentName = p[1]` applies an override."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Custom `EnvironmentValues` (now one line with `@Entry`) pass values **down** the tree implicitly. It's React Context: `.environment(\\.accentName, \"red\")` is the Provider and `@Environment(\\.accentName)` is `useContext`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React Context re-renders all consumers on change. Does SwiftUI's environment invalidate every child that reads the key?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Environment value vs passing a parameter vs an `@Observable` object in the environment: which for theme, which for services?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `@Entry` generate compared with the old `EnvironmentKey` + extension boilerplate?"
+    },
+    {
+      "kind": "practice",
+      "q": "Injecting a mock service via the environment for previews: sketch it."
+    }
+  ],
+  "videos": [
+    {
+      "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+      "url": "https://www.youtube.com/watch?v=BKxbHnka4-Q&t=10s",
+      "channel": "Swiftful Thinking",
+      "start": 10,
+      "moment": "video we're going to build out our view model we're going to start it as a state object on the current screen that we're"
+    },
+    {
+      "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12",
+      "url": "https://www.youtube.com/watch?v=myLtDcYuE3k&t=11s",
+      "channel": "Paul Hudson",
+      "start": 11,
+      "moment": "values between different views however sometimes you need the same object to be shared across many places in your app"
+    },
+    {
+      "title": "SwiftUI Environment Values - What are they? Code Examples | Xcode 13",
+      "url": "https://www.youtube.com/watch?v=S3DVAGQX0kI",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today we're talking about the environment in swift ui i'm going to tell you how it's used what values you"
+    }
+  ],
+  "articles": []
 }

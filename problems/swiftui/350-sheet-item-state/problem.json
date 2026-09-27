@@ -14,6 +14,10 @@
     {
       "title": "sheet(item:onDismiss:content:)",
       "url": "https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:)"
+    },
+    {
+      "title": "NavigationStack",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationstack"
     }
   ],
   "signature": {
@@ -34,5 +38,49 @@
     "Replace several Bools with one optional enum.",
     "The enum's `id` must distinguish cases *and* their payloads.",
     "Opening while `active != nil` is a replacement; `dismiss` sets it back to `nil`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Driving sheets and alerts with one optional `Identifiable` item (`.sheet(item:)`) instead of many Booleans is the \"make impossible states impossible\" rule, the same as modelling a React modal with `selectedItem | null` rather than `isOpen` + `item`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React: `const [editing, setEditing] = useState<Item | null>(null)`. Same idea as `.sheet(item:)`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Presenting a second sheet while one is open: what happens? How does one enum `ActiveSheet?` fix it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.sheet(isPresented:)` + separate item vs `.sheet(item:)`: which can show a sheet with a nil item?"
+    },
+    {
+      "kind": "practice",
+      "q": "Alerts for errors: `alert(isPresented:error:)` with a `LocalizedError?`. Sketch it."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create resizable sheets in SwiftUI | Bootcamp #64",
+      "url": "https://www.youtube.com/watch?v=YISIACDKLZY",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "All right, guys. This is probably my favorite thing to come out of iOS 16. If you're not using this yet, you should"
+    },
+    {
+      "title": "Using alert() and sheet() with optionals – SnowSeeker SwiftUI Tutorial 2/12",
+      "url": "https://www.youtube.com/watch?v=QKUBGEMcbAY&t=4s",
+      "channel": "Paul Hudson",
+      "start": 4,
+      "moment": "and sheets and so far I've mostly only used one abinding to a Boolean that shows the alert or shoot when that"
+    },
+    {
+      "title": "SwiftUI Bottom Sheet - Resizable",
+      "url": "https://www.youtube.com/watch?v=gw2k-sXTEyI&t=414s",
+      "channel": "Sean Allen",
+      "start": 414,
+      "moment": "here but that's a little messy and it's just an H stack of the four buttons as you you you know as you see here and then like we said you present the sheet like"
+    }
+  ],
+  "articles": []
 }

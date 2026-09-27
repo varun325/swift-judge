@@ -18,6 +18,10 @@
     {
       "title": "URLComponents",
       "url": "https://developer.apple.com/documentation/foundation/urlcomponents"
+    },
+    {
+      "title": "NavigationStack",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationstack"
     }
   ],
   "signature": {
@@ -38,5 +42,38 @@
     "`URLComponents` gives you `scheme`, `host`, `path` and `queryItems`.",
     "For `myapp://profile/7`, `host` is `profile` and `path` is `/7`.",
     "Switch on the number of path parts and the literal segments."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Parsing a URL into a route stack is the router's job, like matching paths in React Router, except iOS delivers links via `.onOpenURL` and you convert them into `NavigationPath` state.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React Router matches `/profile/:id` declaratively. In SwiftUI you parse `URLComponents` yourself. What do you gain (type-safe routes)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Invalid IDs, unknown paths, extra query items: what should the app do (ignore, error screen, home)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom scheme (`myapp://`) vs universal links (`https://`): which is safer, and why?"
+    },
+    {
+      "kind": "practice",
+      "q": "A deep link arrives while a modal sheet is open. Who dismisses the sheet before navigating?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Using alert() and sheet() with optionals – SnowSeeker SwiftUI Tutorial 2/12",
+      "url": "https://www.youtube.com/watch?v=QKUBGEMcbAY",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "How to use NavigationSplitView in SwiftUI | Bootcamp #72",
+      "url": "https://www.youtube.com/watch?v=Ua37Oof6H1Q",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": []
 }

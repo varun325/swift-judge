@@ -25,5 +25,44 @@
     "A type parameter pack is written `each T`; a value pack parameter is `repeat each T`.",
     "Iterate the pack with `for v in repeat each value { … }` (Swift 6).",
     "For optionals: parameter `repeat (each T)?`, and return false on the first `nil`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Parameter packs (`<each T>`) are variadic generics, functions over any number of differently-typed arguments. TS has variadic tuple types (`[...T]`) for the same idea. They're how SwiftUI dropped its 10-view limit.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `function f<T extends unknown[]>(...args: T)` vs Swift `repeat each T`: what's similar and what isn't?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you iterate a pack with a `for` loop? (Pack iteration arrived in Swift 6.0.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "Parameter packs vs `[Any]`: what type information survives?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you use packs in app code, or mainly in library and framework APIs?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What's new in SwiftUI for iOS 27?",
+      "url": "https://www.youtube.com/watch?v=tNxEqyUVGck",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "What's New in Swift 5.3",
+      "url": "https://www.youtube.com/watch?v=RhuYDAEdGHE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Evolution proposals",
+      "url": "https://www.swift.org/swift-evolution/",
+      "source": "swift.org"
+    }
   ]
 }

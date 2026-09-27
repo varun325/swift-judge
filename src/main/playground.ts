@@ -88,6 +88,15 @@ export class Playground {
     return id
   }
 
+  /** The page for `title`, created with this content only if it doesn't exist yet (answers are never overwritten). */
+  ensure(title: string, code: string, notes: string): string {
+    const id = Playground.slugify(title)
+    const { code: c, notes: n } = this.paths(id)
+    if (existsSync(c) || existsSync(n)) return id
+    this.save(id, { code, notes })
+    return id
+  }
+
   rename(id: string, title: string): string {
     const next = Playground.slugify(title)
     if (next === id) return id

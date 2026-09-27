@@ -13,11 +13,49 @@
     {
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "Parse each line into `[Int]` and skip empty lines.",
     "Column `c` of the input becomes row `c` of the output.",
     "`for c in 0..<width { print(rows.map { String($0[c]) }.joined(separator: \" \")) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Parse rows with `split` + `compactMap(Int.init)`, then transpose with `(0..<cols).map { c in rows.map { $0[c] } }`, the same nested-map idiom as in JS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `rows[0].map((_, c) => rows.map(r => r[c]))`. Is the Swift version any different?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens with ragged rows? Where should validation happen?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Nested `map` vs a preallocated `[[Int]](repeating:count:)` with index writes: which is faster?"
+    },
+    {
+      "kind": "practice",
+      "q": "Charts often need data transposed (series vs categories). Where have you done that?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+      "url": "https://www.youtube.com/watch?v=OLjkmJNNeHc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -34,5 +34,51 @@
     "A capture list `[x]` copies the value when the closure is created.",
     "`byRef` captures the variable itself; `bySnapshot` captures a copy. Change `x` after creating both.",
     "`let bySnapshot = { [x] in x }` — after `x += 5`, return `[byRef(), bySnapshot()]`."
+  ],
+  "impact": "core",
+  "jsBridge": "Swift closures capture variables **by reference** (like JS). A capture list `[x]` copies the value at creation time, which JS has no syntax for; you'd use an IIFE or `const snapshot = x`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS you'd write `const snap = x; () => snap`. What does `[x]` add? (Hint: it also works for `[weak self]`.)"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `[x]` a copy of a class instance or of the reference? What if `x` is a struct?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[x]` vs `[weak x]` vs `[unowned x]`: what does each capture?"
+    },
+    {
+      "kind": "practice",
+      "q": "When would you snapshot state before an async task starts, so a later change doesn't affect the request?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Using closures as parameters when they return values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=13tTI3OPzWs",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift Closures: @escaping Explained",
+      "url": "https://www.youtube.com/watch?v=xiS5gJOIQxI&t=207s",
+      "channel": "Sean Allen",
+      "start": 207,
+      "moment": "shared get followers you'll see we have the we called it result that's what our closures you know coming back as and you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

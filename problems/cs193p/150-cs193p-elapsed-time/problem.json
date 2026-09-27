@@ -41,8 +41,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L9: Protocols (elapsed time)",
-      "url": "https://www.youtube.com/watch?v=o3D3rqh-IVA",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=o3D3rqh-IVA&t=3s",
+      "channel": "Stanford Online",
+      "start": 3,
+      "moment": "Welcome to lecture number 9, Stanford CS193p, Spring of 2025. I'm going to go to the demo for a brief time at the beginning here to talk about our pop quiz, the"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "Tracking elapsed time with `startTime` + `elapsedBeforePause` survives pausing when the scene goes inactive. It's the same pattern as a JS stopwatch storing `Date.now()` deltas rather than counting `setInterval` ticks.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS stopwatch counting `setInterval` ticks drifts. Why does storing timestamps and computing deltas fix it?"
+    },
+    {
+      "kind": "edge",
+      "q": "The user changes the device clock mid-game: does `Date()` jump? What clock is immune (`ContinuousClock`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Text(date, style: .timer)` vs a `TimelineView` vs your own timer: which updates the UI without your code running every second?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where should pausing be triggered: `scenePhase` changes, `onDisappear`, or both?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

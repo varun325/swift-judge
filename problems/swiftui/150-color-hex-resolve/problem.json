@@ -17,6 +17,10 @@
     {
       "title": "Color.Resolved",
       "url": "https://developer.apple.com/documentation/swiftui/color/resolved"
+    },
+    {
+      "title": "Shape",
+      "url": "https://developer.apple.com/documentation/swiftui/shape"
     }
   ],
   "signature": {
@@ -38,5 +42,49 @@
     "Parse the six hex digits with `UInt32(_, radix: 16)` and split channels with shifts and masks.",
     "`Color(.sRGB, red:green:blue:)` builds the color; `resolve(in: EnvironmentValues())` reads it back.",
     "Scale each resolved component by 255 and round."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`Color(hex:)` is a failable extension init that parses `#RRGGBB`. `Color.resolve(in:)` gives the actual components for the current environment (light or dark). CSS parses hex natively; SwiftUI needs you to add it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS understands `#ff8800` natively. Why doesn't SwiftUI ship `Color(hex:)`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Hex colours in code vs asset catalog colours: which supports dark mode and high contrast automatically?"
+    },
+    {
+      "kind": "edge",
+      "q": "sRGB vs Display P3: can a hex string express P3 colours?"
+    },
+    {
+      "kind": "practice",
+      "q": "Server-driven theme colours as hex: how do you handle dark mode?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+      "url": "https://www.youtube.com/watch?v=2M84O4sDe0o&t=308s",
+      "channel": "Swiftful Thinking",
+      "start": 308,
+      "moment": "seeing certain colors so let's plug in this color scheme and see what we get so the text is white right so that's"
+    },
+    {
+      "title": "Coloring views as we swipe – Flashzilla SwiftUI Tutorial 9/13",
+      "url": "https://www.youtube.com/watch?v=zFgZciqhI08&t=16s",
+      "channel": "Paul Hudson",
+      "start": 16,
+      "moment": "they guessed the answer correctly and swiping left bad they were wrong we'll solve this problem in two ways for a"
+    },
+    {
+      "title": "Stop Creating Custom Colors in SwiftUI",
+      "url": "https://www.youtube.com/watch?v=oJDu0dKa0PU&t=74s",
+      "channel": "Sean Allen",
+      "start": 74,
+      "moment": "slightly different on the Apple Watch or Vision OS you know based on the platform based on the device that way the color looks as best as it can whether you're "
+    }
+  ],
+  "articles": []
 }

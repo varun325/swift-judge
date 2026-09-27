@@ -1,0 +1,1887 @@
+{
+ "videos": [
+  {
+   "id": "4rt_Ern-DZU",
+   "title": "Reviews for SwiftUI Advanced Architecture by Swiftful Thinking"
+  },
+  {
+   "id": "d0-Gn_Bxf8s",
+   "title": "Learn SwiftUI from beginner to professional developer free online courses"
+  },
+  {
+   "id": "g71ro6sGfBs",
+   "title": "SwiftUI Advanced Architecture"
+  },
+  {
+   "id": "sWglRxoYXSk",
+   "title": "The Ultimate SwiftUI Course"
+  },
+  {
+   "id": "K23R7e0XrI0",
+   "title": "SwiftUI for Advanced Developers"
+  },
+  {
+   "id": "QJ1MAHI9lCI",
+   "title": "Achieve SwiftUI Mastery"
+  },
+  {
+   "id": "z_UitV-BchE",
+   "title": "Become a Git Master FREE Online Series Conclusion  | Git & Source Control #15"
+  },
+  {
+   "id": "mZzmaC0pn1c",
+   "title": "How to use Git Flow and Become a Git Professional  | Git & Source Control #14"
+  },
+  {
+   "id": "D3W66tfYGuc",
+   "title": "Adding Tags, Versioning, and Releases in Github | Git & Source Control #13"
+  },
+  {
+   "id": "a7l3x8vthBQ",
+   "title": "Create GitIgnore and ReadMe in Github  | Git & Source Control #12"
+  },
+  {
+   "id": "HWRzJKO7C0o",
+   "title": "How to Add Branch Rules, CodeOwners, Pull Request Templates  | Git & Source Control #11"
+  },
+  {
+   "id": "Ucbu11arEOA",
+   "title": "How to Create Pull Requests in Github and Xcode  | Git & Source Control #10"
+  },
+  {
+   "id": "OWgonqfGUxk",
+   "title": "How to Cherry Pick, Drop Commits, and Edit Commits  | Git & Source Control #9"
+  },
+  {
+   "id": "GN_eeOnUYPE",
+   "title": "How to Rebase Branches and When to Rebase vs Merge  | Git & Source Control #8"
+  },
+  {
+   "id": "CaXaWKlSdPE",
+   "title": "How to Resolve Merge Conflicts Between Branches  | Git & Source Control #7"
+  },
+  {
+   "id": "mFKrDbji94Q",
+   "title": "How to Create Branches and Merge Changes | Git & Source Control #6"
+  },
+  {
+   "id": "q6oA2nc44Es",
+   "title": "How to Push and Pull from a Remote Repository  | Git & Source Control #5"
+  },
+  {
+   "id": "akJyii-AD1c",
+   "title": "How to Stage, Unstage, and Stash Code Changes in Source Control  | Git & Source Control #4"
+  },
+  {
+   "id": "RwmHWi6JfSQ",
+   "title": "How to Commit Code Changes and Write Good Commit Messages  | Git & Source Control #3"
+  },
+  {
+   "id": "6RPjDQXSdOM",
+   "title": "How to Create and Clone a Remote Repository  | Git & Source Control #2"
+  },
+  {
+   "id": "WxHsQDbIdl8",
+   "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1"
+  },
+  {
+   "id": "_H8_IU1G8G0",
+   "title": "Learn GIT and Source Control for FREE online  | Git & Source Control #0"
+  },
+  {
+   "id": "ZJad8eT3Xpk",
+   "title": "Rebuild Netflix in SwiftUI (Part 6/6) | SwiftUI in Practice #17"
+  },
+  {
+   "id": "05nHvBhhfow",
+   "title": "Rebuild Netflix in SwiftUI (Part 5/6) | SwiftUI in Practice #16"
+  },
+  {
+   "id": "OL6CSivnrqk",
+   "title": "Rebuild Netflix in SwiftUI (Part 4/6) | SwiftUI in Practice #15"
+  },
+  {
+   "id": "6oUDRKMNAuE",
+   "title": "Rebuild Netflix in SwiftUI (Part 3/6) | SwiftUI in Practice #14"
+  },
+  {
+   "id": "HcM3K7nlpHM",
+   "title": "Rebuild Netflix in SwiftUI (Part 2/6) | SwiftUI in Practice #13"
+  },
+  {
+   "id": "oK6QwJAp3Pc",
+   "title": "Rebuild Netflix in SwiftUI (Part 1/6) | SwiftUI in Practice #12"
+  },
+  {
+   "id": "mpt6QnbE3o8",
+   "title": "Rebuild Bumble in SwiftUI (Part 5/5) | SwiftUI in Practice #11"
+  },
+  {
+   "id": "nsklZa80KGU",
+   "title": "Rebuild Bumble in SwiftUI (Part 4/5) | SwiftUI in Practice #10"
+  },
+  {
+   "id": "rAZItPC1GIY",
+   "title": "Rebuild Bumble in SwiftUI (Part 3/5) | SwiftUI in Practice #9"
+  },
+  {
+   "id": "VcidT15AeIQ",
+   "title": "Rebuild Bumble in SwiftUI (Part 2/5) | SwiftUI in Practice #8"
+  },
+  {
+   "id": "t6rVT1-aeaw",
+   "title": "Rebuild Bumble in SwiftUI (Part 1/5) | SwiftUI in Practice #7"
+  },
+  {
+   "id": "c92DfVGGi8M",
+   "title": "Rebuild Spotify in SwiftUI (Part 5/5) | SwiftUI in Practice #6"
+  },
+  {
+   "id": "_fqqRXRG9Bk",
+   "title": "Rebuild Spotify in SwiftUI (Part 4/5) | SwiftUI in Practice #5"
+  },
+  {
+   "id": "s7kUGPBVIaU",
+   "title": "Rebuild Spotify in SwiftUI (Part 3/5) | SwiftUI in Practice #4"
+  },
+  {
+   "id": "nNWSuwFn_fg",
+   "title": "Rebuild Spotify in SwiftUI (Part 2/5) | SwiftUI in Practice #3"
+  },
+  {
+   "id": "KDZEvX04wsc",
+   "title": "Rebuild Spotify in SwiftUI (Part 1/5) | SwiftUI in Practice #2"
+  },
+  {
+   "id": "-bT4h2vtuXY",
+   "title": "Project Setup and Shared Components | SwiftUI in Practice #1"
+  },
+  {
+   "id": "9Qww1VNLHzA",
+   "title": "Rebuild Popular UI Screens in SwiftUI | SwiftUI in Practice #0"
+  },
+  {
+   "id": "u9xo-XdcRV8",
+   "title": "How to use Lottie in SwiftUI | Swift Packages #6"
+  },
+  {
+   "id": "zKfhv-Yds4g",
+   "title": "How to use SwiftfulRouting in SwiftUI | Swift Packages #5"
+  },
+  {
+   "id": "KjmtLrs6ICM",
+   "title": "How to use SwiftfulUI in SwiftUI | Swift Packages #4"
+  },
+  {
+   "id": "NCREPNvFpjk",
+   "title": "How to use Keychain-Swift in SwiftUI | Swift Packages #3"
+  },
+  {
+   "id": "S9eQd76oFHk",
+   "title": "How to use Kingfisher in SwiftUI | Swift Packages #2"
+  },
+  {
+   "id": "3QZTGatsI-c",
+   "title": "How to use SDWebImage in SwiftUI | Swift Packages #1"
+  },
+  {
+   "id": "yp9n5oYONDs",
+   "title": "How to use Third Party Swift Packages in SwiftUI | Swift Packages #0"
+  },
+  {
+   "id": "hCpM95KHb_Q",
+   "title": "Paging ScrollView in SwiftUI for iOS 17 | Continued Learning #34"
+  },
+  {
+   "id": "wme3LSg4uuQ",
+   "title": "How to use VisualEffect ViewModifier SwiftUI | Continued Learning #33"
+  },
+  {
+   "id": "4dQOnNYjO58",
+   "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19"
+  },
+  {
+   "id": "hLkTMJ_SFzY",
+   "title": "How to use @Observable Macro in SwiftUI | Bootcamp #76"
+  },
+  {
+   "id": "tyu-RGVFbd8",
+   "title": "How to use ControlGroup in SwiftUI | Bootcamp #75"
+  },
+  {
+   "id": "wfJENH5kfeo",
+   "title": "How to use ContentUnavailableView in SwiftUI | Bootcamp #74"
+  },
+  {
+   "id": "LnPMsG0sV50",
+   "title": "How to use Grid in SwiftUI | Bootcamp #73"
+  },
+  {
+   "id": "Ua37Oof6H1Q",
+   "title": "How to use NavigationSplitView in SwiftUI | Bootcamp #72"
+  },
+  {
+   "id": "gi38bouUI2Q",
+   "title": "How to use AsyncStream in Swift | Swift Concurrency #18"
+  },
+  {
+   "id": "7AaAVuWmlqQ",
+   "title": "How to use Alignment Guides in SwiftUI | Continued Learning #32"
+  },
+  {
+   "id": "oN3Rqo6V6Uc",
+   "title": "How to use ViewThatFits in SwiftUI | Bootcamp #71"
+  },
+  {
+   "id": "7BAW70amSCA",
+   "title": "How to use AnyLayout in SwiftUI | Bootcamp #70"
+  },
+  {
+   "id": "bW7N8ACCc6A",
+   "title": "How to use Popover modifier in SwiftUI | Bootcamp #69"
+  },
+  {
+   "id": "4eOTk5y-uZI",
+   "title": "How to create custom Operators in Swift | Advanced Learning #33"
+  },
+  {
+   "id": "hiOjTJgl6GU",
+   "title": "How to use Subscripts in Swift | Advanced Learning #32"
+  },
+  {
+   "id": "TERHgCD_tGA",
+   "title": "How to create custom Property Wrappers in SwiftUI (PART 2/2) | Advanced Learning #31"
+  },
+  {
+   "id": "2wzq6SQkSJE",
+   "title": "How to create custom Property Wrappers in SwiftUI (PART 1/2) | Advanced Learning #30"
+  },
+  {
+   "id": "FmjG6mG-GIA",
+   "title": "How to use KeyPaths in Swift | Advanced Learning #29"
+  },
+  {
+   "id": "lncOFL3Qsns",
+   "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28"
+  },
+  {
+   "id": "K91rKH_O8BY",
+   "title": "Create custom Bindings in SwiftUI | Advanced Learning #27"
+  },
+  {
+   "id": "ZmXp6Pd5Elg",
+   "title": "How to use TimelineView in SwiftUI | Advanced Learning #26"
+  },
+  {
+   "id": "bERGMFHe9uc",
+   "title": "Accessibility in Swift: Voice Over | Continued Learning #31"
+  },
+  {
+   "id": "mP3ILPNISZE",
+   "title": "iOS vs ANDROID for your MVP"
+  },
+  {
+   "id": "PTEK2rEhdE8",
+   "title": "FLUTTER vs SWIFTUI for your app MVP"
+  },
+  {
+   "id": "2M84O4sDe0o",
+   "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30"
+  },
+  {
+   "id": "vR4tdBQGZ4c",
+   "title": "3 Swift SDKs you should be using in 2023"
+  },
+  {
+   "id": "eLHBiE8_jQc",
+   "title": "Accessibility in Swift: Dynamic Text | Continued Learning #29"
+  },
+  {
+   "id": "cm4YjVl3P8s",
+   "title": "Learn Swift and become an iOS Engineer - FAST and FREE | Swiftful Thinking"
+  },
+  {
+   "id": "3284ruY8jbg",
+   "title": "Learn Swift online for FREE Series Conclusion | Swift Basics #18"
+  },
+  {
+   "id": "nJmrkRlRu88",
+   "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17"
+  },
+  {
+   "id": "NkOU60vwUEY",
+   "title": "How to Filter, Sort, and Map in Swift | Swift Basics #16"
+  },
+  {
+   "id": "7hAmXRwBQxc",
+   "title": "How to use For Loops in Swift | Swift Basics #15"
+  },
+  {
+   "id": "ctBEqA0wh3M",
+   "title": "How to use Dictionaries in Swift | Swift Basics #14"
+  },
+  {
+   "id": "_SRaZjPuYOQ",
+   "title": "How to use Arrays and Sets in Swift | Swift Basics #13"
+  },
+  {
+   "id": "UbX2UtgZTJI",
+   "title": "How to use Access Control (Private vs Public) | Swift Basics #12"
+  },
+  {
+   "id": "xJgtknc-7CA",
+   "title": "How to use Classes in Swift | Swift Basics #11"
+  },
+  {
+   "id": "YPUCML__Md8",
+   "title": "How to use Enums in Swift | Swift Basics #10"
+  },
+  {
+   "id": "gRKlprUj-I8",
+   "title": "How to use Structs in Swift | Swift Basics #9"
+  },
+  {
+   "id": "XdZUVmqIkJE",
+   "title": "What is Object Oriented Programming for Swift | Swift Basics #8"
+  },
+  {
+   "id": "zsjCrtENsZA",
+   "title": "How to use Tuples in Swift | Swift Basics #7"
+  },
+  {
+   "id": "PDWNf4pBI64",
+   "title": "How to use Optionals in Swift | Swift Basics #6"
+  },
+  {
+   "id": "kr3SSplrJlw",
+   "title": "How to use Functions in Swift | Swift Basics #5"
+  },
+  {
+   "id": "Q0DBDJqT3Ps",
+   "title": "How to write if-statements and use operators | Swift Basics #4"
+  },
+  {
+   "id": "jRNa6hYTJLo",
+   "title": "How to use Variables and Constants | Swift Basics #3"
+  },
+  {
+   "id": "JeoaCW9fO0w",
+   "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2"
+  },
+  {
+   "id": "xfvdxQJj7Vw",
+   "title": "How to code in Swift | Swift Basics #1"
+  },
+  {
+   "id": "PwXgg9adkdM",
+   "title": "Learn Swift online for FREE | Swift Basics #0"
+  },
+  {
+   "id": "IZEYVX4vTOA",
+   "title": "How to use PhotosPicker in SwiftUI & PhotosUI | Swift Concurrency #17"
+  },
+  {
+   "id": "f2nxenwKCVM",
+   "title": "How to use Searchable, Search Suggestions, Search Scopes in SwiftUI | Swift Concurrency #16"
+  },
+  {
+   "id": "UiU0y2wQTLw",
+   "title": "How to use Refreshable modifier in SwiftUI | Swift Concurrency #15"
+  },
+  {
+   "id": "OpJcInSZpc8",
+   "title": "How to use MVVM with Async Await | Swift Concurrency #14"
+  },
+  {
+   "id": "HRHtOdTJH70",
+   "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13"
+  },
+  {
+   "id": "1rVDrwdYYbs",
+   "title": "How to use Menu in SwiftUI | Bootcamp #68"
+  },
+  {
+   "id": "t95HGRLPwj0",
+   "title": "How to use animation with value in SwiftUI (iOS 16+) | Bootcamp #67"
+  },
+  {
+   "id": "Pco_nOU991Q",
+   "title": "How to use Group in SwiftUI | Bootcamp #66"
+  },
+  {
+   "id": "pN5ZMV_3npE",
+   "title": "How to use SafeAreaInsets in SwiftUI | Bootcamp #65"
+  },
+  {
+   "id": "YISIACDKLZY",
+   "title": "How to create resizable sheets in SwiftUI | Bootcamp #64"
+  },
+  {
+   "id": "53fWEfSo0tk",
+   "title": "How to use Toolbar in SwiftUI | Bootcamp #63"
+  },
+  {
+   "id": "GZ-hQWMjT0s",
+   "title": "How to use NavigationStack in SwiftUI | Bootcamp #62"
+  },
+  {
+   "id": "dqFky4cVlsw",
+   "title": "Master Firebase for iOS with our Complete Series Conclusion | Firebase Bootcamp #22"
+  },
+  {
+   "id": "3bj2vSk0YB0",
+   "title": "Firebase Analytics for iOS: Track User Behavior With Data-Driven Insights | Firebase Bootcamp #21"
+  },
+  {
+   "id": "cjkvq1ds8OI",
+   "title": "Firebase Performance for iOS: Optimizing Your App's Speed | Firebase Bootcamp #20"
+  },
+  {
+   "id": "xJsI0voFH8k",
+   "title": "Firebase Crashlytics Tutorial for iOS: Enhance Stability and Performance | Firebase Bootcamp #19"
+  },
+  {
+   "id": "sTiD8a9sBWw",
+   "title": "Firebase Storage for iOS: Storing User Content in the Cloud | Firebase Bootcamp #18"
+  },
+  {
+   "id": "ysvmtLCYou0",
+   "title": "Firebase Security Rules Tutorial: Protecting Your App's Data | Firebase Bootcamp #17"
+  },
+  {
+   "id": "a87MFlvfWvA",
+   "title": "Real-time data updates in iOS app with Firebase Firestore listeners | Firebase Bootcamp #16"
+  },
+  {
+   "id": "oTmnbj5UFkA",
+   "title": "Working with Sub-Collections in Firebase Firestore for iOS Apps | Firebase Bootcamp #15"
+  },
+  {
+   "id": "4iTb8ruXsjg",
+   "title": "Firebase Firestore Pagination, Limits and Aggregations for iOS | Firebase Bootcamp #14"
+  },
+  {
+   "id": "ETS4jI0EaY4",
+   "title": "Firebase Firestore: Sorting, Filtering, and Querying in iOS | Firebase Bootcamp #13"
+  },
+  {
+   "id": "QCKrZ0rFu8c",
+   "title": "Fetching Multiple Documents in Firebase Firestore with Swift | Firebase Bootcamp #12"
+  },
+  {
+   "id": "JfxJ0cdjZs4",
+   "title": "Firebase Firestore Maps and Arrays Tutorial for iOS | Firebase Bootcamp #11"
+  },
+  {
+   "id": "elGMTQGRZGo",
+   "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10"
+  },
+  {
+   "id": "UeOi5H3HJOE",
+   "title": "How to Set Up User Profiles in Firebase Firestore for iOS | Firebase Bootcamp #9"
+  },
+  {
+   "id": "GRZZVXZt1IU",
+   "title": "Get Started with Firebase Firestore in iOS | Firebase Bootcamp #8"
+  },
+  {
+   "id": "a4UiKuzCu8A",
+   "title": "iOS Firebase Authentication: Deleting Users | Firebase Bootcamp #7"
+  },
+  {
+   "id": "M7VEceh2U7Q",
+   "title": "iOS Firebase Authentication: Sign In Anonymously Tutorial | Firebase Bootcamp #6"
+  },
+  {
+   "id": "3N77zgo4oXQ",
+   "title": "iOS Firebase Authentication: Sign In With Apple Tutorial | Firebase Bootcamp #5"
+  },
+  {
+   "id": "mdQcqPq9Kl4",
+   "title": "iOS Firebase Authentication: Sign In With Google Tutorial | Firebase Bootcamp #4"
+  },
+  {
+   "id": "jlC1yjVTMtA",
+   "title": "iOS Firebase Authentication: Sign In With Email & Password Tutorial (2/2) | Firebase Bootcamp #3"
+  },
+  {
+   "id": "4FAuU5Ev-5Y",
+   "title": "iOS Firebase Authentication: Sign In With Email & Password Tutorial (1/2) | Firebase Bootcamp #2"
+  },
+  {
+   "id": "sHWX5j6wUjA",
+   "title": "Connect Firebase to Xcode: A Step-by-Step Tutorial | Firebase Bootcamp #1"
+  },
+  {
+   "id": "FSFB2CcV9iA",
+   "title": "Learn Firebase in iOS App Development with Swift | Firebase Bootcamp #0"
+  },
+  {
+   "id": "ePPm2ftSVqw",
+   "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12"
+  },
+  {
+   "id": "wSmTbtOwgbE",
+   "title": "What is the Sendable protocol in Swift? | Swift Concurrency #11"
+  },
+  {
+   "id": "BRBhMrJj5f4",
+   "title": "How to use Global Actors in Swift (@globalActor) | Swift Concurrency #10"
+  },
+  {
+   "id": "UUdi137FySk",
+   "title": "How to use Actors and non-isolated in Swift  | Swift Concurrency #9"
+  },
+  {
+   "id": "-JLenSTKEcA",
+   "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8"
+  },
+  {
+   "id": "Tw_WLMIfEPQ",
+   "title": "How to use Continuations in Swift (withCheckedThrowingContinuation) | Swift Concurrency #7"
+  },
+  {
+   "id": "epBbbysk5cU",
+   "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6"
+  },
+  {
+   "id": "1OmJJwVF7uQ",
+   "title": "How to use Async Let to perform concurrent methods in Swift | Swift Concurrency #5"
+  },
+  {
+   "id": "fTtaEYo14jI",
+   "title": "How to use Task and .task in Swift | Swift Concurrency #4"
+  },
+  {
+   "id": "-5kIzkBqAzc",
+   "title": "How to use async / await keywords in Swift  | Swift Concurrency #3"
+  },
+  {
+   "id": "9fXI6o39jLQ",
+   "title": "Download images with Async/Await, @escaping, and Combine | Swift Concurrency #2"
+  },
+  {
+   "id": "ss50RX7F7nE",
+   "title": "How to use Do, Try, Catch, and Throws in Swift | Swift Concurrency #1"
+  },
+  {
+   "id": "p6q1RmYUsNU",
+   "title": "Learn Swift Concurrency (Async, Await, Actors) online for FREE | Swift Concurrency #0"
+  },
+  {
+   "id": "LuyWO86Myz0",
+   "title": "Final review of MVVM Architecture and other features | SwiftUI Map App #9"
+  },
+  {
+   "id": "s4RniydY1xc",
+   "title": "Update SwiftUI App for iPad, Landscape, and Dark Mode | SwiftUI Map App #8"
+  },
+  {
+   "id": "SG7P1x5Yr7A",
+   "title": "Use Sheet in SwiftUI to create a Detail View for Locations | SwiftUI Map App #7"
+  },
+  {
+   "id": "javFZbCYGfc",
+   "title": "Custom Map Annotation Pins for SwiftUI MapKit Map | SwiftUI Map App #6"
+  },
+  {
+   "id": "Ca0SisRHYuY",
+   "title": "Location Preview cards with asymmetric Transitions  | SwiftUI Map App #5"
+  },
+  {
+   "id": "OrbZBOFOa7Q",
+   "title": "Using a List as a custom animated menu | SwiftUI Map App #4"
+  },
+  {
+   "id": "EA4lQBrnvds",
+   "title": "Add Map to SwiftUI project with MapKit | SwiftUI Map App #3"
+  },
+  {
+   "id": "BKxbHnka4-Q",
+   "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2"
+  },
+  {
+   "id": "11iFAWFO0AU",
+   "title": "Project Setup with Assets and Custom Data Model | SwiftUI Map App #1"
+  },
+  {
+   "id": "Jhf3CNs8I-I",
+   "title": "SwiftUI App Tutorial with MVVM and MapKit | SwiftUI Map App #0"
+  },
+  {
+   "id": "iRxjKu5kqSY",
+   "title": "Customizing Keyboard submit button in SwiftUI | Bootcamp #61"
+  },
+  {
+   "id": "9OC8e0OULBg",
+   "title": "How to use @FocusState in SwiftUI | Bootcamp #60"
+  },
+  {
+   "id": "Nt1loGvkQkM",
+   "title": "How to add Badges to SwiftUI TabView and List in iOS 15 | Bootcamp #59"
+  },
+  {
+   "id": "qSLOBpiJ2p4",
+   "title": "Add custom List Swipe Actions in SwiftUI | Bootcamp #58"
+  },
+  {
+   "id": "aogru1e5-nI",
+   "title": "Button styles, border shapes, and control sizes in SwiftUI on iOS 15 | Bootcamp #57"
+  },
+  {
+   "id": "AiSLtya25ac",
+   "title": "How to select text with TextSelection in SwiftUI | Bootcamp #56"
+  },
+  {
+   "id": "_PJstGf5XcE",
+   "title": "System Materials and Backgrounds in iOS 15 for SwiftUI | Bootcamp #55"
+  },
+  {
+   "id": "Qk5s-6ldNfA",
+   "title": "Async Image in iOS 15 for SwiftUI | Bootcamp #54"
+  },
+  {
+   "id": "OD_FDJOv-Ek",
+   "title": "Creating a reusable utility class for CloudKit code | Advanced Learning #25"
+  },
+  {
+   "id": "vr5CBfaK14A",
+   "title": "Send Push Notifications using CloudKit in SwiftUI | Advanced Learning #24"
+  },
+  {
+   "id": "AtFMqG-zziA",
+   "title": "Upload images and CKAssets to CloudKit | Advanced Learning #23"
+  },
+  {
+   "id": "A-1U_iXiCyI",
+   "title": "CloudKit CRUD Functions in SwiftUI project | Advanced Learning #22"
+  },
+  {
+   "id": "tww2vbJjXpA",
+   "title": "Setup CloudKit in SwiftUI project and get user info | Advanced Learning #21"
+  },
+  {
+   "id": "yCGbhbFK8sY",
+   "title": "How to use Futures and Promises in Combine with SwiftUI | Advanced Learning #20"
+  },
+  {
+   "id": "RUZcs0SWqnI",
+   "title": "Advanced Combine Publishers and Subscribers in SwiftUI | Advanced Learning #19"
+  },
+  {
+   "id": "RoDUYFuNeJU",
+   "title": "UI Testing a SwiftUI application in Xcode | Advanced Learning #18"
+  },
+  {
+   "id": "eqdvIUKsM2A",
+   "title": "Unit Testing a SwiftUI application in Xcode | Advanced Learning #17"
+  },
+  {
+   "id": "E3x07blYvdE",
+   "title": "How to use Dependency Injection in SwiftUI | Advanced Learning #16"
+  },
+  {
+   "id": "0gM1wmW1Xvc",
+   "title": "How to use Protocols in Swift | Advanced Learning #15"
+  },
+  {
+   "id": "wqa1hCu8yCI",
+   "title": "Use UIViewControllerRepresentable to convert UIKit controllers to SwiftUI | Advanced Learning #14"
+  },
+  {
+   "id": "1GYKyQHVDWw",
+   "title": "Use UIViewRepresentable to convert UIKit views to SwiftUI | Advanced Learning #13"
+  },
+  {
+   "id": "aIDT4uuMLHc",
+   "title": "Create a custom navigation bar and link in SwiftUI | Advanced Learning #12"
+  },
+  {
+   "id": "FxW9Dxt896U",
+   "title": "Create a custom tab bar in SwiftUI | Advanced Learning #11"
+  },
+  {
+   "id": "OnbBc00lqWU",
+   "title": "Use PreferenceKey to extract values from child views in SwiftUI | Advanced Learning #10"
+  },
+  {
+   "id": "pXmBRK1BjLw",
+   "title": "How to use @ViewBuilder in SwiftUI | Advanced Learning #9"
+  },
+  {
+   "id": "rx3uRICZr5I",
+   "title": "How to use Generics in Swift | Advanced Learning #8"
+  },
+  {
+   "id": "kzrtiPbR3LQ",
+   "title": "Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7"
+  },
+  {
+   "id": "UvQcNSjgydY",
+   "title": "Custom shapes with Arcs and Quad Curves in SwiftUI | Advanced Learning #6"
+  },
+  {
+   "id": "EHhgjOt_KFA",
+   "title": "Custom Shapes in SwiftUI | Advanced Learning #5"
+  },
+  {
+   "id": "Jyh65AMRqzQ",
+   "title": "How to use MatchedGeometryEffect in SwiftUI | Advanced Learning #4"
+  },
+  {
+   "id": "lF6g07FDsM0",
+   "title": "How to create custom Transitions in SwiftUI | Advanced Learning #3"
+  },
+  {
+   "id": "uK1wKIY49z0",
+   "title": "How to create custom ButtonStyles in SwiftUI | Advanced Learning #2"
+  },
+  {
+   "id": "MQl4DlDf_5k",
+   "title": "How to create custom ViewModifiers in SwiftUI | Advanced Learning #1"
+  },
+  {
+   "id": "sdaFLQgR4xY",
+   "title": "Master SwiftUI online for FREE | Advanced Learning #0"
+  },
+  {
+   "id": "29AKx8yd56w",
+   "title": "Final review of the SwiftUI Crypto App | SwiftUI Crypto App #27"
+  },
+  {
+   "id": "SWgEJAnqc5o",
+   "title": "Update the Color Theme | SwiftUI Crypto App #26"
+  },
+  {
+   "id": "-uJI8IKAPPI",
+   "title": "Adding final optimizations | SwiftUI Crypto App #25"
+  },
+  {
+   "id": "OLk9hOi7zCM",
+   "title": "App Icon, Launch Screen, and Launch Animation | SwiftUI Crypto App #24"
+  },
+  {
+   "id": "nJuRNY8nhuA",
+   "title": "Add a Settings screen using a List with Sections | SwiftUI Crypto App #23"
+  },
+  {
+   "id": "po4lRojJXdA",
+   "title": "Build an expandable / collapsable description section | SwiftUI Crypto App #22"
+  },
+  {
+   "id": "SgSfsdeMosM",
+   "title": "Create a custom line chart to display historical price data | SwiftUI Crypto App #21"
+  },
+  {
+   "id": "R7kTiC86MKg",
+   "title": "Display downloaded data in grid format with reusable components | SwiftUI Crypto App #20"
+  },
+  {
+   "id": "wdsAS-aqw1M",
+   "title": "Download coin details by creating a data model, view model, and API request | SwiftUI Crypto App #19"
+  },
+  {
+   "id": "XGXWC68Yb_o",
+   "title": "Add a custom Navigation Link for lazy loading | SwiftUI Crypto App #18"
+  },
+  {
+   "id": "YrhGH8MkqRc",
+   "title": "Sorting List data with MVVM and animations | SwiftUI Crypto App #17"
+  },
+  {
+   "id": "I6rqT8S9GpY",
+   "title": "Reload the List with updated data from API | SwiftUI Crypto App #16"
+  },
+  {
+   "id": "7cqag8Acr2s",
+   "title": "Save current user's portfolio to Core Data with MVVM | SwiftUI Crypto App #15"
+  },
+  {
+   "id": "UxoAfmQlxec",
+   "title": "Create a view to manager current user's portfolio | SwiftUI Crypto App #14"
+  },
+  {
+   "id": "bLwUAe00jp8",
+   "title": "Download and display live market data from API | SwiftUI Crypto App #13"
+  },
+  {
+   "id": "INZz_Helh0A",
+   "title": "Creating a data model and View to display market statistics | SwiftUI Crypto App #12"
+  },
+  {
+   "id": "D4zLYb-TgIU",
+   "title": "Filtering data based on search bar text using Combine | SwiftUI Crypto App #11"
+  },
+  {
+   "id": "p-arH7VO4jk",
+   "title": "Implement a custom and reusable search bar | SwiftUI Crypto App #10"
+  },
+  {
+   "id": "Z9yWdChUDlo",
+   "title": "Saving images to the File Manager | SwiftUI Crypto App #9"
+  },
+  {
+   "id": "eaNnWiOfbfo",
+   "title": "Downloading Coin Images using Combine, MVVM, and a Networking Layer | SwiftUI Crypto App #8"
+  },
+  {
+   "id": "pp5-ASYnY0o",
+   "title": "Add a reusable Networking layer | SwiftUI Crypto App #7"
+  },
+  {
+   "id": "TlJUMVKtUhc",
+   "title": "Download coins using a View Model and Data Service class | SwiftUI Crypto App #6"
+  },
+  {
+   "id": "czjD-YIvLGU",
+   "title": "Add a dynamic List to display downloaded coins | SwiftUI Crypto App #5"
+  },
+  {
+   "id": "SFxekW7JAxE",
+   "title": "Design a row to display coins in a List | SwiftUI Crypto App #4"
+  },
+  {
+   "id": "UaPAis0vtK0",
+   "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3"
+  },
+  {
+   "id": "Y6r6YWRROHM",
+   "title": "Creating HomeView and a navigation header | SwiftUI Crypto App #2"
+  },
+  {
+   "id": "KJoYaVnAfF8",
+   "title": "Setting up Xcode Project and a custom color theme | SwiftUI Crypto App #1"
+  },
+  {
+   "id": "TTYKL6CfbSs",
+   "title": "Build SwiftUI App with MVVM, Core Data, Combine, and API requests | SwiftUI Crypto App #0"
+  },
+  {
+   "id": "fmVuOu8XOvQ",
+   "title": "Download and save images using FileManager and NSCache | Continued Learning #28"
+  },
+  {
+   "id": "yXSC6jTkLP4",
+   "title": "Save and cache images in a SwiftUI app | Continued Learning #27"
+  },
+  {
+   "id": "Yiq-hdhLzVM",
+   "title": "Save data and images to FileManager in Xcode | Continued Learning #26"
+  },
+  {
+   "id": "Q-1EDHXUunI",
+   "title": "Publishers and Subscribers in Combine with a SwiftUI project | Continued Learning #25"
+  },
+  {
+   "id": "ymXRX6ZB-J0",
+   "title": "How to use Timer and onReceive in SwiftUI | Continued Learning #24"
+  },
+  {
+   "id": "fdxFp5vU6MQ",
+   "title": "Download JSON from API in Swift with Combine | Continued Learning #23"
+  },
+  {
+   "id": "h42OHc5CRBQ",
+   "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22"
+  },
+  {
+   "id": "H9mt8WjpZgM",
+   "title": "Codable, Decodable, and Encodable in Swift | Continued Learning #21"
+  },
+  {
+   "id": "7gg8iBH2fg4",
+   "title": "How to use escaping closures in Swift | Continued Learning #20"
+  },
+  {
+   "id": "wBd3s4ZW8Ps",
+   "title": "How to use Typealias in Swift | Continued Learning #19"
+  },
+  {
+   "id": "TPHp9kR0Go8",
+   "title": "How to use weak self in Swift | Continued Learning #18"
+  },
+  {
+   "id": "jEpg2SYvVV8",
+   "title": "Multi-threading with background threads and queues in Xcode | Continued Learning #17"
+  },
+  {
+   "id": "huRKU-TAD3g",
+   "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16"
+  },
+  {
+   "id": "BPQkpxtgalY",
+   "title": "How to use Core Data with MVVM Architecture in SwiftUI | Continued Learning #15"
+  },
+  {
+   "id": "nalfX8yP0wc",
+   "title": "How to use Core Data with @FetchRequest in SwiftUI | Continued Learning #14"
+  },
+  {
+   "id": "F-gUZztPTgI",
+   "title": "Sort, Filter, and Map data arrays in Swift | Continued Learning #13"
+  },
+  {
+   "id": "Oxc4dCtHPkk",
+   "title": "What is Hashable protocol in SwiftUI? | Continued Learning #12"
+  },
+  {
+   "id": "mG9BVAs8AIo",
+   "title": "How to schedule local Push Notifications in SwiftUI | Continued Learning #11"
+  },
+  {
+   "id": "H45bl6e0cNs",
+   "title": "How to add haptics and vibrations to Xcode project | Continued Learning #10"
+  },
+  {
+   "id": "iBLZ1C4L5Mw",
+   "title": "How to add sound effects to Xcode project | Continued Learning #9"
+  },
+  {
+   "id": "pxx1ueCbnls",
+   "title": "How to use Mask in SwiftUI to create a 5-star rating button | Continued Learning #8"
+  },
+  {
+   "id": "8rCtYoG9JIM",
+   "title": "Multiple Sheets in a SwiftUI View | Continued Learning #7"
+  },
+  {
+   "id": "lMteVjlOIbM",
+   "title": "GeometryReader in SwiftUI to get a view's size and location | Continued Learning #6"
+  },
+  {
+   "id": "ZkOvD3okAJo",
+   "title": "ScrollViewReader to auto scroll in SwiftUI | Continued Learning #5"
+  },
+  {
+   "id": "O3QAI8Mxh8M",
+   "title": "How to use DragGesture to move, drag, swipe in SwiftUI | Continued Learning #4"
+  },
+  {
+   "id": "vSvhdwy_8Lk",
+   "title": "How to use RotationGesture in SwiftUI | Continued Learning #3"
+  },
+  {
+   "id": "RkfJoNzfJ8w",
+   "title": "How to use MagnificationGesture in SwiftUI | Continued Learning #2"
+  },
+  {
+   "id": "Ioux-yqewNs",
+   "title": "How to use LongPressGesture in SwiftUI | Continued Learning #1"
+  },
+  {
+   "id": "S5e1eXL8Vpk",
+   "title": "Improve your SwiftUI skills online for FREE | Continued Learning #0"
+  },
+  {
+   "id": "3CasiUiJPVo",
+   "title": "Adding an App Icon and Launch Screen to SwiftUI | Todo List #7"
+  },
+  {
+   "id": "D3T2PQALJOs",
+   "title": "Adapt SwiftUI app for iPad, Landscape, and Dark Mode | Todo List #6"
+  },
+  {
+   "id": "KamCx-Hfdxk",
+   "title": "User Experience and Animations in SwiftUI app | Todo List #5"
+  },
+  {
+   "id": "1QOLiELlpGk",
+   "title": "Save and persist data with UserDefaults | Todo List #4"
+  },
+  {
+   "id": "nwpmWu1SP1k",
+   "title": "Add a ViewModel with @EnvironmentObject in SwiftUI | Todo List #3"
+  },
+  {
+   "id": "SMt4_WUdKag",
+   "title": "Create a custom data model for Todo items in SwiftUI | Todo List #2"
+  },
+  {
+   "id": "EPdivac0kwE",
+   "title": "Create a List of Todo items in SwiftUI | Todo List #1"
+  },
+  {
+   "id": "wEf1YS4vyW8",
+   "title": "Build Todo List in SwiftUI with MVVM architecture | Todo List #0"
+  },
+  {
+   "id": "gm7Xct50CFo",
+   "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53"
+  },
+  {
+   "id": "zyuSUrfelw8",
+   "title": "How to use @AppStorage in SwiftUI | Bootcamp #52"
+  },
+  {
+   "id": "VWZ-h_N1wDk",
+   "title": "How to use @EnvironmentObject in SwiftUI | Bootcamp #51"
+  },
+  {
+   "id": "-yjKAb0Pj60",
+   "title": "How to use @ObservableObject and @StateObject in SwiftUI | Bootcamp #50"
+  },
+  {
+   "id": "bQQlnGaYN14",
+   "title": "How to create custom models in SwiftUI | Bootcamp #49"
+  },
+  {
+   "id": "joUjsvWn2Eg",
+   "title": "How to add a Tap Gesture in SwiftUI | Bootcamp #48"
+  },
+  {
+   "id": "wmQIl0O9HBY",
+   "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47"
+  },
+  {
+   "id": "QAP4DbfoKvk",
+   "title": "How to use onAppear and onDisappear in SwiftUI | Bootcamp #46"
+  },
+  {
+   "id": "O8_meC7hIwI",
+   "title": "Adding markups and documentation to Swift in Xcode | Bootcamp #45"
+  },
+  {
+   "id": "DB5uNhIea-o",
+   "title": "Adapt for Dark Mode in SwiftUI project | Bootcamp #44"
+  },
+  {
+   "id": "5E_D9D8Z5nQ",
+   "title": "Create a tab bar with TabView and PageTabViewStyle in SwiftUI | Bootcamp #43"
+  },
+  {
+   "id": "HwqxgiKQ_E4",
+   "title": "How to use Slider in SwiftUI | Bootcamp #42"
+  },
+  {
+   "id": "T7inPesyOY8",
+   "title": "Create a Stepper in SwiftUI | Bootcamp #41"
+  },
+  {
+   "id": "EnNAQ-b1yPU",
+   "title": "How to use DatePicker to select dates in SwiftUI | Bootcamp #40"
+  },
+  {
+   "id": "nUlY2RYHV9U",
+   "title": "How to use ColorPicker in SwiftUI | Bootcamp #39"
+  },
+  {
+   "id": "2pSDE56u2F0",
+   "title": "Picker and PickerStyles in SwiftUI | Bootcamp #38"
+  },
+  {
+   "id": "JIT8sL_VtNA",
+   "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37"
+  },
+  {
+   "id": "NiiYeoFYiXQ",
+   "title": "How to use TextEditor in SwiftUI | Bootcamp #36"
+  },
+  {
+   "id": "-_-BNwUZrrc",
+   "title": "How to use TextField in SwiftUI | Bootcamp #35"
+  },
+  {
+   "id": "3jjQ6WASGIw",
+   "title": "How to use ContextMenu in SwifUI | Bootcamp #34"
+  },
+  {
+   "id": "tNwnihqJf2I",
+   "title": "How to make a reusable ActionSheet in SwiftUI | Bootcamp #33"
+  },
+  {
+   "id": "dEmySJwCreo",
+   "title": "How to show Alerts in SwiftUI app | Bootcamp #32"
+  },
+  {
+   "id": "tkOnXG-sNks",
+   "title": "Add, edit, move, and delete items in a List in SwiftUI | Bootcamp #31"
+  },
+  {
+   "id": "tXFwyFdkSas",
+   "title": "How to use NavigationView and NavigationLink in SwiftUI | Bootcamp #30"
+  },
+  {
+   "id": "5QDvfNQF304",
+   "title": "Using Sheets, Transitions, and Offsets to create a popover in SwiftUI | Bootcamp #29"
+  },
+  {
+   "id": "ddr3E0l4gIQ",
+   "title": "Display pop-up Sheets and FullScreenCovers in SwiftUI | Bootcamp #28"
+  },
+  {
+   "id": "X6FAIa0nJoA",
+   "title": "How to use Transition in SwiftUI | Bootcamp #27"
+  },
+  {
+   "id": "0H4G3lGnJE0",
+   "title": "Animation Curves and Animation Timing in SwiftUI | Bootcamp #26"
+  },
+  {
+   "id": "0WY-wrW2_bs",
+   "title": "Adding Animations in SwiftUI | Bootcamp #25"
+  },
+  {
+   "id": "xzFSOdpxy-o",
+   "title": "How to use Ternary Operators in SwiftUI | Bootcamp #24"
+  },
+  {
+   "id": "W8sGT16WAkQ",
+   "title": "How to use if-else and conditional statements in SwiftUI | Bootcamp #23"
+  },
+  {
+   "id": "btDMzB5x2Gs",
+   "title": "How to use @Binding property wrapper in SwiftUI | Bootcamp #22"
+  },
+  {
+   "id": "h1QdmK5fSIg",
+   "title": "How to Extract Subviews in SwiftUI | Bootcamp #21"
+  },
+  {
+   "id": "pIUBC6wZjpM",
+   "title": "Extracting functions and subviews in SwiftUI | Bootcamp #20"
+  },
+  {
+   "id": "LgJ9r_VWdSI",
+   "title": "How to use @State property wrapper in SwiftUI | Bootcamp #19"
+  },
+  {
+   "id": "mWcl2aCalBQ",
+   "title": "How to add Buttons to SwiftUI application | Bootcamp #18"
+  },
+  {
+   "id": "_0NDKxvfg40",
+   "title": "How to use and ignore the Safe Area in SwiftUI | Bootcamp #17"
+  },
+  {
+   "id": "vHvb7LH8VuE",
+   "title": "LazyVGrid, LazyHGrid, and GridItems in SwiftUI | Bootcamp #16"
+  },
+  {
+   "id": "9QhhpeYKjOs",
+   "title": "Implementing a ScrollView in SwiftUI | Bootcamp #15"
+  },
+  {
+   "id": "CKmsqRN-VM0",
+   "title": "How to use ForEach loops in SwiftUI | Bootcamp #14"
+  },
+  {
+   "id": "su0KLQq0JM0",
+   "title": "How to use inits and enums in SwiftUI | Bootcamp #13"
+  },
+  {
+   "id": "cL23Wx-zbJU",
+   "title": "How to use Spacer in SwiftUI | Bootcamp #12"
+  },
+  {
+   "id": "MuOtLPQ4jR4",
+   "title": "Adding Padding in SwiftUI View | Bootcamp #11"
+  },
+  {
+   "id": "pv-vbUEzimk",
+   "title": "VStack, HStack, and ZStack in SwiftUI | Bootcamp #10"
+  },
+  {
+   "id": "FQdGt24LMRs",
+   "title": "Backgrounds and Overlays in SwiftUI | Bootcamp #9"
+  },
+  {
+   "id": "BN8IEiM_3qI",
+   "title": "Frames and Alignments in SwiftUI | Bootcamp #8"
+  },
+  {
+   "id": "MeoiHFdIeR8",
+   "title": "Adding images to a SwiftUI application | Bootcamp #7"
+  },
+  {
+   "id": "Giq8jRnh0Gk",
+   "title": "System Icons, Multi-Color Icons, and SF Symbols in SwiftUI | Bootcamp #6"
+  },
+  {
+   "id": "EPoxQHwVnj0",
+   "title": "Linear, Radial, and Angular Gradients in SwiftUI | Bootcamp #5"
+  },
+  {
+   "id": "pqnLevvM7Rs",
+   "title": "Color, UIColor, Color Literals, and Hex Colors in SwiftUI | Bootcamp #4"
+  },
+  {
+   "id": "1dWHjdWgS5M",
+   "title": "Creating Shapes in SwiftUI | Bootcamp #3"
+  },
+  {
+   "id": "RKfkG01x79w",
+   "title": "Adding Text in SwiftUI | Bootcamp #2"
+  },
+  {
+   "id": "N-ntKJdVNBs",
+   "title": "How to use Xcode in SwiftUI project | Bootcamp #1"
+  },
+  {
+   "id": "-Yp0LS61Nxk",
+   "title": "Learn SwiftUI online for FREE | Bootcamp #0"
+  }
+ ],
+ "shorts": [
+  {
+   "id": "jFvihMQFQsc",
+   "title": "How to improve APP STORE RATING in the App Store",
+   "short": true
+  },
+  {
+   "id": "fSfJ-Gs7KWQ",
+   "title": "Computers DON'T LIE. It's a bug! #Shorts",
+   "short": true
+  },
+  {
+   "id": "byKNNOKLbCY",
+   "title": "If your friend sent you this...",
+   "short": true
+  },
+  {
+   "id": "pp2_17th69c",
+   "title": "Should you post that on LINKEDIN?",
+   "short": true
+  },
+  {
+   "id": "rpEM73FkOlk",
+   "title": "STOP building CUSTOM COMPONENTS",
+   "short": true
+  },
+  {
+   "id": "8KP0hByjraI",
+   "title": "CODING TUTORIALS on your Resume?",
+   "short": true
+  },
+  {
+   "id": "PtYApMjZFI8",
+   "title": "How important is CUSTOM UI?",
+   "short": true
+  },
+  {
+   "id": "oRll_jdx4u4",
+   "title": "How to CHOOSE A CODING TUTORIAL (Part 2/2)",
+   "short": true
+  },
+  {
+   "id": "ZpzIt1GE2lk",
+   "title": "How to CHOOSE A CODING TUTORIAL (Part 1/2)",
+   "short": true
+  },
+  {
+   "id": "sdTlen0Wpxc",
+   "title": "Are you READY for a SOFTWARE ENGINEERING JOB?",
+   "short": true
+  },
+  {
+   "id": "4rccLUs5ndg",
+   "title": "What is the FASTEST way to learn LEARN SWIFT for FREE?",
+   "short": true
+  },
+  {
+   "id": "xz_irFhBgrg",
+   "title": "PSA to all STARTUP FOUNDERS in TECH",
+   "short": true
+  },
+  {
+   "id": "jcgArh8x8uQ",
+   "title": "How to release NEW FEATURES in your APP",
+   "short": true
+  },
+  {
+   "id": "V0A5oRRZFrQ",
+   "title": "What to AB TEST in your APP? (Part 2/2)",
+   "short": true
+  },
+  {
+   "id": "uDhDn_GfN5I",
+   "title": "What to AB TEST in your APP? (Part 1/2)",
+   "short": true
+  },
+  {
+   "id": "i3rNVhpq024",
+   "title": "Your FRIENDS are NOT BETA TESTERS",
+   "short": true
+  },
+  {
+   "id": "StWZu_wYDoU",
+   "title": "The 5 LEVELS of learning how to code 😈",
+   "short": true
+  },
+  {
+   "id": "k3bAWVAqlr4",
+   "title": "CODING is a LANGUAGE?!",
+   "short": true
+  },
+  {
+   "id": "erhaJdQeQ9g",
+   "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+   "short": true
+  },
+  {
+   "id": "oZMBBD7OcFg",
+   "title": "5 MOST IMPORTANT iOS Interview Questions (Part 2/3)",
+   "short": true
+  },
+  {
+   "id": "0KZMSiRFso4",
+   "title": "5 MOST IMPORTANT iOS Interview Questions (Part 1/3)",
+   "short": true
+  },
+  {
+   "id": "SwI0OrWVTMQ",
+   "title": "How to HACK your app’s R&D",
+   "short": true
+  },
+  {
+   "id": "GMnb-QJWras",
+   "title": "Which APP ARCHITECTURE should you use?",
+   "short": true
+  },
+  {
+   "id": "A8NLAvFYTac",
+   "title": "BIGGEST TIP for app startups and MVPs",
+   "short": true
+  },
+  {
+   "id": "5kqmgbfplrY",
+   "title": "Learn SwiftUI or UIKit first?",
+   "short": true
+  },
+  {
+   "id": "c0O58L-Kb98",
+   "title": "WORST MISTAKE Swift developers make",
+   "short": true
+  },
+  {
+   "id": "_Z_H6JE3IDU",
+   "title": "BIGGEST MISTAKE that first time APP FOUNDERS make",
+   "short": true
+  }
+ ],
+ "streams": [
+  {
+   "id": "PwXgg9adkdM",
+   "title": "Learn Swift online for FREE | Swift Basics #0"
+  },
+  {
+   "id": "xfvdxQJj7Vw",
+   "title": "How to code in Swift | Swift Basics #1"
+  },
+  {
+   "id": "JeoaCW9fO0w",
+   "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2"
+  },
+  {
+   "id": "jRNa6hYTJLo",
+   "title": "How to use Variables and Constants | Swift Basics #3"
+  },
+  {
+   "id": "Q0DBDJqT3Ps",
+   "title": "How to write if-statements and use operators | Swift Basics #4"
+  },
+  {
+   "id": "kr3SSplrJlw",
+   "title": "How to use Functions in Swift | Swift Basics #5"
+  },
+  {
+   "id": "PDWNf4pBI64",
+   "title": "How to use Optionals in Swift | Swift Basics #6"
+  },
+  {
+   "id": "zsjCrtENsZA",
+   "title": "How to use Tuples in Swift | Swift Basics #7"
+  },
+  {
+   "id": "XdZUVmqIkJE",
+   "title": "What is Object Oriented Programming for Swift | Swift Basics #8"
+  },
+  {
+   "id": "gRKlprUj-I8",
+   "title": "How to use Structs in Swift | Swift Basics #9"
+  },
+  {
+   "id": "YPUCML__Md8",
+   "title": "How to use Enums in Swift | Swift Basics #10"
+  },
+  {
+   "id": "xJgtknc-7CA",
+   "title": "How to use Classes in Swift | Swift Basics #11"
+  },
+  {
+   "id": "-Yp0LS61Nxk",
+   "title": "Learn SwiftUI online for FREE | Bootcamp #0"
+  },
+  {
+   "id": "N-ntKJdVNBs",
+   "title": "How to use Xcode in SwiftUI project | Bootcamp #1"
+  },
+  {
+   "id": "RKfkG01x79w",
+   "title": "Adding Text in SwiftUI | Bootcamp #2"
+  },
+  {
+   "id": "1dWHjdWgS5M",
+   "title": "Creating Shapes in SwiftUI | Bootcamp #3"
+  },
+  {
+   "id": "pqnLevvM7Rs",
+   "title": "Color, UIColor, Color Literals, and Hex Colors in SwiftUI | Bootcamp #4"
+  },
+  {
+   "id": "EPoxQHwVnj0",
+   "title": "Linear, Radial, and Angular Gradients in SwiftUI | Bootcamp #5"
+  },
+  {
+   "id": "Giq8jRnh0Gk",
+   "title": "System Icons, Multi-Color Icons, and SF Symbols in SwiftUI | Bootcamp #6"
+  },
+  {
+   "id": "MeoiHFdIeR8",
+   "title": "Adding images to a SwiftUI application | Bootcamp #7"
+  },
+  {
+   "id": "BN8IEiM_3qI",
+   "title": "Frames and Alignments in SwiftUI | Bootcamp #8"
+  },
+  {
+   "id": "FQdGt24LMRs",
+   "title": "Backgrounds and Overlays in SwiftUI | Bootcamp #9"
+  },
+  {
+   "id": "pv-vbUEzimk",
+   "title": "VStack, HStack, and ZStack in SwiftUI | Bootcamp #10"
+  },
+  {
+   "id": "MuOtLPQ4jR4",
+   "title": "Adding Padding in SwiftUI View | Bootcamp #11"
+  },
+  {
+   "id": "wEf1YS4vyW8",
+   "title": "Build Todo List in SwiftUI with MVVM architecture | Todo List #0"
+  },
+  {
+   "id": "EPdivac0kwE",
+   "title": "Create a List of Todo items in SwiftUI | Todo List #1"
+  },
+  {
+   "id": "SMt4_WUdKag",
+   "title": "Create a custom data model for Todo items in SwiftUI | Todo List #2"
+  },
+  {
+   "id": "nwpmWu1SP1k",
+   "title": "Add a ViewModel with @EnvironmentObject in SwiftUI | Todo List #3"
+  },
+  {
+   "id": "1QOLiELlpGk",
+   "title": "Save and persist data with UserDefaults | Todo List #4"
+  },
+  {
+   "id": "KamCx-Hfdxk",
+   "title": "User Experience and Animations in SwiftUI app | Todo List #5"
+  },
+  {
+   "id": "D3T2PQALJOs",
+   "title": "Adapt SwiftUI app for iPad, Landscape, and Dark Mode | Todo List #6"
+  },
+  {
+   "id": "3CasiUiJPVo",
+   "title": "Adding an App Icon and Launch Screen to SwiftUI | Todo List #7"
+  },
+  {
+   "id": "_H8_IU1G8G0",
+   "title": "Learn GIT and Source Control for FREE online  | Git & Source Control #0"
+  },
+  {
+   "id": "WxHsQDbIdl8",
+   "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1"
+  },
+  {
+   "id": "6RPjDQXSdOM",
+   "title": "How to Create and Clone a Remote Repository  | Git & Source Control #2"
+  },
+  {
+   "id": "RwmHWi6JfSQ",
+   "title": "How to Commit Code Changes and Write Good Commit Messages  | Git & Source Control #3"
+  },
+  {
+   "id": "akJyii-AD1c",
+   "title": "How to Stage, Unstage, and Stash Code Changes in Source Control  | Git & Source Control #4"
+  },
+  {
+   "id": "q6oA2nc44Es",
+   "title": "How to Push and Pull from a Remote Repository  | Git & Source Control #5"
+  },
+  {
+   "id": "mFKrDbji94Q",
+   "title": "How to Create Branches and Merge Changes | Git & Source Control #6"
+  },
+  {
+   "id": "CaXaWKlSdPE",
+   "title": "How to Resolve Merge Conflicts Between Branches  | Git & Source Control #7"
+  },
+  {
+   "id": "GN_eeOnUYPE",
+   "title": "How to Rebase Branches and When to Rebase vs Merge  | Git & Source Control #8"
+  },
+  {
+   "id": "OWgonqfGUxk",
+   "title": "How to Cherry Pick, Drop Commits, and Edit Commits  | Git & Source Control #9"
+  },
+  {
+   "id": "Ucbu11arEOA",
+   "title": "How to Create Pull Requests in Github and Xcode  | Git & Source Control #10"
+  },
+  {
+   "id": "HWRzJKO7C0o",
+   "title": "How to Add Branch Rules, CodeOwners, Pull Request Templates  | Git & Source Control #11"
+  },
+  {
+   "id": "Jhf3CNs8I-I",
+   "title": "SwiftUI App Tutorial with MVVM and MapKit | SwiftUI Map App #0"
+  },
+  {
+   "id": "11iFAWFO0AU",
+   "title": "Project Setup with Assets and Custom Data Model | SwiftUI Map App #1"
+  },
+  {
+   "id": "BKxbHnka4-Q",
+   "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2"
+  },
+  {
+   "id": "EA4lQBrnvds",
+   "title": "Add Map to SwiftUI project with MapKit | SwiftUI Map App #3"
+  },
+  {
+   "id": "OrbZBOFOa7Q",
+   "title": "Using a List as a custom animated menu | SwiftUI Map App #4"
+  },
+  {
+   "id": "Ca0SisRHYuY",
+   "title": "Location Preview cards with asymmetric Transitions  | SwiftUI Map App #5"
+  },
+  {
+   "id": "javFZbCYGfc",
+   "title": "Custom Map Annotation Pins for SwiftUI MapKit Map | SwiftUI Map App #6"
+  },
+  {
+   "id": "SG7P1x5Yr7A",
+   "title": "Use Sheet in SwiftUI to create a Detail View for Locations | SwiftUI Map App #7"
+  },
+  {
+   "id": "s4RniydY1xc",
+   "title": "Update SwiftUI App for iPad, Landscape, and Dark Mode | SwiftUI Map App #8"
+  },
+  {
+   "id": "LuyWO86Myz0",
+   "title": "Final review of MVVM Architecture and other features | SwiftUI Map App #9"
+  },
+  {
+   "id": "S5e1eXL8Vpk",
+   "title": "Improve your SwiftUI skills online for FREE | Continued Learning #0"
+  },
+  {
+   "id": "Ioux-yqewNs",
+   "title": "How to use LongPressGesture in SwiftUI | Continued Learning #1"
+  },
+  {
+   "id": "RkfJoNzfJ8w",
+   "title": "How to use MagnificationGesture in SwiftUI | Continued Learning #2"
+  },
+  {
+   "id": "vSvhdwy_8Lk",
+   "title": "How to use RotationGesture in SwiftUI | Continued Learning #3"
+  },
+  {
+   "id": "O3QAI8Mxh8M",
+   "title": "How to use DragGesture to move, drag, swipe in SwiftUI | Continued Learning #4"
+  },
+  {
+   "id": "ZkOvD3okAJo",
+   "title": "ScrollViewReader to auto scroll in SwiftUI | Continued Learning #5"
+  },
+  {
+   "id": "lMteVjlOIbM",
+   "title": "GeometryReader in SwiftUI to get a view's size and location | Continued Learning #6"
+  },
+  {
+   "id": "8rCtYoG9JIM",
+   "title": "Multiple Sheets in a SwiftUI View | Continued Learning #7"
+  },
+  {
+   "id": "pxx1ueCbnls",
+   "title": "How to use Mask in SwiftUI to create a 5-star rating button | Continued Learning #8"
+  },
+  {
+   "id": "iBLZ1C4L5Mw",
+   "title": "How to add sound effects to Xcode project | Continued Learning #9"
+  },
+  {
+   "id": "H45bl6e0cNs",
+   "title": "How to add haptics and vibrations to Xcode project | Continued Learning #10"
+  },
+  {
+   "id": "mG9BVAs8AIo",
+   "title": "How to schedule local Push Notifications in SwiftUI | Continued Learning #11"
+  },
+  {
+   "id": "TTYKL6CfbSs",
+   "title": "Build SwiftUI App with MVVM, Core Data, Combine, and API requests | SwiftUI Crypto App #0"
+  },
+  {
+   "id": "KJoYaVnAfF8",
+   "title": "Setting up Xcode Project and a custom color theme | SwiftUI Crypto App #1"
+  },
+  {
+   "id": "Y6r6YWRROHM",
+   "title": "Creating HomeView and a navigation header | SwiftUI Crypto App #2"
+  },
+  {
+   "id": "UaPAis0vtK0",
+   "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3"
+  },
+  {
+   "id": "SFxekW7JAxE",
+   "title": "Design a row to display coins in a List | SwiftUI Crypto App #4"
+  },
+  {
+   "id": "czjD-YIvLGU",
+   "title": "Add a dynamic List to display downloaded coins | SwiftUI Crypto App #5"
+  },
+  {
+   "id": "TlJUMVKtUhc",
+   "title": "Download coins using a View Model and Data Service class | SwiftUI Crypto App #6"
+  },
+  {
+   "id": "pp5-ASYnY0o",
+   "title": "Add a reusable Networking layer | SwiftUI Crypto App #7"
+  },
+  {
+   "id": "eaNnWiOfbfo",
+   "title": "Downloading Coin Images using Combine, MVVM, and a Networking Layer | SwiftUI Crypto App #8"
+  },
+  {
+   "id": "Z9yWdChUDlo",
+   "title": "Saving images to the File Manager | SwiftUI Crypto App #9"
+  },
+  {
+   "id": "p-arH7VO4jk",
+   "title": "Implement a custom and reusable search bar | SwiftUI Crypto App #10"
+  },
+  {
+   "id": "D4zLYb-TgIU",
+   "title": "Filtering data based on search bar text using Combine | SwiftUI Crypto App #11"
+  },
+  {
+   "id": "p6q1RmYUsNU",
+   "title": "Learn Swift Concurrency (Async, Await, Actors) online for FREE | Swift Concurrency #0"
+  },
+  {
+   "id": "ss50RX7F7nE",
+   "title": "How to use Do, Try, Catch, and Throws in Swift | Swift Concurrency #1"
+  },
+  {
+   "id": "9fXI6o39jLQ",
+   "title": "Download images with Async/Await, @escaping, and Combine | Swift Concurrency #2"
+  },
+  {
+   "id": "-5kIzkBqAzc",
+   "title": "How to use async / await keywords in Swift  | Swift Concurrency #3"
+  },
+  {
+   "id": "fTtaEYo14jI",
+   "title": "How to use Task and .task in Swift | Swift Concurrency #4"
+  },
+  {
+   "id": "1OmJJwVF7uQ",
+   "title": "How to use Async Let to perform concurrent methods in Swift | Swift Concurrency #5"
+  },
+  {
+   "id": "epBbbysk5cU",
+   "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6"
+  },
+  {
+   "id": "Tw_WLMIfEPQ",
+   "title": "How to use Continuations in Swift (withCheckedThrowingContinuation) | Swift Concurrency #7"
+  },
+  {
+   "id": "-JLenSTKEcA",
+   "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8"
+  },
+  {
+   "id": "UUdi137FySk",
+   "title": "How to use Actors and non-isolated in Swift  | Swift Concurrency #9"
+  },
+  {
+   "id": "BRBhMrJj5f4",
+   "title": "How to use Global Actors in Swift (@globalActor) | Swift Concurrency #10"
+  },
+  {
+   "id": "wSmTbtOwgbE",
+   "title": "What is the Sendable protocol in Swift? | Swift Concurrency #11"
+  },
+  {
+   "id": "FSFB2CcV9iA",
+   "title": "Learn Firebase in iOS App Development with Swift | Firebase Bootcamp #0"
+  },
+  {
+   "id": "sHWX5j6wUjA",
+   "title": "Connect Firebase to Xcode: A Step-by-Step Tutorial | Firebase Bootcamp #1"
+  },
+  {
+   "id": "4FAuU5Ev-5Y",
+   "title": "iOS Firebase Authentication: Sign In With Email & Password Tutorial (1/2) | Firebase Bootcamp #2"
+  },
+  {
+   "id": "jlC1yjVTMtA",
+   "title": "iOS Firebase Authentication: Sign In With Email & Password Tutorial (2/2) | Firebase Bootcamp #3"
+  },
+  {
+   "id": "mdQcqPq9Kl4",
+   "title": "iOS Firebase Authentication: Sign In With Google Tutorial | Firebase Bootcamp #4"
+  },
+  {
+   "id": "3N77zgo4oXQ",
+   "title": "iOS Firebase Authentication: Sign In With Apple Tutorial | Firebase Bootcamp #5"
+  },
+  {
+   "id": "M7VEceh2U7Q",
+   "title": "iOS Firebase Authentication: Sign In Anonymously Tutorial | Firebase Bootcamp #6"
+  },
+  {
+   "id": "a4UiKuzCu8A",
+   "title": "iOS Firebase Authentication: Deleting Users | Firebase Bootcamp #7"
+  },
+  {
+   "id": "GRZZVXZt1IU",
+   "title": "Get Started with Firebase Firestore in iOS | Firebase Bootcamp #8"
+  },
+  {
+   "id": "UeOi5H3HJOE",
+   "title": "How to Set Up User Profiles in Firebase Firestore for iOS | Firebase Bootcamp #9"
+  },
+  {
+   "id": "elGMTQGRZGo",
+   "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10"
+  },
+  {
+   "id": "JfxJ0cdjZs4",
+   "title": "Firebase Firestore Maps and Arrays Tutorial for iOS | Firebase Bootcamp #11"
+  },
+  {
+   "id": "9Qww1VNLHzA",
+   "title": "Rebuild Popular UI Screens in SwiftUI | SwiftUI in Practice #0"
+  },
+  {
+   "id": "-bT4h2vtuXY",
+   "title": "Project Setup and Shared Components | SwiftUI in Practice #1"
+  },
+  {
+   "id": "KDZEvX04wsc",
+   "title": "Rebuild Spotify in SwiftUI (Part 1/5) | SwiftUI in Practice #2"
+  },
+  {
+   "id": "nNWSuwFn_fg",
+   "title": "Rebuild Spotify in SwiftUI (Part 2/5) | SwiftUI in Practice #3"
+  },
+  {
+   "id": "s7kUGPBVIaU",
+   "title": "Rebuild Spotify in SwiftUI (Part 3/5) | SwiftUI in Practice #4"
+  },
+  {
+   "id": "_fqqRXRG9Bk",
+   "title": "Rebuild Spotify in SwiftUI (Part 4/5) | SwiftUI in Practice #5"
+  },
+  {
+   "id": "c92DfVGGi8M",
+   "title": "Rebuild Spotify in SwiftUI (Part 5/5) | SwiftUI in Practice #6"
+  },
+  {
+   "id": "t6rVT1-aeaw",
+   "title": "Rebuild Bumble in SwiftUI (Part 1/5) | SwiftUI in Practice #7"
+  },
+  {
+   "id": "VcidT15AeIQ",
+   "title": "Rebuild Bumble in SwiftUI (Part 2/5) | SwiftUI in Practice #8"
+  },
+  {
+   "id": "rAZItPC1GIY",
+   "title": "Rebuild Bumble in SwiftUI (Part 3/5) | SwiftUI in Practice #9"
+  },
+  {
+   "id": "nsklZa80KGU",
+   "title": "Rebuild Bumble in SwiftUI (Part 4/5) | SwiftUI in Practice #10"
+  },
+  {
+   "id": "mpt6QnbE3o8",
+   "title": "Rebuild Bumble in SwiftUI (Part 5/5) | SwiftUI in Practice #11"
+  },
+  {
+   "id": "sdaFLQgR4xY",
+   "title": "Master SwiftUI online for FREE | Advanced Learning #0"
+  },
+  {
+   "id": "MQl4DlDf_5k",
+   "title": "How to create custom ViewModifiers in SwiftUI | Advanced Learning #1"
+  },
+  {
+   "id": "uK1wKIY49z0",
+   "title": "How to create custom ButtonStyles in SwiftUI | Advanced Learning #2"
+  },
+  {
+   "id": "lF6g07FDsM0",
+   "title": "How to create custom Transitions in SwiftUI | Advanced Learning #3"
+  },
+  {
+   "id": "Jyh65AMRqzQ",
+   "title": "How to use MatchedGeometryEffect in SwiftUI | Advanced Learning #4"
+  },
+  {
+   "id": "EHhgjOt_KFA",
+   "title": "Custom Shapes in SwiftUI | Advanced Learning #5"
+  },
+  {
+   "id": "UvQcNSjgydY",
+   "title": "Custom shapes with Arcs and Quad Curves in SwiftUI | Advanced Learning #6"
+  },
+  {
+   "id": "kzrtiPbR3LQ",
+   "title": "Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7"
+  },
+  {
+   "id": "rx3uRICZr5I",
+   "title": "How to use Generics in Swift | Advanced Learning #8"
+  },
+  {
+   "id": "pXmBRK1BjLw",
+   "title": "How to use @ViewBuilder in SwiftUI | Advanced Learning #9"
+  },
+  {
+   "id": "OnbBc00lqWU",
+   "title": "Use PreferenceKey to extract values from child views in SwiftUI | Advanced Learning #10"
+  },
+  {
+   "id": "FxW9Dxt896U",
+   "title": "Create a custom tab bar in SwiftUI | Advanced Learning #11"
+  },
+  {
+   "id": "g71ro6sGfBs",
+   "title": "SwiftUI Advanced Architecture"
+  },
+  {
+   "id": "sWglRxoYXSk",
+   "title": "The Ultimate SwiftUI Course"
+  },
+  {
+   "id": "K23R7e0XrI0",
+   "title": "SwiftUI for Advanced Developers"
+  },
+  {
+   "id": "QJ1MAHI9lCI",
+   "title": "Achieve SwiftUI Mastery"
+  },
+  {
+   "id": "4rt_Ern-DZU",
+   "title": "Reviews for SwiftUI Advanced Architecture by Swiftful Thinking"
+  }
+ ]
+}

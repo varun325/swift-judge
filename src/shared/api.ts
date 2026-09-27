@@ -23,7 +23,7 @@ export interface BookChapter {
 export interface LearnBundle {
   notes?: { title: string; markdown: string }
   docs: { title: string; book?: string; url?: string }[]
-  videos: { title: string; url: string; channel: string }[]
+  videos: { title: string; url: string; channel: string; start?: number; moment?: string }[]
   articles: { title: string; url: string; source: string }[]
   concepts: Concept[]
 }
@@ -88,6 +88,8 @@ export interface JudgeApi {
     load(id: string): Promise<PlaygroundPage>
     save(id: string, part: { code?: string; notes?: string }): Promise<void>
     create(title: string): Promise<string>
+    /** Open-or-create a page by title; existing content is kept. Returns the page id. */
+    ensure(title: string, code: string, notes: string): Promise<string>
     rename(id: string, title: string): Promise<string>
     remove(id: string): Promise<void>
     reveal(id: string): Promise<void>

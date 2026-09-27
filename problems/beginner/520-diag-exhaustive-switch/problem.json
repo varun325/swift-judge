@@ -20,5 +20,55 @@
     "A `switch` over an enum must cover every case — unless there's a `default`.",
     "Remove the `default` and list only three of the four cases.",
     "Cases `.sun`, `.rain` and `.wind` only — leave `.snow` out and drop `default`."
+  ],
+  "impact": "core",
+  "jsBridge": "TS's `never` exhaustiveness check (`const _: never = x`) is opt-in. Swift makes exhaustiveness **mandatory** for `switch` over enums, which is why adding a case breaks every switch that doesn't handle it. That's usually what you want.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In TS you add `default: assertNever(x)` to get this. What's the cost of Swift doing it by default?"
+    },
+    {
+      "kind": "edge",
+      "q": "What is `@unknown default`, and why do switches over Apple's enums (`UIUserInterfaceStyle`) need it?"
+    },
+    {
+      "kind": "practice",
+      "q": "You add `case snow` to an enum used in 40 places. Is \"breaking the build\" good or bad? When would `default` be the right call?"
+    },
+    {
+      "kind": "java",
+      "q": "Java 21's switch patterns over sealed types are exhaustive too. How do Swift enums compare with sealed interfaces?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+      "url": "https://www.youtube.com/watch?v=JIT8sL_VtNA",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "[Music] welcome back everyone i'm nick a quick video here today we're"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=196s",
+      "channel": "Paul Hudson",
+      "start": 196,
+      "moment": "switch loading state like that. And then for our loading view here, success view here or failed view here."
+    },
+    {
+      "title": "SwiftUI Toggle - Button & Switch Tutorial",
+      "url": "https://www.youtube.com/watch?v=-sw7gvNUboc&t=73s",
+      "channel": "Sean Allen",
+      "start": 73,
+      "moment": "system image so now title key again wifi system image just Wi-Fi I looked that up in SF symbols pretty easy to remember and then The Binding is Wi-Fi on we'll d"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

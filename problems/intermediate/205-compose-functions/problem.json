@@ -32,5 +32,48 @@
     "Declare a new operator once, then implement it as a function.",
     "`>>>` takes two functions and returns a function that applies the first, then the second. The stored closures escape.",
     "`func >>> <A, B, C>(f: @escaping (A) -> B, g: @escaping (B) -> C) -> (A) -> C { { g(f($0)) } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift lets you declare new operators like `>>>` with precedence groups. JS can't; you'd write `pipe(f, g)` or wait for the pipeline operator proposal. Generic composition `(A→B, B→C) → (A→C)` type-checks end to end.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS's `|>` proposal has been stuck for years. What does Swift give you, and why do teams still avoid custom operators?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom operator vs a named `compose(f, g)` function: which is easier for a new teammate to search for?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must operators be declared at file scope with a precedence group? What happens with `f >>> g >>> h` associativity?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do custom operators legitimately show up: vector maths, parser combinators, TCA's `~>`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create custom Operators in Swift | Advanced Learning #33",
+      "url": "https://www.youtube.com/watch?v=4eOTk5y-uZI&t=486s",
+      "channel": "Swiftful Thinking",
+      "start": 486,
+      "moment": "maybe three karats and let's make an infix operator of the three"
+    },
+    {
+      "title": "Operator Overloading – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=hQLBDnMR8f8",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Swift supports operator overloading which is a fancy way of saying that what an operator does depends on the values"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

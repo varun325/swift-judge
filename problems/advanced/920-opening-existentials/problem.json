@@ -31,5 +31,44 @@
     "A protocol with an associated type can still be stored as `any Shape`.",
     "Pass each `any Shape` to a function taking `some Shape` — Swift opens it for you.",
     "`report` can use `type(of: s)` and `s.perimeter`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift 5.7 **implicitly opens** an `any Shape` when you pass it to a generic `<S: Shape>` function, so inside, you know the concrete type. It's the bridge between existentials and generics. TS has no equivalent because it has no existentials.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS never needs to \"open\" a type. What is Swift's existential box hiding that TS doesn't have?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Opening via a generic function vs downcasting with `as?`: which is type-safe?"
+    },
+    {
+      "kind": "edge",
+      "q": "When does opening fail (the result type depends on `S`)? What does the compiler do then?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where have you had an `any P` and needed to call something generic on it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Opaque and Boxed Protocol Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0335: Introduce existential any",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0335-existential-any.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

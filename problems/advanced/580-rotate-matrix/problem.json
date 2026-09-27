@@ -31,5 +31,49 @@
     "A 90° clockwise rotation = transpose, then reverse each row.",
     "Swap `matrix[i][j]` with `matrix[j][i]` for `j > i` using tuple assignment, then `reverse()` each row.",
     "`(matrix[i][j], matrix[j][i]) = (matrix[j][i], matrix[i][j])`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Transpose then reverse rows, in place via `inout [[Int]]`. The Swift nuance: `matrix[i].reverse()` mutates the nested array in place without copying, thanks to in-place mutation through subscripts.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, `matrix[i].reverse()` mutates the inner array object. Does Swift's `matrix[i].reverse()` copy the row first?"
+    },
+    {
+      "kind": "edge",
+      "q": "`swapAt` vs `(a[i][j], a[j][i]) = (a[j][i], a[i][j])`: which triggers exclusivity errors and which doesn't?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[[Int]]` vs a flat `[Int]` with index maths: which is faster for images?"
+    },
+    {
+      "kind": "practice",
+      "q": "Rotating images in iOS is done with `CGImage`/`UIImage.Orientation`, not arrays. Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

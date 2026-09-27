@@ -31,5 +31,41 @@
     "Parameters with default values can be left out at the call site.",
     "Write `greet(_:greeting:punctuation:)` with defaults, then call it three different ways depending on the index.",
     "`greet(name)`, `greet(name, greeting: \"Hi\")` and `greet(name, punctuation: \".\")`."
+  ],
+  "impact": "core",
+  "jsBridge": "Like JS default parameters (`function greet(name, greeting = 'Hello')`), except Swift defaults can sit on any parameter because labels disambiguate. You can skip the middle one, which JS can't do without passing `undefined`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: to use the default for `greeting` but set `punctuation`, you pass `undefined`. Why doesn't Swift need that?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Default parameters vs overloads: which keeps a public API evolvable without breaking callers?"
+    },
+    {
+      "kind": "edge",
+      "q": "Are default values evaluated at each call, like JS, or once? Can a default reference another parameter?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI modifiers are full of defaults, like `padding(_ edges: = .all, _ length: = nil)`. Find one and read its signature."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to provide default values for parameters – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=9UhzqjZO_tw&t=76s",
+      "channel": "Paul Hudson",
+      "start": 76,
+      "moment": "the possibility of having a custom endpoint to solve this problem swift let us"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

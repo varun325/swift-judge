@@ -13,6 +13,10 @@
     {
       "title": "Task",
       "url": "https://developer.apple.com/documentation/swift/task"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -34,5 +38,49 @@
     "Cancellation is a flag the task must check.",
     "Call `try Task.checkCancellation()` at the top of each loop iteration.",
     "`catch is CancellationError` distinguishes cancellation from other errors."
+  ],
+  "impact": "edge",
+  "jsBridge": "`try Task.checkCancellation()` throws `CancellationError` if cancelled, and `Task.yield()` gives other tasks a turn. It's like calling `signal.throwIfAborted()` in a long JS loop and adding `await null` to yield to the event loop.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`await new Promise(r => setTimeout(r))` yields in JS. Is `Task.yield()` the same thing?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`checkCancellation()` (throws) vs checking `Task.isCancelled` (returns partial results): which suits which job?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does a CPU-bound loop with no `await`s ever notice cancellation?"
+    },
+    {
+      "kind": "practice",
+      "q": "Image processing or search indexing in the background: where would you put cancellation checks?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+      "url": "https://www.youtube.com/watch?v=1RD8-5_Zsws",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

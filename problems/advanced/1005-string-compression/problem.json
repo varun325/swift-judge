@@ -30,5 +30,44 @@
     "Walk the string remembering the current character and how many times it repeated.",
     "When the character changes, append the previous run and reset.",
     "Return the original string if compression doesn't make it shorter."
+  ],
+  "impact": "edge",
+  "jsBridge": "Run-length encoding by walking characters and counting runs. In Swift, iterate `Character`s so emoji stay whole, and build with `String` appends, which are amortised O(1) like JS array `join`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs build an array and `join('')` to avoid O(n²) concatenation. Is Swift `String +=` O(n²)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should `\"👍👍\"` compress to `\"👍2\"`? Does your loop treat it as one character?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Iterating `Character`s vs `unicodeScalars` vs `utf8`: which gives correct runs for emoji?"
+    },
+    {
+      "kind": "practice",
+      "q": "Is RLE used anywhere in app work (image formats, simple protocols)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "What's the best way to prepare for a Swift interview – Sean Allen on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=ys9M_iNqD6s",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

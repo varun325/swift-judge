@@ -13,6 +13,10 @@
     {
       "title": "Basic Operators — Logical Operators",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Bool",
+      "url": "https://developer.apple.com/documentation/swift/bool"
     }
   ],
   "signature": {
@@ -40,5 +44,53 @@
     "`Bool` isn't a number in Swift, so you can't add them up directly.",
     "Put the three flags in an array and count how many are `true`.",
     "`[a, b, c].filter { $0 }.count == 1`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS has truthiness: `true + true === 2` and `if (count)` works. Swift's `Bool` is not a number and nothing is truthy, so `if count` doesn't compile. You write `count > 0`, or count with `filter { $0 }.count`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "List three JS truthiness bugs (`0`, `\"\"`, `NaN`) that Swift's `Bool` rules make impossible. Is anything lost?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`a != b` works as XOR for two Bools. Why doesn't it generalise to \"exactly one of three\"?"
+    },
+    {
+      "kind": "practice",
+      "q": "A settings screen has three mutually exclusive toggles. Would you model them as three Bools or as one enum? What does the enum prevent?"
+    },
+    {
+      "kind": "edge",
+      "q": "`Bool.toggle()` is a mutating method. Why is that nicer in SwiftUI (`isOn.toggle()`) than `isOn = !isOn`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=70s",
+      "channel": "Swiftful Thinking",
+      "start": 70,
+      "moment": "a non-programmer would call regular text string is basically how we put actual text onto the screen"
+    },
+    {
+      "title": "How to store truth with Booleans – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YQPOLBZiGWA&t=4s",
+      "channel": "Paul Hudson",
+      "start": 4,
+      "moment": "integers and doubles but a fourth data type has snuck in perhaps without you even realizing it"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

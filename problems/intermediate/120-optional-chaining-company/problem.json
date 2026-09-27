@@ -13,6 +13,10 @@
     {
       "title": "Optional Chaining",
       "book": "LanguageGuide/OptionalChaining"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -30,5 +34,60 @@
     "`?.` short-circuits to `nil` at the first missing link.",
     "Build `Address?` and `Person?` from the record (`\"-\"` means missing), then chain through them.",
     "`company.ceo?.address?.city.count`."
+  ],
+  "impact": "core",
+  "jsBridge": "Swift optional chaining (`company.ceo?.address?.city`) is JS's `?.`. The result is `String?`, and the whole chain short-circuits to `nil`. Swift checks at compile time that you didn't forget a `?`, whereas JS only fails at runtime.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `a.b?.c` returns `undefined`. Swift returns `nil`, and the type tells you. What does TS's `strictNullChecks` give you, and what's still missing?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the type of `company.ceo?.address?.city.count`? Where does the `?` apply?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Deep optional chains vs flattening the model (`ceoCity: String?`): which is better for UI code?"
+    },
+    {
+      "kind": "practice",
+      "q": "API responses with many optionals: when should decoding fail vs produce optionals?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=329s",
+      "channel": "Swiftful Thinking",
+      "start": 329,
+      "moment": "that we didn't want to start blank we wanted to start it as nil so what if this was actually optional so"
+    },
+    {
+      "title": "How to handle multiple optionals using optional chaining – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=QEVjbvb34Gg&t=36s",
+      "channel": "Paul Hudson",
+      "start": 36,
+      "moment": "once you've already seen how helpful nilco lessing is for providing a default value if an optional is currently nil"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=536s",
+      "channel": "Sean Allen",
+      "start": 536,
+      "moment": "have to create a profile with a name or an age so if I want to say let name equal optionaluser dot name you see it fills in the question mark right here so that"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

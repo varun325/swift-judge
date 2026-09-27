@@ -14,6 +14,10 @@
     {
       "title": "The Basics — Optionals",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -31,5 +35,60 @@
     "`Optional` has `map` and `flatMap`, just like arrays.",
     "Use `flatMap` for steps that can fail (first field, `Int(...)`) and `map` for the final squaring.",
     "`csv.flatMap { $0.split(separator: \",\", omittingEmptySubsequences: false).first }.flatMap { Int($0) }.map { $0 * $0 }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`Optional.map` is like `x?.pipe(f)` if JS had one: it applies `f` only when there's a value. `flatMap` is for when `f` itself returns an optional (like `Int.init`). It's the same `map`/`flatMap` split as for arrays; an optional is a collection of 0 or 1 values.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS has no `Optional.map`, so you write `x == null ? null : f(x)`. Where would `.map` have simplified your JS code?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Why does `Optional<String>.map(Int.init)` give `Int??`, while `flatMap` gives `Int?`?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's `Optional` has `map` and `flatMap` too. What makes Swift optionals nicer (language syntax: `?`, `if let`, `??`)?"
+    },
+    {
+      "kind": "practice",
+      "q": "`url.map { URL(string: $0) }`: where do optional transforms show up in view models?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=8s",
+      "channel": "Swiftful Thinking",
+      "start": 8,
+      "moment": "gonna practice safe coding because safe coding is great coding"
+    },
+    {
+      "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Vtx5W8YVkqs",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] believe it or not swift gives us a third way of unwrapping optionals and it's"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "I'm teaching you about optionals I'm going to show you four different ways to unwrap them we're going to talk about optional chaining and then I'm going to show"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -7,12 +7,13 @@ import { Markdown } from './Markdown'
 
 const SAVE_DELAY_MS = 500
 
-function useStoredId(): [string, (id: string) => void] {
+function useStoredId(initial?: string): [string, (id: string) => void] {
   const [id, setId] = useState(() => {
     try {
-      return localStorage.getItem('playground.page') ?? ''
+      if (initial) localStorage.setItem('playground.page', initial)
+      return initial ?? localStorage.getItem('playground.page') ?? ''
     } catch {
-      return ''
+      return initial ?? ''
     }
   })
   const set = (next: string): void => {
@@ -27,10 +28,15 @@ function useStoredId(): [string, (id: string) => void] {
 }
 
 /** Scratch Swift + an output panel + Markdown notes, saved as plain files on disk. */
-export function PlaygroundView(): React.JSX.Element {
+interface Props {
+  /** Page to show on mount (e.g. a Confusion Compass page opened from a problem). */
+  openPage?: string
+}
+
+export function PlaygroundView({ openPage }: Props): React.JSX.Element {
   const [pages, setPages] = useState<PlaygroundSummary[]>([])
   const [root, setRoot] = useState('')
-  const [pageId, setPageId] = useStoredId()
+  const [pageId, setPageId] = useStoredId(openPage)
   const [code, setCode] = useState('')
   const [notes, setNotes] = useState('')
   const [stdin, setStdin] = useState('')
@@ -150,26 +156,21 @@ export function PlaygroundView(): React.JSX.Element {
     monaco.editor.setModelMarkers(model, 'swiftc', markers)
   }, [result])
 
-  const newPage = async (): Promise<void> => {
-    const title = prompt('Name for the new page', 'untitled')
-    if (!title) return
-    await flush()
-    const id = await window.judge.playground.create(title)
-    await refreshList()
-    setPageId(id)
-  }
+  // Electron doesn't implement window.prompt(), so page names are typed into an inline form.
+  const [naming, setNaming] = useState<{ mode: 'new' | 'rename'; value: string; error?: string }>()
 
-  const renamePage = async (): Promise<void> => {
-    const current = pages.find((p) => p.id === pageId)
-    const title = prompt('Rename page', current?.title ?? pageId)
-    if (!title) return
+  const submitName = async (): Promise<void> => {
+    if (!naming) return
+    const title = naming.value.trim()
+    if (!title) return setNaming({ ...naming, error: 'Type a name first' })
     await flush()
     try {
-      const id = await window.judge.playground.rename(pageId, title)
+      const id = naming.mode === 'new' ? await window.judge.playground.create(title) : await window.judge.playground.rename(pageId, title)
       await refreshList()
       setPageId(id)
+      setNaming(undefined)
     } catch (e) {
-      alert(String(e))
+      setNaming({ ...naming, error: String(e).replace(/^Error: (Error invoking remote method '[^']+': )?(Error: )?/, '') })
     }
   }
 
@@ -197,8 +198,31 @@ export function PlaygroundView(): React.JSX.Element {
       <aside className="sidebar pg-pages">
         <div className="pg-pages-head">
           <strong>Pages</strong>
-          <button className="ghost small-btn" onClick={() => void newPage()}>+ New</button>
+          <button className="ghost small-btn pg-new" onClick={() => setNaming({ mode: 'new', value: '' })}>+ New</button>
         </div>
+        {naming && (
+          <form
+            className="pg-name"
+            onSubmit={(e) => {
+              e.preventDefault()
+              void submitName()
+            }}
+          >
+            <label className="muted small">{naming.mode === 'new' ? 'New page name' : `Rename “${pageId}” to`}</label>
+            <input
+              autoFocus
+              value={naming.value}
+              placeholder="e.g. closures practice"
+              onChange={(e) => setNaming({ ...naming, value: e.target.value, error: undefined })}
+              onKeyDown={(e) => e.key === 'Escape' && setNaming(undefined)}
+            />
+            {naming.error && <div className="pg-name-error">{naming.error}</div>}
+            <div className="pg-name-actions">
+              <button type="submit" className="run small-btn">{naming.mode === 'new' ? 'Create' : 'Rename'}</button>
+              <button type="button" className="ghost small-btn" onClick={() => setNaming(undefined)}>Cancel</button>
+            </div>
+          </form>
+        )}
         <div className="list">
           {pages.map((p) => (
             <button
@@ -219,7 +243,7 @@ export function PlaygroundView(): React.JSX.Element {
         <div className="editor-bar">
           <span className="file">{pageId}.swift <span className="muted">{saved ? '· saved' : '· saving…'}</span></span>
           <div className="actions">
-            <button className="ghost" onClick={() => void renamePage()}>Rename</button>
+            <button className="ghost pg-rename" onClick={() => setNaming({ mode: 'rename', value: pages.find((p) => p.id === pageId)?.title ?? pageId })}>Rename</button>
             <button className="ghost" onClick={() => void window.judge.playground.reveal(pageId)}>Show in {FILE_MANAGER}</button>
             <button className="ghost" onClick={() => void deletePage()}>Delete</button>
             <button className={`ghost ${showStdin ? 'on' : ''}`} onClick={() => setShowStdin(!showStdin)}>stdin</button>

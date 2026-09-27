@@ -14,11 +14,70 @@
     {
       "title": "Optional Chaining",
       "book": "LanguageGuide/OptionalChaining"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "hints": [
     "An assignment through `?.` evaluates to `Void?` — `nil` if the chain broke.",
     "The first assignment fails (no room yet); the second succeeds. `dict[key]?.append` never inserts a missing key.",
     "`not assigned`, then `assigned kitchen`, then `[1, 2, 3] nil`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Assigning through an optional chain (`person?.name = \"x\"`) returns `Void?`: `nil` if the assignment didn't happen. JS's `?.` can't be assigned through at all, since `a?.b = 1` is a syntax error.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`a?.b = 1` is invalid JS. What does Swift give you, and how do you check whether it happened?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `dict[\"k\"]?.append(1)` do when the key is missing? Is that a silent bug?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`if (x?.y = 1) != nil` vs `if let x { x.y = 1 }`: which is clearer?"
+    },
+    {
+      "kind": "practice",
+      "q": "Updating nested optional model fields in a view model: when do you want the chain to silently no-op?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=17s",
+      "channel": "Swiftful Thinking",
+      "start": 17,
+      "moment": "we're going to safely unwrap them so we can always be sure and check whether or not we have values or whether"
+    },
+    {
+      "title": "How to handle multiple optionals using optional chaining – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=QEVjbvb34Gg&t=101s",
+      "channel": "Paul Hudson",
+      "start": 101,
+      "moment": "optional it was optional before it's optional now and that's why we still have nil coalescing here to ensure it's"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "I'm teaching you about optionals I'm going to show you four different ways to unwrap them we're going to talk about optional chaining and then I'm going to show"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

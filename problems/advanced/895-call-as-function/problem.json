@@ -30,5 +30,44 @@
     "A method named `callAsFunction` makes `value(...)` legal.",
     "Horner's method: `coefficients.reduce(0) { $0 * x + $1 }`.",
     "`@dynamicCallable` requires `dynamicallyCall(withArguments:)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`callAsFunction` makes a value callable like a function: `polynomial(2)`. JS gets this naturally (functions are objects with properties). Swift gives structs this ability while keeping their stored data typed.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS function with extra properties (`fn.coefficients = …`) vs a Swift struct with `callAsFunction`: which is type-safe?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`callAsFunction` vs just storing a closure: when does a callable struct make sense?"
+    },
+    {
+      "kind": "edge",
+      "q": "`@dynamicCallable` vs `callAsFunction`: which is for dynamic-language interop?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI's `DismissAction` is called like `dismiss()`. What mechanism makes that work?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Attributes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -30,5 +30,55 @@
     "Count steps until the value reaches 1.",
     "Use a `while value != 1` loop; halve even numbers, apply `3n + 1` to odd ones.",
     "`value = value.isMultiple(of: 2) ? value / 2 : 3 * value + 1; steps += 1`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`repeat { } while cond` is JS's `do { } while (cond)`, just renamed, because `do` in Swift introduces a scope or a `do/catch`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why did Swift rename `do-while` to `repeat-while`? What does `do` mean in Swift?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can Collatz overflow `Int` for some inputs? How would you detect it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`repeat-while` vs `while` vs recursion: which reads best here, and does Swift guarantee tail-call optimisation?"
+    },
+    {
+      "kind": "practice",
+      "q": "Retry loops (\"try at least once, then until success\") are a natural `repeat-while`. How would you add backoff with `Task.sleep`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use For Loops in Swift | Swift Basics #15",
+      "url": "https://www.youtube.com/watch?v=7hAmXRwBQxc&t=848s",
+      "channel": "Swiftful Thinking",
+      "start": 848,
+      "moment": "other things that I've not covered. So, there's while loops. So, it's while a condition happens, then we trigger this"
+    },
+    {
+      "title": "How to use a while loop to repeat work – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=NduMuU0xeqk",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] swift has a second kind of loop called a while loop"
+    },
+    {
+      "title": "Swift For Beginners - Loops (For, While, Repeat)",
+      "url": "https://www.youtube.com/watch?v=9Snw7polcBU&t=927s",
+      "channel": "Sean Allen",
+      "start": 927,
+      "moment": "you can see team LeBron in our simulation ended up crushing them 21 eleven so there's another type of Luke"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -45,8 +45,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L4: CodeBreaker's Model",
-      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94&t=1479s",
+      "channel": "Stanford Online",
+      "start": 1479,
+      "moment": "Now we're talking about multi-touch inputs: swipes and taps and things like that that. We call that multi-touch input. So I need to get some input from the user"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "Tapping a peg slot cycles its colour through `choices` using `firstIndex(of:)` plus modular arithmetic, and a `mutating func` on the model. The React equivalent is a reducer case `CYCLE_PEG`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React: `setPegs(p => p.map((c, i) => i === idx ? next(c) : c))`. Swift: `mutating func setGuessPeg`. Which is easier to read?"
+    },
+    {
+      "kind": "edge",
+      "q": "The current colour isn't in `choices` (a missing peg): what should the next colour be?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Cycling by tap vs a chooser row (L6): which is more discoverable, and which is more accessible?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does this mutation get triggered: the view calls the view model, which calls the model. Why the layers?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

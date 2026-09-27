@@ -31,5 +31,58 @@
     "Model the tree: Animal → Dog → Corgi/Poodle, Animal → Cat → Persian/Lion.",
     "`Cat` needs `init(isTame:)` that sets `isTame` before calling `super.init(legs: 4)`; subclasses call it with fixed values.",
     "Build `[Animal]` with a `switch` in `compactMap`, then map to `\"\\($0.speak()) (\\($0.legs) legs)\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Class hierarchies with overrides and custom initialisers, as in JS `class Dog extends Animal`. Swift adds rules: designated initialisers, `super.init`, `override` and `final`. They feel heavy because Swift steers you towards protocols and structs.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How many of Swift's class rules have no JS equivalent? Which one catches the most bugs?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Rewrite with a protocol `Animal` and structs. What do you lose? (Shared stored `legs`.)"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `Poodle` inherit `Dog`'s initialisers automatically? When would it stop?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why are deep class hierarchies rare in modern Swift apps?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Class inheritance – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=zv8Lia5Ertk&t=1s",
+      "channel": "Paul Hudson",
+      "start": 1,
+      "moment": "class based on an existing class it inherits all the properties and methods of the original class and can add its"
+    },
+    {
+      "title": "Swift For Beginners - Class & Inheritance Explained",
+      "url": "https://www.youtube.com/watch?v=EhDML-fAqTM&t=568s",
+      "channel": "Sean Allen",
+      "start": 568,
+      "moment": "what we're gonna talk about now is inheritance because this is a big reason why you would use a class so inheritance"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

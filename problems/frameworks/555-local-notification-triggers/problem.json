@@ -17,6 +17,18 @@
     {
       "title": "Calendar.nextDate(after:matching:matchingPolicy:repeatedTimePolicy:direction:)",
       "url": "https://developer.apple.com/documentation/foundation/calendar/nextdate(after:matching:matchingpolicy:repeatedtimepolicy:direction:)"
+    },
+    {
+      "title": "WidgetKit",
+      "url": "https://developer.apple.com/documentation/widgetkit"
+    },
+    {
+      "title": "StoreKit",
+      "url": "https://developer.apple.com/documentation/storekit"
+    },
+    {
+      "title": "User Notifications",
+      "url": "https://developer.apple.com/documentation/usernotifications"
     }
   ],
   "signature": {
@@ -40,5 +52,49 @@
     "Build `DateComponents` with hour/minute and optionally weekday or day.",
     "`calendar.nextDate(after:matching:matchingPolicy:)` finds the next occurrence.",
     "Use `.strict` so day 31 skips shorter months."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`UNCalendarNotificationTrigger` fires at the next date matching some `DateComponents`, like a cron expression for local notifications. The web has no reliable scheduled-notification equivalent.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Scheduling a notification for 9:00 every weekday on the web needs a push server. What can iOS do locally?"
+    },
+    {
+      "kind": "edge",
+      "q": "The user changes time zone: does a calendar trigger fire at 9:00 local in the new zone?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Calendar trigger vs time-interval trigger vs location trigger: which for a medication reminder?"
+    },
+    {
+      "kind": "practice",
+      "q": "iOS limits pending local notifications (64). How do you schedule a year of reminders?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to schedule local Push Notifications in SwiftUI | Continued Learning #11",
+      "url": "https://www.youtube.com/watch?v=mG9BVAs8AIo&t=71s",
+      "channel": "Swiftful Thinking",
+      "start": 71,
+      "moment": "we actually need a server and there's a lot more logic involved and we're not talking about that right"
+    },
+    {
+      "title": "Scheduling local notifications – Hot Prospects 7/16",
+      "url": "https://www.youtube.com/watch?v=Bc_pd9gqXUM&t=197s",
+      "channel": "Paul Hudson",
+      "start": 197,
+      "moment": "print error.localized description, like that. Now, if the user grants permission to"
+    },
+    {
+      "title": "Swift Observer & Notification Pattern Tutorial - iOS Communication Patterns Part 2",
+      "url": "https://www.youtube.com/watch?v=srqiDnLEocA&t=1s",
+      "channel": "Sean Allen",
+      "start": 1,
+      "moment": "questions. Today's going to be part two about communication patterns. Now, part one was all about delegates and"
+    }
+  ],
+  "articles": []
 }

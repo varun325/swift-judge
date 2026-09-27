@@ -13,11 +13,65 @@
     {
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "hints": [
     "Each line creates an empty collection with a different spelling.",
     "A `Set` ignores the second `insert(7)`.",
     "Line 1: `[\"ana\": 3] [\"bo\"] [7] [1, 2]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS: `[]` and `{}` need no types. Swift: `[]` alone can't infer an element type, so you write `[Int]()`, `[String: Int]()` or annotate the variable. `Set` has no literal of its own; it borrows array literal syntax.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why can't Swift infer `let x = []`? What does TS infer for `const x = []` (`any[]` or `never[]`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "`let s: Set = [1, 2]`: how does an array literal become a `Set`? (`ExpressibleByArrayLiteral`)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[Int]()` vs `[] as [Int]` vs `Array<Int>()`: any difference?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should an empty array property be `var items: [Item] = []` or `[Item]? = nil`? What does each mean to the UI?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Arrays and Sets in Swift | Swift Basics #13",
+      "url": "https://www.youtube.com/watch?v=_SRaZjPuYOQ&t=698s",
+      "channel": "Swiftful Thinking",
+      "start": 698,
+      "moment": "fruits array it could be zero it could be more than zero and so when we call First"
+    },
+    {
+      "title": "Creating empty collections – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=yBJXkieX2R4",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "arrays sets and dictionaries are called collections because they collect values together in one place if you want to"
+    },
+    {
+      "title": "Simple, Clean Empty States in SwiftUI - ContentUnavailableView - iOS 17",
+      "url": "https://www.youtube.com/watch?v=bEB7ATENue0&t=115s",
+      "channel": "Sean Allen",
+      "start": 115,
+      "moment": "Heroes well what if the user had to type been the heroes themselves so I'm going to actually copy our array of Heroes up here which again is just a name of stri"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

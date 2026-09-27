@@ -17,6 +17,10 @@
     {
       "title": "phaseAnimator(_:trigger:content:animation:)",
       "url": "https://developer.apple.com/documentation/swiftui/view/phaseanimator(_:trigger:content:animation:)"
+    },
+    {
+      "title": "Animation",
+      "url": "https://developer.apple.com/documentation/swiftui/animation"
     }
   ],
   "signature": {
@@ -40,5 +44,35 @@
     "Put visual values (scale, rotation) on the phase enum as computed properties.",
     "Each trigger walks lift → spin → drop → idle.",
     "Accumulate time from the per-transition durations."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`PhaseAnimator` steps through an enum of phases on each trigger: multi-step animations as data. CSS `@keyframes` with percentages is the web equivalent, but phases here are typed enum cases.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS `@keyframes` vs `PhaseAnimator(Phase.allCases, trigger:)`: which lets each step have its own timing curve?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if the trigger changes mid-sequence?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`PhaseAnimator` vs `KeyframeAnimator`: when do you need per-property keyframe tracks?"
+    },
+    {
+      "kind": "practice",
+      "q": "A \"like\" button bounce: which would you use?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Advanced SwiftUI Animations - PhaseAnimator - iOS 17+",
+      "url": "https://www.youtube.com/watch?v=c5XaOrVYRGI&t=131s",
+      "channel": "Sean Allen",
+      "start": 131,
+      "moment": "actually that complicated so I'm pretty confident you'll understand by the end of the video all right so the content are button we want to add a scale effect an"
+    }
+  ],
+  "articles": []
 }

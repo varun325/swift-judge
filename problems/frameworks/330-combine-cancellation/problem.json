@@ -13,6 +13,10 @@
     {
       "title": "AnyCancellable",
       "url": "https://developer.apple.com/documentation/combine/anycancellable"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -33,5 +37,38 @@
     "A subscription dies when its `AnyCancellable` is deallocated.",
     "`_ = subject.sink { … }` is cancelled right away; `.store(in: &kept)` keeps it alive.",
     "`cancel` should cancel everything in the set and empty it."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "A subscription lives only as long as its `AnyCancellable`. Drop it and the subscription is cancelled. RxJS makes you call `unsubscribe()`, while Combine ties it to ARC ownership.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "RxJS leaks if you forget `unsubscribe()`. What's the opposite Combine bug (it stops immediately because you didn't store the cancellable)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does cancelling stop upstream work (a network request) or just delivery?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Set<AnyCancellable>` on the owner vs `.store(in:)` vs `assign(to: &$prop)`: which avoids retain cycles?"
+    },
+    {
+      "kind": "practice",
+      "q": "A view model's `sink { self.x = $0 }` stored in its own `cancellables`: cycle? How to fix?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+      "url": "https://www.youtube.com/watch?v=ePPm2ftSVqw",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=bvm3ZLmwOdU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

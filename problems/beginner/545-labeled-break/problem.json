@@ -34,5 +34,41 @@
     "You can name a loop with a label and `break` out of it from an inner loop.",
     "Label the outer loop, record `[row, col]` when you find the target, then `break` the label.",
     "`search: for (r, row) in grid.enumerated() { for (c, v) in row.enumerated() where v == target { found = [r, c]; break search } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS has labelled statements too (`outer: for …`, `break outer`), but they're rarely used. Swift's are identical in spirit, and more common because there's no `goto` and returning early from a nested loop is the alternative.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS has `outer:` labels too. Did you know? Why are they more idiomatic in Swift than in JS?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Labelled `break` vs extracting a function and `return`ing: which is clearer in a code review?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you label an `if` or `switch` and `break` out of it? When would you?"
+    },
+    {
+      "kind": "practice",
+      "q": "Searching a grid (calendar cells, game boards) is common. Would `firstIndex(where:)` with `flatMap` be cleaner?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to skip loop items with break and continue – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=z_kR4cP23c4&t=2s",
+      "channel": "Paul Hudson",
+      "start": 2,
+      "moment": "swift gives us two ways to skip one or more items in a loop we can use continue to skip the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

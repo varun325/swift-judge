@@ -14,6 +14,10 @@
     {
       "title": "The Basics — Type Aliases",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Swift Standard Library",
+      "url": "https://developer.apple.com/documentation/swift/swift-standard-library"
     }
   ],
   "signature": {
@@ -39,5 +43,55 @@
     "A `typealias` is just another name for an existing type.",
     "Loop over row and column offsets from -1 to 1, skip `(0, 0)`, and keep cells whose indices are valid.",
     "`for dr in -1...1 { for dc in -1...1 where !(dr == 0 && dc == 0) { … if grid.indices.contains(r), grid[r].indices.contains(c) { … } } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift's `typealias` is TS's `type Grid = number[][]`: a new name, not a new type, so `Grid` and `[[Int]]` are interchangeable. For a distinct type, wrap it in a struct, which is the equivalent of TS branded types.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `type UserID = string` doesn't stop you passing any string. Does Swift's `typealias` behave the same? How do you get real type safety?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`typealias Cell = (row: Int, col: Int)` vs `struct Cell`: what can the struct do that the tuple alias can't?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does Apple use typealiases: `Codable = Decodable & Encodable`, `TimeInterval = Double`? What does each communicate?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a typealias be generic, like `typealias Pair<T> = (T, T)`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Typealias in Swift | Continued Learning #19",
+      "url": "https://www.youtube.com/watch?v=wBd3s4ZW8Ps&t=4s",
+      "channel": "Swiftful Thinking",
+      "start": 4,
+      "moment": "all right welcome back everyone i'm nick this is swiffle thinking"
+    },
+    {
+      "title": "Navigating to different data types using NavigationPath – Navigation SwiftUI Tutorial 4/9",
+      "url": "https://www.youtube.com/watch?v=PU8q5UPHTS0",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] navigating to different data types takes two different forms the simplest one is"
+    },
+    {
+      "title": "Swift - How to use typealias | Swift 5.2, Xcode 11",
+      "url": "https://www.youtube.com/watch?v=JvynRYZEU-8&t=51s",
+      "channel": "Sean Allen",
+      "start": 51,
+      "moment": "error and returns void here so what we can do is a type alias is instead of having you know this code which again"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

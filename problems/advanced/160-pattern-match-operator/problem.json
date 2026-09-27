@@ -30,5 +30,53 @@
     "A `switch` case uses `~=` to decide whether it matches.",
     "Overload `~=` for a `Prefix` struct and for a `(String) -> Bool` closure.",
     "`func ~= (pattern: Prefix, value: String) -> Bool { value.hasPrefix(pattern.text) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Overloading `~=` teaches `switch` new pattern types, such as prefix structs or predicate closures. That has no JS equivalent, since JS `switch` only uses `===`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How close can JS `switch(true)` get to custom patterns? What's missing?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which argument of `~=` is the pattern and which is the value? What happens if you swap them?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom `~=` vs `case let x where x.hasPrefix(…)`: when is the overload worth it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Matching HTTP status ranges (`case 200..<300`) uses built-in `~=`. What custom pattern would help your networking code?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use the Coordinator pattern in iOS",
+      "url": "https://www.youtube.com/watch?v=7HgbcTqxoN4",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] hello I'm Paul Hudson and in this video we're going to look at implement in the"
+    },
+    {
+      "title": "Swift Delegate Protocol Pattern Tutorial 2023 | iOS Communication Patterns",
+      "url": "https://www.youtube.com/watch?v=qiOKO8ta1n4",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "the delegate and protocol pattern is a one-to-one communication pattern in Swift it allows one view to communicate with another view for example The View contro"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Attributes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -32,5 +36,41 @@
     "Anagrams become identical when you sort their letters.",
     "Group the words by their sorted-letter key — `Dictionary(grouping:by:)` does this in one call.",
     "`Array(Dictionary(grouping: words) { String($0.sorted()) }.values)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "lodash `groupBy` corresponds to `Dictionary(grouping: words, by: { String($0.sorted()) })`. The key is a sorted `String`. In JS you'd sort `w.split('')`, and Swift sorts `Character`s directly.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "Sorted-string key vs a 26-count letter signature: which is O(k) instead of O(k log k)? Can the count signature be a dictionary key in Swift?"
+    },
+    {
+      "kind": "js",
+      "q": "In JS you'd need `JSON.stringify` to use an array as a Map key. Why can Swift use `[Int]` directly as a dictionary key?"
+    },
+    {
+      "kind": "edge",
+      "q": "Are \"é\" (precomposed) and \"é\" (decomposed) anagrams under Swift's `sorted()`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does \"group by\" appear in iOS UIs: sectioned lists by date or first letter? Which SwiftUI API renders sections?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Hiding and grouping accessibility data – Accessibility SwiftUI Tutorial 2/7",
+      "url": "https://www.youtube.com/watch?v=oGPLjXgWqj8&t=50s",
+      "channel": "Paul Hudson",
+      "start": 50,
+      "moment": "there are three in particular I want to focus on here first marking images as being unimportant for voiceover second"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

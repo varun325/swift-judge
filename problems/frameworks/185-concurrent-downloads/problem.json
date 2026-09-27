@@ -39,5 +39,33 @@
     "Spawn one child task per id; carry the index with the result.",
     "Have each child return `String?` so failures don't cancel siblings.",
     "Put results into an array by index, then format with the ids."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Fetching many resources concurrently with a task group and collecting results (skipping failures) is `Promise.allSettled` over many fetches, but with real parallelism and structured cancellation.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Promise.allSettled(ids.map(fetchUser))` vs a Swift task group: how do you get \"settled\" semantics (per-task `Result`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "1,000 IDs: should you start 1,000 tasks at once? How would you limit concurrency?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Results in completion order vs input order: how do you restore input order?"
+    },
+    {
+      "kind": "practice",
+      "q": "Loading avatars for a list: task group, per-row `.task`, or an image library?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift with Combine | Continued Learning #23",
+      "url": "https://www.youtube.com/watch?v=fdxFp5vU6MQ",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": []
 }

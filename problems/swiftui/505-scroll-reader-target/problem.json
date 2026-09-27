@@ -17,6 +17,14 @@
     {
       "title": "ScrollViewProxy.scrollTo(_:anchor:)",
       "url": "https://developer.apple.com/documentation/swiftui/scrollviewproxy/scrollto(_:anchor:)"
+    },
+    {
+      "title": "List",
+      "url": "https://developer.apple.com/documentation/swiftui/list"
+    },
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
     }
   ],
   "signature": {
@@ -40,5 +48,40 @@
     "Scroll targets are ids, so compute which id you want.",
     "`unread x` means the message right after `x`, falling back to the last.",
     "Search with `localizedCaseInsensitiveContains` and take the first match."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`ScrollViewReader` scrolls to a view by **identity** (`proxy.scrollTo(id)`), like `element.scrollIntoView()` on the web but addressed by data ID instead of a DOM ref.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Web: `document.getElementById(id).scrollIntoView({block: 'end'})`. How does `scrollTo(id, anchor: .bottom)` compare?"
+    },
+    {
+      "kind": "edge",
+      "q": "Scrolling to an ID that isn't rendered yet in a lazy stack: does it work?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`ScrollViewReader` vs `scrollPosition(id:)` (iOS 17): which is two-way?"
+    },
+    {
+      "kind": "practice",
+      "q": "Chat apps: when should new messages auto-scroll, and when not (user reading history)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "ScrollViewReader to auto scroll in SwiftUI | Continued Learning #5",
+      "url": "https://www.youtube.com/watch?v=ZkOvD3okAJo&t=351s",
+      "channel": "Swiftful Thinking",
+      "start": 351,
+      "moment": "and now start typing in proxy.scroll and we can see our two options one is just scroll to"
+    },
+    {
+      "title": "How to make a scroll view move to a location using ScrollViewReader – SwiftUI",
+      "url": "https://www.youtube.com/watch?v=rChSFRIaAYo",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

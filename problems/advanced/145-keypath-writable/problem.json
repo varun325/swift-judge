@@ -14,6 +14,10 @@
     {
       "title": "Expressions — Key-Path Expression",
       "book": "ReferenceManual/Expressions"
+    },
+    {
+      "title": "KeyPath",
+      "url": "https://developer.apple.com/documentation/swift/keypath"
     }
   ],
   "signature": {
@@ -31,5 +35,48 @@
     "`WritableKeyPath` lets you write through a key path.",
     "Write a generic `update(&value, keyPath, to:)`, then read the fields back with an array of `PartialKeyPath<Profile>`.",
     "`value[keyPath: keyPath] = newValue` in the helper; read with `profile[keyPath: $0]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`WritableKeyPath<T, V>` is a typed, first-class reference to a settable property: generic setters like `update(&profile, \\.name, to: \"Ana\")`. JS would use string keys (`obj[key] = v`), with no type checking.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`obj[key] = value` in TS needs `keyof` and indexed access types. How does a Swift key path compare?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`WritableKeyPath` vs `ReferenceWritableKeyPath`: why does a class property need the second?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you store `[PartialKeyPath<Profile>]` and iterate over them? What do you lose?"
+    },
+    {
+      "kind": "practice",
+      "q": "Form editing with a generic `TextField` bound to `\\.name`: how does `Binding` + key paths make this concise?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use KeyPaths in Swift | Advanced Learning #29",
+      "url": "https://www.youtube.com/watch?v=FmjG6mG-GIA&t=7s",
+      "channel": "Swiftful Thinking",
+      "start": 7,
+      "moment": "are one before we get into the really cool property wrappers which I promise are coming they're in the next video"
+    },
+    {
+      "title": "Cleaner, Safer Code with Swift KeyPaths",
+      "url": "https://www.youtube.com/watch?v=qSdCw7YxQhA",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "if you've worked with swift UI then you've almost certainly seen this syntax this slash. ID or sl. you know another property name but you may not know what that"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Expressions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions/",
+      "source": "swift.org"
+    }
   ]
 }

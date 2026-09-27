@@ -46,8 +46,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L15: Multithreading",
-      "url": "https://www.youtube.com/watch?v=F0nefFT2Uik",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=F0nefFT2Uik&t=3101s",
+      "channel": "Stanford Online",
+      "start": 3101,
+      "moment": "But it is a cheap and easy way to have actor isolation if you want to do a little bit of multithreading in your Model. And that's exactly what we do with the wo"
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "UI and view models live on the main actor, and heavy work must hop off it (`@concurrent` / nonisolated async functions) and come back with results. It's the web's \"don't block the main thread\" rule, with the compiler enforcing isolation.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS you'd move heavy work to a Web Worker and `postMessage` back. What's the Swift 6.2 equivalent, and what does the compiler check?"
+    },
+    {
+      "kind": "edge",
+      "q": "With Swift 6.2's approachable concurrency, does a `nonisolated async` function run off the main actor by default? (`@concurrent` makes it explicit.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Task.detached` vs a `@concurrent` function vs an actor: which is the cleanest way to offload work?"
+    },
+    {
+      "kind": "practice",
+      "q": "How do you prove the main thread isn't blocked (Instruments' Hangs, Time Profiler)?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

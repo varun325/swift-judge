@@ -15,6 +15,10 @@
     {
       "title": "The Basics — Optionals",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -32,5 +36,46 @@
     "`Int(\"42\")` is a failable initialiser: it returns `Int?`.",
     "Transform every token and drop the failures in one step, then add everything up.",
     "`tokens.compactMap { Int($0) }.reduce(0, +)`."
+  ],
+  "impact": "core",
+  "jsBridge": "`Number(s)` returns `NaN` in JS, while `Int(s)` returns `Int?`. `compactMap { Int($0) }` parses and drops failures in one step, the typed version of `.map(Number).filter(n => !isNaN(n))`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Number(' 7')` is 7 and `Number('')` is 0 in JS. What do `Int(\" 7\")` and `Int(\"\")` return? Which is stricter, and why is that better for forms?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`compactMap` vs `map` then `filter { $0 != nil }` then force unwrap: why is the first idiomatic?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why doesn't `Int(\"4.5\")` return 4? How would you parse a decimal string into an Int?"
+    },
+    {
+      "kind": "practice",
+      "q": "Parsing user number input should respect locale (\"1,5\" in Germany). Which API handles that?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Failable initializers – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=HzG0u91xr1M&t=2s",
+      "channel": "Paul Hudson",
+      "start": 2,
+      "moment": "five let numb equals int stir that converts a string to an integer but because you might try to pass any string"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

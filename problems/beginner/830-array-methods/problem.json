@@ -12,6 +12,10 @@
     {
       "title": "Collection Types — Arrays",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "signature": {
@@ -29,5 +33,41 @@
     "Arrays have `append`, `insert(_:at:)`, `remove(at:)`, `firstIndex(of:)`, `swapAt`, `reverse()` and `sort()`.",
     "Split each command into a verb and an optional argument, then switch on them.",
     "`if let i = songs.firstIndex(of: name) { songs.remove(at: i) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS `push`, `unshift`, `splice` and `indexOf` map to Swift `append`, `insert(_:at:)`, `remove(at:)` and `firstIndex(of:)`. Swift's return optionals instead of `-1`, and they trap on bad indices instead of quietly doing nothing.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`indexOf` returns -1. `firstIndex(of:)` returns `Int?`. Which bug class does the optional remove?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`insert(_, at: 0)` is O(n). What data structure makes front insertion O(1) (`Deque` in swift-collections)?"
+    },
+    {
+      "kind": "edge",
+      "q": "`removeFirst()` on an empty array crashes. What's the safe variant (`popFirst` on slices)?"
+    },
+    {
+      "kind": "practice",
+      "q": "A playlist in a SwiftUI `List` supports `.onMove` and `.onDelete`. Which array methods do they call?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to append one array to another array – Swift 5",
+      "url": "https://www.youtube.com/watch?v=CYqLHqDfBOQ&t=10s",
+      "channel": "Paul Hudson",
+      "start": 10,
+      "moment": "an array of John and Paul and let's second equals an array of George and Ringo I made the first array mutable so"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

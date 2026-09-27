@@ -12,7 +12,15 @@
   "docs": [
     {
       "title": "Calendar.dateComponents(_:from:to:)",
-      "url": "https://developer.apple.com/documentation/foundation/calendar/datecomponents(_:from:to:)"
+      "url": "https://developer.apple.com/documentation/foundation/calendar"
+    },
+    {
+      "title": "Calendar",
+      "url": "https://developer.apple.com/documentation/foundation/calendar"
+    },
+    {
+      "title": "Date",
+      "url": "https://developer.apple.com/documentation/foundation/date"
     }
   ],
   "signature": {
@@ -36,5 +44,40 @@
     "Ask the calendar for the difference in `.year` and `.day` components.",
     "Extract `[.month, .day]` from the birth date and search forward with `nextDate(after:matching:matchingPolicy:)`.",
     "Handle \"today is the birthday\" as 0 days."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`calendar.dateComponents([.year, .day], from:to:)` answers \"how many years/days between\" correctly across leap years and DST. JS `(b - a) / 86400000` breaks on DST days.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Dividing ms by 86,400,000 in JS: when is the answer off by one?"
+    },
+    {
+      "kind": "edge",
+      "q": "Birthday on Feb 29: when is the \"next birthday\" in a non-leap year?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`dateComponents(_:from:to:)` vs `DateInterval.duration`: which respects calendar days?"
+    },
+    {
+      "kind": "practice",
+      "q": "Age gating (13+): compute in the user's time zone or UTC?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to format dates inside text views – SwiftUI",
+      "url": "https://www.youtube.com/watch?v=8hfgErg7ybQ",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "New Way to Format Dates in Swift (5.5)",
+      "url": "https://www.youtube.com/watch?v=5I1ghMpU4rs&t=173s",
+      "channel": "Sean Allen",
+      "start": 173,
+      "moment": "like i said this is just a generic name maybe you have like a calendar display format onboarding display format right"
+    }
+  ],
+  "articles": []
 }

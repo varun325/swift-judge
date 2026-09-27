@@ -13,6 +13,14 @@
     {
       "title": "JSONEncoder",
       "url": "https://developer.apple.com/documentation/foundation/jsonencoder"
+    },
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -44,5 +52,46 @@
     "Configure `keyEncodingStrategy` and `outputFormatting` on the encoder.",
     "`.convertToSnakeCase` turns `followerCount` into `follower_count`.",
     "Decode the `Data` result to a `String` with UTF-8."
+  ],
+  "impact": "edge",
+  "jsBridge": "`JSONEncoder` with `.convertToSnakeCase`, `.sortedKeys` and `.prettyPrinted` controls output shape, like `JSON.stringify(obj, null, 2)` plus a key-transform step. Sorted keys make output deterministic for tests and signatures.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`JSON.stringify` has no key sorting. How do JS devs get deterministic JSON (for hashing, snapshots)?"
+    },
+    {
+      "kind": "edge",
+      "q": "`nil` optionals: are they omitted or written as `null` by default?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.convertToSnakeCase` vs explicit `CodingKeys`: what happens to acronyms like `userID`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Snapshot-testing request bodies: why are `.sortedKeys` essential?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3",
+      "url": "https://www.youtube.com/watch?v=UaPAis0vtK0",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc&t=388s",
+      "channel": "Sean Allen",
+      "start": 388,
+      "moment": "and real quick actually you see the documentation right there bull down down here says codable is decodable and encodable this just combines both of them but th"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

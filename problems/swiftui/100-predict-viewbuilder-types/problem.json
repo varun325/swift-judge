@@ -13,6 +13,10 @@
     {
       "title": "ViewBuilder",
       "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
+    },
+    {
+      "title": "View",
+      "url": "https://developer.apple.com/documentation/swiftui/view"
     }
   ],
   "platforms": [
@@ -22,5 +26,38 @@
     "Several child views are packed into a tuple view.",
     "An `if` without `else` produces an optional; `if/else` produces a two-branch conditional type.",
     "Line 1 is `VStack<TupleView<(Text, Text)>>`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "A SwiftUI `body` compiles to one concrete nested generic type (`TupleView`, `_ConditionalContent`). It's like JSX compiling to `createElement` calls, except Swift keeps the whole tree's **type**, which is how SwiftUI diffs without a virtual DOM.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React diffs virtual DOM *values* at runtime. What does SwiftUI get from knowing the view tree's *type* at compile time?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why do `if/else` branches become `_ConditionalContent<A, B>`? What happens to state when you switch branches?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`if` in a builder vs `.opacity(show ? 1 : 0)`: which preserves view identity and state?"
+    },
+    {
+      "kind": "practice",
+      "q": "A view \"resets\" its state when a condition toggles. How does this type structure explain it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use @ViewBuilder in SwiftUI | Advanced Learning #9",
+      "url": "https://www.youtube.com/watch?v=pXmBRK1BjLw",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Conditional modifiers – Views and Modifiers SwiftUI Tutorial 5/10",
+      "url": "https://www.youtube.com/watch?v=rGq_CKHhAyQ",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

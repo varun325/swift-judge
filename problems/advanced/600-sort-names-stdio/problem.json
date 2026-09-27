@@ -13,11 +13,65 @@
     {
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "Store each person as a labelled tuple.",
     "Sort by the tuple (lowercased last name, lowercased first name).",
     "`print(\"\\(p.last.uppercased()), \\(p.first)\")` for each sorted person."
+  ],
+  "impact": "edge",
+  "jsBridge": "Sort by last name, then first name, case-insensitively, with a tuple key and `lowercased()`. For real names, `localizedStandardCompare` and `PersonNameComponentsFormatter` are the Foundation answer.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `localeCompare` with `{sensitivity: 'base'}` vs Swift `localizedCaseInsensitiveCompare`: equivalent?"
+    },
+    {
+      "kind": "edge",
+      "q": "\"van Gogh\", \"O'Brien\", single names, three-part names: how does \"last name\" break down?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Tuple of lowercased strings vs `KeyPathComparator` with `.localized`: which handles accents correctly?"
+    },
+    {
+      "kind": "practice",
+      "q": "Contact lists sort by family name in some locales and given name in others. What does `CNContactFormatter` do?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to Filter, Sort, and Map in Swift | Swift Basics #16",
+      "url": "https://www.youtube.com/watch?v=NkOU60vwUEY&t=16s",
+      "channel": "Swiftful Thinking",
+      "start": 16,
+      "moment": "methods for us so that we don't actually have to write that manual Loop if we are doing certain things and so three of the"
+    },
+    {
+      "title": "Sorting Wikipedia results – Bucket List SwiftUI Tutorial 10/12",
+      "url": "https://www.youtube.com/watch?v=eRpLujwUUBA",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Wikipedia's results come back to us in an order that might seem random but it's"
+    },
+    {
+      "title": "Swift Basics - Array | Sort, Reverse, Shuffle",
+      "url": "https://www.youtube.com/watch?v=mWKYpRxjhJs&t=364s",
+      "channel": "Sean Allen",
+      "start": 364,
+      "moment": "print ages down here and now you can see 21 is no longer at the beginning 44 is at the beginning and the last three"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

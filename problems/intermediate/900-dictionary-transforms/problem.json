@@ -30,5 +30,39 @@
     "Dictionaries have value-only transforms that keep their keys.",
     "`compactMapValues` drops values whose transform returns nil.",
     "`raw.compactMapValues { Int($0) }.mapValues { $0 * 2 }.filter { !$0.key.hasPrefix(\"_\") }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`mapValues` and `compactMapValues` transform values while keeping keys, which is `Object.fromEntries(Object.entries(o).map(…))` in one call. `filter` on a dictionary returns a dictionary, where JS `Object.entries().filter()` gives an array.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How many intermediate arrays does the JS `Object.entries → map → fromEntries` pipeline create? And the Swift version?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`mapValues` vs `map` on a Dictionary: why does `map` return an array?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `mapValues` keep the dictionary's hashing work (no re-hashing)? Why is it faster?"
+    },
+    {
+      "kind": "practice",
+      "q": "Cleaning feature flags from remote config is this exact pipeline. Where would you log dropped values?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+      "url": "https://www.youtube.com/watch?v=Le32Tbkv2v0",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

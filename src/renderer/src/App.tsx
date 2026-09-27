@@ -39,6 +39,7 @@ export function App(): React.JSX.Element {
   const [info, setInfo] = useState<SwiftInfo>()
   const [bookPath, setBookPath] = useState<string>()
   const [reviewOpen, setReviewOpen] = useState(false)
+  const [playgroundPage, setPlaygroundPage] = useState<string>()
   const [loaded, setLoaded] = useState(false)
 
   const refresh = useCallback(async () => {
@@ -104,7 +105,14 @@ export function App(): React.JSX.Element {
         </div>
         <nav className="tabs">
           {(['problems', 'playground', 'concepts', 'quiz', 'book'] as Tab[]).map((t) => (
-            <button key={t} className={tab === t ? 'active' : ''} onClick={() => setTab(t)}>
+            <button
+              key={t}
+              className={tab === t ? 'active' : ''}
+              onClick={() => {
+                setPlaygroundPage(undefined) // a page opened from a problem only applies to that one visit
+                setTab(t)
+              }}
+            >
               {t === 'book' ? 'Swift Book' : t[0].toUpperCase() + t.slice(1)}
             </button>
           ))}
@@ -147,6 +155,10 @@ export function App(): React.JSX.Element {
                 review={progress[selected]?.review}
                 onProgress={refresh}
                 onOpenBook={openBook}
+                onOpenPlayground={(id) => {
+                  setPlaygroundPage(id)
+                  setTab('playground')
+                }}
                 onNext={() => {
                   const i = problems.findIndex((p) => p.id === selected)
                   const next = problems.slice(i + 1).find((p) => !progress[p.id]?.solved) ?? problems[i + 1]
@@ -158,7 +170,7 @@ export function App(): React.JSX.Element {
             )}
           </>
         )}
-        {tab === 'playground' && <PlaygroundView />}
+        {tab === 'playground' && <PlaygroundView openPage={playgroundPage} />}
         {tab === 'concepts' && <ConceptsView problems={problems} progress={progress} onOpen={openProblem} />}
         {tab === 'quiz' && <QuizView />}
         {tab === 'book' && <BookView initialPath={bookPath} />}

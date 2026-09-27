@@ -17,6 +17,10 @@
     {
       "title": "Publisher.catch(_:)",
       "url": "https://developer.apple.com/documentation/combine/publisher/catch(_:)"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -41,5 +45,40 @@
     "`tryMap` turns a thrown error into a failed stream.",
     "Errors end a stream; recovering outside means the rest of the input is lost.",
     "Handle the error inside `flatMap { Just($0).tryMap(…).replaceError(with: -1) }` to continue."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`tryMap`, `catch` and `replaceError` are RxJS's `map` + `catchError`. A failure **terminates** the stream in both, which is why recovery operators matter.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "RxJS `catchError(() => of(-1))` vs Combine `.catch { _ in Just(-1) }`: same termination semantics?"
+    },
+    {
+      "kind": "edge",
+      "q": "After an error, does the upstream keep emitting? How do you keep a long-lived stream alive (`flatMap` + `catch` inside)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`replaceError(with:)` vs `catch` vs `retry(_:)`: which for which failure?"
+    },
+    {
+      "kind": "practice",
+      "q": "A search stream dies on the first network error. How do you structure it so the next query still works?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+      "url": "https://www.youtube.com/watch?v=ePPm2ftSVqw",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=bvm3ZLmwOdU&t=721s",
+      "channel": "Paul Hudson",
+      "start": 721,
+      "moment": "put into property called students with the type fetch results of student and from there we can go ahead and use"
+    }
+  ],
+  "articles": []
 }

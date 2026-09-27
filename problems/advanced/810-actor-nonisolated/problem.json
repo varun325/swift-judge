@@ -13,6 +13,10 @@
     {
       "title": "Concurrency — Actors",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -31,5 +35,46 @@
     "Actor methods are awaited from outside; a `nonisolated` member isn't.",
     "`nonisolated var label` may only read the `let name`, never `books`.",
     "`out.append(await library.checkout(title) ? \"ok\" : \"unavailable\")`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Actor members are isolated (so callers must `await`), but `nonisolated` members that only touch immutable `let` state can be called synchronously. That's the escape hatch for things like `description` or IDs.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, reading an object's constant field never needs `await`. Why does Swift need `nonisolated` to allow it on actors?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a `nonisolated` method read a `var`? Why is `let name` fine?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`nonisolated let` vs `nonisolated func` vs making the whole type `Sendable`: which is the right tool?"
+    },
+    {
+      "kind": "practice",
+      "q": "Conforming an actor to `Hashable` or `CustomStringConvertible` needs `nonisolated`. Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Global Actors in Swift (@globalActor) | Swift Concurrency #10",
+      "url": "https://www.youtube.com/watch?v=BRBhMrJj5f4&t=12s",
+      "channel": "Swiftful Thinking",
+      "start": 12,
+      "moment": "uh we did most of the hard stuff already so uh hopefully smooth sailing for the rest of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

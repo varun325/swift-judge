@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Fundamental Set Operations",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Set",
+      "url": "https://developer.apple.com/documentation/swift/set"
     }
   ],
   "signature": {
@@ -36,5 +40,51 @@
     "Sets have built-in methods for intersection, difference and more.",
     "Convert both arrays to sets, then use `intersection`, `subtracting` (both directions) and `symmetricDifference` — sorting each result.",
     "`[sa.intersection(sb).sorted(), sa.subtracting(sb).sorted(), sb.subtracting(sa).sorted(), sa.symmetricDifference(sb).sorted()]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS got `Set.prototype.intersection` and friends only recently (ES2025). Swift's `Set` has always had `intersection`, `subtracting`, `union` and `symmetricDifference`, plus mutating `form…` variants, all part of the `SetAlgebra` protocol, which `OptionSet` also adopts.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Before ES2025 you wrote `[...a].filter(x => b.has(x))`. What's the complexity of Swift's `intersection` compared with that?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`SetAlgebra` is also adopted by `OptionSet` (like `[.bold, .italic]`). How is a bit mask \"a set\"?"
+    },
+    {
+      "kind": "practice",
+      "q": "Syncing tags or permissions between client and server is set algebra. Sketch which operations give \"to add\" and \"to remove\"."
+    },
+    {
+      "kind": "edge",
+      "q": "Sets are unordered. Why does the problem ask for sorted output, and what would a flaky test look like?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+      "url": "https://www.youtube.com/watch?v=WxHsQDbIdl8",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=9GjGRqK8LSw",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift Basics: Array vs. Set",
+      "url": "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=298s",
+      "channel": "Sean Allen",
+      "start": 298,
+      "moment": "return true if there is an overlap it will return false you can see the Swift UI devs are Sean and James and the kotlin devs Olivia Elijah Leo Maya Dan there's "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

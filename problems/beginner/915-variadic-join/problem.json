@@ -30,5 +30,46 @@
     "Inside the function, a variadic parameter is an ordinary array.",
     "Put the logic in a `components: [String]` overload and have the variadic one forward to it.",
     "Trim with `trimmingCharacters(in: CharacterSet(charactersIn: \"/\"))` (Foundation)."
+  ],
+  "impact": "edge",
+  "jsBridge": "A variadic `String...` combined with a defaulted `separator:` parameter after it: the label is what lets the compiler know where the variadic list ends. JS rest parameters must come last; Swift variadics needn't.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS rest params must be last. How can Swift put `separator:` after the variadic?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Hand-built path joining vs `URL.appending(path:)`: what does `URL` handle that string joining doesn't?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens with a component like `\"a//b\"`? Should inner slashes be collapsed?"
+    },
+    {
+      "kind": "practice",
+      "q": "Building API paths by string concatenation is error-prone. What would a typed `Endpoint` enum look like?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Variadic functions – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=OpRcPOVNjXE",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Some functions are variadic, which is a fancy way of saying they accept any number of parameters of the same type."
+    },
+    {
+      "title": "Swift - What are Variadic Parameters?",
+      "url": "https://www.youtube.com/watch?v=DtAYJfe_9o0",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

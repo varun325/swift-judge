@@ -18,6 +18,10 @@
     {
       "title": "Observation",
       "url": "https://developer.apple.com/documentation/observation"
+    },
+    {
+      "title": "FocusState",
+      "url": "https://developer.apple.com/documentation/swiftui/focusstate"
     }
   ],
   "signature": {
@@ -38,5 +42,49 @@
     "Store only the inputs; compute errors from them.",
     "Make `errors` a computed property that appends messages in a fixed order.",
     "`canSubmit` is simply `errors.isEmpty`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "An `@Observable` model with computed validation properties drives a `Form`, like React Hook Form or Formik with derived `errors` and `isValid`. It's plain Swift properties rather than a library.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Formik/React Hook Form track touched and errors. What do you need to add to a Swift model to show errors only after the user edits a field?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Computed `isValid` vs validating on submit vs validating each keystroke: which gives the best UX?"
+    },
+    {
+      "kind": "edge",
+      "q": "Email validation by regex vs `contains(\"@\")` vs letting the server decide: how strict should a client be?"
+    },
+    {
+      "kind": "practice",
+      "q": "Sharing validation rules with the backend: duplicate them, or fetch rules from the server?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Display downloaded data in grid format with reusable components | SwiftUI Crypto App #20",
+      "url": "https://www.youtube.com/watch?v=R7kTiC86MKg&t=15s",
+      "channel": "Swiftful Thinking",
+      "start": 15,
+      "moment": "information from the internet we're not using it yet so in this video we're going to take that new data"
+    },
+    {
+      "title": "Formatting our mission view – Moonshot SwiftUI Tutorial 8/11",
+      "url": "https://www.youtube.com/watch?v=_mAmixE3TkU&t=212s",
+      "channel": "Paul Hudson",
+      "start": 212,
+      "moment": "lazy vrid that we Loop over our missions array with a for each of missions here one Mission comes"
+    },
+    {
+      "title": "New Way to Format Dates in Swift (5.5)",
+      "url": "https://www.youtube.com/watch?v=5I1ghMpU4rs",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "ios 15 and swift 5.5 introduced a new formatter api to help us cleanly format dates now as you can see this all the"
+    }
+  ],
+  "articles": []
 }

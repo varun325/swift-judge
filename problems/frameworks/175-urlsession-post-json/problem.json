@@ -13,6 +13,10 @@
     {
       "title": "URLRequest",
       "url": "https://developer.apple.com/documentation/foundation/urlrequest"
+    },
+    {
+      "title": "URLSession",
+      "url": "https://developer.apple.com/documentation/foundation/urlsession"
     }
   ],
   "signature": {
@@ -37,5 +41,38 @@
     "Configure a `URLRequest`: `httpMethod`, `setValue(_:forHTTPHeaderField:)`, `httpBody`.",
     "Encode `NewTodo` with a sorted-keys `JSONEncoder` as the body.",
     "Send with `session.data(for: request)` and decode `Created`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`URLRequest` with `httpMethod = \"POST\"`, headers and `httpBody = try JSONEncoder().encode(body)` is `fetch(url, {method, headers, body: JSON.stringify(...)})` with typed encoding.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`fetch(url, {method: 'POST', headers, body: JSON.stringify(x)})`. Which part does Swift type-check?"
+    },
+    {
+      "kind": "edge",
+      "q": "Forgetting `Content-Type: application/json`: what does the server see?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`URLSession.upload(for:from:)` vs `data(for:)` with `httpBody`: when does upload matter (large bodies, background)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where should the auth token come from: a stored property, the Keychain, an interceptor-like wrapper?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift with Combine | Continued Learning #23",
+      "url": "https://www.youtube.com/watch?v=fdxFp5vU6MQ",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

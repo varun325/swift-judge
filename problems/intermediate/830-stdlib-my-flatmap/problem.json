@@ -31,5 +31,41 @@
     "The closure returns a whole sequence per element; you need to concatenate them.",
     "Make the method generic over `S: Sequence` and return `[S.Element]`.",
     "`result.append(contentsOf: try transform(element))`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Same as JS `flatMap`: map each element to a sequence, then concatenate. Swift's generic signature `<S: Sequence>(…) -> [S.Element]` accepts any sequence type, not just arrays.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `flatMap` only flattens one level of arrays. Is Swift's the same?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`flatMap` vs `joined()` vs `reduce([], +)`: which is O(n²)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can the transform return a `String` (a sequence of `Character`s)? What would you get?"
+    },
+    {
+      "kind": "practice",
+      "q": "Flattening sections into rows for a list is flatMap. Where else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Inside the Standard Library: Sequence.flatMap",
+      "url": "https://www.youtube.com/watch?v=8rXHIlT_zQQ&t=53s",
+      "channel": "Paul Hudson",
+      "start": 53,
+      "moment": "separated by a space print words take a look at the output with God from having a simple string array to having"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

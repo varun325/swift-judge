@@ -29,5 +29,55 @@
     "`switch` works on `String` values, and a case can list several strings.",
     "Lowercase first; use `case let f where f.hasPrefix(\"storm\")` for prefixes.",
     "`case \"rain\", \"drizzle\": \"umbrella\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS `switch` on strings uses `===`. Swift pattern-matches strings too, and adds `case let s where s.hasPrefix(\"storm\")`, so switch can do what JS needs an `if` chain for.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would you do the \"starts with storm\" case in a JS `switch`? (`switch (true)` again?)"
+    },
+    {
+      "kind": "contrast",
+      "q": "Switching on raw strings vs parsing them into an enum first: which scales, and where should parsing happen?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is a string switch case-sensitive? Where's the right place to normalise?"
+    },
+    {
+      "kind": "practice",
+      "q": "Server-driven UI sends strings like `\"banner\"`. What should unknown values do?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+      "url": "https://www.youtube.com/watch?v=JIT8sL_VtNA",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "[Music] welcome back everyone i'm nick a quick video here today we're"
+    },
+    {
+      "title": "Introduction to Swift: Switch case",
+      "url": "https://www.youtube.com/watch?v=Jjd-m6fFu08",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] you've seen if statements and now loops but Swift has another type of flow"
+    },
+    {
+      "title": "SwiftUI Toggle - Button & Switch Tutorial",
+      "url": "https://www.youtube.com/watch?v=-sw7gvNUboc&t=240s",
+      "channel": "Sean Allen",
+      "start": 240,
+      "moment": "now when I turn Wi-Fi on you see that transition and now Wi-Fi is on turn it off there you go and if we want to comment out the label style now we get our full "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

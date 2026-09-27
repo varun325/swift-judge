@@ -31,5 +31,53 @@
     "A closure you store for later must be marked `@escaping`.",
     "Keep an array of `(String) -> Void` handlers; `publish` loops over them.",
     "`func subscribe(_ handler: @escaping (String) -> Void) { handlers.append(handler) }`."
+  ],
+  "impact": "core",
+  "jsBridge": "In JS every callback can be stored for later. Swift makes you mark those parameters `@escaping`. Non-escaping closures (the default) can't outlive the call, which lets the compiler skip reference counting and makes `self` capture rules looser.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS never distinguishes \"called now\" from \"stored for later\" callbacks. What bugs does Swift's `@escaping` annotation surface (retain cycles, reentrancy)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must you write `self.` explicitly inside escaping closures but not in non-escaping ones?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Stored callbacks vs Combine subjects vs `AsyncStream`: which handles unsubscribe best?"
+    },
+    {
+      "kind": "practice",
+      "q": "An event bus that stores handlers forever leaks. How do you design unsubscription (tokens, `weak` observers)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=1337s",
+      "channel": "Swiftful Thinking",
+      "start": 1337,
+      "moment": "we can't return immediately we have to use the escape enclosure so let's add one here we'll add a"
+    },
+    {
+      "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=HnIID4W3a_o",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift Closures: @escaping Explained",
+      "url": "https://www.youtube.com/watch?v=xiS5gJOIQxI",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today we're talking about escaping closures in Swift we're gonna talk about the difference between non escaping and"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

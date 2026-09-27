@@ -17,6 +17,10 @@
     {
       "title": "Updating collection views using diffable data sources",
       "url": "https://developer.apple.com/documentation/uikit/updating-collection-views-using-diffable-data-sources"
+    },
+    {
+      "title": "UIKit",
+      "url": "https://developer.apple.com/documentation/uikit"
     }
   ],
   "signature": {
@@ -37,5 +41,33 @@
     "Build the full desired state with `appendSections` and `appendItems(_:toSection:)`.",
     "Item identifiers must be unique — skip ones already present.",
     "`moveItem(_:afterItem:)`, `deleteItems`, `reloadItems`, then read `itemIdentifiers(inSection:)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Diffable data sources describe the **whole** desired state by identifiers, and UIKit computes and animates the diff. It's React's reconciliation model brought to `UITableView`/`UICollectionView`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React reconciles by `key`. Diffable data sources reconcile by item identifier. What's the equivalent of a duplicate key bug?"
+    },
+    {
+      "kind": "edge",
+      "q": "`reloadItems` vs `reconfigureItems`: which keeps the cell and just updates its content?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Diffable snapshots vs `performBatchUpdates` with index paths: which crashes when counts don't match?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should item identifiers be the model objects or their IDs? What goes wrong with whole models?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "UICollectionView data sources – Names to Faces, part 3",
+      "url": "https://www.youtube.com/watch?v=JideUGciPiE",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

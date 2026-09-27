@@ -37,5 +37,48 @@
     "Operators are `static func`s; new operators need a declaration and precedence group.",
     "Define `+`, prefix `-`, `*` in both orders, `+=` with `inout`, and `•` for the dot product.",
     "`infix operator • : MultiplicationPrecedence` and `static func • (l: Vector2, r: Vector2) -> Double { l.x * r.x + l.y * r.y }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Operator overloading (`static func +`) lets vectors add naturally. JS can't overload operators at all (`valueOf` hacks aside). Custom operators like `•` need a declared precedence group.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS has no operator overloading. What libraries (gl-matrix) do instead? What's more readable?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must you define `*` twice for scalar × vector and vector × scalar?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom `•` operator vs a `dot(_:)` method: which would you allow in a code review?"
+    },
+    {
+      "kind": "practice",
+      "q": "`CGPoint` and `CGSize` arithmetic extensions are everywhere in drawing code. Useful or dangerous?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create custom Operators in Swift | Advanced Learning #33",
+      "url": "https://www.youtube.com/watch?v=4eOTk5y-uZI&t=17s",
+      "channel": "Swiftful Thinking",
+      "start": 17,
+      "moment": "not the video for you because it's knowledge that you really don't need to know although it's pretty cool to know"
+    },
+    {
+      "title": "Operator Overloading – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=hQLBDnMR8f8",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Swift supports operator overloading which is a fancy way of saying that what an operator does depends on the values"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

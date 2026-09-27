@@ -16,6 +16,10 @@
     {
       "title": "Methods",
       "book": "LanguageGuide/Methods"
+    },
+    {
+      "title": "Choosing Between Structures and Classes",
+      "url": "https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes"
     }
   ],
   "signature": {
@@ -33,5 +37,53 @@
     "Value types can offer fluent APIs by returning modified copies.",
     "Each method does `var copy = self`, changes one field, and returns the copy.",
     "`func method(_ m: String) -> Self { var copy = self; copy.method = m; return copy }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Fluent builders that return **modified copies** of a struct (`request.method(\"POST\").path(\"/x\")`) give immutable-by-default configuration. It's the same idea as SwiftUI modifiers, and like immutable builders in JS (Immer, or spreading objects).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `{...req, method: 'POST'}` copies shallowly. Does a Swift struct copy deeply? What about a `[String: String]` headers property?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Non-mutating fluent methods vs `mutating` setters: which is more composable?"
+    },
+    {
+      "kind": "edge",
+      "q": "Returning `Self` vs the concrete type: when does `Self` matter (protocol extensions)?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI modifiers return new views. How is `Text(\"x\").bold().padding()` this same pattern?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=4461s",
+      "channel": "Swiftful Thinking",
+      "start": 4461,
+      "moment": "the original. So, when you assign or pass a value type, a new copy of the data is created."
+    },
+    {
+      "title": "Why are function builders fundamental in SwiftUI – Daniel Steinberg on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=LsyufibEVog&t=32s",
+      "channel": "Paul Hudson",
+      "start": 32,
+      "moment": "and so having community and bringing the community in to know when something's being discussed if you think back to"
+    },
+    {
+      "title": "Xcode 10 - Interface Builder / Code Hybrid Approach for User Interface",
+      "url": "https://www.youtube.com/watch?v=hIQMQmzitfU",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

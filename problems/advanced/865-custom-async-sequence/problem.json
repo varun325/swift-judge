@@ -13,6 +13,10 @@
     {
       "title": "AsyncSequence",
       "url": "https://developer.apple.com/documentation/swift/asyncsequence"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -35,5 +39,49 @@
     "It's `Sequence`, but `next()` is `async`.",
     "The iterator holds `current`, returns it, and decrements until below 0.",
     "Conform with `typealias Element = Int` and `func makeAsyncIterator() -> AsyncIterator`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Conforming to `AsyncSequence` with an `AsyncIterator` whose `next() async` returns values is JS's `[Symbol.asyncIterator]()` protocol. Returning `nil` ends the sequence, where JS returns `{done: true}`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: `{ async next() { return {value, done} } }`. Swift: `mutating func next() async -> Int?`. What does the optional replace?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom `AsyncSequence` vs `AsyncStream`: when is writing the type yourself worth it?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why is `next()` `mutating`? What if two tasks iterate the same iterator?"
+    },
+    {
+      "kind": "practice",
+      "q": "Paginated API results as an `AsyncSequence` of items: sketch the iterator's state."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+      "url": "https://www.youtube.com/watch?v=1RD8-5_Zsws",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

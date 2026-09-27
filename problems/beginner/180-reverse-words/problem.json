@@ -14,6 +14,14 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -31,5 +39,44 @@
     "`split(separator:)` skips empty pieces by default — perfect for runs of spaces.",
     "Split into words, reverse the array, join with single spaces.",
     "`sentence.split(separator: \" \").reversed().joined(separator: \" \")`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The same as JS `s.trim().split(/\\s+/).reverse().join(' ')`. Swift's `split(separator: \" \")` drops empty pieces by default, which `components(separatedBy:)` doesn't, and `reversed()` returns a lazy view rather than a new array.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`split(separator:)` vs `components(separatedBy:)`: which keeps empty strings, and which returns `Substring`s?"
+    },
+    {
+      "kind": "js",
+      "q": "JS `.reverse()` mutates the array in place. Swift `reversed()` doesn't. What does it return, and why is that cheap?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `Substring` keep alive in memory? When should you convert back with `String(sub)`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Word splitting on spaces fails for Chinese or Japanese. Which Foundation API enumerates words properly?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12",
+      "url": "https://www.youtube.com/watch?v=Ea3dl2gy3QY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

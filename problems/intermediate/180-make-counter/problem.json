@@ -32,5 +32,55 @@
     "A closure can capture a local variable and keep it alive.",
     "Declare `var total = 0` inside `makeCounter` and return a closure that adds `step` to it and returns it.",
     "`return { total += step; return total }`."
+  ],
+  "impact": "core",
+  "jsBridge": "This is exactly JS's counter-closure interview question: `makeCounter` returns a closure that captures `total` **by reference**. Each call to `makeCounter` creates a fresh captured variable. Swift boxes the captured `var` on the heap.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The classic JS closure counter works identically. Where does Swift's version differ: memory management, thread safety?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two closures created by the same `makeCounter` call share state. What about two calls to `makeCounter`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Closure counter vs a `class Counter`: which is easier to test, and which is easier to make thread-safe?"
+    },
+    {
+      "kind": "practice",
+      "q": "In Swift 6, capturing a mutable `var` in a `@Sendable` closure is an error. Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=23s",
+      "channel": "Swiftful Thinking",
+      "start": 23,
+      "moment": "because we are going to use a lot of what we learned in this video and that includes"
+    },
+    {
+      "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=HnIID4W3a_o",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] swift has a few tricks up its sleeve to help minimize the amount of syntax"
+    },
+    {
+      "title": "Swift Closures: @escaping Explained",
+      "url": "https://www.youtube.com/watch?v=xiS5gJOIQxI&t=207s",
+      "channel": "Sean Allen",
+      "start": 207,
+      "moment": "shared get followers you'll see we have the we called it result that's what our closures you know coming back as and you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -12,6 +12,14 @@
     {
       "title": "scrollTargetBehavior(_:)",
       "url": "https://developer.apple.com/documentation/swiftui/view/scrolltargetbehavior(_:)"
+    },
+    {
+      "title": "List",
+      "url": "https://developer.apple.com/documentation/swiftui/list"
+    },
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
     }
   ],
   "signature": {
@@ -40,5 +48,49 @@
     "Convert the offset to a fractional page position first.",
     "Fast flicks move one page in the flick direction; slow releases snap to the nearest page.",
     "Clamp the result to `0...(pageCount - 1)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Choosing the target page from release offset and velocity is what a paging scroll behaviour computes. CSS `scroll-snap` decides it for you on the web, while a custom `ScrollTargetBehavior` lets you write the rule.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS `scroll-snap-type: x mandatory` decides pages automatically. When would you need custom paging logic?"
+    },
+    {
+      "kind": "edge",
+      "q": "A fast flick from page 0: can it skip to page 3, or at most one page?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.scrollTargetBehavior(.paging)` vs `.viewAligned`: what's the difference?"
+    },
+    {
+      "kind": "practice",
+      "q": "Onboarding carousels vs photo galleries: which paging rules suit each?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Paging ScrollView in SwiftUI for iOS 17 | Continued Learning #34",
+      "url": "https://www.youtube.com/watch?v=hCpM95KHb_Q&t=440s",
+      "channel": "Swiftful Thinking",
+      "start": 440,
+      "moment": "this configures the outermost layout of the scroll target. See what happens. Nothing happens by default. Let's call"
+    },
+    {
+      "title": "ScrollView effects using visualEffect() and scrollTargetBehavior() – Layout and Geometry SwiftUI 8/8",
+      "url": "https://www.youtube.com/watch?v=c7QE4XOQ_nA&t=220s",
+      "channel": "Paul Hudson",
+      "start": 220,
+      "moment": "things up what we have now is a lot nicer with just two extra modifiers we can make"
+    },
+    {
+      "title": "Super Power Scroll Views - SwiftUI - iOS 17",
+      "url": "https://www.youtube.com/watch?v=IwUp2iP0jnI&t=223s",
+      "channel": "Sean Allen",
+      "start": 223,
+      "moment": "maybe I want to go view by View Circle by Circle well that is now super easy in iOS 17 as well so on the hdac we want to do dot scroll Target layout that's sayi"
+    }
+  ],
+  "articles": []
 }

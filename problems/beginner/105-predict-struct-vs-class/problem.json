@@ -15,11 +15,65 @@
     {
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
+    },
+    {
+      "title": "Choosing Between Structures and Classes",
+      "url": "https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes"
     }
   ],
   "hints": [
     "One type copies on assignment, the other shares. Which is which?",
     "`b` is a copy of the struct `a`; `d` and `c` point at the **same** object — `===` checks exactly that.",
     "Output: `0 10`, then `10 10`, then `true`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS has only one kind of object, and it's always shared by reference. Swift makes you choose: `struct` (copied on assignment, like a JS primitive) or `class` (shared, like a JS object). Most Swift model types are structs, which is the opposite of JS's default.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, `Object.freeze` and immutable libraries (Immer, Immutable.js) exist to bolt value semantics onto objects. What does Swift get \"for free\" by building value semantics into the language, and what does it cost?"
+    },
+    {
+      "kind": "practice",
+      "q": "Your `User` model is displayed in five screens. Would you make it a struct or a class, and what happens to the other four screens when one screen edits the user?"
+    },
+    {
+      "kind": "contrast",
+      "q": "A struct holding a class reference: is it still a value type? What happens when you copy it and mutate the object inside?"
+    },
+    {
+      "kind": "java",
+      "q": "Java 16 added `record`s. Are they value types like Swift structs, or immutable references? What's the practical difference?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=23s",
+      "channel": "Swiftful Thinking",
+      "start": 23,
+      "moment": "right now. We are going to learn structs versus classes. We're going to learn classes versus actors."
+    },
+    {
+      "title": "How to break up structs and classes – Daniel Steinberg on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=_ZAuILBDduQ&t=151s",
+      "channel": "Paul Hudson",
+      "start": 151,
+      "moment": "the reason no but the reason I do it is because people would think especially once you get to listen things that these"
+    },
+    {
+      "title": "Swift - Class vs. Struct Explained",
+      "url": "https://www.youtube.com/watch?v=LtlbB4-6k_U",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "a very common iOS Developer interview question is to explain the difference between classes and structs I'm going to teach you the answer to that question by ex"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

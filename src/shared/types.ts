@@ -239,4 +239,6 @@ export interface QuizItem {
   answer: number
   explanation: string
   source?: string
+  /** e.g. "CS193p", "UIKit", "Xcode & tooling": topics a compiler can't judge live here. */
+  topic?: string
 }

@@ -15,11 +15,49 @@
     {
       "title": "Control Flow — For-In Loops",
       "book": "LanguageGuide/ControlFlow"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "Parse the input line into two integers with `split` and `compactMap`.",
     "`stride(from:through:by:)` is simply empty when the end is below the start — unlike `1...upTo`.",
     "`for i in stride(from: 1, through: upTo, by: 1) { print(\"\\(n) x \\(i) = \\(n * i)\") }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Reading `\"5 3\"` from stdin: `readLine()!.split(separator: \" \").compactMap { Int($0) }`, the Swift version of `line.split(' ').map(Number)`. The difference is that bad input gives `nil` instead of `NaN`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Number('x')` is `NaN` and poisons later maths silently. What does `Int(\"x\")` force you to decide up front?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`for i in 1...upTo` crashes when `upTo < 1`. Why? What's the safe alternative?"
+    },
+    {
+      "kind": "edge",
+      "q": "What if the line has three numbers, or tabs instead of spaces? How strict should a parser be?"
+    },
+    {
+      "kind": "practice",
+      "q": "Swift CLIs usually use swift-argument-parser, not stdin parsing. What does it give you: help, validation, completion?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+      "url": "https://www.youtube.com/watch?v=OLjkmJNNeHc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

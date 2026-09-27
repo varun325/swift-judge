@@ -13,6 +13,14 @@
     {
       "title": "UnkeyedDecodingContainer",
       "url": "https://developer.apple.com/documentation/swift/unkeyeddecodingcontainer"
+    },
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -33,5 +41,44 @@
     "A point is a JSON array, so decode it with `unkeyedContainer()` in order.",
     "Skip the `data` wrapper with `nestedContainer(keyedBy:forKey:)`.",
     "`var c = try decoder.unkeyedContainer(); x = try c.decode(Int.self); y = try c.decode(Double.self)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`nestedContainer` and `unkeyedContainer` decode awkward shapes: envelopes and arrays-as-tuples like `[[0, 1.5]]`. In JS you'd destructure after `JSON.parse`, and in Swift you walk containers.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: `data.series.map(s => s.points.map(([x, y]) => ({x, y})))`. How many lines is the Swift decoder? Is it worth it?"
+    },
+    {
+      "kind": "edge",
+      "q": "A point array with 3 elements instead of 2: what should the decoder do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom containers vs decoding into a raw DTO then mapping: which is easier to maintain?"
+    },
+    {
+      "kind": "practice",
+      "q": "Chart APIs often send compact arrays for size. When would you ask the backend to change the shape instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Creating a Coin Model based on JSON response from an API | SwiftUI Crypto App #3",
+      "url": "https://www.youtube.com/watch?v=UaPAis0vtK0",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -21,5 +21,46 @@
     "Through a protocol type, you can only use the protocol's members.",
     "Call the `Car`-only method directly on the `any Vehicle` parameter.",
     "`func commute(_ vehicle: any Vehicle) { vehicle.openSunroof() }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Through `any Vehicle` you can only call what the protocol declares, the same as a TS variable typed as an interface. To reach `openSunroof()` you downcast (`as? Car`), which is where the design question starts.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS also hides extra members behind an interface type. What's the Swift equivalent of a TS type guard?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Downcasting from `any Vehicle` vs adding the method to the protocol vs generics `<V: Vehicle>`: which respects the abstraction?"
+    },
+    {
+      "kind": "edge",
+      "q": "With `func commute<V: Vehicle>(_ v: V)`, can you call `openSunroof()`? Why not?"
+    },
+    {
+      "kind": "practice",
+      "q": "When you find yourself downcasting a protocol a lot, what does that suggest about your abstraction?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Protocol-oriented programming – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=-IU_TvFKqjo&t=5s",
+      "channel": "Paul Hudson",
+      "start": 5,
+      "moment": "technique called protocol oriented programming crafting your code around protocols and protocol extensions first"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

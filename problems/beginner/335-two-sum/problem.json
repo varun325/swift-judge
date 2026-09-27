@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -35,5 +39,41 @@
     "A dictionary lookup is O(1). What should the keys and values be?",
     "Map each value you've already seen to its index. For each number, check whether `target - n` has been seen **before** storing `n`.",
     "`if let j = seen[target - n] { return [j, i] }; seen[n] = i` inside `for (i, n) in nums.enumerated()`."
+  ],
+  "impact": "core",
+  "jsBridge": "A Swift `Dictionary` is JS's `Map`, not a plain object. Keys can be any `Hashable` type, and lookups return **optionals** (`dict[k]` is `V?`), so `if let j = seen[target - x]` replaces `if (map.has(...))`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS object keys are always strings (`obj[1] === obj['1']`). What does Swift's `[Int: Int]` guarantee instead?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Dictionary lookup vs sorting plus two pointers: which uses less memory? When does that matter?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does Swift's `Dictionary` preserve insertion order like JS `Map`? What should you use if you need order?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do you use a dictionary as an index in apps: cells by ID, a cache by URL? What's the Swift type for the ID?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+      "url": "https://www.youtube.com/watch?v=Le32Tbkv2v0&t=7s",
+      "channel": "Paul Hudson",
+      "start": 7,
+      "moment": "results then discard anything that's nil with the map values method from dictionaries leave my keys intact but"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

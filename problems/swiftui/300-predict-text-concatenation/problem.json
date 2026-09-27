@@ -13,6 +13,14 @@
     {
       "title": "Text",
       "url": "https://developer.apple.com/documentation/swiftui/text"
+    },
+    {
+      "title": "View",
+      "url": "https://developer.apple.com/documentation/swiftui/view"
+    },
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
     }
   ],
   "platforms": [
@@ -22,5 +30,49 @@
     "Some modifiers are defined on `Text` and return `Text`.",
     "`padding()` is a general view modifier.",
     "Two of the three lines print `Text`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Some modifiers return `Text` itself (`bold()`, `foregroundStyle` on Text), so you can concatenate styled pieces with `+`. Like spans inside a `<p>`, but checked by the type system.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`<p>Hello <b>world</b></p>` in JSX. What's the SwiftUI equivalent, and why does it need `Text`-returning modifiers?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `Text(\"a\").padding() + Text(\"b\")` fail to compile?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Text + Text` vs `AttributedString` vs Markdown in `Text`: which is best for localised styled strings?"
+    },
+    {
+      "kind": "practice",
+      "q": "Text concatenation breaks localisation word order. What should you do for translated UI?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Popover modifier in SwiftUI | Bootcamp #69",
+      "url": "https://www.youtube.com/watch?v=bW7N8ACCc6A&t=139s",
+      "channel": "Swiftful Thinking",
+      "start": 139,
+      "moment": "call this native popover boot camp let's click create let's jump"
+    },
+    {
+      "title": "Why modifier order matters – Views and Modifiers SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=3XLq6f1tbEM&t=134s",
+      "channel": "Paul Hudson",
+      "start": 134,
+      "moment": "means we get a modified content containing a modified content containing a button of text and so"
+    },
+    {
+      "title": "SwiftUI Alerts - Buttons, TextFields, & Passing Errors",
+      "url": "https://www.youtube.com/watch?v=2c1IQ0BT0PE",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "in this video I'm going to show you how to use a few different kinds of alerts in Swift UI we'll do just a basic alert we'll do alerts with multiple buttons ale"
+    }
+  ],
+  "articles": []
 }

@@ -36,5 +36,44 @@
     "Count first, then sort the dictionary entries.",
     "Sort by count descending, then word ascending, and take `k`.",
     "`counts.sorted { ($1.value, $0.key) < ($0.value, $1.key) }.prefix(k).map(\\.key)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Count with a dictionary, then sort by `(-count, word)` using tuple comparison. The same shape as JS, with a `Hashable` dictionary key and lexicographic tuple ordering standing in for comparator juggling.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The JS comparator `b.count - a.count || a.word.localeCompare(b.word)` vs a Swift tuple compare: which is harder to get wrong?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Full sort O(n log n) vs a heap of size k O(n log k): when does it matter?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should tie-breaking use `<` on Strings or `localizedStandardCompare`? What's the difference?"
+    },
+    {
+      "kind": "practice",
+      "q": "\"Trending tags\" in an app: compute on device or server?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Merge Sort - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=DfO089qWEE8",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

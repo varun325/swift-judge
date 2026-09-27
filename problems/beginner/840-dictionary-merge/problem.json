@@ -12,6 +12,10 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -34,5 +38,39 @@
     "Dictionaries have a method that merges another dictionary and resolves key clashes.",
     "`merging(_:uniquingKeysWith:)` takes a function `(old, new) -> value` — an operator can be that function.",
     "`a.merging(b, uniquingKeysWith: +).filter { $0.value > 0 }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS `{...a, ...b}` makes b win on conflicts. Swift's `merging(_:uniquingKeysWith:)` makes you decide with a closure: `+` to add, `{ $1 }` for \"new wins\". Merging never silently discards data.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`{...a, ...b}` silently overwrites. How does Swift make conflict resolution explicit?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`merging` (returns new) vs `merge` (mutating): when does the mutating version save work?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `Dictionary(uniqueKeysWithValues:)` do on a duplicate key? Why is that a crash and not an error?"
+    },
+    {
+      "kind": "practice",
+      "q": "Merging local and remote settings: which side should win, and should that be a closure parameter?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Merging Codable structs – Moonshot SwiftUI Tutorial 10/11",
+      "url": "https://www.youtube.com/watch?v=dC-oPnuP-Ns",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

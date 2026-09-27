@@ -13,11 +13,51 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "Read everything first, then split on whitespace.",
     "Track the longest word with a strict `>` so the first one wins ties; count letters in a dictionary.",
     "Pick the top letter with `counts.min { ($1.value, $0.key) < ($0.value, $1.key) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Reading all of stdin: `while let line = readLine()`, the synchronous version of collecting Node's `process.stdin` data events. `max(by:)` returns the **last** maximum on ties, not the first. Know your standard library's tie rules.",
+  "compass": [
+    {
+      "kind": "edge",
+      "q": "Does `max(by:)` return the first or the last of equal elements? How do you get the first?"
+    },
+    {
+      "kind": "js",
+      "q": "`reduce` for \"longest\" in JS: what tie behaviour does `>` vs `>=` give? Same in Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`split(whereSeparator: \\.isWhitespace)` vs `components(separatedBy: .whitespacesAndNewlines)`: which one gives empty strings?"
+    },
+    {
+      "kind": "practice",
+      "q": "Word counting for a notes app: would you use `NLTokenizer` instead? Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+      "url": "https://www.youtube.com/watch?v=OLjkmJNNeHc&t=5690s",
+      "channel": "Paul Hudson",
+      "start": 5690,
+      "moment": "consoling maxed out well though it seemed mostly murex code right now raaah thanks Xcode anyway a lot of commands"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

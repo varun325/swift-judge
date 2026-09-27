@@ -35,5 +35,60 @@
     "A `@propertyWrapper` needs a `wrappedValue`; `projectedValue` is exposed as `$name`.",
     "Clamp in the `wrappedValue` setter and count how often a write was clamped in `projectedValue`.",
     "`init(wrappedValue: Value, _ range: ClosedRange<Value>)` — then `@Clamped(0...100) var volume = 50`."
+  ],
+  "impact": "core",
+  "jsBridge": "Property wrappers (`@Clamped`) package get/set logic for reuse, like decorators on class fields in TS (`@observable`, or validation decorators). `@State`, `@Published` and `@AppStorage` are all property wrappers, and `$name` is the projected value.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS/MobX decorators (`@observable x`) vs Swift property wrappers: which runs at compile time?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Property wrapper vs `didSet` on each property: when is the wrapper worth it?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `$volume` give you, and how does SwiftUI's `$state` produce a `Binding`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which property wrappers do you use daily in SwiftUI? Can you explain what each expands to?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use @State property wrapper in SwiftUI | Bootcamp #19",
+      "url": "https://www.youtube.com/watch?v=LgJ9r_VWdSI",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "[Music] welcome back everyone i'm nick in this video we're talking about the"
+    },
+    {
+      "title": "What is the @StateObject property wrapper? – SwiftUI",
+      "url": "https://www.youtube.com/watch?v=VLUhZbz4arg&t=83s",
+      "channel": "Paul Hudson",
+      "start": 83,
+      "moment": "before the years even been made so it's caused problems it would cause your code to crash completely randomly then work"
+    },
+    {
+      "title": "SwiftUI - @State Property Wrapper Explained",
+      "url": "https://www.youtube.com/watch?v=48JYBb5yJ0s",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today's video is sponsored by squarespace all right let's explain the at state"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0258: Property Wrappers",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0258-property-wrappers.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

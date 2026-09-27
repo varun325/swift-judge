@@ -17,6 +17,10 @@
     {
       "title": "Predicate Programming Guide",
       "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html"
+    },
+    {
+      "title": "Core Data",
+      "url": "https://developer.apple.com/documentation/coredata"
     }
   ],
   "signature": {
@@ -42,5 +46,42 @@
     "Predicates use a mini-language: `CONTAINS[cd]`, `BETWEEN`, `IN`, `BEGINSWITH`.",
     "Always substitute values with `%@`, passing arrays for `BETWEEN` and `IN`.",
     "`NSPredicate(format: \"title CONTAINS[cd] %@ OR body CONTAINS[cd] %@\", text, text)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`NSPredicate(format:)` is a string query language (`title CONTAINS[cd] %@`), like writing SQL `WHERE` clauses or a MongoDB filter. It's checked only at runtime, which is why SwiftData's typed `#Predicate` exists.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Prisma's typed `where: { title: { contains } }` vs `NSPredicate` format strings: which catches a typo at compile time?"
+    },
+    {
+      "kind": "edge",
+      "q": "What do `[c]`, `[d]` and `[cd]` mean? What happens with an apostrophe in the search text if you interpolate instead of using `%@`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`NSPredicate` vs `#Predicate`: which one can express subqueries and `ANY` on relationships today?"
+    },
+    {
+      "kind": "practice",
+      "q": "Search across title and body with diacritic-insensitive matching: write the predicate."
+    }
+  ],
+  "videos": [
+    {
+      "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16",
+      "url": "https://www.youtube.com/watch?v=huRKU-TAD3g&t=3884s",
+      "channel": "Swiftful Thinking",
+      "start": 3884,
+      "moment": "predicate so we'll say let filter equals ns predicate open the parentheses i'm going to look"
+    },
+    {
+      "title": "iOS 15: Filtering @FetchRequest using NSPredicate – Core Data SwiftUI Tutorial 5/7",
+      "url": "https://www.youtube.com/watch?v=sh1lzhgsc64&t=220s",
+      "channel": "Paul Hudson",
+      "start": 220,
+      "moment": "uh the ships that belong to the star wars universe for example do that you change predicate nil to be predicate ns"
+    }
+  ],
+  "articles": []
 }

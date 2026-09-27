@@ -14,11 +14,60 @@
     {
       "title": "Basic Operators — Arithmetic Operators",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "hints": [
     "Integer `/` truncates toward zero; `%` takes the sign of the left operand.",
     "`Double(a / b)` does integer division **before** converting.",
     "First line: `3 1 -3 -1`."
+  ],
+  "impact": "core",
+  "jsBridge": "`7 / 2` is `3` in Swift (Int) but `3.5` in JS. `7 % -2` keeps the dividend's sign in both languages. Mixing `Int` and `Double` needs explicit conversion, so these surprises are always visible in the types.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS has one number type. List three bugs that come from Swift having `Int` and `Double` as different types, and three it prevents."
+    },
+    {
+      "kind": "edge",
+      "q": "What is `Int.min / -1`? Why does it trap?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Double(7) / 2` vs `Double(7 / 2)`: why are the results different?"
+    },
+    {
+      "kind": "practice",
+      "q": "Progress bars compute `completed / total`. What goes wrong with `Int`s?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Doubles and booleans – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ZpGDwOAWiXA",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "two other basic types of data in Swift are doubles and boolean z' and you'll be using them a lot double is short for"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

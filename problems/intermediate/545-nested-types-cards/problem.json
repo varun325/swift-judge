@@ -16,6 +16,10 @@
     {
       "title": "Nested Types",
       "book": "LanguageGuide/NestedTypes"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -33,5 +37,44 @@
     "Types can be nested inside other types.",
     "Nest `Suit` and `Rank` inside `Card`. Build the deck by `flatMap`-ing suits over ranks.",
     "`Suit.allCases.flatMap { suit in Rank.allCases.map { Card(rank: $0, suit: suit) } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Nested types (`Card.Suit`) namespace related types, like TS namespaces or static inner classes. Synthesised `Comparable` for raw-value enums (declaration order) plus `CaseIterable` build a full deck in one line.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS would use separate `Suit` and `Rank` exports. What does nesting (`Card.Suit`) add?"
+    },
+    {
+      "kind": "java",
+      "q": "Java static nested classes and enums are similar. Any differences?"
+    },
+    {
+      "kind": "edge",
+      "q": "For a `Rank: Int` enum, is `<` based on raw values or declaration order?"
+    },
+    {
+      "kind": "practice",
+      "q": "Nesting is common for `Model.ID`, `View.Style`, `Error`. When does nesting hurt discoverability?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Enum Raw Values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ssLIP4gFrYc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -1,42 +1,2058 @@
 [
- {"id":"nk-1","question":"Which keyword defines a constant in Swift?","choices":["`let`","`const`","`define`","`var`"],"answer":0,"explanation":"`let` declares a constant (assigned once); `var` a variable. There is no `const`.","source":"Naukri Code360 MCQ 1"},
- {"id":"nk-2","question":"What does the `guard` statement do?","choices":["Terminates the program","Executes code unconditionally","Transfers control out of the scope if a condition is false","Creates a loop"],"answer":2,"explanation":"`guard cond else { … }` — the else branch must exit the scope (`return`, `throw`, `break`, `continue`), and bindings stay available after the guard.","source":"Naukri Code360 MCQ 2"},
- {"id":"nk-3","question":"What is the default access level in Swift?","choices":["`public`","`internal`","`private`","`fileprivate`"],"answer":1,"explanation":"`internal`: visible anywhere in the same module.","source":"Naukri Code360 MCQ 3"},
- {"id":"nk-4","question":"Which of these data types is **not** in Swift?","choices":["`Int`","`Float`","`char`","`String`"],"answer":2,"explanation":"Swift has `Character` (an extended grapheme cluster), not a C-style `char`.","source":"Naukri Code360 MCQ 4"},
- {"id":"nk-5","question":"What is the primary use of `defer`?","choices":["Delay code until a later time","Handle errors","Run code right before the current scope exits","Pause a thread"],"answer":2,"explanation":"`defer` blocks run when the enclosing scope exits — however it exits — in reverse order of declaration.","source":"Naukri Code360 MCQ 5"},
- {"id":"nk-6","question":"How do you declare a function that accepts a variable number of arguments?","choices":["`...` after the parameter type","`&` before the parameter","`*` after the parameter","`@varargs`"],"answer":0,"explanation":"`func sum(_ xs: Int...)` — inside, `xs` is an `[Int]`.","source":"Naukri Code360 MCQ 6"},
- {"id":"nk-7","question":"What does `@escaping` mean on a closure parameter?","choices":["The closure runs only once","The closure can capture outer variables","The closure can't return a value","The closure may outlive the function call it's passed to"],"answer":3,"explanation":"Stored or asynchronously-called closures escape; non-escaping is the default and allows more optimisation.","source":"Naukri Code360 MCQ 7"},
- {"id":"nk-8","question":"Which is true about optionals?","choices":["Optional values cannot be nil","Optionals must always have a value","An optional holds either a value or `nil`","Optionals never need unwrapping"],"answer":2,"explanation":"`T?` is `Optional<T>`: `.some(value)` or `.none` (`nil`).","source":"Naukri Code360 MCQ 8"},
- {"id":"nk-9","question":"What is used for optional binding?","choices":["`if let`","`while`","`do-try`","`guard var` only"],"answer":0,"explanation":"`if let` (and `guard let`, `while let`) bind and unwrap in one step. (`guard var` also binds, but `if let` is the canonical answer.)","source":"Naukri Code360 MCQ 9"},
- {"id":"nk-10","question":"Which modifier lets a class be subclassed **outside** its module?","choices":["`open`","`public`","`internal`","`final`"],"answer":0,"explanation":"`public` classes can be used but not subclassed by other modules; `open` allows both. (Within the module, any non-`final` class can be subclassed.)","source":"Naukri Code360 MCQ 10"},
- {"id":"q-1","question":"`let a = [1, 2]; var b = a; b.append(3)` — what is `a.count`?","choices":["2","3","Compile error","It depends on the optimiser"],"answer":0,"explanation":"Arrays are value types; `b` is an independent (copy-on-write) copy."},
- {"id":"q-2","question":"`final class P { var x = 0 }; let p = P(); p.x = 5` — does this compile?","choices":["Yes","No — `p` is a `let`","No — classes need `mutating`","Only in Swift 5 mode"],"answer":0,"explanation":"`let` freezes the **reference**, not the object's `var` properties."},
- {"id":"q-3","question":"What does `\"é\".count` return when `é` is written as `e` + combining accent (U+0301)?","choices":["1","2","3","It traps"],"answer":0,"explanation":"`count` counts `Character`s — extended grapheme clusters — so the pair is one character."},
- {"id":"q-4","question":"Which operation traps at runtime by default?","choices":["`Int.max + 1`","`Int.max &+ 1`","`Int.max.addingReportingOverflow(1)`","`Double.greatestFiniteMagnitude * 2`"],"answer":0,"explanation":"Integer overflow traps; `&+` wraps; `addingReportingOverflow` reports; floating point overflows to `+infinity`."},
- {"id":"q-5","question":"`[\"1\", \"x\", \"3\"].compactMap { Int($0) }` is…","choices":["`[1, 3]`","`[1, nil, 3]`","`[Optional(1), nil, Optional(3)]`","a compile error"],"answer":0,"explanation":"`compactMap` drops `nil` results."},
- {"id":"q-6","question":"Which `switch` over `enum Dir { case n, s }` compiles?","choices":["`case .n: …` only","`case .n: …; case .s: …`","`case .n, .s, .e: …`","`default:` must come first"],"answer":1,"explanation":"Switches must be exhaustive; covering every case (with no `default`) is best practice for your own enums."},
- {"id":"q-7","question":"Where must a `guard`'s `else` branch go?","choices":["Anywhere","It must exit the current scope","It must throw","It must call `fatalError`"],"answer":1,"explanation":"`return`, `throw`, `break`, `continue`, or a `Never`-returning call."},
- {"id":"q-8","question":"Multiple `defer` blocks in one scope run in which order?","choices":["Declaration order","Reverse declaration order","Random","Only the last one runs"],"answer":1,"explanation":"Last declared, first executed — like unwinding a stack of acquired resources."},
- {"id":"q-9","question":"`try?` applied to a throwing call that returns `Int` produces…","choices":["`Int`","`Int?`","`Result<Int, Error>`","`Int!`"],"answer":1,"explanation":"`try?` converts errors into `nil`."},
- {"id":"q-10","question":"A struct method that assigns to a stored property must be marked…","choices":["`mutating`","`inout`","`override`","`dynamic`"],"answer":0,"explanation":"Without `mutating`, `self` is immutable inside struct methods."},
- {"id":"q-11","question":"Which reference must be declared as an optional `var`?","choices":["`weak`","`unowned`","`strong`","`lazy`"],"answer":0,"explanation":"ARC sets `weak` references to `nil` when the object is freed."},
- {"id":"q-12","question":"`struct S { var x: Int }` — what initialiser do you get for free?","choices":["`init(x:)`","`init()`","none","`init?(x:)`"],"answer":0,"explanation":"The memberwise initialiser. (Declaring your own `init` in the struct body removes it — put custom inits in an extension to keep it.)"},
- {"id":"q-13","question":"`class A {}; class B: A {}` — which cast can fail?","choices":["`B() as A`","`someA as? B`","`B() is A`","`A() as AnyObject`"],"answer":1,"explanation":"Downcasts can fail, so they use `as?` (optional) or `as!` (trap)."},
- {"id":"q-14","question":"What does `some Shape` as a return type promise?","choices":["A single concrete type, hidden from the caller","Any shape, possibly different per call","An existential box","An optional shape"],"answer":0,"explanation":"Opaque types keep type identity; `any Shape` is the existential that can vary."},
- {"id":"q-15","question":"A method declared **only** in a protocol extension (not a requirement), called on an `any P` value, dispatches…","choices":["Statically, to the extension's version","Dynamically, to the conforming type's version","Via Objective-C messaging","It doesn't compile"],"answer":0,"explanation":"Only requirements go through the witness table — the classic protocol-extension dispatch trap."},
- {"id":"q-16","question":"Which is **not** allowed in an extension?","choices":["Stored properties","Computed properties","New initialisers","Protocol conformances"],"answer":0,"explanation":"Extensions can't change a type's memory layout."},
- {"id":"q-17","question":"`Set<Point>` requires `Point` to be…","choices":["`Hashable`","`Comparable`","`Codable`","a class"],"answer":0,"explanation":"Set elements and dictionary keys must be `Hashable` (which refines `Equatable`)."},
- {"id":"q-18","question":"`lazy var x = compute()` runs `compute()`…","choices":["Once, on first access","On every access","During init","Never, unless marked `@objc`"],"answer":0,"explanation":"Lazy stored properties initialise on first access and store the result; computed properties run every time."},
- {"id":"q-19","question":"Which statement about `static let shared = Thing()` is true?","choices":["It's initialised lazily and thread-safely, once","It's initialised at app launch","It's re-created on each access","It's unsafe without a lock"],"answer":0,"explanation":"Globals and static stored properties use lazy, `dispatch_once`-style initialisation. (Swift 6 additionally requires `Thing` to be `Sendable`.)"},
- {"id":"q-20","question":"In Swift 6 language mode, a data race between tasks is…","choices":["A compile-time error in many cases","Only a runtime warning","Ignored","Impossible to write"],"answer":0,"explanation":"Strict concurrency checking uses `Sendable` and isolation to reject races at compile time."},
- {"id":"q-21","question":"Calls into an `actor`'s methods from outside the actor require…","choices":["`await`","`try`","`sync`","nothing special"],"answer":0,"explanation":"The call may suspend while waiting for the actor's serial executor."},
- {"id":"q-22","question":"Results from a `TaskGroup` arrive in…","choices":["Completion order","Submission order","Sorted order","Reverse order"],"answer":0,"explanation":"Carry an index with each result if you need input order."},
- {"id":"q-23","question":"What does `@autoclosure` do to an argument?","choices":["Wraps the expression in a closure so it's evaluated lazily","Makes the closure escaping","Runs the closure immediately","Captures `self` weakly"],"answer":0,"explanation":"That's how `&&`, `??` and `assert` avoid evaluating their right-hand sides unnecessarily."},
- {"id":"q-24","question":"Which is true of `assert(condition)`?","choices":["Checked only in debug (-Onone) builds","Checked in all builds","Checked only in release builds","Throws an error you can catch"],"answer":0,"explanation":"`precondition` checks in release too; `fatalError` always traps."},
- {"id":"q-25","question":"What must a class-constrained delegate protocol inherit from so `weak var delegate` is allowed?","choices":["`AnyObject`","`Any`","`NSObject` only","`Sendable`"],"answer":0,"explanation":"`weak` only applies to class instances."},
- {"id":"q-26","question":"`func f<T: Comparable>(_ x: T)` — who chooses `T`?","choices":["The caller","The implementation","The runtime","Nobody — it's erased"],"answer":0,"explanation":"Generics: caller chooses. Opaque return types: implementation chooses."},
- {"id":"q-27","question":"Which JSONDecoder setting maps `first_name` to `firstName`?","choices":["`keyDecodingStrategy = .convertFromSnakeCase`","`dateDecodingStrategy = .iso8601`","`CodingKeys` is mandatory","`outputFormatting = .sortedKeys`"],"answer":0,"explanation":"Use `CodingKeys` for anything the strategy can't handle."},
- {"id":"q-28","question":"`indirect enum` is needed when…","choices":["A case's associated value contains the enum itself","The enum has raw values","The enum is `CaseIterable`","The enum is used across modules"],"answer":0,"explanation":"Recursive payloads must be boxed so the type has finite size."},
- {"id":"q-29","question":"Accessing an `unowned` reference after its object is deallocated…","choices":["Traps","Returns nil","Returns a zombie object silently","Recreates the object"],"answer":0,"explanation":"Use `unowned` only when the referent is guaranteed to outlive you; otherwise `weak`."},
- {"id":"q-30","question":"Which is the correct way to iterate only the non-nil values of `[Int?]`?","choices":["`for case let x? in values`","`for x! in values`","`for let x in values where x`","`for x in values ?? []`"],"answer":0,"explanation":"The optional pattern `x?` matches `.some(x)`. `compactMap { $0 }` is the collection equivalent."}
+ {
+  "id": "nk-1",
+  "question": "Which keyword defines a constant in Swift?",
+  "choices": [
+   "`let`",
+   "`const`",
+   "`define`",
+   "`var`"
+  ],
+  "answer": 0,
+  "explanation": "`let` declares a constant (assigned once); `var` a variable. There is no `const`.",
+  "source": "Naukri Code360 MCQ 1",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-2",
+  "question": "What does the `guard` statement do?",
+  "choices": [
+   "Terminates the program",
+   "Executes code unconditionally",
+   "Transfers control out of the scope if a condition is false",
+   "Creates a loop"
+  ],
+  "answer": 2,
+  "explanation": "`guard cond else { … }` — the else branch must exit the scope (`return`, `throw`, `break`, `continue`), and bindings stay available after the guard.",
+  "source": "Naukri Code360 MCQ 2",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-3",
+  "question": "What is the default access level in Swift?",
+  "choices": [
+   "`public`",
+   "`internal`",
+   "`private`",
+   "`fileprivate`"
+  ],
+  "answer": 1,
+  "explanation": "`internal`: visible anywhere in the same module.",
+  "source": "Naukri Code360 MCQ 3",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-4",
+  "question": "Which of these data types is **not** in Swift?",
+  "choices": [
+   "`Int`",
+   "`Float`",
+   "`char`",
+   "`String`"
+  ],
+  "answer": 2,
+  "explanation": "Swift has `Character` (an extended grapheme cluster), not a C-style `char`.",
+  "source": "Naukri Code360 MCQ 4",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-5",
+  "question": "What is the primary use of `defer`?",
+  "choices": [
+   "Delay code until a later time",
+   "Handle errors",
+   "Run code right before the current scope exits",
+   "Pause a thread"
+  ],
+  "answer": 2,
+  "explanation": "`defer` blocks run when the enclosing scope exits — however it exits — in reverse order of declaration.",
+  "source": "Naukri Code360 MCQ 5",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-6",
+  "question": "How do you declare a function that accepts a variable number of arguments?",
+  "choices": [
+   "`...` after the parameter type",
+   "`&` before the parameter",
+   "`*` after the parameter",
+   "`@varargs`"
+  ],
+  "answer": 0,
+  "explanation": "`func sum(_ xs: Int...)` — inside, `xs` is an `[Int]`.",
+  "source": "Naukri Code360 MCQ 6",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-7",
+  "question": "What does `@escaping` mean on a closure parameter?",
+  "choices": [
+   "The closure runs only once",
+   "The closure can capture outer variables",
+   "The closure can't return a value",
+   "The closure may outlive the function call it's passed to"
+  ],
+  "answer": 3,
+  "explanation": "Stored or asynchronously-called closures escape; non-escaping is the default and allows more optimisation.",
+  "source": "Naukri Code360 MCQ 7",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-8",
+  "question": "Which is true about optionals?",
+  "choices": [
+   "Optional values cannot be nil",
+   "Optionals must always have a value",
+   "An optional holds either a value or `nil`",
+   "Optionals never need unwrapping"
+  ],
+  "answer": 2,
+  "explanation": "`T?` is `Optional<T>`: `.some(value)` or `.none` (`nil`).",
+  "source": "Naukri Code360 MCQ 8",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-9",
+  "question": "What is used for optional binding?",
+  "choices": [
+   "`if let`",
+   "`while`",
+   "`do-try`",
+   "`guard var` only"
+  ],
+  "answer": 0,
+  "explanation": "`if let` (and `guard let`, `while let`) bind and unwrap in one step. (`guard var` also binds, but `if let` is the canonical answer.)",
+  "source": "Naukri Code360 MCQ 9",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "nk-10",
+  "question": "Which modifier lets a class be subclassed **outside** its module?",
+  "choices": [
+   "`open`",
+   "`public`",
+   "`internal`",
+   "`final`"
+  ],
+  "answer": 0,
+  "explanation": "`public` classes can be used but not subclassed by other modules; `open` allows both. (Within the module, any non-`final` class can be subclassed.)",
+  "source": "Naukri Code360 MCQ 10",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-1",
+  "question": "`let a = [1, 2]; var b = a; b.append(3)` — what is `a.count`?",
+  "choices": [
+   "2",
+   "3",
+   "Compile error",
+   "It depends on the optimiser"
+  ],
+  "answer": 0,
+  "explanation": "Arrays are value types; `b` is an independent (copy-on-write) copy.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-2",
+  "question": "`final class P { var x = 0 }; let p = P(); p.x = 5` — does this compile?",
+  "choices": [
+   "Yes",
+   "No — `p` is a `let`",
+   "No — classes need `mutating`",
+   "Only in Swift 5 mode"
+  ],
+  "answer": 0,
+  "explanation": "`let` freezes the **reference**, not the object's `var` properties.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-3",
+  "question": "What does `\"é\".count` return when `é` is written as `e` + combining accent (U+0301)?",
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "It traps"
+  ],
+  "answer": 0,
+  "explanation": "`count` counts `Character`s — extended grapheme clusters — so the pair is one character.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-4",
+  "question": "Which operation traps at runtime by default?",
+  "choices": [
+   "`Int.max + 1`",
+   "`Int.max &+ 1`",
+   "`Int.max.addingReportingOverflow(1)`",
+   "`Double.greatestFiniteMagnitude * 2`"
+  ],
+  "answer": 0,
+  "explanation": "Integer overflow traps; `&+` wraps; `addingReportingOverflow` reports; floating point overflows to `+infinity`.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-5",
+  "question": "`[\"1\", \"x\", \"3\"].compactMap { Int($0) }` is…",
+  "choices": [
+   "`[1, 3]`",
+   "`[1, nil, 3]`",
+   "`[Optional(1), nil, Optional(3)]`",
+   "a compile error"
+  ],
+  "answer": 0,
+  "explanation": "`compactMap` drops `nil` results.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-6",
+  "question": "Which `switch` over `enum Dir { case n, s }` compiles?",
+  "choices": [
+   "`case .n: …` only",
+   "`case .n: …; case .s: …`",
+   "`case .n, .s, .e: …`",
+   "`default:` must come first"
+  ],
+  "answer": 1,
+  "explanation": "Switches must be exhaustive; covering every case (with no `default`) is best practice for your own enums.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-7",
+  "question": "Where must a `guard`'s `else` branch go?",
+  "choices": [
+   "Anywhere",
+   "It must exit the current scope",
+   "It must throw",
+   "It must call `fatalError`"
+  ],
+  "answer": 1,
+  "explanation": "`return`, `throw`, `break`, `continue`, or a `Never`-returning call.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-8",
+  "question": "Multiple `defer` blocks in one scope run in which order?",
+  "choices": [
+   "Declaration order",
+   "Reverse declaration order",
+   "Random",
+   "Only the last one runs"
+  ],
+  "answer": 1,
+  "explanation": "Last declared, first executed — like unwinding a stack of acquired resources.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-9",
+  "question": "`try?` applied to a throwing call that returns `Int` produces…",
+  "choices": [
+   "`Int`",
+   "`Int?`",
+   "`Result<Int, Error>`",
+   "`Int!`"
+  ],
+  "answer": 1,
+  "explanation": "`try?` converts errors into `nil`.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-10",
+  "question": "A struct method that assigns to a stored property must be marked…",
+  "choices": [
+   "`mutating`",
+   "`inout`",
+   "`override`",
+   "`dynamic`"
+  ],
+  "answer": 0,
+  "explanation": "Without `mutating`, `self` is immutable inside struct methods.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-11",
+  "question": "Which reference must be declared as an optional `var`?",
+  "choices": [
+   "`weak`",
+   "`unowned`",
+   "`strong`",
+   "`lazy`"
+  ],
+  "answer": 0,
+  "explanation": "ARC sets `weak` references to `nil` when the object is freed.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-12",
+  "question": "`struct S { var x: Int }` — what initialiser do you get for free?",
+  "choices": [
+   "`init(x:)`",
+   "`init()`",
+   "none",
+   "`init?(x:)`"
+  ],
+  "answer": 0,
+  "explanation": "The memberwise initialiser. (Declaring your own `init` in the struct body removes it — put custom inits in an extension to keep it.)",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-13",
+  "question": "`class A {}; class B: A {}` — which cast can fail?",
+  "choices": [
+   "`B() as A`",
+   "`someA as? B`",
+   "`B() is A`",
+   "`A() as AnyObject`"
+  ],
+  "answer": 1,
+  "explanation": "Downcasts can fail, so they use `as?` (optional) or `as!` (trap).",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-14",
+  "question": "What does `some Shape` as a return type promise?",
+  "choices": [
+   "A single concrete type, hidden from the caller",
+   "Any shape, possibly different per call",
+   "An existential box",
+   "An optional shape"
+  ],
+  "answer": 0,
+  "explanation": "Opaque types keep type identity; `any Shape` is the existential that can vary.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-15",
+  "question": "A method declared **only** in a protocol extension (not a requirement), called on an `any P` value, dispatches…",
+  "choices": [
+   "Statically, to the extension's version",
+   "Dynamically, to the conforming type's version",
+   "Via Objective-C messaging",
+   "It doesn't compile"
+  ],
+  "answer": 0,
+  "explanation": "Only requirements go through the witness table — the classic protocol-extension dispatch trap.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-16",
+  "question": "Which is **not** allowed in an extension?",
+  "choices": [
+   "Stored properties",
+   "Computed properties",
+   "New initialisers",
+   "Protocol conformances"
+  ],
+  "answer": 0,
+  "explanation": "Extensions can't change a type's memory layout.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-17",
+  "question": "`Set<Point>` requires `Point` to be…",
+  "choices": [
+   "`Hashable`",
+   "`Comparable`",
+   "`Codable`",
+   "a class"
+  ],
+  "answer": 0,
+  "explanation": "Set elements and dictionary keys must be `Hashable` (which refines `Equatable`).",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-18",
+  "question": "`lazy var x = compute()` runs `compute()`…",
+  "choices": [
+   "Once, on first access",
+   "On every access",
+   "During init",
+   "Never, unless marked `@objc`"
+  ],
+  "answer": 0,
+  "explanation": "Lazy stored properties initialise on first access and store the result; computed properties run every time.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-19",
+  "question": "Which statement about `static let shared = Thing()` is true?",
+  "choices": [
+   "It's initialised lazily and thread-safely, once",
+   "It's initialised at app launch",
+   "It's re-created on each access",
+   "It's unsafe without a lock"
+  ],
+  "answer": 0,
+  "explanation": "Globals and static stored properties use lazy, `dispatch_once`-style initialisation. (Swift 6 additionally requires `Thing` to be `Sendable`.)",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-20",
+  "question": "In Swift 6 language mode, a data race between tasks is…",
+  "choices": [
+   "A compile-time error in many cases",
+   "Only a runtime warning",
+   "Ignored",
+   "Impossible to write"
+  ],
+  "answer": 0,
+  "explanation": "Strict concurrency checking uses `Sendable` and isolation to reject races at compile time.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-21",
+  "question": "Calls into an `actor`'s methods from outside the actor require…",
+  "choices": [
+   "`await`",
+   "`try`",
+   "`sync`",
+   "nothing special"
+  ],
+  "answer": 0,
+  "explanation": "The call may suspend while waiting for the actor's serial executor.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-22",
+  "question": "Results from a `TaskGroup` arrive in…",
+  "choices": [
+   "Completion order",
+   "Submission order",
+   "Sorted order",
+   "Reverse order"
+  ],
+  "answer": 0,
+  "explanation": "Carry an index with each result if you need input order.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-23",
+  "question": "What does `@autoclosure` do to an argument?",
+  "choices": [
+   "Wraps the expression in a closure so it's evaluated lazily",
+   "Makes the closure escaping",
+   "Runs the closure immediately",
+   "Captures `self` weakly"
+  ],
+  "answer": 0,
+  "explanation": "That's how `&&`, `??` and `assert` avoid evaluating their right-hand sides unnecessarily.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-24",
+  "question": "Which is true of `assert(condition)`?",
+  "choices": [
+   "Checked only in debug (-Onone) builds",
+   "Checked in all builds",
+   "Checked only in release builds",
+   "Throws an error you can catch"
+  ],
+  "answer": 0,
+  "explanation": "`precondition` checks in release too; `fatalError` always traps.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-25",
+  "question": "What must a class-constrained delegate protocol inherit from so `weak var delegate` is allowed?",
+  "choices": [
+   "`AnyObject`",
+   "`Any`",
+   "`NSObject` only",
+   "`Sendable`"
+  ],
+  "answer": 0,
+  "explanation": "`weak` only applies to class instances.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-26",
+  "question": "`func f<T: Comparable>(_ x: T)` — who chooses `T`?",
+  "choices": [
+   "The caller",
+   "The implementation",
+   "The runtime",
+   "Nobody — it's erased"
+  ],
+  "answer": 0,
+  "explanation": "Generics: caller chooses. Opaque return types: implementation chooses.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-27",
+  "question": "Which JSONDecoder setting maps `first_name` to `firstName`?",
+  "choices": [
+   "`keyDecodingStrategy = .convertFromSnakeCase`",
+   "`dateDecodingStrategy = .iso8601`",
+   "`CodingKeys` is mandatory",
+   "`outputFormatting = .sortedKeys`"
+  ],
+  "answer": 0,
+  "explanation": "Use `CodingKeys` for anything the strategy can't handle.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-28",
+  "question": "`indirect enum` is needed when…",
+  "choices": [
+   "A case's associated value contains the enum itself",
+   "The enum has raw values",
+   "The enum is `CaseIterable`",
+   "The enum is used across modules"
+  ],
+  "answer": 0,
+  "explanation": "Recursive payloads must be boxed so the type has finite size.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-29",
+  "question": "Accessing an `unowned` reference after its object is deallocated…",
+  "choices": [
+   "Traps",
+   "Returns nil",
+   "Returns a zombie object silently",
+   "Recreates the object"
+  ],
+  "answer": 0,
+  "explanation": "Use `unowned` only when the referent is guaranteed to outlive you; otherwise `weak`.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "q-30",
+  "question": "Which is the correct way to iterate only the non-nil values of `[Int?]`?",
+  "choices": [
+   "`for case let x? in values`",
+   "`for x! in values`",
+   "`for let x in values where x`",
+   "`for x in values ?? []`"
+  ],
+  "answer": 0,
+  "explanation": "The optional pattern `x?` matches `.some(x)`. `compactMap { $0 }` is the collection equivalent.",
+  "topic": "Swift fundamentals"
+ },
+ {
+  "id": "193-l1-some-view",
+  "topic": "CS193p",
+  "question": "In `var body: some View`, what does `some View` mean?",
+  "choices": [
+   "body can return a different view type each time it runs",
+   "body returns an `AnyView` box",
+   "body returns one specific concrete type that conforms to View; the compiler knows it, callers don't need to",
+   "body is an optional view"
+  ],
+  "answer": 2,
+  "explanation": "An opaque type: one fixed concrete type (often a huge nested generic), hidden behind the protocol.",
+  "source": "Stanford CS193p 2025 · L1"
+ },
+ {
+  "id": "193-l1-body-computed",
+  "topic": "CS193p",
+  "question": "Why must `body` be cheap and free of side effects?",
+  "choices": [
+   "It runs only once, at app launch",
+   "SwiftUI may re-evaluate it many times, whenever state it depends on changes",
+   "It runs on a background thread",
+   "Xcode previews forbid side effects only in debug builds"
+  ],
+  "answer": 1,
+  "explanation": "body is a computed property that SwiftUI calls whenever it needs the view description again.",
+  "source": "Stanford CS193p 2025 · L1"
+ },
+ {
+  "id": "193-l2-modifiers",
+  "topic": "CS193p",
+  "question": "What does a view modifier such as `.padding()` return?",
+  "choices": [
+   "The same view instance, mutated in place",
+   "A new view that wraps the original (a `ModifiedContent`)",
+   "A copy of the view with a changed stored property",
+   "Nothing; it registers a style globally"
+  ],
+  "answer": 1,
+  "explanation": "Views are immutable values; modifiers build new wrapper views, which is why modifier order matters.",
+  "source": "Stanford CS193p 2025 · L2"
+ },
+ {
+  "id": "193-l2-count-where",
+  "topic": "CS193p",
+  "question": "What does `matches.count(where: { $0 == .exact })` avoid compared with `filter { … }.count`?",
+  "choices": [
+   "Evaluating the closure",
+   "Allocating an intermediate array",
+   "Iterating the whole array",
+   "Needing `Equatable`"
+  ],
+  "answer": 1,
+  "explanation": "`count(where:)` (Swift 6) just counts.",
+  "source": "Stanford CS193p 2025 · L2"
+ },
+ {
+  "id": "193-l3-mvvm",
+  "topic": "CS193p",
+  "question": "In the course's MVVM, who owns the game rules (e.g. scoring a guess)?",
+  "choices": [
+   "The View",
+   "The Model: UI-independent Swift code",
+   "The ViewModel only",
+   "SwiftUI's environment"
+  ],
+  "answer": 1,
+  "explanation": "The Model is the \"truth\" and knows nothing about UI; the ViewModel interprets it for the View.",
+  "source": "Stanford CS193p 2025 · L3"
+ },
+ {
+  "id": "193-l3-struct-model",
+  "topic": "CS193p",
+  "question": "Why is the CodeBreaker model a `struct`?",
+  "choices": [
+   "Structs are required for `Codable`",
+   "Value semantics: every change is a new value, which SwiftUI can observe and reason about",
+   "Classes can't have methods",
+   "Structs are always faster than classes in every case"
+  ],
+  "answer": 1,
+  "explanation": "Copy-on-assign plus `mutating` makes changes explicit and observable.",
+  "source": "Stanford CS193p 2025 · L3"
+ },
+ {
+  "id": "193-l4-mutating",
+  "topic": "CS193p",
+  "question": "Why do model methods that change a guess need `mutating`?",
+  "choices": [
+   "They modify `self`, which is immutable inside non-mutating struct methods",
+   "To make them run on the main thread",
+   "To allow them to throw",
+   "To allow calling them from a class"
+  ],
+  "answer": 0,
+  "explanation": "Inside a struct method `self` is a constant unless the method is `mutating`.",
+  "source": "Stanford CS193p 2025 · L4"
+ },
+ {
+  "id": "193-l4-enum-payload",
+  "topic": "CS193p",
+  "question": "Why model a code's kind as `enum Kind { case master(isHidden: Bool), guess, attempt([Match]), unknown }`?",
+  "choices": [
+   "Enums use less memory than any struct",
+   "Each case carries exactly the data that makes sense for it, so impossible combinations can't exist",
+   "Associated values are required for SwiftUI",
+   "It lets the compiler skip exhaustiveness checks"
+  ],
+  "answer": 1,
+  "explanation": "Associated values are Swift's discriminated unions.",
+  "source": "Stanford CS193p 2025 · L4"
+ },
+ {
+  "id": "193-l5-layout",
+  "topic": "CS193p",
+  "question": "How does SwiftUI layout negotiate sizes?",
+  "choices": [
+   "The child dictates the parent's size first",
+   "The parent offers a size, the child chooses its own size, then the parent positions it",
+   "Every view is given exactly the screen size",
+   "Sizes are computed by Auto Layout constraints"
+  ],
+  "answer": 1,
+  "explanation": "Offer → choose → place. Stacks offer space to their least flexible children first.",
+  "source": "Stanford CS193p 2025 · L5"
+ },
+ {
+  "id": "193-l5-hstack",
+  "topic": "CS193p",
+  "question": "Which child does an HStack offer space to first?",
+  "choices": [
+   "The first child in code order",
+   "The most flexible one (e.g. a Spacer)",
+   "The least flexible one (e.g. a fixed-size Image)",
+   "All children at once, equally"
+  ],
+  "answer": 2,
+  "explanation": "Inflexible views take what they need, then the rest is divided among flexible views.",
+  "source": "Stanford CS193p 2025 · L5"
+ },
+ {
+  "id": "193-l6-extension",
+  "topic": "CS193p",
+  "question": "Why add `static func gray(_:)` to `Color` in an extension?",
+  "choices": [
+   "Because Color has no initialisers",
+   "Extensions can override Color's stored properties",
+   "So call sites can write `.gray(0.5)` wherever a Color is expected",
+   "To make Color a class"
+  ],
+  "answer": 2,
+  "explanation": "Implicit member expressions look up static members on the expected type.",
+  "source": "Stanford CS193p 2025 · L6"
+ },
+ {
+  "id": "193-l6-binding",
+  "topic": "CS193p",
+  "question": "What does passing `$selection` to a child view give it?",
+  "choices": [
+   "A copy of the value",
+   "Ownership of the state",
+   "A Binding: read and write access to state owned elsewhere",
+   "A publisher of changes"
+  ],
+  "answer": 2,
+  "explanation": "`$` projects a Binding from `@State`.",
+  "source": "Stanford CS193p 2025 · L6"
+ },
+ {
+  "id": "193-l7-generics",
+  "topic": "CS193p",
+  "question": "Why make `CodeView` generic over `AncillaryView: View`?",
+  "choices": [
+   "Generics are required for every SwiftUI view",
+   "To allow AnyView erasure",
+   "So it can show any trailing view (markers, a restart button) while keeping full type information",
+   "To make previews compile faster"
+  ],
+  "answer": 2,
+  "explanation": "Generic views with @ViewBuilder parameters are SwiftUI's typed \"children\" pattern.",
+  "source": "Stanford CS193p 2025 · L7"
+ },
+ {
+  "id": "193-l7-viewbuilder",
+  "topic": "CS193p",
+  "question": "What does `@ViewBuilder` on a closure parameter allow?",
+  "choices": [
+   "Returning `AnyView` automatically",
+   "Running the closure on a background thread",
+   "Writing several views, `if` and `switch` in the closure, combined into one view",
+   "Caching the view"
+  ],
+  "answer": 2,
+  "explanation": "A result builder turns a list of view expressions into one view value.",
+  "source": "Stanford CS193p 2025 · L7"
+ },
+ {
+  "id": "193-l8-animation",
+  "topic": "CS193p",
+  "question": "What does `withAnimation { model.restart() }` animate?",
+  "choices": [
+   "Every view change that results from the state change inside the closure",
+   "Only views that have an `.animation` modifier",
+   "Nothing unless you call `.transition`",
+   "Only the restart button"
+  ],
+  "answer": 0,
+  "explanation": "Explicit animation: the state change is animated wherever it shows up.",
+  "source": "Stanford CS193p 2025 · L8"
+ },
+ {
+  "id": "193-l8-transition",
+  "topic": "CS193p",
+  "question": "When does a `.transition` apply?",
+  "choices": [
+   "Whenever any modifier value changes",
+   "When a view is inserted into or removed from the view hierarchy (with an animation)",
+   "Only on app launch",
+   "Whenever the device rotates"
+  ],
+  "answer": 1,
+  "explanation": "Transitions are for insertion/removal, not for property changes.",
+  "source": "Stanford CS193p 2025 · L8"
+ },
+ {
+  "id": "193-l9-time",
+  "topic": "CS193p",
+  "question": "Why track elapsed time as `startTime` + accumulated time instead of counting timer ticks?",
+  "choices": [
+   "Timers are unavailable in SwiftUI",
+   "Ticks drift and stop in the background; timestamps give exact elapsed time",
+   "Dates are faster to compare than Ints",
+   "It's required by `Codable`"
+  ],
+  "answer": 1,
+  "explanation": "Compute from timestamps; let the UI refresh with TimelineView or `Text(date, style: .timer)`.",
+  "source": "Stanford CS193p 2025 · L9"
+ },
+ {
+  "id": "193-l10-foreach",
+  "topic": "CS193p",
+  "question": "Which is a valid rule for `ForEach` identifiers?",
+  "choices": [
+   "They must be sequential integers",
+   "They may repeat if items look identical",
+   "They must be strings",
+   "They must be unique and stable for each item"
+  ],
+  "answer": 3,
+  "explanation": "Identity drives diffing and animations.",
+  "source": "Stanford CS193p 2025 · L10"
+ },
+ {
+  "id": "193-l10-index-id",
+  "topic": "CS193p",
+  "question": "Why is `ForEach(items.indices, id: \\.self)` risky for a list you reorder?",
+  "choices": [
+   "Identity follows position, not the item, so state and animations attach to the wrong rows",
+   "It doesn't compile",
+   "Indices aren't Hashable",
+   "It's always slower"
+  ],
+  "answer": 0,
+  "explanation": "Same as React's index-as-key bug.",
+  "source": "Stanford CS193p 2025 · L10"
+ },
+ {
+  "id": "193-l11-splitview",
+  "topic": "CS193p",
+  "question": "What decides whether `NavigationSplitView` shows side-by-side columns?",
+  "choices": [
+   "The device model name",
+   "The number of items in the list",
+   "Whether the app uses SwiftData",
+   "The horizontal size class (compact vs regular)"
+  ],
+  "answer": 3,
+  "explanation": "On compact width it collapses into a stack.",
+  "source": "Stanford CS193p 2025 · L11"
+ },
+ {
+  "id": "193-l11-sizeclass",
+  "topic": "CS193p",
+  "question": "An iPad app in Slide Over has which horizontal size class?",
+  "choices": [
+   "Regular",
+   "Compact",
+   "Unspecified",
+   "Large"
+  ],
+  "answer": 1,
+  "explanation": "Size classes describe the space available, not the device.",
+  "source": "Stanford CS193p 2025 · L11"
+ },
+ {
+  "id": "193-l12-bindable",
+  "topic": "CS193p",
+  "question": "What does `@Bindable` let you do with an `@Observable` model passed into a view?",
+  "choices": [
+   "Create bindings like `$game.name` to its properties",
+   "Own the model's lifetime",
+   "Observe it on a background thread",
+   "Copy it on write"
+  ],
+  "answer": 0,
+  "explanation": "`@Bindable` projects bindings from an observable reference.",
+  "source": "Stanford CS193p 2025 · L12"
+ },
+ {
+  "id": "193-l12-sheet",
+  "topic": "CS193p",
+  "question": "One editor sheet for both create and edit: what's the key design choice?",
+  "choices": [
+   "Write two separate views",
+   "Use UIKit for the sheet",
+   "Pass it the model to edit (a new one for create) and decide how Cancel undoes changes",
+   "Store the draft in UserDefaults"
+  ],
+  "answer": 2,
+  "explanation": "Editing live needs a rollback strategy (copy, undo, or child context).",
+  "source": "Stanford CS193p 2025 · L12"
+ },
+ {
+  "id": "193-l13-model-class",
+  "topic": "CS193p",
+  "question": "Why must SwiftData `@Model` types be classes?",
+  "choices": [
+   "Persistent objects need identity and shared, tracked mutation",
+   "Structs can't be stored on disk",
+   "Macros only work on classes",
+   "Classes are required for Codable"
+  ],
+  "answer": 0,
+  "explanation": "The model context tracks changes to instances.",
+  "source": "Stanford CS193p 2025 · L13"
+ },
+ {
+  "id": "193-l13-codable-storage",
+  "topic": "CS193p",
+  "question": "An enum with payloads doesn't store directly in `@Model`. What's a workaround shown?",
+  "choices": [
+   "Make it Codable (or store raw data) and keep a computed accessor",
+   "Use `NSManagedObject`",
+   "Store it in a global",
+   "SwiftData stores any enum automatically"
+  ],
+  "answer": 0,
+  "explanation": "Store something the store understands; convert in code.",
+  "source": "Stanford CS193p 2025 · L13"
+ },
+ {
+  "id": "193-l14-query",
+  "topic": "CS193p",
+  "question": "What does `@Query` in a view give you?",
+  "choices": [
+   "A live, auto-updating array of models fetched from the model context",
+   "A one-time fetch at view creation",
+   "A publisher you must subscribe to",
+   "A background-thread fetch"
+  ],
+  "answer": 0,
+  "explanation": "Changes in the store update the view.",
+  "source": "Stanford CS193p 2025 · L14"
+ },
+ {
+  "id": "193-l14-predicate-limits",
+  "topic": "CS193p",
+  "question": "Why can't `#Predicate` call your model's computed properties?",
+  "choices": [
+   "The predicate is translated to a store query (SQL), which can't run your Swift code",
+   "Computed properties are private",
+   "Predicates run on the main thread",
+   "Macros can't see extensions"
+  ],
+  "answer": 0,
+  "explanation": "Store the value you want to filter on as a real property.",
+  "source": "Stanford CS193p 2025 · L14"
+ },
+ {
+  "id": "193-l15-mainactor",
+  "topic": "CS193p",
+  "question": "Where should heavy work triggered from a `@MainActor` view model run?",
+  "choices": [
+   "Directly in the view model method",
+   "In `body`",
+   "In a `didSet`",
+   "Off the main actor (e.g. a `@concurrent` or nonisolated async function), returning results to update state"
+  ],
+  "answer": 3,
+  "explanation": "Blocking the main actor freezes the UI.",
+  "source": "Stanford CS193p 2025 · L15"
+ },
+ {
+  "id": "193-l15-sendable",
+  "topic": "CS193p",
+  "question": "What must values crossing from a background task to the main actor be?",
+  "choices": [
+   "Codable",
+   "Hashable",
+   "Identifiable",
+   "Sendable (safe to share across concurrency domains)"
+  ],
+  "answer": 3,
+  "explanation": "Swift 6 checks this at compile time.",
+  "source": "Stanford CS193p 2025 · L15"
+ },
+ {
+  "id": "193-l16-gesturestate",
+  "topic": "CS193p",
+  "question": "What's special about `@GestureState`?",
+  "choices": [
+   "It resets to its initial value automatically when the gesture ends or is cancelled",
+   "It persists across launches",
+   "It can only hold Bool",
+   "It triggers haptics"
+  ],
+  "answer": 0,
+  "explanation": "Keep committed state in `@State` and in-flight state in `@GestureState`.",
+  "source": "Stanford CS193p 2025 · L16"
+ },
+ {
+  "id": "193-l16-geometry",
+  "topic": "CS193p",
+  "question": "What does `GeometryReader` do to the space it's offered?",
+  "choices": [
+   "It takes all of it, and gives its content the size to compute from",
+   "It shrinks to fit its content",
+   "It ignores the offer",
+   "It always returns zero size"
+  ],
+  "answer": 0,
+  "explanation": "Greedy by design, so wrap carefully inside stacks.",
+  "source": "Stanford CS193p 2025 · L16"
+ },
+ {
+  "id": "193-l16-atomic",
+  "topic": "CS193p",
+  "question": "Why write saved games with `.atomic`?",
+  "choices": [
+   "It compresses the data",
+   "It encrypts the file",
+   "The file is written to a temporary location then swapped in, so a crash never leaves a half-written file",
+   "It makes the write run on a background thread"
+  ],
+  "answer": 2,
+  "explanation": "Atomic writes protect against corruption.",
+  "source": "Stanford CS193p 2025 · L16"
+ },
+ {
+  "id": "tool-scheme",
+  "topic": "Xcode & tooling",
+  "question": "What is an Xcode *scheme*?",
+  "choices": [
+   "A colour theme for the editor",
+   "A recipe for which targets to build and how to run, test, profile and archive them",
+   "A Swift package manifest",
+   "The app's Info.plist"
+  ],
+  "answer": 1,
+  "explanation": "Schemes pick build configuration, environment variables and test plans.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-config",
+  "topic": "Xcode & tooling",
+  "question": "Debug vs Release build configurations differ mainly in…",
+  "choices": [
+   "The Swift version",
+   "The app's bundle identifier, always",
+   "Whether SwiftUI is available",
+   "Optimisation level and compile-time flags like `DEBUG`"
+  ],
+  "answer": 3,
+  "explanation": "`#if DEBUG` checks the active compilation condition.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-xcconfig",
+  "topic": "Xcode & tooling",
+  "question": "What are `.xcconfig` files for?",
+  "choices": [
+   "Keeping build settings in plain text files you can review and share across targets",
+   "Storing user preferences",
+   "Defining Swift packages",
+   "Localising strings"
+  ],
+  "answer": 0,
+  "explanation": "They make build settings diffable in code review.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-lldb-po",
+  "topic": "Xcode & tooling",
+  "question": "In LLDB, what's the difference between `po` and `p`/`v`?",
+  "choices": [
+   "They're identical aliases",
+   "`po` only works for Objective-C",
+   "`v` evaluates arbitrary Swift code",
+   "`po` evaluates an expression and prints its description; `v` reads variables without running code"
+  ],
+  "answer": 3,
+  "explanation": "`v` (frame variable) is faster and has no side effects.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-breakpoint",
+  "topic": "Xcode & tooling",
+  "question": "A breakpoint that logs a message and continues without pausing is…",
+  "choices": [
+   "A breakpoint with a log action and \"Automatically continue\" enabled",
+   "Impossible; use print()",
+   "A symbolic breakpoint only",
+   "An exception breakpoint"
+  ],
+  "answer": 0,
+  "explanation": "Logging breakpoints avoid rebuilding to add prints.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-exception-bp",
+  "topic": "Xcode & tooling",
+  "question": "Why add a Swift Error breakpoint?",
+  "choices": [
+   "To stop exactly where an error is thrown, before it's caught elsewhere",
+   "To silence thrown errors",
+   "To make all errors fatal in release",
+   "To log network traffic"
+  ],
+  "answer": 0,
+  "explanation": "Great for tracking where a caught error originated.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-preview",
+  "topic": "Xcode & tooling",
+  "question": "What should a SwiftUI preview avoid depending on?",
+  "choices": [
+   "Any `@State`",
+   "Custom fonts",
+   "Multiple previews in one file",
+   "Real network, real databases and singletons with side effects; inject mocks instead"
+  ],
+  "answer": 3,
+  "explanation": "Previews should be fast and deterministic.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-signing",
+  "topic": "Xcode & tooling",
+  "question": "What does code signing prove on iOS?",
+  "choices": [
+   "That the app has no bugs",
+   "That the app was reviewed by Apple",
+   "That the app uses Swift 6",
+   "Who built the app and that it hasn't been modified since signing"
+  ],
+  "answer": 3,
+  "explanation": "Certificates + provisioning profiles tie a build to a team and devices.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-profile",
+  "topic": "Xcode & tooling",
+  "question": "A provisioning profile ties together…",
+  "choices": [
+   "A scheme and a test plan",
+   "A Git branch and a build number",
+   "An App ID, a signing certificate, entitlements and (for development) device IDs",
+   "An Info.plist and an asset catalog"
+  ],
+  "answer": 2,
+  "explanation": "Automatic signing manages these for you.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "tool-symbolicate",
+  "topic": "Xcode & tooling",
+  "question": "Why do you need dSYM files for crash reports?",
+  "choices": [
+   "To sign the app",
+   "To enable bitcode",
+   "To symbolicate: map addresses in the crash back to function names and line numbers",
+   "To shrink the binary"
+  ],
+  "answer": 2,
+  "explanation": "Upload dSYMs to your crash reporter for readable stack traces.",
+  "source": "Apple developer tooling"
+ },
+ {
+  "id": "uikit-lifecycle",
+  "topic": "UIKit",
+  "question": "Which `UIViewController` method is called every time the view is about to appear?",
+  "choices": [
+   "`viewDidLoad()`",
+   "`loadView()`",
+   "`viewWillAppear(_:)`",
+   "`init(coder:)`"
+  ],
+  "answer": 2,
+  "explanation": "`viewDidLoad` runs once per view load; `viewWillAppear` on every appearance.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-viewdidload",
+  "topic": "UIKit",
+  "question": "Where is the one-time setup of a view controller's views usually done?",
+  "choices": [
+   "`viewDidAppear(_:)`",
+   "`viewDidLoad()`",
+   "`deinit`",
+   "`viewWillLayoutSubviews()`"
+  ],
+  "answer": 1,
+  "explanation": "Frames may not be final yet in viewDidLoad; layout-dependent work goes later.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-reuse",
+  "topic": "UIKit",
+  "question": "Why do table and collection views *reuse* cells?",
+  "choices": [
+   "To avoid allocating a view per row: only the visible cells exist and get reconfigured",
+   "To cache network responses",
+   "Because cells can't be deallocated",
+   "To share state between rows"
+  ],
+  "answer": 0,
+  "explanation": "Reset cell state in `prepareForReuse` or configuration.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-prepare-reuse",
+  "topic": "UIKit",
+  "question": "An image from a previous row flashes in a reused cell. The classic cause?",
+  "choices": [
+   "An async image load finishing after the cell was reused for another row",
+   "Too many cells",
+   "A missing `reloadData()`",
+   "Auto Layout conflicts"
+  ],
+  "answer": 0,
+  "explanation": "Cancel or verify the request against the current item when it completes.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-autolayout",
+  "topic": "UIKit",
+  "question": "In Auto Layout, what does *content hugging priority* express?",
+  "choices": [
+   "How strongly it resists shrinking",
+   "How strongly a view resists growing larger than its intrinsic size",
+   "Its z-order",
+   "Its tap priority"
+  ],
+  "answer": 1,
+  "explanation": "Compression resistance is the opposite (resisting shrinking).",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-main-thread",
+  "topic": "UIKit",
+  "question": "What happens if you update UIKit views from a background thread?",
+  "choices": [
+   "Undefined behaviour: glitches or crashes; UIKit must be used on the main thread",
+   "It's fine for labels only",
+   "UIKit automatically hops to the main thread",
+   "The update is queued until next launch"
+  ],
+  "answer": 0,
+  "explanation": "Main Thread Checker flags this in debug.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-responder",
+  "topic": "UIKit",
+  "question": "What is the responder chain?",
+  "choices": [
+   "The order view controllers are pushed",
+   "A list of notification observers",
+   "The path events travel through: from the first responder up through views, controllers, window and app",
+   "Auto Layout's constraint solver"
+  ],
+  "answer": 2,
+  "explanation": "Unhandled events move up the chain.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-hosting",
+  "topic": "UIKit",
+  "question": "How do you show a SwiftUI view inside a UIKit app?",
+  "choices": [
+   "Wrap it in a `UIHostingController`",
+   "Subclass `UIView` and call `body`",
+   "Use `UIViewRepresentable`",
+   "It isn't possible"
+  ],
+  "answer": 0,
+  "explanation": "`UIViewRepresentable` is the other direction (UIKit in SwiftUI).",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-representable",
+  "topic": "UIKit",
+  "question": "What is `UIViewRepresentable` for?",
+  "choices": [
+   "Using SwiftUI inside UIKit",
+   "Converting storyboards to SwiftUI",
+   "Rendering UIKit off-screen",
+   "Using a UIKit view inside SwiftUI"
+  ],
+  "answer": 3,
+  "explanation": "Coordinate delegates through its `Coordinator`.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-delegate-weak",
+  "topic": "UIKit",
+  "question": "Why are UIKit `delegate` properties `weak`?",
+  "choices": [
+   "Weak references are faster",
+   "Delegates are optional",
+   "To allow structs as delegates",
+   "The delegate usually owns the delegating object; a strong reference back would create a retain cycle"
+  ],
+  "answer": 3,
+  "explanation": "e.g. a view controller owns its table view, which references it as delegate.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-coordinator",
+  "topic": "UIKit",
+  "question": "What problem does the Coordinator pattern solve in UIKit apps?",
+  "choices": [
+   "It moves navigation flow out of view controllers so they don't know about each other",
+   "It replaces Auto Layout",
+   "It manages Core Data contexts",
+   "It reuses cells"
+  ],
+  "answer": 0,
+  "explanation": "View controllers become reusable; flows become testable.",
+  "source": "UIKit"
+ },
+ {
+  "id": "uikit-scenes",
+  "topic": "UIKit",
+  "question": "Since iOS 13, what owns a window's UI lifecycle (and allows multiple windows on iPad)?",
+  "choices": [
+   "The `UIScene` / `UIWindowSceneDelegate`",
+   "`UIApplicationDelegate` only",
+   "`UIViewController`",
+   "`UIWindow` alone"
+  ],
+  "answer": 0,
+  "explanation": "App-level vs scene-level lifecycle were split.",
+  "source": "UIKit"
+ },
+ {
+  "id": "life-background",
+  "topic": "App lifecycle",
+  "question": "After your app moves to the background, what generally happens?",
+  "choices": [
+   "It keeps running indefinitely",
+   "It's terminated immediately",
+   "It gets a short time to finish work, then is suspended (and may be terminated to free memory)",
+   "It keeps full network access forever"
+  ],
+  "answer": 2,
+  "explanation": "Use background tasks APIs for longer work.",
+  "source": "Apple platform docs"
+ },
+ {
+  "id": "life-bgtask",
+  "topic": "App lifecycle",
+  "question": "Which framework schedules deferrable background work like refreshes or cleanup?",
+  "choices": [
+   "CoreData",
+   "BackgroundTasks (`BGTaskScheduler`)",
+   "Combine",
+   "WidgetKit"
+  ],
+  "answer": 1,
+  "explanation": "The system decides when to run it based on conditions.",
+  "source": "Apple platform docs"
+ },
+ {
+  "id": "life-silent-push",
+  "topic": "App lifecycle",
+  "question": "Are silent (content-available) pushes guaranteed to wake your app?",
+  "choices": [
+   "No, they're throttled by the system and never delivered if the user force-quit the app",
+   "Yes, always within one second",
+   "Yes, if the payload is small",
+   "Only on Wi-Fi"
+  ],
+  "answer": 0,
+  "explanation": "Design sync so missed pushes are harmless.",
+  "source": "Apple platform docs"
+ },
+ {
+  "id": "life-urlsession-bg",
+  "topic": "App lifecycle",
+  "question": "How do you download large files that should continue after the app is suspended?",
+  "choices": [
+   "A `Task` with high priority",
+   "A timer",
+   "A widget",
+   "A background `URLSessionConfiguration`"
+  ],
+  "answer": 3,
+  "explanation": "The system performs the transfer and relaunches your app on completion.",
+  "source": "Apple platform docs"
+ },
+ {
+  "id": "life-state-restoration",
+  "topic": "App lifecycle",
+  "question": "Which SwiftUI property wrapper stores small per-scene UI state for restoration?",
+  "choices": [
+   "`@AppStorage`",
+   "`@State`",
+   "`@SceneStorage`",
+   "`@Environment`"
+  ],
+  "answer": 2,
+  "explanation": "SceneStorage is per scene; AppStorage is app-wide UserDefaults.",
+  "source": "Apple platform docs"
+ },
+ {
+  "id": "life-extensions",
+  "topic": "App lifecycle",
+  "question": "Widgets, share extensions and notification service extensions run…",
+  "choices": [
+   "Inside the app's process",
+   "Only while the app is in the foreground",
+   "In separate processes, sharing data with the app via App Groups",
+   "On Apple's servers"
+  ],
+  "answer": 2,
+  "explanation": "Use an App Group container or shared keychain.",
+  "source": "Apple platform docs"
+ },
+ {
+  "id": "perf-time-profiler",
+  "topic": "Performance & Instruments",
+  "question": "Which Instruments tool shows where CPU time goes?",
+  "choices": [
+   "Leaks",
+   "Time Profiler",
+   "Allocations",
+   "Network"
+  ],
+  "answer": 1,
+  "explanation": "Sample stacks at intervals to find hot paths.",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "perf-leaks",
+  "topic": "Performance & Instruments",
+  "question": "A view controller never deinitialises. Which tools help find why?",
+  "choices": [
+   "Time Profiler only",
+   "Energy Log",
+   "Core Animation FPS",
+   "Xcode's Memory Graph debugger and Instruments Leaks/Allocations"
+  ],
+  "answer": 3,
+  "explanation": "Look for retain cycles through closures and delegates.",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "perf-hangs",
+  "topic": "Performance & Instruments",
+  "question": "A \"hang\" in Apple's terminology is…",
+  "choices": [
+   "The main thread being unresponsive long enough for the user to notice (roughly 250 ms or more)",
+   "A crash on launch",
+   "A slow network request on a background thread",
+   "A memory warning"
+  ],
+  "answer": 0,
+  "explanation": "Xcode Organizer and Instruments report hangs.",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "perf-launch",
+  "topic": "Performance & Instruments",
+  "question": "Which is a common cause of slow app launch?",
+  "choices": [
+   "Using SwiftUI",
+   "Doing heavy synchronous work (I/O, big static initialisers) before the first frame",
+   "Having many asset catalog images",
+   "Using structs"
+  ],
+  "answer": 1,
+  "explanation": "Defer non-essential work until after first render.",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "perf-swiftui-body",
+  "topic": "Performance & Instruments",
+  "question": "How do you find SwiftUI views whose `body` is re-evaluated too often?",
+  "choices": [
+   "Leaks instrument",
+   "The SwiftUI instrument (view body counts) or `Self._printChanges()` while debugging",
+   "Adding `AnyView`",
+   "Turning on Release mode"
+  ],
+  "answer": 1,
+  "explanation": "Then narrow dependencies (smaller views, @Observable).",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "perf-images",
+  "topic": "Performance & Instruments",
+  "question": "What most affects memory for images on screen?",
+  "choices": [
+   "The JPEG file size",
+   "Their decoded pixel size (width × height × 4 bytes)",
+   "The number of image views",
+   "The image format's name"
+  ],
+  "answer": 1,
+  "explanation": "Downsample to display size.",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "perf-energy",
+  "topic": "Performance & Instruments",
+  "question": "Which habit drains battery the most?",
+  "choices": [
+   "Using value types",
+   "Large asset catalogs",
+   "Dark mode",
+   "Frequent wake-ups: polling timers, constant location updates, chatty networking"
+  ],
+  "answer": 3,
+  "explanation": "Batch work and prefer push over polling.",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "perf-metrickit",
+  "topic": "Performance & Instruments",
+  "question": "What does MetricKit give you?",
+  "choices": [
+   "A UI testing framework",
+   "A profiler you run in Xcode only",
+   "On-device performance and diagnostic reports (hangs, crashes, launch time) from real users",
+   "Server-side logging"
+  ],
+  "answer": 2,
+  "explanation": "Aggregated daily payloads delivered to your app.",
+  "source": "Instruments / WWDC"
+ },
+ {
+  "id": "spm-manifest",
+  "topic": "Swift Package Manager",
+  "question": "What is `Package.swift`?",
+  "choices": [
+   "A generated lockfile",
+   "The package manifest: products, targets and dependencies, written in Swift",
+   "An Xcode project file",
+   "A CocoaPods spec"
+  ],
+  "answer": 1,
+  "explanation": "Like package.json, but executable Swift.",
+  "source": "swift.org / Swift Package Manager docs"
+ },
+ {
+  "id": "spm-resolved",
+  "topic": "Swift Package Manager",
+  "question": "What does `Package.resolved` do?",
+  "choices": [
+   "Pins the exact dependency versions that were resolved, like a lockfile",
+   "Lists your targets",
+   "Configures code signing",
+   "Stores build caches"
+  ],
+  "answer": 0,
+  "explanation": "Commit it for apps so builds are reproducible.",
+  "source": "swift.org / Swift Package Manager docs"
+ },
+ {
+  "id": "spm-semver",
+  "topic": "Swift Package Manager",
+  "question": "`.package(url: …, from: \"2.1.0\")` allows which versions?",
+  "choices": [
+   "Exactly 2.1.0",
+   "Any version at all",
+   "2.1.x only",
+   "2.1.0 up to (but not including) 3.0.0"
+  ],
+  "answer": 3,
+  "explanation": "Semantic versioning: \"up to next major\".",
+  "source": "swift.org / Swift Package Manager docs"
+ },
+ {
+  "id": "spm-local-modules",
+  "topic": "Swift Package Manager",
+  "question": "Why split a large app into local Swift packages (modules)?",
+  "choices": [
+   "Faster incremental builds, enforced boundaries via access control, and isolated tests and previews",
+   "Swift requires one package per screen",
+   "To avoid code signing",
+   "To use CocoaPods"
+  ],
+  "answer": 0,
+  "explanation": "Modularisation is a common senior-level lever.",
+  "source": "swift.org / Swift Package Manager docs"
+ },
+ {
+  "id": "spm-plugins",
+  "topic": "Swift Package Manager",
+  "question": "What can a SwiftPM build-tool plugin do?",
+  "choices": [
+   "Replace the Swift compiler",
+   "Sign the app",
+   "Upload to TestFlight",
+   "Generate code or run tools (e.g. SwiftGen, linting) as part of the build"
+  ],
+  "answer": 3,
+  "explanation": "Plugins run in a sandbox during builds.",
+  "source": "swift.org / Swift Package Manager docs"
+ },
+ {
+  "id": "spm-package-access",
+  "topic": "Swift Package Manager",
+  "question": "What does the `package` access level allow?",
+  "choices": [
+   "Access only within one file",
+   "Access from any app that imports it",
+   "Access from other modules in the same package, but not from outside it",
+   "Access from Objective-C only"
+  ],
+  "answer": 2,
+  "explanation": "Sits between internal and public.",
+  "source": "swift.org / Swift Package Manager docs"
+ },
+ {
+  "id": "ship-build-number",
+  "topic": "Shipping",
+  "question": "Version (`CFBundleShortVersionString`) vs build number (`CFBundleVersion`)?",
+  "choices": [
+   "Version is what users see (1.4.0); the build number must increase for every upload of that version",
+   "They must always be equal",
+   "Build number is optional",
+   "Version must increase every upload"
+  ],
+  "answer": 0,
+  "explanation": "CI usually sets the build number automatically.",
+  "source": "App Store Connect / Apple docs"
+ },
+ {
+  "id": "ship-testflight",
+  "topic": "Shipping",
+  "question": "What's the difference between internal and external TestFlight testers?",
+  "choices": [
+   "Internal testers pay for the app",
+   "External testers get Xcode access",
+   "There is no difference",
+   "External testers need a Beta App Review of the build; internal testers (team members) don't"
+  ],
+  "answer": 3,
+  "explanation": "Up to 10,000 external testers.",
+  "source": "App Store Connect / Apple docs"
+ },
+ {
+  "id": "ship-phased",
+  "topic": "Shipping",
+  "question": "What does a phased release do?",
+  "choices": [
+   "Releases one feature at a time",
+   "Releases to one country per day",
+   "Delays review",
+   "Rolls an update out to automatic-update users gradually over 7 days, and can be paused"
+  ],
+  "answer": 3,
+  "explanation": "Pair it with crash monitoring to catch regressions early.",
+  "source": "App Store Connect / Apple docs"
+ },
+ {
+  "id": "ship-review",
+  "topic": "Shipping",
+  "question": "Which is a common App Review rejection reason?",
+  "choices": [
+   "Missing a way to delete an account that the app lets users create",
+   "Using SwiftUI",
+   "Using dark mode",
+   "Having more than 10 screens"
+  ],
+  "answer": 0,
+  "explanation": "Account deletion has been required since 2022.",
+  "source": "App Store Connect / Apple docs"
+ },
+ {
+  "id": "ship-privacy-manifest",
+  "topic": "Shipping",
+  "question": "What is a privacy manifest (`PrivacyInfo.xcprivacy`)?",
+  "choices": [
+   "A GDPR consent screen",
+   "The App Store privacy policy URL",
+   "A file declaring data your app and SDKs collect, and \"required reason\" APIs they use",
+   "An encryption key file"
+  ],
+  "answer": 2,
+  "explanation": "Third-party SDKs must ship their own.",
+  "source": "App Store Connect / Apple docs"
+ },
+ {
+  "id": "ship-ci",
+  "topic": "Shipping",
+  "question": "What does a typical iOS CI pipeline do on every pull request?",
+  "choices": [
+   "Submit to App Review",
+   "Build, run unit/UI tests, and lint; release branches also archive, sign and upload",
+   "Publish to the App Store",
+   "Rotate signing certificates"
+  ],
+  "answer": 1,
+  "explanation": "Xcode Cloud, GitHub Actions, or Bitrise are common.",
+  "source": "App Store Connect / Apple docs"
+ },
+ {
+  "id": "ship-feature-flags",
+  "topic": "Shipping",
+  "question": "Why do teams ship unfinished features behind flags?",
+  "choices": [
+   "To bypass App Review",
+   "Because branches can't be merged",
+   "To merge continuously and release on a schedule, turning features on remotely later",
+   "Flags make apps smaller"
+  ],
+  "answer": 2,
+  "explanation": "Don't hide functionality from reviewers.",
+  "source": "App Store Connect / Apple docs"
+ },
+ {
+  "id": "be-cloudkit-dbs",
+  "topic": "Cloud & backend",
+  "question": "CloudKit's three database scopes are…",
+  "choices": [
+   "Local, remote and cache",
+   "Dev, staging and prod",
+   "Private (per user), public (shared by all users), and shared (records shared between users)",
+   "Read, write and admin"
+  ],
+  "answer": 2,
+  "explanation": "Private data counts against the user's iCloud storage.",
+  "source": "Apple / Firebase docs"
+ },
+ {
+  "id": "be-cloudkit-coredata",
+  "topic": "Cloud & backend",
+  "question": "What gives you automatic iCloud sync of a Core Data or SwiftData store?",
+  "choices": [
+   "UserDefaults",
+   "`NSPersistentCloudKitContainer` (and SwiftData's CloudKit option)",
+   "Keychain sharing",
+   "URLCache"
+  ],
+  "answer": 1,
+  "explanation": "Mind the schema rules (optional or defaulted attributes, no unique constraints).",
+  "source": "Apple / Firebase docs"
+ },
+ {
+  "id": "be-firebase-auth",
+  "topic": "Cloud & backend",
+  "question": "With Firebase Auth, where should authorisation rules for Firestore live?",
+  "choices": [
+   "In the app's view models",
+   "In UserDefaults",
+   "In Firestore Security Rules on the server, never only in the app",
+   "In the Info.plist"
+  ],
+  "answer": 2,
+  "explanation": "Clients can be modified; the server must enforce access.",
+  "source": "Apple / Firebase docs"
+ },
+ {
+  "id": "be-offline",
+  "topic": "Cloud & backend",
+  "question": "What does Firestore's offline persistence give you?",
+  "choices": [
+   "Guaranteed conflict-free merges",
+   "Reads from a local cache and queued writes that sync when back online",
+   "Unlimited storage",
+   "End-to-end encryption"
+  ],
+  "answer": 1,
+  "explanation": "Last write wins by default; design for conflicts.",
+  "source": "Apple / Firebase docs"
+ },
+ {
+  "id": "be-sign-in-apple",
+  "topic": "Cloud & backend",
+  "question": "When must an app offer Sign in with Apple?",
+  "choices": [
+   "Always",
+   "Never; it's optional",
+   "Only for paid apps",
+   "When it offers other third-party social logins for the main account (with some exceptions)"
+  ],
+  "answer": 3,
+  "explanation": "App Store Review Guideline 4.8.",
+  "source": "Apple / Firebase docs"
+ },
+ {
+  "id": "be-cursor",
+  "topic": "Cloud & backend",
+  "question": "Why prefer cursor-based pagination for feeds?",
+  "choices": [
+   "Cursors are required by HTTP",
+   "Offsets aren't supported by databases",
+   "Offsets skip or duplicate items when new items are inserted; cursors stay stable",
+   "Cursors use less battery"
+  ],
+  "answer": 2,
+  "explanation": "`startAfter(lastDocument)` in Firestore.",
+  "source": "Apple / Firebase docs"
+ },
+ {
+  "id": "sec-keychain",
+  "topic": "Security & privacy",
+  "question": "Where should an auth token be stored?",
+  "choices": [
+   "In UserDefaults",
+   "In the Keychain",
+   "In a plist in Documents",
+   "Hard-coded in the binary"
+  ],
+  "answer": 1,
+  "explanation": "The Keychain is encrypted and access-controlled.",
+  "source": "Apple Platform Security"
+ },
+ {
+  "id": "sec-ats",
+  "topic": "Security & privacy",
+  "question": "What does App Transport Security enforce by default?",
+  "choices": [
+   "That all APIs are Apple's",
+   "Certificate pinning",
+   "End-to-end encryption",
+   "HTTPS with modern TLS for network connections"
+  ],
+  "answer": 3,
+  "explanation": "Exceptions must be declared and justified.",
+  "source": "Apple Platform Security"
+ },
+ {
+  "id": "sec-pinning",
+  "topic": "Security & privacy",
+  "question": "What's the main risk of certificate pinning?",
+  "choices": [
+   "It disables HTTPS",
+   "A certificate rotation you didn't plan for can lock every installed app out of your API",
+   "It leaks the private key",
+   "It slows every request by seconds"
+  ],
+  "answer": 1,
+  "explanation": "Pin to public keys and ship backup pins.",
+  "source": "Apple Platform Security"
+ },
+ {
+  "id": "sec-secrets",
+  "topic": "Security & privacy",
+  "question": "Is an API key compiled into the app a secret?",
+  "choices": [
+   "Yes, binaries are encrypted",
+   "Yes, if obfuscated",
+   "Yes, on iOS only",
+   "No: anyone can extract it from the binary, so keep real secrets on a server"
+  ],
+  "answer": 3,
+  "explanation": "Use a backend proxy or per-user tokens.",
+  "source": "Apple Platform Security"
+ },
+ {
+  "id": "sec-att",
+  "topic": "Security & privacy",
+  "question": "What does App Tracking Transparency require?",
+  "choices": [
+   "Asking permission before any analytics",
+   "Encrypting all data",
+   "Disabling crash reporting",
+   "Asking permission before tracking users across other companies' apps and websites"
+  ],
+  "answer": 3,
+  "explanation": "First-party analytics isn't \"tracking\" in ATT's sense.",
+  "source": "Apple Platform Security"
+ },
+ {
+  "id": "sec-secure-enclave",
+  "topic": "Security & privacy",
+  "question": "What can the Secure Enclave do for your app?",
+  "choices": [
+   "Store unlimited files",
+   "Run your Swift code faster",
+   "Encrypt network traffic automatically",
+   "Create and use private keys that can never be exported from the device"
+  ],
+  "answer": 3,
+  "explanation": "CryptoKit's `SecureEnclave.P256` keys.",
+  "source": "Apple Platform Security"
+ },
+ {
+  "id": "test-swift-testing",
+  "topic": "Testing",
+  "question": "In Swift Testing, how do you write an assertion?",
+  "choices": [
+   "`XCTAssertEqual(value, 3)` only",
+   "`assert(value == 3)`",
+   "`#expect(value == 3)`",
+   "`expect(value).toBe(3)`"
+  ],
+  "answer": 2,
+  "explanation": "`#require` also stops the test when it fails.",
+  "source": "Swift Testing / XCTest docs"
+ },
+ {
+  "id": "test-parameterized",
+  "topic": "Testing",
+  "question": "How do you run one Swift Testing test over many inputs?",
+  "choices": [
+   "A for loop inside the test only",
+   "Copy the test",
+   "`@Test(arguments: [...])` with a parameter",
+   "XCTest subclasses"
+  ],
+  "answer": 2,
+  "explanation": "Each argument is reported as its own case.",
+  "source": "Swift Testing / XCTest docs"
+ },
+ {
+  "id": "test-async",
+  "topic": "Testing",
+  "question": "How do you test an `async` function?",
+  "choices": [
+   "Mark the test `async` and `await` the call",
+   "Use a semaphore",
+   "Sleep for a second",
+   "It can't be tested"
+  ],
+  "answer": 0,
+  "explanation": "Both XCTest and Swift Testing support async tests.",
+  "source": "Swift Testing / XCTest docs"
+ },
+ {
+  "id": "test-ui",
+  "topic": "Testing",
+  "question": "What do XCUITests drive?",
+  "choices": [
+   "The real app, through accessibility, from a separate test process",
+   "View models directly",
+   "SwiftUI previews",
+   "The Swift compiler"
+  ],
+  "answer": 0,
+  "explanation": "Good accessibility makes UI tests reliable.",
+  "source": "Swift Testing / XCTest docs"
+ },
+ {
+  "id": "test-snapshot",
+  "topic": "Testing",
+  "question": "What do snapshot tests catch?",
+  "choices": [
+   "Memory leaks",
+   "Network failures",
+   "Unintended visual changes, by comparing rendered views against reference images",
+   "Data races"
+  ],
+  "answer": 2,
+  "explanation": "Record references per device and appearance.",
+  "source": "Swift Testing / XCTest docs"
+ },
+ {
+  "id": "test-pyramid",
+  "topic": "Testing",
+  "question": "In a healthy test pyramid for an iOS app, which tests are most numerous?",
+  "choices": [
+   "Fast unit tests of models and view models",
+   "UI tests",
+   "Manual QA scripts",
+   "Snapshot tests"
+  ],
+  "answer": 0,
+  "explanation": "UI tests are slow and flaky; keep them few and valuable.",
+  "source": "Swift Testing / XCTest docs"
+ },
+ {
+  "id": "a11y-labels",
+  "topic": "Accessibility & localisation",
+  "question": "What should an icon-only button provide for VoiceOver?",
+  "choices": [
+   "An accessibility label describing its action (e.g. \"Delete\")",
+   "Nothing; VoiceOver reads the SF Symbol name",
+   "A tooltip",
+   "A larger icon"
+  ],
+  "answer": 0,
+  "explanation": "Symbol names are not user-facing language.",
+  "source": "Apple Human Interface Guidelines"
+ },
+ {
+  "id": "a11y-tap-target",
+  "topic": "Accessibility & localisation",
+  "question": "Apple's minimum recommended tap target size is…",
+  "choices": [
+   "44×44 points",
+   "20×20 points",
+   "100×100 points",
+   "1 square centimetre"
+  ],
+  "answer": 0,
+  "explanation": "Pad small controls with `contentShape`.",
+  "source": "Apple Human Interface Guidelines"
+ },
+ {
+  "id": "a11y-reduce-motion",
+  "topic": "Accessibility & localisation",
+  "question": "When Reduce Motion is on, what should you do?",
+  "choices": [
+   "Disable all UI updates",
+   "Nothing; it's cosmetic",
+   "Replace large movements (parallax, zooms) with fades or no animation",
+   "Increase animation speed"
+  ],
+  "answer": 2,
+  "explanation": "Read `accessibilityReduceMotion` from the environment.",
+  "source": "Apple Human Interface Guidelines"
+ },
+ {
+  "id": "l10n-catalog",
+  "topic": "Accessibility & localisation",
+  "question": "What replaced `Localizable.strings` and `.stringsdict` files?",
+  "choices": [
+   "Plain JSON files",
+   "String Catalogs (`.xcstrings`), extracted automatically by Xcode",
+   "Swift enums of strings",
+   "Asset catalogs"
+  ],
+  "answer": 1,
+  "explanation": "They handle plurals and device variations in one file.",
+  "source": "Apple Human Interface Guidelines"
+ },
+ {
+  "id": "l10n-rtl",
+  "topic": "Accessibility & localisation",
+  "question": "How should layouts handle right-to-left languages?",
+  "choices": [
+   "Reverse strings manually",
+   "Ship a separate RTL app",
+   "Nothing; iOS only supports LTR",
+   "Use leading/trailing instead of left/right so the layout mirrors automatically"
+  ],
+  "answer": 3,
+  "explanation": "SwiftUI mirrors leading/trailing automatically.",
+  "source": "Apple Human Interface Guidelines"
+ },
+ {
+  "id": "staff-module-boundaries",
+  "topic": "Senior engineering",
+  "question": "Your app's build takes 10 minutes. Which change usually helps most long-term?",
+  "choices": [
+   "Switching to Objective-C",
+   "Splitting into modules with clear dependencies so builds are incremental and parallel",
+   "Removing tests",
+   "Using more `AnyView`"
+  ],
+  "answer": 1,
+  "explanation": "Modular architecture also enforces boundaries between teams.",
+  "source": "Industry practice"
+ },
+ {
+  "id": "staff-crash-free",
+  "topic": "Senior engineering",
+  "question": "Which metric best summarises release stability?",
+  "choices": [
+   "Crash-free users (or sessions) percentage per release",
+   "Lines of code",
+   "Number of commits",
+   "App size"
+  ],
+  "answer": 0,
+  "explanation": "Track it per version and roll back or hotfix quickly.",
+  "source": "Industry practice"
+ },
+ {
+  "id": "staff-min-os",
+  "topic": "Senior engineering",
+  "question": "What mostly decides when to raise the minimum iOS version?",
+  "choices": [
+   "Always support every version",
+   "Your user analytics (what share runs older OSes) weighed against the APIs you gain",
+   "Always require the newest version",
+   "Whatever the latest Xcode template uses"
+  ],
+  "answer": 1,
+  "explanation": "Many teams support the current and previous major version.",
+  "source": "Industry practice"
+ },
+ {
+  "id": "staff-rfc",
+  "topic": "Senior engineering",
+  "question": "Before a large migration (e.g. to Swift 6 strict concurrency), a staff engineer typically…",
+  "choices": [
+   "Migrates everything in one PR",
+   "Waits for Apple to automate it",
+   "Disables the compiler checks",
+   "Writes a proposal with the plan, risks, incremental steps and success metrics, and gets buy-in"
+  ],
+  "answer": 3,
+  "explanation": "Incremental migration by module is the norm.",
+  "source": "Industry practice"
+ },
+ {
+  "id": "staff-server-driven",
+  "topic": "Senior engineering",
+  "question": "What's the main trade-off of server-driven UI?",
+  "choices": [
+   "It's banned by App Review",
+   "It always improves performance",
+   "Faster iteration without app releases, versus complexity, weaker type safety and harder offline behaviour",
+   "It removes the need for a backend"
+  ],
+  "answer": 2,
+  "explanation": "Keep native fallbacks for unknown components.",
+  "source": "Industry practice"
+ }
 ]

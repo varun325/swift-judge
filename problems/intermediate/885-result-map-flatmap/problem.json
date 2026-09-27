@@ -14,6 +14,10 @@
     {
       "title": "Result",
       "url": "https://developer.apple.com/documentation/swift/result"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
     }
   ],
   "signature": {
@@ -31,5 +35,48 @@
     "`Result` has `map` (transform success) and `flatMap` (chain another Result-returning step).",
     "`parse(input).flatMap(validate).map { $0 * $0 }`, then switch once at the end.",
     "`Int(s).map(Result.success) ?? .failure(.notANumber)` builds the first Result."
+  ],
+  "impact": "edge",
+  "jsBridge": "Chaining `Result` with `map` and `flatMap` is railway-oriented programming: errors short-circuit, and success values flow on. It's like chaining `.then()` on Promises, but synchronous and with typed errors.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Promise `.then` flattens automatically. Why does Swift need both `map` and `flatMap` on `Result`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Result` chain vs `do/try` with throwing functions: which is more readable in 2026 Swift?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `mapError` let you do at a module boundary?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do `Result` chains still show up: Combine, completion handlers, stored outcomes?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Understanding Swift’s Result type – Hot Prospects 3/16",
+      "url": "https://www.youtube.com/watch?v=Ps8t8Xdgvy0",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Swift provides a special type called result that allows to encapsulate either"
+    },
+    {
+      "title": "Swift - Result Type - Cleaner Network Calls",
+      "url": "https://www.youtube.com/watch?v=8aPjqLqUEKA",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "in today's video I'm going to show you how to use the result type that was introduced in Swift 5 and to show you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

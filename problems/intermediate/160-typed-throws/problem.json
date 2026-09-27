@@ -14,6 +14,14 @@
     {
       "title": "Error Handling — Specifying the Error Type",
       "book": "LanguageGuide/ErrorHandling"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -34,5 +42,53 @@
     "`throws(BankError)` declares exactly which error type can be thrown.",
     "Throw `.invalidAmount` for non-positive amounts and `.insufficientFunds(short:)` when the amount exceeds the balance.",
     "Inside the `map` closure, write `do throws(BankError) { … } catch { switch error { … } }` so `error` is a `BankError`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift 6's `throws(BankError)` declares the exact error type, like Java's checked exceptions but with one type. The catch gets a `BankError`, not `any Error`. TS can't type what a function throws at all.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS can't declare what a function throws. What does `throws(E)` let a caller do that TS can't?"
+    },
+    {
+      "kind": "java",
+      "q": "Java checked exceptions are considered a mistake by many. What's different about Swift's single typed error that avoids Java's problems?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Typed throws vs `Result<T, E>`: which composes better with `async`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Swift Evolution recommends *untyped* throws for most APIs. When is typed throws worth it (embedded, exhaustive handling)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+      "url": "https://www.youtube.com/watch?v=lncOFL3Qsns",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to handle errors in functions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=T-UTLMKx2wc&t=183s",
+      "channel": "Paul Hudson",
+      "start": 183,
+      "moment": "it's excellent let's break that down to smaller bits if a function"
+    },
+    {
+      "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+      "url": "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=377s",
+      "channel": "Sean Allen",
+      "start": 377,
+      "moment": "you'll handle during the login process so now let's go ahead and create our login function that's going to throw an"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -20,5 +20,65 @@
     "`type(of: self)` and `Self` refer to the object's runtime type.",
     "`pet` is a `Dog` stored in an `Animal` variable, so it describes and clones itself as a `Dog`.",
     "Line 1: `Dog is a dog`; line 2: `Dog`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`self` is the instance, `Self` is the instance's type (dynamic in classes), and `type(of:)` gets the runtime type. JS has `this` and `this.constructor`, and Swift's `Self` is the typed version of the latter.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`this.constructor.name` in JS vs `type(of: self)` in Swift: same idea?"
+    },
+    {
+      "kind": "edge",
+      "q": "In a class, is `Self` the static or the dynamic type? In a protocol extension?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Self.self` vs `type(of: self)` vs `Swift.type(of:)`: when do they differ?"
+    },
+    {
+      "kind": "practice",
+      "q": "`static func make() -> Self` factories: why are they handy in class hierarchies?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use weak self in Swift | Continued Learning #18",
+      "url": "https://www.youtube.com/watch?v=TPHp9kR0Go8&t=8s",
+      "channel": "Swiftful Thinking",
+      "start": 8,
+      "moment": "swiftly thinking where we cover all things swift and swift ui related and in this"
+    },
+    {
+      "title": "Universal Self in Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=YlRuQP3EO8E",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "I see 68 expands Swift's use of self to refers to the containing type when used inside classes"
+    },
+    {
+      "title": "From Homeless to $130k+ iOS Dev | Self-Taught",
+      "url": "https://www.youtube.com/watch?v=yac52lmf_yc&t=49s",
+      "channel": "Sean Allen",
+      "start": 49,
+      "moment": "getting to be around you know the kind of environments that technology brings and then Scott Trade closed in 2017."
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

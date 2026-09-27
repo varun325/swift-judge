@@ -17,6 +17,10 @@
     {
       "title": "DynamicViewContent.onMove",
       "url": "https://developer.apple.com/documentation/swiftui/dynamicviewcontent/onmove(perform:)"
+    },
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
     }
   ],
   "signature": {
@@ -43,5 +47,43 @@
     "SwiftUI extends `Array` with offset-based `remove` and `move`.",
     "Build `IndexSet`s from the numbers and call `remove(atOffsets:)` / `move(fromOffsets:toOffset:)`.",
     "For `move`, the last number is the destination; the others are sources."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "SwiftUI's `List` hands you an `IndexSet` for deletes and `(IndexSet, Int)` for moves, and `Array.remove(atOffsets:)` / `move(fromOffsets:toOffset:)` apply them. In React you'd splice or filter by index yourself. Here the framework standardises the edit protocol.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React drag-reorder libraries give you `(from, to)` indices. Why does SwiftUI use an `IndexSet` (multiple selection)?"
+    },
+    {
+      "kind": "edge",
+      "q": "`move(fromOffsets:toOffset:)`: is `toOffset` the index *before* or *after* removal? Try moving item 0 to offset 2."
+    },
+    {
+      "kind": "contrast",
+      "q": "Deleting by offsets vs deleting by ID: which is safe if the list is filtered or sorted in the UI?"
+    },
+    {
+      "kind": "practice",
+      "q": "With SwiftData `@Query`, how do you delete from `onDelete`? Why do offsets need mapping to model objects?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Add custom List Swipe Actions in SwiftUI | Bootcamp #58",
+      "url": "https://www.youtube.com/watch?v=qSLOBpiJ2p4",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Deleting items using onDelete() – iExpense SwiftUI Tutorial 4/11",
+      "url": "https://www.youtube.com/watch?v=rcs_0xLZ8yI",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "SwiftUI - Swipe Actions on List | iOS 15 & Xcode 13",
+      "url": "https://www.youtube.com/watch?v=5PJL4xxEXJE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

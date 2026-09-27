@@ -42,8 +42,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L10: Building Complex UIs",
-      "url": "https://www.youtube.com/watch?v=NnJ91M9PRYo",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=NnJ91M9PRYo&t=3550s",
+      "channel": "Stanford Online",
+      "start": 3550,
+      "moment": "going to make that class be Identifiable because it already has such a strong sense of identity. In fact, if I go to my CodeBreaker here and I say that this cla"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "Custom `Identifiable`/`Hashable` conformances for the game list decide what makes two games \"the same\". It's the same decision as choosing a React `key` and a memo equality function.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React `memo(Component, areEqual)` vs Swift `Hashable`/`Equatable`: which one affects list identity, and which affects re-rendering?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two games with the same name but different pegs: same `id`? What should editing do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom `==` vs synthesised `==`: when would comparing only `id` be wrong for SwiftUI updates?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why might `NavigationLink(value:)` need the whole game to be `Hashable`?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

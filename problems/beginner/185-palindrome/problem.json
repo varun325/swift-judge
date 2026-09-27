@@ -14,6 +14,14 @@
     {
       "title": "Strings and Characters — Comparing Strings",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -31,5 +39,44 @@
     "`Character` has properties like `isLetter` and `isNumber`.",
     "Lowercase the text, keep only letters and numbers, then compare it with its reverse.",
     "`let cleaned = text.lowercased().filter { $0.isLetter || $0.isNumber }; return cleaned == String(cleaned.reversed())`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS would lowercase and strip with a regex like `/[^a-z0-9]/gi`, which is ASCII-only. Swift's `Character.isLetter` and `isNumber` are Unicode-aware, so accented letters and other scripts work, and `lowercased()` handles more than ASCII.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Your JS regex `[a-z0-9]` breaks for \"Ésope reste ici et se repose\". What does Swift's `isLetter` do differently?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `Array(s) == Array(s).reversed()` correct for strings with combining accents? What if one side uses a precomposed é and the other e + ◌́?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Two-pointer on `String.Index` vs converting to `[Character]` first: memory vs simplicity. Which would you ship?"
+    },
+    {
+      "kind": "practice",
+      "q": "Case-insensitive, diacritic-insensitive comparison in search bars: what does `localizedStandardContains` do that `lowercased().contains` misses?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12",
+      "url": "https://www.youtube.com/watch?v=Ea3dl2gy3QY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

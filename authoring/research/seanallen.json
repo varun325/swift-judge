@@ -1,0 +1,2207 @@
+{
+ "videos": [
+  {
+   "id": "jxmQPfkwaXo",
+   "title": "What Kills Apps?, Critical Thinking & AI, SwiftUI Blend Modes, Context Rot & More"
+  },
+  {
+   "id": "Q3tPGesg_e8",
+   "title": "Shipaton ($700K in prizes), iOS 27 Breaking Changes, New Foundation Models Utilities & More"
+  },
+  {
+   "id": "j6wtNLeXQQI",
+   "title": "SiriAI & App Intents, Resizable iPhone Apps, App Store Rejections, & Swift Package Manager"
+  },
+  {
+   "id": "SY9NqW6z8gs",
+   "title": "My WWDC Recap, SwiftUI Lab Q&A, App Store Removal, and More"
+  },
+  {
+   "id": "v93pF-zmU_M",
+   "title": "WWDC, Apple Design Awards, Mentorship, Slow the F Down, Liquid Glass & More"
+  },
+  {
+   "id": "AQVyHXZWILo",
+   "title": "AI Disrupted My YouTube Business. So I Got a Job."
+  },
+  {
+   "id": "OwdUGlrhZg4",
+   "title": "Automatic App Store Uploads w/ Bitrise and CI/CD"
+  },
+  {
+   "id": "VU-NiioUpxg",
+   "title": "iOS Agent Skills, App Store Connect CLI, Foundation Models Tokens & More"
+  },
+  {
+   "id": "_80oGwJQIjs",
+   "title": "Xcode Agentic Coding, AI Anxiety, iOS 26 Adoption, Micro-Interactions"
+  },
+  {
+   "id": "C0wu_dAQqAk",
+   "title": "The Most Satisfying iOS 26 Design Feature - Concentricity"
+  },
+  {
+   "id": "4c_1Tebf3PM",
+   "title": "Bleeding Edge AI Work, What's New in Swift, Concurrency, Apple Ads"
+  },
+  {
+   "id": "-7YHPpqaVFY",
+   "title": "How to Create App Store Screenshots - Fast & Easy"
+  },
+  {
+   "id": "EIsrS4bvWPQ",
+   "title": "The Year SwiftUI Died, Liquid Glass, Swift Student Challenge, Indie Dev Life"
+  },
+  {
+   "id": "YCRvVfDGQuY",
+   "title": "Swift SDK for Android, Shipaton Winners, Foundation Models, Scroll Performance & More."
+  },
+  {
+   "id": "KIbPHB6FIlo",
+   "title": "Swift 6.2, New Era of Swift, Foundation Models, Dark Side of iOS Dev & More."
+  },
+  {
+   "id": "74QSJDdGY3o",
+   "title": "The Secret to Doubling App Store Conversions in iOS 26"
+  },
+  {
+   "id": "7EcWzb_Xa10",
+   "title": "How to Choose the RIGHT Indie App to Build"
+  },
+  {
+   "id": "rDmHKZGNYYE",
+   "title": "Remember UIKit?, Coding Agent Addiction, Server Side Swift, Menu & More"
+  },
+  {
+   "id": "jqrSYc93OE0",
+   "title": "I Acquired an App Making $800/month. Here's How it Went."
+  },
+  {
+   "id": "bUj9PpuPX0o",
+   "title": "Forget MVVM, Lower Churn, Chart Design, Vibe Coding, Foundation Models & More"
+  },
+  {
+   "id": "aF2qt5WfprM",
+   "title": "Liquid Glass - 5 Things You MUST Know Before Implementing"
+  },
+  {
+   "id": "z-mP0hAGNbY",
+   "title": "Why App Store Screenshots Are a HUGE Deal Now"
+  },
+  {
+   "id": "gonUvejvaFo",
+   "title": "Web vs In-App Purchase, Liquid Glass, Micro-Interactions, AsyncStream, Dynamic Type, and more."
+  },
+  {
+   "id": "bGIWSlnHWBw",
+   "title": "Swift on Android, SwiftUI in iOS 26, Foundation Model, Ship-a-ton, & More"
+  },
+  {
+   "id": "UyOh9XINM4Q",
+   "title": "Must Watch WWDC 2025 Developer Sessions"
+  },
+  {
+   "id": "14ZpgTJ5I0Q",
+   "title": "Swift News: WWDC 2025, AI Costs, ASO Changes, Liquid Glass & More."
+  },
+  {
+   "id": "e4s37VcWCj0",
+   "title": "Why SwiftUI's Built-In Font is OP 🔥"
+  },
+  {
+   "id": "6OolMedYsG0",
+   "title": "Swift: Dead Simple Formatting (Dates, Numbers, Currency, Measurement, Time)"
+  },
+  {
+   "id": "749cMjWM54k",
+   "title": "My New Way To Create App Store Screenshots"
+  },
+  {
+   "id": "DWQA6bEILes",
+   "title": "Stop Rebuilding UI with Play to Xcode"
+  },
+  {
+   "id": "BYYi42WNlxI",
+   "title": "The App Store Just Got Cracked Open"
+  },
+  {
+   "id": "oJDu0dKa0PU",
+   "title": "Stop Creating Custom Colors in SwiftUI"
+  },
+  {
+   "id": "GFjOuH2Utt4",
+   "title": "SwiftUI - Glowing Button Animation"
+  },
+  {
+   "id": "pnAT-PJrV5E",
+   "title": "visionOS Godot Support, Career Advice, TextRenderer, App Store Upload, and More"
+  },
+  {
+   "id": "FsVbZftrPTQ",
+   "title": "Swift Reduce, Are MVP's Dead?, Apple Ads, App Security and More."
+  },
+  {
+   "id": "cWeTwNahX_M",
+   "title": "AI Code Editors, WWDC Wishlist, SwiftUI State, Indie App Dev"
+  },
+  {
+   "id": "Zg4ys3u6F5E",
+   "title": "Swift 6.1, Xcode Instruments, Sundell Returns, SwiftUI Dismiss"
+  },
+  {
+   "id": "b-DqRLjsTyk",
+   "title": "WWDC 2025 Dates, SwiftUI Fundamentals, Optimization & Ugly Paywalls"
+  },
+  {
+   "id": "vmQnTMWaDiY",
+   "title": "Swift Protocols - An Introduction"
+  },
+  {
+   "id": "VtE2QGnQkpM",
+   "title": "I Want to Buy Your iOS App"
+  },
+  {
+   "id": "c5XaOrVYRGI",
+   "title": "Advanced SwiftUI Animations - PhaseAnimator - iOS 17+"
+  },
+  {
+   "id": "wDBu7C5Wl9s",
+   "title": "iOS 19 Redesign, State of Subscription Apps, Swift Concurrency, Screen Design Inspiration"
+  },
+  {
+   "id": "1Y-x6Ou4v3M",
+   "title": "How the Best Subscription Apps Print Money in 2025"
+  },
+  {
+   "id": "ZzduOEZqQSc",
+   "title": "iOS 18 Adoption, Swift Data, Speed vs. Accuracy, Git Commits & More"
+  },
+  {
+   "id": "GndRUqqBVVc",
+   "title": "I Quit My iOS Dev Job for Full-Time YouTube"
+  },
+  {
+   "id": "hnXkn38DMTs",
+   "title": "Swift Build Open Source, Secure API Keys, Swift Concurrency, Jr. Devs Can't Code, and more!"
+  },
+  {
+   "id": "98rQZbwxMFI",
+   "title": "SwiftUI Maps - iOS 17 - Look Around, User Location, Directions, Markers & Annotations, Map Styles"
+  },
+  {
+   "id": "fjtWpQGs5lU",
+   "title": "SwiftUI Image Playground - AI Images with Apple Intelligence"
+  },
+  {
+   "id": "mnzyvJheMJY",
+   "title": "Swift Style Guides, AI & App Craftsmanship, Better iOS Job Interviews, & More"
+  },
+  {
+   "id": "uloAs9tQIcA",
+   "title": "Interactive SwiftUI Chart - Drag to Show Data w/ Animation"
+  },
+  {
+   "id": "paluEe35TeA",
+   "title": "Apple's Use of SwiftUI, New Concurrency Vision, 2024 App Store Awards, Paywalls, and More"
+  },
+  {
+   "id": "RIHcUD97JaA",
+   "title": "Xcode - Improved Workflow with Compiler Directives"
+  },
+  {
+   "id": "zhRyjt6jwPs",
+   "title": "Xcode + ChatGPT, @MainActor Gotcha, SwiftUI Container Views, SwiftUI Custom Modifiers & More"
+  },
+  {
+   "id": "Lz3PoLEgoic",
+   "title": "iOS Dev's Thoughts on Coding with AI"
+  },
+  {
+   "id": "Mj4X7BrGlME",
+   "title": "GitHub Co-Pilot for Xcode, Cursor, Swift Performance, SwiftUI Animations & More"
+  },
+  {
+   "id": "6SUgEBDs1C8",
+   "title": "SwiftUI - Support Prior iOS Versions - Backward Compatibility - #available"
+  },
+  {
+   "id": "LOrB85Ej2yk",
+   "title": "Drawbacks of AI Usage, Swift 6, Xcode Folders, Ship-a-ton Winners"
+  },
+  {
+   "id": "VNRdRlHsr2k",
+   "title": "SwiftUI - Reorder a List (2 Ways)"
+  },
+  {
+   "id": "cpT02OtOasE",
+   "title": "Fix This Problem with SwiftUI Lists"
+  },
+  {
+   "id": "zretcAZRoLU",
+   "title": "SwiftUI Confusion, Ship-a-ton, Paywalls, App Intents, Mistakes Learning Swift & More"
+  },
+  {
+   "id": "CVPLBBVftP4",
+   "title": "The Best iOS Dev Portfolio Strategy"
+  },
+  {
+   "id": "tQpGS7LixB8",
+   "title": "Problem with Swift 6 Concurrency, List vs. ScrollView, App Intents, LazyVGrid & More"
+  },
+  {
+   "id": "XEHZuy_VJmM",
+   "title": "You Need to Document Your Swift Code with DocC"
+  },
+  {
+   "id": "SbC62vIPvHY",
+   "title": "My Story & iOS Dev Career Advice - Launched Interview at Deep Dish Swift"
+  },
+  {
+   "id": "oDz8hxWaIuE",
+   "title": "Play: The Secret Weapon for iOS Devs & Designers"
+  },
+  {
+   "id": "aCbh9LmIZTI",
+   "title": "My Favorite SwiftUI Updates in iOS 18"
+  },
+  {
+   "id": "jn1sYfLnvq4",
+   "title": "Swift News - Apple Intelligence, WWDC 24, Swift Testing, SwiftUI & More"
+  },
+  {
+   "id": "OjU9N4mZpjs",
+   "title": "Indie App Teardown - ASO, Strategy, Pricing, Paywalls, and Ads w/ Steve P. Young"
+  },
+  {
+   "id": "gZa_wZ1GJ8I",
+   "title": "Clean Swift Code with Where Clause"
+  },
+  {
+   "id": "GbfxGg_TfNs",
+   "title": "Swift News - iOS 18 A11Y, visionOS Code, Career Advice, TCA & More"
+  },
+  {
+   "id": "NvE3SaGGurQ",
+   "title": "SwiftUI Card View - Group Box & Customizations"
+  },
+  {
+   "id": "2c1IQ0BT0PE",
+   "title": "SwiftUI Alerts - Buttons, TextFields, & Passing Errors"
+  },
+  {
+   "id": "Z-imQJ7wrj4",
+   "title": "Swift News - WWDC '24, MVVM Dead?, App Sound Design, 1 Star Reviews, Indie Dev & More"
+  },
+  {
+   "id": "vfUalXtwth0",
+   "title": "SwiftUI Grids - LazyVGrid, LazyHGrid, Static Grid"
+  },
+  {
+   "id": "-sw7gvNUboc",
+   "title": "SwiftUI Toggle - Button & Switch Tutorial"
+  },
+  {
+   "id": "T6IvImk66m8",
+   "title": "Your App Will Get Rejected | New Privacy Rules - 2024"
+  },
+  {
+   "id": "lPRwYJeElfg",
+   "title": "Swift News - Swift 6, Strict Concurrency, Privacy, State of Subscription Apps, Indie Dev & More"
+  },
+  {
+   "id": "7BXertzo8sg",
+   "title": "visionOS 3D content in SwiftUI | Xcode | Spline"
+  },
+  {
+   "id": "yI54JFm96RQ",
+   "title": "How to Create 3D App Icons for visionOS | Xcode"
+  },
+  {
+   "id": "kYL0Ef3XKO0",
+   "title": "3D Content in iOS & visionOS apps with Spline (Xcode & SwiftUI)"
+  },
+  {
+   "id": "Qjbs-nye7CU",
+   "title": "Swift News - SwiftUI Field Guide, Apple Vision Pro, State of Mobile 2024 , Indie Dev & More"
+  },
+  {
+   "id": "BuHsRVO0JKw",
+   "title": "iOS Dev's Thoughts on Working in Apple Vision Pro (Xcode)"
+  },
+  {
+   "id": "Jo9u9wWnynA",
+   "title": "RealityKit & Object Capture Explained (visionOS)"
+  },
+  {
+   "id": "pa-1XlU3rpk",
+   "title": "ARKit: What can it do? (visionOS)"
+  },
+  {
+   "id": "hwQvpDxgGh4",
+   "title": "Apple's Human Interface Guidelines 2024 - Updated w/ visionOS"
+  },
+  {
+   "id": "tfRnc3jQtBI",
+   "title": "Swift News - Vision Pro, Programmers Obsolete?, Indie Dev & More"
+  },
+  {
+   "id": "JzngncpZLuw",
+   "title": "iOS Dev Interview Prep - Take Home Project - UIKit - Programmatic UI - FULL COURSE"
+  },
+  {
+   "id": "bEB7ATENue0",
+   "title": "Simple, Clean Empty States in SwiftUI - ContentUnavailableView - iOS 17"
+  },
+  {
+   "id": "8M3N4HWUc0U",
+   "title": "SwiftUI Pie & Donut Charts - New in iOS 17"
+  },
+  {
+   "id": "1HOcrAnlpgE",
+   "title": "Swift Date Components & Calculations Tutorial"
+  },
+  {
+   "id": "qlMxrwJfHaE",
+   "title": "SwiftUI Tooltips with TipKit (Popover & Inline Tips)"
+  },
+  {
+   "id": "jCskmh46L-s",
+   "title": "New SwiftUI Photo Picker - Single & Multiple Selection"
+  },
+  {
+   "id": "qSdCw7YxQhA",
+   "title": "Cleaner, Safer Code with Swift KeyPaths"
+  },
+  {
+   "id": "MM9kMcLtoxU",
+   "title": "An Easier Dev Life with Kaleidoscope"
+  },
+  {
+   "id": "lRdqYBXaiHI",
+   "title": "Fast & Easy Paywalls with RevenueCat"
+  },
+  {
+   "id": "mvXFGikltPc",
+   "title": "Intro to SwiftData - Model, Container, Fetch, Create, Update & Delete"
+  },
+  {
+   "id": "IwUp2iP0jnI",
+   "title": "Super Power Scroll Views - SwiftUI - iOS 17"
+  },
+  {
+   "id": "b1oC7sLIgpI",
+   "title": "SwiftUI Fundamentals | FULL COURSE | Beginner Friendly"
+  },
+  {
+   "id": "ZOh08w9Ku9k",
+   "title": "6 Ways to Master iOS Development"
+  },
+  {
+   "id": "OpS1sBvt5_k",
+   "title": "iOS Dev Portfolio Tips & Reviews"
+  },
+  {
+   "id": "x-5UgNl7GFU",
+   "title": "Swift Algorithms - Faster, Cleaner Code. (Chunked Example)"
+  },
+  {
+   "id": "lsXqJKm4l-U",
+   "title": "SwiftUI Drag and Drop with Transferable Custom Object"
+  },
+  {
+   "id": "XTAziR-tY-A",
+   "title": "iOS Dev Job Interview - Must Know Topics"
+  },
+  {
+   "id": "opkU2UuPk0A",
+   "title": "Intro to Unit Testing in Swift"
+  },
+  {
+   "id": "EK7SthdWV2w",
+   "title": "SwiftUI Data Flow in iOS 17 - Observation & @Observable"
+  },
+  {
+   "id": "V-mIIcvYrh0",
+   "title": "visionOS Fundamentals - Watch before you build for Vision Pro"
+  },
+  {
+   "id": "oNAj6aIU7tk",
+   "title": "Xcode 15 - What's New"
+  },
+  {
+   "id": "ERr0GXqILgc",
+   "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON"
+  },
+  {
+   "id": "iTqwa0DCIMA",
+   "title": "SwiftUI Search Bar - Searchable"
+  },
+  {
+   "id": "dV8uopv3aFE",
+   "title": "My Trouble With Free Trials - Build, Ship, Profit #3"
+  },
+  {
+   "id": "A-nJ7THyCzo",
+   "title": "How to fight churn and improve your app's growth"
+  },
+  {
+   "id": "rO16UJS0jHg",
+   "title": "Paywall Design Examples - Earn More Revenue"
+  },
+  {
+   "id": "fnOS_w2Vk18",
+   "title": "Indie Devs... Don't Fall Into This Trap"
+  },
+  {
+   "id": "VUztqFol_FY",
+   "title": "Intro to Apple Search Ads - Setup Your First Campaign (Tutorial)"
+  },
+  {
+   "id": "a3AH0ItFTKU",
+   "title": "Swift Generics for Beginners - Eliminate Code Duplication"
+  },
+  {
+   "id": "l0QehVWz2i0",
+   "title": "Swift Dependency Injection - What is it? What are the benefits?"
+  },
+  {
+   "id": "_o2ggCPh7qE",
+   "title": "This surprising tactic got my app's first paying users - Build, Ship, Profit #2"
+  },
+  {
+   "id": "ApG1U0VnXCU",
+   "title": "Is it all downhill from here?"
+  },
+  {
+   "id": "2uUJrTT9x-E",
+   "title": "You should spam your users...just a little"
+  },
+  {
+   "id": "B4XySdT2FkY",
+   "title": "How to Profit From Your Apps - NEW Podcast"
+  },
+  {
+   "id": "_TvQPMZdwPI",
+   "title": "Swift Basics: Array vs. Set"
+  },
+  {
+   "id": "3OMz0LgapFM",
+   "title": "The Most Misused Design Pattern in Swift"
+  },
+  {
+   "id": "w7SNttwEmkU",
+   "title": "Maximize Your YouTube Business - Creator View 2.0"
+  },
+  {
+   "id": "uWEblkT0_Zk",
+   "title": "Expert Advice to Learn iOS Dev & Swift FAST"
+  },
+  {
+   "id": "L3FuDHIv5Ws",
+   "title": "Swift Optionals - How to Unwrap (real examples)"
+  },
+  {
+   "id": "-mx_Kf3qKJY",
+   "title": "Filter, Map, Reduce, CompactMap, FlatMap - Swift - iOS Dev Interview Questions"
+  },
+  {
+   "id": "LtlbB4-6k_U",
+   "title": "Swift - Class vs. Struct Explained"
+  },
+  {
+   "id": "Aou3bk8619A",
+   "title": "iOS Dev Career Advice"
+  },
+  {
+   "id": "_sfzAOfY8uc",
+   "title": "Don't Make These Mistakes in Your Pull Requests"
+  },
+  {
+   "id": "-FJhvUACSmY",
+   "title": "Here's the Key to Stay Ahead in Swift"
+  },
+  {
+   "id": "RmaCJyvSyUE",
+   "title": "Will ChatGPT Destroy iOS Developer Jobs? A Demonstration"
+  },
+  {
+   "id": "i2X2U5-97jw",
+   "title": "2023 App Store Pricing Update"
+  },
+  {
+   "id": "qiOKO8ta1n4",
+   "title": "Swift Delegate Protocol Pattern Tutorial 2023 | iOS Communication Patterns"
+  },
+  {
+   "id": "61binjztf-k",
+   "title": "Swift in 2023, Better Pull Requests, Paywalls, SwiftUI Animations & More"
+  },
+  {
+   "id": "4utsyqhnS4g",
+   "title": "SwiftUI Bar Chart with Customizations | Swift Charts"
+  },
+  {
+   "id": "oxp8Qqwr4AY",
+   "title": "NavigationStack - SwiftUI Programmatic Navigation - iOS 16"
+  },
+  {
+   "id": "BGTFykiTbqs",
+   "title": "Apple's SwiftUI Usage, Downsides of Swift Concurrency, Jr. Dev Advice, Dynamic Island & More!"
+  },
+  {
+   "id": "ND44vQ5iJyc",
+   "title": "Swift Closures Explained"
+  },
+  {
+   "id": "40imnmzsmxk",
+   "title": "31 Xcode Tips & Tricks - 2023"
+  },
+  {
+   "id": "_oTPT3gFUms",
+   "title": "Request App Ratings & Review - SwiftUI | iOS 16 | Xcode 14"
+  },
+  {
+   "id": "gw2k-sXTEyI",
+   "title": "SwiftUI Bottom Sheet - Resizable"
+  },
+  {
+   "id": "CwA1VWP0Ldw",
+   "title": "Swift Programming Tutorial | FULL COURSE | Absolute Beginner"
+  },
+  {
+   "id": "7TnnTkqM0eg",
+   "title": "Dynamic Island, Swift 5.7, HIG Updates, Apple Watch Ultra & More!"
+  },
+  {
+   "id": "iRQbqz3nmxo",
+   "title": "My HONEST opinion about UIKit vs SwiftUI in 2023"
+  },
+  {
+   "id": "MutCdOnVNl8",
+   "title": "Am I retaining my initial customers? | Startup Vlog #20"
+  },
+  {
+   "id": "_U6_l58Cv4E",
+   "title": "Intro to Programmatic UI - UIKit | Xcode 14"
+  },
+  {
+   "id": "jucm6e9M6LA",
+   "title": "How to Build a Widget in Swift with WidgetKit"
+  },
+  {
+   "id": "lMChA7N2_Eo",
+   "title": "iOS 16, Xcode Cloud, SwiftUI Layout, Jr. Dev Advice, Indie Dev & More!"
+  },
+  {
+   "id": "tYBZ8AVH0Q0",
+   "title": "What's New in Xcode 14"
+  },
+  {
+   "id": "Gp75Q4B6qic",
+   "title": "Swift Now Available for Visual Studio Code"
+  },
+  {
+   "id": "CH3MSlBy_EM",
+   "title": "Apps vs. Games - Which makes more money?"
+  },
+  {
+   "id": "gapc4wvqkKQ",
+   "title": "iOS Dev Happy Hour - The Best Way to Network"
+  },
+  {
+   "id": "DMn8J3kOPg4",
+   "title": "Swift on VS Code, App Revenue Passes Games, iOS Dev Job Interviews & More"
+  },
+  {
+   "id": "FUh71JduyeY",
+   "title": "App Subscriptions: Don't Sleep on RevenueCat | Startup Vlog #19"
+  },
+  {
+   "id": "e7OuerHs8PU",
+   "title": "SwiftUI Profile Animation | Matched Geometry Effect"
+  },
+  {
+   "id": "pkv-iTr3NVI",
+   "title": "You're using SwiftUI wrong"
+  },
+  {
+   "id": "yac52lmf_yc",
+   "title": "From Homeless to $130k+ iOS Dev | Self-Taught"
+  },
+  {
+   "id": "fyhYRkTIzoM",
+   "title": "Size Classes - SwiftUI - Adopt Landscape Example"
+  },
+  {
+   "id": "xzUcwG_7G-4",
+   "title": "Coding Bootcamps are NOT worth it! Unless…"
+  },
+  {
+   "id": "5I1ghMpU4rs",
+   "title": "New Way to Format Dates in Swift (5.5)"
+  },
+  {
+   "id": "ODnhMdBaLN8",
+   "title": "My Startup is Now a Side Project - How it Benefits | Startup Vlog #18"
+  },
+  {
+   "id": "9s6OX-CCBuI",
+   "title": "WWDC 2022 Highlights, Swift Charts, Xcode Origin, Digital Lounge Q&A, & More"
+  },
+  {
+   "id": "4lS8I0D69T0",
+   "title": "Motivation Disappeared | Startup Vlog #17"
+  },
+  {
+   "id": "JFJ9KlBj4IE",
+   "title": "I Lost My Cofounder to Apple | Startup Vlog #16"
+  },
+  {
+   "id": "kfxtu8gV1as",
+   "title": "Converting Mac and iPad App to iPhone in SwiftUI | Startup Vlog #15"
+  },
+  {
+   "id": "VJhc7bBV_o4",
+   "title": "SwiftUI = Easy iPhone & Mac App | Startup Vlog #14"
+  },
+  {
+   "id": "WE9dnwRXqfs",
+   "title": "Startup Talk & iOS Dev Career Advice w/ iOS Academy - Part 2"
+  },
+  {
+   "id": "mJVH0fizwdg",
+   "title": "Building the Mac App & Call w/ Apple | Startup Vlog #13"
+  },
+  {
+   "id": "kKCT8JTymX4",
+   "title": "Indie App Launch, App Store Rejections & Finances | Startup Vlog #12"
+  },
+  {
+   "id": "v3S748oc-mQ",
+   "title": "Test Flight Results & Google Verification | Startup Vlog #11"
+  },
+  {
+   "id": "7Fca4YiFdmU",
+   "title": "Who Needs Computer Science Fundamentals?"
+  },
+  {
+   "id": "q7MrBp22sFw",
+   "title": "How Much SwiftUI Does Apple Use Internally?"
+  },
+  {
+   "id": "HgC57v69AEs",
+   "title": "Software Dev Job Interview - Take Home Project Questions"
+  },
+  {
+   "id": "VgYpOxVfRyQ",
+   "title": "Indie App Product Progress & Beta | Startup Vlog #10"
+  },
+  {
+   "id": "SxU_rJdHPDc",
+   "title": "Beginner Developers Struggle With This"
+  },
+  {
+   "id": "kiL517LgRRY",
+   "title": "Indie App Co-Founder Update, Goals & Beta | Startup Vlog #9"
+  },
+  {
+   "id": "F6oAuaY28eA",
+   "title": "Swift Playgrounds 4, SwiftUI at Apple,  CS Fundamentals, Algorithms & More"
+  },
+  {
+   "id": "V1eoQvDgpuc",
+   "title": "SwiftUI Confirmation Dialog | iOS 15"
+  },
+  {
+   "id": "o8AMXHzZoDg",
+   "title": "SwiftUI New Button Styles | iOS 15"
+  },
+  {
+   "id": "1NeL145tKwk",
+   "title": "D.R.Y. is Misunderstood - Software Development"
+  },
+  {
+   "id": "ASDf6lL86pg",
+   "title": "Indie App Dogfooding & Task Tracking | Startup Vlog #8"
+  },
+  {
+   "id": "gebCCFdmL7w",
+   "title": "Hiring a Developer for Creator View | Startup Vlog #7"
+  },
+  {
+   "id": "IwhmKhEqrXI",
+   "title": "New App Store Marketing Tool - Assets for Social Media"
+  },
+  {
+   "id": "f6K2VaCR2X4",
+   "title": "Indie App - Getting 5000 Users - Growth Strategy | Startup Vlog #6"
+  },
+  {
+   "id": "KAaYU-5xZ-8",
+   "title": "The Future is Declarative - SwiftUI & Jetpack Compose"
+  },
+  {
+   "id": "PN5ltnVYEak",
+   "title": "App Icon Design Process | Startup Vlog #5"
+  },
+  {
+   "id": "3U1Gx4yODX4",
+   "title": "How to get Software Dev Job Interviews"
+  },
+  {
+   "id": "yznTBR1QzXw",
+   "title": "Indie App Walkthrough - What's Built | Startup Vlog #4"
+  },
+  {
+   "id": "RkkFI5yAkU0",
+   "title": "Swift Optionals - Is Force Unwrapping THAT Bad?"
+  },
+  {
+   "id": "4IWsC0wIcLY",
+   "title": "App MVP Design | Startup Vlog #3"
+  },
+  {
+   "id": "GYcs-f9S2Hc",
+   "title": "Software Engineering Is Not Magic"
+  },
+  {
+   "id": "w5yo4CvOfNk",
+   "title": "App Pricing & Monetization Strategy | Startup Vlog #3"
+  },
+  {
+   "id": "iPMG_EOntXM",
+   "title": "Creator View - Business App for YouTubers | Startup Vlog #1"
+  },
+  {
+   "id": "oeEt85uWPlA",
+   "title": "New UIKit Button System - iOS 15 - Code & Storyboard"
+  },
+  {
+   "id": "9GTS0uQfSw8",
+   "title": "iOS Dev: Should You Use Dependencies?"
+  },
+  {
+   "id": "orCmX88u2PI",
+   "title": "iOS Dev - Must Have Screen Size Resource"
+  },
+  {
+   "id": "dOVRpJff3P8",
+   "title": "Swift 5.5, UIKit Button System, DRY, Declarative Future & More!"
+  },
+  {
+   "id": "OwRQaaW6HdU",
+   "title": "Should You Learn SwiftUI or UIKit as of iOS 15?"
+  },
+  {
+   "id": "P6ZUiH1IZlQ",
+   "title": "SwiftUI LocationButton - Get User Location |  iOS 15"
+  },
+  {
+   "id": "Vl3LFxKGUl0",
+   "title": "3 iOS Developer Portfolios - Review & Critique | Sep 2021"
+  },
+  {
+   "id": "r_iw5mbKzOM",
+   "title": "iOS Dev Jobs, Force Unwrapping, SwiftUI, Google-Fu, It's Not Magic, and More"
+  },
+  {
+   "id": "hWMkimzIQoU",
+   "title": "How to Get User Location on a Map - Swift"
+  },
+  {
+   "id": "0OaHzM3F9es",
+   "title": "SwiftUI Page View | Onboard Flow"
+  },
+  {
+   "id": "s4j4oXC9dKA",
+   "title": "Software Developer Career Advice Sucks"
+  },
+  {
+   "id": "S3DVAGQX0kI",
+   "title": "SwiftUI Environment Values - What are they? Code Examples | Xcode 13"
+  },
+  {
+   "id": "1kX0vA6SXBo",
+   "title": "SwiftUI - Context Menu - Power User Shortcuts"
+  },
+  {
+   "id": "v8XK41iTTkM",
+   "title": "App Ideas for Your iOS Developer Portfolio"
+  },
+  {
+   "id": "N2RLA0TPucE",
+   "title": "SwiftUI Preview Tips & Tricks"
+  },
+  {
+   "id": "je_VlMQR8v0",
+   "title": "Future of Combine, Async/Await, Is SwiftUI Ready, iOS Dev Career Arc"
+  },
+  {
+   "id": "4xRm8MqMtG4",
+   "title": "SwiftUI Custom Path Drawing - Map Balloon Shape"
+  },
+  {
+   "id": "V-kSSjh1T74",
+   "title": "SwiftUI Photo Picker - Compressed Images, UIViewControllerRepresentable"
+  },
+  {
+   "id": "qSV0lnuGhwM",
+   "title": "SwiftUI Gradient Buttons | Linear, Radial & Angular Gradients"
+  },
+  {
+   "id": "mXGg-iwZNUA",
+   "title": "CloudKit - Intro, Pricing, Terms, & Definitions"
+  },
+  {
+   "id": "m8K4j3NV56U",
+   "title": "WIWO #14: Course Launch Earnings, Business Evolution, Zero To One, WWDC Thoughts & More"
+  },
+  {
+   "id": "Sy6ofNblWAA",
+   "title": "4 iOS Developer Portfolios - Review & Critique | Jun 2021"
+  },
+  {
+   "id": "5PJL4xxEXJE",
+   "title": "SwiftUI - Swipe Actions on List | iOS 15 & Xcode 13"
+  },
+  {
+   "id": "8OIyptQpzMQ",
+   "title": "What's New in Xcode 13"
+  },
+  {
+   "id": "FwGMU_Grnf8",
+   "title": "SwiftUI - Intro to MVVM | Example Refactor | Model View ViewModel"
+  },
+  {
+   "id": "WrrP5E1a5_0",
+   "title": "Dub Dub Grub Course Overview"
+  },
+  {
+   "id": "5jjsrRaUJLY",
+   "title": "WIWO #13: Job App & Take Home Project, Coding at Aluna, Sponsorships & Angel Investing."
+  },
+  {
+   "id": "m0QQ-hWs8fc",
+   "title": "SwiftUI Form w/ TextField, DatePicker, Toggle, Stepper, Link and Sections w/ Header"
+  },
+  {
+   "id": "qXiIf3bb1nE",
+   "title": "Xcode - Change Icon Color"
+  },
+  {
+   "id": "WtkJzS_x7Zs",
+   "title": "Xcode - Record Simulator Video & Animated GIF"
+  },
+  {
+   "id": "MCLiPW2ns2w",
+   "title": "SwiftUI Tic Tac Toe | Multiple AI Difficulties | MVVM | Portfolio Project"
+  },
+  {
+   "id": "k5rupivxnMA",
+   "title": "SwiftUI List with Custom Cell & Passing Data"
+  },
+  {
+   "id": "-o2BwAsvoH4",
+   "title": "Xcode - Visual Debugger - A Tool For Debugging UI"
+  },
+  {
+   "id": "Fk01P4WkIVw",
+   "title": "4 iOS App Websites & Portfolios - Review & Critique | Mar 2021"
+  },
+  {
+   "id": "sWhoAXjiOVA",
+   "title": "SwiftUI Navigation Bar Button | Toolbar | iOS 14 | Xcode 12.4"
+  },
+  {
+   "id": "-0o0q7BsldA",
+   "title": "Swift News Break, iOS Dev Survey, Daily iOS, Array Syntax, Tools and More."
+  },
+  {
+   "id": "oZx7TtEA6ow",
+   "title": "MUST-HAVE Skill For Software Developers"
+  },
+  {
+   "id": "kZcAOa7y3E0",
+   "title": "Job \"Hunt\" Verdict & MapKit/CloudKit Course Details | iOS Dev Discussions Podcast"
+  },
+  {
+   "id": "lgtB3WLEOYg",
+   "title": "SwiftUI - @Binding Property Wrapper Explained - Passing Data"
+  },
+  {
+   "id": "xi1nDxslyLc",
+   "title": "Swift News - System Fonts, UIMenu, Tutorials, Small Business Program, & More"
+  },
+  {
+   "id": "iqKmgs_0VPE",
+   "title": "SwiftUI Segmented Control Tutorial | iOS 14 | Xcode 12.4"
+  },
+  {
+   "id": "6o_fikwMuuQ",
+   "title": "Swift Performance, Combine, App Marketing, Building Apps"
+  },
+  {
+   "id": "Zx4D8M_pYYE",
+   "title": "Swift Algorithms, macOS, SwiftUI HUD, Indie Dev, Design Systems & More"
+  },
+  {
+   "id": "wF2Bze_fjn4",
+   "title": "WIWO #11 - Am I Getting a Job? Clubhouse & Consulting"
+  },
+  {
+   "id": "utalzva4nZY",
+   "title": "My 2021 iOS Developer Resume - Example and Review"
+  },
+  {
+   "id": "9nnoOwNuBD4",
+   "title": "Result Builders, SwiftUI Nav, First iOS Dev Job, ARKit & More"
+  },
+  {
+   "id": "qzc2vyXftVs",
+   "title": "5 iOS Developer Portfolios - Review & Critique | Feb 2021"
+  },
+  {
+   "id": "asH_SA5eE2I",
+   "title": "Swift 5.4, SwiftUI Actions, Blackbox, Be Humble, How to Get into FAANG & More"
+  },
+  {
+   "id": "YL43vieArF8",
+   "title": "SwiftUI Link - Open Website in Safari | iOS 14 | Xcode 12.4"
+  },
+  {
+   "id": "Kp9sHwp4wN8",
+   "title": "SwiftUI ColorPicker | iOS 14 | Xcode 12.4"
+  },
+  {
+   "id": "Q036u2OWOVQ",
+   "title": "SwiftUI - Redacted Tutorial | iOS 14 | Xcode 12.4"
+  },
+  {
+   "id": "dBnQqb9z7d0",
+   "title": "Swift's Purpose, Paul Hudson Tools, macOS Menus, Developer Opinions & More!"
+  },
+  {
+   "id": "48JYBb5yJ0s",
+   "title": "SwiftUI - @State Property Wrapper Explained"
+  },
+  {
+   "id": "tnNFoZ7CkP8",
+   "title": "SwiftUI - TabView Tutorial"
+  },
+  {
+   "id": "DLvdZtTAJrE",
+   "title": "TestFlight - How to Upload and Distribute Your App | App Store 2021"
+  },
+  {
+   "id": "2Jk58S6FiZw",
+   "title": "SwiftUI - Loading View | Activity Indicator"
+  },
+  {
+   "id": "V4gwzZ8_LK0",
+   "title": "SwiftUI Architecture, A11y, SwiftUI Charts, UICollectionView & More!"
+  },
+  {
+   "id": "owvTXmIIoMo",
+   "title": "My #1 Lesson from Steve Jobs: Demystification."
+  },
+  {
+   "id": "wZinqpiAEiA",
+   "title": "SwiftUI - DatePicker Tutorial"
+  },
+  {
+   "id": "isjE-KpmThg",
+   "title": "SwiftWASM, Photo Picker, Dates, Computed Properties, Mail & More"
+  },
+  {
+   "id": "bJo_-JQ3VL0",
+   "title": "Your Developer Priorities WILL Change"
+  },
+  {
+   "id": "Q-KSe63LDgI",
+   "title": "How To Show Xcode Build Times For Your App"
+  },
+  {
+   "id": "PzCAkaBc8Yw",
+   "title": "SwiftUI Previews, iOS Dev Survey, Instruments, ARKit and more"
+  },
+  {
+   "id": "-SHLN2ZLqpA",
+   "title": "MortyUI, CoreData, SwiftUI Views and Snake in SwiftUI"
+  },
+  {
+   "id": "IopCl8sOyFA",
+   "title": "SwiftUI Navigation - NavigationView & NavigationLink Tutorial"
+  },
+  {
+   "id": "ObALdJyiPgU",
+   "title": "Diversity in Swift, Apple Resources, Swift at Uber, Indie App Dev, ARKit & More"
+  },
+  {
+   "id": "ASVNIX-J-zE",
+   "title": "Best Apps of 2020, Indie App Acquisition, App Pricing, ColorKit and More"
+  },
+  {
+   "id": "HXoVSbwWUIk",
+   "title": "SwiftUI Basics Tutorial"
+  },
+  {
+   "id": "AilSmyZQ0ng",
+   "title": "App Store Updates, Property Wrappers, Protocols in SwiftUI, Managing URLs and More"
+  },
+  {
+   "id": "mUVRLNcQLVs",
+   "title": "iOS Dev Portfolio Showcase & Review - Nov 2020"
+  },
+  {
+   "id": "5Mg92jJI-MM",
+   "title": "Swift 5.4, Subscription Codes, Big Sur Icons, SF Symbols 2.1"
+  },
+  {
+   "id": "XkrRNQ2a-iY",
+   "title": "Apple Reduces App Store Commission to 15%"
+  },
+  {
+   "id": "nafybEMI-08",
+   "title": "Swift Concurrency, App Privacy, MVP, Catalyst, iPhone 12 & More"
+  },
+  {
+   "id": "uP3kG_JtsL0",
+   "title": "Course Overview: SwiftUI Fundamentals"
+  },
+  {
+   "id": "6qmJ0wuRxEU",
+   "title": "Remove an App From App Store Connect"
+  },
+  {
+   "id": "5gAD9amWkQw",
+   "title": "Xcode - How to Simulate a Poor Network Connection | Device & Simulator"
+  },
+  {
+   "id": "AvKackAvZ88",
+   "title": "Swift Algorithms, Test Flight, SwiftUI, Testing, Twitter Takes & More"
+  },
+  {
+   "id": "OmQpyaP5S9U",
+   "title": "Programmer Slang - 8 Common Terms Explained"
+  },
+  {
+   "id": "hu90G_M0vaA",
+   "title": "Xcode - Quickly Document Your Code | Swift"
+  },
+  {
+   "id": "bYDf1VEIjDE",
+   "title": "Marketing, Revenue, Subscriptions, 6 Figures, Indie Apps, Drawing Trees & More"
+  },
+  {
+   "id": "SogDn0QMMVw",
+   "title": "Software Developers:  Products Evolve"
+  },
+  {
+   "id": "RhuYDAEdGHE",
+   "title": "What's New in Swift 5.3"
+  },
+  {
+   "id": "NNamGQY71yE",
+   "title": "Swift on Windows, Transparent Apps, Launch, TikTok Algo, ARKit, & More!"
+  },
+  {
+   "id": "PBMLxVJ2elA",
+   "title": "iOS Dev Portfolio Showcase & Review - Sep 2020"
+  },
+  {
+   "id": "bBXdXmUobMw",
+   "title": "Swift - What is \"self\"?"
+  },
+  {
+   "id": "mtr1znKegLg",
+   "title": "Swift 5.3, WidgetSmith, SwiftUI Grids, Force Unwrap, Twitter, & More!"
+  },
+  {
+   "id": "DtAYJfe_9o0",
+   "title": "Swift - What are Variadic Parameters?"
+  },
+  {
+   "id": "XHrpcUqig3g",
+   "title": "Swift - What is the \"Final\" keyword?"
+  },
+  {
+   "id": "lvzcJ62JJmU",
+   "title": "Swift Tip - #warning & #error"
+  },
+  {
+   "id": "eBIqJ9lYNJM",
+   "title": "App Store Changes, Airport, Subscriptions, App Clips, SwiftUI & More"
+  },
+  {
+   "id": "GCQ2JtEuGsI",
+   "title": "Xcode Simulator Tips & Tricks | Xcode 12"
+  },
+  {
+   "id": "ni99ORqerys",
+   "title": "What is Xcode's info.plist? (Common Examples) | Xcode 12"
+  },
+  {
+   "id": "Xdh1jZVMvtc",
+   "title": "Catalyst, SwiftUI Redacted, Accessibility, Abstractions, Twitter Wisdom & More"
+  },
+  {
+   "id": "XWCFMgUMDTA",
+   "title": "SwiftUI Matched Geo & Data Flow, Code Quality, Type Inference, ARKit & More!"
+  },
+  {
+   "id": "ePzGOuvjlpI",
+   "title": "Swift Package Index - How To Use It"
+  },
+  {
+   "id": "3ox38NBBiNM",
+   "title": "Swift Structs - Value Type vs. Reference Type"
+  },
+  {
+   "id": "Zyk1cbr0134",
+   "title": "What's New in SFSymbols 2 | WWDC 2020"
+  },
+  {
+   "id": "jxotu3Ly01M",
+   "title": "WWDC 2020 Recap, SwiftUI, UIKit, App Store Review & More!"
+  },
+  {
+   "id": "xiS5gJOIQxI",
+   "title": "Swift Closures: @escaping Explained"
+  },
+  {
+   "id": "MMoJiZZWoCA",
+   "title": "What's New in Xcode 12 | WWDC 2020"
+  },
+  {
+   "id": "CNA4KeIhLEg",
+   "title": "WWDC 2020 Content, SwiftUI, AirBnB Calendar, Accessibility & More!"
+  },
+  {
+   "id": "Wa9Xj3iNhe0",
+   "title": "iOS Developer Portfolios June 2020 | Review & Showcase"
+  },
+  {
+   "id": "DMnX38G56N0",
+   "title": "WWDC 2020, SwiftUI Type, Indie Dev, Dependencies & More"
+  },
+  {
+   "id": "EhDML-fAqTM",
+   "title": "Swift For Beginners - Class & Inheritance Explained"
+  },
+  {
+   "id": "IPrYRyd2qQU",
+   "title": "Swift - Convenience Initializers"
+  },
+  {
+   "id": "8aPjqLqUEKA",
+   "title": "Swift - Result Type - Cleaner Network Calls"
+  },
+  {
+   "id": "qPWfOkHcKdU",
+   "title": "Xcode Breakpoints - Basic Debugging | Swift"
+  },
+  {
+   "id": "PGnvXUV7ALg",
+   "title": "Swift Dynamic Type, Stanford SwiftUI, Server Side Swift, Remote Work & More"
+  },
+  {
+   "id": "OqPX722084g",
+   "title": "WWDC 2020, Multiple Trailing Closures, MVC, SwiftUI, Selling an App & More"
+  },
+  {
+   "id": "CdBL7m1AeII",
+   "title": "Swift Enum - Basics, Raw Values, Associated Values, CaseIterable & More"
+  },
+  {
+   "id": "DnfNCBHo-qU",
+   "title": "iOS App Design Resources & Inspiration"
+  },
+  {
+   "id": "NB9CPQIGiXw",
+   "title": "Swift 5.3, macOS SwiftUI, iPadOS Cursor Support, GitHub Mobile & More"
+  },
+  {
+   "id": "gUGKMgJRxvQ",
+   "title": "Icons & Illustrations for your iOS App | Shape.so"
+  },
+  {
+   "id": "mWKYpRxjhJs",
+   "title": "Swift Basics - Array | Sort, Reverse, Shuffle"
+  },
+  {
+   "id": "2cazK9Cg2Nw",
+   "title": "Swift Basics - Variables and Constants"
+  },
+  {
+   "id": "CcORJhKMelQ",
+   "title": "Swift - Basic Types - String, Int, Bool, Float, Double"
+  },
+  {
+   "id": "4P_ZsOqELBo",
+   "title": "Swift Programming Language Introduction - A Brief History"
+  },
+  {
+   "id": "-8PquirNfEY",
+   "title": "Common Beginner iOS Dev Mistakes - From Sr. Developers"
+  },
+  {
+   "id": "QdnzU9jx9yw",
+   "title": "Beginners - Learn SwiftUI or UIKit?"
+  },
+  {
+   "id": "wKdVqo7wTA8",
+   "title": "iOS Developer Portfolios | Review & Showcase"
+  },
+  {
+   "id": "F_1d5KOwjTo",
+   "title": "Xcode - What is it? - How to Download & Customize"
+  },
+  {
+   "id": "6U_wgT5ekrc",
+   "title": "My iOS Developer Story - iOS Dev Launchpad Preview Part 2"
+  },
+  {
+   "id": "mr7pJB2eyK4",
+   "title": "IBOutlet, IBAction & IBOutletCollection Tutorial | Xcode 11 & Swift 5.1"
+  },
+  {
+   "id": "9tDD6FU1PZ8",
+   "title": "How to Customize Your Xcode Theme | Xcode 11"
+  },
+  {
+   "id": "H_sOFB4DiyU",
+   "title": "Indie Dev Apps - Fireworks, 30 Day Workout, Adaptivity, Book Track"
+  },
+  {
+   "id": "b_HFXergIz8",
+   "title": "Xcode - Check Spelling in Your Code While You Type | Swift"
+  },
+  {
+   "id": "JvynRYZEU-8",
+   "title": "Swift - How to use typealias | Swift 5.2, Xcode 11"
+  },
+  {
+   "id": "M6rn-dBdvtI",
+   "title": "Story of a Laid Off iOS Dev - How to prepare for bad times | Kilo Loco"
+  },
+  {
+   "id": "LbAd2FIlnos",
+   "title": "iOS Navigation Controller Tutorial | Xcode 11.4 Swift 5.2"
+  },
+  {
+   "id": "ESOZa40GUHk",
+   "title": "UISegmentedControl - Storyboard & Programmatic - Swift"
+  },
+  {
+   "id": "poQZDVKOZOE",
+   "title": "iOS Dev Launchpad - Beginner Course Overview"
+  },
+  {
+   "id": "ZeLEGJfpJ5M",
+   "title": "How to use a Switch Statement in Swift | Beginner"
+  },
+  {
+   "id": "zaVLXTsAtEc",
+   "title": "HUGE iOS Developer Survey Results"
+  },
+  {
+   "id": "xKoua1Mi6qE",
+   "title": "How to use Lazy in Swift"
+  },
+  {
+   "id": "d7ZqxvbiTyg",
+   "title": "UIViewController - Lifecycle | Swift | viewDidLoad"
+  },
+  {
+   "id": "ms3NBvob8mg",
+   "title": "How to use Random and Shuffle in Swift"
+  },
+  {
+   "id": "auDNAzGRA3k",
+   "title": "15 iOS Developer Portfolios | Review"
+  },
+  {
+   "id": "WXCCykDL5y0",
+   "title": "Hired's 2020 State of Software Engineers Review"
+  },
+  {
+   "id": "9Snw7polcBU",
+   "title": "Swift For Beginners - Loops (For, While, Repeat)"
+  },
+  {
+   "id": "S3LM6Izzeoo",
+   "title": "App Store Universal Purchases - iOS & macOS apps - 1 Purchase!"
+  },
+  {
+   "id": "xaLNqVdKDhE",
+   "title": "How to Improve Your App's Onboard Process"
+  },
+  {
+   "id": "CGnOe4bl8_A",
+   "title": "Swift Timer - Xcode 11, Swift 5.1"
+  },
+  {
+   "id": "llwqcyubnAc",
+   "title": "Xcode: IBOutlet Collections"
+  },
+  {
+   "id": "00o8oBjhdhk",
+   "title": "I'm an AVERAGE Software Developer"
+  },
+  {
+   "id": "s8JPQ8jLD00",
+   "title": "Xcode Simulator: Environment Override"
+  },
+  {
+   "id": "t2hzdT5zrA8",
+   "title": "Swift 6: Roadmap"
+  },
+  {
+   "id": "VI3HaNWTYVg",
+   "title": "Course Preview - Navigation Setup - UITabBarController & UINavigationController"
+  },
+  {
+   "id": "OfOcKVkQw5E",
+   "title": "Course Preview - UISceneDelegate & No Storyboard Project Setup"
+  },
+  {
+   "id": "COmuw5-XRkE",
+   "title": "Course Sample - The Project Brief"
+  },
+  {
+   "id": "MSIe2y6Fee8",
+   "title": "Take Home Project Course Launch"
+  },
+  {
+   "id": "cHwdvH3cStE",
+   "title": "Swift Tutorial - UIViewPropertyAnimator - Control Your Animations"
+  },
+  {
+   "id": "1oi5YVzxqsE",
+   "title": "Apple's Human Interface Guidelines Overview"
+  },
+  {
+   "id": "lqsi03z_7L8",
+   "title": "Here's your next app idea"
+  },
+  {
+   "id": "1WcY4aT6un8",
+   "title": "Developers SUCK at Marketing Themselves - Let's Fix It"
+  },
+  {
+   "id": "RalX2hpOEas",
+   "title": "iOS Developer Portfolio Reviews"
+  },
+  {
+   "id": "RFGEzkBa834",
+   "title": "Swift Access Control Explained"
+  },
+  {
+   "id": "LVSNV8ulrCg",
+   "title": "5 Remote Developer Mistakes"
+  },
+  {
+   "id": "fD2s4yOkEl8",
+   "title": "Swift - viewDidLoad() Best Practice"
+  },
+  {
+   "id": "jZ_BzV0DA58",
+   "title": "37 Tips for Jr. Software Developers"
+  },
+  {
+   "id": "i7o76KejmQE",
+   "title": "How I learned SwiftUI - Design+Code Course Review"
+  },
+  {
+   "id": "B5-1_aR20rE",
+   "title": "How to Use Child ViewControllers (Container Views) in Swift - Programmatic & Storyboard"
+  },
+  {
+   "id": "_DADWRicrGU",
+   "title": "UIStackView Tutorial - Programmatic - Xcode 11"
+  },
+  {
+   "id": "s2E5hVxQAZQ",
+   "title": "Swift - Static Properties & Methods Explained"
+  },
+  {
+   "id": "bXHinfFMkFw",
+   "title": "UITableView Tutorial w/ Custom Cells - Programmatic - Swift 5 - Xcode 11"
+  },
+  {
+   "id": "Htn4h51BQsk",
+   "title": "Xcode 11 - Create a New Project - No Storyboard"
+  },
+  {
+   "id": "foHRoQvaZkU",
+   "title": "Mobile App Landing Page Reviews - Viewer Submitted"
+  },
+  {
+   "id": "Y3CI1gkGR6o",
+   "title": "How Much Do Software Developers Make? Hired's State of Salaries Report 2019"
+  },
+  {
+   "id": "Y70Qi3lo6MU",
+   "title": "My iOS Developer Contract Rate - 2019 - Freelance"
+  },
+  {
+   "id": "6cL3jxbvGFA",
+   "title": "iOS Developer Portfolio Reviews"
+  },
+  {
+   "id": "XHG6OBw_ig4",
+   "title": "5 Soft Skills for Software Engineers - ft. Mayuko"
+  },
+  {
+   "id": "BWVL4bTfRz8",
+   "title": "My Work Project - Monitor Your Asthma with Aluna"
+  },
+  {
+   "id": "thXQGkxi_h4",
+   "title": "First Week on the Job as a Jr. iOS Developer"
+  },
+  {
+   "id": "rHO5aKcq-2c",
+   "title": "iOS Dev London VLOG - My First Speaking Gig"
+  },
+  {
+   "id": "2yIXXwfcbWk",
+   "title": "iOS Dev Origin Story - Paul Hudson - Hacking with Swift"
+  },
+  {
+   "id": "EgpKu1tAVMY",
+   "title": "9 Traps to AVOID When Learning to Code"
+  },
+  {
+   "id": "scTO8N6wc8A",
+   "title": "Swift Tutorial - Custom UIButton Class (Reusable)"
+  },
+  {
+   "id": "2pQ04FriBxs",
+   "title": "Programmer Confidence - How to Improve"
+  },
+  {
+   "id": "T1v_E0yuVBw",
+   "title": "New Software Developers always FAIL at this"
+  },
+  {
+   "id": "J-pn5V2jcfo",
+   "title": "How To Send an Email From Your App - Swift"
+  },
+  {
+   "id": "sUhq1vIrRbo",
+   "title": "How to Save Data with UserDefaults - Swift"
+  },
+  {
+   "id": "9FO0lWUsTpk",
+   "title": "Insights on how to become an iOS Developer - My first book!"
+  },
+  {
+   "id": "m_0_XQEfrGQ",
+   "title": "Beginner Auto Layout & Constraints - Swift 4.2 - Xcode 10"
+  },
+  {
+   "id": "N18hhBhfirU",
+   "title": "How a Fresh iOS Dev got a raise to $100k"
+  },
+  {
+   "id": "RMVtS6DqFJc",
+   "title": "Xcode Playgrounds - Prototyping UI - Swift"
+  },
+  {
+   "id": "5Q3G6UhOAfs",
+   "title": "iOS Development Podcasts"
+  },
+  {
+   "id": "n7NNAdaIDKQ",
+   "title": "Swift UITabBar Tutorial & Basic Customization - Xcode 10"
+  },
+  {
+   "id": "u8PDgXDhsu0",
+   "title": "How to get your first iOS Developer job - Herman Kayy's story"
+  },
+  {
+   "id": "5pv_KHpG71w",
+   "title": "How to Show App Version - Swift 4.2 - Xcode 10"
+  },
+  {
+   "id": "vUvf_dlr6IU",
+   "title": "MapKit Tutorial - Get Directions & Show on Map - Swift 4.2"
+  },
+  {
+   "id": "2wxE8byc2FQ",
+   "title": "MapKit Tutorial - Reverse Geocode - Get Address - Swift 4.2"
+  },
+  {
+   "id": "WPpaAy73nJc",
+   "title": "How to Show User's Location - Swift 4.2 - Xcode 10"
+  },
+  {
+   "id": "K6JfE8XD9p0",
+   "title": "Storyboard vs. Code - iOS Development - Swift"
+  },
+  {
+   "id": "hIQMQmzitfU",
+   "title": "Xcode 10 - Interface Builder / Code Hybrid Approach for User Interface"
+  },
+  {
+   "id": "ZBS2uRP6_2U",
+   "title": "UIAlertController Refactor - Xcode 10 - Swift 4.2"
+  },
+  {
+   "id": "C4f7R2gUO8E",
+   "title": "How to Import Custom Font - Xcode 10 - Swift 4.2"
+  },
+  {
+   "id": "htQATVxlLng",
+   "title": "Refactor Your Storyboard - Interface Builder - Xcode 10"
+  },
+  {
+   "id": "ULd2v4mHyQ4",
+   "title": "Unwind Segue & Passing Data Between Views - Swift Tutorial - Swift 4, Xcode 9"
+  },
+  {
+   "id": "QH79tyspt-w",
+   "title": "Build Your Developer Network Using Twitter - 5 Tips"
+  },
+  {
+   "id": "6_I3Gg_XHsk",
+   "title": "No, Swift is NOT dying... Response to Stefan Mischook - Google Flutter vs. Swift"
+  },
+  {
+   "id": "LnKwbzxRFMk",
+   "title": "iOS Dev Contracting - How Much $$$ I Made in 2017"
+  },
+  {
+   "id": "8XqzE-7e1qk",
+   "title": "Swift - What to Ask Them? - iOS Interview Questions"
+  },
+  {
+   "id": "WFSqVKozC88",
+   "title": "Are you too old to learn code?"
+  },
+  {
+   "id": "Nfzy1qgxSAg",
+   "title": "Swift - Bounds vs. Frame - iOS Interview Question"
+  },
+  {
+   "id": "0eWv1mAewx4",
+   "title": "Most Common Element in Array - Swift Tutorial - iOS Interview Coding Challenge"
+  },
+  {
+   "id": "Lrc-MX8WgNc",
+   "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series"
+  },
+  {
+   "id": "kUBpgFmVdNU",
+   "title": "Swift Tutorial - Haptic Feedback - Taptic Engine"
+  },
+  {
+   "id": "iTcq6L-PaDQ",
+   "title": "iOS Concurrency and Threading - iOS Interview Question - Swift"
+  },
+  {
+   "id": "MuMZZtQpB6Y",
+   "title": "How to Install a CocoaPod - Xcode 9 - Swift 4"
+  },
+  {
+   "id": "oe8kJYLR-qQ",
+   "title": "Swift UIImageView Animation Tutorial"
+  },
+  {
+   "id": "Y0qCWQDRWDw",
+   "title": "How I Went From ZERO to iOS Dev in 7 Months"
+  },
+  {
+   "id": "DfO089qWEE8",
+   "title": "Merge Sort - Swift Tutorial - iOS Interview Coding Challenge"
+  },
+  {
+   "id": "MC4mDQ7UqEE",
+   "title": "Swift UITableView - Insert and Delete Rows - Tutorial"
+  },
+  {
+   "id": "cUmGngurKXo",
+   "title": "Two-Sum Problem - Swift Tutorial - iOS Interview Coding Challenge"
+  },
+  {
+   "id": "CkYDljd_7M8",
+   "title": "Binary Search - Swift Tutorial - iOS Interview Coding Challenge"
+  },
+  {
+   "id": "T6TWPQIZs4c",
+   "title": "My iOS Contractor Rate - 2017 - Swift Freelance"
+  },
+  {
+   "id": "ZL8BFK8bVjk",
+   "title": "Swift Optionals Tutorial - Unwrapping - Guard, If Let, Chaining, Force"
+  },
+  {
+   "id": "OujkoTKEVj8",
+   "title": "Filter, Map, Reduce - Swift - iOS Interview Questions"
+  },
+  {
+   "id": "vsPJP64AEIc",
+   "title": "My iOS Developer Resume - Example and Review"
+  },
+  {
+   "id": "srqiDnLEocA",
+   "title": "Swift Observer & Notification Pattern Tutorial - iOS Communication Patterns Part 2"
+  },
+  {
+   "id": "DBWu6TnhLeY",
+   "title": "Swift Delegate Protocol Pattern Tutorial - iOS Communication Patterns Part 1"
+  },
+  {
+   "id": "FtO5QT2D_H8",
+   "title": "Swift UITableView Tutorial with Custom Cells - Beginner Series"
+  },
+  {
+   "id": "ObIxxHy8yY8",
+   "title": "Swift Classes and Structures Explained"
+  },
+  {
+   "id": "rnJxpuPyLNA",
+   "title": "Swift Gesture Recognizer Tutorial - Pan"
+  },
+  {
+   "id": "aiXvvL1wNUc",
+   "title": "Swift - Build Your First App in 30 minutes - For Beginners - Music Player"
+  },
+  {
+   "id": "VcoZJ88d-vM",
+   "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions"
+  },
+  {
+   "id": "56ZO6Gg68tw",
+   "title": "iOS Interview Questions and Answers 2017 - Swift  - Series Overview"
+  }
+ ],
+ "shorts": [
+  {
+   "id": "L6UUtedz22g",
+   "title": "Indie Dev Tip - Lifestyle Fit #iosdev #indiedev #iosdeveloper",
+   "short": true
+  },
+  {
+   "id": "8GEMO-uL1TM",
+   "title": "Indie Dev Tip - Minimize Complexity.",
+   "short": true
+  },
+  {
+   "id": "HgVa5zTAkCQ",
+   "title": "iOS Dev AI Superpowers",
+   "short": true
+  },
+  {
+   "id": "Zx8_eXqef_g",
+   "title": "Indie Dev - You ned a \"For the love of the game\" app",
+   "short": true
+  },
+  {
+   "id": "Y5PtaOxbgwk",
+   "title": "Vibe coding is killing your critical thinking skills",
+   "short": true
+  },
+  {
+   "id": "cKlyX7dX1QI",
+   "title": "You MUST implement this in your app",
+   "short": true
+  },
+  {
+   "id": "AS2y8MVHjtA",
+   "title": "App Store Boost is GONE?",
+   "short": true
+  },
+  {
+   "id": "sHfNxIGG1mE",
+   "title": "App Store Screenshots are a HUGE deal - 2025 Algorithm Change",
+   "short": true
+  },
+  {
+   "id": "ZLLvcg80m4U",
+   "title": "App Icons are Changing in iOS 26 - How to Make Them",
+   "short": true
+  },
+  {
+   "id": "wOLmiad7SvA",
+   "title": "Concentricity is a Huge deal when building for iOS 26",
+   "short": true
+  },
+  {
+   "id": "UZSHCjA8Mes",
+   "title": "How to Use Color in Liquid Glass",
+   "short": true
+  },
+  {
+   "id": "CJjKWnIRnHY",
+   "title": "What is Liquid Glass?? (For developers) #swiftui #iosdevelopment",
+   "short": true
+  },
+  {
+   "id": "fu6fC1bLFz4",
+   "title": "Xcode Tip - Color Themes #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "P9l-zoUT680",
+   "title": "Xcode Tip - Quick Code Documentation #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "-OoZwir_YdM",
+   "title": "Xcode Tip - Multiple Editor Layout #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "fKiO1qmMS40",
+   "title": "Xcode Tip - Show Build Times #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "sJjK-bBn7gM",
+   "title": "Xcode Tip - No More Export Exempt Pop Up #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "4sHSnQm-xs0",
+   "title": "Xcode Tip - Single App Icon #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "g1_DQevtQys",
+   "title": "Xcode Tip - FAST Navigation #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "4979fXHIkLk",
+   "title": "Xcode Tip - 3D View Debugging #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "H1Mllbjv9ZA",
+   "title": "Xcode Tip - Quickly Change Text Size #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "2i6mjbkDNWc",
+   "title": "Xcode Tip - Save Time - Preview Variants #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "XVYAmWAvzZs",
+   "title": "Xcode Tip - Fast Variable Name Change #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "hEH6yhiNco4",
+   "title": "Xcode Tip - #warning & #error",
+   "short": true
+  },
+  {
+   "id": "2JK_geRky3I",
+   "title": "Xcode Tip - Show Mini Map #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "lgBh1sg3ZRw",
+   "title": "Xcode Tip - Messed Up Curly Brace - Fix it! #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "Cdtbr6AZ7Mk",
+   "title": "Xcode Tip - Wirelessly Run an App on Device #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "X6TfZHuQOWA",
+   "title": "Xcode Tip - GIFs & Videos from Simulator #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "OZJ7te5KGNY",
+   "title": "Xcode Tip - FAST Renaming #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "EEZh9mulcWc",
+   "title": "Xcode Tip - Fast Parameter Completion #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "wpeCIAdlCpM",
+   "title": "Xcode Tip - Multi-line Cursor Editing #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "KvQZC1OGV4s",
+   "title": "Xcode Tip - Save Space with Code Folding #swift #iosdeveloper #xcode",
+   "short": true
+  },
+  {
+   "id": "7W03ncVgenY",
+   "title": "Xcode Tip - Fix Spelling Errors in Your Code #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "VEEv3cBUfTQ",
+   "title": "Xcode Tip - Slow Animations on Simulator #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "6mWo5XHkEWo",
+   "title": "Xcode Tip - Vertical Code Selection #iosdeveloper #swift #xcode",
+   "short": true
+  },
+  {
+   "id": "7GVHe0mUE3M",
+   "title": "Software Dev Tips - It Gets Easier... #shorts",
+   "short": true
+  },
+  {
+   "id": "0by2kKqFpWE",
+   "title": "Software Dev Tips - Dev Bootcamp Worth It? #shorts",
+   "short": true
+  },
+  {
+   "id": "AxQNaVCYP2I",
+   "title": "Software Dev Tips - Data Structures & Algorithms Prep #shorts",
+   "short": true
+  },
+  {
+   "id": "5-Yy-zu2Uso",
+   "title": "Software Dev Tips - How To Get Contracts #shorts",
+   "short": true
+  },
+  {
+   "id": "amtb3FBxw6g",
+   "title": "Software Dev Tips - Complete Immersion #shorts",
+   "short": true
+  },
+  {
+   "id": "hr8N3HCaEQk",
+   "title": "Software Dev Tips - How To Get Job Interviews #shorts",
+   "short": true
+  },
+  {
+   "id": "QT4IRT8WaeY",
+   "title": "Software Dev Tips - Does Language Matter? #shorts",
+   "short": true
+  },
+  {
+   "id": "HBh7v2FvvoQ",
+   "title": "Software Dev Tips - 90/90 Rule #shorts",
+   "short": true
+  },
+  {
+   "id": "33CFb2i4kaM",
+   "title": "Software Dev Tips - Stay Patient... #shorts",
+   "short": true
+  },
+  {
+   "id": "wd3IO7PfqwY",
+   "title": "Software Dev Tips - ▶️  Should You Create Content? #shorts",
+   "short": true
+  },
+  {
+   "id": "nQTsBGDFBw4",
+   "title": "Software Dev Tips - Too Old To Code? #shorts",
+   "short": true
+  },
+  {
+   "id": "vrGnBLlkZUA",
+   "title": "Software Dev Tips - Reputation #shorts",
+   "short": true
+  },
+  {
+   "id": "6ReszMC9Yqc",
+   "title": "Software Dev Tips - Do You Care? #shorts",
+   "short": true
+  },
+  {
+   "id": "ibRAIW_axM8",
+   "title": "Software Dev Tips - Communication Skills #shorts",
+   "short": true
+  },
+  {
+   "id": "iTpnxpUbl7g",
+   "title": "Software Dev Tips - 💪 Show Initiative #shorts",
+   "short": true
+  },
+  {
+   "id": "GHzIR7x-Alg",
+   "title": "Software Dev Tips - Beginner Freelancer #shorts",
+   "short": true
+  },
+  {
+   "id": "HlKsYo8rt7M",
+   "title": "Software Dev Tips - 🌉. Live in a Tech Hub? #shorts",
+   "short": true
+  },
+  {
+   "id": "Q1o4SG_fNiI",
+   "title": "Software Dev Tips - 💰 Take Less Money #shorts",
+   "short": true
+  },
+  {
+   "id": "L26-FltXqO4",
+   "title": "Software Dev Tips - 1st Job Offer - How to Handle I#shorts",
+   "short": true
+  },
+  {
+   "id": "JzVEJChaNhM",
+   "title": "Software Dev Tips - Design Skills? #shorts",
+   "short": true
+  },
+  {
+   "id": "pEe3IRTtd2M",
+   "title": "Software Dev Tips - Pretty README #shorts",
+   "short": true
+  },
+  {
+   "id": "1Dr77reCIP4",
+   "title": "Software Dev Tips - Create Small Projects #shorts",
+   "short": true
+  },
+  {
+   "id": "NE9CZjeX0s4",
+   "title": "Software Dev Tips - Attend Local Meetups #shorts",
+   "short": true
+  },
+  {
+   "id": "mD2Dy9rwi60",
+   "title": "Software Dev Tips - Be Active on Twitter #shorts",
+   "short": true
+  },
+  {
+   "id": "6VxfMGRj-Iw",
+   "title": "Software Dev Tips - Find a Mentor #shorts",
+   "short": true
+  },
+  {
+   "id": "6SpqCT6Vv8w",
+   "title": "Software Dev Tips - Jr, Sr, or Mid Level Dev? #shorts",
+   "short": true
+  },
+  {
+   "id": "zzYq3AfZcvY",
+   "title": "Software Dev Tips - Learn How Much to Build #shorts",
+   "short": true
+  },
+  {
+   "id": "pHlky_as1C8",
+   "title": "Software Dev Tips - 📄  Learn to Read Documentation #shorts",
+   "short": true
+  },
+  {
+   "id": "D5q3-73y64E",
+   "title": "Software Dev Tips - ☠️  Avoid the Tutorial Trap",
+   "short": true
+  },
+  {
+   "id": "z69SaN3-Njo",
+   "title": "Software Dev Tips - 🔑  Repetition is Key  #shorts",
+   "short": true
+  },
+  {
+   "id": "R7PL6r0pffs",
+   "title": "Software Dev Tips - Learn How To Learn #shorts",
+   "short": true
+  },
+  {
+   "id": "VQYp-_LoZao",
+   "title": "Software Dev Tips - Don’t Memorize #shorts",
+   "short": true
+  }
+ ],
+ "streams": [
+  {
+   "id": "39gGP_6ZGRc",
+   "title": "Sean Allen Live - WWDC Wishes, Dub Dub Grub, Portfolio Projects & More"
+  },
+  {
+   "id": "v0pds7K0jBg",
+   "title": "iOS Dev Q&A - May 2020"
+  },
+  {
+   "id": "kKzVKUBy9fo",
+   "title": "May Live Stream - iOS Dev Discussion & Q&A"
+  },
+  {
+   "id": "JJuSWEOz1NQ",
+   "title": "April Live Stream - iOS Dev Discussion & Q&A"
+  },
+  {
+   "id": "wuOsCxhyniU",
+   "title": "March Live Stream - iOS Dev Discussion & Q&A"
+  },
+  {
+   "id": "gUAuj-faztk",
+   "title": "February Live Stream - iOS Dev Discussion & Q&A"
+  },
+  {
+   "id": "2VHOOcJOqBw",
+   "title": "January Live Stream - iOS Dev Discussion & Q&A"
+  },
+  {
+   "id": "0Pr0xZiX5sc",
+   "title": "December Live Stream - iOS Dev Discussion & Q&A"
+  },
+  {
+   "id": "4ZcBjs7Oars",
+   "title": "November Live Stream - iOS Dev Updates & Q&A"
+  },
+  {
+   "id": "XqafrkhbmnQ",
+   "title": "October Live Stream - iOS Dev Updates & Q&A"
+  },
+  {
+   "id": "ML2DxcNvwzs",
+   "title": "iOS Dev Quality of Life vs. Compensation & Q&A"
+  },
+  {
+   "id": "D1Ak4Y9_UcQ",
+   "title": "iOS Developer Discussion & Q&A"
+  },
+  {
+   "id": "LeehmNTIlxI",
+   "title": "iOS Full-Time vs. Contracting / Freelancing - Q&A"
+  },
+  {
+   "id": "fSEtreliQjc",
+   "title": "LIVE: My New Full-Time Job Details and Q&A"
+  },
+  {
+   "id": "Dwvo1T--9SY",
+   "title": "LIVE: iOS Contracting Issues - Finding and Prepping for Job Interviews"
+  },
+  {
+   "id": "Zj6EOJ3W1TE",
+   "title": "LIVE: WWDC Thoughts w/ Paul Hudson of Hacking With Swift - Q&A"
+  },
+  {
+   "id": "Km9UD4MwMTU",
+   "title": "LIVE: WWDC Plans, Early Concept Struggles, App Store - Q&A"
+  },
+  {
+   "id": "V-xRfVw6v70",
+   "title": "LIVE: Advice to iOS devs early in their career - Q&A"
+  },
+  {
+   "id": "xwhqvx5n8Ik",
+   "title": "LIVE: Getting too tricky with your iOS app? - Q&A"
+  },
+  {
+   "id": "u09J7WeFmUU",
+   "title": "LIVE: iOS Contracting & Freelancing - Types of Contracts, Q&A"
+  },
+  {
+   "id": "_hacUzOcpbw",
+   "title": "LIVE: iOS Interviews - Take Home Projects, Q&A"
+  },
+  {
+   "id": "cVHt0yWkuqs",
+   "title": "LIVE: Contracting, Job Hunt, and YouTube Updates Q&A"
+  },
+  {
+   "id": "rVt6ng7s5ss",
+   "title": "LIVE: The Last Live Stream... For Now... Contracting update & Q&A"
+  },
+  {
+   "id": "2mM9jDjeWP8",
+   "title": "LIVE: iOS Dev Portfolios & Resumes, Updates, Q&A"
+  },
+  {
+   "id": "FlFlKZkiEYM",
+   "title": "LIVE: Giveaway, Interview Prep Plans, iMac Pro, Q&A"
+  },
+  {
+   "id": "Lwa4bEyTwV8",
+   "title": "LIVE: Back in SF, iOS Contracting Updates, Interview Prep, Q&A"
+  },
+  {
+   "id": "lYE7TDJCwyQ",
+   "title": "LIVE: Taking breaks, Advanced Swift Book, Sphero R2-D2, and Q&A"
+  },
+  {
+   "id": "u_qb1fR2ZCM",
+   "title": "LIVE: Project updates, Where have I been, and Q&A"
+  },
+  {
+   "id": "3gPcaUfCUgE",
+   "title": "LIVE: Subscriber Code Review and Q&A"
+  },
+  {
+   "id": "L5E2h2YkLbw",
+   "title": "LIVE: Find Your Work Flow Groove as iOS Dev"
+  },
+  {
+   "id": "VsPKtwlVcCk",
+   "title": "LIVE: Design Research as an iOS Developer"
+  },
+  {
+   "id": "uR86GER9FmA",
+   "title": "LIVE: Live coding. What could go wrong? Building a UITableView w/ Custom Cells & Delegation"
+  },
+  {
+   "id": "8u8SkK-rjOE",
+   "title": "LIVE: Stream is back! Updates, iPhone X, and Q&A"
+  },
+  {
+   "id": "Si-y9V6AUks",
+   "title": "LIVE: Live Stream Break, Contracting Update, Q&A"
+  },
+  {
+   "id": "aQrEWVSGh6o",
+   "title": "LIVE: iOS Jobs - Startup vs. Big Company vs. Contracting"
+  },
+  {
+   "id": "Ui1wi8Qy8qI",
+   "title": "LIVE: iOS Job Interview Process"
+  },
+  {
+   "id": "mHwu7rKr4vI",
+   "title": "LIVE: iOS Sub-Contracting and Q&A"
+  },
+  {
+   "id": "iFfqKv_spH8",
+   "title": "LIVE: How I Get iOS Contracts and Q&A"
+  },
+  {
+   "id": "5y2UUtxUapc",
+   "title": "LIVE: Where have I been? iOS Contracting and Q&A"
+  },
+  {
+   "id": "S6_zO6lmcmU",
+   "title": "Collaboration and contracting update"
+  },
+  {
+   "id": "kIFtyKmB1T4",
+   "title": "LIVE: iOS Contracting Time Management & Q & A on iOS Interviews"
+  },
+  {
+   "id": "77aNh6Cf7lU",
+   "title": "LIVE: iOS Dev Online Presence - Why it's Important. Q&A"
+  },
+  {
+   "id": "lSrcsxpy3AI",
+   "title": "LIVE: iOS Contracting, Mentoring, ARKit, and Q & A"
+  },
+  {
+   "id": "LfM03WmV4qw",
+   "title": "LIVE: iPhone is 10 -  2 special iPhones, Mentorship, Q & A"
+  },
+  {
+   "id": "rocuQ-_wxI0",
+   "title": "LIVE: Swift or React Native - iOS Job Update, Q&A"
+  },
+  {
+   "id": "eLWCWEPzwUA",
+   "title": "LIVE: Learning Swift, iOS Job Update, Q&A"
+  },
+  {
+   "id": "KdY9ygPZjj0",
+   "title": "LIVE: WWDC, ARKit, Planet of the Apps, Q&A"
+  }
+ ]
+}

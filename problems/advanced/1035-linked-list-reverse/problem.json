@@ -31,5 +31,44 @@
     "Walk the list keeping `previous` and `current`.",
     "Save `current.next`, point `current.next` at `previous`, then advance both.",
     "The new head is the last `previous`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Class-based nodes with `var next: ListNode?`: reversing relinks references in place, exactly as in JS. ARC frees nodes as soon as nothing points to them, so there's no GC pause.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The JS iterative reverse is identical. What does ARC do to the old nodes as you relink them?"
+    },
+    {
+      "kind": "edge",
+      "q": "A 1 million-node list: can deallocation recurse and overflow the stack? Why?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Class nodes (in-place reverse) vs an indirect enum list (build a new reversed list): which is idiomatic Swift?"
+    },
+    {
+      "kind": "practice",
+      "q": "Linked lists are rare in Swift apps. What do you use instead, and why (cache locality)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "What's the best way to prepare for a Swift interview – Sean Allen on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=ys9M_iNqD6s",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

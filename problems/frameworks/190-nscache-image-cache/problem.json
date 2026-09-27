@@ -14,6 +14,14 @@
     {
       "title": "NSCache",
       "url": "https://developer.apple.com/documentation/foundation/nscache"
+    },
+    {
+      "title": "UserDefaults",
+      "url": "https://developer.apple.com/documentation/foundation/userdefaults"
+    },
+    {
+      "title": "FileManager",
+      "url": "https://developer.apple.com/documentation/foundation/filemanager"
     }
   ],
   "signature": {
@@ -37,5 +45,35 @@
     "`NSCache` needs class keys and values — bridge `String` to `NSString`.",
     "Wrap it so callers use plain `String`s.",
     "Use `setObject(_:forKey:)`, `object(forKey:)`, `removeObject(forKey:)`, `removeAllObjects()`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`NSCache` is an in-memory cache that **evicts automatically** under memory pressure. There's no JS equivalent (a `Map` never evicts), and it's thread-safe too.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS `Map` cache grows forever. What does `NSCache` do when iOS warns about memory?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must keys be `NSString`/objects, not Swift `String`? What does that say about its Objective-C roots?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`NSCache` vs a dictionary + manual LRU vs `URLCache`: which for decoded images, which for HTTP responses?"
+    },
+    {
+      "kind": "practice",
+      "q": "`countLimit` and `totalCostLimit`: how would you set the cost for an image?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download and save images using FileManager and NSCache | Continued Learning #28",
+      "url": "https://www.youtube.com/watch?v=fmVuOu8XOvQ&t=28s",
+      "channel": "Swiftful Thinking",
+      "start": 28,
+      "moment": "we're going to take that data and obviously put it on the screen but we're also going to practice"
+    }
+  ],
+  "articles": []
 }

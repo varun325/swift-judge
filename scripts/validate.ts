@@ -8,7 +8,7 @@
  *
  *   npm run validate                 # everything
  *   npm run validate -- closures     # ids/paths containing "closures"
- *   npm run validate -- --content-only  # skip impact / jsBridge / reference checks (authoring)
+ *   npm run validate -- --content-only  # skip reference checks (authoring); learning content is always required
  */
 import { existsSync, mkdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
@@ -35,8 +35,13 @@ async function check(p: Problem): Promise<string[]> {
   const { mode } = p.meta
   if (p.tests.length === 0) issues.push('no tests')
   if (p.meta.hints.length !== 3) issues.push(`expected 3 hints, found ${p.meta.hints.length}`)
-  if (!contentOnly && !p.meta.impact) issues.push('missing impact (core | edge)')
-  if (!contentOnly && !p.meta.jsBridge?.trim()) issues.push('missing jsBridge (JavaScript comparison)')
+  // Learning content every problem must carry (see authoring/enrichment/apply.py).
+  if (!p.meta.impact) issues.push('missing impact (core | edge)')
+  if (!p.meta.jsBridge?.trim()) issues.push('missing jsBridge (JavaScript comparison)')
+  const compass = p.meta.compass ?? []
+  if (compass.length < 3) issues.push(`Confusion Compass needs at least 3 questions, found ${compass.length}`)
+  if (!compass.some((c) => c.kind === 'js')) issues.push('Confusion Compass needs a JavaScript comparison question')
+  if (new Set(compass.map((c) => c.q)).size !== compass.length) issues.push('Confusion Compass has duplicate questions')
   if (!contentOnly && p.meta.videos.length + p.meta.articles.length + p.meta.docs.filter((d) => d.url).length === 0) issues.push('no external references (Apple docs, videos or articles)')
   if (mode === 'function' && !p.meta.signature && !p.harness) issues.push('function mode needs signature or harness.swift')
   if (mode === 'diagnostic' && p.tests.some((t) => t.severity !== 'none' && !t.pattern)) issues.push('diagnostic test without pattern')

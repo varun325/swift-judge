@@ -13,6 +13,18 @@
     {
       "title": "Swift Charts",
       "url": "https://developer.apple.com/documentation/charts"
+    },
+    {
+      "title": "WidgetKit",
+      "url": "https://developer.apple.com/documentation/widgetkit"
+    },
+    {
+      "title": "StoreKit",
+      "url": "https://developer.apple.com/documentation/storekit"
+    },
+    {
+      "title": "User Notifications",
+      "url": "https://developer.apple.com/documentation/usernotifications"
     }
   ],
   "signature": {
@@ -37,5 +49,35 @@
     "Bucket index = `floor(value / width)`.",
     "Count per bucket, then emit every bucket from min to max.",
     "Format whole-number bounds without `.0`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift Charts draws what you give it, so binning values into histogram buckets is your job, like preparing data for Chart.js or D3's `d3.bin()`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`d3.bin().thresholds(...)` vs hand-rolled binning: what edge conventions does D3 use (half-open)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Negative values and a value exactly on a bin edge: which bucket?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Precomputed bins vs `BarMark(x: .value(\"\", v), …)` with Swift Charts' own binning (`bins`, iOS 17+)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where should binning happen for large datasets: on device or server?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "SwiftUI Pie & Donut Charts - New in iOS 17",
+      "url": "https://www.youtube.com/watch?v=8M3N4HWUc0U",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "iOS 17 added the sector Mark to the charts framework that allows us to easily create pie charts in this video I'll show you how to make a basic pie chart and th"
+    }
+  ],
+  "articles": []
 }

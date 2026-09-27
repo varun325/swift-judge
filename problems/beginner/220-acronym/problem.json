@@ -14,6 +14,14 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -31,5 +39,39 @@
     "`split(whereSeparator:)` takes a closure deciding what counts as a separator.",
     "Split on spaces **and** hyphens, take the first character of each piece, then uppercase.",
     "`String(phrase.split(whereSeparator: { $0 == \" \" || $0 == \"-\" }).compactMap(\\.first)).uppercased()`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS: `s.split(/[\\s-]+/).filter(Boolean).map(w => w[0].toUpperCase()).join('')`. Swift's `split(whereSeparator:)` drops empties for you, and `compactMap(\\.first)` avoids JS's `undefined[0]` crash on empty strings.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`map` vs `compactMap` vs `flatMap` on a `[String]`: what does each return when some words are empty?"
+    },
+    {
+      "kind": "js",
+      "q": "`w[0]` on an empty JS string is `undefined`, and then `.toUpperCase()` throws. How does Swift's `first` being optional change the shape of the code?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `\"ǆ\".uppercased()` return? Can uppercasing change a string's length?"
+    },
+    {
+      "kind": "practice",
+      "q": "Initials avatars (\"VS\" for Varun Sharma) need the same logic. What goes wrong for names in scripts without case?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Inside the Standard Library: Sequence.compactMap",
+      "url": "https://www.youtube.com/watch?v=_eBNeiBaByM",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

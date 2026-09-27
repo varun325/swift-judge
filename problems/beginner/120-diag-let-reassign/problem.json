@@ -19,5 +19,55 @@
     "Constants declared with `let` can never be given a new value.",
     "Keep the `let` declaration and add a second line that assigns a different value to the same name.",
     "Add `maxLoginAttempts = 5` on the line after the declaration."
+  ],
+  "impact": "core",
+  "jsBridge": "Same idea as JS `const`, but it goes further: in JS, `const obj = {}` still allows `obj.x = 1`. In Swift, `let` on a **struct** freezes the whole value, including its properties. On a class it freezes only the reference, just like JS `const`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`const arr = []; arr.push(1)` is legal JS. Is `let arr: [Int] = []; arr.append(1)` legal Swift? Why is the answer different?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`let` on a class instance vs a struct instance: which properties can you still change in each case?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's `final` is closest to which Swift case, `let` on a class or on a struct?"
+    },
+    {
+      "kind": "practice",
+      "q": "When the compiler says \"cannot assign to value: 'x' is a 'let' constant\" inside a SwiftUI view, what's usually the real fix — `var`, `@State`, or something else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Variables and Constants | Swift Basics #3",
+      "url": "https://www.youtube.com/watch?v=jRNa6hYTJLo&t=190s",
+      "channel": "Swiftful Thinking",
+      "start": 190,
+      "moment": "false I'm going to get a compiler error and we can see that here cannot assign value"
+    },
+    {
+      "title": "How to create constants and variables – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=jlkcxTyM8m4&t=201s",
+      "channel": "Paul Hudson",
+      "start": 201,
+      "moment": "value you got to use a constant instead creating constant works almost the same"
+    },
+    {
+      "title": "Swift Basics - Variables and Constants",
+      "url": "https://www.youtube.com/watch?v=2cazK9Cg2Nw&t=150s",
+      "channel": "Sean Allen",
+      "start": 150,
+      "moment": "var so it's a variable now if I made this a let which is a constant so if you wanted to clear a constant instead of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

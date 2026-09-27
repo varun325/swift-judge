@@ -36,5 +36,40 @@
     "State is a struct; actions are an enum; the reducer mutates `inout` state.",
     "Side effects are returned as async closures that produce the next action.",
     "The store runs the reducer, records state, then awaits the effect and sends its action."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "A TCA/Redux-style store: state is a struct, actions are an enum, a pure reducer mutates `inout` state and returns effects. It's Redux with value types, where `inout` replaces returning a new state object.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Redux reducers return new state. Swift reducers take `inout` state. Is that still pure? Why is it efficient?"
+    },
+    {
+      "kind": "edge",
+      "q": "Effects that return actions: how do you cancel a long-running effect when the user leaves?"
+    },
+    {
+      "kind": "contrast",
+      "q": "TCA vs MVVM with `@Observable`: which scales for a 50-screen app, and which is simpler for 5 screens?"
+    },
+    {
+      "kind": "practice",
+      "q": "Testing a reducer: what do you assert (state after each action, emitted effects)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Real-time data updates in iOS app with Firebase Firestore listeners | Firebase Bootcamp #16",
+      "url": "https://www.youtube.com/watch?v=a87MFlvfWvA&t=147s",
+      "channel": "Swiftful Thinking",
+      "start": 147,
+      "moment": "the time I think you guys are going to really like it at the end of the video let me know what you think"
+    },
+    {
+      "title": "SwiftUI - Intro to MVVM | Example Refactor | Model View ViewModel",
+      "url": "https://www.youtube.com/watch?v=FwGMU_Grnf8",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

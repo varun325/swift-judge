@@ -22,5 +22,55 @@
     "`private` members are only visible inside the type (and its extensions in the same file).",
     "Mark `secret` as `private` and keep the read from top-level code.",
     "`private var secret = \"1234\"` with `print(vault.secret)` below."
+  ],
+  "impact": "core",
+  "jsBridge": "`private` restricts access to the enclosing declaration and its extensions in the same file. JS `#private` fields are the closest match, but Swift has five levels (`private`, `fileprivate`, `internal`, `package`, `public`/`open`), all checked at compile time.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `#field` is enforced at runtime. TS `private` is compile-time only (erasable). Which does Swift's `private` resemble?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`private` vs `fileprivate` vs `internal`: which is Swift's default, and why is it `internal`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can an extension in the same file see a `private` member? One in another file?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's package-private is the default. What's the closest Swift equivalent (`internal` for modules, `package`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Access Control (Private vs Public) | Swift Basics #12",
+      "url": "https://www.youtube.com/watch?v=UbX2UtgZTJI&t=44s",
+      "channel": "Swiftful Thinking",
+      "start": 44,
+      "moment": "types of access control but just the most common ones and in layman's terms what this means is in the last couple"
+    },
+    {
+      "title": "How to limit access to internal data using access control – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=n0ycUw4SSNM&t=255s",
+      "channel": "Paul Hudson",
+      "start": 255,
+      "moment": "making mistakes it's always a smart move now i'll give you an important tip here if you have"
+    },
+    {
+      "title": "Swift Access Control Explained",
+      "url": "https://www.youtube.com/watch?v=RFGEzkBa834",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "what's going on everybody today we're talking about access control in Swift and you may have seen these keywords"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Access Control",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/",
+      "source": "swift.org"
+    }
   ]
 }

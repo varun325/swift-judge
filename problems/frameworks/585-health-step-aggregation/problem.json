@@ -17,6 +17,18 @@
     {
       "title": "HKStatisticsCollectionQuery",
       "url": "https://developer.apple.com/documentation/healthkit/hkstatisticscollectionquery"
+    },
+    {
+      "title": "WidgetKit",
+      "url": "https://developer.apple.com/documentation/widgetkit"
+    },
+    {
+      "title": "StoreKit",
+      "url": "https://developer.apple.com/documentation/storekit"
+    },
+    {
+      "title": "User Notifications",
+      "url": "https://developer.apple.com/documentation/usernotifications"
     }
   ],
   "signature": {
@@ -41,5 +53,38 @@
     "Bucket each sample by `calendar.startOfDay(for:)` in the given time zone.",
     "Sum counts per bucket in a dictionary.",
     "Walk day by day from the first to the last bucket, filling missing days with 0."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "HealthKit samples are intervals, and charts need per-day totals in the user's time zone. Grouping by `Calendar.startOfDay` is the key step, just as bucketing timestamps by local day in JS needs the right time zone.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Bucketing timestamps by day in JS with `toISOString().slice(0,10)` uses UTC. What goes wrong for a user in Tokyo?"
+    },
+    {
+      "kind": "edge",
+      "q": "A sample spanning midnight: which day gets the steps? How does `HKStatisticsCollectionQuery` split it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Aggregating samples yourself vs `HKStatisticsCollectionQuery`: which handles duplicate sources (watch + phone)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Travel across time zones: should history be shown in the zone where the steps happened?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Building a motivational app with sharing and notifications – Swift on Sundays February 3rd 2019",
+      "url": "https://www.youtube.com/watch?v=X2RZlmjLYhk",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Send Push Notifications using CloudKit in SwiftUI | Advanced Learning #24",
+      "url": "https://www.youtube.com/watch?v=vr5CBfaK14A",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": []
 }

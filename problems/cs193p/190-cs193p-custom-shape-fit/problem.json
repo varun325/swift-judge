@@ -53,8 +53,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L16: Shapes, Gestures, Persistence",
-      "url": "https://www.youtube.com/watch?v=skECWIKpBVY",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=skECWIKpBVY&t=1110s",
+      "channel": "Stanford Online",
+      "start": 1110,
+      "moment": "Well, approximately it's three to one. Three across, one down. I say approximately because there's some little padding in here that actually makes that not true"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "Custom `Shape`s plus `GeometryReader` sizing: compute the largest element that fits the offered space. It's the SwiftUI version of measuring a container with ResizeObserver and computing layout in JS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "ResizeObserver + JS layout maths vs `GeometryReader`: which one re-runs on size changes automatically?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `GeometryReader` take all offered space? What problems does that cause in stacks?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`GeometryReader` vs `Layout` protocol vs `containerRelativeFrame`: which for \"fit N items in the space\"?"
+    },
+    {
+      "kind": "practice",
+      "q": "Card grids that must fit exactly on screen without scrolling (a game board): which approach?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

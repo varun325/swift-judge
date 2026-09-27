@@ -13,11 +13,48 @@
     {
       "title": "Memory Safety — Conflicting Access to In-Out Parameters",
       "book": "LanguageGuide/MemorySafety"
+    },
+    {
+      "title": "Copyable",
+      "url": "https://developer.apple.com/documentation/swift/copyable"
     }
   ],
   "hints": [
     "Swift forbids two simultaneous write accesses to the same variable.",
     "Pass the **same** variable as both `inout` arguments.",
     "`var score = 42; balance(&score, &score)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The **law of exclusivity**: while an `inout` access is in progress, nothing else may access that variable. JS has no such rule. Swift enforces it at compile time where it can and at runtime otherwise, which prevents a class of aliasing bugs.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Can a JS function receive the same object twice and get confused by aliasing? What does Swift prevent?"
+    },
+    {
+      "kind": "edge",
+      "q": "Runtime exclusivity violations: when does the compiler defer to a runtime check (class properties, globals)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Why does `swap(&a[0], &a[1])` fail but `a.swapAt(0, 1)` work?"
+    },
+    {
+      "kind": "practice",
+      "q": "Have you seen \"Simultaneous accesses to 0x…, but modification requires exclusive access\" in a crash? What caused it?"
+    }
+  ],
+  "videos": [],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Memory Safety",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/memorysafety/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0390: Noncopyable structs and enums",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

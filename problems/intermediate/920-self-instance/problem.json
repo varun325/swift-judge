@@ -31,5 +31,65 @@
     "`self.x` means \"my property x\" when a parameter is also called `x`.",
     "In a `mutating` struct method, `self` is assignable.",
     "`mutating func flip() { self = Vector(x: y, y: x) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`self` is JS's `this`, except it's never ambiguous: it always means the instance, with no `bind` or arrow-function issues. In a `mutating` method you can even reassign `self` wholesale (`self = Vector(…)`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `this` depends on how a function is called. Does Swift `self` ever change meaning inside a method? Inside a closure?"
+    },
+    {
+      "kind": "edge",
+      "q": "Reassigning `self = …` in a mutating method: what does that do to observers and `didSet` on the owner?"
+    },
+    {
+      "kind": "contrast",
+      "q": "When must you write `self.` explicitly (initialiser shadowing, escaping closures), and when is it optional?"
+    },
+    {
+      "kind": "practice",
+      "q": "Swift style guides disagree on explicit `self.`. What's your rule, and why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use weak self in Swift | Continued Learning #18",
+      "url": "https://www.youtube.com/watch?v=TPHp9kR0Go8&t=8s",
+      "channel": "Swiftful Thinking",
+      "start": 8,
+      "moment": "swiftly thinking where we cover all things swift and swift ui related and in this"
+    },
+    {
+      "title": "Universal Self in Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=YlRuQP3EO8E&t=90s",
+      "channel": "Paul Hudson",
+      "start": 90,
+      "moment": "throttled Network manager manager dot print debug data that should print out one rather than four and that's where se"
+    },
+    {
+      "title": "From Homeless to $130k+ iOS Dev | Self-Taught",
+      "url": "https://www.youtube.com/watch?v=yac52lmf_yc&t=49s",
+      "channel": "Sean Allen",
+      "start": 49,
+      "moment": "getting to be around you know the kind of environments that technology brings and then Scott Trade closed in 2017."
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

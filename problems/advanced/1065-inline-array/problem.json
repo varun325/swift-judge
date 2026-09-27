@@ -35,5 +35,44 @@
     "The count is part of the type: `InlineArray<4, Int>`.",
     "Initialise with `InlineArray<4, Int>(repeating: 0)` and index like an array.",
     "`MemoryLayout<InlineArray<4, Int>>.size` is the full inline size."
+  ],
+  "impact": "edge",
+  "jsBridge": "`InlineArray<4, Int>` (Swift 6.2) is a fixed-size array stored inline, with no heap allocation and no CoW. It's like JS typed arrays of a fixed length, but generic and stack-allocated.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new Int32Array(4)` in JS still heap-allocates. What does \"inline\" mean for Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`InlineArray` vs `Array` vs a tuple `(Int, Int, Int, Int)`: when would you pick each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can an `InlineArray` grow? Is it `Collection`? (It isn't, deliberately.) Why?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where would a fixed-size, allocation-free array matter: audio, graphics, parsing hot loops?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What's new in SwiftUI for iOS 27?",
+      "url": "https://www.youtube.com/watch?v=tNxEqyUVGck",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "What's New in Swift 5.3",
+      "url": "https://www.youtube.com/watch?v=RhuYDAEdGHE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Evolution proposals",
+      "url": "https://www.swift.org/swift-evolution/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -14,6 +14,10 @@
     {
       "title": "Hasher",
       "url": "https://developer.apple.com/documentation/swift/hasher"
+    },
+    {
+      "title": "Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines"
     }
   ],
   "signature": {
@@ -41,5 +45,38 @@
     "Don't use `hashValue` — it changes every launch.",
     "FNV-1a: `hash ^= byte; hash = hash &* prime` over the UTF-8 bytes.",
     "Bucket = `hash % 100`; walk cumulative split percentages to pick A, B, C…"
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Deterministic bucketing hashes `experiment:userID` with a stable hash (FNV-1a), because Swift's `Hasher` is reseeded every launch. JS has no randomised built-in hash, but the same stable-hash logic appears in every A/B SDK.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS A/B SDK hashes user IDs with murmurhash. Why can't Swift use `hashValue` for the same job?"
+    },
+    {
+      "kind": "edge",
+      "q": "Changing the split from 50/50 to 90/10: do existing users switch buckets? Should they?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Client-side bucketing vs server-assigned variants: which works offline, and which is consistent across devices?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why salt with the experiment name? What correlation bug happens without it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53",
+      "url": "https://www.youtube.com/watch?v=gm7Xct50CFo",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to ask the user to leave an App Store review – Instafilter SwiftUI Tutorial 8/13",
+      "url": "https://www.youtube.com/watch?v=RUWGjeDCkN8",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

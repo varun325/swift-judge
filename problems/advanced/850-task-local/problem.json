@@ -13,6 +13,10 @@
     {
       "title": "TaskLocal",
       "url": "https://developer.apple.com/documentation/swift/tasklocal"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -31,5 +35,49 @@
     "A task-local value is bound for a scope and inherited by child tasks.",
     "Wrap the work in `Trace.$requestID.withValue(id) { … }` and read `Trace.requestID` inside the children.",
     "Children: `group.addTask { \"\\(Trace.requestID):\\(step)\" }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`@TaskLocal` values flow down to child tasks automatically, like Node's `AsyncLocalStorage` for request IDs in logs.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Node `AsyncLocalStorage` vs Swift `@TaskLocal`: do both propagate into child tasks and callbacks?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does a detached task (`Task.detached`) inherit task-locals? An unstructured `Task { }`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Task-local vs passing a `context` parameter everywhere: which is more explicit?"
+    },
+    {
+      "kind": "practice",
+      "q": "Tracing request IDs through logs in an app: is this worth it on the client?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+      "url": "https://www.youtube.com/watch?v=1RD8-5_Zsws",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

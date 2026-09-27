@@ -14,6 +14,14 @@
     {
       "title": "Strings and Characters — String Literals",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -30,5 +38,41 @@
     "In a raw string `#\"…\"#`, backslashes are literal characters.",
     "Interpolation inside a raw string needs a `#` between the backslash and the parenthesis.",
     "`#\"C:\\Users\\\\#(user)\\Documents\"#`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS has `String.raw` and template literals for multiline strings. Swift uses `#\"…\"#` for raw strings (interpolate with `\\#(x)`) and `\"\"\"…\"\"\"` for multiline strings, where the closing delimiter's indentation is stripped from every line.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`String.raw` and Swift's `#\"...\"#` both disable escapes. Why does Swift need the `\\#(x)` interpolation syntax rather than plain `\\(x)`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Raw strings shine for regex and JSON fixtures in tests. Rewrite `\"\\\\d+\\\\.\\\\d+\"` as a raw string. Which is easier to review?"
+    },
+    {
+      "kind": "edge",
+      "q": "How do you put `\"#` inside a raw string? What do `##\"…\"##` delimiters do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "A multiline string literal vs a `.json` file in the test bundle: when is each the better fixture?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Raw strings in Swift",
+      "url": "https://www.youtube.com/watch?v=e6tuUzmxyOU",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "se200 added the ability to create raw strings where backslashes and quote marks are interpreted as those literal"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -34,5 +34,55 @@
     "Constrain the placeholder to what you need: `T: Hashable & Comparable`.",
     "Count occurrences in a dictionary, then pick the entry with the highest count — breaking ties by the smaller key.",
     "`counts.max { a, b in (a.value, b.key) < (b.value, a.key) }?.key`."
+  ],
+  "impact": "core",
+  "jsBridge": "`<T: Hashable & Comparable>` constrains a generic with protocol composition, like TS `<T extends A & B>`. The constraint unlocks operations (`<`, dictionary keys) inside the function body.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `<T extends Comparable>` is structural. What does a nominal `T: Comparable` require of callers?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`some Hashable & Comparable` in parameter position vs `<T: …>`: same thing?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can't you pass a mixed `[any Hashable]` to this function?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do constrained generics appear in SwiftUI (`ForEach<Data, ID: Hashable, Content: View>`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Generics in Swift | Advanced Learning #8",
+      "url": "https://www.youtube.com/watch?v=rx3uRICZr5I&t=877s",
+      "channel": "Swiftful Thinking",
+      "start": 877,
+      "moment": "of type view well and this is telling us that the protocol"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=211s",
+      "channel": "Paul Hudson",
+      "start": 211,
+      "moment": "easily copy and paste that then just tweak it to a account loads missions R an astronauts however there's a better"
+    },
+    {
+      "title": "Swift Generics for Beginners - Eliminate Code Duplication",
+      "url": "https://www.youtube.com/watch?v=a3AH0ItFTKU&t=127s",
+      "channel": "Sean Allen",
+      "start": 127,
+      "moment": "topic if you weren't quite following we're going to dive in deeper so let's write a basic example all from scratch to practice this concept we'll create a funct"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

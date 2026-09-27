@@ -32,5 +32,46 @@
     "A protocol extension can supply default implementations.",
     "Provide the default `greet()` and a `greetTwice()` in the extension; `Pirate` implements its own `greet()`.",
     "`func greetTwice() -> String { greet() + \" \" + greet() }` in `extension Greeter`."
+  ],
+  "impact": "core",
+  "jsBridge": "Protocol extensions provide default method implementations, like mixins or TS abstract-class defaults, but applicable to structs and enums. Conforming types get the behaviour free and can override it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS mixins (`Object.assign(Proto, mixin)`) vs Swift protocol extensions: which is checked at compile time?"
+    },
+    {
+      "kind": "java",
+      "q": "Java 8 default methods are the closest analogue. What's different about how Swift dispatches extension-only methods?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Protocol extension vs base class for shared behaviour: why does Swift favour \"protocol-oriented programming\"?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a protocol extension add stored properties? What do people do instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YrVwyL_mcts&t=236s",
+      "channel": "Paul Hudson",
+      "start": 236,
+      "moment": "we can list some required methods in a protocol you know conforming types must add a b and c"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

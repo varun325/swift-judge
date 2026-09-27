@@ -40,5 +40,39 @@
     "Extending the `Comparable` protocol gives a method to every comparable type.",
     "Clamp with `min` and `max` against the range's `lowerBound` and `upperBound`.",
     "`func clamped(to range: ClosedRange<Self>) -> Self { min(max(self, range.lowerBound), range.upperBound) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS: `Math.min(Math.max(x, lo), hi)`. Swift can add `clamped(to:)` to **every** `Comparable` type with one extension (numbers, dates, strings), because protocol extensions add methods retroactively. JS would need prototype patching.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Adding `Number.prototype.clamp` in JS is frowned upon. Why is `extension Comparable` considered fine in Swift? What makes it safer (scoping, no runtime monkey-patching)?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if `low > high` when building `low...high`? Is that a compile-time or runtime error?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`ClosedRange` vs `Range` for clamping: why can't you clamp to `0..<10` as neatly?"
+    },
+    {
+      "kind": "practice",
+      "q": "Clamping shows up in slider values, zoom scales and scroll offsets. Where would a `Comparable` extension live in a big app, to avoid collisions?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YrVwyL_mcts",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Extensions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions/",
+      "source": "swift.org"
+    }
   ]
 }

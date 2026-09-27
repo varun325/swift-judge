@@ -30,5 +30,44 @@
     "Kadane: the best sum ending here either extends the previous one or starts fresh.",
     "Track `current` and `best` in a `reduce` over the rest of the array.",
     "`let current = max(x, acc.current + x); return (current, max(acc.best, current))`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Kadane's algorithm as a single `reduce` over a `(current, best)` tuple, functional and allocation-free. In JS the same `reduce` would allocate an array or object per step, while Swift tuples are free.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `reduce((acc, x) => [..], [..])` allocates each step. Does the Swift tuple accumulator allocate?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`reduce` with a tuple vs a `for` loop with two `var`s: which would your team read faster?"
+    },
+    {
+      "kind": "edge",
+      "q": "All-negative input: what should the initial value be? Why not 0?"
+    },
+    {
+      "kind": "practice",
+      "q": "Best streak or best trading window in a finance app: same algorithm?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Filter, Map, Reduce - Swift - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=OujkoTKEVj8",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -13,6 +13,10 @@
     {
       "title": "Collection Types — Sets",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Set",
+      "url": "https://developer.apple.com/documentation/swift/set"
     }
   ],
   "signature": {
@@ -30,5 +34,55 @@
     "A set is great for \"have I seen this?\" — but it has no order.",
     "Walk the array; keep an element only the first time you insert it into the set.",
     "`values.filter { seen.insert($0).inserted }`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS: `[...new Set(arr)]` keeps insertion order because JS `Set` is ordered. Swift's `Set` is **unordered**, so `Array(Set(arr))` scrambles the order. Filter with a `seen` set, or use `OrderedSet` from swift-collections.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `Set` preserves insertion order. Swift's doesn't. Which JS habits break because of that?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`filter { seen.insert($0).inserted }` vs `OrderedSet(arr)`: which would you ship, and what does adding a package cost?"
+    },
+    {
+      "kind": "edge",
+      "q": "The `insert` in `filter` mutates captured state. Is a side-effecting closure inside `filter` OK style?"
+    },
+    {
+      "kind": "practice",
+      "q": "Deduping search results by ID while keeping rank order is this exact problem. How would you key by ID rather than the whole value?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to set up Github, Xcode Source Control, and GitKraken  | Git & Source Control #1",
+      "url": "https://www.youtube.com/watch?v=WxHsQDbIdl8&t=144s",
+      "channel": "Swiftful Thinking",
+      "start": 144,
+      "moment": "know so far, we do have a website swiftful-thinking.com. You can see all courses on this website."
+    },
+    {
+      "title": "How to use sets for fast data lookup – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=9GjGRqK8LSw&t=8s",
+      "channel": "Paul Hudson",
+      "start": 8,
+      "moment": "well there's a third way of doing this called sets they work similarly to arrays except"
+    },
+    {
+      "title": "Swift Basics: Array vs. Set",
+      "url": "https://www.youtube.com/watch?v=_TvQPMZdwPI&t=50s",
+      "channel": "Sean Allen",
+      "start": 50,
+      "moment": "be the same that's why arrays are less performant than sets is because it keeps that order anytime you want to look up an item in the array or do any manipulati"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

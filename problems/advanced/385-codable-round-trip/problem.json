@@ -14,6 +14,10 @@
     {
       "title": "Encoding and Decoding Custom Types",
       "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -31,5 +35,48 @@
     "Enums with associated values get synthesised `Codable`.",
     "Encode the parsed events with `.sortedKeys`, decode them back, and compare with `==`.",
     "`encoder.outputFormatting = [.sortedKeys]` then `back == parsed ? \"equal\" : \"different\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift synthesises `Codable` even for enums with associated values, producing JSON like `{\"purchase\":{\"item\":\"pen\",\"cents\":150}}`. A TS discriminated union needs a hand-written serialiser or a library.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would you serialise a TS discriminated union? Does `JSON.stringify` preserve the tag?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the synthesised JSON shape for `case logout` (no payload)? Is it stable across Swift versions?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Synthesised enum coding vs a custom `type` discriminator field: which is friendlier to a backend?"
+    },
+    {
+      "kind": "practice",
+      "q": "Persisting analytics events offline as JSON: is synthesised coding good enough?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10",
+      "url": "https://www.youtube.com/watch?v=elGMTQGRZGo&t=183s",
+      "channel": "Swiftful Thinking",
+      "start": 183,
+      "moment": "probably find a more scalable way to be doing this. And the way to do that is using codable. In Swift, we can decode"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=580s",
+      "channel": "Paul Hudson",
+      "start": 580,
+      "moment": "unique type you can use codable if you want to or you can use encodable and decodable if you prefer being specific"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

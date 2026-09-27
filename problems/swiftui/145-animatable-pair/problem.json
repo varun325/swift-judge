@@ -18,6 +18,10 @@
     {
       "title": "VectorArithmetic",
       "url": "https://developer.apple.com/documentation/swiftui/vectorarithmetic"
+    },
+    {
+      "title": "Animation",
+      "url": "https://developer.apple.com/documentation/swiftui/animation"
     }
   ],
   "signature": {
@@ -50,5 +54,33 @@
     "Interpolation is `a + (b - a) × t`, written with `VectorArithmetic` operations.",
     "`scale(by:)` is mutating, so copy the delta into a `var` first.",
     "`var delta = b - a; delta.scale(by: t); return a + delta`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`AnimatablePair<A, B>` bundles two animatable values via `VectorArithmetic` (`+`, `-`, `scale(by:)`). Interpolation is vector maths, the same as interpolating `{x, y}` objects in a JS tween library.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "GSAP tweens many properties at once. How does SwiftUI's `VectorArithmetic` compose multiple values?"
+    },
+    {
+      "kind": "edge",
+      "q": "Nesting `AnimatablePair<AnimatablePair<A,B>,C>` for three values: ugly. What's the modern alternative?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Implementing `VectorArithmetic` yourself vs using `AnimatablePair`: when is custom worth it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Animating a chart's multiple bars at once: which approach?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Animating complex shapes with AnimatablePair – Drawing SwiftUI Tutorial 9/10",
+      "url": "https://www.youtube.com/watch?v=YSBXJvANWSo",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

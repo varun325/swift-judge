@@ -13,6 +13,10 @@
     {
       "title": "Concurrency — Task Cancellation",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -35,5 +39,49 @@
     "Cancellation is cooperative: tasks check `Task.isCancelled` themselves.",
     "One child task per array returns its index if it finds the target; collect all results and take the minimum.",
     "`for await found in group { if let found { best = min(best ?? found, found) } }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Swift task cancellation is **cooperative**: `cancelAll()` sets a flag and tasks must check `Task.isCancelled` or call a throwing API. JS's `AbortController` works the same way, since you pass a signal and code must check it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`AbortController.signal` vs `Task.isCancelled`: what's the equivalent of `signal.throwIfAborted()`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does cancelling a parent task cancel children automatically? Unstructured `Task { }` inside?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Structured cancellation (task groups) vs manual `Task` handles: which leaks less?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI's `.task` cancels on disappear. What must your networking code do for that to actually stop work?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to run code after a delay using asyncAfter() and perform() – Swift 5",
+      "url": "https://www.youtube.com/watch?v=1RD8-5_Zsws",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

@@ -12,6 +12,10 @@
     {
       "title": "Character",
       "url": "https://developer.apple.com/documentation/swift/character"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
     }
   ],
   "signature": {
@@ -29,5 +33,46 @@
     "`Character` has properties such as `isUppercase`, `isLowercase`, `isNumber` and `isLetter`.",
     "Build an array of five `Bool` checks with `contains(where:)` and count the `true`s.",
     "`password.contains(where: \\.isUppercase)` — then switch on the count with ranges."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS regex classes like `/[A-Z]/` are ASCII-centric (unless you use `\\p{Lu}` with the `u` flag). Swift's `Character` has `isUppercase`, `isNumber` and `isLetter`, which are Unicode-aware by default.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `/\\p{Lu}/u` is Unicode-aware. Is `Character.isUppercase` equivalent? Test \"É\"."
+    },
+    {
+      "kind": "edge",
+      "q": "Is \"½\" `isNumber`? Is it `isWholeNumber`? Does that matter for a password rule?"
+    },
+    {
+      "kind": "practice",
+      "q": "Real password strength should use entropy or zxcvbn-style scoring. What does iOS do for you with `textContentType = .newPassword`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Character` properties vs `CharacterSet` vs Swift `Regex`: when would you pick each?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Properties and methods of strings – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ldGno_JrHEA&t=4s",
+      "channel": "Paul Hudson",
+      "start": 4,
+      "moment": "use to query and manipulate the string. First, let's create a test string. Let string equals do or do not, there is"
+    },
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

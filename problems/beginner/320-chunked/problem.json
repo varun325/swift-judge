@@ -14,6 +14,10 @@
     {
       "title": "Control Flow — stride",
       "book": "LanguageGuide/ControlFlow"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "signature": {
@@ -35,5 +39,44 @@
     "`stride(from:to:by:)` generates the start index of every chunk.",
     "Map each start index to a slice, clamping the end with `min` so the last chunk doesn't go out of bounds.",
     "`stride(from: 0, to: items.count, by: size).map { Array(items[$0 ..< min($0 + size, items.count)]) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "lodash has `_.chunk`. Swift's standard library doesn't, but swift-algorithms has `chunks(ofCount:)`. By hand you'd use `stride(from:to:by:)`, the Swift `for (i = 0; i < n; i += size)`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Swift has no C-style `for (;;)` loop. Why was it removed (SE-0007), and how does `stride` replace it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Returning `[[T]]` vs `[ArraySlice<T>]`: which avoids copying, and which is safer to store?"
+    },
+    {
+      "kind": "practice",
+      "q": "Batching requests (e.g. 50 IDs per API call) and grid layouts both need chunking. Where have you done this in JS?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `stride(from: 0, to: 0, by: 2)` produce? And `by: 0`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Arrays and Sets in Swift | Swift Basics #13",
+      "url": "https://www.youtube.com/watch?v=_SRaZjPuYOQ",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to store ordered data in arrays – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=K1jEskrHcyY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

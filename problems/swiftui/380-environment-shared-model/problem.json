@@ -12,11 +12,15 @@
   "docs": [
     {
       "title": "environment(_:)",
-      "url": "https://developer.apple.com/documentation/swiftui/view/environment(_:)-4516h"
+      "url": "https://developer.apple.com/documentation/swiftui/environment"
     },
     {
       "title": "Managing model data in your app",
       "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -37,5 +41,49 @@
     "Shared, mutable app state lives in a class so everyone sees the same instance.",
     "Give both screen structs the same `Cart` reference.",
     "`list.cart === badge.cart` proves identity."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Sharing one `@Observable` instance through `.environment(model)` and reading it with `@Environment(Model.self)` is React Context holding a store. Because it's a reference type, every reader sees the same object.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React Context + a store object vs SwiftUI environment + `@Observable`: which re-renders less, and why?"
+    },
+    {
+      "kind": "edge",
+      "q": "Reading `@Environment(Model.self)` when no ancestor provided it: what happens at runtime?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Environment injection vs passing the model through initialisers: which is more explicit for a reader?"
+    },
+    {
+      "kind": "practice",
+      "q": "App-wide session or cart models: environment, singleton, or dependency container?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Create ViewModel with @StateObject and @EnvironmentObject for MVVM | SwiftUI Map App #2",
+      "url": "https://www.youtube.com/watch?v=BKxbHnka4-Q&t=10s",
+      "channel": "Swiftful Thinking",
+      "start": 10,
+      "moment": "video we're going to build out our view model we're going to start it as a state object on the current screen that we're"
+    },
+    {
+      "title": "Sharing @Observable objects through SwiftUI's environment – SnowSeeker SwiftUI Tutorial 5/12",
+      "url": "https://www.youtube.com/watch?v=myLtDcYuE3k&t=160s",
+      "channel": "Paul Hudson",
+      "start": 160,
+      "moment": "here and instead use the environment modifier to inject our player into a Swifty"
+    },
+    {
+      "title": "SwiftUI Data Flow in iOS 17 - Observation & @Observable",
+      "url": "https://www.youtube.com/watch?v=EK7SthdWV2w",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "there's a new and improved way to update your user interface in Swift UI iOS 17 introduces the at observable macro which is a cleaner more performant way to han"
+    }
+  ],
+  "articles": []
 }

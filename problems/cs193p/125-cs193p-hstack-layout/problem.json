@@ -45,8 +45,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L5: Layout & Data Flow",
-      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=u6cgk1W6EXE&t=40s",
+      "channel": "Stanford Online",
+      "start": 40,
+      "moment": "Layout is about how SwiftUI decides how much space to give to all the Views, right? We've got rounded rectangles with colors in them. In your Assignment 2, you'"
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "SwiftUI layout: the parent **offers** a size, the child **chooses** its size, and the parent places it. HStack offers space to the least flexible children first. It's close to flexbox's negotiation, but the rules are SwiftUI's own.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Flexbox distributes free space by `flex-grow`. How does HStack decide who gets space first?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two `Text`s that both want more than half: which one truncates? What does `layoutPriority` change?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.frame(maxWidth: .infinity)` vs `Spacer()`: how does each express flexibility?"
+    },
+    {
+      "kind": "practice",
+      "q": "A row with an icon, a title that should truncate, and a fixed-width price: which modifiers?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

@@ -13,11 +13,61 @@
     {
       "title": "The Basics — Comments",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Bool",
+      "url": "https://developer.apple.com/documentation/swift/bool"
     }
   ],
   "hints": [
     "In Swift, `/* … */` comments can contain other `/* … */` comments.",
     "The outer comment only ends at its **matching** `*/`, so everything between — including `print(\"four\")` — is commented out.",
     "Printed lines: `one`, `five`, and then `seven eight`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS (like C) block comments don't nest, so `/* /* */ */` breaks. Swift's do nest, so you can comment out a block that already contains comments.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why doesn't JS support nested block comments? What parsing trade-off is involved?"
+    },
+    {
+      "kind": "practice",
+      "q": "What do `///` doc comments and `// MARK: -` do in Xcode? How are they like JSDoc?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does a `*/` inside a string literal end a comment in Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Commenting out code vs `#if false … #endif`: which one still gets parsed?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Operators and conditions: Summary – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=Hhnx3i0o1_c",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "How to create custom Operators in Swift | Advanced Learning #33",
+      "url": "https://www.youtube.com/watch?v=4eOTk5y-uZI&t=134s",
+      "channel": "Swiftful Thinking",
+      "start": 134,
+      "moment": "just fun to play around with so maybe this is kind of just my nerdy side speaking but I'm sure someone out there"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -13,6 +13,14 @@
     {
       "title": "The Basics — Numeric Literals",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "signature": {
@@ -24,5 +32,44 @@
     "Swift integer literals can be written in several bases using a prefix.",
     "Binary uses `0b`, octal `0o`, hex `0x`; underscores are ignored inside numbers.",
     "`[17, 0b10001, 0o21, 0x11, 1_000_000]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS has `0b`, `0o`, `0x` and `1_000_000` numeric separators too. The difference is that Swift literals have no type until context gives them one, so `0xFF` can become a `UInt8`, `Int` or `Double`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, `0.1` and `1` are both `number`. In Swift, can `let x: UInt8 = 256` compile? What does the error teach about literal typing?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do hex literals show up in iOS work? Think colors (`0xFF8800`), bit flags in `OptionSet`, and binary protocols."
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `let big = 1_0_0` compile? Are underscores just ignored, or are there rules?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Integer literal vs `Int(\"0xFF\", radix:)` parsing at runtime: which catches mistakes earlier?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7",
+      "url": "https://www.youtube.com/watch?v=fB4HnpS8qkw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

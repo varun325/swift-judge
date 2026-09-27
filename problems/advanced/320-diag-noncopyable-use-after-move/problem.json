@@ -12,11 +12,48 @@
     {
       "title": "Swift Evolution SE-0390",
       "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md"
+    },
+    {
+      "title": "Copyable",
+      "url": "https://developer.apple.com/documentation/swift/copyable"
     }
   ],
   "hints": [
     "Assigning a noncopyable value **moves** it.",
     "Inside a function, move `a` into `b`, then read `a.id`.",
     "`let a = Token(id: 1); let b = a; print(a.id)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "After `let b = a` for a `~Copyable` value, `a` is **consumed** and using it is a compile error. That's Rust's move semantics. JS can't even express it: every value can be referenced from anywhere.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "What JS bugs (double-close, use-after-close) would move semantics catch?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `borrowing` let you read `a` without consuming it? How does the call site look?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Swift's `consume` operator on normal copyable values: what's the point (performance)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where in Apple's SDK do noncopyable types appear (`Mutex`, `Atomic` in the Synchronization module)?"
+    }
+  ],
+  "videos": [],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Memory Safety",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/memorysafety/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0390: Noncopyable structs and enums",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

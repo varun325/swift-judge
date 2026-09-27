@@ -13,6 +13,10 @@
     {
       "title": "ViewThatFits",
       "url": "https://developer.apple.com/documentation/swiftui/viewthatfits"
+    },
+    {
+      "title": "Layout fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/layout-fundamentals"
     }
   ],
   "signature": {
@@ -36,5 +40,40 @@
     "Try the options in order and take the first that fits.",
     "`firstIndex { $0 <= width }` finds it.",
     "Fall back to the last index when none fit."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`ViewThatFits` tries children in order and shows the first that fits, a declarative media query per component. Container queries in CSS are the closest web analogue.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS container queries vs `ViewThatFits`: which one picks between entirely different layouts?"
+    },
+    {
+      "kind": "edge",
+      "q": "If nothing fits, which child is shown? (The last one.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`ViewThatFits` vs size classes vs `Layout`: which reacts to the *available* width?"
+    },
+    {
+      "kind": "practice",
+      "q": "A button label with a long German translation: how would `ViewThatFits` save the layout?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use ViewThatFits in SwiftUI | Bootcamp #71",
+      "url": "https://www.youtube.com/watch?v=oN3Rqo6V6Uc&t=22s",
+      "channel": "Swiftful Thinking",
+      "start": 22,
+      "moment": "building SwiftUI views, we have a specific view that we want to put on the screen. So maybe there's a text box with"
+    },
+    {
+      "title": "Resizing images to fit the screen using GeometryReader – Layout and Geometry SwiftUI Tutorial 5/8",
+      "url": "https://www.youtube.com/watch?v=SENZiZ_IFgU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

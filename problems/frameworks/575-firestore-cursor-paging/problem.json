@@ -37,5 +37,53 @@
     "Order by `(createdAt desc, id asc)` so the order is total.",
     "Each page takes items strictly after the previous page's last item.",
     "Insert the new post after page 1 and check nothing repeats."
+  ],
+  "impact": "core",
+  "jsBridge": "Cursor pagination (`startAfter(lastDoc)`) doesn't skip or duplicate items when new ones arrive, unlike offsets. It's the same as GraphQL Relay cursors or Firestore's JS SDK.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Relay `after: cursor` vs `offset`: which breaks when a new post is inserted at the top?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two posts with the same `createdAt`: why must the cursor include a tie-breaker (ID)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Cursor paging vs `fetchOffset` paging in Core Data: when is offset still fine (local, static data)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Pull-to-refresh plus infinite scroll: how do you merge new items at the top with cursor pages below?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Firebase Firestore Pagination, Limits and Aggregations for iOS | Firebase Bootcamp #14",
+      "url": "https://www.youtube.com/watch?v=4iTb8ruXsjg&t=16s",
+      "channel": "Swiftful Thinking",
+      "start": 16,
+      "moment": "I'm sure I'll find out in the comments but for those who are just joining my name is Nick this is swivel thinking and"
+    },
+    {
+      "title": "Xcode in 20 Seconds: Multiple cursors",
+      "url": "https://www.youtube.com/watch?v=Aav96a2Ir78",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Xcode Tip - Multi-line Cursor Editing #iosdeveloper #swift #xcode",
+      "url": "https://www.youtube.com/watch?v=wpeCIAdlCpM",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "let's talk about the cursor and first up is multi-line cursor editing let's say I want to make these three functions all"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Firebase for Apple platforms",
+      "url": "https://firebase.google.com/docs/ios/setup",
+      "source": "Firebase"
+    }
   ]
 }

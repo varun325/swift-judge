@@ -14,6 +14,10 @@
     {
       "title": "NWPathMonitor",
       "url": "https://developer.apple.com/documentation/network/nwpathmonitor"
+    },
+    {
+      "title": "Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines"
     }
   ],
   "signature": {
@@ -34,5 +38,38 @@
     "Queue mutations as enum values; flush them in order whenever you're online.",
     "Before flushing, remove create/delete pairs for the same item.",
     "Rename/delete of a missing server item is dropped and logged."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Offline-first: update local state now, queue mutations durably, and flush in order when online, coalescing where possible. It's the service-worker background-sync pattern in PWAs, done in-app on iOS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "PWA Background Sync + IndexedDB queue vs an iOS in-app queue: who retries when the app is closed?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two offline edits to the same record from two devices: last-write-wins, merge, or conflict UI?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom sync queue vs CloudKit sync (`NSPersistentCloudKitContainer`): what do you give up with each?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which iOS API tells you connectivity changed (`NWPathMonitor`)? Why not ping a server?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Manage user onboarding with @AppStorage and Transitions in SwiftUI | Bootcamp #53",
+      "url": "https://www.youtube.com/watch?v=gm7Xct50CFo",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to ask the user to leave an App Store review – Instafilter SwiftUI Tutorial 8/13",
+      "url": "https://www.youtube.com/watch?v=RUWGjeDCkN8",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

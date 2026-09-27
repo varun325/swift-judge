@@ -26,13 +26,44 @@
   "videos": [
     {
       "title": "CS193p 2025 · L1: Intro to Xcode and SwiftUI",
-      "url": "https://www.youtube.com/watch?v=kCjDulwChRQ",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=kCjDulwChRQ&t=2895s",
+      "channel": "Stanford Online",
+      "start": 2895,
+      "moment": "It's not a thing. It's just a description of behavior. So what does \"some View\" mean right there? Well, \"some View\" means this can be... this has to be a concre"
     },
     {
       "title": "CS193p 2025 · L2: Code Breaker App",
-      "url": "https://www.youtube.com/watch?v=63UHypFKRRM",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=63UHypFKRRM&t=137s",
+      "channel": "Stanford Online",
+      "start": 137,
+      "moment": "this is how we build bigger and bigger Views, by just combining other Views. Now this var body is a computed property. We compute its value every single time we"
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "`var body: some View` is a computed property returning one concrete (but hidden) view type. It's React's `render()` returning JSX, except the return **type** is fixed at compile time, which is what lets SwiftUI diff structurally.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A React component returns `ReactElement` (one runtime type). SwiftUI's `some View` is a specific compile-time type. What does SwiftUI gain from that?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why is `body` recomputed often and cheap? What must never happen inside it (side effects, heavy work)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`some View` (opaque) vs `any View` vs `AnyView`: which does `body` use, and why not the others?"
+    },
+    {
+      "kind": "practice",
+      "q": "CS193p calls views \"Lego\". When do you extract a subview vs a computed property vs a `@ViewBuilder` func?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

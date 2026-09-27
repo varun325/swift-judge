@@ -13,6 +13,14 @@
     {
       "title": "The Basics — Assertions and Preconditions",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -30,5 +38,44 @@
     "`precondition` stops the program in all builds; validate user input with normal code instead.",
     "Filter out negative ages **before** calling `validatedAge`, then add a summary line.",
     "`let valid = ages.filter { $0 >= 0 }` and append `\"rejected \\(ages.count - valid.count)\"`."
+  ],
+  "impact": "core",
+  "jsBridge": "`assert` checks only in debug builds, `precondition` checks in release too, and `fatalError` always crashes. In JS, `console.assert` only logs. Swift's assertions actually stop the program, which is the point.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`console.assert` doesn't stop execution. Why are Swift's assertions designed to crash?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`assert` vs `precondition` vs `throw`: which for programmer errors, and which for bad user input?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does `-Ounchecked` do to `precondition`? Why is that dangerous?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do you put `assertionFailure` in app code so debug builds catch impossible states but users don't crash?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+      "url": "https://www.youtube.com/watch?v=Lrc-MX8WgNc",
+      "channel": "Sean Allen"
+    },
+    {
+      "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+      "url": "https://www.youtube.com/watch?v=lncOFL3Qsns",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

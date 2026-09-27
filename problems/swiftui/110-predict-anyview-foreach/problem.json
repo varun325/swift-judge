@@ -17,6 +17,14 @@
     {
       "title": "ForEach",
       "url": "https://developer.apple.com/documentation/swiftui/foreach"
+    },
+    {
+      "title": "View",
+      "url": "https://developer.apple.com/documentation/swiftui/view"
+    },
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
     }
   ],
   "platforms": [
@@ -26,5 +34,33 @@
     "`AnyView` hides the wrapped type completely.",
     "`ForEach`'s generic parameters are the data, the ID type and the content view.",
     "`ForEach<Range<Int>, Int, Text>` for the loop."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`AnyView` erases the type, and SwiftUI loses the structural identity it uses for diffing and animation. `Group` and `ForEach` keep types. It's like losing React `key`s: it works, but updates get more expensive.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React without keys still renders but re-mounts more. What does `AnyView` cost SwiftUI in the same way?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`AnyView` vs `@ViewBuilder` func vs `some View` return: which should you reach for?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `ForEach` a view or a view builder? What type does `ForEach(0..<3) { Text(\"\\($0)\") }` have?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where is `AnyView` genuinely justified (heterogeneous plugin views, type-erased routers)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "(OLD) Using size classes with AnyView type erasure – Bookworm SwiftUI Tutorial 2/10",
+      "url": "https://www.youtube.com/watch?v=nxqtJ4-FMjs",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

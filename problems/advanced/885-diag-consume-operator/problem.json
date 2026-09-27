@@ -12,11 +12,48 @@
     {
       "title": "Swift Evolution SE-0366",
       "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0366-move-function.md"
+    },
+    {
+      "title": "Copyable",
+      "url": "https://developer.apple.com/documentation/swift/copyable"
     }
   ],
   "hints": [
     "`consume` ends a binding's lifetime at that point.",
     "After `let moved = consume data`, any use of `data` is an error.",
     "Add `print(data.count)` after the consume."
+  ],
+  "impact": "edge",
+  "jsBridge": "`consume x` ends a variable's lifetime early, even for copyable types, so using `x` afterwards is a compile error. It's a performance and ownership tool with no JS equivalent (JS can only `x = null`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Setting `x = null` in JS helps the GC maybe. What does `consume` guarantee that nulling doesn't?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`consume` vs letting the optimiser figure out last use: why make it explicit?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you `consume` a global or a class property? Why not?"
+    },
+    {
+      "kind": "practice",
+      "q": "Large buffers passed into a function that takes ownership: where would `consume` avoid a copy?"
+    }
+  ],
+  "videos": [],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Memory Safety",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/memorysafety/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0390: Noncopyable structs and enums",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

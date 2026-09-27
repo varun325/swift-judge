@@ -14,11 +14,45 @@
     {
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
+    },
+    {
+      "title": "NSCache",
+      "url": "https://developer.apple.com/documentation/foundation/nscache"
     }
   ],
   "hints": [
     "O(1) needs a dictionary for lookup plus a doubly linked list for recency.",
     "Use sentinel head and tail nodes; move a node to the front on each access and evict `tail.prev` when over capacity.",
     "`unlink(n); pushFront(n)` on hits; on overflow: `let lru = tail.prev!; unlink(lru); map[lru.key] = nil`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "An O(1) LRU needs a dictionary plus a doubly linked list. JS's `Map` preserves insertion order, so JS devs cheat with delete-then-set. Swift's `Dictionary` is unordered, so you build the list yourself, with `weak`/`unowned` back-links.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The JS `Map` delete-and-reinsert trick gives LRU for free. Why doesn't it work in Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Hand-rolled LRU vs `NSCache` (auto-evicts under memory pressure): which for images?"
+    },
+    {
+      "kind": "edge",
+      "q": "Doubly linked nodes create reference cycles. How do you avoid leaking them?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should an LRU be an actor if multiple image loads hit it concurrently?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save and cache images in a SwiftUI app | Continued Learning #27",
+      "url": "https://www.youtube.com/watch?v=yXSC6jTkLP4&t=743s",
+      "channel": "Swiftful Thinking",
+      "start": 743,
+      "moment": "obviously in this demo we only have one image so this is kind of irrelevant but the reason we set this is because"
+    }
+  ],
+  "articles": []
 }

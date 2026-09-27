@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -31,5 +35,41 @@
     "Iterating a dictionary gives `(key, value)` pairs.",
     "Append each student to the list for their grade using `default: []`, then sort every list.",
     "`result[grade, default: []].append(student)` in the loop, then `result.mapValues { $0.sorted() }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS: `Object.entries(g).reduce(...)`. Swift iterates `(key, value)` tuples directly with `for (k, v) in dict`, and `dict.keys.sorted()` gives order. Plain dictionary iteration order is arbitrary and changes between runs.",
+  "compass": [
+    {
+      "kind": "edge",
+      "q": "Run the same program twice: does dictionary iteration order change? Why does Swift randomise hashing per process?"
+    },
+    {
+      "kind": "js",
+      "q": "JS objects iterate in insertion order (mostly). What bugs appear when JS devs assume Swift dictionaries do the same?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Dictionary(grouping:by:)` vs `reduce(into:)` with `[k, default: []].append(v)`: which one builds fewer intermediate arrays?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why must a test assert on sorted keys, or compare dictionaries with `==`, rather than printing a dictionary?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Transforming and unwrapping dictionary values with compactMapValues()",
+      "url": "https://www.youtube.com/watch?v=Le32Tbkv2v0&t=7s",
+      "channel": "Paul Hudson",
+      "start": 7,
+      "moment": "results then discard anything that's nil with the map values method from dictionaries leave my keys intact but"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

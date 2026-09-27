@@ -13,6 +13,10 @@
     {
       "title": "Concurrency — The Main Actor",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -31,5 +35,46 @@
     "`@MainActor` isolates a type to the main actor; outsiders must `await`.",
     "Mark the helper `nonisolated static`; from `uiDemo`, await the initialiser, `load`, and reading `items`.",
     "`let vm = await ViewModel(); await vm.load(names); let items = await vm.items`."
+  ],
+  "impact": "core",
+  "jsBridge": "`@MainActor` pins code to the main thread, where UI must run, like everything in JS running on the UI thread. `nonisolated` opts a member out so pure helpers can run anywhere.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, everything is on the main thread, so heavy work blocks the UI. How does `@MainActor` + `nonisolated` let Swift split UI and work?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does calling an `async` function from a `@MainActor` method move work off the main thread? (Only if the callee isn't main-actor isolated.)"
+    },
+    {
+      "kind": "contrast",
+      "q": "`@MainActor` class vs `DispatchQueue.main.async`: why is the annotation safer?"
+    },
+    {
+      "kind": "practice",
+      "q": "Swift 6.2's default main-actor isolation for app targets: what does it change for view models?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58&t=562s",
+      "channel": "Swiftful Thinking",
+      "start": 562,
+      "moment": "actor so now anything that tries to update Title is going to get a warning that any to be on the main actor and we"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

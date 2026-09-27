@@ -31,5 +31,41 @@
     "Extensions can add computed properties and methods to types you don't own.",
     "`isPrime`: trial division up to the square root. `digits`: map the characters of `String(magnitude)`. `times`: loop `self` times.",
     "`var digits: [Int] { String(magnitude).compactMap(\\.wholeNumberValue) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Extensions add methods and computed properties to existing types, even `Int`. That's like patching `Number.prototype`, but scoped by module and resolved at compile time, so it's safe and common in Swift.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Extending `Number.prototype` is taboo in JS. Why is `extension Int` acceptable in Swift? What prevents collisions between libraries?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can an extension override an existing method? Add a stored property?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`5.times { }` (Ruby-style) vs a plain `for _ in 0..<5`: is the extension worth it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which extensions are common in iOS codebases, like `Date` formatting or `View` modifiers? When do they become a dumping ground?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YrVwyL_mcts&t=282s",
+      "channel": "Paul Hudson",
+      "start": 282,
+      "moment": "default implementation of say hello like this extension person"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Extensions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -14,11 +14,66 @@
     {
       "title": "The Basics",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Bool",
+      "url": "https://developer.apple.com/documentation/swift/bool"
     }
   ],
   "hints": [
     "Arrays are values; emoji families are single characters; `&+` wraps.",
     "`.some(nil)` is not equal to `nil` at the outer level — but its unwrapped value is.",
     "`0.1 + 0.2` prints `0.30000000000000004`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift's surprises are different from JS's WTFs (`[] + {}`). They come from strictness: grapheme counting, value copies, overflow traps and optional printing. Each is a deliberate trade-off rather than an accident.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Pick one Swift WTF and one JS WTF. Which is the result of a deliberate safety trade-off, and which is historical baggage?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which of these would be a *compile* error in Swift 6 but only a warning in Swift 5?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Are Swift's surprises easier or harder to debug than JS's? Why?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which of these have you actually hit in app code?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create custom Operators in Swift | Advanced Learning #33",
+      "url": "https://www.youtube.com/watch?v=4eOTk5y-uZI",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift WTF – Surprising behaviors while learning Swift",
+      "url": "https://www.youtube.com/watch?v=dQJUoNIbDsg&t=694s",
+      "channel": "Paul Hudson",
+      "start": 694,
+      "moment": "on the left come before their counterparts on the right. If this is news to you, I'll give"
+    },
+    {
+      "title": "This surprising tactic got my app's first paying users - Build, Ship, Profit #2",
+      "url": "https://www.youtube.com/watch?v=_o2ggCPh7qE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

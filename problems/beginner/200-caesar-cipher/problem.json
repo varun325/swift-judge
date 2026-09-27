@@ -14,6 +14,14 @@
     {
       "title": "Strings and Characters — Unicode Scalars",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -35,5 +43,44 @@
     "`Character.asciiValue` gives a `UInt8?` — `nil` for non-ASCII characters.",
     "Normalise the shift into `0..<26` first (Swift's `%` keeps the sign), then shift each letter relative to `A` (65) or `a` (97).",
     "`let k = ((shift % 26) + 26) % 26` and for letters: `Character(UnicodeScalar((Int(ascii - base) + k) % 26 + Int(base))!)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS does `String.fromCharCode(((c - 65 + k) % 26 + 26) % 26 + 65)`. Swift works on `Character.asciiValue` (`UInt8?`) and `UnicodeScalar`. The `%` remainder can be negative in both languages, so the double-mod trick carries over.",
+  "compass": [
+    {
+      "kind": "edge",
+      "q": "Why is `asciiValue` optional? What happens to \"é\" or \"🙂\" in your cipher?"
+    },
+    {
+      "kind": "js",
+      "q": "Both JS and Swift `%` return negative results for negative operands. Which languages have a true modulo, and how would you write one in Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Mapping over `unicodeScalars` vs `Character`s: which is faster, and which is more correct?"
+    },
+    {
+      "kind": "practice",
+      "q": "Real apps must never roll their own crypto. Which Apple framework do you use instead, and what does it give you?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Binding an alert to an optional string – SnowSeeker SwiftUI Tutorial 11/12",
+      "url": "https://www.youtube.com/watch?v=Ea3dl2gy3QY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -34,5 +34,46 @@
     "Two objects holding strong references to each other are never freed.",
     "Make the child's back-reference to its parent `weak`.",
     "`weak var parent: Parent?`."
+  ],
+  "impact": "core",
+  "jsBridge": "Parent ↔ child strong references leak under ARC, because neither count reaches zero. JS's GC collects cycles, so JS devs never think about this. In Swift, the child's back-reference must be `weak` (or `unowned`).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS mark-and-sweep GC frees cycles. What does ARC gain in exchange for not doing that?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's GC also handles cycles. Name one Swift benefit of ARC (deterministic deinit, no pauses) over GC."
+    },
+    {
+      "kind": "contrast",
+      "q": "`weak var parent` vs `unowned let parent`: which crashes if you're wrong about lifetimes?"
+    },
+    {
+      "kind": "practice",
+      "q": "How do you find this leak in Xcode (Memory Graph debugger)? What does it look like?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13",
+      "url": "https://www.youtube.com/watch?v=HRHtOdTJH70",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=5s",
+      "channel": "Sean Allen",
+      "start": 5,
+      "moment": "and check that out I run through all the questions I'm going to go over with some brief answers but this video is going to"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

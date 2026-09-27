@@ -31,5 +31,55 @@
     "Three higher-order functions, one after another.",
     "`filter` keeps odd numbers, `sorted()` orders them, `map` builds strings.",
     "`numbers.filter { !$0.isMultiple(of: 2) }.sorted().map { \"\\($0) is a lucky number\" }`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS `arr.filter().sort().map()` becomes Swift's `filter { }.sorted().map { }`, almost identical. Two differences: `sorted()` returns a new array (JS `sort` mutates), and the default sort is numeric, not JS's lexicographic `[10, 9].sort()` surprise.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`[10, 9, 1].sort()` in JS gives `[1, 10, 9]`. What does Swift's `sorted()` do, and why?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Chained `filter`/`map` creates intermediate arrays. When would you use `.lazy`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Chains like this often live in view models for display lists. When should they be precomputed instead of recomputed in `body`?"
+    },
+    {
+      "kind": "java",
+      "q": "Java Streams are lazy by default and need `.collect()`. Swift's are eager unless you ask for `lazy`. Which default is better?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to Filter, Sort, and Map in Swift | Swift Basics #16",
+      "url": "https://www.youtube.com/watch?v=NkOU60vwUEY&t=19s",
+      "channel": "Swiftful Thinking",
+      "start": 19,
+      "moment": "have to write that manual Loop if we are doing certain things and so three of the most common things that we do when we're"
+    },
+    {
+      "title": "Dynamically filtering our SwiftData query – Hot Prospects 11/16",
+      "url": "https://www.youtube.com/watch?v=vWKOXetgr4g&t=17s",
+      "channel": "Paul Hudson",
+      "start": 17,
+      "moment": "that's fine for the everyone tab it's not enough for the other two in our app we have three instances of our Prospect"
+    },
+    {
+      "title": "Filter, Map, Reduce - Swift - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=OujkoTKEVj8",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "what's up guys we're back with another video in the iOS interview question series and today we're going to be"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

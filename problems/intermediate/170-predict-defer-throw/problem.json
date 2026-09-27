@@ -15,11 +15,62 @@
     {
       "title": "Error Handling",
       "book": "LanguageGuide/ErrorHandling"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "hints": [
     "`defer` blocks run in reverse order, even when the scope exits because of a throw.",
     "Trace `work(false)`: start, finish, then both cleanups (B before A). Then `work(true)` throws after start — the cleanups run **before** the `catch`.",
     "After `caught Boom()`, `try? work(true)` prints its start and cleanups again, then `nil`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`defer` blocks run *before* the error reaches the caller's `catch`. It's the same as `finally` running before the outer `catch` in JS, and just as easy to mis-predict.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, does `finally` run before the outer `catch`? Is the ordering the same as Swift's `defer`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a `defer` block throw? What does the compiler say?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`defer` inside a `do` block vs at function level: which runs first?"
+    },
+    {
+      "kind": "practice",
+      "q": "Logging with `defer` for timing (`let start = …; defer { log(elapsed) }`): does it capture failed paths?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Writing throwing functions – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=MxaYr2VGVTo",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "sometimes functions fail because they have bad input or because something went wrong internally Swift let us throw"
+    },
+    {
+      "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+      "url": "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=218s",
+      "channel": "Sean Allen",
+      "start": 218,
+      "moment": "you're in this block that means the try it was a successful try so to speak everything worked out fine if the try is"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

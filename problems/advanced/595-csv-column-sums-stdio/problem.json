@@ -14,11 +14,49 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "Keep empty cells when splitting so columns stay aligned.",
     "Split with `omittingEmptySubsequences: false`, trim each cell, and add it if it parses as `Double`.",
     "Print whole sums as `Int`: `sum == sum.rounded() ? String(Int(sum)) : String(sum)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Split on commas, parse with `Double(_:)`, sum per column. The same as JS's `split(',')` + `parseFloat`, except failures give `nil` instead of `NaN`. Real CSV (quoted commas) needs a real parser, in any language.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`parseFloat('3abc')` is 3 in JS. What is `Double(\"3abc\")` in Swift, and which is safer for data import?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does naive `split(separator: \",\")` do to `\"Smith, John\",42`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`split(separator:)` vs `components(separatedBy:)` for trailing empty fields: which keeps them?"
+    },
+    {
+      "kind": "practice",
+      "q": "Importing a CSV into an app: would you use `TabularData` (Apple's `DataFrame`) instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+      "url": "https://www.youtube.com/watch?v=OLjkmJNNeHc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

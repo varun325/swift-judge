@@ -34,5 +34,55 @@
     "A `let` doesn't need its value at declaration — only exactly one assignment before use.",
     "Declare `let rate: Double` without a value, assign it in both the `if` and the `else`, then compute the cost.",
     "`return max(10.0, rate * weightKg)` — `max` enforces the minimum."
+  ],
+  "impact": "core",
+  "jsBridge": "JS `const` must be initialised on the same line. Swift `let` only has to be assigned **exactly once before use**, so you can declare it and assign it in each branch of an `if`/`switch`. The compiler proves every path assigns it exactly once (definite initialisation).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs often write `let x; if (...) x = 1; else x = 2;` and lose immutability. Swift keeps `let`. What analysis does the compiler do that TypeScript doesn't?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`let` vs `if`-expression (`let x = if c { 1 } else { 2 }`): when is each clearer, and which works when branches need several statements?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `let` on a class instance make the object immutable? What about `let` on a struct with `var` properties?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why does Xcode warn \"variable was never mutated; consider changing to let\"? What does preferring `let` buy in a large codebase, beyond style?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Variables and Constants | Swift Basics #3",
+      "url": "https://www.youtube.com/watch?v=jRNa6hYTJLo&t=82s",
+      "channel": "Swiftful Thinking",
+      "start": 82,
+      "moment": "integers doubles floats are in this video we're going to look at the difference between a variable and a"
+    },
+    {
+      "title": "How to create constants and variables – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=jlkcxTyM8m4&t=403s",
+      "channel": "Paul Hudson",
+      "start": 403,
+      "moment": "it's fights warning me in big letters i can't find planning go to the same case"
+    },
+    {
+      "title": "Swift Basics - Variables and Constants",
+      "url": "https://www.youtube.com/watch?v=2cazK9Cg2Nw&t=3s",
+      "channel": "Sean Allen",
+      "start": 3,
+      "moment": "how to use types and I was declaring variables so you may have a little bit of an idea but let's dive into that a"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

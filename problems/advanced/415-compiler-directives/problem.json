@@ -25,5 +25,44 @@
     "`#if` is decided at compile time; `#available` at runtime.",
     "Use `#if swift(>=6.0)`, `#if os(macOS)`, `#if arch(arm64)`, `#if canImport(Foundation)`, `#if DEBUG`, then `if #available(macOS 13, *)`.",
     "Each check appends one string to an array, in the order the statement lists."
+  ],
+  "impact": "edge",
+  "jsBridge": "`#if os(macOS)`, `#if swift(>=6)` and `#if DEBUG` are compile-time conditions, like build-time `process.env.NODE_ENV` checks that bundlers strip. `#available` is the **runtime** OS-version check.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`if (process.env.NODE_ENV === 'production')` is removed by bundlers. How is `#if DEBUG` similar, and different?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`#if os(iOS)` (compile-time) vs `if #available(iOS 17, *)` (runtime): when do you need each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Code inside a false `#if` block: is it type-checked? Parsed?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do you use `#if DEBUG` in an app: mock data, logging, debug menus?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Attributes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

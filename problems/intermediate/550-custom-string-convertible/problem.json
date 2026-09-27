@@ -32,5 +32,46 @@
     "`description` is used by interpolation; `debugDescription` by `String(reflecting:)`.",
     "Format cents as dollars with a sign and zero-padded cents; debug form is `Money(cents: n)`.",
     "`\"\\(sign)$\\(abs / 100).\\(fraction < 10 ? \"0\" : \"\")\\(fraction)\"` using `cents.magnitude`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`CustomStringConvertible.description` is JS's `toString()`. `CustomDebugStringConvertible` controls debugger and `debugPrint` output, like Node's `util.inspect.custom`. Interpolation uses `description`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `toString()` vs `[util.inspect.custom]`: which Swift protocols map to each?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should `description` be user-facing? (No: use formatters or `LocalizedStringResource`.) Why not?"
+    },
+    {
+      "kind": "edge",
+      "q": "Negative cents: `-$0.50` vs `$-0.50`. Who decides? What does `formatted(.currency)` do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`description` vs `dump()` vs `Mirror`: which reflects all stored properties?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Build an expandable / collapsable description section | SwiftUI Crypto App #22",
+      "url": "https://www.youtube.com/watch?v=po4lRojJXdA&t=10s",
+      "channel": "Swiftful Thinking",
+      "start": 10,
+      "moment": "finally gonna wrap up our detailed view here um there's just basically one more main thing that"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

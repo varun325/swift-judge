@@ -21,6 +21,10 @@
     {
       "title": "PersonNameComponents",
       "url": "https://developer.apple.com/documentation/foundation/personnamecomponents"
+    },
+    {
+      "title": "FormatStyle",
+      "url": "https://developer.apple.com/documentation/foundation/formatstyle"
     }
   ],
   "signature": {
@@ -48,5 +52,33 @@
     "Arrays of strings can be formatted as a list with `.list(type: .and)`.",
     "Sizes need `Int64` for `.byteCount(style: .file)`.",
     "Build `PersonNameComponents` and format with `.name(style: .abbreviated)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`.formatted(.list(type: .and))`, `ByteCountFormatStyle` and `PersonNameComponents` cover formatting JS does with `Intl.ListFormat` and ad-hoc byte helpers. Foundation localises all three.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`new Intl.ListFormat('en', {type: 'conjunction'})` vs `.formatted(.list(type: .and))`: same Oxford comma behaviour?"
+    },
+    {
+      "kind": "edge",
+      "q": "Bytes: 1000 vs 1024 (`.file` vs `.memory`). Which does Finder use?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Formatting names with `PersonNameComponents` vs string concatenation: what breaks for Japanese names?"
+    },
+    {
+      "kind": "practice",
+      "q": "Showing storage usage in settings: which byte count style is least confusing?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Formatting number strings in SwiftUI - SwiftUI Starter Project 11/14",
+      "url": "https://www.youtube.com/watch?v=8O8HmKn2OFk",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

@@ -13,11 +13,58 @@
     {
       "title": "The Basics — Type Annotations",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Swift Standard Library",
+      "url": "https://developer.apple.com/documentation/swift/swift-standard-library"
     }
   ],
   "hints": [
     "Swift is strict about types, even for literals.",
     "Annotate the constant as `Int` but give it a string literal.",
     "`let score: Int = \"100\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "TS would also flag `let score: number = \"100\"`, so the idea is familiar. Swift goes further: there's no `any` escape hatch by default and no implicit conversion at runtime, and type errors are always compile errors.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS has `as any` to silence this. What's the closest Swift escape hatch, and why is it much rarer?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Annotation mismatch vs failed `as!` cast: compile-time vs runtime. Which one can still crash?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does `let x: Double = 100` compile but `let x: Int = 100.0` doesn't?"
+    },
+    {
+      "kind": "practice",
+      "q": "When reading unfamiliar Swift errors, what does \"cannot convert value of type…\" usually mean in SwiftUI code?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=530s",
+      "channel": "Swiftful Thinking",
+      "start": 530,
+      "moment": "Bull and I'll set it equal to hello world all right and so now again we're going"
+    },
+    {
+      "title": "How to use type annotations – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=_FX8xCBmbeA&t=590s",
+      "channel": "Paul Hudson",
+      "start": 590,
+      "moment": "zero right but swift"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -28,8 +28,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L7: Animation (Generics & custom View modifiers)",
-      "url": "https://www.youtube.com/watch?v=RYemrq0e7KM",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=RYemrq0e7KM&t=1589s",
+      "channel": "Stanford Online",
+      "start": 1589,
+      "moment": "And it's working. And everything is fine. So like I said, that's a little bit advanced data flow or whatever you want to call it, but it's important to understa"
+    }
+  ],
+  "impact": "core",
+  "jsBridge": "Making `CodeView<AncillaryView: View>` generic with a `@ViewBuilder` closure parameter is exactly React's children/render-props pattern, but typed: the ancillary view's concrete type is part of `CodeView`'s type.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React `props.children` or a render prop vs a generic view with a `@ViewBuilder` parameter: what does Swift keep that React erases?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why store the ancillary view as a closure (`() -> AncillaryView`) vs a value? When is it built?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Generic view vs `AnyView` parameter: what do you lose with `AnyView`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which of your components would become generic views (cards with custom trailing content)?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

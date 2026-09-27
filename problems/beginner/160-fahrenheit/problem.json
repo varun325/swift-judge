@@ -14,6 +14,14 @@
     {
       "title": "The Basics — Numeric Type Conversion",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "signature": {
@@ -32,5 +40,44 @@
     "Swift never mixes `Int` and `Double` implicitly — and integer division truncates.",
     "Convert `celsius` to `Double` **before** multiplying and dividing.",
     "`Double(celsius) * 9 / 5 + 32`."
+  ],
+  "impact": "core",
+  "jsBridge": "In JS, `100 * 9 / 5` is `180` because everything is a float. In Swift, `Int / Int` is **integer division** (truncating) and you can't mix `Int` and `Double` without an explicit conversion. There's no implicit numeric coercion at all.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS silently coerces `\"5\" * 2` to 10. Swift won't even convert `Int` to `Double` implicitly. Which bugs does that strictness prevent, and what does it cost in ergonomics?"
+    },
+    {
+      "kind": "edge",
+      "q": "`37 * 9 / 5 + 32` in integer maths gives 98, not 98.6. Where else might silent truncation hide in UI code, like a percent-complete bar?"
+    },
+    {
+      "kind": "java",
+      "q": "Java does promote `int` to `double` automatically in `int * double`. Why did Swift choose not to?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should unit conversion be hand-written at all? Look up `Measurement<UnitTemperature>`: what does it give you for free, such as localisation?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Doubles and booleans – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ZpGDwOAWiXA",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

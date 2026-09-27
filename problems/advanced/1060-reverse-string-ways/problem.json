@@ -30,5 +30,41 @@
     "`reversed()` works on `Character`s.",
     "Prepending each character also reverses: `b = String(ch) + b`.",
     "Recurse on `s.dropFirst()` (a `Substring`) and append the first character."
+  ],
+  "impact": "edge",
+  "jsBridge": "`String(s.reversed())` reverses **graphemes**, so emoji and accents survive. JS's `s.split('').reverse().join('')` breaks surrogate pairs. Three agreeing implementations are a mini property test.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`'👨‍👩‍👧'.split('').reverse().join('')` in JS produces garbage. What does Swift's `reversed()` produce, and why?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`reversed()` (a lazy view) vs building a new `String`: when is the lazy view enough?"
+    },
+    {
+      "kind": "edge",
+      "q": "Reversing `unicodeScalars` vs `Character`s: which breaks flags like 🇬🇧?"
+    },
+    {
+      "kind": "practice",
+      "q": "Is string reversal ever needed in apps? What about right-to-left text (it's not reversal)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift Basics - Array | Sort, Reverse, Shuffle",
+      "url": "https://www.youtube.com/watch?v=mWKYpRxjhJs&t=364s",
+      "channel": "Sean Allen",
+      "start": 364,
+      "moment": "print ages down here and now you can see 21 is no longer at the beginning 44 is at the beginning and the last three"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

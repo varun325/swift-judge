@@ -48,6 +48,23 @@ let progress: ProgressStore
 let playground: Playground
 let win: BrowserWindow | undefined
 
+/**
+ * Playground pages live next to swift-notes.md when running from the author's project folder, and
+ * otherwise in this machine's userData folder. If the preferred folder can't be created (moved,
+ * read-only, another OS), fall back to userData rather than failing to start.
+ */
+function openPlayground(): Playground {
+  const userData = join(app.getPath('userData'), 'playground')
+  const preferred =
+    process.env.SWIFT_JUDGE_PLAYGROUND ?? (existsSync(join(appRoot, '..', 'swift-notes.md')) ? join(appRoot, '..', 'playground') : userData)
+  try {
+    return new Playground(preferred)
+  } catch (e) {
+    console.error(`playground folder ${preferred} unavailable, using ${userData}:`, e)
+    return new Playground(userData)
+  }
+}
+
 function readJson<T>(file: string, fallback: T): T {
   try {
     return existsSync(file) ? (JSON.parse(readFileSync(file, 'utf8')) as T) : fallback
@@ -155,6 +172,7 @@ function registerIpc(): void {
   ipcMain.handle('pg:load', (_e, id: string) => playground.load(id))
   ipcMain.handle('pg:save', (_e, id: string, part: { code?: string; notes?: string }) => playground.save(id, part))
   ipcMain.handle('pg:create', (_e, title: string) => playground.create(title))
+  ipcMain.handle('pg:ensure', (_e, title: string, code: string, notes: string) => playground.ensure(title, code, notes))
   ipcMain.handle('pg:rename', (_e, id: string, title: string) => playground.rename(id, title))
   ipcMain.handle('pg:remove', async (_e, id: string) => {
     // Move to the macOS Trash rather than deleting, so notes are recoverable.
@@ -224,10 +242,7 @@ app.whenReady().then(() => {
   setCacheRoot(join(app.getPath('userData'), 'cache'))
   progress = new ProgressStore(join(app.getPath('userData'), 'progress.json'))
   // Playground pages live next to swift-notes.md when that folder exists, else in userData.
-  playground = new Playground(
-    process.env.SWIFT_JUDGE_PLAYGROUND ??
-      (existsSync(join(appRoot, '..', 'swift-notes.md')) ? join(appRoot, '..', 'playground') : join(app.getPath('userData'), 'playground'))
-  )
+  playground = openPlayground()
   reloadContent()
   registerIpc()
   watchProblems()

@@ -16,11 +16,70 @@
     {
       "title": "The Basics — Optionals",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "hints": [
     "Printing an optional shows its `Optional(…)` wrapper.",
     "An `Int!` is only force-unwrapped where a non-optional is **required**; `let d = c` keeps it optional.",
     "The first two lines are `Optional(5)` and `nil`; `print(type(of: d))` shows `Optional<Int>`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Printing an optional shows `Optional(\"x\")`, a leak of the wrapper that JS doesn't have (`undefined` just prints). Interpolating optionals into UI strings is a classic bug, and the compiler warns about it.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`${undefined}` prints \"undefined\". `\"\\(optional)\"` prints `Optional(\"x\")`. Which is worse to ship to users?"
+    },
+    {
+      "kind": "edge",
+      "q": "Implicitly unwrapped optionals (`String!`) print how? When do they unwrap automatically?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`String(describing: opt)` vs `opt ?? \"\"` vs `opt.map { \"\\($0)\" }`: when is each right?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do IUOs still appear in iOS code: `@IBOutlet`? Why?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=9s",
+      "channel": "Swiftful Thinking",
+      "start": 9,
+      "moment": "safe coding because safe coding is great coding and what that means is that if we have"
+    },
+    {
+      "title": "How to unwrap optionals with nil coalescing – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=Vtx5W8YVkqs",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] believe it or not swift gives us a third way of unwrapping optionals and it's"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "I'm teaching you about optionals I'm going to show you four different ways to unwrap them we're going to talk about optional chaining and then I'm going to show"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

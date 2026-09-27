@@ -21,5 +21,48 @@
     "Store the running minimum alongside each pushed value.",
     "Push the pair `(value, min(value, previous min))`; the minimum is always on top.",
     "`items.append((x, Swift.min(x, items.last?.min ?? x)))` and `func min() -> Int? { items.last?.min }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The same algorithm as in JS (a parallel stack of running minimums). Swift makes it a `struct` with `mutating` methods, so a `MinStack` copy is independent. In JS, two variables would share one stack object.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "Struct `MinStack` vs class: what does copying a struct stack cost thanks to copy-on-write?"
+    },
+    {
+      "kind": "js",
+      "q": "In JS you'd implement this as a class. What changes for callers when it's a Swift struct?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should `pop()` on empty return `nil` or trap? What does `popLast()` vs `removeLast()` do?"
+    },
+    {
+      "kind": "practice",
+      "q": "Undo stacks in editors are stacks with extra state. Where would you use a min/max-tracking stack?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=26s",
+      "channel": "Swiftful Thinking",
+      "start": 26,
+      "moment": "structs versus classes. We're going to learn classes versus actors. We're going to learn value types versus"
+    },
+    {
+      "title": "Pushing new views onto the stack using NavigationLink – Moonshot SwiftUI Tutorial 3/11",
+      "url": "https://www.youtube.com/watch?v=qhZPTZ52kpo",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Swift ui's navigation stack shows a navigation bar at top of our views but"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

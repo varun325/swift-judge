@@ -35,5 +35,44 @@
     "`@dynamicMemberLookup` turns `x.name` into a call to `subscript(dynamicMember:)`.",
     "Return a new `Config` with the member appended to a dotted prefix; `value` reads `storage[prefix]`.",
     "`path.split(separator: \".\").reduce(self) { $0[dynamicMember: String($1)] }.value`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`@dynamicMemberLookup` lets `config.host` compile to a `subscript(dynamicMember:)` call, like a JS `Proxy` with a `get` trap, but resolved at compile time and optionally typed via key paths.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `Proxy` intercepts property access at runtime. What's the equivalent Swift mechanism, and what does it cost in type safety?"
+    },
+    {
+      "kind": "contrast",
+      "q": "String-based dynamic members vs key-path-based (`KeyPath<Wrapped, T>`): which catches typos?"
+    },
+    {
+      "kind": "edge",
+      "q": "What does Xcode autocomplete show for a dynamic member? Why does that matter for team code?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI's `Binding` and `@Observable` wrappers use key-path dynamic member lookup. Find where."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Attributes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -39,5 +39,45 @@
     "A `NavigationPath` is a type-erased list of `Hashable` route values.",
     "`append` pushes, `removeLast()` pops, `NavigationPath()` resets.",
     "Save with `path.codable` + `JSONEncoder`; restore with `NavigationPath(decodedRepresentation)`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`NavigationStack(path:)` with a `NavigationPath` of `Hashable` routes is data-driven navigation, like React Router's history stack but as state you own. Push = append, pop = removeLast, and `Codable` routes make restoration possible.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React Router keeps history in the URL. SwiftUI keeps it in a path you own. What's easier: deep links, restoration, or testing?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`NavigationPath` (type-erased) vs `[Route]` (typed array): when do you need the erased version?"
+    },
+    {
+      "kind": "edge",
+      "q": "Restoring a saved path after an app update removed a route case: what happens when decoding fails?"
+    },
+    {
+      "kind": "practice",
+      "q": "Popping to root after checkout: what's the one-line change to the path?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use NavigationStack in SwiftUI | Bootcamp #62",
+      "url": "https://www.youtube.com/watch?v=GZ-hQWMjT0s",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to save NavigationStack paths using Codable – Navigation SwiftUI Tutorial 6/9",
+      "url": "https://www.youtube.com/watch?v=QZz9azaSYQ8",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "NavigationStack - SwiftUI Programmatic Navigation - iOS 16",
+      "url": "https://www.youtube.com/watch?v=oxp8Qqwr4AY&t=867s",
+      "channel": "Sean Allen",
+      "start": 867,
+      "moment": "like I said most likely you're going to go from a platform to a game to a game developer to a game reviewer all different types can be in the same navigation pa"
+    }
+  ],
+  "articles": []
 }

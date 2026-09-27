@@ -16,6 +16,10 @@
     {
       "title": "Angle",
       "url": "https://developer.apple.com/documentation/swiftui/angle"
+    },
+    {
+      "title": "Gestures",
+      "url": "https://developer.apple.com/documentation/swiftui/gestures"
     }
   ],
   "signature": {
@@ -38,5 +42,35 @@
     "Snap first: `(degrees / 90).rounded() * 90`.",
     "Normalise with `truncatingRemainder(dividingBy: 360)` and add 360 if negative.",
     "Wrap values in `Angle.degrees(_:)` and read `.degrees` back."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Snapping rotation to the nearest 90° and normalising into 0..<360 is plain maths with `Angle`. Working in a typed `Angle` (degrees and radians) avoids the JS unit-confusion bug (`Math.sin` wants radians).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Math.sin(90)` in JS is a radians bug. How does SwiftUI's `Angle` type prevent it?"
+    },
+    {
+      "kind": "edge",
+      "q": "Normalising −30°: does Swift's `%` give 330 or −30? What's the fix (`truncatingRemainder` + adjust)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Snapping on gesture end vs continuous snapping during the gesture: which feels better?"
+    },
+    {
+      "kind": "practice",
+      "q": "Photo editors snap rotation. Where else would snapping help (sliders, positions)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use RotationGesture in SwiftUI | Continued Learning #3",
+      "url": "https://www.youtube.com/watch?v=vSvhdwy_8Lk&t=164s",
+      "channel": "Swiftful Thinking",
+      "start": 164,
+      "moment": "all right and of course we're going to need a modifier on our text to actually rotate it so we'll call dot rotation"
+    }
+  ],
+  "articles": []
 }

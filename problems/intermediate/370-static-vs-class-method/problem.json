@@ -33,5 +33,56 @@
     "`class func` can be overridden by subclasses; `static func` can't.",
     "Override `kind()` in `Circle`, then call both methods on a `Shape.Type` metatype.",
     "`let type: Shape.Type = k == \"circle\" ? Circle.self : Shape.self` then `\"\\(type.kind())/\\(type.library())\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`class func` can be overridden by subclasses, and `static func` can't (it's `final class func`). JS static methods are always inherited and overridable. Swift makes you choose.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `static` methods are inherited and overridable. Which Swift keyword matches that behaviour?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Why can structs and enums only use `static`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a `class var` be a stored property? Why not?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do overridable type methods appear in UIKit (`layerClass`, `requiresConstraintBasedLayout`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Static and class subscripts in Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=8VNqScyEI34",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "SEO 254 adds the ability to mark subscripts as being static which means they apply two types rather than"
+    },
+    {
+      "title": "Swift For Beginners - Class & Inheritance Explained",
+      "url": "https://www.youtube.com/watch?v=EhDML-fAqTM",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

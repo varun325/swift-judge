@@ -15,6 +15,10 @@
     {
       "title": "Collection Types",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "signature": {
@@ -37,5 +41,44 @@
     "`zip` pairs two sequences and stops at the shorter one.",
     "Zip names with times, sort by time, take three, then number them with `enumerated()`.",
     "`zip(names, times).sorted { $0.1 < $1.1 }.prefix(3).enumerated().map { \"\\($0.offset + 1). …\" }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`zip(names, times)` pairs two arrays and stops at the shorter, like lodash `zip` but without `undefined` padding. `enumerated()` gives `(offset, element)`, like JS's `entries()`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "lodash `zip` pads with `undefined`. Swift `zip` truncates. Which is safer?"
+    },
+    {
+      "kind": "edge",
+      "q": "`enumerated()` offsets on an `ArraySlice` start at 0, not at the slice's index. Why does that bite?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`zip(a.indices, a)` vs `enumerated()`: which gives real indices?"
+    },
+    {
+      "kind": "practice",
+      "q": "Parallel arrays are a smell. When would you refactor into `[Runner]` structs instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Arrays and Sets in Swift | Swift Basics #13",
+      "url": "https://www.youtube.com/watch?v=_SRaZjPuYOQ",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "How to store ordered data in arrays – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=K1jEskrHcyY",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

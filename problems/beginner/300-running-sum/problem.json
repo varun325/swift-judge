@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Arrays",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Array",
+      "url": "https://developer.apple.com/documentation/swift/array"
     }
   ],
   "signature": {
@@ -31,5 +35,41 @@
     "Keep a running total as you walk through the array.",
     "Append the total after adding each element. `reserveCapacity` avoids reallocations.",
     "`var total = 0; for n in nums { total += n; result.append(total) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS `reduce` can build a running sum. Swift has no `scan` in the standard library, but swift-algorithms' `reductions` is exactly `scan`. The idiomatic hand-written version is a `for` loop with `append`, or `reduce(into:)`.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`reduce` vs `reduce(into:)`: why is `into:` faster for building arrays? What copying does plain `reduce` do?"
+    },
+    {
+      "kind": "js",
+      "q": "JS `reduce((acc, x) => [...acc, acc.at(-1) + x], [])` is O(n²). Is the Swift version with `+` the same? Why?"
+    },
+    {
+      "kind": "practice",
+      "q": "Running totals appear in charts, like a cumulative steps graph in HealthKit. Where would you compute them: the view, the view model, or the query?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens with `[Int.max, 1]`? Should the result type be `Int` or something else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Apple Reduces App Store Commission to 15%",
+      "url": "https://www.youtube.com/watch?v=XkrRNQ2a-iY&t=66s",
+      "channel": "Sean Allen",
+      "start": 66,
+      "moment": "so my assumption is that subscriptions will still behave the same where the first year of a subscription"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

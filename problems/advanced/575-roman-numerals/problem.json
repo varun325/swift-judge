@@ -30,5 +30,49 @@
     "Greedy: always use the largest value that still fits.",
     "Keep an ordered array of `(value, symbol)` pairs that includes the subtractive pairs like 900 = \"CM\".",
     "`result += String(repeating: symbol, count: n / value); n %= value`."
+  ],
+  "impact": "edge",
+  "jsBridge": "An ordered array of `(value, symbol)` tuples drives a greedy loop. The JS version is identical with arrays of pairs. Swift tuples with labels (`(value: 900, symbol: \"CM\")`) read better and cost nothing.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: `[[1000,'M'],…]`. Swift: `[(value: Int, symbol: String)]`. What do labels buy you?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Why must this be an array, not a dictionary? (Order.)"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the reverse (Roman → Int) trick with the subtractive pairs?"
+    },
+    {
+      "kind": "practice",
+      "q": "Foundation can't format Roman numerals, but `NumberFormatter` does spell-out. When would an app need either?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

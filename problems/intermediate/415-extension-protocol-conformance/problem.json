@@ -41,5 +41,46 @@
     "You can add a protocol conformance to an existing type in an extension.",
     "Conform `Int` and `String`, then conform `Array` only `where Element: Summarizable`.",
     "`extension Array: Summarizable where Element: Summarizable { var summary: String { \"[\" + map(\\.summary).joined(separator: \",\") + \"]\" } }`."
+  ],
+  "impact": "core",
+  "jsBridge": "**Retroactive conformance**: you can make `Int` or `Array` adopt your protocol after the fact. TS gets this for free structurally, while nominal Swift needs an explicit `extension Int: Summarizable`. Conditional conformance (`where Element: Summarizable`) is what makes it powerful.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In TS, `Int` would \"conform\" automatically if it had `summary`. What does Swift's explicit conformance buy you?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the Swift 6 warning about retroactively conforming a type you don't own to a protocol you don't own (`@retroactive`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Conditional conformance vs a wrapper type: when is each cleaner?"
+    },
+    {
+      "kind": "practice",
+      "q": "Making `URL: Identifiable` for a `ForEach`: why is that risky in a shared codebase?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YrVwyL_mcts",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] protocols let us define contracts to which any conforming type must adhere"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

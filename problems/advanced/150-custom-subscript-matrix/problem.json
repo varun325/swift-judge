@@ -38,5 +38,60 @@
     "A subscript can take several parameters and have both a getter and a setter.",
     "Store a flat array and map `(row, col)` to `row * cols + col`; check bounds with `precondition`.",
     "`static func *` loops `i`, `j`, `k`: `out[i, j] += a[i, k] * b[k, j]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Custom subscripts with two parameters (`m[row: 1, col: 2]`) have no JS equivalent (only `m[1][2]` or Proxy tricks). `precondition` checks bounds and traps like Swift's own array subscript.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS nested arrays `m[r][c]` vs a flat array with a subscript: which is faster, and why?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`precondition` vs returning optional vs `assert`: which fits a subscript?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can subscripts be generic? Static? Throw?"
+    },
+    {
+      "kind": "practice",
+      "q": "Image pixel buffers and game boards are flat arrays with 2-D subscripts. Where else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Subscripts in Swift | Advanced Learning #32",
+      "url": "https://www.youtube.com/watch?v=hiOjTJgl6GU",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "swiftel thinking and in this video we're going to take a look at subscripts so the last bunch of videos got really"
+    },
+    {
+      "title": "Static and class subscripts in Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=8VNqScyEI34&t=168s",
+      "channel": "Paul Hudson",
+      "start": 168,
+      "moment": "then new settings captain equals Gary or new headings friend equals mooncake"
+    },
+    {
+      "title": "How the Best Subscription Apps Print Money in 2025",
+      "url": "https://www.youtube.com/watch?v=1Y-x6Ou4v3M",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "Revenue Cat has released their state of subscription apps for 2025, and it's jam-packed with valuable information."
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Attributes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

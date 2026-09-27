@@ -12,11 +12,63 @@
     {
       "title": "Concurrency — Actors",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "hints": [
     "Actor state can only be touched from inside the actor, or with `await`.",
     "Write a synchronous function that returns `c.value`.",
     "`func read(_ c: Counter) -> Int { c.value }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Reading actor state from synchronous code is a compile error: you must `await`. JS never forces `await` to read a property. Swift does because the actor might be busy on another thread.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Reading `obj.value` in JS is always synchronous. What guarantee is Swift giving you by forcing `await`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Fixes: make the function `async`, use `nonisolated`, or snapshot the value. When does each apply?"
+    },
+    {
+      "kind": "edge",
+      "q": "Inside the actor's own methods, do you need `await` to read `value`? Why not?"
+    },
+    {
+      "kind": "practice",
+      "q": "UI code wants actor data synchronously for rendering. What's the usual pattern (copy into `@MainActor` state)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Learn Swift Concurrency (Async, Await, Actors) online for FREE | Swift Concurrency #0",
+      "url": "https://www.youtube.com/watch?v=p6q1RmYUsNU&t=93s",
+      "channel": "Swiftful Thinking",
+      "start": 93,
+      "moment": "asynchronous code in swift if you are a swift developer you need to be writing asynchronous code using async"
+    },
+    {
+      "title": "Swift API Calls for Beginners (Networking) - Async Await & JSON",
+      "url": "https://www.youtube.com/watch?v=ERr0GXqILgc&t=1212s",
+      "channel": "Sean Allen",
+      "start": 1212,
+      "moment": "normally refactored this get user this is probably in a view model somewhere so it's not as messy but again keeping it all in one place so up to our view here s"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

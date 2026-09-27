@@ -13,6 +13,10 @@
     {
       "title": "Duration",
       "url": "https://developer.apple.com/documentation/swift/duration"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -30,5 +34,46 @@
     "`Duration` supports `+`; `.components` gives `(seconds, attoseconds)`.",
     "Convert everything to milliseconds: seconds × 1000 + attoseconds ÷ 10¹⁵.",
     "Then split into minutes, seconds and milliseconds with `/` and `%`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`Duration` is a typed time span (seconds + attoseconds) used by clocks and `Task.sleep(for:)`, so there are no more bare `ms` numbers like JS's `setTimeout(fn, 500)`. Units are explicit in the type.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`setTimeout(fn, 500)`: is 500 ms or seconds? How does `.milliseconds(500)` make that impossible to confuse?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Duration` vs `TimeInterval` (a `Double` of seconds): why did Swift add a new type?"
+    },
+    {
+      "kind": "edge",
+      "q": "What precision does `Duration` have? Why attoseconds?"
+    },
+    {
+      "kind": "practice",
+      "q": "`ContinuousClock` vs `SuspendingClock`: which keeps counting while the device sleeps, and which one do you want for a timer UI?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Penguin, show thyself: SKAction moveBy(x:y:duration:) – Whack-a-Penguin, part 3",
+      "url": "https://www.youtube.com/watch?v=uVr0NqS2QrI&t=46s",
+      "channel": "Paul Hudson",
+      "start": 46,
+      "moment": "characters slide upwards who becomes visible then set is visible to be true and is hit to be false the movement is"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

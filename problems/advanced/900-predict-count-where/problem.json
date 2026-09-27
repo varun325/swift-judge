@@ -19,5 +19,44 @@
     "`count(where:)` counts matches without building an array.",
     "`split` around `\"cherry\"` gives two slices; `prefix(while:)` stops at \"Banana\".",
     "The shortest word (first on ties) is `\"date\"`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Newer standard library APIs like `count(where:)`, `firstRange(of:)` and `split(separator:)` on strings fill gaps JS devs might fill with lodash. Knowing the modern API saves writing `filter().count`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`arr.filter(p).length` allocates. Does `count(where:)` in Swift allocate?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`filter { }.count` vs `count(where:)` vs `reduce`: which communicates intent best?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which of these APIs need a newer OS at runtime vs just a newer compiler?"
+    },
+    {
+      "kind": "practice",
+      "q": "How do you keep up with standard library additions (Swift Evolution, release notes)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What's new in SwiftUI for iOS 27?",
+      "url": "https://www.youtube.com/watch?v=tNxEqyUVGck",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "What's New in Swift 5.3",
+      "url": "https://www.youtube.com/watch?v=RhuYDAEdGHE",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Swift Evolution proposals",
+      "url": "https://www.swift.org/swift-evolution/",
+      "source": "swift.org"
+    }
   ]
 }

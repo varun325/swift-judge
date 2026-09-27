@@ -13,6 +13,10 @@
     {
       "title": "Attributes — globalActor",
       "book": "ReferenceManual/Attributes"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -31,5 +35,46 @@
     "`@globalActor` turns an actor with a `static let shared` into an attribute.",
     "Put `@AnalyticsActor` on the class, the logging function and a runner; call the runner with `await`.",
     "Within `@AnalyticsActor` code, `log(e, to: tracker)` needs no `await`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`@globalActor` creates a named isolation domain like `@MainActor`, but for your own subsystem (analytics, database). Everything annotated with it runs serialised on that actor. JS has no analogue, since there's only one thread there.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A dedicated Web Worker for analytics is the closest JS analogue. How is a global actor lighter?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom global actor vs a plain `actor` instance: when do you want the annotation-based isolation?"
+    },
+    {
+      "kind": "edge",
+      "q": "Calling `@AnalyticsActor` code from `@MainActor` code needs `await`. Why?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you create global actors in an app, or is `@MainActor` + plain actors enough?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Global Actors in Swift (@globalActor) | Swift Concurrency #10",
+      "url": "https://www.youtube.com/watch?v=BRBhMrJj5f4&t=12s",
+      "channel": "Swiftful Thinking",
+      "start": 12,
+      "moment": "uh we did most of the hard stuff already so uh hopefully smooth sailing for the rest of"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

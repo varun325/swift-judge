@@ -32,5 +32,49 @@
     "Model the screen's states as an enum and inject the service through a protocol.",
     "Set `.loading`, then `.loaded(try await service.fetchTitles())` or `.failed` in the `catch`.",
     "Record each state in `didSet` on the state property."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "MVVM in SwiftUI: a `@MainActor` view model owns state and calls an injected async service. It maps onto React's hooks-plus-services pattern (a custom hook calling an API client), with the view model as a testable class.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Custom React hook + API client vs SwiftUI view model + service protocol: what's the equivalent of `useEffect` for loading?"
+    },
+    {
+      "kind": "contrast",
+      "q": "MVVM vs putting logic directly in the view with `@State` + `.task`: when is a view model overkill?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why `@MainActor` on the view model? What goes wrong if state is mutated from a background task?"
+    },
+    {
+      "kind": "practice",
+      "q": "How would you unit-test the view model's loading, success and error states with a mock service?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MVVM with Async Await | Swift Concurrency #14",
+      "url": "https://www.youtube.com/watch?v=OpJcInSZpc8&t=76s",
+      "channel": "Swiftful Thinking",
+      "start": 76,
+      "moment": "originally planning on doing it but I did not explicitly kind of go over an mvvm routine with async weight and I"
+    },
+    {
+      "title": "Introducing MVVM into your SwiftUI project – Bucket List SwiftUI Tutorial 11/12",
+      "url": "https://www.youtube.com/watch?v=7S6iEmHICkQ&t=23s",
+      "channel": "Paul Hudson",
+      "start": 23,
+      "moment": "pattern it's really is a particular way of organizing your code now the pattern we're going to look at is called"
+    },
+    {
+      "title": "SwiftUI - Intro to MVVM | Example Refactor | Model View ViewModel",
+      "url": "https://www.youtube.com/watch?v=FwGMU_Grnf8&t=26s",
+      "channel": "Sean Allen",
+      "start": 26,
+      "moment": "this project i'll save talking about that till the end after i review model view view model"
+    }
+  ],
+  "articles": []
 }

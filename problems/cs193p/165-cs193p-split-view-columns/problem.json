@@ -42,8 +42,37 @@
   "videos": [
     {
       "title": "CS193p 2025 · L11: iPad and Mac",
-      "url": "https://www.youtube.com/watch?v=PXcl5cjVNT0",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=PXcl5cjVNT0&t=994s",
+      "channel": "Stanford Online",
+      "start": 994,
+      "moment": "And the size class, there's horizontal size class, which is kind of the width, and there's the vertical size class. And there's only two size classes. There's c"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "`NavigationSplitView` shows 1–3 columns depending on the **horizontal size class** (compact on iPhone, regular on iPad). It's responsive design driven by an OS-provided breakpoint rather than CSS media queries.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS media queries use pixel breakpoints. What does a size class represent, and why is it more robust (split screen, Stage Manager)?"
+    },
+    {
+      "kind": "edge",
+      "q": "iPad in Slide Over is compact width. What does your split view look like there?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`NavigationSplitView` vs `NavigationStack` + size-class `if`: which adapts automatically?"
+    },
+    {
+      "kind": "practice",
+      "q": "Column visibility: when should the sidebar be hidden by default?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

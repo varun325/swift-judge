@@ -32,5 +32,56 @@
     "Convenience initialisers must call another initialiser of the same class with `self.init(...)`.",
     "`init(white:)` passes one value three times; `init?(hex:)` checks the format, parses base 16, then extracts channels with shifts and masks.",
     "`Int(hex.dropFirst(), radix: 16)` then `(value >> 16) & 0xFF`, `(value >> 8) & 0xFF`, `value & 0xFF`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Designated initialisers set every property. `convenience` initialisers must delegate to one with `self.init(...)`, like overloaded constructors calling a primary one. `init?` can fail and return `nil`, which JS constructors can't.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS constructor can't return `null`. How would you model \"invalid hex\" in JS: static factory or throw? What does `init?` give you?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Failable `init?` vs throwing `init() throws`: when should callers learn *why* it failed?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a convenience init call another convenience init? Can it call `super.init`?"
+    },
+    {
+      "kind": "practice",
+      "q": "`UIColor(hex:)` is a common extension. Why is it usually a convenience init?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to add initializers for classes – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=byrRbWGN1Nk",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Swift - Convenience Initializers",
+      "url": "https://www.youtube.com/watch?v=IPrYRyd2qQU&t=38s",
+      "channel": "Sean Allen",
+      "start": 38,
+      "moment": "subclass of si button here is the designated initializer more on that in a second we're going to talk about the"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

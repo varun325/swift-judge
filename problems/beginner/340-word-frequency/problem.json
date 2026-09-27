@@ -13,6 +13,10 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -30,5 +34,41 @@
     "`dict[key, default: 0] += 1` is the counting idiom.",
     "Lowercase the text and split it wherever a character **isn't** a letter.",
     "`for word in text.lowercased().split(whereSeparator: { !$0.isLetter }) { counts[String(word), default: 0] += 1 }`."
+  ],
+  "impact": "core",
+  "jsBridge": "JS: `counts[w] = (counts[w] || 0) + 1`. Swift has `counts[w, default: 0] += 1`, a subscript with a default that mutates in place without a double lookup. `Dictionary(grouping:by:)` and `reduce(into:)` are the functional forms.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `counts[w] || 0` treats a stored 0 as missing. Does Swift's `default:` subscript have that bug? Why not?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[w, default: 0] += 1` vs `Dictionary(words.map { ($0, 1) }, uniquingKeysWith: +)`: which is clearer, and which is faster?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is the `default:` value stored in the dictionary when you only *read* with it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Tag clouds, analytics event counts and badge counts all need frequency maps. Which should be computed server-side?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Dictionary default values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=wGk9sF1BQK0",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "dictionary using a key that doesn't exist Swift will send you back nil nothing at all while this might be what"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -32,5 +32,38 @@
     "Inject protocols so tests can supply doubles.",
     "The stub decides success or failure; the spy stores tracked events in an array.",
     "Assert on the view model's state *and* on `spy.events` for each scenario."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Stubs return canned data, spies record calls, fakes are working lightweight implementations. It's the same vocabulary as Jest mocks (`jest.fn()`), but in Swift you write small types conforming to a protocol, with no module mocking.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`jest.fn().mockResolvedValue(x)` vs a Swift `StubPaymentService`: which is more code, and which is clearer when reading a test?"
+    },
+    {
+      "kind": "edge",
+      "q": "Spying on an `async` method from a `@MainActor` test: where do recorded calls need to be stored safely?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Stub vs spy vs fake vs mock: which do you need to test \"charge is called exactly once\"?"
+    },
+    {
+      "kind": "practice",
+      "q": "Swift Testing's `#expect` vs XCTest's `XCTAssert`: which would you use for new tests?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "UI Testing a SwiftUI application in Xcode | Advanced Learning #18",
+      "url": "https://www.youtube.com/watch?v=RoDUYFuNeJU",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Ending the app with allowsHitTesting() – Flashzilla SwiftUI Tutorial 11/13",
+      "url": "https://www.youtube.com/watch?v=yd6u9pz4re0",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

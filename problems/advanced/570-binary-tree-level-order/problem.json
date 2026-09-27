@@ -31,5 +31,51 @@
     "Enum values are immutable, so build children before parents.",
     "First use a level-order queue to record each node's left/right positions; then build recursively from index 0.",
     "`case .node(.empty, let v, .empty): v` matches leaves when summing."
+  ],
+  "impact": "edge",
+  "jsBridge": "Trees as `indirect enum Tree { case empty; case node(Tree, Int, Tree) }` make the null child a real case, like a TS union `Tree = null | {l, v, r}`, but with exhaustive pattern matching on every traversal.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS `type Tree = null | {left: Tree, val: number, right: Tree}` vs Swift's indirect enum: what does pattern matching give you?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Enum trees (immutable, value) vs class nodes (mutable, shared): which is easier for building from level order?"
+    },
+    {
+      "kind": "edge",
+      "q": "Deep, skewed trees make recursive traversal overflow the stack. How deep before it crashes?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where do trees appear in app work: comment threads, file browsers, `OutlineGroup` in SwiftUI?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Binary Search - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=CkYDljd_7M8&t=20s",
+      "channel": "Sean Allen",
+      "start": 20,
+      "moment": "challenges but binary search is a good introduction and we'll use it as a baseline for some of our future"
+    },
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

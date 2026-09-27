@@ -14,6 +14,14 @@
     {
       "title": "Advanced Operators — Overflow Operators",
       "book": "LanguageGuide/AdvancedOperators"
+    },
+    {
+      "title": "Int",
+      "url": "https://developer.apple.com/documentation/swift/int"
+    },
+    {
+      "title": "Double",
+      "url": "https://developer.apple.com/documentation/swift/double"
     }
   ],
   "signature": {
@@ -31,5 +39,44 @@
     "Multiplying by 33 repeatedly will exceed `Int.max`. Swift has operators that wrap instead of trapping.",
     "Loop over `text.utf8` (the bytes) and update the hash with the **wrapping** versions of `*` and `+`.",
     "`hash = hash &* 33 &+ Int(byte)` inside `for byte in text.utf8`."
+  ],
+  "impact": "edge",
+  "jsBridge": "In JS you'd write `(hash * 33 + c) | 0` or `Math.imul` to force 32-bit wrapping. Swift makes wrapping explicit with `&*`, `&+` and `&-`: plain operators trap on overflow, and the ampersand variants wrap on purpose.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS hash functions often use `>>> 0` to get an unsigned 32-bit number. What's the Swift equivalent, and why does Swift need separate `UInt32` and `Int` types for it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Why not use Swift's built-in `hashValue` for this? What changes between app launches?"
+    },
+    {
+      "kind": "practice",
+      "q": "When have you needed a stable hash in an app: cache keys, A/B bucketing, content-addressed files? What goes wrong if the hash changes between releases?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is `&*` faster than `*`? What work does the checked version do that the wrapping version skips?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Entering numbers with Stepper – BetterRest SwiftUI Tutorial 1/7",
+      "url": "https://www.youtube.com/watch?v=fB4HnpS8qkw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

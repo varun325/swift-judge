@@ -13,6 +13,10 @@
     {
       "title": "Layout",
       "url": "https://developer.apple.com/documentation/swiftui/layout"
+    },
+    {
+      "title": "Layout fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/layout-fundamentals"
     }
   ],
   "signature": {
@@ -40,5 +44,42 @@
     "Walk the widths, tracking the current row's used width.",
     "Adding a view to a non-empty row costs `spacing + width`; if that overflows, start a new row.",
     "An empty row always accepts the next view, even if it's too wide."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "A custom `Layout` implements flow wrapping: measure children and place them left to right, breaking lines when the width runs out. CSS gives you `flex-wrap: wrap` for free; SwiftUI makes you write the algorithm, but only once.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "CSS `flex-wrap: wrap` is one line. Why doesn't SwiftUI ship a flow layout, and what does writing `Layout` teach you?"
+    },
+    {
+      "kind": "edge",
+      "q": "A single tag wider than the container: clip it, shrink it, or let it overflow?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Layout` protocol vs `GeometryReader` hacks vs `ViewThatFits`: which is the right tool for wrapping?"
+    },
+    {
+      "kind": "practice",
+      "q": "Tag chips, filter pills, hashtag lists: where does your app need wrapping?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Wrap up – Auto Layout, part 6",
+      "url": "https://www.youtube.com/watch?v=z7EvsqDwcT4&t=2s",
+      "channel": "Paul Hudson",
+      "start": 2,
+      "moment": "There are two types of iOS developer in the world, those who use auto layout and people who like wasting time."
+    },
+    {
+      "title": "Beginner Auto Layout & Constraints - Swift 4.2 - Xcode 10",
+      "url": "https://www.youtube.com/watch?v=m_0_XQEfrGQ",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "What's going on everybody? In today's beginner video, we're going to talk about the basics of auto layout"
+    }
+  ],
+  "articles": []
 }

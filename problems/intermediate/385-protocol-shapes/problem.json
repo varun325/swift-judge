@@ -33,5 +33,60 @@
     "A protocol lists requirements that different types can satisfy in their own way.",
     "Conform three structs; store them in `[any Shape]`; format numbers with `String(format: \"%.2f\", x)` after `import Foundation`.",
     "`var area: Double { .pi * r * r }` and `func perimeter() -> Double { 2 * .pi * r }` for the circle."
+  ],
+  "impact": "core",
+  "jsBridge": "Protocols are TS interfaces, but **nominal**: a type conforms only if it declares `: Shape`, while TS matches structurally. `any Shape` is an existential box, like a TS variable typed by an interface, and works through dynamic dispatch.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS interfaces are structural: any object with `area` fits. Swift requires declared conformance. What does each approach catch or miss?"
+    },
+    {
+      "kind": "java",
+      "q": "Java interfaces are nominal too. What can Swift protocols do that Java interfaces couldn't (value types, retroactive conformance, associated types)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[any Shape]` vs `[Shape]` enum: which one allows third parties to add shapes?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the runtime cost of `any Shape`: boxing, witness tables? When does it matter?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Protocols in Swift | Advanced Learning #15",
+      "url": "https://www.youtube.com/watch?v=0gM1wmW1Xvc&t=1454s",
+      "channel": "Swiftful Thinking",
+      "start": 1454,
+      "moment": "source and click resume and we can build without any issues. And going back up here, this is"
+    },
+    {
+      "title": "Summary: Protocols and extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=U0IgKPgyAgw&t=27s",
+      "channel": "Paul Hudson",
+      "start": 27,
+      "moment": "first up protocols are like contracts for our code we specify some methods and"
+    },
+    {
+      "title": "Swift Protocols - An Introduction",
+      "url": "https://www.youtube.com/watch?v=vmQnTMWaDiY&t=790s",
+      "channel": "Sean Allen",
+      "start": 790,
+      "moment": "or the cat or whatever conforms to tameable so to back away from this specific example around animals and if they can be tamed General principle is if you have "
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

@@ -13,11 +13,65 @@
     {
       "title": "Structures and Classes",
       "book": "LanguageGuide/ClassesAndStructures"
+    },
+    {
+      "title": "Choosing Between Structures and Classes",
+      "url": "https://developer.apple.com/documentation/swift/choosing-between-structures-and-classes"
     }
   ],
   "hints": [
     "The array itself is copied; its class elements are references.",
     "Mutating `boxesCopy[0].value` changes the shared object; `append` changes only the copy.",
     "Line 1: `[100, 2] [100, 2, 3]`."
+  ],
+  "impact": "core",
+  "jsBridge": "Copying an array of **class** instances copies the references, so both arrays point at the same objects, exactly like JS arrays of objects. An array of **structs** copies the values. The array's own semantics are value semantics, but its elements keep theirs.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`const b = [...a]` in JS is a shallow copy. Is Swift's `var b = a` for `[SomeClass]` the same? For `[SomeStruct]`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does copy-on-write copy the objects themselves, or only the buffer of references?"
+    },
+    {
+      "kind": "contrast",
+      "q": "How would you deep-copy an array of class instances? Why is that awkward (`NSCopying`)?"
+    },
+    {
+      "kind": "practice",
+      "q": "A view model exposing `[Item]` where `Item` is a class: what can a view accidentally mutate?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=23s",
+      "channel": "Swiftful Thinking",
+      "start": 23,
+      "moment": "right now. We are going to learn structs versus classes. We're going to learn classes versus actors."
+    },
+    {
+      "title": "How to break up structs and classes – Daniel Steinberg on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=_ZAuILBDduQ",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "let me let me ask you a question do you have an opinion on extensions and how you break things up and do you break"
+    },
+    {
+      "title": "Swift Classes and Structures Explained",
+      "url": "https://www.youtube.com/watch?v=ObIxxHy8yY8&t=40s",
+      "channel": "Sean Allen",
+      "start": 40,
+      "moment": "thing you absolutely have to take away from this video if nothing else one little nugget that you have to take away"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

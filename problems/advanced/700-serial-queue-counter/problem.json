@@ -18,6 +18,10 @@
     {
       "title": "Concurrency",
       "book": "LanguageGuide/Concurrency"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -38,5 +42,51 @@
     "A serial `DispatchQueue` runs one block at a time.",
     "Wrap every read and write of `value` in `queue.sync`; mark the class `@unchecked Sendable`.",
     "`func increment() { queue.sync { value += 1 } }` and `DispatchQueue.concurrentPerform(iterations: threads) { _ in … }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Before actors, a **serial `DispatchQueue`** guarded shared state: every read and write went through `queue.sync`. JS never needed this (single thread). It's the mutex pattern. `@unchecked Sendable` tells Swift 6 \"trust me, I synchronise\".",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Node's single thread makes counters trivially safe. What changes the moment you have two threads writing?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Serial queue vs `NSLock` vs `Mutex` (Synchronization) vs `actor`: which does 2026 Swift recommend?"
+    },
+    {
+      "kind": "edge",
+      "q": "Calling `queue.sync` from code already running on that queue: what happens?"
+    },
+    {
+      "kind": "java",
+      "q": "Java `synchronized` blocks vs a serial queue: which one can deadlock more easily?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "GCD 101: async() – Grand Central Dispatch, part 3",
+      "url": "https://www.youtube.com/watch?v=SrWWLx5wOEU&t=182s",
+      "channel": "Paul Hudson",
+      "start": 182,
+      "moment": "that's a good general purpose choice when you're learning enough talking time for some action"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

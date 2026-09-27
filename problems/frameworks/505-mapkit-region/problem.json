@@ -13,6 +13,14 @@
     {
       "title": "MKCoordinateRegion",
       "url": "https://developer.apple.com/documentation/mapkit/mkcoordinateregion"
+    },
+    {
+      "title": "Core Location",
+      "url": "https://developer.apple.com/documentation/corelocation"
+    },
+    {
+      "title": "MapKit",
+      "url": "https://developer.apple.com/documentation/mapkit"
     }
   ],
   "signature": {
@@ -38,5 +46,47 @@
     "Find the min and max latitude and longitude.",
     "Center = midpoints; span = (max − min) × padding, with a 0.01° floor.",
     "Build `MKCoordinateRegion(center:span:)` and read its fields back."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Fitting all annotations into a map region (center + span with padding) is the MapKit version of Leaflet/Google Maps `fitBounds`. In SwiftUI's `Map` you'd often use `.automatic` camera positioning instead.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Leaflet `map.fitBounds(bounds, {padding})` vs computing an `MKCoordinateRegion`: what does MapKit not do for you in the old API?"
+    },
+    {
+      "kind": "edge",
+      "q": "A single annotation gives a zero span. What minimum span should you use?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`MKCoordinateRegion` (degrees) vs `MKMapRect` (projected points): which is correct near the poles?"
+    },
+    {
+      "kind": "practice",
+      "q": "SwiftUI `Map(position: .constant(.automatic))`: when do you still compute regions yourself?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Custom Map Annotation Pins for SwiftUI MapKit Map | SwiftUI Map App #6",
+      "url": "https://www.youtube.com/watch?v=javFZbCYGfc",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Integrating MapKit with SwiftUI – Bucket List SwiftUI Tutorial 4/12",
+      "url": "https://www.youtube.com/watch?v=3COmagWT6lU&t=25s",
+      "channel": "Paul Hudson",
+      "start": 25,
+      "moment": "view hierarchy you have already let's start with something real simple just showing a map on the screen maps and all"
+    },
+    {
+      "title": "MapKit Tutorial - Get Directions & Show on Map - Swift 4.2",
+      "url": "https://www.youtube.com/watch?v=vUvf_dlr6IU",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "what's up everybody we're back with part three of the mapkit tutorial now whether I take this past part three I probably"
+    }
+  ],
+  "articles": []
 }

@@ -14,6 +14,10 @@
     {
       "title": "Collection Types — Dictionaries",
       "book": "LanguageGuide/CollectionTypes"
+    },
+    {
+      "title": "Dictionary",
+      "url": "https://developer.apple.com/documentation/swift/dictionary"
     }
   ],
   "signature": {
@@ -31,5 +35,46 @@
     "Two passes: first count, then find.",
     "Count each `Character` in a dictionary; then walk the string with `enumerated()` and return the first offset whose count is 1.",
     "`for (i, ch) in s.enumerated() where counts[ch] == 1 { return i }` — then `return -1`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Two passes, the same as in JS. Swift strings are collections of `Character`, so `enumerated()` gives character offsets directly, with no `codePointAt` juggling for emoji.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS, iterating `for (const ch of s)` gives code points but `s[i]` gives UTF-16 units. Which does Swift's `enumerated()` give?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Counting with `[Character: Int]` vs a fixed `[Int](repeating: 0, count: 26)`: when is the array allowed and faster?"
+    },
+    {
+      "kind": "edge",
+      "q": "Is the returned index usable as `String.Index`? How would you convert it?"
+    },
+    {
+      "kind": "practice",
+      "q": "First non-repeated item logic appears in deduping notifications. Where else?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Dictionaries in Swift | Swift Basics #14",
+      "url": "https://www.youtube.com/watch?v=ctBEqA0wh3M&t=324s",
+      "channel": "Swiftful Thinking",
+      "start": 324,
+      "moment": "so when we were working with this final fruits if we wanted to get the second item an array we would say something"
+    },
+    {
+      "title": "How to store and find data in dictionaries – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=iM2lMBAckKg",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

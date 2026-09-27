@@ -20,5 +20,44 @@
     "`==` requires both sides to be the *same* concrete type.",
     "Box two values as `any Equatable` and compare them.",
     "`print(a == b)` with both declared `any Equatable`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`==` on two `any Equatable` values doesn't compile. Equatable's `Self` requirement means both sides must be the **same** concrete type, which the existential can't prove. JS `===` compares anything with anything.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `a === b` works across types (always false). Why can't Swift even ask the question for `any Equatable`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Workarounds: open the existential with a generic, or `AnyHashable`. How does `AnyHashable` compare mixed types?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why can you put mixed types in `[AnyHashable]` but not compare `any Equatable` values directly?"
+    },
+    {
+      "kind": "practice",
+      "q": "Diffing heterogeneous rows in a list: how does `AnyHashable` in diffable data sources help?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Opaque and Boxed Protocol Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/opaquetypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0335: Introduce existential any",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0335-existential-any.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

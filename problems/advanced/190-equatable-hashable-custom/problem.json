@@ -13,6 +13,14 @@
     {
       "title": "Protocols — Adopting a Protocol Using a Synthesized Implementation",
       "book": "LanguageGuide/Protocols"
+    },
+    {
+      "title": "Hashable",
+      "url": "https://developer.apple.com/documentation/swift/hashable"
+    },
+    {
+      "title": "Equatable",
+      "url": "https://developer.apple.com/documentation/swift/equatable"
     }
   ],
   "signature": {
@@ -30,5 +38,41 @@
     "If you customise `==`, you must hash exactly the same data.",
     "Compute a normalised form (lowercase, strip dots and `+suffix` from the local part) and use it in both `==` and `hash(into:)`.",
     "`func hash(into hasher: inout Hasher) { hasher.combine(normalized) }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Custom `==` and `hash(into:)` must agree: equal values **must** have equal hashes. JS `Set`/`Map` can't use custom equality at all (identity or primitives only). Swift lets you define identity for your domain, like Gmail-style email rules.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs normalise to a string key for Map lookups. When is a custom `Hashable` better than storing a normalised string?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's `equals`/`hashCode` contract is the same. What's the classic bug when you override only one?"
+    },
+    {
+      "kind": "edge",
+      "q": "Hash on the normalised form but keep the original for display. What if two different originals are \"equal\"? Which one does the `Set` keep?"
+    },
+    {
+      "kind": "practice",
+      "q": "Deduplicating contacts by normalised phone number: where does normalisation belong?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is Hashable protocol in SwiftUI? | Continued Learning #12",
+      "url": "https://www.youtube.com/watch?v=Oxc4dCtHPkk&t=278s",
+      "channel": "Swiftful Thinking",
+      "start": 278,
+      "moment": "separate id all right so now that we know the basics of hashable let's go and create our own"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

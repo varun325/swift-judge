@@ -17,6 +17,10 @@
     {
       "title": "CurrentValueSubject",
       "url": "https://developer.apple.com/documentation/combine/currentvaluesubject"
+    },
+    {
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine"
     }
   ],
   "signature": {
@@ -37,5 +41,38 @@
     "One subject has no memory; the other remembers its latest value.",
     "A late subscriber to a `CurrentValueSubject` receives the current value right away.",
     "Store cancellables in a `Set<AnyCancellable>` so subscriptions stay alive."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`PassthroughSubject` is RxJS `Subject` (no current value), and `CurrentValueSubject` is `BehaviorSubject` (holds and replays the latest value to new subscribers).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "RxJS `Subject` vs `BehaviorSubject`: which Combine subject is which?"
+    },
+    {
+      "kind": "edge",
+      "q": "A late subscriber to a `PassthroughSubject`: does it see past events?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Subjects vs `@Published` vs `AsyncStream`: which to use for a view model's event stream?"
+    },
+    {
+      "kind": "practice",
+      "q": "Why are subjects often kept private and exposed as `AnyPublisher`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use AsyncPublisher to convert @Published to Async / Await | Swift Concurrency #12",
+      "url": "https://www.youtube.com/watch?v=ePPm2ftSVqw",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "iOS 15: How to combine Core Data and SwiftUI– Bookworm SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=bvm3ZLmwOdU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }

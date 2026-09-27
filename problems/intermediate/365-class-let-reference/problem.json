@@ -32,5 +32,65 @@
     "`let` on a class reference fixes **which** object, not the object's properties.",
     "Rename through `alias`; `original` sees it because both point to the same object. `===` checks identity.",
     "`[original.name, \"\\(original === alias)\", \"\\(clone === original)\"]`."
+  ],
+  "impact": "core",
+  "jsBridge": "`let alias = original` for a class copies the **reference**, just like JS objects, so `alias.name = …` changes both. `let` freezes the reference, not the object. `===` checks identity (JS `===` on objects).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "This is exactly JS object semantics. Which Swift types behave like this, and which like JS primitives?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`==` vs `===` in Swift: which needs `Equatable`, and which only works on classes?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a struct with a `let` property holding a class instance still change observable state?"
+    },
+    {
+      "kind": "practice",
+      "q": "Two SwiftUI views holding the same `@Observable` class instance: what happens when one mutates it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=23s",
+      "channel": "Swiftful Thinking",
+      "start": 23,
+      "moment": "right now. We are going to learn structs versus classes. We're going to learn classes versus actors."
+    },
+    {
+      "title": "How to create a deinitializer for a class – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=LAhctdU5Mq4&t=246s",
+      "channel": "Paul Hudson",
+      "start": 246,
+      "moment": "bang destroyed next one's made and it carries on now remember the d initializer happens"
+    },
+    {
+      "title": "Swift For Beginners - Class & Inheritance Explained",
+      "url": "https://www.youtube.com/watch?v=EhDML-fAqTM",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "in today's video we're gonna answer the question what is a class in at a high level a class is an object it can have"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Inheritance",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/inheritance/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Initialization",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    }
   ]
 }

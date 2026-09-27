@@ -30,5 +30,46 @@
     "The expected sum of `0...n` is known in closed form.",
     "`x ^ x == 0` and `x ^ 0 == x` — XOR indices and values together.",
     "`nums.enumerated().reduce(nums.count) { $0 ^ $1.offset ^ $1.element }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Two classic tricks: the sum formula `n(n+1)/2 − sum`, and XOR of all indices and values. In Swift, the sum can overflow `Int` and trap, which is why XOR (or `&+`) matters more than in JS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS the sum formula silently loses precision past 2^53. In Swift it traps. Which failure mode is better?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Sum formula vs XOR vs `Set` difference: complexity and overflow risk of each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does XOR work? What property makes `a ^ a == 0` useful here?"
+    },
+    {
+      "kind": "practice",
+      "q": "Finding gaps in sequence numbers (missed messages, dropped packets) is this problem."
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to handle missing data with optionals – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=O0ocR5kRzSA",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Two-Sum Problem - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=cUmGngurKXo&t=5s",
+      "channel": "Sean Allen",
+      "start": 5,
+      "moment": "now the premise of this problem is that you have an array of numbers and you need to find out if there's two numbers"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

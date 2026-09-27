@@ -35,5 +35,51 @@
     "Bottom-up DP: the best for amount `v` uses the best for `v - coin`.",
     "Store `Int?` per amount (`nil` = unreachable), taking the min over coins.",
     "`best[value] = coins.compactMap { $0 <= value ? best[value - $0].map { $0 + 1 } : nil }.min()`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Bottom-up DP with `[Int?]` where `nil` means unreachable. That's more honest than JS's `Infinity` sentinel, because the optional forces you to handle the unreachable case explicitly.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS DP often uses `Infinity` as a sentinel. What bug does Swift's `Int?` prevent (`Infinity + 1`)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`[Int?]` vs `[Int]` filled with `Int.max`: which risks overflow?"
+    },
+    {
+      "kind": "edge",
+      "q": "What's the complexity? When does `amount` large enough make memory the issue?"
+    },
+    {
+      "kind": "practice",
+      "q": "Change-making for a POS app: is greedy ever correct? For which coin systems?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "App Store Screenshots are a HUGE deal - 2025 Algorithm Change",
+      "url": "https://www.youtube.com/watch?v=sHfNxIGG1mE",
+      "channel": "Sean Allen"
+    },
+    {
+      "title": "Add a dynamic List to display downloaded coins | SwiftUI Crypto App #5",
+      "url": "https://www.youtube.com/watch?v=czjD-YIvLGU&t=589s",
+      "channel": "Swiftful Thinking",
+      "start": 589,
+      "moment": "developerpreview.instance.coin i'm going to copy and paste that and in the second one we're going to change it"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

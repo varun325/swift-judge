@@ -13,11 +13,51 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "hints": [
     "Read every line with `while let line = readLine()`.",
     "Count lines, whitespace-separated words, and characters per line (newlines aren't included).",
     "`words += line.split(whereSeparator: \\.isWhitespace).count; chars += line.count`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A tiny `wc`: count lines, words and characters from stdin. The Swift twist is what \"character\" means. Swift counts graphemes, while Unix `wc -m` counts code points and `wc -c` bytes.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Node: `data.length` counts UTF-16 units. Swift `count` counts graphemes. Which matches `wc -m`?"
+    },
+    {
+      "kind": "edge",
+      "q": "Does `readLine()` preserve the final line if the input has no trailing newline? Does that change the line count vs `wc -l`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Reading line by line vs reading all of stdin at once (`FileHandle.standardInput.readDataToEndOfFile()`): memory trade-off?"
+    },
+    {
+      "kind": "practice",
+      "q": "Word and character counts in a notes app: which count do users expect for emoji?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Building a terminal helper app using UITableView and custom cells – Swift on Sundays May 26th 2019",
+      "url": "https://www.youtube.com/watch?v=OLjkmJNNeHc&t=5697s",
+      "channel": "Paul Hudson",
+      "start": 5697,
+      "moment": "running right now you got a new - C 4 characters you can do - W 4 words and count them all the point is that there's"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

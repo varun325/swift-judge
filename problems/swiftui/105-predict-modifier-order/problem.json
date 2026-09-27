@@ -13,6 +13,14 @@
     {
       "title": "ViewModifier",
       "url": "https://developer.apple.com/documentation/swiftui/viewmodifier"
+    },
+    {
+      "title": "View",
+      "url": "https://developer.apple.com/documentation/swiftui/view"
+    },
+    {
+      "title": "ViewBuilder",
+      "url": "https://developer.apple.com/documentation/swiftui/viewbuilder"
     }
   ],
   "platforms": [
@@ -22,5 +30,42 @@
     "Each modifier returns a *new* view that wraps the previous one.",
     "The outermost type is the **last** modifier you applied.",
     "The two types are different, so the last line prints `false`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Each modifier **wraps** the view in `ModifiedContent<Inner, Modifier>`, so `padding().background()` and `background().padding()` are different trees. CSS applies properties to one box; SwiftUI builds nested boxes in order.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In CSS, `padding` and `background` are properties of one box. Why does order matter in SwiftUI but not in CSS?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`.frame().background()` vs `.background().frame()`: sketch both results."
+    },
+    {
+      "kind": "edge",
+      "q": "Do all modifiers wrap? (Some, like `.font`, flow down the environment.) How do you tell?"
+    },
+    {
+      "kind": "practice",
+      "q": "When a tap area is too small, which modifier order usually fixes it (`.contentShape`, `.padding` before `.onTapGesture`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Popover modifier in SwiftUI | Bootcamp #69",
+      "url": "https://www.youtube.com/watch?v=bW7N8ACCc6A&t=37s",
+      "channel": "Swiftful Thinking",
+      "start": 37,
+      "moment": "little quickly here and keep these videos shorter maybe like 10 to 15 minute Mark something in there this"
+    },
+    {
+      "title": "Why modifier order matters – Views and Modifiers SwiftUI Tutorial 3/10",
+      "url": "https://www.youtube.com/watch?v=3XLq6f1tbEM&t=191s",
+      "channel": "Paul Hudson",
+      "start": 191,
+      "moment": "actual change to make apply a background style apply frame layout and so forth rather modifying The View"
+    }
+  ],
+  "articles": []
 }

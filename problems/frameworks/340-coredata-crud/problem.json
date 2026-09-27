@@ -17,6 +17,10 @@
     {
       "title": "NSFetchRequest",
       "url": "https://developer.apple.com/documentation/coredata/nsfetchrequest"
+    },
+    {
+      "title": "Core Data",
+      "url": "https://developer.apple.com/documentation/coredata"
     }
   ],
   "signature": {
@@ -38,5 +42,49 @@
     "Everything happens in a context: insert, mutate, delete, then `save()`.",
     "`NSFetchRequest<NSManagedObject>(entityName: \"Note\")` with a predicate and sort descriptors.",
     "Sort with two `NSSortDescriptor`s: priority descending, title ascending."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Core Data is an **object graph manager** over SQLite: you mutate managed objects in a context, then `save()`. The closest JS analogue is an ORM with a unit of work (like MikroORM's `em.flush()`), and contexts are thread-confined.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "An ORM unit of work (`em.persist(); em.flush()`) vs `context.insert; context.save()`: same model?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must all context work happen inside `perform`? What happens when you touch a context from the wrong thread?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Core Data vs SwiftData: what does SwiftData remove (the model file, `NSManagedObject` subclasses), and what does it keep?"
+    },
+    {
+      "kind": "practice",
+      "q": "Your app already ships Core Data. Migrate to SwiftData or keep it? What decides?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save current user's portfolio to Core Data with MVVM | SwiftUI Crypto App #15",
+      "url": "https://www.youtube.com/watch?v=7cqag8Acr2s&t=891s",
+      "channel": "Swiftful Thinking",
+      "start": 891,
+      "moment": "and update the data in the entity we need to then save the context and that's how we"
+    },
+    {
+      "title": "iOS 15: Dynamically filtering @FetchRequest with SwiftUI – Core Data SwiftUI Tutorial 6/7",
+      "url": "https://www.youtube.com/watch?v=O4043RVjCGU&t=47s",
+      "channel": "Paul Hudson",
+      "start": 47,
+      "moment": "we can we'll add three singers to chord data then use two buttons to show either the ones that start with a or the ones"
+    },
+    {
+      "title": "MortyUI, CoreData, SwiftUI Views and Snake in SwiftUI",
+      "url": "https://www.youtube.com/watch?v=-SHLN2ZLqpA&t=266s",
+      "channel": "Sean Allen",
+      "start": 266,
+      "moment": "is he has a core data best practices project that you can download"
+    }
+  ],
+  "articles": []
 }

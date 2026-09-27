@@ -31,5 +31,49 @@
     "Backtracking: choose, recurse, un-choose.",
     "Keep a `path` and a `used` array in the outer function; a nested function adds each unused number and recurses.",
     "`used[i] = true; path.append(nums[i]); backtrack(); path.removeLast(); used[i] = false`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Backtracking with a nested recursive function and `inout` state (path, used). Nested functions capture the result array, so JS closures over an outer array work the same way.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS backtracking pushes and pops a shared array. What does Swift's `inout` add?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Nested function capturing `result` vs passing `inout result`: which is cleaner?"
+    },
+    {
+      "kind": "edge",
+      "q": "n! grows fast. At what n does this blow the judge's time limit?"
+    },
+    {
+      "kind": "practice",
+      "q": "swift-algorithms has `permutations()` and `combinations(ofCount:)`. When would you reach for them?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "5 MOST IMPORTANT iOS Interview Questions (Part 3/3)",
+      "url": "https://www.youtube.com/watch?v=erhaJdQeQ9g",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Write Better Code with Swift Algorithms",
+      "url": "https://www.youtube.com/watch?v=pUYw9D0aq6g",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

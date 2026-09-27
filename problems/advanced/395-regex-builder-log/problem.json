@@ -30,5 +30,44 @@
     "`RegexBuilder` builds regexes with a result-builder DSL.",
     "Use `Reference`s for captures, `ChoiceOf` for the level, and `TryCapture` with a transform for the code. Match with `wholeMatch`.",
     "`TryCapture(as: code) { OneOrMore(.digit) } transform: { Int($0) }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`RegexBuilder` is a result-builder DSL for regexes (`Capture { … }`, `TryCapture` with transforms), readable where regex literals get cryptic. JS has nothing comparable built in.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Have you seen unreadable regexes in JS code reviews? What does a DSL buy, and what does it cost?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Regex literal vs `RegexBuilder` for the same pattern: which would you want to maintain?"
+    },
+    {
+      "kind": "edge",
+      "q": "`TryCapture` transforms and can fail the match. How is that different from a `Capture` followed by `Int()` later?"
+    },
+    {
+      "kind": "practice",
+      "q": "Parsing logs or deep-link paths on-device: good use of regex, or overkill?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Xcode in 20 Seconds: Regex searching",
+      "url": "https://www.youtube.com/watch?v=CvVkR5z65XU",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0354: Regex literals",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0354-regex-literals.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

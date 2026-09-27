@@ -13,6 +13,10 @@
     {
       "title": "Encoding and Decoding Custom Types",
       "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -30,5 +34,48 @@
     "`keyDecodingStrategy = .convertFromSnakeCase` renames keys before matching.",
     "Add a `CodingKeys` enum that maps `email` to `\"e-mail\"`; decode with `try?` and return `[\"invalid\"]` on failure.",
     "`case email = \"e-mail\"` in `CodingKeys`, and `decoder.decode([User].self, from: Data(json.utf8))`."
+  ],
+  "impact": "core",
+  "jsBridge": "`Codable` is typed `JSON.parse`/`stringify`: the compiler generates the parsing from your struct. `keyDecodingStrategy = .convertFromSnakeCase` maps `user_id` to `userId`, which in JS you'd do by hand or with zod plus a transform.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`JSON.parse` gives you `any`, and zod validates at runtime. How does `Codable` give you both typing and validation?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which wins: `convertFromSnakeCase` or explicit `CodingKeys`? What about `e-mail`?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Missing key → decoding error, unless the property is optional. Is that stricter or looser than zod's defaults?"
+    },
+    {
+      "kind": "practice",
+      "q": "When an API adds a field, does your app break? When it removes one?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10",
+      "url": "https://www.youtube.com/watch?v=elGMTQGRZGo&t=32s",
+      "channel": "Swiftful Thinking",
+      "start": 32,
+      "moment": "approach. And what we're going to do now is the more swifty, elegant way to basically write that code. And we're"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA&t=75s",
+      "channel": "Paul Hudson",
+      "start": 75,
+      "moment": "mission. Swift and then we'll give it this code here we got a struct called crew roll"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

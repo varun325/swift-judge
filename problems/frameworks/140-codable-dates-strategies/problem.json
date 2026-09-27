@@ -13,6 +13,14 @@
     {
       "title": "JSONDecoder.DateDecodingStrategy",
       "url": "https://developer.apple.com/documentation/foundation/jsondecoder/datedecodingstrategy"
+    },
+    {
+      "title": "Encoding and Decoding Custom Types",
+      "url": "https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types"
+    },
+    {
+      "title": "JSONDecoder",
+      "url": "https://developer.apple.com/documentation/foundation/jsondecoder"
     }
   ],
   "signature": {
@@ -37,5 +45,44 @@
     "Set `decoder.dateDecodingStrategy` before decoding.",
     "Use `.iso8601`, `.secondsSince1970`, `.millisecondsSince1970` or `.formatted(dateFormatter)`.",
     "Render with `date.ISO8601Format()`."
+  ],
+  "impact": "core",
+  "jsBridge": "`dateDecodingStrategy` (`.iso8601`, `.secondsSince1970`, custom) tells `JSONDecoder` how dates look in JSON. JS `JSON.parse` leaves dates as strings, and revivers are manual.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS: `JSON.parse(text, (k, v) => k === 'at' ? new Date(v) : v)`. What does a decoding strategy centralise?"
+    },
+    {
+      "kind": "edge",
+      "q": "ISO strings with fractional seconds: does `.iso8601` accept them? What's the fix?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Global strategy on the decoder vs a custom `init(from:)` per type: when is each right?"
+    },
+    {
+      "kind": "practice",
+      "q": "Backend sends milliseconds, not seconds. What bug do you see if you pick `.secondsSince1970`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Fetching Firebase Firestore data with Codable in Swift | Firebase Bootcamp #10",
+      "url": "https://www.youtube.com/watch?v=elGMTQGRZGo",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Using generics to load any kind of Codable data – Moonshot SwiftUI Tutorial 7/11",
+      "url": "https://www.youtube.com/watch?v=S6GLrIDMKiA",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

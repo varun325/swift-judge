@@ -41,5 +41,38 @@
     "Resolve each flag in order: local override, then remote, then default.",
     "Decode remote config as `[String: RemoteFlag]`; invalid JSON means an empty dictionary.",
     "Rollout: on only when `enabled && userBucket < rolloutPercent`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "Layered flags (code defaults < remote config < local overrides) are what LaunchDarkly or Firebase Remote Config give JS apps. Decoding them with `Codable` and falling back safely is the iOS client side.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "LaunchDarkly's JS SDK evaluates flags with defaults. What must the iOS client do when remote config fails to load?"
+    },
+    {
+      "kind": "edge",
+      "q": "A flag flips mid-session: should the UI change immediately or on next launch?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Feature flags vs A/B tests vs app version gating: which tool for which job?"
+    },
+    {
+      "kind": "practice",
+      "q": "App Store review sees your app with some flag values. What's the risk of hiding features behind flags?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Final review of MVVM Architecture and other features | SwiftUI Map App #9",
+      "url": "https://www.youtube.com/watch?v=LuyWO86Myz0",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "SwiftUI - Intro to MVVM | Example Refactor | Model View ViewModel",
+      "url": "https://www.youtube.com/watch?v=FwGMU_Grnf8",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": []
 }

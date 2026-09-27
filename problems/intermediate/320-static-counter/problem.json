@@ -31,5 +31,58 @@
     "`static` members belong to the type, not to each instance.",
     "Keep `capacity` as a `static let`; the method takes the roster `inout`, so no mutable global state is needed.",
     "`guard roster.count < capacity else { return \"full\" }; roster.append(name)`."
+  ],
+  "impact": "core",
+  "jsBridge": "`static` members belong to the type, like JS `static` class fields. In Swift they work on structs and enums too, and `static let` is **lazily initialised and thread-safe**, which is why it's the standard singleton pattern.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS static fields initialise when the class is evaluated. When does a Swift `static let` initialise, and who guarantees thread safety?"
+    },
+    {
+      "kind": "java",
+      "q": "Java `static` + the holder idiom for lazy singletons: how does Swift's `static let` make that idiom unnecessary?"
+    },
+    {
+      "kind": "edge",
+      "q": "In Swift 6, why is `static var count = 0` an error (global mutable state not concurrency-safe)? What are the fixes?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does static state bite in tests: shared caches, singletons? How would you inject instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Static properties and methods – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=qin6oM6PtGg&t=332s",
+      "channel": "Paul Hudson",
+      "start": 332,
+      "moment": "first let's switch base code um i use static properties a lot to organize common data in my programs for example i"
+    },
+    {
+      "title": "Swift - Static Properties & Methods Explained",
+      "url": "https://www.youtube.com/watch?v=s2E5hVxQAZQ",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "what's going on everybody today's tutorial is gonna be all about these static keywords what it is what it means"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

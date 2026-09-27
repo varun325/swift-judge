@@ -30,5 +30,60 @@
     "A protocol lists requirements; an extension can implement a requirement for everyone.",
     "Add a `kind` requirement and implement `salesSummary()` once in `extension Building`.",
     "Conform `House`/`Office` with stored `rooms`/`cost` and computed `kind`/`agent`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A protocol with a default `salesSummary()` in an extension. This is protocol-oriented programming, sharing behaviour across `House` and `Office` structs without a base class. TS would use an abstract class or a mixin.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS abstract class vs Swift protocol extension: which lets `House` also conform to other protocols freely?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Put `salesSummary` in the extension vs as a requirement: how does that change dispatch (recall the dispatch trap)?"
+    },
+    {
+      "kind": "edge",
+      "q": "How do you get the type name (`House`) generically: `String(describing: Self.self)`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Protocol-oriented design is a Swift talking point (WWDC 2015). Where does it go too far?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "What is a Protocol in Swift and SwiftUI View protocol | Swift Basics #17",
+      "url": "https://www.youtube.com/watch?v=nJmrkRlRu88&t=14s",
+      "channel": "Swiftful Thinking",
+      "start": 14,
+      "moment": "would say the next playlist after this should be at the Swift UI boot camp and in Swift UI anytime you create any"
+    },
+    {
+      "title": "How to create and use protocol extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=YrVwyL_mcts",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] protocols let us define contracts to which any conforming type must adhere"
+    },
+    {
+      "title": "Swift Protocols - An Introduction",
+      "url": "https://www.youtube.com/watch?v=vmQnTMWaDiY&t=95s",
+      "channel": "Sean Allen",
+      "start": 95,
+      "moment": "of instructions to conformed to the identifiable protocol is to just have an ID property that's about as simple as you can get and protocols don't have to be cr"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

@@ -44,5 +44,46 @@
     "Extend `RandomAccessCollection where Element: Comparable`.",
     "Use `startIndex`/`endIndex` and `index(_:offsetBy:)`, not `0..<count` — slices keep their original indices.",
     "`let mid = index(low, offsetBy: distance(from: low, to: high) / 2)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Writing `binarySearch` once on `RandomAccessCollection where Element: Comparable` makes it work on arrays, slices and any random-access type. JS has no protocol to target, so you'd write it for arrays only.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A JS `binarySearch(arr, x)` works on arrays. What extra types does the Swift generic cover (`ArraySlice`, `ContiguousArray`, custom)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why must you use `Index` and `index(_:offsetBy:)` rather than `Int` arithmetic? When do slices break `Int` assumptions?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Why `RandomAccessCollection` and not `Collection` for binary search?"
+    },
+    {
+      "kind": "practice",
+      "q": "Swift's standard library still has no `binarySearch`. What does swift-algorithms offer (`partitioningIndex`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Binary Search - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=CkYDljd_7M8&t=12s",
+      "channel": "Sean Allen",
+      "start": 12,
+      "moment": "sharing your screen with your interviewer for this first video we're going to start off fairly simple and I'm"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

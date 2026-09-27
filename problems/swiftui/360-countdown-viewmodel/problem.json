@@ -18,6 +18,14 @@
     {
       "title": "onReceive(_:perform:)",
       "url": "https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:)"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -41,5 +49,49 @@
     "Ticks only count while running; the model decides what a tick means.",
     "`tick()` guards `isRunning` and stops (and flags `finished`) at zero.",
     "Format with `remaining / 60` and a zero-padded `remaining % 60`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "A timer-driven countdown in a view model: ticks come in from `Timer.publish` or `TimelineView`. React uses `setInterval` inside `useEffect` with cleanup, and SwiftUI's `.onReceive` ties the subscription to the view.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React `useEffect(() => { const id = setInterval(...); return () => clearInterval(id) })`. What's SwiftUI's cleanup story?"
+    },
+    {
+      "kind": "edge",
+      "q": "The app goes to the background for 30 s. Does a `Timer` keep ticking? How do you stay accurate (store an end date)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Counting ticks vs computing `endDate - now` each tick: which drifts?"
+    },
+    {
+      "kind": "practice",
+      "q": "`TimelineView(.periodic(from:by:))` vs `Timer.publish`: which is better for a countdown label?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Timer and onReceive in SwiftUI | Continued Learning #24",
+      "url": "https://www.youtube.com/watch?v=ymXRX6ZB-J0&t=4s",
+      "channel": "Swiftful Thinking",
+      "start": 4,
+      "moment": "what's up everyone i'm nick this is swiffle thinking and in this super exciting video"
+    },
+    {
+      "title": "Counting down with a Timer – Flashzilla SwiftUI Tutorial 10/13",
+      "url": "https://www.youtube.com/watch?v=rAKxcNe2nxo&t=90s",
+      "channel": "Paul Hudson",
+      "start": 90,
+      "moment": "the current date but there really is no need as you'll see we're going to add a new onreceive modifier to the outermost"
+    },
+    {
+      "title": "Swift Timer - Xcode 11, Swift 5.1",
+      "url": "https://www.youtube.com/watch?v=CGnOe4bl8_A",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "in today's video we're talking about timers in Swift now timers can be used in numerous ways"
+    }
+  ],
+  "articles": []
 }

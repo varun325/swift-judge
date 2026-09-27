@@ -14,6 +14,14 @@
     {
       "title": "Error Handling",
       "book": "LanguageGuide/ErrorHandling"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -32,5 +40,55 @@
     "Errors are values of a type that conforms to `Error` — usually an enum.",
     "Check the length first, then the obvious passwords, then return based on length.",
     "`if password.count < 5 { throw PasswordError.short }`; `if [\"12345\", \"password\"].contains(password) { throw PasswordError.obvious }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Errors as enums (`enum PasswordError: Error { case short, obvious }`) are like throwing typed error objects in JS, but the catch site can pattern-match cases instead of checking `instanceof` or message strings.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS devs often check `err.message.includes(...)`. How does an error enum make that impossible?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Throwing for validation vs returning a `ValidationResult`: is invalid user input really \"exceptional\"?"
+    },
+    {
+      "kind": "practice",
+      "q": "How would you show these errors in a SwiftUI form (`LocalizedError.errorDescription`)?"
+    },
+    {
+      "kind": "java",
+      "q": "Java would use exception subclasses. What's the enum approach's advantage when matching?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Custom Errors and Alerts in SwiftUI | Advanced Learning #28",
+      "url": "https://www.youtube.com/watch?v=lncOFL3Qsns&t=863s",
+      "channel": "Swiftful Thinking",
+      "start": 863,
+      "moment": "mean is like just make an enum make a custom error descript deson and put in all of your cases so if you have a bunch"
+    },
+    {
+      "title": "Writing throwing functions – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=MxaYr2VGVTo&t=11s",
+      "channel": "Paul Hudson",
+      "start": 11,
+      "moment": "enum that describes the errors we can throw these must always be based on Swift's existing error type we're going"
+    },
+    {
+      "title": "Swift Error Handling - Do, Try, Catch - iOS Interview Question Series",
+      "url": "https://www.youtube.com/watch?v=Lrc-MX8WgNc&t=490s",
+      "channel": "Sean Allen",
+      "start": 490,
+      "moment": "email is empty or password is empty this is where we want to throw an error and the error we want to throw is login"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

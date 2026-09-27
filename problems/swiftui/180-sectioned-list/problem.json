@@ -13,6 +13,14 @@
     {
       "title": "Section",
       "url": "https://developer.apple.com/documentation/swiftui/section"
+    },
+    {
+      "title": "List",
+      "url": "https://developer.apple.com/documentation/swiftui/list"
+    },
+    {
+      "title": "ForEach",
+      "url": "https://developer.apple.com/documentation/swiftui/foreach"
     }
   ],
   "signature": {
@@ -33,5 +41,47 @@
     "`Dictionary(grouping:by:)` builds sections from a key function.",
     "Key: uppercased first letter, or `#` for non-letters.",
     "Sort keys with `(isHash ? 1 : 0, key)` tuples so `#` comes last."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Grouping into sections is `Dictionary(grouping:)` plus sorted keys, then `ForEach` over sections. The same data prep as a React `SectionList`, where the view just renders pre-shaped data.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React Native's `SectionList` wants `[{title, data}]`. What shape does a SwiftUI `List` with `Section`s want?"
+    },
+    {
+      "kind": "edge",
+      "q": "Sorting \"Émile\" and \"Zoë\" into letter sections: which collation does the user's locale expect?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Precomputing sections in the model vs computing them in `body`: when does recomputation become visible?"
+    },
+    {
+      "kind": "practice",
+      "q": "Contacts-style index bars (A–Z on the side): what API supports that (`.listSectionIndexVisibility`)?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Add a Settings screen using a List with Sections | SwiftUI Crypto App #23",
+      "url": "https://www.youtube.com/watch?v=nJuRNY8nhuA&t=34s",
+      "channel": "Swiftful Thinking",
+      "start": 34,
+      "moment": "um but we've done so many layers and view models in this course that i just want to keep this simple"
+    },
+    {
+      "title": "Adding custom row swipe actions to a List – Hot Prospects 6/16",
+      "url": "https://www.youtube.com/watch?v=07_jJzw0bms",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Fix This Problem with SwiftUI Lists",
+      "url": "https://www.youtube.com/watch?v=cpT02OtOasE",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "lists and Swift UI have a little bit of a problem if you need a view to be floating on top of that list for example A Min player in a podcast or music app a tex"
+    }
+  ],
+  "articles": []
 }

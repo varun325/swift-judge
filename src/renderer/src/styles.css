@@ -308,3 +308,25 @@ button.link:hover { text-decoration: underline; }
 .review-today .when.overdue { color: var(--warn); }
 .filter-row { flex-wrap: wrap; row-gap: 6px; }
 .filter-row label { white-space: nowrap; }
+
+/* Confusion Compass */
+.compass { margin: 14px 0; border: 1px solid color-mix(in srgb, #8b5cf6 50%, var(--border)); background: color-mix(in srgb, #8b5cf6 6%, var(--panel)); border-radius: 8px; padding: 8px 14px 12px; }
+.compass summary { cursor: pointer; font-weight: 700; font-size: 13px; }
+.compass summary::before { content: '🧭 '; }
+.compass ol { margin: 10px 0 8px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+.compass li .markdown { font-size: 13.5px; }
+.compass li .markdown p { margin: 2px 0 0; }
+.compass-kind { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; padding: 2px 6px; border-radius: 4px; background: var(--panel-2); color: var(--muted); border: 1px solid var(--border); }
+.compass-kind.js { background: #f7df1e; color: #111; border-color: transparent; }
+.compass-kind.java { background: #e76f00; color: #fff; border-color: transparent; }
+.compass-kind.practice { background: color-mix(in srgb, var(--ok) 20%, transparent); color: var(--text); }
+.compass-kind.edge { background: color-mix(in srgb, var(--warn) 22%, transparent); color: var(--text); }
+.compass-kind.contrast { background: color-mix(in srgb, #8b5cf6 22%, transparent); color: var(--text); }
+.compass-answer { background: #8b5cf6; color: #fff; border: 0; border-radius: 6px; padding: 6px 12px; font-weight: 600; }
+.compass-answer:hover { filter: brightness(1.08); }
+.video-link .timestamp { color: var(--accent); font-variant-numeric: tabular-nums; }
+.video-link .moment { display: block; font-size: 12px; color: var(--muted); font-style: italic; margin-top: 2px; }
+.pg-name { display: flex; flex-direction: column; gap: 6px; padding: 10px; border-bottom: 1px solid var(--border); background: var(--panel-2); }
+.pg-name input { width: 100%; }
+.pg-name-actions { display: flex; gap: 6px; }
+.pg-name-error { color: var(--warn); font-size: 12px; }

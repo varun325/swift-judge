@@ -32,5 +32,39 @@
     "`deinit` runs the moment the last strong reference to an object disappears.",
     "Removing the first element releases it immediately; the rest are released when the array's `do { }` scope ends.",
     "`items.removeFirst(); log.lines.append(\"removed\")` inside the `do` block."
+  ],
+  "impact": "core",
+  "jsBridge": "`deinit` runs **deterministically** when the last strong reference goes away (ARC). JS garbage collection is non-deterministic, and `FinalizationRegistry` callbacks may never run. In Swift you can rely on `deinit` for cleanup such as removing observers.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS has no destructors you can rely on. What cleanup patterns (dispose, AbortController) become simpler with deterministic `deinit`?"
+    },
+    {
+      "kind": "java",
+      "q": "Java's `finalize` was deprecated for being unpredictable. Why is Swift's `deinit` predictable?"
+    },
+    {
+      "kind": "edge",
+      "q": "When exactly does a local variable's object deinit: end of scope or last use? (Swift can release early after last use.)"
+    },
+    {
+      "kind": "practice",
+      "q": "Printing in `deinit` is the classic way to detect view controller leaks. How would you automate it in tests?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to create a deinitializer for a class – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=LAhctdU5Mq4",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

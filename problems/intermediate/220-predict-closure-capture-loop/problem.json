@@ -20,5 +20,55 @@
     "Each iteration of a `for`-`in` loop gets a **new** loop constant.",
     "The first three closures captured different `i` values. The next three all captured the same `counter` variable, which ends at 100.",
     "Output: `loop 1`, `loop 2`, `loop 3`, three `shared 100`, then `snapshot 3`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The famous JS `var` in a loop bug (all closures see the last `i`) **doesn't happen** with Swift's `for-in`: each iteration gets a fresh `let` binding, like JS `let` in `for`. But a captured `var` outside the loop is shared.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "The `for (var i…)` closure bug: does Swift's `for i in` have it? What about a `var` declared before a `while` loop?"
+    },
+    {
+      "kind": "edge",
+      "q": "Capture a `var counter` in closures created in a loop, then mutate it after the loop. What do they print?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Capture list `[i]` vs relying on per-iteration binding: which is more explicit?"
+    },
+    {
+      "kind": "practice",
+      "q": "Creating `Button`s in a `ForEach` that capture the item: why does SwiftUI not have this bug?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Download JSON from API in Swift w/ URLSession and escaping closures | Continued Learning #22",
+      "url": "https://www.youtube.com/watch?v=h42OHc5CRBQ&t=23s",
+      "channel": "Swiftful Thinking",
+      "start": 23,
+      "moment": "because we are going to use a lot of what we learned in this video and that includes"
+    },
+    {
+      "title": "How to use trailing closures and shorthand syntax – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=HnIID4W3a_o",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] swift has a few tricks up its sleeve to help minimize the amount of syntax"
+    },
+    {
+      "title": "Swift Closures: @escaping Explained",
+      "url": "https://www.youtube.com/watch?v=xiS5gJOIQxI&t=207s",
+      "channel": "Sean Allen",
+      "start": 207,
+      "moment": "shared get followers you'll see we have the we called it result that's what our closures you know coming back as and you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Closures",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/",
+      "source": "swift.org"
+    }
   ]
 }

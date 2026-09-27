@@ -31,5 +31,46 @@
     "Inside the function, a variadic `Double...` parameter is just a `[Double]`.",
     "Put the real work in an array-taking overload and have the variadic version forward to it.",
     "`func average(_ numbers: Double...) -> Double? { average(of: numbers) }`, with `numbers.isEmpty ? nil : sum / Double(count)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Like JS rest parameters (`...numbers`), but you can't spread an array into a Swift variadic parameter; there's no `average(...arr)`. That's why APIs provide an array overload too.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `fn(...arr)` spreads an array. Swift has no splat. What design pattern does that force on API authors?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a function have two variadic parameters? (Swift 5.4 changed this.) What disambiguates them?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Variadic vs `[Double]` parameter: which is nicer at the call site, and which is more flexible?"
+    },
+    {
+      "kind": "practice",
+      "q": "`print(_ items: Any...)` is variadic. What does `Any...` cost in type safety?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Variadic functions – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=OpRcPOVNjXE",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Some functions are variadic, which is a fancy way of saying they accept any number of parameters of the same type."
+    },
+    {
+      "title": "Swift - What are Variadic Parameters?",
+      "url": "https://www.youtube.com/watch?v=DtAYJfe_9o0",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

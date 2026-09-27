@@ -31,5 +31,46 @@
     "Find the element's index by id, then mutate through the subscript.",
     "Switch on `(command, index)` — `let i?` matches only when the item exists, `nil` when it doesn't.",
     "`case (\"toggle\", let i?): todos[i].isDone.toggle()`."
+  ],
+  "impact": "core",
+  "jsBridge": "`Identifiable` gives models a stable `id`, the Swift equivalent of React's `key` prop. SwiftUI's `ForEach` and `List` use it to diff rows. Updating by ID with `firstIndex(where:)` is the standard mutation pattern.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "React's `key` prop and SwiftUI's `Identifiable`: what goes wrong in each when IDs are unstable (array index as key)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`Identifiable` vs `Hashable` vs `Equatable`: what does each do for SwiftUI?"
+    },
+    {
+      "kind": "edge",
+      "q": "Two items with the same `id` in a `ForEach`: what happens? (Undefined, logs a warning.)"
+    },
+    {
+      "kind": "practice",
+      "q": "IDs: `UUID()` generated client-side vs server IDs. What breaks when you create an item offline?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Working with Identifiable items in SwiftUI – iExpense SwiftUI Tutorial 8/11",
+      "url": "https://www.youtube.com/watch?v=naK7cXsVxD0&t=365s",
+      "channel": "Paul Hudson",
+      "start": 365,
+      "moment": "just yet though because I want to modify the expense item just fractionally more I want to say let's conform this to a"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

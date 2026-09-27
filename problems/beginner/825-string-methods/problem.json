@@ -13,6 +13,14 @@
     {
       "title": "Strings and Characters",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "signature": {
@@ -30,5 +38,48 @@
     "Many handy string methods live in Foundation — import it.",
     "Capitalise with `prefix(1).uppercased() + dropFirst()`; search with `localizedCaseInsensitiveContains`.",
     "`text.replacingOccurrences(of: \" \", with: \"_\")` for item 4."
+  ],
+  "impact": "edge",
+  "jsBridge": "Most JS string methods have Swift equivalents: `hasPrefix` (`startsWith`), `contains`, `uppercased()`, `replacingOccurrences` (`replaceAll`). Some come from Foundation (`import Foundation`), which is Apple's \"extra standard library\".",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Which string methods need `import Foundation` in Swift? Why is Foundation separate from the standard library?"
+    },
+    {
+      "kind": "edge",
+      "q": "`\"ß\".uppercased()` is `\"SS\"`. What other length-changing case mappings exist?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`contains(\"x\")` (Foundation/StringProtocol) vs `contains(Character)` (Sequence): why do both exist?"
+    },
+    {
+      "kind": "practice",
+      "q": "For user-facing comparisons, why use `localizedCaseInsensitiveCompare` or `localizedStandardContains`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=19s",
+      "channel": "Swiftful Thinking",
+      "start": 19,
+      "moment": "data that data always has a type it's a type of data and so in this video we're going to look at some of those basic"
+    },
+    {
+      "title": "Properties and methods of strings – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ldGno_JrHEA&t=23s",
+      "channel": "Paul Hudson",
+      "start": 23,
+      "moment": "returns true if the string starts with specific letters. Print string.hasPrefix do."
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

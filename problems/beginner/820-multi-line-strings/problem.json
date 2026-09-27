@@ -13,11 +13,69 @@
     {
       "title": "Strings and Characters — Multiline String Literals",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "String",
+      "url": "https://developer.apple.com/documentation/swift/string"
+    },
+    {
+      "title": "Character",
+      "url": "https://developer.apple.com/documentation/swift/character"
     }
   ],
   "hints": [
     "The closing `\"\"\"` sets the indentation that gets removed from every line.",
     "The second line keeps its **extra** two spaces; the `\\` at a line end removes that line break.",
     "The poem has 3 lines: `Roses are red,`, `  Taylor is too,`, `this line continues here.`"
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift `\"\"\"` blocks are like JS template literals, with one difference: the closing delimiter's indentation is stripped from every line, so you can indent code naturally. A trailing `\\` joins lines.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS template literals keep all indentation, so people use `dedent` libraries. What does Swift do that makes those unnecessary?"
+    },
+    {
+      "kind": "edge",
+      "q": "What happens if a line is indented *less* than the closing `\"\"\"`?"
+    },
+    {
+      "kind": "practice",
+      "q": "Multi-line strings are handy for GraphQL queries and test fixtures. Where else?"
+    },
+    {
+      "kind": "contrast",
+      "q": "A trailing `\\` in a multi-line string vs concatenation with `+`: which is clearer?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use basic Types in Swift (Bool, String, Int) | Swift Basics #2",
+      "url": "https://www.youtube.com/watch?v=JeoaCW9fO0w&t=19s",
+      "channel": "Swiftful Thinking",
+      "start": 19,
+      "moment": "data that data always has a type it's a type of data and so in this video we're going to look at some of those basic"
+    },
+    {
+      "title": "Multi-line strings – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=Ppl-8E1YgRU",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "standard swift strings used double quotes but you can't occlude line breaks in there if you want multi-line strings"
+    },
+    {
+      "title": "Xcode Tip - Multi-line Cursor Editing #iosdeveloper #swift #xcode",
+      "url": "https://www.youtube.com/watch?v=wpeCIAdlCpM",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "let's talk about the cursor and first up is multi-line cursor editing let's say I want to make these three functions all"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Strings and Characters",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters/",
+      "source": "swift.org"
+    }
   ]
 }

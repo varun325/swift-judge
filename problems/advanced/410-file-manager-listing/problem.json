@@ -14,6 +14,10 @@
     {
       "title": "FileManager",
       "url": "https://developer.apple.com/documentation/foundation/filemanager"
+    },
+    {
+      "title": "Foundation",
+      "url": "https://developer.apple.com/documentation/foundation"
     }
   ],
   "signature": {
@@ -32,5 +36,42 @@
     "`FileManager` methods throw; `defer` guarantees cleanup.",
     "Create a UUID-named temp directory, write each file (creating parent folders), then enumerate recursively.",
     "`for case let url as URL in enumerator` — resolve symlinks on both sides before making paths relative."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`FileManager` is Node's `fs`: create directories, write files, list contents. iOS apps are **sandboxed**, so you work inside your container's Documents, Caches and tmp folders, never arbitrary paths.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Node `fs` can touch the whole disk. What can an iOS app see, and where should each kind of file go (Documents vs Caches vs tmp)?"
+    },
+    {
+      "kind": "edge",
+      "q": "`contentsOfDirectory` order: is it sorted? Why must you sort for stable output?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`FileManager` + `Data.write` vs SwiftData or Core Data: when is plain files the right persistence?"
+    },
+    {
+      "kind": "practice",
+      "q": "Which folder gets backed up to iCloud, and which can the system purge under storage pressure?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Save data and images to FileManager in Xcode | Continued Learning #26",
+      "url": "https://www.youtube.com/watch?v=Yiq-hdhLzVM&t=1010s",
+      "channel": "Swiftful Thinking",
+      "start": 1010,
+      "moment": "is the data that can be downloaded again or regenerated should be stored in the"
+    },
+    {
+      "title": "Listing images with FileManager – Storm Viewer, part 2",
+      "url": "https://www.youtube.com/watch?v=XqFSZUM04fg&t=17s",
+      "channel": "Paul Hudson",
+      "start": 17,
+      "moment": "copied into your project X that will automatically build them into your finished app so you can access them"
+    }
+  ],
+  "articles": []
 }

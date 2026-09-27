@@ -38,5 +38,46 @@
     "Functions can share a name if their parameter types differ.",
     "Write three `describe(_:)` functions for `Int`, `String` and `Bool`; the compiler chooses by argument type.",
     "`ints.map(describe) + words.map(describe) + flags.map(describe)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS can't overload by type; you branch on `typeof` inside one function. Swift picks the overload **at compile time** from the static types, and the choice can't change at runtime. That's a key difference from dynamic dispatch.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS you'd write `if (typeof v === 'number')`. What does compile-time overload resolution give you, and what can it never do (think `Any`)?"
+    },
+    {
+      "kind": "edge",
+      "q": "If you call `describe(x)` where `x: Any`, which overload runs? Why is that surprising?"
+    },
+    {
+      "kind": "java",
+      "q": "Java also resolves overloads statically. Would a Java dev be surprised by any Swift overloading rule?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Overloads vs a generic function with a protocol constraint: when does each scale better?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Functions in Swift | Swift Basics #5",
+      "url": "https://www.youtube.com/watch?v=kr3SSplrJlw&t=300s",
+      "channel": "Swiftful Thinking",
+      "start": 300,
+      "moment": "first go to this file and show this on the screen and then that file is going to call a whole bunch of other functions"
+    },
+    {
+      "title": "How to accept functions as parameters – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=1Ho_GhA70zw",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -37,5 +37,41 @@
     "A generic parameter can be a compile-time tag that's never stored.",
     "`Length<Unit>` stores only a `Double`; `+` is only defined for two lengths with the same `Unit`.",
     "`Length<To>(value: value * Unit.metersPerUnit / To.metersPerUnit)` to convert."
+  ],
+  "impact": "edge",
+  "jsBridge": "A phantom type parameter (`Length<Meters>`) exists only at compile time, so mixing meters and feet is a type error. TS approximates this with branded types (`number & {__brand: 'm'}`). Swift's version is first-class and free at runtime.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "TS branded types need casts to create. What makes Swift phantom types more ergonomic?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Phantom types vs Foundation's `Measurement<UnitLength>`: when would you use each?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can `Length<Meters>` and `Length<Feet>` be added accidentally? What about through `Any`?"
+    },
+    {
+      "kind": "practice",
+      "q": "`Tagged<User, UUID>` IDs (Point-Free's swift-tagged) prevent passing a `PostID` where a `UserID` is expected. Worth it in your app?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use phantom types in Swift",
+      "url": "https://www.youtube.com/watch?v=9Vs4YDSpzHA",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] phantom types are a powerful way to let us give the Swift compiler more"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Generics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/",
+      "source": "swift.org"
+    }
   ]
 }

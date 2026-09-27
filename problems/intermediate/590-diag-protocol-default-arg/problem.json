@@ -20,5 +20,60 @@
     "Default argument values aren't allowed in protocol requirements.",
     "Add `= false` to the `urgent` parameter in the protocol.",
     "`func send(_ message: String, urgent: Bool = false)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The compiler forbids default arguments in protocol requirements, because defaults are a caller-side convenience and the requirement is the implementation contract. Use a protocol extension overload instead.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why can TS optional parameters live in interfaces while Swift defaults can't live in protocols?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Default value in the implementing type vs in an extension overload: which does an `any P` caller see?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a protocol requirement have a default *implementation* but not a default *argument*? What's the difference?"
+    },
+    {
+      "kind": "practice",
+      "q": "When designing a protocol for mocking in tests, how do defaults affect your mocks?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Protocols in Swift | Advanced Learning #15",
+      "url": "https://www.youtube.com/watch?v=0gM1wmW1Xvc&t=116s",
+      "channel": "Swiftful Thinking",
+      "start": 116,
+      "moment": "body and the reason for that is because view is actually a protocol and the requirement of the view protocol is that"
+    },
+    {
+      "title": "Summary: Protocols and extensions – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=U0IgKPgyAgw",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] in these videos about protocols and extensions we've covered some complex"
+    },
+    {
+      "title": "Swift Protocols - An Introduction",
+      "url": "https://www.youtube.com/watch?v=vmQnTMWaDiY&t=78s",
+      "channel": "Sean Allen",
+      "start": 78,
+      "moment": "uu ID which is a unique identifier this can also be a string like maybe in the case of a book like for the library this is a ISBN number which is a real long id"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    },
+    {
+      "title": "Protocol-Oriented Programming in Swift (WWDC15)",
+      "url": "https://developer.apple.com/videos/play/wwdc2015/408/",
+      "source": "WWDC"
+    }
   ]
 }

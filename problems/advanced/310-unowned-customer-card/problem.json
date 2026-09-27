@@ -34,5 +34,48 @@
     "`unowned` references don't keep the object alive and are non-optional.",
     "The customer owns the card strongly; the card refers back with `unowned let customer`.",
     "`unowned let customer: Customer` in `CreditCard`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`unowned` is a non-owning reference that is **assumed** to always be valid. It's non-optional, and it crashes if the object is gone. JS has no equivalent, since `WeakRef` is always \"maybe gone\".",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `WeakRef` is like Swift `weak`. Why would anyone want the crash-if-wrong `unowned`?"
+    },
+    {
+      "kind": "edge",
+      "q": "`unowned(unsafe)` exists too. What does it skip?"
+    },
+    {
+      "kind": "contrast",
+      "q": "When does the Swift book choose `unowned` over `weak` (the lifetimes relationship)?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you allow `unowned` in your codebase, or ban it for `weak` everywhere?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to manage strong & weak references with Async Await  | Swift Concurrency #13",
+      "url": "https://www.youtube.com/watch?v=HRHtOdTJH70&t=58s",
+      "channel": "Swiftful Thinking",
+      "start": 58,
+      "moment": "developers so if you are feeling of bored or anything like that join the Discord it's free why not but one of the"
+    },
+    {
+      "title": "Swift - Retain Cycle, Automatic Reference Counting, Memory Leak - iOS Interview Questions",
+      "url": "https://www.youtube.com/watch?v=VcoZJ88d-vM&t=18s",
+      "channel": "Sean Allen",
+      "start": 18,
+      "moment": "all right automatic reference counting now this is Apple's way of handling memory management of objects for you now"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Automatic Reference Counting",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "source": "swift.org"
+    }
   ]
 }

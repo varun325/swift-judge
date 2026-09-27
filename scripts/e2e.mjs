@@ -231,7 +231,67 @@ if (!filter) {
   const solvedText = (await page.textContent('.solved-count')).trim()
   if (!scenariosOnly) await check('solved counter reflects every accepted problem', solvedText.startsWith(`${problems.length}/`), solvedText)
 
-  // Playground: run code, see output, append to notes, files saved on disk.
+  // Learning content: every problem in every track shows its JS comparison and Confusion Compass.
+  {
+    const all = []
+    for (const track of fs.readdirSync(path.join(APP, 'problems'))) {
+      const dir = path.join(APP, 'problems', track)
+      if (!fs.statSync(dir).isDirectory()) continue
+      for (const d of fs.readdirSync(dir)) {
+        const f = path.join(dir, d, 'problem.json')
+        if (fs.existsSync(f)) all.push(JSON.parse(fs.readFileSync(f, 'utf8')))
+      }
+    }
+    const missing = []
+    for (const meta of all) {
+      await page.click('.tabs button:has-text("Problems")')
+      const item = page.locator(`.problem-item[data-id="${meta.id}"]`)
+      await item.scrollIntoViewIfNeeded()
+      await item.click()
+      await page.waitForFunction((t) => document.querySelector('.problem-title')?.textContent === t, meta.title, { timeout: 15_000 })
+      const shown = await page.evaluate(() => ({
+        js: document.querySelector('.js-bridge .markdown')?.textContent?.trim().length ?? 0,
+        jsClosed: document.querySelector('.js-bridge')?.open === false, // closed by default: it can act as a hint
+        compass: document.querySelectorAll('.compass li').length,
+        jsQuestion: document.querySelectorAll('.compass li[data-kind="js"]').length,
+        impact: document.querySelectorAll('.badge.impact-core, .badge.impact-edge').length
+      }))
+      if (!shown.js || !shown.jsClosed || shown.compass !== meta.compass.length || !shown.jsQuestion || shown.impact !== 1) missing.push(`${meta.id} ${JSON.stringify(shown)}`)
+    }
+    await check(`all ${all.length} problems render a (closed) JS comparison, 80/20 badge and Confusion Compass`, missing.length === 0, missing.slice(0, 5).join('; '))
+  }
+
+  // Confusion Compass → "Answer in Playground" opens a notes page pre-filled with the questions.
+  {
+    await openProblem('two-sum')
+    const firstQuestion = (await page.locator('.compass li .markdown').first().textContent()).trim().slice(0, 40)
+    await page.click('.compass-answer')
+    await page.waitForFunction(
+      (q) => window.monaco?.editor.getEditors().some((e) => e.getModel()?.getLanguageId() === 'markdown' && e.getModel().getValue().includes(q)),
+      firstQuestion.slice(0, 25),
+      { timeout: 15_000 }
+    )
+    const notesFile = path.join(playgroundDir, 'compass-two-sum.md')
+    const onDisk = fs.existsSync(notesFile) ? fs.readFileSync(notesFile, 'utf8') : ''
+    // Write an answer, come back through the problem: the page must reopen with the answer intact.
+    await page.evaluate(() => {
+      const md = window.monaco.editor.getEditors().find((e) => e.getModel()?.getLanguageId() === 'markdown')
+      md.getModel().setValue(md.getModel().getValue() + '\nMY-ANSWER-MARKER\n')
+    })
+    await page.waitForTimeout(1200)
+    await openProblem('two-sum')
+    await page.click('.compass-answer')
+    await page.waitForTimeout(800)
+    const kept = fs.existsSync(notesFile) && fs.readFileSync(notesFile, 'utf8').includes('MY-ANSWER-MARKER')
+    const pages = fs.readdirSync(playgroundDir).filter((f) => f.startsWith('compass-two-sum')).length
+    await check('Answer in Playground opens a pre-filled notes page and never overwrites answers',
+      onDisk.includes('Confusion Compass: Two Sum') && onDisk.includes('My answer') && kept && pages === 2,
+      `onDisk=${onDisk.length} kept=${kept} files=${pages}`)
+  }
+
+
+  await page.click(".tabs button:has-text(\"Problems\")") // the compass check left the Playground open on its page
+  await page.evaluate(() => localStorage.setItem("playground.page", "scratchpad"))
   await page.click('.tabs button:has-text("Playground")')
   // Wait until the scratchpad page has loaded into the editor before replacing its text.
   await page.waitForFunction(
@@ -263,6 +323,23 @@ if (!filter) {
   const minimised = (await page.locator('.pg-preview-body').count()) === 0 && (await page.locator('.pg-notes.preview-collapsed').count()) === 1
   await page.click('.pg-preview-toggle')
   await check('notes preview can be minimised and restored', minimised && (await page.locator('.pg-preview-body').count()) === 1)
+
+  // + New and Rename use an inline form (Electron has no window.prompt()).
+  await page.click('.pg-new')
+  await page.fill('.pg-name input', 'Closures Practice')
+  await page.press('.pg-name input', 'Enter')
+  await page.waitForSelector('.problem-item.selected[data-page="closures-practice"]', { timeout: 10_000 }).catch(() => {})
+  const created = fs.existsSync(path.join(playgroundDir, 'closures-practice.md')) && (await page.locator('.pg-name').count()) === 0
+  await page.click('.pg-rename')
+  await page.fill('.pg-name input', 'scratchpad')
+  await page.press('.pg-name input', 'Enter')
+  const duplicateError = await page.waitForSelector('.pg-name-error', { timeout: 5000 }).then(() => true).catch(() => false)
+  await page.fill('.pg-name input', 'Closures Deep Dive')
+  await page.press('.pg-name input', 'Enter')
+  await page.waitForSelector('.problem-item.selected[data-page="closures-deep-dive"]', { timeout: 10_000 }).catch(() => {})
+  const renamed = fs.existsSync(path.join(playgroundDir, 'closures-deep-dive.md')) && !fs.existsSync(path.join(playgroundDir, 'closures-practice.md'))
+  await check('Playground + New and Rename work (inline name form, duplicate names rejected)', created && duplicateError && renamed,
+    `created=${created} duplicateError=${duplicateError} renamed=${renamed}`)
 
   await page.click('.tabs button:has-text("Concepts")')
   await page.waitForSelector('.concept-card')

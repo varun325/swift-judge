@@ -42,13 +42,44 @@
   "videos": [
     {
       "title": "CS193p 2025 · L14: SwiftData Demonstration",
-      "url": "https://www.youtube.com/watch?v=1PDZl0LPryw",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=1PDZl0LPryw&t=1353s",
+      "channel": "Stanford Online",
+      "start": 1353,
+      "moment": "Anytime I use @Model or @Query or ModelContext or any of those things, I need it. And that just worked. Look at that. It just worked. Now I can enhance this"
     },
     {
       "title": "CS193p 2025 · L15: Multithreading",
-      "url": "https://www.youtube.com/watch?v=F0nefFT2Uik",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=F0nefFT2Uik&t=4062s",
+      "channel": "Stanford Online",
+      "start": 4062,
+      "moment": "That puts it on the main actor. And now it's not going to be sent across any actor boundary. So it's fine. Doesn't have to be Sendable in that case. And there's"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "Predicates across relationships and query limits (no computed properties, careful with optionals) show where `#Predicate` stops being \"just Swift\". It's like an ORM's `where` that can't call your functions.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Prisma can't run your JS functions inside `where` either. Why is that fundamental (the query becomes SQL)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Filtering on a relationship's property (`game.attempts.count > 0`): which forms does `#Predicate` support?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Store a derived value as a real property vs compute it in memory after fetching: what are the costs?"
+    },
+    {
+      "kind": "practice",
+      "q": "Sorting by \"last played\": which property would you add to the model?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

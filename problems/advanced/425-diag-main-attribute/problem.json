@@ -18,5 +18,49 @@
     "A program has one entry point; `main.swift`'s top-level code already is one.",
     "Mark the struct with `@main` and remove the top-level `App.main()` call.",
     "`@main struct App { static func main() { print(\"hello\") } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A program has exactly one entry point: either top-level code in `main.swift`, or a type marked `@main`. Node's entry is simply the file you run. SwiftUI apps use `@main struct MyApp: App`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Node's entry point is whatever file you run. What decides the entry point in a Swift executable?"
+    },
+    {
+      "kind": "practice",
+      "q": "What does `@main` on `struct MyApp: App` actually generate?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a library target have `@main`? What about a package with multiple executables?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`main.swift` top-level code vs `@main` with `static func main() async`: which to use for a CLI?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use MainActor with Observable Macro in SwiftUI | Swift Concurrency #19",
+      "url": "https://www.youtube.com/watch?v=4dQOnNYjO58",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Stop Rebuilding UI with Play to Xcode",
+      "url": "https://www.youtube.com/watch?v=DWQA6bEILes",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Attributes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Advanced Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/advancedoperators/",
+      "source": "swift.org"
+    }
   ]
 }

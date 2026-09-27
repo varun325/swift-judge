@@ -21,5 +21,55 @@
     "Keep a count of free slots per size.",
     "A nested `enum Size: Int` maps car types 1–3; reject invalid types with the failable initialiser.",
     "`guard let size = Size(rawValue: carType), let slots = free[size], slots > 0 else { return false }; free[size] = slots - 1`."
+  ],
+  "impact": "edge",
+  "jsBridge": "A classic OOD interview question. The Swift angle: a `final class` for shared mutable state, an `enum` for car size instead of magic ints, and the question of whether it needs to be an `actor` once several threads park cars.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "Class vs actor for `ParkingLot`: when do concurrent `park` calls make a class unsafe?"
+    },
+    {
+      "kind": "js",
+      "q": "Node's single thread makes this safe in JS. Why doesn't that apply in Swift?"
+    },
+    {
+      "kind": "practice",
+      "q": "Model car sizes as `enum CarSize: Int`. What does the raw value give you, and what does it risk?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should a small car be allowed into a big slot? How would you change the design for that rule?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Classes in Swift | Swift Basics #11",
+      "url": "https://www.youtube.com/watch?v=xJgtknc-7CA",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "all right guys class is in session yes we are covering classes in this video it does not mean classrooms although we're"
+    },
+    {
+      "title": "Changing a view’s layout in response to size classes – SnowSeeker SwiftUI Tutorial 10/12",
+      "url": "https://www.youtube.com/watch?v=-ErGf0_iqrw",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "[Music] Swift UI gives us two environment values to monitor the current size class of our"
+    },
+    {
+      "title": "The Most Misused Design Pattern in Swift",
+      "url": "https://www.youtube.com/watch?v=3OMz0LgapFM",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "never use a Singleton you hear that a lot but are they always bad and Singleton's come up a lot in iOS Developer interviews so today you'll learn what is a Sing"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Protocols",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/",
+      "source": "swift.org"
+    }
   ]
 }

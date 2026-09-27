@@ -13,6 +13,10 @@
     {
       "title": "Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)",
       "url": "https://developer.apple.com/documentation/swiftdata/relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:)"
+    },
+    {
+      "title": "SwiftData",
+      "url": "https://developer.apple.com/documentation/swiftdata"
     }
   ],
   "signature": {
@@ -34,5 +38,42 @@
     "Declare the to-many side with `@Relationship(deleteRule: .cascade, inverse: \\Book.author)`.",
     "Insert the book, then append it to the author's `books` — the inverse is set for you.",
     "Count books with `fetchCount(FetchDescriptor<Book>())` after saving."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`@Relationship(deleteRule: .cascade, inverse:)` declares related models. SwiftData infers many inverses, and cascade deletes follow the graph, like ORM relations with `onDelete: cascade`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Prisma requires both sides of a relation in the schema. What does SwiftData infer for you?"
+    },
+    {
+      "kind": "edge",
+      "q": "Deleting an author with cascade: when is the book count updated (before or after save)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Many-to-many in SwiftData vs a join table in SQL: what do you not have to write?"
+    },
+    {
+      "kind": "practice",
+      "q": "Should an array relationship's order be relied on? (It isn't guaranteed.) What do you store instead?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Core Data relationships, predicates, and delete rules in Xcode | Continued Learning #16",
+      "url": "https://www.youtube.com/watch?v=huRKU-TAD3g&t=4254s",
+      "channel": "Swiftful Thinking",
+      "start": 4254,
+      "moment": "call save as we always do and it should delete now what we need to think about is what we want to do with"
+    },
+    {
+      "title": "Relationships with SwiftData, SwiftUI, and @Query – SwiftData SwiftUI Tutorial 4/5",
+      "url": "https://www.youtube.com/watch?v=n0HlwonH9v0&t=557s",
+      "channel": "Paul Hudson",
+      "start": 557,
+      "moment": "objects. And it's called a cascade cuz it can go as far as you like. If work objects had a location relationship, for"
+    }
+  ],
+  "articles": []
 }

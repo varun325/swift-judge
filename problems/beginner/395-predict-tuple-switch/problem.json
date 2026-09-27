@@ -20,5 +20,55 @@
     "A `switch` checks cases top to bottom and runs only the first match.",
     "`_` matches anything, `let` binds, and `where` adds a condition. `(3, 0)` matches `(_, 0)` before any later case.",
     "The outputs are: `origin`, `x-axis at 3`, `y-axis at -2`, `diagonal 2`, then work out `(-1, 5)` against the range case."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS `switch` only compares with `===`. Swift `switch` **pattern-matches**: tuples, ranges, `_` wildcards, `let` bindings and `where` clauses. It's closer to TS discriminated-union narrowing, or pattern matching in Rust.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "How would you write `case (0, _)` or `case (let x, 0) where x > 5` in JS? What does the compiler check for you in Swift that JS can't?"
+    },
+    {
+      "kind": "edge",
+      "q": "If two cases both match, which runs? Does Swift warn about unreachable cases?"
+    },
+    {
+      "kind": "practice",
+      "q": "Switching on a tuple `(state, event)` is a compact state machine. Where would that help: a player, an auth flow?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Tuple switch vs nested `if`s vs a dictionary of handlers: which is exhaustive by construction?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use a Toggle to create a Switch in SwiftUI | Bootcamp #37",
+      "url": "https://www.youtube.com/watch?v=JIT8sL_VtNA",
+      "channel": "Swiftful Thinking",
+      "start": 0,
+      "moment": "[Music] welcome back everyone i'm nick a quick video here today we're"
+    },
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s&t=178s",
+      "channel": "Paul Hudson",
+      "start": 178,
+      "moment": "Otherwise if loading state is equal to success do success view. Otherwise if loading state is equal to"
+    },
+    {
+      "title": "SwiftUI Toggle - Button & Switch Tutorial",
+      "url": "https://www.youtube.com/watch?v=-sw7gvNUboc&t=21s",
+      "channel": "Sean Allen",
+      "start": 21,
+      "moment": "going to dive into each one we we'll play with a couple but I'm going to cover the most commonly used ones so for the basics I'll do title key and is on and you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

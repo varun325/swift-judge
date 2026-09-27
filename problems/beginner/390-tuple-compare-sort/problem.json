@@ -31,5 +31,53 @@
     "Tuples of comparable values compare element by element, left to right.",
     "Build a tuple of sort keys per row; negate numbers you want sorted descending.",
     "`rows.sorted { (-$0.points, -$0.wins, $0.name) < (-$1.points, -$1.wins, $1.name) }.map(\\.name)`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS sort comparators return numbers (`b.points - a.points || ...`). Swift's `sorted(by:)` takes a **Bool** \"are these in increasing order\" predicate, and tuples of `Comparable`s compare lexicographically: `(-p1, -w1, n1) < (-p2, -w2, n2)`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS comparators return -1/0/1. Swift's return `Bool`. Why is a Bool predicate enough, and what rule must it obey (strict weak ordering)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Tuple comparison vs `[SortDescriptor]` vs `KeyPathComparator`: which scales to user-selectable sort columns?"
+    },
+    {
+      "kind": "edge",
+      "q": "Tuple comparison works up to 6 elements. Why is there a limit? Does parameter packs change it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Is Swift's `sort` stable? Does it matter when users sort a list by one column after another?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Tuples in Swift | Swift Basics #7",
+      "url": "https://www.youtube.com/watch?v=zsjCrtENsZA&t=82s",
+      "channel": "Swiftful Thinking",
+      "start": 82,
+      "moment": "writing good Swift Code but the code in this video actually should be much easier than the last one so hopefully"
+    },
+    {
+      "title": "Arrays vs Sets vs Tuples – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=yZZ6UTipwkM",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "arrays sets and tuples can seem similar at first but they have distinct uses to help you know which to use here are some"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Functions",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/functions/",
+      "source": "swift.org"
+    }
   ]
 }

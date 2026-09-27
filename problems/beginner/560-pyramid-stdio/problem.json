@@ -14,6 +14,10 @@
     {
       "title": "Strings and Characters — Initializing an Empty String",
       "book": "LanguageGuide/StringsAndCharacters"
+    },
+    {
+      "title": "readLine(strippingNewline:)",
+      "url": "https://developer.apple.com/documentation/swift/readline(strippingnewline:)"
     }
   ],
   "compare": "trimmed",
@@ -21,5 +25,46 @@
     "`String(repeating:count:)` builds runs of the same character.",
     "Row `i` has `h - i` spaces and `2i - 1` stars — no trailing spaces.",
     "`print(String(repeating: \" \", count: h - i) + String(repeating: \"*\", count: 2 * i - 1))`."
+  ],
+  "impact": "edge",
+  "jsBridge": "`String(repeating: \" \", count: n)` is JS `' '.repeat(n)`. The \"no trailing spaces\" requirement is where diffing judges (and snapshot tests) bite.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "String concatenation in a loop vs building an array of rows and `joined(separator: \"\\n\")`: which is O(n²)?"
+    },
+    {
+      "kind": "js",
+      "q": "JS `padStart` exists. Is there a Swift equivalent, and why might `padding(toLength:)` from Foundation surprise you?"
+    },
+    {
+      "kind": "edge",
+      "q": "Would the pyramid stay centred with emoji instead of `*`? Why not?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where does whitespace-exact output matter in iOS work: snapshot tests, generated code, accessibility labels?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Basic Swift debugging using print() – Debugging, part 2",
+      "url": "https://www.youtube.com/watch?v=tbFO8DsJ6aw&t=29s",
+      "channel": "Paul Hudson",
+      "start": 29,
+      "moment": "gives you enough information to solve your problem use it with Swift string interpolation to see the Condit's of"
+    },
+    {
+      "title": "How the Best Subscription Apps Print Money in 2025",
+      "url": "https://www.youtube.com/watch?v=1Y-x6Ou4v3M",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

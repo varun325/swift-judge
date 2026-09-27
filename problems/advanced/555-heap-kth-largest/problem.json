@@ -36,5 +36,46 @@
     "A heap keeps the smallest (or largest) element on top in O(log n).",
     "Store a comparator closure; sift up on insert and sift down on pop. Keep a min-heap of size k.",
     "`heap.insert(n); if heap.count > k { _ = heap.popTop() }` — the answer is `heap.peek!`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Swift's standard library has **no heap** (swift-collections has `Heap`), and neither does JS. A generic `Heap<Element>` storing a comparator closure works for min- and max-heaps alike.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Neither JS nor the Swift standard library ship a heap. Why might that be?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Stored comparator closure vs `Element: Comparable` + a min/max flag: which is more flexible?"
+    },
+    {
+      "kind": "edge",
+      "q": "Min-heap of size k for kth largest: why min, not max?"
+    },
+    {
+      "kind": "practice",
+      "q": "Priority queues in apps: scheduling downloads, merging timelines. Would you add swift-collections?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Swift: Struct vs Class vs Actor, Value vs Reference Types, Stack vs Heap | Swift Concurrency #8",
+      "url": "https://www.youtube.com/watch?v=-JLenSTKEcA&t=26s",
+      "channel": "Swiftful Thinking",
+      "start": 26,
+      "moment": "structs versus classes. We're going to learn classes versus actors. We're going to learn value types versus"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

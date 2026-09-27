@@ -13,11 +13,55 @@
     {
       "title": "Basic Operators — Range Operators",
       "book": "LanguageGuide/BasicOperators"
+    },
+    {
+      "title": "ClosedRange",
+      "url": "https://developer.apple.com/documentation/swift/closedrange"
+    },
+    {
+      "title": "Range",
+      "url": "https://developer.apple.com/documentation/swift/range"
     }
   ],
   "hints": [
     "`...` includes the upper bound; `..<` stops before it.",
     "`1..<1` is empty; `(0..<10).contains(10)` is false.",
     "Line 1 prints `[\"Bo\", \"Cy\", \"Di\"]`."
+  ],
+  "impact": "edge",
+  "jsBridge": "JS has no range operators. Swift has `...` (closed), `..<` (half-open) and one-sided `2...`/`..<5`. They're values you can store and pass around, and slicing uses them directly.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "`Range` vs `ClosedRange` vs `PartialRangeFrom`: which can you iterate over, and which can't you?"
+    },
+    {
+      "kind": "js",
+      "q": "What's the JS idiom for `0..<n` (`Array.from({length: n}, (_, i) => i)`)? What does it allocate?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you iterate `1.0...2.0`? Why not? What do you use instead?"
+    },
+    {
+      "kind": "practice",
+      "q": "`array[..<3]` is a common way to take the first 3. What does `prefix(3)` do differently for short arrays?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Range operators – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=FGxEffJ5XUM",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "Swit gives us two ways of making ranges that less than and dot-dot-dot operators the half-open range operator got less"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Basic Operators",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators/",
+      "source": "swift.org"
+    }
   ]
 }

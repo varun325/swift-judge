@@ -14,6 +14,14 @@
     {
       "title": "Binding",
       "url": "https://developer.apple.com/documentation/swiftui/binding"
+    },
+    {
+      "title": "Managing model data in your app",
+      "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+    },
+    {
+      "title": "State",
+      "url": "https://developer.apple.com/documentation/swiftui/state"
     }
   ],
   "signature": {
@@ -35,5 +43,49 @@
     "`Binding(get:set:)` takes two closures that read and write the real storage.",
     "Clamp in the setter; the derived binding reads/writes through the first binding.",
     "`set: { volume.wrappedValue = $0 ? 0 : 50 }` for `isMuted`."
-  ]
+  ],
+  "impact": "core",
+  "jsBridge": "`Binding(get:set:)` is a two-way reference made of two closures, like a React controlled input's `value` + `onChange` pair packaged together. Custom bindings let you transform or validate on the way in.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "A controlled input needs `value` and `onChange`. How does a `Binding` package both?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Custom `Binding(get:set:)` vs `@Bindable` on an `@Observable` model: when is each right?"
+    },
+    {
+      "kind": "edge",
+      "q": "A custom binding capturing a class: does the view update when the class changes? (Only if observed.)"
+    },
+    {
+      "kind": "practice",
+      "q": "Clamping a slider value, or converting units for a `TextField`: where do custom bindings shine?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Create custom Bindings in SwiftUI | Advanced Learning #27",
+      "url": "https://www.youtube.com/watch?v=K91rKH_O8BY&t=114s",
+      "channel": "Swiftful Thinking",
+      "start": 114,
+      "moment": "is it coming from why is it a binding so in this video video we're first going to do a deep dive into bindings what are"
+    },
+    {
+      "title": "Two-way bindings in SwiftUI - SwiftUI Starter Project 10/14",
+      "url": "https://www.youtube.com/watch?v=7AY3v2woKio&t=53s",
+      "channel": "Paul Hudson",
+      "start": 53,
+      "moment": "goes both ways this is where the dollar sign comes in because Swift at State Property wrapper"
+    },
+    {
+      "title": "SwiftUI - @Binding Property Wrapper Explained - Passing Data",
+      "url": "https://www.youtube.com/watch?v=lgtB3WLEOYg",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "today i'm going to show you how to pass data between two views using binding and swift ui"
+    }
+  ],
+  "articles": []
 }

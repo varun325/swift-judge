@@ -41,13 +41,44 @@
   "videos": [
     {
       "title": "CS193p 2025 · L3: Model and UI & Swift Type System",
-      "url": "https://www.youtube.com/watch?v=B42CuI0RO7Y",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=B42CuI0RO7Y&t=3367s",
+      "channel": "Stanford Online",
+      "start": 3367,
+      "moment": "And I told you it has some associated value with it. We know that enums have associated data. So yes, an Optional is just an enum with a *generic* associated va"
     },
     {
       "title": "CS193p 2025 · L4: CodeBreaker's Model",
-      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94",
-      "channel": "Stanford Online"
+      "url": "https://www.youtube.com/watch?v=IvOF3Bmk-94&t=3232s",
+      "channel": "Stanford Online",
+      "start": 3232,
+      "moment": "the matches for that attempt. I don't need that extra word. And I could put it in there, but totally unnecessary. You see how associated data works? I have thes"
+    }
+  ],
+  "impact": "edge",
+  "jsBridge": "`enum Kind { case master(isHidden: Bool), guess, attempt([Match]), unknown }` stores data per case, a TS discriminated union carrying payloads. CS193p uses it so a `Code` knows what role it plays and what extra data it has.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Model `Kind` as a TS union. What does Swift's `mutating` switch on `self` let you do that TS needs a reducer for?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Associated values vs separate optional properties (`matches: [Match]?`): which prevents an attempt without matches?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you compare `Kind` values with `==` automatically? When does synthesised `Equatable` work for payload enums?"
+    },
+    {
+      "kind": "practice",
+      "q": "The course uses `typealias Peg = Color`. Why is a typealias useful while the design is still evolving?"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Stanford CS193p — Developing Apps for iOS",
+      "url": "https://cs193p.stanford.edu",
+      "source": "Stanford"
     }
   ]
 }

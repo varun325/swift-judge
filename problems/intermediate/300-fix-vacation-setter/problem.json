@@ -34,5 +34,58 @@
     "A get/set pair should round-trip: set a value, read it back, get the same number.",
     "The getter computes `allowed - taken`. Solve that for `allowed` when you want `remaining == newValue`.",
     "`set { vacationAllowed = vacationTaken + newValue }`."
+  ],
+  "impact": "core",
+  "jsBridge": "Computed properties with `get`/`set` are JS getters/setters (`get vacationRemaining() {}`). In the setter, `newValue` is implicit. The bug here is the round-trip rule: setting then getting must return what you set.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "JS `get x()` / `set x(v)` vs Swift `var x { get set }`: what's `newValue`, and can you rename it?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Computed property vs method: when does something with side effects stop being a property?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can a computed property be `mutating` in a struct getter? What about `nonmutating set`?"
+    },
+    {
+      "kind": "practice",
+      "q": "How would you unit test the \"set then get returns the same value\" law?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How property wrappers become structs – Instafilter SwiftUI Tutorial 1/13",
+      "url": "https://www.youtube.com/watch?v=M-1jRwzUIuI&t=332s",
+      "channel": "Paul Hudson",
+      "start": 332,
+      "moment": "here it's a string or int or double whatever and what this generated interface file is telling us is that"
+    },
+    {
+      "title": "How to use Structs in Swift | Swift Basics #9",
+      "url": "https://www.youtube.com/watch?v=gRKlprUj-I8&t=1633s",
+      "channel": "Swiftful Thinking",
+      "start": 1633,
+      "moment": "equals true so the way we did it in user two I can no longer do because the setter is"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Structures and Classes",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Properties",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/properties/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Methods",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/methods/",
+      "source": "swift.org"
+    }
   ]
 }

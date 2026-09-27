@@ -21,5 +21,46 @@
     "Two stacks: push into one, pop from the other.",
     "Only when the outbox is empty, move everything from the inbox (reversed) into it.",
     "`if outbox.isEmpty { outbox = inbox.reversed(); inbox.removeAll() }; return outbox.popLast()` — and `peek` is `outbox.last ?? inbox.first`."
+  ],
+  "impact": "edge",
+  "jsBridge": "The classic amortised O(1) queue. The Swift twist: `peek` must be non-mutating, which forces you to reason about which stack holds the front without moving elements. A JS class wouldn't enforce that.",
+  "compass": [
+    {
+      "kind": "contrast",
+      "q": "Two-stack queue vs `removeFirst()` on an array (O(n)) vs swift-collections `Deque`: which would you ship?"
+    },
+    {
+      "kind": "edge",
+      "q": "Why does making `peek` a non-mutating computed property complicate the design?"
+    },
+    {
+      "kind": "js",
+      "q": "JS `array.shift()` is O(n) too (usually). Does V8 optimise it?"
+    },
+    {
+      "kind": "practice",
+      "q": "Upload queues and message queues in apps: which operations dominate?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Multi-threading with background threads and queues in Xcode | Continued Learning #17",
+      "url": "https://www.youtube.com/watch?v=jEpg2SYvVV8",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Using stacks to arrange views – Guess the Flag SwiftUI Tutorial 1/9",
+      "url": "https://www.youtube.com/watch?v=tg7Iqtk0eWM&t=363s",
+      "channel": "Paul Hudson",
+      "start": 363,
+      "moment": "the Zed stack and then the water mark afterwards below the line so it gets drawn over the image like that give it a"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    }
   ]
 }

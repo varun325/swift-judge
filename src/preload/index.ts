@@ -29,6 +29,7 @@ const api: JudgeApi = {
     load: call('pg:load') as JudgeApi['playground']['load'],
     save: call('pg:save') as JudgeApi['playground']['save'],
     create: call('pg:create') as JudgeApi['playground']['create'],
+    ensure: call('pg:ensure') as JudgeApi['playground']['ensure'],
     rename: call('pg:rename') as JudgeApi['playground']['rename'],
     remove: call('pg:remove') as JudgeApi['playground']['remove'],
     reveal: call('pg:reveal') as JudgeApi['playground']['reveal'],

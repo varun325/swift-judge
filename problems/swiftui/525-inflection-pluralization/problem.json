@@ -12,11 +12,15 @@
   "docs": [
     {
       "title": "AttributedString init(localized:)",
-      "url": "https://developer.apple.com/documentation/foundation/attributedstring/init(localized:options:table:bundle:locale:comment:)"
+      "url": "https://developer.apple.com/documentation/foundation/attributedstring"
     },
     {
       "title": "Localization",
       "url": "https://developer.apple.com/documentation/xcode/localization"
+    },
+    {
+      "title": "Accessibility fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/accessibility-fundamentals"
     }
   ],
   "signature": {
@@ -37,5 +41,40 @@
     "Let Foundation inflect: `^[\\(n) item](inflect: true)`.",
     "Create it with `AttributedString(localized:)`.",
     "Convert to a plain string with `String(attributed.characters)`."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "`^[\\(n) item](inflect: true)` makes Foundation pick the right grammatical form for the language. The web equivalent is `Intl.PluralRules` plus hand-written messages; Apple's version inflects the noun for you.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Intl.PluralRules` tells you \"one\"/\"other\", and you still write both strings. What does Swift's automatic grammar agreement add?"
+    },
+    {
+      "kind": "edge",
+      "q": "Which languages support automatic inflection? What happens in unsupported ones?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Inflection vs String Catalog plural variants: when do you need explicit variants?"
+    },
+    {
+      "kind": "practice",
+      "q": "Gendered languages (\"1 new follower\"/\"una nueva seguidora\"): can inflection handle gender?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Accessibility in Swift: Dynamic Colors | Continued Learning #30",
+      "url": "https://www.youtube.com/watch?v=2M84O4sDe0o",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "A SwiftUI tip everyone needs to know: Automatic Grammar Agreement",
+      "url": "https://www.youtube.com/watch?v=EDd6Hr_F99o&t=28s",
+      "channel": "Paul Hudson",
+      "start": 28,
+      "moment": "actually works correctly for the one person case. To fix this, change your string to have"
+    }
+  ],
+  "articles": []
 }

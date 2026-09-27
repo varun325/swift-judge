@@ -31,5 +31,44 @@
     "An `indirect enum` can model an immutable linked list.",
     "`prepending` wraps `self` in a new node; `reversed` folds the list into a new one; `AnyIterator` walks the nodes.",
     "`guard case let .node(value, next) = current else { return nil }; current = next; return value`."
+  ],
+  "impact": "edge",
+  "jsBridge": "An immutable linked list as `indirect enum List<T>` is a persistent data structure: prepending shares the tail. That's like functional JS lists (Immutable.js `List`) but built into the type system.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Why are linked lists rare in JS app code? Are they any more common in Swift?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Linked list prepend O(1) vs array insert at 0 O(n): when does that actually matter?"
+    },
+    {
+      "kind": "edge",
+      "q": "Deallocating a very long indirect list recursively can overflow the stack. Why?"
+    },
+    {
+      "kind": "practice",
+      "q": "Undo history with structural sharing: would you use this, or snapshots?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Switching view states with enums – Bucket List SwiftUI Tutorial 3/12",
+      "url": "https://www.youtube.com/watch?v=IWcmNBoT0-s",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8",
+      "channel": "Swiftful Thinking"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

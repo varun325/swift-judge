@@ -15,6 +15,10 @@
     {
       "title": "The Basics — Optional Binding",
       "book": "LanguageGuide/TheBasics"
+    },
+    {
+      "title": "Optional",
+      "url": "https://developer.apple.com/documentation/swift/optional"
     }
   ],
   "signature": {
@@ -35,5 +39,60 @@
     "One `if` can bind several optionals and test conditions, separated by commas.",
     "Unwrap each string, convert it with `Int(...)`, and check both are positive — all in the same `if`.",
     "`if let width, let w = Int(width), let height, let h = Int(height), w > 0, h > 0 { return \"area \\(w * h)\" }`."
+  ],
+  "impact": "core",
+  "jsBridge": "`if let w = Int(a), let h = Int(b), w > 0, h > 0` binds several optionals and tests conditions in one statement. JS needs nested checks or `&&` with repeated conversions.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Write the JS equivalent without repeated `Number()` calls. What does Swift's comma-list do that `&&` can't (binding)?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Comma-separated conditions vs `&&`: are they the same in Swift? (Hint: bindings.)"
+    },
+    {
+      "kind": "edge",
+      "q": "If `a` fails to parse, is `Int(b)` ever evaluated?"
+    },
+    {
+      "kind": "practice",
+      "q": "Form validation with many fields: when does a single `if let` chain become unreadable, and what replaces it?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to safely unwrap optionals in Swift with if-let and guard statements | Bootcamp #47",
+      "url": "https://www.youtube.com/watch?v=wmQIl0O9HBY&t=105s",
+      "channel": "Swiftful Thinking",
+      "start": 105,
+      "moment": "let's create a new file for this video right click the navigator new file"
+    },
+    {
+      "title": "How to handle multiple optionals using optional chaining – Swift for Complete Beginners",
+      "url": "https://www.youtube.com/watch?v=QEVjbvb34Gg&t=234s",
+      "channel": "Paul Hudson",
+      "start": 234,
+      "moment": "author there's no text inside the string send back a instead"
+    },
+    {
+      "title": "Swift Optionals - How to Unwrap (real examples)",
+      "url": "https://www.youtube.com/watch?v=L3FuDHIv5Ws&t=41s",
+      "channel": "Sean Allen",
+      "start": 41,
+      "moment": "actually contain the integer value of 41. and the way we handle that in our code is by unwrapping the optional so here's our user object that I mentioned before"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Optional Chaining",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: The Basics",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/",
+      "source": "swift.org"
+    }
   ]
 }

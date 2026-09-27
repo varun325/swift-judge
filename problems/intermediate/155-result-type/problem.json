@@ -14,6 +14,14 @@
     {
       "title": "Error Handling",
       "book": "LanguageGuide/ErrorHandling"
+    },
+    {
+      "title": "Error",
+      "url": "https://developer.apple.com/documentation/swift/error"
+    },
+    {
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result"
     }
   ],
   "signature": {
@@ -31,5 +39,48 @@
     "`Result<Success, Failure>` stores success or failure as a value.",
     "Return `.failure(...)` for each bad case; switch on the result to build each line; `get()` turns it back into throwing style.",
     "`results.compactMap { try? $0.get() }.reduce(0, +)` gives the total."
+  ],
+  "impact": "core",
+  "jsBridge": "`Result<Success, Failure>` is a typed either, like returning `{ ok: true, value } | { ok: false, error }` in TS. It was vital for callback APIs before async/await. Now it's mostly used to store outcomes, since `throws` covers control flow.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Is `Result` more like a Promise's settled state (`{status, value|reason}`) or an Either? Where does it fit in async/await code?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`throws` vs `Result`: when would you choose `Result` in 2026 Swift?"
+    },
+    {
+      "kind": "edge",
+      "q": "`Result.get()` turns it back into a throw. Why is that bridge useful?"
+    },
+    {
+      "kind": "practice",
+      "q": "Completion-handler APIs used `(Result<T, Error>) -> Void`. How do you wrap one with `withCheckedThrowingContinuation`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Understanding Swift’s Result type – Hot Prospects 3/16",
+      "url": "https://www.youtube.com/watch?v=Ps8t8Xdgvy0&t=343s",
+      "channel": "Paul Hudson",
+      "start": 343,
+      "moment": "read the string out if it can if it can't it'll throw the error up and handle it across here alternatively you"
+    },
+    {
+      "title": "Swift - Result Type - Cleaner Network Calls",
+      "url": "https://www.youtube.com/watch?v=8aPjqLqUEKA&t=24s",
+      "channel": "Sean Allen",
+      "start": 24,
+      "moment": "alright so first let's give an overview of what the result type is as you can see on the screen here it is an enum"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Error Handling",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/",
+      "source": "swift.org"
+    }
   ]
 }

@@ -15,6 +15,10 @@
     {
       "title": "Enumerations — Associated Values",
       "book": "LanguageGuide/Enumerations"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -33,5 +37,48 @@
     "Each enum case can carry its own values.",
     "Add an `area` computed property that switches on `self` and binds each case's values; parse specs with a failable `init?`.",
     "`case let .rectangle(w, h): w * h` — and sum with `specs.compactMap(Shape.init(spec:)).reduce(0) { $0 + $1.area }`."
+  ],
+  "impact": "core",
+  "jsBridge": "This is TS's **discriminated union** (`{kind: 'circle', radius} | {kind: 'rect', …}`) built into the language. Swift's `switch` narrows the payload with `case .circle(let r)`, and exhaustiveness is enforced without a `never` check.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Write the TS discriminated union for Shape. What does Swift remove: the `kind` tag string, and the need for a type guard?"
+    },
+    {
+      "kind": "practice",
+      "q": "Model a network request state as `enum Loadable<T> { case idle, loading, loaded(T), failed(Error) }`. What impossible states does that rule out compared with `isLoading` + `data?` + `error?`?"
+    },
+    {
+      "kind": "java",
+      "q": "Java 17 sealed interfaces + records do the same. What's more verbose there?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Enum with payloads vs protocol + structs (`Shape` protocol): which is easier to extend with new *cases*, and which with new *operations*? (The expression problem.)"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8&t=16s",
+      "channel": "Swiftful Thinking",
+      "start": 16,
+      "moment": "stored in memory and things like that but there's one key difference that's really important and it's that at"
+    },
+    {
+      "title": "Enum associated values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=E8MuO6ShfKw",
+      "channel": "Paul Hudson",
+      "start": 0,
+      "moment": "as well as storing a simple value enums can also store Associated values attached to each case this lets you"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

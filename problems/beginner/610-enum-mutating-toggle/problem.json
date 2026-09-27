@@ -18,6 +18,10 @@
     {
       "title": "Methods — Modifying Value Types",
       "book": "LanguageGuide/Methods"
+    },
+    {
+      "title": "CaseIterable",
+      "url": "https://developer.apple.com/documentation/swift/caseiterable"
     }
   ],
   "signature": {
@@ -34,5 +38,44 @@
     "To change an enum value from inside a method, the method must be `mutating`.",
     "Assign the next case to `self` based on the current one.",
     "`mutating func next() { self = switch self { case .red: .green; case .green: .yellow; case .yellow: .red } }`."
+  ],
+  "impact": "edge",
+  "jsBridge": "An enum method that changes `self` must be `mutating`, because enums are value types. In JS you'd reassign `light = next(light)`. Swift lets the value transition itself in place: `self = .green`.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "State machines in JS often use xstate or a reducer. How close is a Swift enum with a `mutating func next()` to a reducer?"
+    },
+    {
+      "kind": "edge",
+      "q": "Can you call `next()` on a `let` light? What error do you get?"
+    },
+    {
+      "kind": "practice",
+      "q": "Would you put transition logic in the enum, or in a separate reducer? What about side effects like playing a sound?"
+    },
+    {
+      "kind": "contrast",
+      "q": "`mutating func next()` vs `func next() -> TrafficLight`: which composes better with SwiftUI `@State`?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Enums in Swift | Swift Basics #10",
+      "url": "https://www.youtube.com/watch?v=YPUCML__Md8",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Enum Raw Values – Swift in Sixty Seconds",
+      "url": "https://www.youtube.com/watch?v=ssLIP4gFrYc",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Enumerations",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations/",
+      "source": "swift.org"
+    }
   ]
 }

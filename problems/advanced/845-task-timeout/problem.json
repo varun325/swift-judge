@@ -14,6 +14,10 @@
     {
       "title": "withThrowingTaskGroup",
       "url": "https://developer.apple.com/documentation/swift/withthrowingtaskgroup(of:returning:isolation:body:)"
+    },
+    {
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency"
     }
   ],
   "signature": {
@@ -33,5 +37,46 @@
     "Race two child tasks in one group: the real work and a sleep that throws.",
     "`try await group.next()!` gives whichever finishes first; then cancel the rest.",
     "`defer { group.cancelAll() }` before `return try await group.next()!`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Racing work against a sleep in a throwing task group is Swift's `Promise.race([work, timeout])`. The group cancels the loser, which a JS race doesn't do (the losing promise keeps running).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "`Promise.race` leaves the loser running. What does `group.cancelAll()` do for the Swift loser?"
+    },
+    {
+      "kind": "edge",
+      "q": "If `work` ignores cancellation, does the timeout still return on time? Does the group still wait?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Task-group timeout vs `URLRequest.timeoutInterval`: which to use for network calls?"
+    },
+    {
+      "kind": "practice",
+      "q": "Where would you put a timeout in an app: network, Bluetooth, user-perceived loading?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use TaskGroup to perform concurrent Tasks in Swift | Swift Concurrency #6",
+      "url": "https://www.youtube.com/watch?v=epBbbysk5cU&t=637s",
+      "channel": "Swiftful Thinking",
+      "start": 637,
+      "moment": "group and we can see that there are a couple different options here for task groups we the the main difference"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Concurrency",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "source": "swift.org"
+    },
+    {
+      "title": "SE-0296: async/await",
+      "url": "https://github.com/swiftlang/swift-evolution/blob/main/proposals/0296-async-await.md",
+      "source": "Swift Evolution"
+    }
   ]
 }

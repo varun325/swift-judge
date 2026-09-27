@@ -35,5 +35,49 @@
     "2-D dynamic programming over positions in both strings.",
     "`dp[i][j]` = LCS of the suffixes starting at `i` and `j`; fill from the end backwards.",
     "`dp[i][j] = x[i] == y[j] ? 1 + dp[i + 1][j + 1] : max(dp[i + 1][j], dp[i][j + 1])`."
+  ],
+  "impact": "edge",
+  "jsBridge": "Classic 2-D DP, converting both strings to `[Character]` first so you can index by `Int`, which Swift strings don't allow. The DP table is `[[Int]]`, the same as in JS.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "In JS you'd index `a[i-1]` directly. Why must Swift convert to `[Character]`, and what does it cost?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Full 2-D table vs two rolling rows: memory O(nm) vs O(min(n,m)). When does it matter?"
+    },
+    {
+      "kind": "edge",
+      "q": "Should emoji and accented characters compare as graphemes or as scalars in a diff?"
+    },
+    {
+      "kind": "practice",
+      "q": "LCS powers text diffing. Swift has `CollectionDifference` (`a.difference(from: b)`). Try it on two arrays."
+    }
+  ],
+  "videos": [
+    {
+      "title": "The most common interview questions for Swift jobs – Sean Allen on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=cOWMtprqpgM",
+      "channel": "Paul Hudson"
+    },
+    {
+      "title": "Most Common Element in Array - Swift Tutorial - iOS Interview Coding Challenge",
+      "url": "https://www.youtube.com/watch?v=0eWv1mAewx4",
+      "channel": "Sean Allen"
+    }
+  ],
+  "articles": [
+    {
+      "title": "The Swift Programming Language: Collection Types",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/",
+      "source": "swift.org"
+    },
+    {
+      "title": "The Swift Programming Language: Control Flow",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/",
+      "source": "swift.org"
+    }
   ]
 }

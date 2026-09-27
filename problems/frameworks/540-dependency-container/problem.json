@@ -33,5 +33,42 @@
     "Use `ObjectIdentifier(type)` as the dictionary key for each protocol type.",
     "Store factories as `() -> Any` and cast back with `as? T` in `resolve`.",
     "For singletons, cache the first instance per key."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "A tiny DI container registers factories by protocol type and resolves them. It's InversifyJS or NestJS's injector in miniature, and `ObjectIdentifier(T.self)` works as the key.",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "NestJS resolves by class or token. What's the Swift equivalent of a token (`ObjectIdentifier` of a protocol type)?"
+    },
+    {
+      "kind": "edge",
+      "q": "Resolving an unregistered type: crash, optional, or throw? What do real containers do?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Runtime container vs compile-time DI (initialiser injection, `swift-dependencies`): which catches missing deps earlier?"
+    },
+    {
+      "kind": "practice",
+      "q": "Is a DI container overkill for most iOS apps? When does it pay off?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "How to use Dependency Injection in SwiftUI | Advanced Learning #16",
+      "url": "https://www.youtube.com/watch?v=E3x07blYvdE&t=3s",
+      "channel": "Swiftful Thinking",
+      "start": 3,
+      "moment": "all right welcome back everyone my name is nick this channel is swiffle thinking where we cover all things swift and"
+    },
+    {
+      "title": "Swift Dependency Injection - What is it? What are the benefits?",
+      "url": "https://www.youtube.com/watch?v=l0QehVWz2i0",
+      "channel": "Sean Allen",
+      "start": 0,
+      "moment": "dependency injection is when you give an object what it needs rather than that object creating or finding it itself and it can be intimidating because the name "
+    }
+  ],
+  "articles": []
 }

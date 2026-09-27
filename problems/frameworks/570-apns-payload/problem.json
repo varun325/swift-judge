@@ -14,6 +14,18 @@
     {
       "title": "Generating a remote notification",
       "url": "https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification"
+    },
+    {
+      "title": "WidgetKit",
+      "url": "https://developer.apple.com/documentation/widgetkit"
+    },
+    {
+      "title": "StoreKit",
+      "url": "https://developer.apple.com/documentation/storekit"
+    },
+    {
+      "title": "User Notifications",
+      "url": "https://developer.apple.com/documentation/usernotifications"
     }
   ],
   "signature": {
@@ -34,5 +46,38 @@
     "Try decoding `alert` as a `String` first, then as a nested container.",
     "Map `content-available` with a custom `CodingKeys` raw value.",
     "Silent = `content-available == 1` with no title or body."
-  ]
+  ],
+  "impact": "edge",
+  "jsBridge": "Push payloads are JSON with a reserved `aps` dictionary plus your custom keys. Decoding them with `Codable` is like typing a Web Push payload, but Apple defines the `aps` part (alert, badge, sound, content-available).",
+  "compass": [
+    {
+      "kind": "js",
+      "q": "Web Push payloads are free-form. Which parts of an APNs payload does iOS interpret for you?"
+    },
+    {
+      "kind": "edge",
+      "q": "Silent pushes (`content-available: 1`): are they guaranteed to wake the app? (No, they're throttled.) Why?"
+    },
+    {
+      "kind": "contrast",
+      "q": "Alert push vs silent push vs Notification Service Extension (mutable-content): which can modify the message?"
+    },
+    {
+      "kind": "practice",
+      "q": "Deep-linking from a tapped notification: where do you read the payload and route?"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Send Push Notifications using CloudKit in SwiftUI | Advanced Learning #24",
+      "url": "https://www.youtube.com/watch?v=vr5CBfaK14A",
+      "channel": "Swiftful Thinking"
+    },
+    {
+      "title": "Pro tips on push notifications – Kaya Thomas on Swiftly Speaking",
+      "url": "https://www.youtube.com/watch?v=_rxFq_6iw_s",
+      "channel": "Paul Hudson"
+    }
+  ],
+  "articles": []
 }
