@@ -4,10 +4,11 @@ import type { ProblemSummary, Progress } from '../../shared/types'
 import { BookView } from './components/BookView'
 import { ConceptsView } from './components/ConceptsView'
 import { ProblemList } from './components/ProblemList'
+import { PlaygroundView } from './components/PlaygroundView'
 import { ProblemWorkspace } from './components/ProblemWorkspace'
 import { QuizView } from './components/QuizView'
 
-type Tab = 'problems' | 'concepts' | 'quiz' | 'book'
+type Tab = 'problems' | 'playground' | 'concepts' | 'quiz' | 'book'
 
 function useStored(key: string, initial: string): [string, (v: string) => void] {
   const [v, setV] = useState(() => {
@@ -72,7 +73,7 @@ export function App(): React.JSX.Element {
           <span className="logo">◆</span> Swift Judge
         </div>
         <nav className="tabs">
-          {(['problems', 'concepts', 'quiz', 'book'] as Tab[]).map((t) => (
+          {(['problems', 'playground', 'concepts', 'quiz', 'book'] as Tab[]).map((t) => (
             <button key={t} className={tab === t ? 'active' : ''} onClick={() => setTab(t)}>
               {t === 'book' ? 'Swift Book' : t[0].toUpperCase() + t.slice(1)}
             </button>
@@ -119,6 +120,7 @@ export function App(): React.JSX.Element {
             )}
           </>
         )}
+        {tab === 'playground' && <PlaygroundView />}
         {tab === 'concepts' && <ConceptsView problems={problems} progress={progress} onOpen={openProblem} />}
         {tab === 'quiz' && <QuizView />}
         {tab === 'book' && <BookView initialPath={bookPath} />}

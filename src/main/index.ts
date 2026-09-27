@@ -9,12 +9,31 @@ import { loadAll, summarize } from './content/loader'
 import { loadNotes, type NotesSection } from './content/notes'
 import { judge } from './judge/judge'
 import { findSwiftc, setCacheRoot, swiftVersion } from './judge/toolchain'
+import { Playground, runPlayground } from './playground'
 import { ProgressStore } from './progress'
 
 // Lets e2e runs use a throwaway profile instead of the learner's real progress.
 if (process.env.SWIFT_JUDGE_USER_DATA) app.setPath('userData', process.env.SWIFT_JUDGE_USER_DATA)
 
-const appRoot = app.getAppPath()
+/**
+ * Where problems, content and docs live.
+ * - dev: the project folder (app.getAppPath()).
+ * - packaged: the project folder recorded at build time (resources/source-root.json) if it still
+ *   exists — so adding problems there works in the installed app too — otherwise the copy bundled
+ *   in the app's Resources folder.
+ */
+function resolveContentRoot(): string {
+  if (!app.isPackaged) return app.getAppPath()
+  try {
+    const recorded = JSON.parse(readFileSync(join(process.resourcesPath, 'source-root.json'), 'utf8')) as { root?: string }
+    if (recorded.root && existsSync(join(recorded.root, 'problems'))) return recorded.root
+  } catch {
+    /* no recorded project folder — use the bundled copy */
+  }
+  return join(process.resourcesPath, 'bundle')
+}
+
+const appRoot = resolveContentRoot()
 const problemsRoot = process.env.SWIFT_JUDGE_PROBLEMS ?? join(appRoot, 'problems')
 const bookRoot = join(appRoot, 'docs', 'swift-book')
 const contentRoot = join(appRoot, 'content')
@@ -25,6 +44,7 @@ let notes = new Map<string, NotesSection>()
 let concepts: Concept[] = []
 let quiz: QuizItem[] = []
 let progress: ProgressStore
+let playground: Playground
 let win: BrowserWindow | undefined
 
 function readJson<T>(file: string, fallback: T): T {
@@ -124,6 +144,21 @@ function registerIpc(): void {
   ipcMain.handle('saveQuizAnswer', (_e, id: string, correct: boolean) => progress.answerQuiz(id, correct))
   ipcMain.handle('getQuizProgress', () => progress.quiz())
   ipcMain.handle('swiftInfo', () => ({ version: swiftVersion(), swiftc: findSwiftc(), problemsRoot, loadErrors }))
+  ipcMain.handle('pg:root', () => playground.root)
+  ipcMain.handle('pg:list', () => playground.list())
+  ipcMain.handle('pg:load', (_e, id: string) => playground.load(id))
+  ipcMain.handle('pg:save', (_e, id: string, part: { code?: string; notes?: string }) => playground.save(id, part))
+  ipcMain.handle('pg:create', (_e, title: string) => playground.create(title))
+  ipcMain.handle('pg:rename', (_e, id: string, title: string) => playground.rename(id, title))
+  ipcMain.handle('pg:remove', async (_e, id: string) => {
+    // Move to the macOS Trash rather than deleting, so notes are recoverable.
+    for (const file of playground.filesFor(id)) await shell.trashItem(file)
+  })
+  ipcMain.handle('pg:reveal', (_e, id: string) => {
+    const [file] = playground.filesFor(id)
+    if (file) shell.showItemInFolder(file)
+  })
+  ipcMain.handle('pg:run', (_e, code: string, stdin: string) => runPlayground(code, stdin))
   ipcMain.handle('openExternal', (_e, url: string) => {
     if (/^https:\/\//.test(url)) return shell.openExternal(url)
   })
@@ -169,6 +204,11 @@ function createWindow(): void {
 app.whenReady().then(() => {
   setCacheRoot(join(app.getPath('userData'), 'cache'))
   progress = new ProgressStore(join(app.getPath('userData'), 'progress.json'))
+  // Playground pages live next to swift-notes.md when that folder exists, else in userData.
+  playground = new Playground(
+    process.env.SWIFT_JUDGE_PLAYGROUND ??
+      (existsSync(join(appRoot, '..', 'swift-notes.md')) ? join(appRoot, '..', 'playground') : join(app.getPath('userData'), 'playground'))
+  )
   reloadContent()
   registerIpc()
   watchProblems()

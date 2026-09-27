@@ -22,6 +22,17 @@ const api: JudgeApi = {
   getQuizProgress: call('getQuizProgress') as JudgeApi['getQuizProgress'],
   swiftInfo: call('swiftInfo') as JudgeApi['swiftInfo'],
   openExternal: call('openExternal') as JudgeApi['openExternal'],
+  playground: {
+    root: call('pg:root') as JudgeApi['playground']['root'],
+    list: call('pg:list') as JudgeApi['playground']['list'],
+    load: call('pg:load') as JudgeApi['playground']['load'],
+    save: call('pg:save') as JudgeApi['playground']['save'],
+    create: call('pg:create') as JudgeApi['playground']['create'],
+    rename: call('pg:rename') as JudgeApi['playground']['rename'],
+    remove: call('pg:remove') as JudgeApi['playground']['remove'],
+    reveal: call('pg:reveal') as JudgeApi['playground']['reveal'],
+    run: call('pg:run') as JudgeApi['playground']['run']
+  },
   onProblemsChanged: (cb) => {
     const listener = (): void => cb()
     ipcRenderer.on('problemsChanged', listener)

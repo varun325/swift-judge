@@ -3,3 +3,5 @@ out/
 .cache/
 *.log
 .e2e/
+dist/
+build/source-root.json

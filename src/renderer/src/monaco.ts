@@ -1,6 +1,7 @@
 import { loader } from '@monaco-editor/react'
 import * as monaco from 'monaco-editor/editor/editor.api'
 import 'monaco-editor/languages/definitions/swift/register'
+import 'monaco-editor/languages/definitions/markdown/register'
 import EditorWorker from 'monaco-editor/editor/editor.worker?worker'
 
 // Bundle Monaco locally (no CDN) so the app works offline.

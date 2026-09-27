@@ -8,6 +8,7 @@
  *
  *   npm run e2e                 # everything
  *   npm run e2e -- closure      # only problems whose id contains "closure"
+ *   npm run e2e -- --scenarios  # skip the per-problem pass, run only the UI scenarios
  * Screenshots of failures land in .e2e/.
  */
 import { _electron as electron } from 'playwright-core'
@@ -18,8 +19,10 @@ import path from 'node:path'
 
 const APP = path.resolve(import.meta.dirname, '..')
 const OUT = path.join(APP, '.e2e')
-const filter = process.argv[2]
+const scenariosOnly = process.argv.includes('--scenarios')
+const filter = process.argv.slice(2).find((a) => !a.startsWith('--'))
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'swift-judge-e2e-'))
+const playgroundDir = path.join(profile, 'playground')
 fs.rmSync(OUT, { recursive: true, force: true })
 fs.mkdirSync(OUT, { recursive: true })
 
@@ -57,7 +60,7 @@ const app = await electron.launch({
   args: [APP],
   cwd: APP,
   timeout: 30_000,
-  env: { ...process.env, SWIFT_JUDGE_USER_DATA: profile }
+  env: { ...process.env, SWIFT_JUDGE_USER_DATA: profile, SWIFT_JUDGE_PLAYGROUND: playgroundDir }
 })
 const page = await app.firstWindow()
 const pageErrors = []
@@ -101,7 +104,7 @@ async function verdict(button = 'button.submit') {
 // ---- 1. every problem: starter rejected, reference accepted
 const t0 = Date.now()
 let n = 0
-for (const { dir, meta } of problems) {
+for (const { dir, meta } of scenariosOnly ? [] : problems) {
   n++
   try {
     await openProblem(meta.id)
@@ -120,7 +123,7 @@ for (const { dir, meta } of problems) {
   if (n % 50 === 0) process.stdout.write(` ${n}\n`)
 }
 const perProblemSeconds = ((Date.now() - t0) / 1000).toFixed(0)
-console.log(`\n${problems.length} problems driven through the UI in ${perProblemSeconds}s`)
+if (!scenariosOnly) console.log(`\n${problems.length} problems driven through the UI in ${perProblemSeconds}s`)
 
 // ---- 2. scenarios (only on a full run)
 if (!filter) {
@@ -172,10 +175,43 @@ if (!filter) {
   await page.click('.pane-tabs button:has-text("Learn")')
   await check('Learn tab shows notes and book link', (await page.locator('.learn .doc-link').count()) > 0 && (await page.textContent('.learn')).includes('From your notes'))
   await page.click('.pane-tabs button:has-text("Solution")')
-  await check('Solution unlocked after Accepted', (await page.locator('.locked').count()) === 0)
+  if (!scenariosOnly) await check('Solution unlocked after Accepted', (await page.locator('.locked').count()) === 0)
 
   const solvedText = (await page.textContent('.solved-count')).trim()
-  await check('solved counter reflects every accepted problem', solvedText === `${problems.length}/${problems.length} solved`, solvedText)
+  if (!scenariosOnly) await check('solved counter reflects every accepted problem', solvedText === `${problems.length}/${problems.length} solved`, solvedText)
+
+  // Playground: run code, see output, append to notes, files saved on disk.
+  await page.click('.tabs button:has-text("Playground")')
+  // Wait until the scratchpad page has loaded into the editor before replacing its text.
+  await page.waitForFunction(
+    () => window.monaco?.editor.getEditors().some((e) => e.getModel()?.getLanguageId() === 'swift' && e.getModel().getValue().includes('Scratch space')),
+    null,
+    { timeout: 15_000 }
+  )
+  const pgCode = 'let xs = [3, 1, 2]\nprint(xs.sorted())\nprint(readLine() ?? "none")'
+  await page.evaluate((c) => window.monaco.editor.getEditors().find((e) => e.getModel().getLanguageId() === 'swift').getModel().setValue(c), pgCode)
+  await page.click('button:has-text("stdin")')
+  await page.fill('.pg-stdin', 'hello from stdin')
+  await page.click('button.pg-run')
+  await page.waitForSelector('.pg-stdout', { timeout: 60_000 })
+  const pgOut = (await page.textContent('.pg-stdout')).trim()
+  await check('playground runs code with stdin', pgOut === '[1, 2, 3]\nhello from stdin', JSON.stringify(pgOut))
+  await page.click('.pg-append')
+  await page.waitForTimeout(1200)
+  const pgNotes = fs.readFileSync(path.join(playgroundDir, 'scratchpad.md'), 'utf8')
+  const pgSwift = fs.readFileSync(path.join(playgroundDir, 'scratchpad.swift'), 'utf8')
+  await check('playground saves code and appended run to files', pgSwift === pgCode && pgNotes.includes('[1, 2, 3]') && pgNotes.includes('```swift'), pgNotes.slice(-120))
+  await page.evaluate(() => window.monaco.editor.getEditors().find((e) => e.getModel().getLanguageId() === 'swift').getModel().setValue('let x: Int = "no"'))
+  await page.click('button.pg-run')
+  await page.waitForSelector('.pg-output .console.error', { timeout: 60_000 })
+  await page.waitForTimeout(300)
+  const pgMarkers = await page.evaluate(() => window.monaco.editor.getModelMarkers({ owner: 'swiftc' }).length)
+  await check('playground shows compile errors inline', pgMarkers > 0)
+  await check('playground notes preview renders Markdown live', (await page.locator('.pg-preview-body .markdown pre.code').count()) > 0)
+  await page.click('.pg-preview-toggle')
+  const minimised = (await page.locator('.pg-preview-body').count()) === 0 && (await page.locator('.pg-notes.preview-collapsed').count()) === 1
+  await page.click('.pg-preview-toggle')
+  await check('notes preview can be minimised and restored', minimised && (await page.locator('.pg-preview-body').count()) === 1)
 
   await page.click('.tabs button:has-text("Concepts")')
   await page.waitForSelector('.concept-card')
