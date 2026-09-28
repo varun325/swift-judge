@@ -73,6 +73,71 @@ describe('merge rules', () => {
   })
 })
 
+/**
+ * Like Firestore: writes get server times seconds apart, so a pull's 60 s overlap window re-delivers
+ * the documents this machine itself just wrote (the realistic case the first FakeStore skipped).
+ */
+class RealisticStore extends FakeStore {
+  async write(uid: string, t: string, collection: Collection, docs: CloudDoc[]) {
+    for (const d of docs) {
+      this.clock += 1_000
+      this.docs.set(`${uid}/${collection}/${d.id}`, { ...d, syncedAt: this.clock })
+      this.writes++
+    }
+  }
+  async changed(uid: string, t: string, collection: Collection, since?: string) {
+    this.clock += 5_000 // time passes between syncs
+    return super.changed(uid, t, collection, since)
+  }
+}
+
+describe('regression: editing a page must not create conflict copies', () => {
+  it('re-delivered copies of our own uploads are not treated as edits from another machine', async () => {
+    const store = new RealisticStore()
+    const a = machine(store)
+    const page = a.playground.create('compass notes', '', '# answers')
+    await a.sync()
+    // Keep editing and syncing the way the app does (8 s after each pause, and on focus).
+    for (let i = 1; i <= 5; i++) {
+      a.playground.save(page, { notes: `# answers\n\nedit ${i}` })
+      const r = await a.sync()
+      expect(r.conflicts).toEqual([])
+      expect(r.changedPlayground).toBe(false) // nothing came from elsewhere, so the open editor must not be reloaded
+    }
+    expect(a.playground.list().map((p) => p.id).sort()).toEqual([page, 'scratchpad'].sort())
+    expect(a.playground.load(page).notes).toBe('# answers\n\nedit 5')
+  })
+
+  it('a page deleted here stays deleted (the re-delivered old copy must not bring it back)', async () => {
+    const store = new RealisticStore()
+    const a = machine(store)
+    const b = machine(store)
+    const page = a.playground.create('to delete', 'x', 'y')
+    await a.sync()
+    await b.sync()
+    for (const f of a.playground.filesFor(page)) rmSync(f)
+    const r = await a.sync()
+    expect(r.changedPlayground).toBe(false)
+    expect(a.playground.snapshot(page)).toBeUndefined()
+    await b.sync()
+    expect(b.playground.snapshot(page)).toBeUndefined()
+  })
+
+  it('still keeps both versions for a genuine concurrent edit', async () => {
+    const store = new RealisticStore()
+    const a = machine(store)
+    const b = machine(store)
+    const page = a.playground.create('essay', '', 'v1')
+    await a.sync()
+    await b.sync()
+    a.playground.save(page, { notes: 'A edit' })
+    b.playground.save(page, { notes: 'B edit' })
+    await b.sync()
+    const r = await a.sync()
+    expect(r.conflicts).toHaveLength(1)
+  })
+})
+
 describe('sync between two machines', () => {
   it('moves progress, quiz answers and playground pages across, then syncs incrementally', async () => {
     const store = new FakeStore()

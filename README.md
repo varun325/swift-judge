@@ -59,7 +59,7 @@ on Windows, SmartScreen shows "Windows protected your PC" the first time — cho
 Where content comes from: the Mac app reads problems, notes and docs **live from this project
 folder**, so problems you add here show up in the installed app. If the folder is missing (e.g. on
 Windows) the app uses the copy bundled inside it. Progress lives in the app's userData folder
-(`~/Library/Application Support/swift-judge/`, or `%APPDATA%\swift-judge\` on Windows).
+(`~/Library/Application Support/Swift Judge/`, or `%APPDATA%\Swift Judge\` on Windows; development runs use `swift-judge` instead).
 
 ## Cloud sync (optional, Firebase)
 

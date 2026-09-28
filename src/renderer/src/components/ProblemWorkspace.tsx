@@ -1,4 +1,4 @@
-import Editor, { type OnMount } from '@monaco-editor/react'
+import type { OnMount } from '@monaco-editor/react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { LearnBundle, ProblemView } from '../../../shared/api'
 import type { JudgeResult, ReviewState } from '../../../shared/types'
@@ -8,6 +8,7 @@ import { Compass, compassNotes } from './Compass'
 import { Hints } from './Hints'
 import { Markdown } from './Markdown'
 import { Results } from './Results'
+import { SafeEditor } from './SafeEditor'
 import { dayKey, FIB_DAYS, intervalLabel } from '../../../shared/review'
 
 /** Seconds → "m:ss" or "h:mm:ss" for video timestamps. */
@@ -254,11 +255,11 @@ export function ProblemWorkspace({ id, solved, draft, hintsRevealed, review, onP
           </div>
         </div>
         <div className="editor">
-          <Editor
+          <SafeEditor
             language={isPredict ? 'plaintext' : 'swift'}
             theme="judge-dark"
             value={code}
-            onChange={(v) => onChange(v ?? '')}
+            onChange={onChange}
             onMount={(ed) => {
               editorRef.current = ed
             }}

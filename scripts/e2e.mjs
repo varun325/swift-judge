@@ -325,6 +325,31 @@ if (!filter) {
   await page.click('.pg-preview-toggle')
   await check('notes preview can be minimised and restored', minimised && (await page.locator('.pg-preview-body').count()) === 1)
 
+  // Regression: a cloud sync notice arriving while you type must not reload the page under you
+  // (it used to replace the notes with the last autosaved text, eating keystrokes and moving the cursor).
+  {
+    // Put the cursor at the very end of the notes (via Monaco, so it's the same on every OS and input mode).
+    await page.evaluate(() => {
+      const md = window.monaco.editor.getEditors().find((e) => e.getModel()?.getLanguageId() === 'markdown')
+      const m = md.getModel()
+      md.focus()
+      md.setPosition({ lineNumber: m.getLineCount(), column: m.getLineMaxColumn(m.getLineCount()) })
+    })
+    await page.keyboard.type(' first-burst', { delay: 5 })
+    await page.waitForTimeout(900) // autosave (500 ms) has flushed
+    await page.keyboard.type(' second-burst', { delay: 5 })
+    await app.evaluate(({ BrowserWindow }) => {
+      for (const w of BrowserWindow.getAllWindows()) w.webContents.send('cloud:changed', { enabled: true, signedIn: true, state: 'idle', lastSync: Date.now() }, true)
+    })
+    await page.keyboard.type(' third-burst', { delay: 5 })
+    await page.waitForTimeout(1500)
+    const text = await page.evaluate(() => window.monaco.editor.getEditors().find((e) => e.getModel()?.getLanguageId() === 'markdown').getModel().getValue())
+    const focused = await page.evaluate(() => Boolean(document.activeElement?.closest('.pg-notes-editor')))
+    await check('typing in notes survives a cloud sync notice (no reload under the cursor)',
+      /first-burst second-burst third-burst\s*$/.test(text) && focused,
+      JSON.stringify(text.slice(-80)) + ` focused=${focused} found-anywhere=${text.includes('first-burst second-burst third-burst')}`)
+  }
+
   // + New and Rename use an inline form (Electron has no window.prompt()).
   await page.click('.pg-new')
   await page.fill('.pg-name input', 'Closures Practice')

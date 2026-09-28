@@ -186,22 +186,27 @@ export class SyncEngine {
   private async applyPages(docs: CloudDoc[], state: SyncState, result: SyncResult): Promise<void> {
     const pg = this.deps.playground()
     for (const d of docs) {
+      // Three-way decision against `known` (what this machine last synced). Pulls overlap the
+      // previous window by 60 s, so they re-deliver documents this machine uploaded itself; those
+      // equal `known` and must be ignored, or every edit looks like a conflict and deleted pages
+      // come back. Only a cloud copy that differs from `known` is news from another machine.
       const known = state.synced.playground[d.id]
+      const remoteHash = d.deleted ? DELETED : pageHash(JSON.parse(d.data) as PageValue)
+      if (known !== undefined && remoteHash === known) continue
+      state.synced.playground[d.id] = remoteHash
       const local = pg.snapshot(d.id)
       const localChanged = local ? known === undefined || pageHash(local) !== known : false
       if (d.deleted) {
-        // Deleted elsewhere: remove here unless it was edited here after the deletion.
-        if (local && !(localChanged && local.updatedAt > d.updatedAt)) {
+        // Deleted elsewhere: remove here unless it was edited here since the last sync.
+        if (local && !localChanged) {
           await this.deps.removePage(d.id)
           result.changedPlayground = true
         }
-        state.synced.playground[d.id] = DELETED
         continue
       }
       const remote = JSON.parse(d.data) as PageValue
-      const remoteHash = pageHash(remote)
-      state.synced.playground[d.id] = remoteHash
       if (!local) {
+        // Deleted here but changed elsewhere: bring the newer content back rather than lose it.
         pg.putFromCloud(d.id, remote.code, remote.notes, d.updatedAt)
         result.changedPlayground = true
         continue

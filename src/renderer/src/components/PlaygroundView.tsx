@@ -1,9 +1,10 @@
-import Editor, { type OnMount } from '@monaco-editor/react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import type { OnMount } from '@monaco-editor/react'
+import { useCallback, useDeferredValue, useEffect, useRef, useState } from 'react'
 import type { PlaygroundRun, PlaygroundSummary } from '../../../shared/api'
 import { monaco } from '../monaco'
 import { FILE_MANAGER, RUN_KEY } from '../platform'
 import { Markdown } from './Markdown'
+import { SafeEditor } from './SafeEditor'
 
 const SAVE_DELAY_MS = 500
 
@@ -41,6 +42,8 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
   const [pageId, setPageId] = useStoredId(openPage)
   const [code, setCode] = useState('')
   const [notes, setNotes] = useState('')
+  // The preview renders at low priority so re-rendering Markdown never slows typing.
+  const previewNotes = useDeferredValue(notes)
   const [stdin, setStdin] = useState('')
   const [showStdin, setShowStdin] = useState(false)
   const [previewOpen, setPreviewOpen] = useState(() => {
@@ -68,6 +71,8 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined)
   // What's on disk for the current page — edits equal to it (e.g. the load itself) aren't saved.
   const loaded = useRef<{ code: string; notes: string }>({ code: '', notes: '' })
+  /** Last keystroke in either editor (ms), so background syncs never reload the page mid-typing. */
+  const lastInputAt = useRef(0)
 
   const flush = useCallback(async () => {
     clearTimeout(timer.current)
@@ -78,6 +83,7 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
   }, [])
 
   const queueSave = (part: { code?: string; notes?: string }): void => {
+    lastInputAt.current = Date.now()
     if (!pageId) return
     if ((part.code === undefined || part.code === loaded.current.code) && (part.notes === undefined || part.notes === loaded.current.notes)) return
     loaded.current = { code: part.code ?? loaded.current.code, notes: part.notes ?? loaded.current.notes }
@@ -112,7 +118,10 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
     })
   }, [pageId])
 
-  // Pages synced in from another machine: refresh the list, and the open page unless mid-edit.
+  // Pages synced in from another machine: refresh the list. Reload the open page only if its file
+  // really changed underneath us and you aren't typing: replacing the editor's text mid-edit loses
+  // keystrokes and focus (a reload used to run on every sync notice, even when nothing had changed).
+  const isTyping = (): boolean => Boolean(pending.current) || Date.now() - lastInputAt.current < 5000
   useEffect(() => {
     if (!cloudVersion) return
     void refreshList().then((list) => {
@@ -120,8 +129,10 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
         if (list[0]) setPageId(list[0].id)
         return
       }
-      if (pending.current) return
+      if (isTyping()) return
       void window.judge.playground.load(pageId).then((page) => {
+        if (isTyping()) return
+        if (page.code === loaded.current.code && page.notes === loaded.current.notes) return
         loaded.current = { code: page.code, notes: page.notes }
         setCode(page.code)
         setNotes(page.notes)
@@ -273,13 +284,13 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
           </div>
         </div>
         <div className="pg-editor">
-          <Editor
+          <SafeEditor
             language="swift"
             theme="judge-dark"
             value={code}
             onChange={(v) => {
-              setCode(v ?? '')
-              queueSave({ code: v ?? '' })
+              setCode(v)
+              queueSave({ code: v })
             }}
             onMount={(ed) => {
               editorRef.current = ed
@@ -338,13 +349,13 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
           <span className="muted small">Markdown · {pageId}.md</span>
         </div>
         <div className="pg-notes-editor">
-          <Editor
+          <SafeEditor
             language="markdown"
             theme="judge-dark"
             value={notes}
             onChange={(v) => {
-              setNotes(v ?? '')
-              queueSave({ notes: v ?? '' })
+              setNotes(v)
+              queueSave({ notes: v })
             }}
             options={{ fontSize: 13, wordWrap: 'on', minimap: { enabled: false }, lineNumbers: 'off', automaticLayout: true, scrollBeyondLastLine: false, padding: { top: 10 } }}
           />
@@ -356,7 +367,7 @@ export function PlaygroundView({ openPage, cloudVersion = 0 }: Props): React.JSX
           </button>
           {previewOpen && (
             <div className="pg-preview-body">
-              <Markdown source={notes || '_No notes yet._'} />
+              <Markdown source={previewNotes || '_No notes yet._'} />
             </div>
           )}
         </div>

@@ -62,6 +62,22 @@ try {
   await a.sync()
   check('edits flow back to A (incremental pull by server time)', a.progress.get('two-sum').attempts === 5)
 
+  // Regression: repeated edit → sync cycles within the 60 s pull overlap must not create conflict
+  // copies (the pull re-delivers this machine's own uploads), and a deleted page must stay deleted.
+  let phantom = 0
+  for (let i = 1; i <= 4; i++) {
+    a.playground.save(page, { notes: `# compass answers\n\nedit ${i}` })
+    phantom += (await a.sync()).conflicts.length
+  }
+  check('editing and syncing repeatedly creates no conflict copies', phantom === 0 && !a.playground.list().some((p) => p.id.includes('-conflict')), `${phantom} phantom conflicts`)
+  await b.sync()
+  check('the other machine gets the latest edit', b.playground.snapshot(page)?.notes === '# compass answers\n\nedit 4')
+  for (const f of a.playground.filesFor(page)) rmSync(f)
+  await a.sync()
+  await a.sync()
+  await b.sync()
+  check('a deleted page stays deleted on both machines', !a.playground.snapshot(page) && !b.playground.snapshot(page))
+
   // Security rules: another account can neither read nor write this user's data.
   const otherToken = await new AuthClient(config).idToken(other)
   const denied = async (fn: () => Promise<unknown>): Promise<boolean> => fn().then(() => false, (e) => /refused|403/.test(String(e.message)))
